@@ -1,6 +1,6 @@
 тут: here
 это: this (is)
-собак--а: dog, inflect: fem2
+собак--а: dog, inflect: fem1
 grammar: fem1@nom
 кошк--а: cat, inflect: fem2
 бел--ый: white, inflect: ыйadj
@@ -10,7 +10,7 @@ grammar: adj@f
 где: where
 лошад--ь: horse, inflect: fem3
 grammar: fem3@nom
-мыш--ь: mouse, inflect: fem3
+мыш--ь: mouse, inflect: -femшь
 маленьк--ий: small, inflect: ийadj
 свитер--: sweater, inflect: masc1
 машин--а: car, inflect: fem1
@@ -51,7 +51,7 @@ grammar: fem3@acc
 --кто: who, inflect: -кто
 слыш--ать: hear, inflect: -слышать
 grammar: -слышать@1
-мам--а: Mom, inflect: fem1
+мам--а: Mom, inflect: -мама
 люб--ить: love, inflect: -любить
 grammar: -любить@1
 grammar: -ребёнок@acc
@@ -78,7 +78,7 @@ grammar: masc1@acc
 гуля--ть: take a walk, inflect: -встречать
 отличн--ый: great, inflect: ыйadj
 друг--: friend, inflect: -друг
-студент--: student, inflect: masc1
+студент--: student, inflect: masc1animate
 центр--: center (of city), inflect: masc1
 человек--: person, inflect: -человек
 больш--ой: big, inflect: ойadj2
@@ -109,7 +109,7 @@ grammar: adj@accf
 grammar: -встречать@2
 grammar: ийadj@accinanm
 grammar: ыйadj@accinanm
-кроват--ь: bed, inflect: fem3
+кроват--ь: bed, inflect: fem4
 леж--ать: lie, inflect: -слышать
 под: under
 grammar: fem3@instr
@@ -120,7 +120,7 @@ grammar: fem1@instr
 за: behind
 штор--а: curtain, inflect: fem1
 grammar: fem3@pl
-двер--ь: door, inflect: fem3
+двер--ь: door, inflect: fem4
 открыт--ый: open, inflect: ыйadj
 grammar: n@pl
 grammar: ойadj1@accf
@@ -131,7 +131,7 @@ grammar: fem2@pl
 закрыва--ть: to close, inflect: -встречать
 открыва--ть: to open, inflect: -встречать
 grammar: adj@pl
-профессор--: professor, inflect: masc1
+профессор--: professor, inflect: masc1animate
 здесь: here
 зна--ть: to know, inflect: -встречать
 --вы: you (plural), inflect: -вы
@@ -149,12 +149,12 @@ grammar: -встречать@2pl
 красив--ый: n/a, inflect: ыйadj
 дом--: house, inflect: masc3
 grammar: ыйadj@pl
-работ--а: n/a, inflect: fem2
+работ--а: n/a, inflect: fem1
 grammar: adj@prepm
-город--: city, inflect: masc1
+город--: city, inflect: -город
 grammar: adj@prepf
 как: how
-родител--ь: n/a, inflect: fem4
+родител--ь: n/a, inflect: -родитель
 офис--: n/a, inflect: masc1
 grammar: -этот@pl
 жив--<ть: live, inflect: -жить
@@ -264,7 +264,7 @@ grammar: fem3@genpl
 grammar: femka@genpl
 понима--ть: understand, inflect: -встречать
 помн--ить: n/a, inflect: -дарить
-математик--а: mathematics, inflect: fem1
+математик--а: mathematics, inflect: fem2
 французск--ий: n/a, inflect: ийadj
 его: his
 --есть: eat, inflect: -есть
@@ -276,13 +276,13 @@ grammar: -пить@1
 grammar: -пить@2
 grammar: -пить@3
 проблем--а: n/a, inflect: fem1
-борщ--: borsht (soup), inflect: masc3
+борщ--: borsht (soup), inflect: -борщ
 красн--ый: n/a, inflect: ыйadj
-олигарх--: oligarch, inflect: masc1
-письм--о: letter, inflect: neu2
+олигарх--: oligarch, inflect: masc2animate
+письм--о: letter, inflect: -письмо
 grammar: neu1@nom
 grammar: neu1@acc
-покуп--ок: n/a, inflect: -ребёнок
+покуп--ка: n/a, inflect: femka
 grammar: adj@accanm
 grammar: adj@accinanpl
 grammar: -есть@3pl
@@ -299,9 +299,9 @@ grammar: adj@genf
 grammar: neu1@genpl
 grammar: -статья@genpl
 grammar: neu1@gen
-вокзал--: n/a, inflect: masc3
+вокзал--: n/a, inflect: masc1
 grammar: neu2@accpl
-утр--о: morning, inflect: neu2
+утр--о: morning, inflect: neu3
 grammar: neu2@pl
 дерев--о: tree, inflect: neu1
 grammar: neu1@pl
@@ -336,8 +336,8 @@ grammar: -ребёнок@gen
 grammar: ойadj1@genm
 grammar: -мы@gen
 grammar: it-im-ite@1pl
-урок--: n/a, inflect: masc1
-деньг--а: n/a, inflect: fem2
+урок--: n/a, inflect: masc2
+деньг--а: n/a, inflect: -деньга
 её: her / their
 grammar: -ребёнок@prep
 grammar: -ребёнок@pl
@@ -357,7 +357,7 @@ grammar: -мы@dat
 grammar: -давать@3pl
 вечер--: n/a, inflect: masc3
 дет--ь: n/a, inflect: -люди
-перед--: n/a, inflect: -человек
+перед: forward
 все--: n/a, inflect: masc1
 весь--: n/a, inflect: masc1
 grammar: adj@adv
