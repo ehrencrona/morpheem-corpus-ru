@@ -5,22 +5,39 @@ fem3[n]: nom: -ь, gen: -и, dat: -и, acc: -ь, instr: -ью, prep: -и, pl: и
 fem4[n]: accpl: -и, inherit: fem3
 femka[n]: genpl: <ок, inherit: fem2
 femka2[n]: genpl: <ек, inherit: fem2
--статья[n]: nom: -я, acc: -ю, instr: -ёй, genpl: -ей, inherit: fem2
+-статья[n]: nom: -я, acc: -ю, instr: -ёй, genpl: -<ей, datpl: ям, instrpl: ями, preppl: ях, inherit: fem2
 -ребёнок[n]: nom: -ок, gen: -ка, dat: -ку, acc: -ка, instr: -ком, prep: -ке, pl: ки, genpl: ков, datpl: кам, accpl: ки, instrpl: ками, preppl: ках
 -подарок[n]: acc: ок, inherit: --ребёнок
+
+-деньга[n]: genpl: <<ег, inherit: fem2
+-родитель[n]: gen: я, dat: ю, acc: я, instr: ем, prep: е, accpl: ей, inherit: fem4 
+
+-кошка[n]: genpl: <ек, accpl: <ек, inherit: fem2
+
+-собака[n]: accpl: , inherit: fem2
+
+-femшь[n]: genpl: ам, instrpl: ами, preppl: ах, inherit: fem3
+
+-мама[n]: accpl: , inherit: fem1
 
 -люди[n]: instrpl: ьми, inherit: fem3
 
 masc1[n]: nom: -, gen: -а, dat: -у, acc: -, instr: -ом, prep: -е, genpl: ов, inherit: n 
 masc2[n]: pl: и, accpl: и, inherit: masc1 
 masc3[n]: pl: а, accpl: а, inherit: masc1
--день[n]: nom: ень, gen: ня, dat: ню, acc: ень, instr: нём, prep: не
--друг[n]: pl: <зья, genpl: <зей, datpl: <зьям, accpl: <зей, instrpl: <зьями, preppl: <зьях, inherit: masc1
--словарь[n]: nom: ь, gen: я, dat: ю, acc: ь, instr: ём, prep: е, pl: и, genpl: ей, datpl: ям, accpl: и, instrpl: ями, preppl: ях   
+-город[n]: pl: а, accpl: а, inherit: masc1
+
+-день[n]: nom: ень, gen: ня, dat: ню, acc: ень, instr: нём, prep: не, pl: ни, genpl: ней, datpl: ням, accpl: ни, instrpl: нями, preppl: нях 
+masc1animate[n]: acc: gen-, accpl: genpl-, inherit: masc1
+masc2animate[n]: acc: gen-, accpl: genpl-, inherit: masc2
+-друг[n]: pl: <зья, genpl: <зей, datpl: <зьям, accpl: <зей, instrpl: <зьями, preppl: <зьях, inherit: masc1animate
+-словарь[n]: gen: я, dat: ю, instr: ём, prep: е, pl: и, inherit: fem4
+-борщ[n]: nom: , gen: я, dat: ю, acc: , instr: ём, prep: е, pl: и, genpl: ей, datpl: ям, accpl: и, instrpl: ями, preppl: ях
 
 neu1[n]: nom: -о, gen: -а, dat: -у, acc: -о, instr: -ом, prep: -е, pl: -ья, genpl: -ьев, datpl: -ьям, accpl: -ья, instrpl: -ьями, preppl: -ьях
 neu2[n]: pl: -а, datpl: -ам, accpl: -а, instrpl: -ами, preppl: -ах, genpl: <он, inherit: neu1
 neu3[n]: genpl: -, inherit: neu2 
+-письмо[n]: genpl: <<ем, inherit: neu2
 neuie[n]: nom: е, gen: я, dat: ю, acc: е, prep: и, instr: ем, pl: я, genpl: й, datpl: ям, accpl: я, preppl: ях, instrpl: ями
 
 -время[n]: nom: я, gen: ени, dat: ени, acc: я, instr: енем, prep: ени, pl: ена, genpl: емён, datpl: енами, accpl: ена, instrpl: енами, preppl: енах
