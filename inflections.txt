@@ -68,7 +68,7 @@ yo-yosh-yot[v]: inf: ****, 2: -ёшь, 3: ёт, 1pl: -ём, 2pl: -ёте, inheri
 -давать[v]: inf: вать, 1: ю, 3pl: ют, pastm: вал, inherit: yo-yosh-yot
 
 -любить[v]: 1: лю, inherit: --дарить
--быть[v]: inf: быть, pastm: был, 1: есть
+-быть[v]: inf: быть, pastm: был, 1: есть, inherit: v
 
 -есть[v]: inf: есть, 1: ем, 2: ешь, 3: ест, 1pl: едим, 2pl: едите, 3pl: едят, pastm: ел, inherit: v
 -пить[v]: inf: пить, 1: пию, 2: пьёшь, 3: пьёт, 1pl: пьём, 2pl: пьёте, 3pl: пьют, pastm: пил, inherit: v
@@ -82,8 +82,11 @@ adj[adj]: m: ***, f: -ая, n: ое, accf: -ую, accanm: -ого, accn: -ое, 
 ийadj[adj]: m: -ий, accinanm: -ий, inherit: adj
 -хороший[adj]: prepm: ем, prepf: ей, prepn: ем, genf: ей, instrf: ей, datf: ей, shortm: , genm: его, datm: ему, accanm: его, n: ее, genn: его, datn: ему, accn: ее, inherit: ийadj
 -домашний[adj]: accf: юю, inherit: --хороший
+-много[adj]: nompl: o, accinanpl: 0, inherit: ийadj
 
 -этот[adj]: m: -от, f: -а, n: о, pl: -и, accf: -у, accinanm: -от, accinanpl: -и, shortm: ***, shortf: ***, shortn: ***, inherit: adj
+
+-весь[adj]: 
 
 -я[pron]: nom: я, gen: меня, dat: мне, acc: меня, instr: мной, prep: мне
 -ты[pron]: nom: ты, gen: тебя, dat: тебе, acc: тебя, instr: тобой, prep: тебе
