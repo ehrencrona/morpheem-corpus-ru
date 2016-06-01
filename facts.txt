@@ -69,7 +69,6 @@ grammar: -она@nom
 пиш--<сать: read, inflect: -писать
 стать--я: article, inflect: -статья
 grammar: -статья@acc
-grammar: -статья@nom
 grammar: y-esh-et@3
 газет--а: newspaper, inflect: fem1
 журнал--: magazine, inflect: masc1
@@ -80,7 +79,7 @@ grammar: masc1@acc
 друг--: friend, inflect: -друг
 студент--: student, inflect: masc1animate
 grammar: masc1animate@acc
-мальчик--: n/a, inflect: masc1animate
+мальчик--: n/a, inflect: masc2animate
 grammar: -любить@1
 центр--: center (of city), inflect: masc1
 человек--: person, inflect: -человек
@@ -134,11 +133,13 @@ grammar: fem2@pl
 закрыва--ть: to close, inflect: -встречать
 открыва--ть: to open, inflect: -встречать
 grammar: adj@pl
+доктор--: n/a, inflect: -доктор
 профессор--: professor, inflect: masc1animate
 здесь: here
 зна--ть: to know, inflect: -встречать
 --вы: you (plural), inflect: -вы
 grammar: -вы@nom
+grammar: -статья@nom
 grammar: it-im-ite@2pl
 ресторан--: restaurant, inflect: masc1
 эт--от: this, inflect: -этот
@@ -437,3 +438,5 @@ grammar: -наш@pl
 grammar: -кто@acc
 grammar: ойadj1@accanm
 grammar: -ребёнок@instr
+врач--: n/a, inflect: -врач
+сообщени--е: n/a, inflect: neuie

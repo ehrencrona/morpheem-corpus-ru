@@ -162,7 +162,7 @@
 ребёнок@nom сидеть@3 в университет@prep: He sits at the university.
 в библиотека@prep мышь@nom: A mouse is in the library
 в университет@prep мышь@nom: A mouse is in the university
-я@nom работать@1 в библиотека@prep: I work at the library
+я@nom работать@1 в библиотека@prep: 
 я@nom работать@1 в университет@prep: I work at the university
 он@nom работать@3 в библиотека@prep: He works at the library
 он@nom работать@3 в университет@prep: He works at the university
@@ -533,7 +533,7 @@
 ты@nom читать@2 книга@pl ?: Do you read books?
 ты@nom читать@2 газета@pl ?: Do you read newspapers?
 ты@nom читать@2 журнал@accpl ?: Do you read magazines?
-я@nom профессор@nom: I'm a professor.
+я@nom – профессор@nom: 
 он@nom олигарх@nom: He's an oligarch.
 тут чёрный@m свитер@nom: 
 в университет@prep белый@f машина@nom: 
@@ -807,7 +807,7 @@
 он@nom открывать@3 магазин@acc: 
 у профессор@nom много студент@genpl: 
 я@nom встречать@1 новый@accanm профессор@acc: 
-профессор@pl работать@3 в университет@prep: 
+профессор@nom работать@3 в университет@prep: 
 он@nom мой@m профессор@nom: 
 он@nom читать@3 мой@n письмо@acc: 
 письмо@nom на стол@prep: 
@@ -1094,8 +1094,8 @@
 ты@nom читать@2 открытый@m журнал@nom: 
 это новый@f статья@nom в газета@prep: 
 это хороший@f статья@nom: 
-это статья@nom отличный@f: 
-какой@f этот@f статья@nom: 
+этот@f статья@nom – отличный@f: 
+какой@f этот@f статья@nom ?: 
 это белый@m шоколад@nom: 
 это мой@m шоколад@nom: 
 это дорогой@m шоколад@nom: 
@@ -1227,7 +1227,7 @@
 ты@nom не видеть@2 он@acc: 
 я@nom читать@1 хороший@accf статья@acc: 
 он@nom писать@3 хороший@f статья@acc: 
-где мой@f статья@nom в журнал@prep: 
+где мой@f статья@nom в журнал@prep ?: 
 в газета@prep статья@nom профессор@gen: 
 почему ты@nom не красивый@m: 
 почему здесь: 
@@ -1371,7 +1371,7 @@
 он@nom профессор@nom математика@gen: 
 он@nom профессор@nom французский@genm: 
 ты@nom читать@2 журнал@acc ?: 
-в газета@prep хороший@f статья@nom: 
+в газета@prep читать@1 хороший@accf статья@acc: 
 он@nom читать@3 длинный@accf статья@acc: 
 он@nom читать@3 длинный@accf книга@acc: 
 это длинный@f улица@nom: 
@@ -1821,7 +1821,7 @@
 я@nom играть@1 с ребёнок@instr (author: 574d8c232a7eb77e6954e56a): 
 я@nom видеть@1 маленький@accanm ребёнок@acc (author: 574d8c232a7eb77e6954e56a): 
 в парк@prep девочка@nom (author: 574d8c232a7eb77e6954e56a): 
-девочка@nom сидеть@3 на улица@prep (author: 574d8c232a7eb77e6954e56a): 
+девочка@nom на сидеть@3 улица@prep (author: 574d8c232a7eb77e6954e56a): 
 девочка@nom играть@3 на газон@prep (author: 574d8c232a7eb77e6954e56a): 
 девочка@nom сидеть@3 на парк@prep (author: 574d8c232a7eb77e6954e56a): 
 я@nom видеть@1 девочка@acc (author: 574d8c232a7eb77e6954e56a): 
@@ -1851,3 +1851,51 @@
 он@nom не в комната@prep (author: 574d8c232a7eb77e6954e56a): 
 я@nom не писать@1 письмо@pl (author: 574d8c232a7eb77e6954e56a): 
 я@nom не писать@1 в комната@prep (author: 574d8c232a7eb77e6954e56a): 
+мой@m друг@nom – профессор@nom (author: 574d8c232a7eb77e6954e56a): 
+мальчик@nom сидеть@3 на газон@prep . (author: 574ee8e94b8e1813649d514d): 
+мальчик@nom видеть@3 собака@acc . (author: 574ee8e94b8e1813649d514d): 
+мальчик@nom работать@3 в библиотека@prep . (author: 574ee8e94b8e1813649d514d): 
+мальчик@nom играть@3 на улица@prep . (author: 574ee8e94b8e1813649d514d): 
+мальчик@nom слышать@3 мама@acc . (author: 574ee8e94b8e1813649d514d): 
+мальчик@nom любить@3 кошка@acc . (author: 574ee8e94b8e1813649d514d): 
+мальчик@nom читать@3 книга@acc тут . (author: 574ee8e94b8e1813649d514d): 
+собака@nom видеть@3 мальчик@gen . (author: 574ee8e94b8e1813649d514d): 
+кошка@nom слышать@3 мальчик@acc . (author: 574ee8e94b8e1813649d514d): 
+этот@n должно работать@inf (author: 574ee8e94b8e1813649d514d): 
+это его машина@nom (author: 574ee8e94b8e1813649d514d): 
+его нельзя не слышать@inf (author: 574ee8e94b8e1813649d514d): 
+его видеть@inf очень трудный@adv (author: 574ee8e94b8e1813649d514d): 
+его машина@nom очень хороший@shortf (author: 574ee8e94b8e1813649d514d): 
+это его магазин@nom , он@dat можно играть@inf тут (author: 574ee8e94b8e1813649d514d): 
+этот@f его новый@f машина@nom , в она@prep хороший@accinanm замок@nom (author: 574ee8e94b8e1813649d514d): 
+это мой@m новый@m доктор@nom (author: 574d8c232a7eb77e6954e56a): 
+мой@m новый@m друг@nom доктор@nom (author: 574d8c232a7eb77e6954e56a): 
+я@nom – доктор@nom (author: 574d8c232a7eb77e6954e56a): 
+мой@m доктор@nom любить@3 ты@acc (author: 574d8c232a7eb77e6954e56a): 
+доктор@nom работать@3 в университет@prep (author: 574d8c232a7eb77e6954e56a): 
+он@nom видеть@3 он@gen маленький@accf статья@acc (author: 574ee8e94b8e1813649d514d): 
+профессор@pl работать@3pl в университет@prep (author: 574d8c232a7eb77e6954e56a): 
+его день@nom не это видеть@3 (author: 574ee8e94b8e1813649d514d): 
+доктор@nom в комната@prep (author: 574d8c232a7eb77e6954e56a): 
+я@nom не доктор@nom (author: 574d8c232a7eb77e6954e56a): 
+его университет@nom не работать@3 утро@instr (author: 574ee8e94b8e1813649d514d): 
+я@nom встречать@1 доктор@nom сегодня (author: 574d8c232a7eb77e6954e56a): 
+его кошка@nom не видеть@3 он@acc (author: 574ee8e94b8e1813649d514d): 
+где твой@f статья@nom в журнал@prep ? (author: 574d8c232a7eb77e6954e56a): 
+его этот@m день@nom не он@acc (author: 574ee8e94b8e1813649d514d): 
+это не он@acc проблема@nom (author: 574ee8e94b8e1813649d514d): 
+этот@f проблема@nom он@acc (author: 574ee8e94b8e1813649d514d): 
+какой@f твой@f статья@nom ? (author: 574d8c232a7eb77e6954e56a): 
+в этот@genf проблема@dat каждый@m видеть@3 свой@n (author: 574ee8e94b8e1813649d514d): 
+я@nom не понимать@1 этот@f статья@nom (author: 574d8c232a7eb77e6954e56a): 
+не каждый@m видеть@3 он@gen проблема@acc (author: 574ee8e94b8e1813649d514d): 
+нужный@adv помнить@inf это проблема@acc мы@dat давать@3 деньга@gen давать@3pl мы@dat проблема@gen (author: 574ee8e94b8e1813649d514d): 
+она@nom хотеть@3 новый@accinanm свитер@acc (author: 574d8c232a7eb77e6954e56a): 
+он@nom писать@3 всегда (author: 574d8c232a7eb77e6954e56a): 
+не знать@inf свой@pl проблема@pl большой@f ошибка@nom (author: 574ee8e94b8e1813649d514d): 
+проблема@pl понимать@inf нужный@adv (author: 574ee8e94b8e1813649d514d): 
+страна@nom это людь@gen (author: 574ee8e94b8e1813649d514d): 
+отличный@f хороший@f это не страна@nom не видеть@3 (author: 574ee8e94b8e1813649d514d): 
+она@nom жить@3 в этот@genf страна@nom (author: 574ee8e94b8e1813649d514d): 
+он@nom не знать@3 проблема@genpl этот@accanpl страна@genpl (author: 574ee8e94b8e1813649d514d): 
+ (author: 574ee8e94b8e1813649d514d): 
