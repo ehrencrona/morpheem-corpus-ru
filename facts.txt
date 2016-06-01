@@ -6,12 +6,12 @@ grammar: fem1@nom
 бел--ый: white, inflect: ыйadj
 grammar: adj@f
 чёрн--ый: black, inflect: ыйadj
-–: is
 где: where
 лошад--ь: horse, inflect: fem3
 grammar: fem3@nom
 мыш--ь: mouse, inflect: -femшь
 маленьк--ий: small, inflect: ийadj
+–: is
 свитер--: sweater, inflect: masc1
 машин--а: car, inflect: fem1
 grammar: masc1@nom
@@ -37,6 +37,7 @@ grammar: fem1@prep
 grammar: -встречать@1
 grammar: -встречать@3
 игра--ть: play, inflect: -встречать
+девочк--а: n/a, inflect: femka2
 ребён--ок: child, inflect: -ребёнок
 grammar: -ребёнок@nom
 площад--ь: square, inflect: fem3
@@ -49,12 +50,11 @@ grammar: -видеть@1
 grammar: fem1@acc
 grammar: fem3@acc
 --кто: who, inflect: -кто
+grammar: -кто@nom
 слыш--ать: hear, inflect: -слышать
 grammar: -слышать@1
 мам--а: Mom, inflect: -мама
 люб--ить: love, inflect: -любить
-grammar: -любить@1
-grammar: -ребёнок@acc
 grammar: -я@acc
 --ты: you, inflect: -ты
 grammar: -ты@acc
@@ -79,24 +79,25 @@ grammar: masc1@acc
 отличн--ый: great, inflect: ыйadj
 друг--: friend, inflect: -друг
 студент--: student, inflect: masc1animate
+grammar: -любить@1
 центр--: center (of city), inflect: masc1
 человек--: person, inflect: -человек
-больш--ой: big, inflect: ойadj2
 зачем: what for
 не: not
-grammar: ойadj2@m
 почему: why
 квартир--а: apartment, inflect: fem1
-м--ой: my, inflect: ойadj1
 grammar: ойadj1@f
 вот: here (is)
+grammar: ойadj2@m
 дорог--ой: expensive, inflect: ойadj2
+м--ой: my, inflect: ойadj1
+больш--ой: big, inflect: ойadj2
 как--ой: which, inflect: ойadj2
 grammar: ойadj2@accinanm
 очень: very
 погод--а: weather, inflect: fem1
 сегодня: today
-вчера: yesterday
+завтра: tomorrow
 grammar: -он@acc
 grammar: -мы@nom
 grammar: -она@acc
@@ -126,6 +127,7 @@ grammar: n@pl
 grammar: ойadj1@accf
 длинн--ый: n/a, inflect: ыйadj
 grammar: ойadj1@pl
+grammar: -дарить@3pl
 grammar: fem2@pl
 нов--ый: new, inflect: ыйadj
 закрыва--ть: to close, inflect: -встречать
@@ -185,6 +187,7 @@ grammar: adj@accn
 шоколад--: n/a, inflect: masc1
 подар--ок: n/a, inflect: -подарок
 grammar: -подарок@acc
+вчера: yesterday
 grammar: adj@shortm
 grammar: adj@shortf
 grammar: adj@shortn
@@ -285,6 +288,7 @@ grammar: neu1@nom
 grammar: neu1@acc
 покупк--а: n/a, inflect: femka
 grammar: adj@accanm
+grammar: -ребёнок@acc
 grammar: adj@accinanpl
 grammar: -есть@3pl
 окн--о: window, inflect: neu2
@@ -311,7 +315,6 @@ grammar: -писать@inf
 сейчас: now
 grammar: neu1@prep
 grammar: -этот@accinanpl
-grammar: -дарить@3pl
 grammar: y-esh-et@2
 --быть: be, inflect: -быть
 grammar: -быть@1
@@ -407,11 +410,9 @@ grammar: adj@adv
 домашн--ий: n/a, inflect: -домашний
 задани--е: n/a, inflect: neuie
 grammar: neu3@genpl
-домашн--ий: undefined, inflect: -домашний
 grammar: -хороший@n
 grammar: -хороший@accn
 grammar: -хороший@genn
-задани--е: undefined, inflect: neuie
 grammar: -хороший@prepm
 grammar: neuie@nom
 grammar: neuie@pl
@@ -432,3 +433,9 @@ grammar: n@instrpl
 наш--: undefined, inflect: -наш
 grammar: -наш@prepf
 grammar: -кто@dat
+grammar: -наш@pl
+grammar: masc1animate@acc
+grammar: -кто@acc
+grammar: ойadj1@accanm
+grammar: -ребёнок@instr
+мальчик--: n/a, inflect: masc1animate
