@@ -55,6 +55,7 @@ it-im-ite[v]: inf: ****, 2: ишь, 3: ит, 1pl: им, 2pl: ите, inherit: v
 -видеть[v]: inf: -еть, 1: -<жу, 3pl: -ят, pastm: ел, inherit: it-im-ite
 -слышать[v]: inf: -ать, 1: -у, 3pl: -ат, pastm: ал, inherit: it-im-ite
 -смотреть[v]: 1: ю, pastm: ел, inherit: --видеть
+-учить[v]: 1: у, 3pl: ат, inherit: --дарить
 
 y-esh-et[v]: inf: ****, 1: -у, 2: -ешь, 3: -ет, 1pl: -ем, 2pl: -ете, inherit: v
 -писать[v]: inf: -<сать, 1pl: -ем, 2pl: -ете, 3pl: -ут, pastm: <сал, inherit: y-esh-et
@@ -77,6 +78,7 @@ adj[adj]: m: ***, f: -ая, n: ое, accf: -ую, accanm: -ого, accn: -ое, 
 
 ойadj2[adj]: m: -ой, accinanm: -ой, inherit: adj 
 ойadj1[adj]: f: -оя, n: -оё, accf: -ою, genm: -оего, datm: оему, datn: оему, datf: оей, accanm: -оего, genn: -оего, genf: -оей, instrm: -оим, instrn: -оим, instrf: -оей, prepm: -оём, prepn: -оём, prepf: -оей, pl: -ои, preppl: оих, accanpl: оих, accinanpl: ои, pl: -ои, genpl: -оих, datpl: -оим, instrpl: оими, preppl: -оих, inherit: ойadj2
+-наш[adj]: m: -, f: -а, n: -е, accf: у, genm: его, datm: ему, datn: ему, datf: ей, accanm: -его, genn: его, genf: ей, instrm: -им, instrn: -им, instrf: -ей, prepm: -ем, prepn: -ем, prepf: -ей, pl: -и, preppl: их, accanpl: их, accinanpl: и, genpl: -их, datpl: -им, instrpl: ими, preppl: их, inherit: ойadj2
 
 ыйadj[adj]: m: -ый, accinanm: -ый, accanpl: ых, accinanpl: ые, pl: -ые, genpl: -ых, datpl: -ым, accpl: -ых, instrm: -ым, instrn: -ым, instrpl: -ыми, preppl: -ых, shortpl: ы, inherit: adj
 ийadj[adj]: m: -ий, accinanm: -ий, inherit: adj
