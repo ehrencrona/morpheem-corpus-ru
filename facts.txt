@@ -52,13 +52,14 @@ grammar: fem3@acc
 --кто: who, inflect: -кто
 grammar: -кто@nom
 слыш--ать: hear, inflect: -слышать
-grammar: -слышать@1
+grammar: v@1
 мам--а: Mom, inflect: -мама
 люб--ить: love, inflect: -любить
 grammar: -я@acc
 --ты: you, inflect: -ты
 grammar: -ты@acc
 grammar: -ты@nom
+не: not
 --что: what, inflect: -что
 grammar: it-im-ite@2
 --она: she, inflect: -она
@@ -66,7 +67,6 @@ grammar: -она@nom
 книг--а: book, inflect: fem2
 чита--ть: read, inflect: -встречать
 пиш--<сать: read, inflect: -писать
-grammar: y-esh-et@1
 стать--я: article, inflect: -статья
 grammar: -статья@acc
 grammar: -статья@nom
@@ -79,11 +79,12 @@ grammar: masc1@acc
 отличн--ый: great, inflect: ыйadj
 друг--: friend, inflect: -друг
 студент--: student, inflect: masc1animate
+grammar: masc1animate@acc
+мальчик--: n/a, inflect: masc1animate
 grammar: -любить@1
 центр--: center (of city), inflect: masc1
 человек--: person, inflect: -человек
 зачем: what for
-не: not
 почему: why
 квартир--а: apartment, inflect: fem1
 grammar: ойadj1@f
@@ -160,7 +161,6 @@ grammar: adj@prepf
 офис--: n/a, inflect: masc1
 grammar: -этот@pl
 жив--<ть: live, inflect: -жить
-grammar: -жить@1
 люд--ь: people, inflect: -люди
 ошибк--а: n/a, inflect: femka
 grammar: n@preppl
@@ -434,8 +434,6 @@ grammar: n@instrpl
 grammar: -наш@prepf
 grammar: -кто@dat
 grammar: -наш@pl
-grammar: masc1animate@acc
 grammar: -кто@acc
 grammar: ойadj1@accanm
 grammar: -ребёнок@instr
-мальчик--: n/a, inflect: masc1animate
