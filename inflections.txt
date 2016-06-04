@@ -56,9 +56,9 @@ yo-yosh-yot[v]: inf ****, 1pl ём, 2 ёшь, 2pl ёте, 3 ёт, inherit v
 -жить[v]: inf <ть, 3pl ут, pastm <л, inherit yo-yosh-yot
 -давать[v]: inf вать, 1 ю, 3pl ют, pastm вал, inherit yo-yosh-yot
 -любить[v]: 1 лю, inherit -дарить
--быть[v]: inf быть, 1 есть, pastm был
+-быть[v]: inf быть, 1 есть, pastm был, inherit v
 -есть[v]: inf есть, 1 ем, 1pl едим, 2 ешь, 2pl едите, 3 ест, 3pl едят, pastm ел, inherit v
--пить[v]: inf пить, 1 пию, 1pl пьём, 2 пьёшь, 2pl пьёте, 3 пьёт, 3pl пьют, pastm пил, inherit v
+-пить[v]: inf пить, 1 пью, 1pl пьём, 2 пьёшь, 2pl пьёте, 3 пьёт, 3pl пьют, pastm пил, inherit v
 adj[adj]: m ***, n ое, f ая, pl ие, genm ого, genn ого, genf ой, genpl их, datm ому, datn ому, datf ой, datpl им, accanm ого, accn ое, accf ую, accinanpl ие, accanpl их, instrm им, instrn им, instrf ой, instrpl ими, prepm ом, prepn ом, prepf ой, preppl их, shortm <ен, shortn о, shortf а, shortpl и, adv о
 ойadj2[adj]: m ой, accinanm ой, inherit adj
 ойadj1[adj]: n оё, f оя, pl ои, genm оего, genn оего, genf оей, genpl оих, datm оему, datn оему, datf оей, datpl оим, accanm оего, accf ою, accinanpl ои, accanpl оих, instrm оим, instrn оим, instrf оей, instrpl оими, prepm оём, prepn оём, prepf оей, preppl оих, inherit ойadj2
@@ -79,3 +79,4 @@ adj[adj]: m ***, n ое, f ая, pl ие, genm ого, genn ого, genf ой, g
 -кто[n]: nom кто, gen кого, dat кому, acc кто, instr кем, prep ком
 -сколько[adj]: pl о, genpl их, datpl им, accinanpl о, accanpl их, instrpl ими, preppl их
 -ехать[v]: inf <хать, pastm <хал, inherit v
+-много[adj]: m: о, pl: о, accinanpl: 0, inherit: ийadj
