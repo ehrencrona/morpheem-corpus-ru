@@ -258,7 +258,7 @@ grammar: -друг@datpl
 grammar: -дарить@1
 grammar: -давать@1
 интересн--ый: n/a, inflect: ыйadj
-много: many, inflect: -много
+мног--о: many, inflect: -много
 без: without
 grammar: masc1@genpl
 grammar: -друг@genpl
@@ -283,14 +283,17 @@ grammar: -есть@1
 обед--: n/a, inflect: masc1
 ужин--: n/a, inflect: masc1
 дешёв--ый: n/a, inflect: ыйadj
+grammar: -сколько@pl
+скольк--о: n/a, inflect: -сколько
 фрукт--: n/a, inflect: masc1
 grammar: masc1@accpl
-овощ--: n/a, inflect: -ключ
-яйц--о: n/a, inflect: neu2
+овощ--: n/a, inflect: -овощ
+яйц--о: n/a, inflect: -яйцо
 сто--ить: n/a, inflect: -дарить
 вод--а: n/a, inflect: -мама
-здоров--ый: n/a, inflect: ыйadj
+здоров--ый: n/a, inflect: -здоровый
 сувенир--: n/a, inflect: masc1
+для: for; for the benefit of
 --пить: drink, inflect: -пить
 grammar: -пить@1
 grammar: -пить@2
@@ -301,7 +304,7 @@ grammar: -пить@3
 олигарх--: oligarch, inflect: masc2animate
 письм--о: letter, inflect: -письмо
 grammar: neu1@nom
-масл--о: n/a, inflect: neu3
+масл--о: n/a, inflect: -масло
 grammar: neu1@acc
 покупк--а: n/a, inflect: femka
 grammar: adj@accanm
@@ -334,7 +337,6 @@ grammar: neu1@prep
 grammar: -этот@accinanpl
 --быть: be, inflect: -быть
 grammar: -быть@1
-для: for; for the benefit of
 стран--а: country, inflect: fem1
 обув--ь: shoe, inflect: fem4
 и: and
@@ -419,7 +421,6 @@ grammar: adj@adv
 по-русски: n/a
 по-английски: n/a
 ключ--: n/a, inflect: -ключ
-скольк--о: n/a, inflect: -сколько
 слов--о: n/a, inflect: neu3
 домашн--ий: n/a, inflect: -домашний
 задани--е: n/a, inflect: neuie
@@ -436,7 +437,7 @@ grammar: neuie@prep
 упражнени--е: n/a, inflect: neuie
 решени--е: n/a, inflect: neuie
 чуть-чуть: a little bit
-немного: some, inflect: -много
+немног--о: some, inflect: -много
 жизн--ь: life, inflect: fem3
 глаз--: eye, inflect: masc2
 перв--ый: first, inflect: ыйadj
@@ -466,3 +467,5 @@ grammar: masc2@pl
 хлеб--: n/a, inflect: masc1
 аптек--а: n/a, inflect: fem2
 grammar: -он@prep
+grammar: ойadj1@genn
+grammar: ойadj1@genf
