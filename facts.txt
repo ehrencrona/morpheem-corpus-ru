@@ -38,7 +38,7 @@ grammar: fem1@prep
 grammar: -встречать@1
 grammar: y-esh-et@3
 игра--ть: play, inflect: -встречать
-девочк--а: n/a, inflect: femka2
+девочк--а: n/a, inflect: femka
 ребён--ок: child, inflect: -ребёнок
 grammar: -ребёнок@nom
 площад--ь: square, inflect: fem3
@@ -279,6 +279,7 @@ grammar: -есть@2
 grammar: -есть@1
 его: his
 готов--ить: n/a, inflect: -любить
+куп--ить: n/a, inflect: -купить
 завтрак--: n/a, inflect: masc2
 обед--: n/a, inflect: masc1
 ужин--: n/a, inflect: masc1
@@ -289,6 +290,8 @@ grammar: -сколько@pl
 grammar: masc1@accpl
 овощ--: n/a, inflect: -овощ
 яйц--о: n/a, inflect: -яйцо
+grammar: neu2@accpl
+grammar: neu2@pl
 сто--ить: n/a, inflect: -дарить
 вод--а: n/a, inflect: -мама
 здоров--ый: n/a, inflect: -здоровый
@@ -325,9 +328,7 @@ grammar: neu1@genpl
 grammar: -статья@genpl
 grammar: neu1@gen
 вокзал--: n/a, inflect: masc1
-grammar: neu2@accpl
 утр--о: morning, inflect: neu3
-grammar: neu2@pl
 дерев--о: tree, inflect: neu1
 grammar: neu1@pl
 grammar: adj@n
@@ -463,10 +464,51 @@ grammar: -хороший@instrf
 grammar: -вы@acc
 grammar: -ключ@genpl
 grammar: masc2@pl
-ед--<хать: n/a, inflect: -ехать
 хлеб--: n/a, inflect: masc1
 аптек--а: n/a, inflect: fem2
 grammar: -он@prep
+сам--: n/a, inflect: -сам
+два: n/a
+ни--что: what, inflect: -что
+потом: n/a
+ли: n/a
+при: n/a
+надо: n/a
+ид--ти: n/a, inflect: -идти
+теперь: n/a
+тоже: n/a
+сто--ять: n/a, inflect: -стоять
+после: n/a
+дума--ть: n/a, inflect: -думать
+мест--о: n/a, inflect: neu3
+спрос--ить: n/a, inflect: -спросить
+через: n/a
+лиц--о: n/a, inflect: neu3
+тогда: n/a
+ведь: n/a
+сторон--а: n/a, inflect: fem1
+просто: n/a
+ног--а: n/a, inflect: fem2
+име--ть: n/a, inflect: -думать
+вдруг: n/a
+над: n/a
+взя--ть: n/a, inflect: -взять
+каж--<заться: n/a, inflect: -казаться
+земл--я: n/a, inflect: -земля
+конц--<ец: n/a, inflect: -конец
+час--: n/a, inflect: masc1
+голос--: n/a, inflect: masc3
+хотя: n/a
+втор--ой: n/a, inflect: -второй
+куда: n/a
+ед--<хать: n/a, inflect: -ехать
 grammar: ойadj1@genn
 grammar: ойadj1@genf
 grammar: -кто@gen
+grammar: -вы@gen
+grammar: -они@dat
+grammar: -есть@1pl
+grammar: -спросить@1
+grammar: -слышать@3pl
+grammar: -они@acc
+нрави--ться: n/a, inflect: -нравиться
