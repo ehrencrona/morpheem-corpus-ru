@@ -191,6 +191,7 @@ grammar: -подарок@acc
 вчера: yesterday
 grammar: -мы@dat
 grammar: -вы@dat
+grammar: -она@dat
 grammar: adj@shortm
 grammar: adj@shortf
 grammar: adj@shortn
@@ -272,6 +273,13 @@ grammar: femka@genpl
 математик--а: mathematics, inflect: fem2
 французск--ий: n/a, inflect: ийadj
 словар--ь: n/a, inflect: -словарь
+когда: n/a
+--быть: be, inflect: -быть
+владивосток--: n/a, inflect: masc2
+уже: already
+grammar: v@pastf
+grammar: -быть@pastm
+grammar: v@pastm
 grammar: -есть@inf
 --есть: eat, inflect: -есть
 grammar: -есть@3
@@ -287,12 +295,19 @@ grammar: -есть@1
 grammar: -сколько@pl
 скольк--о: n/a, inflect: -сколько
 фрукт--: n/a, inflect: masc1
+сумк--а: n/a, inflect: femka
+пожалуйста: n/a
+скаж--<зать: n/a, inflect: -сказать
+grammar: y-esh-et@imprpl
+grammar: -показать@imprpl
+покаж--<зать: n/a, inflect: -показать
+да--ть: n/a, inflect: -дать
 grammar: masc1@accpl
 овощ--: n/a, inflect: -овощ
-яйц--о: n/a, inflect: -яйцо
-grammar: neu2@accpl
-grammar: neu2@pl
 сто--ить: n/a, inflect: -дарить
+так--ой: such a, inflect: ойadj2
+grammar: -нравиться@3
+нрави--ться: n/a, inflect: -нравиться
 вод--а: n/a, inflect: -мама
 здоров--ый: n/a, inflect: -здоровый
 сувенир--: n/a, inflect: masc1
@@ -336,7 +351,6 @@ grammar: -писать@inf
 сейчас: now
 grammar: neu1@prep
 grammar: -этот@accinanpl
---быть: be, inflect: -быть
 grammar: -быть@1
 стран--а: country, inflect: fem1
 обув--ь: shoe, inflect: fem4
@@ -365,7 +379,6 @@ grammar: it-im-ite@1pl
 grammar: -ребёнок@prep
 grammar: -ребёнок@pl
 прекрасн--ый: n/a, inflect: ыйadj
-скаж--<зать: n/a, inflect: -сказать
 grammar: y-esh-et@1pl
 пакет--: n/a, inflect: masc1
 grammar: ойadj1@accinanpl
@@ -380,7 +393,8 @@ grammar: -давать@3pl
 дет--ь: n/a, inflect: -люди
 перед: forward
 все--: n/a, inflect: masc1
-весь--: n/a, inflect: masc1
+grammar: -весь@m
+вс--<есь: n/a, inflect: -весь
 grammar: adj@adv
 потому что: because
 а: and
@@ -396,9 +410,7 @@ grammar: adj@adv
 один--: one, inflect: masc1
 ещё: again
 бы: 
-так--ой: such a, inflect: ойadj2
 себя: himself / herself
-уже: already
 да: yes
 год--: year, inflect: -год
 до: from
@@ -479,7 +491,7 @@ grammar: -он@prep
 тоже: n/a
 сто--ять: n/a, inflect: -стоять
 после: n/a
-дума--ть: n/a, inflect: -думать
+дума--ть: n/a, inflect: -встречать
 мест--о: n/a, inflect: neu3
 спрос--ить: n/a, inflect: -спросить
 через: n/a
@@ -489,12 +501,14 @@ grammar: -он@prep
 сторон--а: n/a, inflect: fem1
 просто: n/a
 ног--а: n/a, inflect: fem2
-име--ть: n/a, inflect: -думать
+последн--ий: n/a, inflect: ийadj
+име--ть: n/a, inflect: -встречать
 вдруг: n/a
 над: n/a
 взя--ть: n/a, inflect: -взять
 каж--<заться: n/a, inflect: -казаться
 земл--я: n/a, inflect: -земля
+grammar: -показать@impr
 конц--<ец: n/a, inflect: -конец
 час--: n/a, inflect: masc1
 голос--: n/a, inflect: masc3
@@ -511,4 +525,19 @@ grammar: -есть@1pl
 grammar: -спросить@1
 grammar: -слышать@3pl
 grammar: -они@acc
-нрави--ться: n/a, inflect: -нравиться
+меню: n/a
+grammar: neu2@pl
+яйц--о: n/a, inflect: -яйцо
+grammar: neu2@accpl
+grammar: -что@gen
+grammar: -нравиться@inf
+grammar: -он@dat
+grammar: -наш@m
+grammar: -наш@accf
+откро--<ыть: n/a, inflect: -открыть
+grammar: -наш@datf
+grammar: -наш@instrf
+grammar: -что@acc
+grammar: -жить@pastm
+grammar: v@pastn
+grammar: -слышать@pastm

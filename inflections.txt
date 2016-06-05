@@ -45,13 +45,13 @@ it-im-ite[v]: inf ****, 1pl им, 2 ишь, 2pl ите, 3 ит, inherit v
 -слышать[v]: inf ать, 3pl ат, pastm ал, inherit it-im-ite
 -смотреть[v]: 1 ю, pastm ел, inherit -видеть
 -учить[v]: 1 у, 3pl ат, inherit -дарить
-y-esh-et[v]: inf ****, 1pl ем, 2 ешь, 2pl ете, 3 ет, inherit v
+y-esh-et[v]: inf ****, 1pl ем, 2 ешь, 2pl ете, 3 ет, impr й, imprpl impr-те, inherit v
 -встречать[v]: inf ть, 1 ю, 3pl ют, inherit y-esh-et
--писать[v]: inf <сать, 1pl ем, 2pl ете, 3pl ут, pastm <сал, inherit y-esh-et
--хотеть[v]: inf <теть, 1pl <тим, 2pl <тите, 3pl <тят, pastm <тел, inherit y-esh-et
--сказать[v]: inf <зать, 2pl и, 3pl ите, pastm <зал, inherit y-esh-et
--мочь[v]: inf <чь, 1 <гу, 1pl ет, 2pl ете, 3pl <гут, pastm <г, pastn <гло, pastf <гла, pastpl <гли, inherit y-esh-et
--стать[v]: inf <ть, 3pl ут, pastm <л, inherit y-esh-et
+-писать[v]: inf <сать, 1pl ем, 2pl ете, 3pl ут, pastm <сал, impr и, inherit y-esh-et
+-хотеть[v]: inf <теть, 1pl <тим, 2pl <тите, 3pl <тят, pastm <тел, impr <ти, inherit y-esh-et
+-сказать[v]: inf <зать, 2pl и, 3pl ите, pastm <зал, impr и, inherit y-esh-et
+-мочь[v]: inf <чь, 1 <гу, 1pl ет, 2pl ете, 3pl <гут, pastm <г, pastn <гло, pastf <гла, pastpl <гли, impr <ги, inherit y-esh-et
+-стать[v]: inf <ть, 3pl ут, pastm <л, impr ьй, inherit y-esh-et
 yo-yosh-yot[v]: inf ****, 1pl ём, 2 ёшь, 2pl ёте, 3 ёт, inherit v
 -жить[v]: inf <ть, 3pl ут, pastm <л, inherit yo-yosh-yot
 -давать[v]: inf вать, 1 ю, 3pl ют, pastm вал, inherit yo-yosh-yot
@@ -81,8 +81,7 @@ adj[adj]: m ***, n ое, f ая, pl ие, genm ого, genn ого, genf ой, g
 -много[adj]: m о, pl о, accinanpl 0, inherit ийadj
 -сам[adj]: m , accinanm , accn о, inherit -этот
 -идти[v]: inf ти, pastm <<шёл, pastn <<шло, pastf <<шла, pastpl <<шли, impr и, imprpl ите, inherit -жить
--стоять[v]: inf ять, pastm ял, impr й, imprpl йте, inherit -дарить
--думать[v]: impr й, imprpl йте, inherit -встречать
+-стоять[v]: inf ять, pastm ял, inherit -дарить
 -спросить[v]: 1 <шу, impr и, imprpl ите, inherit -дарить
 -взять[v]: impr <<озьми, imprpl <<озьмите, inherit -встречать
 -казаться[v]: inf <заться, 1 усь, 1pl емся, 2 ешься, 2pl етесь, 3 ется, 3pl утся, pastm <зался, pastn <залось, pastf <залась, pastpl <зались, impr ись, imprpl итесь
@@ -96,3 +95,8 @@ adj[adj]: m ***, n ое, f ая, pl ие, genm ого, genn ого, genf ой, g
 -здоровый[adj]: shortm , inherit ыйadj
 -купить[v]: 1 лю, inherit -спросить
 -нравиться[v]: inf ться, 1 <люсь, 1pl мся, 2 шься, 2pl тесь, 3 тся, 3pl <ятся, pastm лся, pastn лось, pastf лась, pastpl лись, impr <ься, imprpl <ьтесь
+-дать[v]: 1 м, 1pl дим, 2 шь, 2pl дите, 3 ст, 3pl дут, inherit -встречать
+-показать[v]: inf <зать, pastm <зал, impr и, imprpl ите, inherit -писать
+-забыть[v]: inf <<ыть, 3pl <<ыт, pastm <<ыл, impr ь, inherit y-esh-et
+-весь[adj]: m <есь, n я, f ё, pl е, genm его, genn его, genf ей, datm ему, datn ему, datf ей, datpl ем, accinanm его, accanm <есь, accn ё, accf ю, accinanpl ех, accanpl е, instrm ем, instrn ем, instrf ей, instrpl еми, prepm ём, prepn ём, prepf ей, preppl ех
+-открыть[v]: inf <ыть, pastm <ыл, inherit -встречать
