@@ -87,11 +87,12 @@ grammar: -любить@1
 зачем: what for
 почему: why
 квартир--а: apartment, inflect: fem1
-grammar: ойadj1@f
+grammar: -свой@m
+grammar: -свой@f
 вот: here (is)
 grammar: ойadj2@m
 дорог--ой: expensive, inflect: ойadj2
-м--ой: my, inflect: ойadj1
+мо--й: my, inflect: -свой
 больш--ой: big, inflect: ойadj2
 как--ой: which, inflect: ойadj2
 grammar: ойadj2@accinanm
@@ -101,7 +102,7 @@ grammar: ойadj2@accinanm
 завтра: tomorrow
 grammar: -он@acc
 grammar: -она@acc
-тв--ой: your, inflect: ойadj1
+тво--й: your, inflect: -свой
 д--ень: day, inflect: -день
 grammar: -день@nom
 телефон--: telephone, inflect: masc1
@@ -124,9 +125,8 @@ grammar: fem3@pl
 двер--ь: door, inflect: fem4
 открыт--ый: open, inflect: ыйadj
 grammar: n@pl
-grammar: ойadj1@accf
+grammar: -свой@accf
 длинн--ый: n/a, inflect: ыйadj
-grammar: ойadj1@pl
 grammar: -дарить@3pl
 grammar: fem2@pl
 нов--ый: new, inflect: ыйadj
@@ -205,7 +205,6 @@ grammar: masc1@dat
 grammar: adj@datm
 grammar: ыйadj@preppl
 grammar: fem2@accpl
-grammar: ойadj1@preppl
 должно: have to
 одалжива--ть: n/a, inflect: -встречать
 grammar: fem1@dat
@@ -246,14 +245,13 @@ grammar: -этот@accf
 grammar: -я@gen
 grammar: -он@gen
 grammar: fem3@datpl
-grammar: ойadj1@datpl
 grammar: ыйadj@datpl
 grammar: n@datpl
 grammar: adj@datn
 grammar: adj@datpl
 grammar: adj@datf
 grammar: -ты@gen
-св--ой: his/min (refers to the subject), inflect: ойadj1
+сво--й: his/min (refers to the subject), inflect: -свой
 grammar: -она@gen
 grammar: -друг@datpl
 grammar: -дарить@1
@@ -361,7 +359,7 @@ grammar: -быть@1
 цвет--: color, inflect: masc3
 температур--а: temperature, inflect: fem1
 мяс--о: n/a, inflect: neu2
-grammar: ойadj1@n
+grammar: -свой@n
 всегда: always
 часто: often
 иногда: sometimes
@@ -370,7 +368,6 @@ grammar: ойadj1@n
 grammar: -жить@inf
 grammar: adj@accanpl
 grammar: -ребёнок@gen
-grammar: ойadj1@genm
 grammar: -мы@gen
 grammar: it-im-ite@1pl
 урок--: n/a, inflect: masc2
@@ -381,7 +378,6 @@ grammar: -ребёнок@pl
 прекрасн--ый: n/a, inflect: ыйadj
 grammar: y-esh-et@1pl
 пакет--: n/a, inflect: masc1
-grammar: ойadj1@accinanpl
 grammar: -ребёнок@genpl
 холодн--ый: n/a, inflect: ыйadj
 grammar: -ребёнок@preppl
@@ -454,7 +450,6 @@ grammar: neuie@prep
 жизн--ь: life, inflect: fem3
 глаз--: eye, inflect: masc2
 перв--ый: first, inflect: ыйadj
-grammar: ойadj1@instrpl
 grammar: n@instrpl
 уч--ить: undefined, inflect: -учить
 ваш--: undefined, inflect: -наш
@@ -463,13 +458,11 @@ grammar: -наш@prepf
 grammar: -кто@dat
 grammar: -наш@pl
 grammar: -кто@acc
-grammar: ойadj1@accanm
 grammar: -ребёнок@instr
 врач--: n/a, inflect: -врач
 сообщени--е: n/a, inflect: neuie
 grammar: -видеть@3pl
 grammar: -мочь@3pl
-grammar: ойadj1@accanpl
 grammar: ыйadj@instrm
 grammar: -хороший@instrf
 морожено--е: n/a, inflect: neuie
@@ -516,8 +509,6 @@ grammar: -показать@impr
 втор--ой: n/a, inflect: -второй
 куда: n/a
 ед--<хать: n/a, inflect: -ехать
-grammar: ойadj1@genn
-grammar: ойadj1@genf
 grammar: -кто@gen
 grammar: -вы@gen
 grammar: -они@dat
@@ -541,3 +532,7 @@ grammar: -что@acc
 grammar: -жить@pastm
 grammar: v@pastn
 grammar: -слышать@pastm
+grammar: -наш@genm
+grammar: -наш@datm
+grammar: -свой@accinanm
+grammar: -наш@accanm
