@@ -43,19 +43,19 @@ grammar: y-esh-et@3
 grammar: -ребёнок@nom
 площад--ь: square, inflect: fem3
 grammar: fem3@prep
-сид--еть: sit, inflect: -видеть
+сиди--<еть: sit, inflect: -сидеть
 grammar: it-im-ite@3
-grammar: -видеть@1
+grammar: it-im-ite@1
 парк--: park, inflect: masc1
-вид--еть: see, inflect: -видеть
+види--<еть: see, inflect: -видеть
 grammar: fem1@acc
 grammar: fem3@acc
 --кто: who, inflect: -кто
 grammar: -кто@nom
-слыш--ать: hear, inflect: -слышать
+слыши--<ать: n/a, inflect: -слышать
 grammar: v@1
 мам--а: Mom, inflect: -мама
-люб--ить: love, inflect: -любить
+люби--ть: love, inflect: -любить
 grammar: -я@acc
 --ты: you, inflect: -ты
 grammar: -ты@acc
@@ -112,7 +112,7 @@ grammar: y-esh-et@2
 grammar: ийadj@accinanm
 grammar: ыйadj@accinanm
 кроват--ь: bed, inflect: fem4, tag: sleep
-леж--ать: lie, inflect: -слышать
+лежи--<ать: lie, inflect: -лежать
 под: under
 grammar: fem3@instr
 стол--: table, inflect: masc1
@@ -127,7 +127,7 @@ grammar: fem3@pl
 grammar: n@pl
 grammar: -свой@accf
 длинн--ый: n/a, inflect: ыйadj
-grammar: -дарить@3pl
+grammar: it-im-ite@3pl
 grammar: fem2@pl
 нов--ый: new, inflect: ыйadj
 закрыва--ть: to close, inflect: -встречать
@@ -199,7 +199,7 @@ grammar: ыйadj@shortpl
 grammar: -я@dat
 grammar: -ребёнок@dat
 grammar: masc1@dat
-дар--ить: n/a, inflect: -дарить
+дари--ть: n/a, inflect: -дарить
 нужн--ый: n/a, inflect: ыйadj
 grammar: adj@datm
 grammar: ыйadj@preppl
@@ -218,19 +218,16 @@ grammar: -ты@dat
 музык--а: n/a, inflect: fem2
 вечером: in the evening
 только: only
-grammar: -видеть@inf
 фильм--: n/a, inflect: masc1
-grammar: -смотреть@1
+grammar: -дарить@1
 слуша--ть: n/a, inflect: -встречать
 телевизор--: n/a, inflect: masc1
-смотр--еть: n/a, inflect: -смотреть
+смотри--<еть: n/a, inflect: -дарить
 можно: be able to; be allowed to
 зам--ок: n/a, inflect: -подарок
-grammar: -дарить@inf
-кур--ить: n/a, inflect: -дарить
-говор--ить: n/a, inflect: -дарить
+кури--ть: n/a, inflect: -дарить
+говори--ть: n/a, inflect: -дарить
 нельзя: it's not allowed to
-grammar: -слышать@inf
 grammar: -ребёнок@accpl
 известн--ый: n/a, inflect: ыйadj
 ед--а: n/a, inflect: fem1
@@ -266,7 +263,7 @@ grammar: fem1@genpl
 grammar: fem3@genpl
 grammar: femka@genpl
 понима--ть: understand, inflect: -встречать
-помн--ить: n/a, inflect: -дарить
+помни--ть: n/a, inflect: -дарить
 математик--а: mathematics, inflect: fem2
 французск--ий: n/a, inflect: ийadj
 словар--ь: n/a, inflect: -словарь
@@ -278,7 +275,6 @@ grammar: femka@genpl
 суббот--а: n/a, inflect: fem1, tag: past, tag: sleep
 понедельник--: n/a, inflect: masc2, tag: past
 уже: already, tag: past
-grammar: -слышать@pastm, tag: past
 grammar: v@pastf, tag: past
 grammar: -быть@pastm, tag: past
 grammar: v@pastm
@@ -288,8 +284,8 @@ grammar: -есть@3
 grammar: -есть@2
 grammar: -есть@1
 его: his
-готов--ить: n/a, inflect: -любить
-куп--ить: n/a, inflect: -купить
+готови--ть: n/a, inflect: -любить
+купи--ть: n/a, inflect: -любить
 завтрак--: n/a, inflect: masc2
 обед--: n/a, inflect: masc1
 ужин--: n/a, inflect: masc1
@@ -306,7 +302,7 @@ grammar: -показать@imprpl
 да--ть: n/a, inflect: -дать
 grammar: masc1@accpl
 овощ--: n/a, inflect: -овощ
-сто--ить: n/a, inflect: -дарить
+стои--ть: n/a, inflect: -дарить
 так--ой: such a, inflect: ойadj2
 grammar: -нравиться@3
 нрави--ться: n/a, inflect: -нравиться
@@ -455,7 +451,7 @@ grammar: neuie@prep
 глаз--: eye, inflect: masc2
 перв--ый: first, inflect: ыйadj
 grammar: n@instrpl
-уч--ить: undefined, inflect: -учить
+учи--ть: undefined, inflect: -учить
 ваш--: undefined, inflect: -наш
 наш--: undefined, inflect: -наш
 grammar: -наш@prepf
@@ -465,7 +461,7 @@ grammar: -кто@acc
 grammar: -ребёнок@instr
 врач--: n/a, inflect: -врач
 сообщени--е: n/a, inflect: neuie
-grammar: -видеть@3pl
+grammar: it-im-ite@3pl
 grammar: -мочь@3pl
 grammar: ыйadj@instrm
 grammar: -хороший@instrf
@@ -486,11 +482,11 @@ grammar: -он@prep
 ид--ти: n/a, inflect: -идти
 теперь: n/a
 тоже: n/a
-сто--ять: n/a, inflect: -стоять
+стои--<ять: n/a, inflect: -стоять
 после: n/a
 дума--ть: n/a, inflect: -встречать
 мест--о: n/a, inflect: neu3
-спрос--ить: n/a, inflect: -спросить
+спроси--ть: n/a, inflect: -спросить
 через: n/a
 лиц--о: n/a, inflect: neu3
 тогда: n/a
@@ -518,7 +514,6 @@ grammar: -вы@gen
 grammar: -они@dat
 grammar: -есть@1pl
 grammar: -спросить@1
-grammar: -слышать@3pl
 grammar: -они@acc
 меню: n/a
 grammar: neu2@pl
@@ -549,6 +544,6 @@ grammar: -борщ@acc
 росси--я: n/a, inflect: -россия
 grammar: -год@genpl
 grammar: -много@pl
-законч--ить: n/a, inflect: -закончить
-сп--ать: n/a, inflect: -спать, tag: sleep
+закончи--ть: n/a, inflect: -учить
+спи--<ать: n/a, inflect: -спать, tag: sleep
 встан--<ть: n/a, inflect: -встать, tag: sleep
