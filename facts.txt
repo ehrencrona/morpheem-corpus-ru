@@ -111,7 +111,7 @@ grammar: adj@accf
 grammar: y-esh-et@2
 grammar: ийadj@accinanm
 grammar: ыйadj@accinanm
-кроват--ь: bed, inflect: fem4
+кроват--ь: bed, inflect: fem4, tag: sleep
 леж--ать: lie, inflect: -слышать
 под: under
 grammar: fem3@instr
@@ -275,7 +275,7 @@ grammar: femka@genpl
 владивосток--: n/a, inflect: masc2
 вчера: yesterday, tag: past
 никогда: n/a, tag: past
-суббот--а: n/a, inflect: fem1, tag: past
+суббот--а: n/a, inflect: fem1, tag: past, tag: sleep
 понедельник--: n/a, inflect: masc2, tag: past
 уже: already, tag: past
 grammar: -слышать@pastm, tag: past
@@ -507,7 +507,7 @@ grammar: -он@prep
 земл--я: n/a, inflect: -земля
 grammar: -показать@impr
 конц--<ец: n/a, inflect: -конец
-час--: n/a, inflect: masc1
+час--: n/a, inflect: masc1, tag: sleep
 голос--: n/a, inflect: masc3
 хотя: n/a
 втор--ой: n/a, inflect: -второй
@@ -543,7 +543,12 @@ grammar: -наш@accanm
 grammar: -идти@inf
 grammar: adj@prepn
 выходны--<ой: n/a, inflect: -выходной
-субота: n/a
 давно: n/a, tag: past
 недавно: n/a, tag: past
 grammar: -борщ@acc
+росси--я: n/a, inflect: -россия
+grammar: -год@genpl
+grammar: -много@pl
+законч--ить: n/a, inflect: -закончить
+сп--ать: n/a, inflect: -спать, tag: sleep
+встан--<ть: n/a, inflect: -встать, tag: sleep
