@@ -188,7 +188,6 @@ grammar: adj@accn
 шоколад--: n/a, inflect: masc1
 подар--ок: n/a, inflect: -подарок
 grammar: -подарок@acc
-вчера: yesterday
 grammar: -мы@dat
 grammar: -вы@dat
 grammar: -она@dat
@@ -271,12 +270,17 @@ grammar: femka@genpl
 математик--а: mathematics, inflect: fem2
 французск--ий: n/a, inflect: ийadj
 словар--ь: n/a, inflect: -словарь
-когда: n/a
+когда: n/a, tag: past
 --быть: be, inflect: -быть
 владивосток--: n/a, inflect: masc2
-уже: already
-grammar: v@pastf
-grammar: -быть@pastm
+вчера: yesterday, tag: past
+никогда: n/a, tag: past
+суббот--а: n/a, inflect: fem1, tag: past
+понедельник--: n/a, inflect: masc2, tag: past
+уже: already, tag: past
+grammar: -слышать@pastm, tag: past
+grammar: v@pastf, tag: past
+grammar: -быть@pastm, tag: past
 grammar: v@pastm
 grammar: -есть@inf
 --есть: eat, inflect: -есть
@@ -529,9 +533,8 @@ grammar: -наш@accf
 grammar: -наш@datf
 grammar: -наш@instrf
 grammar: -что@acc
-grammar: -жить@pastm
-grammar: v@pastn
-grammar: -слышать@pastm
+grammar: -жить@pastm, tag: past
+grammar: v@pastn, tag: past
 grammar: -наш@genm
 grammar: -наш@datm
 grammar: -свой@accinanm
@@ -539,3 +542,8 @@ grammar: -наш@accanm
 сдела--ть: n/a, inflect: -встречать
 grammar: -идти@inf
 grammar: adj@prepn
+выходны--<ой: n/a, inflect: -выходной
+субота: n/a
+давно: n/a, tag: past
+недавно: n/a, tag: past
+grammar: -борщ@acc

@@ -222,15 +222,15 @@
 ты@nom отличный@m студент@nom: You are a great student.
 студент@nom в университет@prep: The student is at the university.
 сегодня отличный@f погода@nom: The weather is great today.
-вчера отличный@f погода@nom: The weather is great yesterday.
+вчера быть@pastf отличный@f погода@nom: 
 сегодня хороший@f погода@nom: The weather is good today.
-вчера хороший@f погода@nom: The weather is good yesterday.
+вчера быть@pastf хороший@f погода@nom: 
 сегодня очень хороший@f погода@nom: The weather is very good today.
-вчера очень хороший@f погода@nom: The weather is very good yesterday.
+вчера быть@pastf очень хороший@f погода@nom: 
 сегодня отличный@m день@nom: It's a great day today.
 вчера быть@pastm отличный@m день@nom: 
 сегодня хороший@m день@nom: It's a good day today.
-вчера хороший@m день@nom: It's a good day yesterday.
+вчера быть@pastm хороший@m день@nom: 
 она@nom отличный@f собака@nom: She is a great dog.
 она@nom отличный@f кошка@nom: She is a great cat.
 она@nom хороший@f собака@nom: She is a good dog.
@@ -368,7 +368,7 @@
 это хороший@f квартира@nom: This is a good flat.
 это хороший@m телефон@nom: This is a good phone.
 какой@f собака@nom мой@f ?: Which dog is mine?
-какой@f вчера погода@nom ?: What was the weather like yesterday?
+какой@f вчера быть@pastf погода@nom ?: 
 какой@f сегодня погода@nom ?: What's the weather like today?
 какой@m он@nom человек@nom ?: What kind of person is he?
 какой@m он@nom студент@nom ?: How is he as a student?
@@ -583,8 +583,8 @@
 где твой@m свитер@nom: 
 это дорогой@f машина@nom: 
 я@nom сегодня работать@1: 
-вчера он@nom в магазин@prep: 
-где ты@nom вчера ?: 
+вчера он@nom быть@pastm в магазин@prep: 
+где ты@nom быть@pastm вчера ?: 
 какой@m вчера быть@pastm день@nom ?: 
 в какой@m день@nom ты@nom работать@2: 
 она@nom делать@3 упражнение@accpl каждый@accinanm день@acc: 
@@ -2219,7 +2219,7 @@
 вчера вечером я@nom лежать@pastm в кровать@prep (author: andreas): 
 ты@nom читать@pastm этот@accf книга@acc ? (author: pasha): 
 мальчик@nom играть@pastm с мама@instr ? день@acc (author: pasha): 
-когда (author: andreas): 
+когда вы@nom закрывать@2pl магазин@acc ? (author: andreas): 
 вчера доктор@nom не работать@pastm (author: pasha): 
 я@nom не знать@pastm что@acc я@dat делать@inf (author: pasha): 
 мальчик@nom уже читать@pastm этот@accf книга@acc (author: pasha): 
@@ -2303,3 +2303,20 @@
 
 я@nom читать@1 меню в ресторан@prep (author: sergei): 
 я@nom не видеть@1 они@acc меню на обед@nom (author: sergei): 
+вчера он@nom быть@pastm в магазин@prep (author: andreas): 
+когда вы@nom дарить@2pl подарок@accpl мама@dat ? (author: pasha): 
+когда работать@3 магазин@nom ? (author: pasha): 
+когда открытый@shortf библиотека@nom ? (author: pasha): 
+я@nom никогда не быть@pastm в владивосток@prep (author: pasha): 
+я@nom никогда не есть@pastm борщ@acc (author: pasha): 
+она@nom никогда не жить@pastf в центр@prep владивосток@gen (author: pasha): 
+я@nom никогда не жить@pastf на улица@prep (author: pasha): 
+ты@nom никогда я@gen не понимать@2 (author: pasha): 
+у я@gen никогда не быть@pastn собака@gen (author: pasha): 
+я@nom никогда не есть@pastf в дорогой@prepm ресторан@prep (author: pasha): 
+ты@nom никогда не слушать@2 я@gen ! (author: pasha): 
+ты@nom никогда не понимать@2 я@gen ! (author: pasha): 
+
+он@nom никогда не смотреть@3 на она@acc ! (author: pasha): 
+в суббота@acc я@nom не работать@1 (author: pasha): 
+в этот@accf суббота@acc я@nom не работать@pastf (author: pasha): 
