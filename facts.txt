@@ -1,9 +1,9 @@
 тут: here
 это: this (is)
-собак--а: dog, inflect: fem2
+собак--а: dog, inflect: fem2, tag: Animals
 grammar: fem1@nom
 кошк--а: cat, inflect: fem2
-бел--ый: white, inflect: ыйadj
+бел--ый: white, inflect: ыйadj, tag: Colours
 grammar: adj@f
 чёрн--ый: black, inflect: ыйadj
 где: where
@@ -53,7 +53,6 @@ grammar: fem3@acc
 --кто: who, inflect: -кто
 grammar: -кто@nom
 слыши--<ать: n/a, inflect: -слышать
-grammar: v@1
 мам--а: Mom, inflect: -мама
 люби--ть: love, inflect: -любить
 grammar: -я@acc
@@ -119,7 +118,7 @@ grammar: fem3@instr
 grammar: masc1@instr
 grammar: fem1@instr
 стул--: chair, inflect: masc1
-за: behind
+за: behind, tag: Colours
 штор--а: curtain, inflect: fem1
 grammar: fem3@pl
 двер--ь: door, inflect: fem4
@@ -170,7 +169,7 @@ grammar: -друг@pl
 grammar: -жить@3pl
 grammar: n@accpl
 разн--ый: n/a, inflect: ыйadj
-плох--ой: bad, inflect: ойadj2
+плох--ой: bad, inflect: ойadj2, tag: sleep, tag: weather
 grammar: yo-yosh-yot@1pl
 grammar: yo-yosh-yot@3
 grammar: ыйadj@accinanpl
@@ -250,7 +249,6 @@ grammar: -ты@gen
 сво--й: his/min (refers to the subject), inflect: -свой
 grammar: -она@gen
 grammar: -друг@datpl
-grammar: -дарить@1
 grammar: -давать@1
 интересн--ый: n/a, inflect: ыйadj
 мног--о: many, inflect: -много
@@ -296,7 +294,7 @@ grammar: -сколько@pl
 сумк--а: n/a, inflect: femka
 пожалуйста: n/a
 скаж--<зать: n/a, inflect: -сказать
-grammar: v@imprpl
+grammar: v@imprpl, tag: imperative
 покаж--<зать: n/a, inflect: -показать
 да--ть: n/a, inflect: -дать
 grammar: masc1@accpl
@@ -374,7 +372,7 @@ grammar: it-im-ite@1pl
 её: her / their
 grammar: -ребёнок@prep
 grammar: -ребёнок@pl
-прекрасн--ый: n/a, inflect: ыйadj
+прекрасн--ый: n/a, inflect: ыйadj, tag: weather
 grammar: y-esh-et@1pl
 пакет--: n/a, inflect: masc1
 grammar: -ребёнок@genpl
@@ -448,7 +446,7 @@ grammar: neuie@prep
 немног--о: some, inflect: -много
 жизн--ь: life, inflect: fem3
 глаз--: eye, inflect: masc2
-перв--ый: first, inflect: ыйadj
+перв--ый: first, inflect: ыйadj, tag: order
 grammar: n@instrpl
 учи--ть: undefined, inflect: -учить
 ваш--: undefined, inflect: -наш
@@ -460,7 +458,6 @@ grammar: -кто@acc
 grammar: -ребёнок@instr
 врач--: n/a, inflect: -врач
 сообщени--е: n/a, inflect: neuie
-grammar: it-im-ite@3pl
 grammar: -мочь@3pl
 grammar: ыйadj@instrm
 grammar: -хороший@instrf
@@ -478,7 +475,7 @@ grammar: -он@prep
 ли: n/a
 при: n/a
 надо: n/a
-ид--ти: n/a, inflect: -идти
+ид--ти: n/a, inflect: -идти, tag: motion
 теперь: n/a
 тоже: n/a
 стои--<ять: n/a, inflect: -стоять
@@ -493,7 +490,7 @@ grammar: -он@prep
 сторон--а: n/a, inflect: fem1
 просто: n/a
 ног--а: n/a, inflect: fem2
-последн--ий: n/a, inflect: ийadj
+последн--ий: n/a, inflect: ийadj, tag: order
 име--ть: n/a, inflect: -встречать
 вдруг: n/a
 над: n/a
@@ -507,7 +504,7 @@ grammar: -показать@impr
 хотя: n/a
 втор--ой: n/a, inflect: -второй
 куда: n/a
-ед--<хать: n/a, inflect: -ехать
+ед--<хать: n/a, inflect: -ехать, tag: motion
 grammar: -кто@gen
 grammar: -вы@gen
 grammar: -они@dat
@@ -543,6 +540,35 @@ grammar: -борщ@acc
 росси--я: n/a, inflect: -россия
 grammar: -год@genpl
 grammar: -много@pl
-закончи--ть: n/a, inflect: -учить
+закончи--ть: n/a, inflect: -учить, tag: start-end
 спи--<ать: n/a, inflect: -спать, tag: sleep
 встан--<ть: n/a, inflect: -встать, tag: sleep
+ноч--ь: n/a, inflect: -ночь, tag: sleep
+рано: n/a, tag: sleep
+поздно: n/a, tag: sleep
+дожд--ь: n/a, inflect: -словарь, tag: weather
+небес--<о: n/a, inflect: -небо, tag: weather
+солнц--е: n/a, inflect: -солнце, tag: weather
+голуб--ой: n/a, inflect: -второй, tag: weather
+grammar: -идти@pastm, tag: weather
+град--: n/a, inflect: masc1, tag: weather
+grammar: -нравиться@3pl
+встреча--ться: n/a, inflect: -встречаться
+grammar: -смотреть@inf
+grammar: fem3@preppl
+прошлый: n/a, tag: past, tag: order
+следующий: n/a, tag: order
+grammar: it-im-ite@impr, tag: imperative
+ходи--ть: n/a, inflect: -ходить, tag: motion
+езди--ть: n/a, inflect: -ходить, tag: motion
+води--ть: n/a, inflect: -ходить, tag: motion
+входи--ть: n/a, inflect: -ходить, tag: motion
+войд--<ти: n/a, inflect: -войти, tag: motion
+выходи--ть: n/a, inflect: -ходить, tag: motion
+выйд--<ти: n/a, inflect: -выйти, tag: motion
+приходи--ть: n/a, inflect: -ходить, tag: motion
+прийти: n/a, tag: motion
+начина--ть: n/a, inflect: -встречать, tag: start-end
+начн--<ать: n/a, inflect: -начать, tag: start-end
+продолжа--ть: n/a, inflect: -встречать, tag: start-end
+повторя--ть: n/a, inflect: -встречать, tag: start-end

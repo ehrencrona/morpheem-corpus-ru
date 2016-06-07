@@ -8,24 +8,24 @@
 на площадь@prep собака@nom: A dog is on the square
 в библиотека@prep собака@nom: 
 в квартира@prep собака@nom: There is a dog in the flat
-на библиотека@prep собака@nom: There is a dog in the library
+
 он@nom тут: He is here.
 я@nom тут: I am here.
 он@nom в квартира@prep: He's in the flat.
 я@nom в квартира@prep: I'm in the flat.
 телефон@nom в квартира@prep: The phone is in the flat.
-он@nom на библиотека@prep: He's in the library.
-я@nom на библиотека@prep: I'm in the library.
+
+я@nom в библиотека@prep: 
 собака@nom в квартира@prep: A dog is in the flat.
 кошка@nom в квартира@prep: A cat is in the flat.
 мышь@nom в квартира@prep: A mouse is in the flat.
 что@nom в квартира@prep ?: What is in the flat ?
 где собака@nom ?: 
 где кошка@nom: Where is the cat?
-где лошадь@nom: 
-где мышь@nom: Where is the mouse?
-где улица@nom: Where is the street?
-где квартира@nom: Where is the flat?
+где лошадь@nom ?: 
+где мышь@nom ?: 
+где улица@nom ?: 
+где квартира@nom ?: 
 что@nom это ?: What is this?
 это собака@nom: This is a dog.
 это кошка@nom: This is a cat.
@@ -41,7 +41,7 @@
 где мой@f собака@nom ?: 
 где мой@f квартира@nom ?: Where is my flat?
 где он@nom ?: Where is he?
-я@nom где ?: Where am I?
+где я@nom ?: 
 я@nom друг@nom: I am a friend.
 он@nom мой@m друг@nom: He is my friend.
 он@nom друг@nom: He is a friend.
@@ -81,23 +81,23 @@
 ты@nom слышать@2 машина@acc ?: Do you hear the car?
 что@nom ты@nom видеть@2 ?: What do you see?
 что@nom ты@nom слышать@2 ?: What do you hear?
-кто@nom ты@nom видеть@2 ?: Who do you see?
+
 кто@nom ты@nom встречать@2 ?: Who do you meet?
-кто@nom ты@nom слышать@2 ?: Who do you hear?
+
 ты@nom видеть@2 магазин@acc ?: Do you see the shop?
 ты@nom видеть@2 машина@acc ?: Do you see the car?
 ты@nom видеть@2 он@acc ?: Do you see him?
 ты@nom видеть@2 она@acc ?: Do you see her?
 что@nom он@nom видеть@3 ?: What does he see?
 что@nom он@nom слышать@3 ?: What does he hear?
-кто@nom он@nom видеть@3 ?: Who does he see?
-кто@nom он@nom встречать@3 ?: Who does he meet?
-кто@nom он@nom слышать@3 ?: Who does he hear?
+
+
+
 что@nom видеть@3 он@nom ?: What does he see?
 что@nom видеть@3 собака@nom ?: What does the dog see?
-кто@nom видеть@3 он@nom ?: Whо does he see?
-кто@nom видеть@3 собака@nom ?: Whо does the dog see?
-кто@nom видеть@3 лошадь@nom ?: Whо does the horse see?
+
+
+
 кто@nom видеть@3 он@acc ?: Whо sees him?
 кто@nom видеть@3 собака@acc ?: Whо sees the dog?
 кто@nom видеть@3 кошка@acc ?: Whо sees the cat?
@@ -143,7 +143,7 @@
 я@nom работать@1 в библиотека@prep: I work at the library.
 я@nom работать@1 в университет@prep: I work at the university.
 он@nom работать@3 в библиотека@prep: He works at the library.
-он@nom работать@3 в университет@prep: He works at the university.
+
 я@nom сидеть@1 на улица@prep: I sit on the street.
 я@nom сидеть@1 на площадь@prep: I sit on the square.
 я@nom сидеть@1 на газон@prep: I sit on the lawn.
@@ -161,10 +161,10 @@
 ребёнок@nom сидеть@3 в библиотека@prep: He sits at the library.
 ребёнок@nom сидеть@3 в университет@prep: He sits at the university.
 в библиотека@prep мышь@nom: A mouse is in the library
-в университет@prep мышь@nom: A mouse is in the university
-я@nom работать@1 в библиотека@prep: 
-я@nom работать@1 в университет@prep: I work at the university
-он@nom работать@3 в библиотека@prep: He works at the library
+
+
+
+
 он@nom работать@3 в университет@prep: He works at the university
 собака@nom играть@3 на улица@prep: The dog plays on the street
 собака@nom играть@3 на площадь@prep: The dog plays on the square
@@ -250,7 +250,7 @@
 тут чёрный@f машина@nom: There is a black car here.
 тут белый@f лошадь@gen: 
 тут белый@f мышь@nom: There is a white mouse here.
-тут маленький@f лошадь@gen: 
+тут маленький@f лошадь@nom: 
 тут маленький@f мышь@nom: There is a small mouse here.
 тут большой@f лошадь@nom: There is a big horse here.
 тут большой@f мышь@nom: There is a big mouse here.
@@ -316,7 +316,7 @@
 машина@nom на улица@prep: The car is on the street
 я@nom в магазин@prep: I am at the shop
 я@nom в университет@prep: I am at the university
-я@nom в библиотека@prep: I am at the library
+
 я@nom на газон@prep: I am on the lawn
 я@nom на улица@prep: I am on the street
 он@nom в магазин@prep: He is at the shop
@@ -327,7 +327,7 @@
 он@nom в центр@prep: He is in the city center
 магазин@nom в центр@prep: The shop is in the center.
 университет@nom в центр@prep: The university is in the center.
-в университет@prep библиотека@nom: There is a library at the university.
+библиотека@nom в университет@prep: 
 в университет@prep хороший@f библиотека@nom: There is a good library at the university.
 это маленький@m университет@nom: It is a small university
 это маленький@m магазин@nom: It is a small shop
@@ -358,11 +358,11 @@
 я@nom любить@1 ребёнок@acc: I love the child
 мама@acc любить@3 я@acc: Mom loves me
 мама@acc любить@3 ребёнок@acc: Mom loves the child
-кто@nom он@nom любить@3 ?: Who does he love?
-кто@nom она@nom любить@3 ?: Who does she love?
+
+
 что@nom он@nom любить@3 ?: What does he love?
 что@nom она@nom любить@3 ?: What does she love?
-кто@nom ты@nom любить@2 ?: Who do you love?
+
 что@nom ты@nom любить@2 ?: What do you love?
 ребёнок@nom видеть@3 лошадь@acc: 
 это хороший@f квартира@nom: This is a good flat.
@@ -392,7 +392,7 @@
 я@nom читать@1 твой@accf статья@acc: I read your article.
 я@nom читать@1 твой@accf книга@acc: I read your book.
 какой@accinanm твой@accinanm мышь@acc ?: Which is your mouse?
-я@nom видеть@1 большой@accinanm человек@acc: I see a big person.
+я@nom видеть@1 большой@genm человек@acc: 
 я@nom видеть@1 твой@accf собака@acc: I see your dog.
 где твой@pl собака@pl: Where are your dogs?
 я@nom любить@1 твой@accinanm телефон@acc: I love your phone.
@@ -425,11 +425,11 @@
 телефон@nom лежать@3 на кровать@prep: The phone is lying on the bed.
 телефон@nom лежать@3 на стол@prep: The phone is lying on the table.
 телефон@nom лежать@3 на стул@prep: The phone is lying on the chair.
-кто@nom на кровать@prep: Who is on the bed?
-кто@nom на стол@prep: Who is on the table?
-кто@nom сидеть@3 на стул@prep: 
-что@nom под кровать@instr: What is under the bed?
-что@nom под стол@instr: What is under the table?
+кто@nom на кровать@prep ?: 
+кто@nom на стол@prep ?: 
+кто@nom сидеть@3 на стул@prep ?: 
+что@nom под кровать@instr ?: 
+что@nom под стол@instr ?: 
 что@nom под стул@instr: What is under the chair?
 он@nom лежать@3 под дерево@instr в парк@prep: He lies under a tree in the park.
 на стол@prep открытый@f газета@nom: There is an open newspaper lying on the table.
@@ -438,7 +438,7 @@
 под квартира@instr магазин@nom: Тhere is a shop under the apartment.
 она@nom сидеть@3 на стул@prep: She is sitting in the chair.
 я@nom видеть@1 открытый@accf дверь@acc: I see an open door.
-где открытый@m магазин@nom: Where is there an open shop?
+где открытый@m магазин@nom ?: 
 на улица@prep открытый@f машина@nom: Тhere is an unlocked car on the street.
 кошка@nom за штора@instr: The cat is behind the curtain.
 ребёнок@nom за штора@instr: The child is behind the curtain.
@@ -452,7 +452,7 @@
 в квартира@prep чёрный@f штора@nom: The apartment has a black curtain.
 в машина@prep штора@pl: The car has curtains.
 в квартира@prep открытый@accinanpl штора@pl: The apartment has open curtains.
-я@nom он@acc встречать@1 в дверь@prep: I meet him at the door.
+я@nom он@acc встречать@1 в дверь@preppl: 
 мой@m друг@nom очень открытый@m человек@nom: My friend is a very outgoing person.
 за стол@instr стул@nom: There is a chair behind the table.
 на стол@prep газета@pl: There are magazines on the table.
@@ -564,7 +564,7 @@
 в центр@prep магазин@pl открытый@pl: 
 она@nom работать@3 в центр@prep: 
 журнал@nom дорогой@m: 
-какой@m твой@m журнал@nom: 
+какой@m твой@m журнал@nom ?: 
 это хороший@m журнал@nom: 
 я@nom любить@1 читать@inf журнал@nom: 
 в квартира@prep новый@accinanpl штора@pl: 
@@ -579,43 +579,43 @@
 он@nom видеть@3 дорогой@accf машина@acc: 
 в центр@prep дорогой@accinanpl магазин@accpl: 
 большой@f машина@nom дорогой@f: 
-какой@accinanm человек@acc ты@nom любить@2: 
-где твой@m свитер@nom: 
+какой@genm человек@acc ты@nom любить@2 ?: 
+где твой@m свитер@nom ?: 
 это дорогой@f машина@nom: 
 я@nom сегодня работать@1: 
 вчера он@nom быть@pastm в магазин@prep: 
 где ты@nom быть@pastm вчера ?: 
 какой@m вчера быть@pastm день@nom ?: 
-в какой@m день@nom ты@nom работать@2: 
+в какой@m день@nom ты@nom работать@2 ?: 
 она@nom делать@3 упражнение@accpl каждый@accinanm день@acc: 
 тут твой@m стул@nom: 
 это твой@f машина@nom: 
 ты@nom любить@2 маленький@accinanpl собака@pl: 
-какой@m свитер@acc ты@nom любить@2: 
+какой@m свитер@acc ты@nom любить@2 ?: 
 какой@accinanpl магазин@accpl ты@nom любить@2: 
 ты@nom любить@2 дорогой@accinanpl машина@pl: 
 что@nom ты@nom писать@2: 
 ты@nom писать@2 письмо@acc: 
-почему ты@nom лежать@2 под стол@instr: 
-почему ты@nom лежать@2 на кровать@prep: 
-почему ты@nom сидеть@2 здесь: 
+почему ты@nom лежать@2 под стол@instr ?: 
+почему ты@nom лежать@2 на кровать@prep ?: 
+почему ты@nom сидеть@2 здесь ?: 
 почему работать@2 сегодня: 
-почему ты@nom не в квартира@prep: 
-почему он@nom работать@3: 
+почему ты@nom не в квартира@prep ?: 
+почему он@nom работать@3 ?: 
 почему ты@nom любить@2 работать@inf: 
-почему ты@nom я@acc не любить@2: 
-почему ты@nom не сидеть@2: 
-почему ты@nom на кровать@prep: 
+почему ты@nom я@acc не любить@2 ?: 
+почему ты@nom не сидеть@2 ?: 
+почему ты@nom на кровать@prep ?: 
 почему ты@nom она@acc не встречать@2: 
 почему сегодня: 
-почему тут: 
-почему он@nom здесь: 
-здесь не сидеть@inf: 
+почему тут ?: 
+почему он@nom здесь ?: 
+здесь нельзя сидеть@inf: 
 здесь не играть@inf: 
 она@nom работать@3 здесь: 
-здесь погода@nom хороший@f: 
+здесь хороший@f погода@nom: 
 профессор@nom читать@3 газета@acc здесь: 
-сидеть@2 здесь: 
+ты@nom сидеть@2 здесь: 
 центр@nom здесь: 
 университет@nom здесь: 
 она@nom не студент@nom: 
@@ -650,12 +650,12 @@
 кошка@nom в комната@prep: A cat is in the room.
 мышь@nom в комната@prep: A mouse is in the room.
 что@nom в комната@prep ?: What is in the room ?
-где комната@nom: Where is the room?
+где комната@nom ?: 
 это мой@f комната@nom: This is my room.
 где мой@f комната@nom ?: Where is my room?
 это хороший@f комната@nom: This is a good room.
 я@nom любить@1 твой@accf комната@acc: I love your room.
-я@nom любить@1 твой@accf новый@accf квартира@acc: I love your new room.
+
 в комната@prep белый@f штора@nom: The room has a white curtain.
 в комната@prep чёрный@f штора@nom: The room has a black curtain.
 в комната@prep открытый@accinanpl штора@pl: The room has open curtains.
@@ -670,7 +670,7 @@
 в комната@prep большой@accinanpl окно@pl: The room has big windows.
 мой@f комната@nom в центр@prep: 
 в комната@prep новый@accinanpl штора@pl: 
-почему ты@nom не в комната@prep: 
+почему ты@nom не в комната@prep ?: 
 у я@gen хороший@f комната@nom: 
 у я@gen нет большой@genf комната@gen: 
 это свитер@nom друг@gen: 
@@ -698,11 +698,11 @@
 какой@pl людь@pl ты@nom встречать@2: 
 почему ты@nom не писать@2 книга@acc: 
 у я@acc много@pl друг@genpl: 
-где открытый@m магазин@nom: Where is there an open shop?
+
 я@nom любить@1 открытый@accanpl людь@accpl: 
 я@nom открывать@1 книга@acc: I open the apartment.
-почему закрывать@2 дверь@acc: 
-почему ты@nom в библиотека@prep: 
+почему ты@nom закрывать@2 дверь@acc ?: 
+почему ты@nom в библиотека@prep ?: 
 почему твой@pl друг@pl студент@pl: 
 я@nom тут гулять@1: 
 он@nom не профессор@nom: 
@@ -803,7 +803,7 @@
 почему у ты@gen нет друг@genpl: 
 почему играть@2 на улица@prep: 
 почему не встречать@2 мама@acc: 
-почему кошка@nom в комната@prep: 
+почему кошка@nom в комната@prep ?: 
 он@nom открывать@3 магазин@acc: 
 у профессор@nom много@pl студент@genpl: 
 я@nom встречать@1 новый@accanm профессор@acc: 
@@ -826,22 +826,22 @@
 ты@nom знать@2 новый@accanm профессор@acc: 
 он@nom знать@3 где покупать@inf отличный@accinanpl планшет@accpl: 
 он@nom знать@3 где я@nom жить@1: 
-кто@nom знать@3 где мой@m телефон@nom: 
-кто@nom вы@nom: 
-что@nom вы@nom читать@2pl: 
+кто@nom знать@3 где мой@m телефон@nom ?: 
+кто@nom вы@nom ?: 
+что@nom вы@nom читать@2pl ?: 
 что@nom вы@nom видеть@2pl ?: 
 вы@nom видеть@2pl машина@acc ?: 
 какой@accinanm город@acc вы@nom любить@2pl: 
-в какой@accinanm день@acc вы@nom работать@2pl: 
+в какой@accinanm день@acc вы@nom работать@2pl ?: 
 вы@nom знать@2pl где магазин@nom: 
 вы@nom знать@2pl мой@accanm профессор@acc: 
-почему вы@nom сидеть@2pl здесь: 
+почему вы@nom сидеть@2pl здесь ?: 
 вы@nom сидеть@2pl на стул@prep: 
 вы@nom не любить@2pl кошка@accpl: 
 вы@nom не любить@2pl борщ@acc: 
-кто@nom вы@nom любить@2pl ?: 
+
 что@nom вы@nom любить@2pl ?: 
-почему вы@nom я@acc не любить@2pl: 
+почему вы@nom я@acc не любить@2pl ?: 
 профессор@nom закрывать@3 книга@acc: 
 он@nom закрывать@3 магазин@acc: 
 я@nom закрывать@1 дверь@acc: I close the door.
@@ -886,9 +886,9 @@
 в ресторан@prep он@nom есть@3 лошадь@acc: 
 я@nom не есть@1 лошадь@acc: 
 мой@f кошка@nom не есть@3 мышь@accpl: 
-почему вы@nom любить@2pl сидеть@inf в парк@prep: 
-почему вы@nom любить@2pl этот@accinanm ресторан@acc: 
-где хороший@m ресторан@nom: 
+почему вы@nom любить@2pl сидеть@inf в парк@prep ?: 
+почему вы@nom любить@2pl этот@accinanm ресторан@acc ?: 
+где хороший@m ресторан@nom ?: 
 ты@nom знать@2 хороший@accinanm ресторан@acc: 
 это отличный@m ресторан@nom: 
 я@nom сейчас в ресторан@prep: 
@@ -914,7 +914,7 @@
 он@nom большой@m как лошадь@nom: 
 я@nom слышать@1 как она@nom закрывать@3 дверь@acc: 
 собака@nom большой@f как лошадь@nom: 
-я@nom не любить@1 этот@f собака@nom: 
+я@nom не любить@1 этот@accf собака@acc: 
 этот@f книга@nom не дорогой@f: 
 этот@f комната@nom слишком маленький@f: 
 профессор@nom читать@3 этот@accinanpl книга@accpl: 
@@ -931,7 +931,7 @@
 сегодня трудный@m день@nom: 
 он@nom трудный@m ребёнок@nom: 
 он@nom часто трудный@m ребёнок@nom: 
-сегодня трудный@m день@nom в работа@prep: 
+сегодня трудный@m день@nom на работа@prep: 
 она@nom читать@3 очень трудный@accinanpl книга@pl: 
 у ты@gen какой@f работа@nom ?: 
 он@nom сейчас в работа@prep: 
@@ -1089,8 +1089,8 @@
 я@nom возвращать@1 мой@accinanm свитер@acc в магазин@acc: 
 вы@nom возвращать@2pl мой@accinanm свитер@acc в магазин@acc: 
 это тут: 
-какой@f в комната@prep штора@nom: 
-открытый@m: 
+какой@f в комната@prep штора@nom ?: 
+
 ты@nom читать@2 открытый@m журнал@nom: 
 это новый@f статья@nom в газета@prep: 
 это хороший@f статья@nom: 
@@ -1230,7 +1230,7 @@
 где мой@f статья@nom в журнал@prep ?: 
 в газета@prep статья@nom профессор@gen: 
 почему ты@nom не красивый@m: 
-почему здесь: 
+почему здесь ?: 
 я@nom встречать@1 он@acc: 
 я@nom он@acc слышать@1: 
 можно мы@dat открывать@inf дверь@acc: 
@@ -1796,13 +1796,13 @@
 я@nom любить@1 работать@inf (author: andreas): 
 я@nom любить@1 этот@accf улица@acc (author: andreas): 
 кошка@nom – чёрный@f (author: andreas): 
-мышь@nom – маленький@m (author: andreas): 
-свитер@nom – маленький@f (author: andreas): 
+мышь@nom – маленький@f (author: andreas): 
+свитер@nom – маленький@m (author: andreas): 
 машина@nom – маленький@f (author: andreas): 
-лошадь@nom – маленький@m (author: andreas): 
+лошадь@nom – маленький@f (author: andreas): 
 университет@nom – маленький@m (author: andreas): 
 университет@nom – хороший@m (author: andreas): 
-я@nom тут ты@acc слышать@1 (author: andreas): 
+я@nom ты@acc слышать@1 тут (author: andreas): 
 я@nom тут слышать@1 мама@acc (author: andreas): 
 я@nom любить@1 играть@inf в комната@prep (author: andreas): 
 они@nom любить@3pl мама@acc (author: andreas): 
@@ -1813,17 +1813,17 @@
 мой@pl родитель@pl любить@3pl кошка@acc (author: andreas): 
 кошка@accpl любить@3pl мама@acc (author: andreas): 
 профессор@pl любить@3pl ты@acc (author: andreas): 
-кто@nom ты@nom любить@2 ? (author: andreas): 
+
 мой@pl родитель@pl любить@3pl собака@acc (author: andreas): 
-ребёнок@nom сидеть@3 на улица@prep (author: andreas): 
-ребёнок@nom играть@3 на парк@prep (author: andreas): 
+
+ребёнок@nom играть@3 в парк@prep (author: andreas): 
 я@nom слышать@1 ребёнок@acc (author: andreas): 
 я@nom играть@1 с ребёнок@instr (author: andreas): 
 я@nom видеть@1 маленький@accanm ребёнок@acc (author: andreas): 
 в парк@prep девочка@nom (author: andreas): 
-девочка@nom на сидеть@3 улица@prep (author: andreas): 
+девочка@nom сидеть@3 на улица@prep (author: andreas): 
 девочка@nom играть@3 на газон@prep (author: andreas): 
-девочка@nom сидеть@3 на парк@prep (author: andreas): 
+девочка@nom сидеть@3 в парк@prep (author: andreas): 
 я@nom видеть@1 девочка@acc (author: andreas): 
 девочка@nom играть@3 (author: andreas): 
 я@nom играть@1 с девочка@instr (author: andreas): 
@@ -2036,7 +2036,7 @@
 она@nom слышать@3 собака@acc дома (author: sergei): 
 он@nom видеть@3 кошка@acc дома (author: sergei): 
 он@nom видеть@3 она@gen планшет@nom дома (author: sergei): 
-он@nom читать@3 книга@acc (author: sergei): 
+
 он@nom читать@3 книга@acc дома (author: sergei): 
 мальчик@nom встречать@3 девочка@acc дома (author: sergei): 
 собака@nom встречать@3 мальчик@acc дома (author: sergei): 
@@ -2146,8 +2146,8 @@
 маленький@datpl деть@datpl нельзя есть@inf яйцо@accpl (author: pasha): 
 яйцо@pl лежать@3pl на стол@prep . мочь@2 они@acc есть@inf на завтрак@acc (author: pasha): 
 где в этот@prepm магазин@prep яйцо@pl ? (author: pasha): 
-я@dat очень нравиться@inf яйцо@pl (author: andreas): 
-я@dat очень нравиться@inf курить@inf вечером (author: andreas): 
+я@dat очень нравиться@3pl яйцо@pl (author: andreas): 
+я@dat очень нравиться@3 курить@inf вечером (author: andreas): 
 показать@imprpl я@dat , пожалуйста , этот@accf белый@accf сумка@acc (author: pasha): 
 дать@imprpl я@dat , пожалуйста , мой@accf новый@accf сумка@acc (author: pasha): 
 твой@m телефон@nom в сумка@prep ? (author: andreas): 
@@ -2161,7 +2161,7 @@
 закрывать@imprpl окно@acc , пожалуйста (author: andreas): 
 закрывать@imprpl дверь@acc , пожалуйста (author: andreas): 
 сказать@imprpl , пожалуйста , где центр@prep город@gen ? (author: andreas): 
-ты@dat нравиться@inf мой@f новый@f сумка@nom ? (author: andreas): 
+ты@dat нравиться@3 мой@f новый@f сумка@nom ? (author: andreas): 
 зачем ты@dat такой@f большой@f сумка@nom ? (author: pasha): 
 показать@imprpl я@dat , пожалуйста , свой@accf квартира@acc в центр@prep (author: pasha): 
 показать@imprpl мы@dat где можно гулять@inf с собака@instr (author: pasha): 
@@ -2338,3 +2338,45 @@
 она@nom уже купить@pastf новый@accf квартира@acc ? (author: pasha): 
 ты@nom уже закончить@pastm ? (author: pasha): 
 ты@nom уже студент@nom ? (author: pasha): 
+сколько@pl у ты@acc деть@genpl ? (author: sergei): 
+сколько@pl ты@nom уже лежать@2 тут ? (author: sergei): 
+сколько@pl дверь@genpl в твой@prepm дом@prep ? (author: sergei): 
+сколько@pl мы@dat нужный@adv стул@genpl ? (author: sergei): 
+сколько@pl он@nom работать@pastm на этот@prepf работа@prep ? (author: sergei): 
+я@dat нравиться@3 твой@m новый@m дом@nom (author: sergei): 
+он@dat нравиться@3 жить@inf на этот@prepf улица@prep (author: sergei): 
+это маленький@f школа@nom (author: sergei): 
+это хороший@f школа@nom (author: sergei): 
+сегодня отличный@m день@nom , я@nom гулять@1 на улица@prep (author: sergei): 
+кто@nom твой@pl родитель@pl ? (author: sergei): 
+я@nom работать@1 на твой@accanpl родитель@genpl (author: sergei): 
+это хороший@f школа@nom ? (author: andreas): 
+я@nom в школа@prep (author: andreas): 
+она@nom в университет@prep (author: andreas): 
+где ты@nom жить@2 ? (author: sergei): 
+почему ты@nom тут жить@2 ? (author: sergei): 
+твой@pl друг@pl жить@3pl тут (author: sergei): 
+этот@m фильм@nom ты@nom видеть@2 не первый@m раз@genpl (author: sergei): 
+ты@nom купить@2 новый@m фильм@nom (author: sergei): 
+он@nom много@m работать@3 в офис@prep (author: sergei): 
+ты@nom слишком много@m писать@2 в школа@dat (author: sergei): 
+у ты@gen много@m штора@genpl в дом@prep (author: sergei): 
+ты@nom читать@2 много@m новый@m книга@genpl (author: sergei): 
+она@nom любить@3 много@m гулять@inf на улица@prep (author: sergei): 
+в город@prep много@m собака@genpl на улица@preppl (author: sergei): 
+вы@nom одалживать@2pl не много@m еда@gen друг@pl (author: sergei): 
+я@nom плохой@shortn спать@1 , потому_что много@m знать@1 (author: sergei): 
+нельзя много@m смотреть@inf телевизор@nom (author: sergei): 
+много@m день@genpl он@nom жить@3 в этот@prepm дом@prep (author: sergei): 
+я@nom не смотреть@pastm этот@m фильм@nom (author: sergei): 
+мы@nom дарить@1pl он@dat новый@m фильм@acc (author: sergei): 
+ты@nom смотреть@2 хороший@m фильм@nom на кровать@prep (author: sergei): 
+в школа@prep играть@3 хороший@f музыка@nom (author: sergei): 
+он@nom дарить@3 она@dat только свитер@pl (author: sergei): 
+только утром закрывать@3pl дверь@dat в этот@prepn дом@prep (author: sergei): 
+это собака@nom ? (author: sergei): 
+это чёрный@f лошадь@nom ? (author: sergei): 
+он@nom в школа@prep (author: sergei): 
+собака@nom в школа@prep (author: sergei): 
+кошка@nom в школа@prep (author: sergei): 
+в школа@prep мышь@nom (author: sergei): 
