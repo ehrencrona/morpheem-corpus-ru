@@ -72,6 +72,7 @@ grammar: -она@nom
 стать--я: article, inflect: -статья
 grammar: -статья@nom
 газет--а: newspaper, inflect: fem1
+grammar: -статья@acc
 журнал--: magazine, inflect: masc1
 grammar: masc1@acc
 встреча--ть: meet, inflect: -встречать
@@ -115,10 +116,10 @@ grammar: ыйadj@accinanm
 кроват--ь: bed, inflect: fem4, tag: sleep
 лежи--<ать: lie, inflect: -лежать
 под: under, tag: preposition
-grammar: fem3@instr
+grammar: fem3@instr, tag: instrumental
 стол--: table, inflect: masc1
-grammar: masc1@instr
-grammar: fem1@instr
+grammar: masc1@instr, tag: instrumental
+grammar: fem1@instr, tag: instrumental
 стул--: chair, inflect: masc1
 за: behind, tag: colour, tag: preposition
 штор--а: curtain, inflect: fem1
@@ -210,7 +211,7 @@ grammar: fem2@accpl
 grammar: fem1@dat, tag: dative
 grammar: -ты@dat, tag: dative
 хоч--<теть: n/a, inflect: -хотеть
-с: with, tag: preposition
+с: with, tag: preposition, tag: instrumental
 интернет--: n/a, inflect: masc1
 радио: radio
 кажд--ый: n/a, inflect: ыйadj
@@ -274,17 +275,18 @@ grammar: femka@genpl
 вчера: yesterday, tag: past, tag: time
 никогда: n/a, tag: past
 суббот--а: n/a, inflect: fem1, tag: past, tag: sleep, tag: day-of-week
-понедельник--: n/a, inflect: masc2, tag: past, tag: day-of-week
-уже: already, tag: past
-grammar: v@pastf, tag: past
-grammar: v@pastpl, tag: past
-grammar: -год@prep, tag: past
-прошл--ый: n/a, inflect: ыйadj, tag: past, tag: order, tag: past
-недел--я: n/a, inflect: -неделя, tag: time, tag: past
-год--: year, inflect: -год, tag: time
-grammar: -жить@pastm, tag: past
 grammar: -быть@pastm, tag: past
 grammar: v@pastm, tag: past
+понедельник--: n/a, inflect: masc2, tag: past, tag: day-of-week
+прошл--ый: n/a, inflect: ыйadj, tag: past, tag: order, tag: past
+недел--я: n/a, inflect: -неделя, tag: time, tag: past
+уже: already, tag: past
+grammar: v@pastf, tag: past
+grammar: v@pastn, tag: past
+grammar: v@pastpl, tag: past
+grammar: -год@prep, tag: past
+год--: year, inflect: -год, tag: time
+grammar: -жить@pastm, tag: past, tag: instrumental
 grammar: -есть@inf
 --есть: eat, inflect: -есть
 grammar: -есть@3
@@ -387,7 +389,7 @@ grammar: -ребёнок@genpl
 холодн--ый: n/a, inflect: ыйadj
 grammar: -ребёнок@preppl
 grammar: -давать@inf
-grammar: -друг@instrpl
+grammar: -друг@instrpl, tag: instrumental
 по: in/on, tag: preposition
 grammar: -давать@3pl
 вечер--: n/a, inflect: masc3, tag: time
@@ -453,7 +455,7 @@ grammar: neuie@prep
 жизн--ь: life, inflect: fem3
 глаз--: eye, inflect: masc2
 перв--ый: first, inflect: ыйadj, tag: order
-grammar: n@instrpl
+grammar: n@instrpl, tag: instrumental
 учи--ть: undefined, inflect: -учить
 ваш--: undefined, inflect: -наш
 наш--: undefined, inflect: -наш
@@ -461,12 +463,12 @@ grammar: -наш@prepf
 grammar: -кто@dat
 grammar: -наш@pl
 grammar: -кто@acc
-grammar: -ребёнок@instr
+grammar: -ребёнок@instr, tag: instrumental
 врач--: n/a, inflect: -врач, tag: profession
 сообщени--е: n/a, inflect: neuie
 grammar: -мочь@3pl
-grammar: ыйadj@instrm
-grammar: -хороший@instrf
+grammar: ыйadj@instrm, tag: instrumental
+grammar: -хороший@instrf, tag: instrumental
 морожено--е: n/a, inflect: neuie
 grammar: -вы@acc
 grammar: -ключ@genpl
@@ -526,8 +528,7 @@ grammar: -наш@m
 grammar: -наш@accf
 откро--<ыть: n/a, inflect: -открыть
 grammar: -наш@datf
-grammar: -наш@instrf
-grammar: v@pastn, tag: past
+grammar: -наш@instrf, tag: instrumental
 grammar: -наш@genm
 grammar: -наш@datm
 grammar: -свой@accinanm
@@ -754,7 +755,20 @@ grammar: it-im-ite@inf
 мор--е: n/a, inflect: -море
 стара--ться: n/a, inflect: -пытаться
 прочита--ть: n/a, inflect: -встречать
-grammar: -люди@instrpl
+grammar: -люди@instrpl, tag: instrumental
 изуча--ть: n/a, inflect: -встречать
 должн--ый: n/a, inflect: ыйadj
-grammar: -статья@acc
+grammar: -весь@accf
+grammar: -парень@nom
+grammar: -родитель@instr, tag: instrumental
+grammar: -наш@instrm, tag: instrumental
+кофе: n/a
+молок--о: n/a, inflect: neu1
+лет--о: n/a, inflect: neu1, tag: season, tag: season, tag: instrumental
+осен--ь: n/a, inflect: fem4, tag: season
+зим--а: n/a, inflect: fem1, tag: instrumental, tag: season
+весн--а: n/a, inflect: -весна, tag: season, tag: instrumental
+grammar: -ходить@1
+grammar: neu1@instr, tag: instrumental
+grammar: -учить@1
+трав--а: n/a, inflect: fem1
