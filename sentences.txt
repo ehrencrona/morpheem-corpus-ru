@@ -6,12 +6,12 @@
 тут телефон@nom: Here is a phone.
 на улица@prep собака@nom: A dog is on the street
 на площадь@prep собака@nom: A dog is on the square
-в библиотека@prep собака@nom: 
+собака@nom в библиотека@prep: 
 в квартира@prep собака@nom: There is a dog in the flat
 
 он@nom тут: He is here.
-я@nom тут: I am here.
-он@nom в квартира@prep: He's in the flat.
+я@nom тут !: 
+он@nom в квартира@prep: 
 я@nom в квартира@prep: I'm in the flat.
 телефон@nom в квартира@prep: The phone is in the flat.
 
@@ -1176,7 +1176,7 @@
 людь@pl сидеть@3 на газон@prep: 
 ты@nom дарить@2 профессор@dat подарок@acc: 
 я@nom он@acc не знать@1: 
-пакет@nom нужный@shortn покупать@inf в магазин@prep: 
+пакет@acc нужный@adv покупать@inf в магазин@prep: 
 мама@dat нужный@shortm шоколад@nom: 
 студент@dat нужный@shortm этот@m журнал@nom: 
 я@dat не нужный@shortm этот@m журнал@nom: 
@@ -1290,7 +1290,7 @@
 я@nom хотеть@1 курить@inf: 
 я@nom не курить@1: 
 он@nom не курить@3: 
-я@dat нужный@shortn курить@inf: 
+я@dat нужно курить@inf: 
 он@nom курить@3 в квартира@prep: 
 он@nom не хотеть@3 машина@acc: 
 он@nom хотеть@inf понимать@inf математика@acc: 
@@ -1306,7 +1306,7 @@
 вы@nom жить@2pl здесь: 
 вы@nom жить@2pl в центр@prep: 
 вы@nom жить@2pl в хороший@prepf квартира@prep: 
-это я@dat: 
+– это я@dat !: 
 она@nom покупать@3 я@dat подарок@accpl: 
 он@nom не помнить@3 математика@nom: 
 он@nom не помнить@3 где машина@nom: 
@@ -1337,7 +1337,7 @@
 этот@n мясо@nom старый@n: 
 студент@nom одалживать@3 стул@acc профессор@dat: 
 в этот@prepm ресторан@prep отличный@n мясо@nom: 
-я@prep не нужный@shortn мясо@nom: 
+я@dat не нужно мясо@nom: 
 здесь мясо@nom очень дорогой@n: 
 друг@nom одалживать@3 свитер@acc маленький@datm ребёнок@dat: 
 твой@pl родитель@pl курить@3pl: 
@@ -1352,18 +1352,18 @@
 у я@gen проблема@nom: 
 профессор@nom любить@3 трудный@accinanpl проблема@accpl: 
 мы@nom жить@1pl на маленький@prepf площадь@prep: 
-я@dat холодный@shortn: 
+я@dat холодный@adv: 
 я@nom любить@1 холодный@accinanm борщ@acc: 
 они@nom есть@3pl в дорогой@preppl ресторан@preppl: 
 кошка@pl есть@3pl мышь@accpl в старый@preppl дом@preppl: 
 на мой@preppl урок@preppl много@pl студент@genpl: 
 в старый@preppl парк@preppl много@pl дерево@genpl: 
-в старый@preppl замок@preppl холодный@shortn: 
+в старый@preppl замок@preppl холодный@adv: 
 в старый@preppl замок@preppl всегда быть@1 библиотека@pl: 
 я@nom любить@1 гулять@inf в старый@preppl парк@preppl: 
 я@nom не любить@1 есть@inf в французский@preppl ресторан@preppl: 
 мама@nom не есть@3 в французский@preppl ресторан@preppl: 
-она@nom покупать@3 я@dat газета@accpl: 
+она@nom покупать@3 мы@dat газета@accpl: 
 профессор@nom давать@3 я@dat урок@acc: 
 она@nom не понимать@3 урок@acc: 
 он@nom есть@3 на урок@prep: 
@@ -1384,7 +1384,7 @@
 машина@nom олигарх@gen длинный@f: 
 длинный@f книга@nom на стул@prep: 
 длинный@f статья@nom в журнал@prep: 
-я@dat нужный@shortn работать@inf: 
+сегодня мы@dat не нужно работать@inf: 
 библиотека@pl одалживать@3pl вы@dat старый@accinanpl книга@accpl: 
 они@nom одалживать@3pl вы@dat скучный@accinanpl фильм@accpl: 
 вы@dat не нужный@shortm этот@m дорогой@m планшет@nom: 
@@ -1400,7 +1400,7 @@
 ты@nom жить@2 на площадь@prep в центр@prep город@gen: 
 ты@nom жить@2 как собака@nom: 
 ты@nom жить@2 как: 
-я@dat скучный@shortn: 
+я@dat скучный@adv: 
 я@nom читать@1 скучный@accf книга@acc: 
 мой@m профессор@nom скучный@m человек@nom: 
 сегодня скучный@m день@nom: 
@@ -1408,7 +1408,7 @@
 я@nom читать@1 скучный@accinanm журнал@acc: 
 я@nom жить@1 в скучный@prepm город@prep: 
 ты@dat скучный@adv: 
-ты@dat скучный@shortn на урок@prep: 
+ты@dat скучный@adv на урок@prep ?: 
 мой@f работа@nom скучный@f: 
 я@nom работать@1 в скучный@prepm офис@prep: 
 каждый@accinanm день@acc я@nom слушать@1 радио: 
@@ -1425,9 +1425,9 @@
 он@nom писать@3 письмо@accpl друг@datpl в интернет@prep: 
 вечер@instr я@nom играть@1 в интернет@prep с друг@instrpl: 
 он@nom читать@3 журнал@accpl в интернет@prep: 
-вот что@nom я@dat интересный@shortn: 
-я@prep интересный@shortn играть@inf в интернет@prep: 
-я@prep скучный@shortn играть@inf в интернет@prep: 
+вот что@nom я@dat интересный@shortn !: 
+я@prep интересный@adv играть@inf в интернет@prep: 
+я@prep скучный@adv играть@inf в интернет@prep: 
 я@nom слушать@1 радио утро@instr: 
 я@nom слушать@1 музыка@acc только в интернет@prep: 
 я@nom не слушать@1 много@pl музыка@gen: 
@@ -1455,8 +1455,8 @@
 сейчас библиотека@nom открытый@shortf: 
 я@dat не нужный@shortf твой@f старый@f машина@nom: 
 студент@dat нужный@shortf новый@f квартира@nom в центр@prep: 
-на твой@prepf твой@genf улица@prep очень красивый@shortn: 
-студент@datpl не нужный@shortn это делать@inf: 
+на твой@prepf улица@prep очень красивый@adv: 
+студент@datpl не нужно этот@accn делать@inf: 
 ты@dat плохой@adv ?: 
 для я@gen это не новый@shortn: 
 в квартира@prep открытый@shortn окно@nom: 
@@ -1514,9 +1514,9 @@
 я@nom давать@1 урок@accpl мой@datpl студент@datpl: 
 мой@m друг@nom не давать@3 шоколад@acc мой@datpl собака@datpl: 
 зачем ты@nom писать@2 письмо@accpl свой@datpl друг@datpl ?: 
-твой@datpl студент@datpl нужный@shortn читать@inf книга@accpl: 
-мой@datpl собака@datpl нужный@shortn гулять@inf в парк@prep: 
-твой@datpl кошка@datpl не нужный@shortn гулять@inf в парк@prep: 
+твой@datpl студент@datpl нужно читать@inf книга@accpl: 
+мой@datpl собака@datpl нужно гулять@inf в парк@prep: 
+твой@datpl кошка@datpl не нужно гулять@inf в парк@prep: 
 я@nom читать@1 статья@accpl свой@datpl профессор@datpl: 
 зачем твой@datpl родитель@datpl новый@f дорогой@f ?: 
 какой@datn друг@dat ты@nom дарить@2 подарок@accpl ?: 
@@ -1539,12 +1539,12 @@
 большой@datpl город@datpl нужный@shortpl большой@pl парк@pl: 
 маленький@datpl деть@datpl нужный@adv читать@inf интересный@accinanpl книга@accpl: 
 маленький@datpl собака@datpl нельзя много@pl есть@inf: 
-большой@datpl кошка@datpl нужный@shortn очень много@pl есть@inf: 
+большой@datpl кошка@datpl нужно очень много@adv есть@inf: 
 этот@datpl людь@datpl нужный@shortpl дорогой@pl магазин@pl: 
 какой@datpl людь@datpl ты@nom не открывать@2 дверь@acc ?: 
 нельзя открывать@inf дверь@acc плохой@datpl людь@datpl: 
 большой@datpl собака@datpl нужный@shortpl большой@accinanpl дом@accpl: 
-большой@datpl университет@datpl нужный@shortn много@pl профессор@genpl: 
+большой@datpl университет@datpl нужно много@adv профессор@genpl: 
 зачем плохой@datpl студент@datpl библиотека@pl ?: 
 скучный@datpl людь@datpl нужный@shortn читать@inf журнал@accpl: 
 отличный@datpl газета@datpl нужный@shortpl интересный@pl статья@pl: 
@@ -2049,16 +2049,16 @@
 собака@pl любить@3pl есть@inf фрукт@accpl (author: pasha): 
 где в твой@prepm дом@prep лежать@3pl фрукт@pl ? (author: pasha): 
 фрукт@pl – это очень здоровый@f еда@nom (author: pasha): 
-деть@pl , все@datpl нужный@shortn есть@inf фрукт@pl и овощ@pl ! (author: pasha): 
+деть@pl , весь@datpl нужно есть@inf фрукт@accpl и овощ@accpl ! (author: pasha): 
 твой@f мама@nom покупать@3 ты@dat фрукт@accpl ? (author: pasha): 
 ну ты@nom и овощ@nom ! (author: pasha): 
 что@nom он@nom за фрукт@nom ? (author: pasha): 
 мы@nom готовить@1pl овощ@accpl на ужин@nom (author: pasha): 
 какой@accinanpl овощ@accpl ты@nom любить@2 ? (author: pasha): 
 зачем ты@nom покупать@2 овощ@accpl ? (author: pasha): 
-я@dat не нужный@shortn так много@pl овощ@genpl (author: pasha): 
+я@dat не нужно так много@adv овощ@genpl (author: pasha): 
 на обед@acc ты@dat сегодня только овощ@pl (author: pasha): 
-в магазин@prep нужный@shortn покупать@inf разный@accinanpl овощ@accpl (author: pasha): 
+в магазин@prep нужно покупать@inf разный@accinanpl овощ@accpl , а не шоколад@acc (author: pasha): 
 я@nom не знать@1 как готовить@inf овощ@accpl (author: pasha): 
 мой@f мама@nom учить@3 я@gen готовить@inf овощ@accpl на завтрак@acc (author: pasha): 
 как я@nom любить@1 овощ@accpl ! (author: pasha): 
@@ -2119,7 +2119,7 @@
 не стоить@3 дарить@inf профессор@dat подарок@acc . он@nom это не любить@3 (author: pasha): 
 я@dat нужный@shortm красивый@m подарок@nom . сколько@pl он@nom стоить@3 в этот@prepm магазин@prep ? (author: pasha): 
 мой@f мама@nom всегда покупать@3 сувенир@accpl (author: pasha): 
-не нужный@shortn покупать@inf я@dat дорогой@accinanpl сувенир@accpl (author: pasha): 
+не нужно покупать@inf я@dat дорогой@accinanpl сувенир@accpl (author: pasha): 
 мой@m друг@nom покупать@3 я@dat сувенир@accpl (author: pasha): 
 какой@m интересный@m у вы@gen сувенир@nom ! (author: pasha): 
 у я@gen в квартира@prep много@pl сувенир@genpl (author: pasha): 
@@ -2130,12 +2130,12 @@
 для кто@gen ты@nom покупать@2 этот@m сувенир@nom ? (author: pasha): 
 мы@nom купить@pastpl сувенир@accpl для родитель@genpl (author: pasha): 
  (author: andreas): 
-я@dat нужный@shortn купить@inf яйцо@accpl на завтрак@acc (author: pasha): 
+я@dat нужно купить@inf яйцо@accpl на завтрак@acc (author: pasha): 
 у мы@gen дома быть@1 яйцо@pl ? (author: pasha): 
 в этот@prepm магазин@prep очень дорогой@pl яйцо@pl (author: pasha): 
 ты@dat нельзя есть@inf этот@accinanpl яйцо@accpl ! они@nom не для ты@gen ! (author: pasha): 
 вы@gen (author: pasha): 
-ты@prep нужный@shortn купить@inf яйцо@accpl ? я@nom в магазин@prep (author: pasha): 
+– ты@dat нужно купить@inf яйцо@accpl ? я@nom в магазин@prep (author: pasha): 
 мы@nom всегда есть@1pl яйцо@accpl на завтрак@acc (author: pasha): 
 кто@nom хотеть@3 яйцо@accpl на завтрак@acc ? (author: pasha): 
 я@nom не есть@1 яйцо@accpl на ужин@acc . только на завтрак@acc (author: pasha): 
@@ -2224,10 +2224,10 @@
 я@nom не знать@pastm что@acc я@dat делать@inf (author: pasha): 
 мальчик@nom уже читать@pastm этот@accf книга@acc (author: pasha): 
 я@nom не покупать@pastm этот@accf газета@acc ! кто@nom она@gen читать@3 ? (author: pasha): 
-мальчик@nom хороший@shortn знать@pastm где лежать@3 шоколад@nom (author: pasha): 
+мальчик@nom хороший@adv знать@pastm где лежать@3 шоколад@nom (author: pasha): 
 что@nom ты@nom делать@pastm вчера вечер@instr ? (author: andreas): 
 ты@nom уже есть@pastf ? (author: andreas): 
-я@dat уже скучный@shortn . (author: andreas): 
+я@dat уже скучный@adv . (author: andreas): 
 ты@nom она@acc уже встречать@pastm ? (author: andreas): 
 у мы@gen сейчас другой@m урок@nom (author: sergei): 
 
@@ -2324,14 +2324,14 @@
 в этот@accinanm понедельник@acc я@nom не работать@pastm (author: pasha): 
 где ты@nom быть@pastf в этот@accf суббота@acc ? (author: pasha): 
 что@nom ты@nom делать@2 в понедельник@acc ? (author: pasha): 
-в понедельник@acc я@dat не нужный@shortn учить@inf французский@accinanm (author: pasha): 
+в понедельник@acc я@dat не нужно учить@inf французский@accinanm (author: pasha): 
 в суббота@acc в университет@prep нет студент@genpl (author: pasha): 
 я@nom ничто@gen не делать@1 в суббота@acc (author: pasha): 
 
 
 что@nom ты@nom делать@2 в суббота@acc ? (author: pasha): 
 в понедельник@acc в университет@prep много@pl студент@genpl (author: pasha): 
-в суббота@acc я@dat нужный@shortn учить@inf французский@accinanm (author: pasha): 
+в суббота@acc я@dat нужно учить@inf французский@accinanm (author: pasha): 
 мой@datm мальчик@dat уже много@pl год@genpl (author: pasha): 
 она@nom уже стать@pastf мама@instr (author: pasha): 
 магазин@nom уже открытый@shortm (author: pasha): 
@@ -2365,7 +2365,7 @@
 она@nom любить@3 много@adv гулять@inf на улица@prep (author: sergei): 
 в город@prep много@m собака@genpl на улица@preppl (author: sergei): 
 вы@nom одалживать@2pl не много@m еда@gen друг@pl (author: sergei): 
-я@nom плохой@shortn спать@1 , потому_что много@adv знать@1 (author: sergei): 
+я@nom плохой@adv спать@1 , потому_что много@adv знать@1 (author: sergei): 
 нельзя много@adv смотреть@inf телевизор@nom (author: sergei): 
 много@m день@genpl он@nom жить@3 в этот@prepm дом@prep (author: sergei): 
 я@nom не смотреть@pastm этот@m фильм@nom (author: sergei): 
@@ -2391,7 +2391,7 @@
 я@nom простой@adv не верить@1 в этот@n . (author: andreas): 
 прекратить@inf (author: andreas): 
 прекратить@impr кричать@inf ! (author: andreas): 
-прекратить@impr курить@inf ! это плохой@shortn для ты@gen . (author: andreas): 
+прекратить@impr курить@inf ! это плохой@adv для ты@gen . (author: andreas): 
 я@nom не думать@pastm про такой@accf возможность@acc (author: andreas): 
 у я@gen в карман@preppl нет ничто@gen (author: andreas): 
 я@acc болеть@3 зуб@nom . что@nom делать@inf ? (author: andreas): 
@@ -2431,8 +2431,8 @@
 я@nom ничто@gen не помнить@1 . (author: andreas): 
 
 я@nom не помнить@1 вечер@nom суббота@gen . (author: andreas): 
-у я@gen быть@pastn много@shortn чтобы сделать@inf на работа@prep (author: andreas): 
-у я@gen быть@pastn много@shortn работа@gen на прошлый@prepf неделя@prep (author: andreas): 
+
+у я@gen быть@pastn много@adv работа@gen на прошлый@prepf неделя@prep (author: andreas): 
 на этот@prepf неделя@prep мой@f мама@nom сидеть@3 с деть@instrpl (author: pasha): 
 на этот@prepf неделя@prep я@dat нужный@adv много@adv читать@inf (author: pasha): 
 весь@datpl хороший@genf неделя@gen ! (author: andreas): 
@@ -2647,3 +2647,15 @@
 мой@m сын@nom не любить@3 школа@acc и читать@inf книга@accpl (author: sergei): 
 отец@nom дарить@3 сын@dat новый@accf машина@acc (author: sergei): 
 этот@m (author: mark): 
+деть@pl не давать@3pl мы@dat спать@inf (author: pasha): 
+мы@dat нужный@shortpl свитер@pl (author: pasha): 
+мы@dat тут скучный@adv (author: pasha): 
+мышь@pl я@dat не давать@3pl жить@inf в мой@prepf квартира@prep ! (author: pasha): 
+я@dat нужно читать@inf этот@accf статья@acc (author: pasha): 
+я@dat нужный@shortm шоколад@nom (author: pasha): 
+она@nom покупать@3 я@dat газета@accpl (author: pasha): 
+
+мы@dat нужный@shortf твой@f новый@f машина@nom (author: pasha): 
+я@dat нужно работать@inf (author: pasha): 
+пакет@acc можно купить@inf в магазин@prep (author: pasha): 
+я@dat нужно быть@pastn много@accn сделать@inf на работа@prep (author: pasha): 
