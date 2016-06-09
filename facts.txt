@@ -194,9 +194,6 @@ grammar: adj@accn
 шоколад--: n/a, inflect: masc1
 подар--ок: n/a, inflect: -подарок
 grammar: -подарок@acc
-grammar: -мы@dat, tag: dative
-grammar: -вы@dat, tag: dative
-grammar: -она@dat, tag: dative
 и: and
 grammar: adj@shortm, tag: dative
 а: and
@@ -206,6 +203,9 @@ grammar: adj@shortn, tag: dative
 grammar: ыйadj@shortpl, tag: dative
 да--вать: n/a, inflect: -давать
 grammar: -я@dat, tag: dative
+grammar: -вы@dat, tag: dative
+grammar: -она@dat, tag: dative
+grammar: -мы@dat, tag: dative
 grammar: -ребёнок@dat, tag: dative
 grammar: masc1@dat, tag: dative
 дари--ть: n/a, inflect: -дарить
@@ -800,3 +800,6 @@ grammar: -брат@acc
 grammar: -чувствовать@inf
 grammar: adj@instrm
 обычн--ый: n/a, inflect: ыйadj
+grammar: -что@nom
+grammar: -наш@datpl
+grammar: -весь@datpl
