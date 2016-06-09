@@ -65,9 +65,9 @@ adj[adj]: m ***, n ое, f ая, pl ие, genm ого, genn ого, genf ой, g
 -ты[pron]: nom ты, gen тебя, dat тебе, acc тебя, instr тобой, prep тебе
 -он[pron]: nom он, gen его, dat ему, acc его, prep нём
 -она[pron]: nom она, gen её, dat ей, acc её, instr ей, prep ней
--мы[pron]: nom мы, gen нас, dat нам, acc нас, instr нас, prep нами
--вы[pron]: nom вы, gen вас, dat вам, acc вас, instr вас, prep вами
--они[pron]: nom они, gen их, dat им, acc их, instr них, prep ими
+-мы[pron]: nom мы, gen нас, dat нам, acc нас, instr нами, prep нас
+-вы[pron]: nom вы, gen вас, dat вам, acc вас, instr вами, prep вас
+-они[pron]: nom они, gen их, dat им, acc их, instr ими, prep них
 -что[n]: nom что, gen чего, dat чему, acc что, instr чем, prep чём
 -кто[n]: nom кто, gen кого, dat кому, acc кто, instr кем, prep ком
 -сколько[adj]: pl о, genpl их, datpl им, accinanpl о, accanpl их, instrpl ими, preppl их
@@ -94,7 +94,7 @@ adj[adj]: m ***, n ое, f ая, pl ие, genm ого, genn ого, genf ой, g
 it-im-ite[v]: inf ть, 1pl м, 2 шь, 2pl те, 3 т, 3pl <ят, impr , inherit v
 -дарить[v]: 1 <ю, inherit it-im-ite
 -смотреть[v]: inf <еть, pastm <ел, inherit -дарить
--видеть[v]: inf <еть, 1 <<жу, inherit it-im-ite
+-видеть[v]: inf <еть, 1 <<жу, pastm <ел, inherit it-im-ite
 -сидеть[v]: impr <ь, inherit -видеть
 -учить[v]: 1 <у, 3pl <ат, inherit it-im-ite
 -любить[v]: 1 <лю, inherit it-im-ite
@@ -158,3 +158,4 @@ sya[v]: inf ться, 1 юсь, 1pl мся, 2 шься, 2pl тесь, 3 тся, 
 -случиться[v]: 1 <усь, 3pl <атся, inherit -находиться
 -море[n]: genpl ей, inherit -воскресенье
 -весна[n]: pl <<<ёсны, genpl <<<ёсен, datpl <<<ёснам, accpl <<<ёсны, instrpl <<<ёснами, preppl <<<ёснах, inherit fem1
+-звать[v]: inf <<вать, pastm <<вал, inherit -начать
