@@ -286,7 +286,7 @@ grammar: femka@genpl
 когда: n/a, tag: past
 владивосток--: n/a, inflect: masc2
 вчера: yesterday, tag: past, tag: time
-никогда: n/a, tag: past
+никогда: n/a, tag: past, tag: Frequency
 суббот--а: n/a, inflect: fem1, tag: past, tag: sleep, tag: day-of-week
 grammar: -быть@pastm, tag: past
 grammar: v@pastm, tag: past
@@ -354,7 +354,7 @@ grammar: neu1@nom
 масл--о: n/a, inflect: -масло
 grammar: neu1@acc
 покупк--а: n/a, inflect: femka
-grammar: adj@accanm
+grammar: adj@accanm, tag: accusative
 grammar: -ребёнок@acc
 grammar: adj@accinanpl
 grammar: -есть@3pl
@@ -389,8 +389,8 @@ grammar: -этот@accinanpl
 температур--а: temperature, inflect: fem1
 мяс--о: n/a, inflect: neu2
 grammar: -свой@n
-всегда: always
-часто: often
+всегда: always, tag: Frequency
+часто: often, tag: Frequency
 иногда: sometimes
 несколько: a few
 язык--: n/a, inflect: masc2
@@ -824,3 +824,12 @@ grammar: y-esh-et@impr
 grammar: -наш@accinanpl
 grammar: -встречаться@1pl
 grammar: -встречаться@2
+музе--й: n/a, inflect: -случай
+нечасто: n/a, tag: Frequency
+grammar: -случай@acc, tag: accusative
+grammar: -она@prep
+grammar: -ты@prep
+подождё--<ать: n/a, inflect: -ждать
+grammar: -наш@accanpl
+grammar: -родитель@accpl
+останови--ться: n/a, inflect: -становиться
