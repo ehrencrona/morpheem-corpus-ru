@@ -171,7 +171,7 @@ grammar: adj@prepm
 grammar: adj@prepf
 grammar: v@1
 grammar: -наш@pl
-родител--ь: n/a, inflect: -родитель, tag: family
+родител--ь: n/a, inflect: -родитель, tag: family, mask: sg
 офис--: n/a, inflect: masc1
 grammar: -этот@pl
 жив--<ть: live, inflect: -жить
@@ -220,7 +220,7 @@ grammar: -ребёнок@dat, tag: dative
 grammar: masc1@dat, tag: dative
 дари--ть: n/a, inflect: -дарить
 нужно: n/a
-нужн--ый: n/a, inflect: ныйadj, tag: dative
+нужн--ый: n/a, inflect: ныйadj, tag: dative, mask: adv
 grammar: adj@datm, tag: dative, tag: dative
 grammar: ыйadj@preppl
 grammar: fem2@accpl
@@ -400,7 +400,7 @@ grammar: -ребёнок@gen
 grammar: -мы@gen
 grammar: it-im-ite@1pl
 урок--: n/a, inflect: masc2
-деньг--а: n/a, inflect: -деньга
+деньг--а: n/a, inflect: -деньга, mask: sg
 её: her / their
 grammar: -ребёнок@prep
 grammar: -ребёнок@pl
@@ -415,7 +415,7 @@ grammar: -друг@instrpl, tag: instrumental
 по: in/on, tag: preposition
 grammar: -давать@3pl
 вечер--: n/a, inflect: masc3, tag: time, tag: pleasantries
-дет--ь: n/a, inflect: -люди
+дет--ь: n/a, inflect: -люди, mask: sg
 перед: forward, tag: preposition
 grammar: -весь@m
 вс--<есь: n/a, inflect: -весь
@@ -809,7 +809,7 @@ grammar: -весь@accanpl
 grammar: -статья@instr
 туалет--: n/a, inflect: masc1
 такси: n/a
-здравству--<овать: n/a, inflect: -чувствовать, tag: pleasantries
+здравству--<овать: n/a, inflect: -чувствовать, tag: pleasantries, mask: non_impr
 спасибо: n/a, tag: pleasantries
 добр--ый: n/a, inflect: ыйadj, tag: pleasantries
 grammar: -пятница@instr
