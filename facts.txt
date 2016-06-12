@@ -171,7 +171,7 @@ grammar: adj@prepm
 grammar: adj@prepf
 grammar: v@1
 grammar: -наш@pl
-родител--ь: n/a, inflect: -родитель, tag: family, mask: sg
+родител--ь: n/a, inflect: -родитель, mask: sg
 офис--: n/a, inflect: masc1
 grammar: -этот@pl
 жив--<ть: live, inflect: -жить
@@ -429,7 +429,6 @@ grammar: -весь@m
 может быть: maybe
 мож--<чь: , inflect: -мочь
 о: about, tag: preposition
-один--: one, inflect: masc1
 ещё: again
 бы: 
 себя: himself / herself
@@ -470,7 +469,7 @@ grammar: neuie@prep
 упражнени--е: n/a, inflect: neuie
 решени--е: n/a, inflect: neuie
 чуть-чуть: a little bit
-немног--о: some, inflect: -много
+немног--о: some, inflect: -много, mask: sg
 жизн--ь: life, inflect: fem3
 глаз--: eye, inflect: masc2
 перв--ый: first, inflect: ыйadj, tag: order
@@ -493,7 +492,6 @@ grammar: masc2@pl
 аптек--а: n/a, inflect: fem2
 grammar: -он@prep
 сам--: n/a, inflect: -сам
-два: n/a
 ни--что: what, inflect: -что
 потом: n/a
 ли: n/a
@@ -809,7 +807,7 @@ grammar: -весь@accanpl
 grammar: -статья@instr
 туалет--: n/a, inflect: masc1
 такси: n/a
-здравству--<овать: n/a, inflect: -чувствовать, tag: pleasantries, mask: non_impr
+здравству--<овать: n/a, inflect: -чувствовать, mask: non_impr
 спасибо: n/a, tag: pleasantries
 добр--ый: n/a, inflect: ыйadj, tag: pleasantries
 grammar: -пятница@instr
@@ -833,3 +831,34 @@ grammar: -ты@prep
 grammar: -наш@accanpl
 grammar: -родитель@accpl
 останови--ться: n/a, inflect: -становиться
+одн--<ин: n/a, inflect: -один, tag: number
+дв--а: n/a, inflect: -два, tag: number
+тр--и: n/a, inflect: -три, tag: number
+четыр--е: n/a, inflect: -четыре, tag: number
+пят--ь: n/a, inflect: -пять, tag: number
+шест--ь: n/a, inflect: -пять, tag: number
+сем--: n/a, inflect: -сем, tag: number
+девят--ь: n/a, inflect: -пять, tag: number
+десят--ь: n/a, inflect: -пять, tag: number
+grammar: -один@m, tag: number
+grammar: -один@n, tag: number
+grammar: -один@f, tag: number
+grammar: -один@pl, tag: number
+grammar: -два@pl, tag: number
+grammar: -два@genpl, tag: number
+grammar: -два@accinanpl, tag: number
+grammar: -два@accanpl, tag: number
+grammar: -два@preppl, tag: number
+grammar: -три@pl, tag: number
+grammar: -три@genpl, tag: number
+grammar: -три@accinanpl, tag: number
+grammar: -три@accanpl, tag: number
+grammar: -три@instrpl, tag: number
+grammar: -три@preppl, tag: number
+grammar: -пять@pl, tag: number
+grammar: -пять@accinanpl, tag: number
+grammar: -пять@accanpl, tag: number
+grammar: -пять@instrpl, tag: number
+grammar: -пять@preppl, tag: number
+grammar: -сем@pl, tag: number
+grammar: -сем@datpl, tag: number
