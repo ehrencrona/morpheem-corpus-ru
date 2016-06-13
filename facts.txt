@@ -102,7 +102,6 @@ grammar: -свой@m
 мо--й: my, inflect: -свой
 больш--ой: big, inflect: ойadj2
 как--ой: which, inflect: ойadj2
-grammar: ойadj2@accinanm, tag: accusative
 очень: very
 погод--а: weather, inflect: fem1
 сегодня: today, tag: time
@@ -119,6 +118,7 @@ grammar: -статья@acc, tag: accusative
 стать--я: article, inflect: -статья
 grammar: -статья@nom
 grammar: y-esh-et@2
+grammar: ойadj2@accinanm, tag: accusative
 grammar: ийadj@accinanm, tag: accusative
 grammar: ыйadj@accinanm, tag: accusative
 кроват--ь: bed, inflect: fem4, tag: sleep
@@ -769,10 +769,10 @@ grammar: -родитель@instr, tag: instrumental
 grammar: -наш@instrm, tag: instrumental
 кофе: n/a
 молок--о: n/a, inflect: neu1
-лет--о: n/a, inflect: neu1, tag: season, tag: season, tag: instrumental
-осен--ь: n/a, inflect: fem4, tag: season
-зим--а: n/a, inflect: fem1, tag: instrumental, tag: season
-весн--а: n/a, inflect: -весна, tag: season, tag: instrumental
+лет--о: n/a, inflect: neu1, tag: season, tag: season, tag: instrumental, mask: pl
+осен--ь: n/a, inflect: fem4, tag: season, mask: pl
+зим--а: n/a, inflect: fem1, tag: instrumental, tag: season, mask: pl
+весн--а: n/a, inflect: -весна, tag: season, tag: instrumental, mask: pl
 grammar: -ходить@1
 grammar: neu1@instr, tag: instrumental
 трав--а: n/a, inflect: fem1
@@ -805,6 +805,7 @@ grammar: -весь@datpl
 grammar: -этот@n
 grammar: -весь@accanpl
 grammar: -статья@instr
+церкв--<овь: n/a, inflect: -церковь, tag: city
 туалет--: n/a, inflect: masc1
 такси: n/a
 здравству--<овать: n/a, inflect: -чувствовать, mask: non_impr
@@ -837,7 +838,7 @@ grammar: -родитель@accpl
 четыр--е: n/a, inflect: -четыре, tag: number
 пят--ь: n/a, inflect: -пять, tag: number
 шест--ь: n/a, inflect: -пять, tag: number
-сем--: n/a, inflect: -сем, tag: number
+сем--ь: n/a, inflect: -пять
 девят--ь: n/a, inflect: -пять, tag: number
 десят--ь: n/a, inflect: -пять, tag: number
 grammar: -один@m, tag: number
@@ -860,5 +861,8 @@ grammar: -пять@accinanpl, tag: number
 grammar: -пять@accanpl, tag: number
 grammar: -пять@instrpl, tag: number
 grammar: -пять@preppl, tag: number
-grammar: -сем@pl, tag: number
-grammar: -сем@datpl, tag: number
+grammar: ныйadj@shortm
+grammar: -церковь@nom
+grammar: -родитель@prep
+grammar: fem3@dat
+grammar: -наш@genn
