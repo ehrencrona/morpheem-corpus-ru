@@ -2,15 +2,15 @@
 это: this (is)
 собак--а: dog, inflect: fem2, tag: animal
 grammar: fem1@nom
-кошк--а: cat, inflect: fem2, tag: animal
+кошк--а: cat, inflect: -кошка, tag: animal
 бел--ый: white, inflect: ыйadj, tag: colour
 grammar: adj@f
-чёрн--ый: black, inflect: ныйadj
+чёрн--ый: black, inflect: -чёрный
 где: where
-лошад--ь: horse, inflect: fem3, tag: animal
+лошад--ь: horse, inflect: -лошадь, tag: animal
 grammar: fem3@nom
 мыш--ь: mouse, inflect: -femшь, tag: animal
-маленьк--ий: small, inflect: ийadj
+маленьк--ий: small, inflect: -маленький
 –: is
 свитер--: sweater, inflect: masc1
 машин--а: car, inflect: fem1
@@ -28,12 +28,12 @@ grammar: ыйadj@m
 grammar: -я@nom
 --он: he, inflect: -он
 grammar: -он@nom
-Саш--а: n/a, inflect: -пятница
+Саш--а: n/a, inflect: -саша, mask: pl
 библиотек--а: library, inflect: fem2, tag: city
 grammar: fem1@prep
 grammar: -она@nom
 --она: she, inflect: -она
-Маш--а: n/a, inflect: -пятница
+Маш--а: n/a, inflect: -пятница, mask: pl
 школ--а: n/a, inflect: fem1
 улиц--а: street, inflect: fem1
 на: on/in, tag: preposition
@@ -747,7 +747,7 @@ grammar: it-im-ite@inf
 ладно: n/a
 карман--: n/a, inflect: masc1
 наверное: n/a
-зуб--: n/a, inflect: -зуб
+зуб--: n/a, inflect: masc1
 кам--ень: n/a, inflect: -камень
 ого--нь: n/a, inflect: -огонь
 гост--ь: n/a, inflect: -родитель
@@ -866,3 +866,5 @@ grammar: -церковь@nom
 grammar: -родитель@prep
 grammar: fem3@dat
 grammar: -наш@genn
+grammar: fem3@instrpl
+grammar: -femшь@genpl
