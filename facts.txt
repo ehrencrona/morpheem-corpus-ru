@@ -16,7 +16,7 @@ grammar: fem3@nom
 машин--а: car, inflect: fem1
 grammar: masc1@nom
 университет--: university, inflect: masc1, tag: city
-в: at, tag: preposition
+в--: at, inflect: oprep, tag: preposition
 grammar: masc1@prep
 grammar: ийadj@m
 планшет--: tablet, inflect: masc1
@@ -238,7 +238,7 @@ grammar: fem2@accpl
 grammar: fem1@dat, tag: dative
 grammar: -ты@dat, tag: dative
 хоч--<теть: n/a, inflect: -хотеть
-с: with, tag: preposition, tag: instrumental
+с--: with, inflect: oprep, tag: preposition, tag: instrumental
 ед--а: n/a, inflect: fem1
 интернет--: n/a, inflect: masc1
 радио: radio
@@ -463,14 +463,14 @@ grammar: -весь@m
 вс--<есь: n/a, inflect: -весь
 потому что: because
 но: but
-к: to, tag: preposition
+к--: to, inflect: oprep, tag: preposition
 из: from, tag: preposition
 так: 
 же: 
 от: to, tag: preposition
 может быть: maybe
 мож--<чь: , inflect: -мочь
-о: about, tag: preposition
+о--: about, inflect: -о, tag: preposition
 ещё: again
 бы: 
 себя: himself / herself
@@ -622,7 +622,6 @@ grammar: it-im-ite@impr, tag: imperative
 совсем: n/a
 остан<--ться: n/a, inflect: -остаться
 каж--<заться: n/a, inflect: -казаться
-об: n/a
 почти: n/a
 ряд--: n/a, inflect: masc1
 окаж--<заться: n/a, inflect: -казаться
@@ -889,3 +888,8 @@ grammar: -день@gen
 grammar: -саша@gen
 grammar: -дать@1
 grammar: sya@3
+grammar: -о@alt, tag: preposition
+grammar: -о@alt2, tag: preposition
+grammar: -о@std, tag: preposition
+grammar: oprep@alt, tag: preposition
+grammar: oprep@std, tag: preposition
