@@ -38,7 +38,6 @@ neuie[n]: nom е, pl я, gen я, genpl й, dat ю, datpl ям, acc е, accpl я,
 -год[n]: genpl <<<лет, prep у, inherit masc1
 -раз[n]: genpl , inherit masc1
 -ключ[n]: genpl ей, inherit masc2
--человек[n]: genpl , inherit masc1
 v[v]: inf ****, 1 у, pastm л, pastn pastm-о, pastf pastm-а, pastpl pastm-и, imprpl impr-те
 y-esh-et[v]: inf ****, 1pl ем, 2 ешь, 2pl ете, 3 ет, impr й, inherit v
 -встречать[v]: inf ть, 1 ю, 3pl ют, inherit y-esh-et
@@ -60,7 +59,7 @@ adj[adj]: m ***, n ое, f ая, pl ие, genm ого, genn ого, genf ой, g
 -наш[adj]: m , n е, f а, pl и, genm его, genn его, genf ей, genpl их, datm ему, datn ему, datf ей, datpl им, accanm его, accf у, accinanpl и, accanpl их, instrm им, instrn им, instrf ей, instrpl ими, prepm ем, prepn ем, prepf ей, preppl их, inherit ойadj2
 ыйadj[adj]: m ый, pl ые, genpl ых, datpl ым, accinanm ый, accinanpl ые, accanpl ых, instrm ым, instrn ым, instrpl ыми, preppl ых, shortpl ы, inherit adj
 ныйadj[adj]: shortm <ен, inherit ыйadj
--чёрный[adj]: shortf <<<ерна, shortn <<<ерно, shortpl <<<ерны, inherit ныйadj
+-чёрный[adj]: shortn <<<ерно, shortf <<<ерна, shortpl <<<ерны, inherit ныйadj
 ийadj[adj]: m ий, accinanm ий, inherit adj
 -маленький[adj]: shortm <<<<, inherit ийadj
 -хороший[adj]: n ее, genm его, genn его, genf ей, datm ему, datn ему, datf ей, accanm его, accn ее, instrf ей, prepm ем, prepn ем, prepf ей, inherit ийadj
@@ -171,3 +170,4 @@ sya[v]: inf ться, 1 юсь, 1pl мся, 2 шься, 2pl тесь, 3 тся, 
 -четыре[num]: pl е, instrpl ьмя, inherit -три
 -пять[num]: pl ь, genpl и, datpl и, accinanpl ь, accanpl ь, instrpl ью, preppl и
 -церковь[n]: nom <овь, acc <овь, instr <овью, inherit fem4
+-крыша[n]: instr ей, inherit fem2
