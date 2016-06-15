@@ -16,6 +16,7 @@ grammar: fem3@nom
 машин--а: car, inflect: fem1
 grammar: masc1@nom
 университет--: university, inflect: masc1, tag: city
+grammar: oprep@std, tag: preposition
 в--: at, inflect: oprep, tag: preposition
 grammar: masc1@prep
 grammar: ийadj@m
@@ -211,7 +212,7 @@ grammar: -три@pl, tag: number
 grammar: -два@pl, tag: number
 тр--и: n/a, inflect: -три, tag: number
 а: and
-булочк--а: n/a, inflect: femka2
+булочк--а: n/a, inflect: femka2, tag: food
 grammar: adj@shortm, tag: dative
 grammar: adj@shortf, tag: dative
 grammar: adj@shortn, tag: dative
@@ -240,7 +241,7 @@ grammar: fem1@dat, tag: dative
 grammar: -ты@dat, tag: dative
 хоч--<теть: n/a, inflect: -хотеть
 с--: with, inflect: oprep, tag: preposition, tag: instrumental
-ед--а: n/a, inflect: fem1
+ед--а: n/a, inflect: fem1, tag: food
 интернет--: n/a, inflect: masc1
 радио: radio
 котор--ый: n/a, inflect: ыйadj
@@ -337,12 +338,15 @@ grammar: -есть@1
 grammar: -писать@1pl, tag: motion
 grammar: -писать@3pl, tag: motion
 ходи--ть: n/a, inflect: -ходить, tag: motion
+grammar: -я@instr, tag: instrumental
 ид--ти: n/a, inflect: -идти, tag: motion
 готови--ть: n/a, inflect: -любить
 купи--ть: n/a, inflect: -любить
 завтрак--: n/a, inflect: masc2
 обед--: n/a, inflect: masc1
-ужин--: n/a, inflect: masc1
+ча--й: n/a, inflect: -чай, tag: food
+суп--: n/a, inflect: masc1, tag: food
+ужин--: n/a, inflect: masc1, tag: food
 дешёв--ый: n/a, inflect: ыйadj
 grammar: -сколько@pl
 скольк--о: n/a, inflect: -сколько
@@ -354,7 +358,7 @@ grammar: v@imprpl, tag: imperative
 покаж--<зать: n/a, inflect: -показать
 да--ть: n/a, inflect: -дать
 grammar: masc1@accpl
-овощ--: n/a, inflect: -овощ
+овощ--: n/a, inflect: -овощ, tag: food
 стои--ть: n/a, inflect: -дарить
 так--ой: such a, inflect: ойadj2
 вод--а: n/a, inflect: -мама
@@ -366,7 +370,7 @@ grammar: -пить@1
 grammar: -пить@2
 grammar: -пить@3
 проблем--а: n/a, inflect: fem1
-борщ--: borsht (soup), inflect: -борщ
+борщ--: borsht (soup), inflect: -борщ, tag: food
 красн--ый: n/a, inflect: ныйadj
 олигарх--: oligarch, inflect: masc2animate
 письм--о: letter, inflect: -письмо
@@ -444,7 +448,6 @@ grammar: -давать@3pl
 вечер--: n/a, inflect: masc3, tag: time, tag: pleasantries
 дет--ь: n/a, inflect: -люди, mask: sg
 стан--<ть: n/a, inflect: -стать, tag: instrumental
-учител--ь: n/a, inflect: -учитель, tag: profession, tag: instrumental, tag: Frequency
 писател--ь: n/a, inflect: -родитель, tag: profession, tag: instrumental
 лет--о: n/a, inflect: neu1, tag: season, tag: season, tag: instrumental, mask: pl
 весн--а: n/a, inflect: -весна, tag: season, tag: instrumental, mask: pl
@@ -456,9 +459,11 @@ grammar: -что@instr, tag: family, tag: instrumental
 grammar: -кто@instr, tag: instrumental
 grammar: -наш@instrm, tag: instrumental
 grammar: -родитель@instr, tag: instrumental
+учител--ь: n/a, inflect: -учитель, tag: profession, tag: instrumental, tag: Frequency
 grammar: -наш@instrf, tag: instrumental
 grammar: -ребёнок@instr, tag: instrumental
 grammar: -хороший@instrf, tag: instrumental
+занима--ться: n/a, inflect: -пытаться, tag: profession, tag: family, tag: instrumental
 перед: forward, tag: preposition, tag: instrumental
 grammar: -весь@m
 вс--<есь: n/a, inflect: -весь
@@ -471,6 +476,7 @@ grammar: -весь@m
 от: to, tag: preposition
 может быть: maybe
 мож--<чь: , inflect: -мочь
+grammar: -о@std, tag: preposition
 о--: about, inflect: -о, tag: preposition
 ещё: again
 бы: 
@@ -533,7 +539,7 @@ grammar: -он@prep
 ни--что: what, inflect: -что
 потом: n/a
 ли: n/a
-при: n/a, tag: preposition
+при: n/a, tag: preposition, tag: prepositional
 надо: n/a
 теперь: n/a
 тоже: n/a
@@ -797,7 +803,6 @@ grammar: -ходить@1
 grammar: -мы@instr
 grammar: -ты@instr
 grammar: -видеть@inf
-занима--ться: n/a, inflect: -пытаться, tag: profession, tag: family
 grammar: -встречаться@3
 grammar: sya@inf
 grammar: -наш@genf
@@ -891,6 +896,39 @@ grammar: -дать@1
 grammar: sya@3
 grammar: -о@alt, tag: preposition
 grammar: -о@alt2, tag: preposition
-grammar: -о@std, tag: preposition
 grammar: oprep@alt, tag: preposition
-grammar: oprep@std, tag: preposition
+пешком: n/a, tag: instrumental
+grammar: -месяц@genpl
+сто: n/a
+вин--о: n/a, inflect: neu3
+бутылк--а: n/a, inflect: femka
+рубл--ь: n/a, inflect: -словарь
+тысяч--а: n/a, inflect: -тысяча
+столько: n/a
+восемь: n/a
+чашк--а: n/a, inflect: femka2
+забуд--<<ыть: n/a, inflect: -забыть
+потеря--ть: n/a, inflect: -встречать
+бега--ть: n/a, inflect: -встречать
+километр--: n/a, inflect: masc1
+пробежи--<ать: n/a, inflect: -пробежать
+стира--ть: n/a, inflect: -встречать
+градус--: n/a, inflect: masc1, tag: weather
+матч--: n/a, inflect: -овощ
+выигра--ть: n/a, inflect: -встречать
+grammar: -наш@genpl
+слома--ть: n/a, inflect: -встречать
+grammar: ыйadj@instrn
+роди--ть: n/a, inflect: -ходить
+с тех пор: n/a
+grammar: -начать@pastm
+grammar: adj@accinanm
+grammar: -он@instr
+отношения: n/a
+отношение: n/a
+серьёзн--ый: n/a, inflect: ыйadj
+конечно: n/a
+напиш--<сать: n/a, inflect: -писать
+grammar: -кошка@genpl
+картин--а: n/a, inflect: fem1
+grammar: neu2@preppl
