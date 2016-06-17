@@ -304,7 +304,6 @@ grammar: femka@genpl
 вчера: yesterday, tag: past, tag: time
 никогда: n/a, tag: past, tag: Frequency
 суббот--а: n/a, inflect: fem1, tag: past, tag: sleep, tag: day-of-week
-grammar: -быть@pastm, tag: past
 grammar: v@pastm, tag: past
 понедельник--: n/a, inflect: masc2, tag: past, tag: day-of-week
 прошл--ый: n/a, inflect: ыйadj, tag: past, tag: order, tag: past
@@ -325,7 +324,6 @@ grammar: -отец@nom
 молод--ой: n/a, inflect: -второй, tag: family
 взросл--ый: n/a, inflect: -взрослый, tag: family
 год--: year, inflect: -год, tag: time, tag: family
-grammar: -жить@pastm, tag: past, tag: instrumental
 grammar: -год@prep, tag: past
 grammar: -есть@inf
 --есть: eat, inflect: -есть
@@ -676,7 +674,7 @@ grammar: it-im-ite@impr, tag: imperative
 быстр--ый: n/a, inflect: ыйadj
 лес--: n/a, inflect: masc3, tag: city
 похож--ий: n/a, inflect: -хороший
-пора: n/a, inflect: fem1
+пор--а: n/a, inflect: fem1
 гляди--<еть: n/a, inflect: -глядеть
 оно: n/a
 им--я: n/a, inflect: -имя
@@ -737,7 +735,7 @@ grammar: -бояться@1
 находи--ться: n/a, inflect: -находиться
 шаг--: n/a, inflect: masc2
 мало: n/a
-внимание: n/a, inflect: иеnoun
+вниман--ие: n/a, inflect: иеnoun
 туда: n/a
 сюда: n/a
 великий: n/a
@@ -757,7 +755,7 @@ grammar: -бояться@1
 впрочем: n/a
 видно: n/a
 разве: n/a
-движение: n/a, inflect: иеnoun
+движен--ие: n/a, inflect: иеnoun
 поряд--ок: n/a, inflect: -подарок
 тихо: n/a
 знакомств--о: n/a, inflect: neu3
@@ -876,13 +874,8 @@ grammar: fem3@dat
 grammar: -наш@genn
 grammar: -femшь@genpl
 крыш--а: n/a, inflect: -крыша
-grammar: -показать@pastm, tag: past
-grammar: -открыть@pastm, tag: past
-grammar: -спать@pastm, tag: past
-grammar: -давать@pastm, tag: past
 grammar: -сказать@impr, tag: imperative
 grammar: -хотеть@impr
-grammar: -хотеть@pastm, tag: past
 grammar: -быть@inf
 grammar: -что@prep
 grammar: -свой@prepm
@@ -921,16 +914,14 @@ grammar: -наш@genpl
 grammar: ыйadj@instrn
 роди--ть: n/a, inflect: -ходить
 с тех пор: n/a
-grammar: -начать@pastm
 grammar: adj@accinanm
 grammar: -он@instr
-отношение: n/a, inflect: иеnoun
+отношен--ие: n/a, inflect: иеnoun
 серьёзн--ый: n/a, inflect: ыйadj
 конечно: n/a
 напиш--<сать: n/a, inflect: -писать
 grammar: -кошка@genpl
 картин--а: n/a, inflect: fem1
-grammar: neu2@preppl
 grammar: neu2@preppl
 grammar: -кошка@accpl
 grammar: masc1animate@accpl
@@ -1038,3 +1029,5 @@ grammar: иеnoun@instrpl
 grammar: иеnoun@preppl
 grammar: иеnoun@prep
 grammar: иеnoun@instr
+grammar: -сам@m
+grammar: -второй@m
