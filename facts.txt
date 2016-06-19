@@ -16,8 +16,8 @@ grammar: fem3@nom
 машин--а: car, inflect: fem1
 grammar: masc1@nom
 университет--: university, inflect: masc1, tag: city
-grammar: oprep@std, tag: preposition
 в--: at, inflect: oprep, tag: preposition
+grammar: oprep@std, tag: preposition
 grammar: masc1@prep
 grammar: ийadj@m
 планшет--: tablet, inflect: masc1
@@ -131,6 +131,7 @@ grammar: masc1@instr, tag: instrumental
 grammar: fem1@instr, tag: instrumental
 стул--: chair, inflect: masc1
 за: behind, tag: colour, tag: preposition, tag: instrumental
+grammar: oprep@alt, tag: preposition
 штор--а: curtain, inflect: fem1
 grammar: fem3@pl
 двер--ь: door, inflect: fem4
@@ -245,7 +246,6 @@ grammar: fem1@dat, tag: dative
 grammar: -ты@dat, tag: dative
 хоч--<теть: n/a, inflect: -хотеть
 с--: with, inflect: oprep, tag: preposition, tag: instrumental
-grammar: oprep@alt, tag: preposition
 ед--а: n/a, inflect: fem1, tag: food
 интернет--: n/a, inflect: masc1
 радио: radio
@@ -597,6 +597,7 @@ grammar: -наш@m
 grammar: -наш@accf
 откро--<ыть: n/a, inflect: -открыть
 grammar: -наш@datf
+grammar: -большой@comp
 grammar: -наш@genm, tag: genitive
 grammar: -наш@datm
 grammar: -свой@accinanm
@@ -1062,5 +1063,60 @@ grammar: -время@acc
 чь--<ей: n/a, inflect: -чей
 вещ--ь: n/a, inflect: -ночь
 положи--ть: n/a, inflect: -учить
-grammar: -большой@comp
 опозда--ть: n/a, inflect: -встречать
+неужели: n/a
+очевидно: n/a
+существу--<овать: n/a, inflect: -чувствовать
+нормальн--ый: n/a, inflect: ыйadj
+grammar: -деньга@genpl
+разоль--<<<лить: n/a, inflect: -разлить
+закро--<ыть: n/a, inflect: -открыть
+grammar: -ждать@impr
+grammar: -пить@inf
+grammar: -пять@genpl
+grammar: sya@pastf
+отел--ь: n/a, inflect: -отель
+grammar: -россия@nom
+grammar: -словарь@prep
+учи--ться: n/a, inflect: -случиться
+потеря--ться: n/a, inflect: -пытаться
+собой: n/a
+grammar: sya@pastpl
+легкий: n/a
+лёгк--ий: n/a, inflect: ийadj
+поетому: n/a
+grammar: sya@pastm
+очеред--ь: n/a, inflect: fem4
+открыто: n/a
+вход--: n/a, inflect: masc1
+выход--: n/a, inflect: masc1
+запасны--<ой: n/a, inflect: -запасной
+здание: n/a
+grammar: -выходной@acc
+grammar: -они@instr
+grammar: -давать@impr
+билет--: n/a, inflect: masc1
+самолёт--: n/a, inflect: masc1
+поезд--: n/a, inflect: masc3
+окончи--ть: n/a, inflect: -учить
+погуля--ть: n/a, inflect: -встречать
+grammar: -хотеть@2pl
+куриц--а: n/a, inflect: -курица
+духовк--а: n/a, inflect: femka
+плит--а: n/a, inflect: fem1
+холодильник--: n/a, inflect: masc2
+включи--ть: n/a, inflect: -учить
+пельмен--ь: n/a, inflect: -отель
+тарелк--а: n/a, inflect: femka
+кастрюл--я: n/a, inflect: -неделя
+помощ--ь: n/a, inflect: -ночь
+шкаф--: n/a, inflect: masc1
+храни--ть: n/a, inflect: -дарить
+grammar: -мочь@pastpl
+понравится: n/a
+понрави--ться: n/a, inflect: -нравиться
+теря--ться: n/a, inflect: -пытаться
+grammar: sya@1
+grammar: -начать@inf
+закрыт--ый: n/a, inflect: ыйadj
+grammar: -россия@acc
