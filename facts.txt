@@ -154,7 +154,7 @@ grammar: -вы@nom
 grammar: it-im-ite@2pl
 банк--: n/a, inflect: masc2, tag: city
 ресторан--: restaurant, inflect: masc1, tag: city
-эт--от: this, inflect: -этот
+эт--от: this, inflect: -этот, mask: short
 grammar: -этот@f
 grammar: -этот@m
 слишком: too
@@ -307,7 +307,7 @@ grammar: femka@genpl
 французск--ий: n/a, inflect: ийadj
 словар--ь: n/a, inflect: -словарь
 когда: n/a, tag: past
-владивосток--: n/a, inflect: masc2
+Владивосток--: n/a, inflect: masc2
 вчера: yesterday, tag: past, tag: time
 никогда: n/a, tag: past, tag: Frequency
 суббот--а: n/a, inflect: fem1, tag: past, tag: sleep, tag: day-of-week
@@ -352,7 +352,7 @@ grammar: -я@instr, tag: instrumental
 ча--й: n/a, inflect: -чай, tag: food
 суп--: n/a, inflect: masc1, tag: food
 ужин--: n/a, inflect: masc1, tag: food
-дешёв--ый: n/a, inflect: ыйadj
+дешёв--ый: n/a, inflect: -дешёвый
 grammar: -сколько@pl
 скольк--о: n/a, inflect: -сколько
 grammar: -наш@accanpl, tag: accusative
@@ -497,7 +497,7 @@ grammar: -о@std, tag: preposition
 о--: about, inflect: -о, tag: preposition
 ещё: again
 бы: 
-себя: himself / herself
+себя: himself / herself, inflect: -себя
 до: from, tag: preposition
 если: if
 врем--я: time, inflect: -время
@@ -605,11 +605,11 @@ grammar: -наш@accanm
 сдела--ть: n/a, inflect: -встречать
 grammar: -идти@inf
 grammar: adj@prepn
-выходны--<ой: n/a, inflect: -выходной
+выходн--ой: n/a, inflect: -выходной
 давно: n/a, tag: past, tag: time
 недавно: n/a, tag: past
 grammar: -борщ@acc
-росси--я: n/a, inflect: -россия
+Росси--я: n/a, inflect: -россия
 grammar: -год@genpl
 grammar: -много@pl
 закончи--ть: n/a, inflect: -учить, tag: start-end
@@ -786,7 +786,6 @@ grammar: it-im-ite@inf
 карман--: n/a, inflect: masc1
 наверное: n/a
 зуб--: n/a, inflect: masc1
-кам--ень: n/a, inflect: -камень
 ого--нь: n/a, inflect: -огонь
 гост--ь: n/a, inflect: -родитель
 собира--ть: n/a, inflect: -встречать
@@ -845,7 +844,7 @@ grammar: -мы@acc
 grammar: y-esh-et@impr
 пока: n/a, tag: pleasantries
 прости--ть: n/a, inflect: -простить, tag: pleasantries
-централн--ый: n/a, inflect: ыйadj
+центральн--ый: n/a, inflect: ыйadj
 извини--ть: n/a, inflect: -дарить, tag: pleasantries, tag: imperative
 метро: n/a
 домой: n/a
@@ -980,7 +979,7 @@ grammar: -они@gen
 найд--<ти: n/a, inflect: -войти
 grammar: -войти@inf
 нигде: n/a
-т--от: n/a, inflect: -этот
+т--от: n/a, inflect: -тот, mask: short
 grammar: -идти@pastf
 grammar: -оставаться@impr
 остановк--а: n/a, inflect: femka
@@ -1080,19 +1079,14 @@ grammar: -россия@nom
 grammar: -словарь@prep
 учи--ться: n/a, inflect: -случиться
 потеря--ться: n/a, inflect: -пытаться
-собой: n/a
 grammar: sya@pastpl
-легкий: n/a
-лёгк--ий: n/a, inflect: ийadj
-поетому: n/a
+лёгк--ий: n/a, inflect: -лёгкий
 grammar: sya@pastm
 очеред--ь: n/a, inflect: fem4
-открыто: n/a
 вход--: n/a, inflect: masc1
 выход--: n/a, inflect: masc1
-запасны--<ой: n/a, inflect: -запасной
-здание: n/a
-grammar: -выходной@acc
+запасн--ой: n/a, inflect: ойadj2
+здание: n/a, inflect: иеnoun
 grammar: -они@instr
 grammar: -давать@impr
 билет--: n/a, inflect: masc1
@@ -1113,7 +1107,6 @@ grammar: -хотеть@2pl
 шкаф--: n/a, inflect: masc1
 храни--ть: n/a, inflect: -дарить
 grammar: -мочь@pastpl
-понравится: n/a
 понрави--ться: n/a, inflect: -нравиться
 теря--ться: n/a, inflect: -пытаться
 grammar: sya@1
