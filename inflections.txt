@@ -6,8 +6,6 @@ fem4[n]: accpl и, inherit fem3
 femka[n]: genpl <ок, inherit fem2
 femka2[n]: genpl <ек, inherit fem2
 -статья[n]: nom я, genpl <ей, datpl ям, acc ю, instr ёй, instrpl ями, preppl ях, inherit fem2
--ребёнок[n]: nom ок, pl ки, gen ка, genpl ков, dat ку, datpl кам, acc ка, accpl ки, instr ком, instrpl ками, prep ке, preppl ках
--подарок[n]: acc ок, inherit -ребёнок
 -деньга[n]: genpl <<ег, inherit fem2
 -родитель[n]: gen я, dat ю, acc я, accpl ей, instr ем, prep е, inherit fem4
 -лошадь[n]: instrpl ьми, inherit fem3
@@ -19,14 +17,16 @@ femka2[n]: genpl <ек, inherit fem2
 masc1[n]: nom , gen а, genpl ов, dat у, acc nom-, accpl pl-, instr ом, prep е, inherit n
 masc2[n]: pl и, inherit masc1
 masc3[n]: pl а, inherit masc1
+masc1animate[n]: acc gen-, accpl genpl-, inherit masc1
+masc2animate[n]: acc gen-, accpl genpl-, inherit masc2
 -глаз[n]: genpl , inherit masc3
 -город[n]: pl а, inherit masc1
 -день[n]: nom ень, pl ни, gen ня, genpl ней, dat ню, datpl ням, instr нём, instrpl нями, prep не, preppl нях, inherit masc1
-masc1animate[n]: acc gen-, accpl genpl-, inherit masc1
-masc2animate[n]: acc gen-, accpl genpl-, inherit masc2
+-ребёнок[n]: nom <ок, genpl ков, gen а, inherit masc1animate
+-подарок[n]: nom <ок, inherit masc2
 -друг[n]: pl <зья, genpl <зей, datpl <зьям, instrpl <зьями, preppl <зьях, inherit masc1animate
 -словарь[n]: pl и, gen я, dat ю, instr ём, prep е, inherit fem4
--борщ[n]: nom , pl и, gen а, genpl ей, dat у, datpl ам, acc , accpl и, instr ом, instrpl ами, prep е, preppl ах
+-борщ[n]: genpl ей, datpl ам, instrpl ами, preppl ах, inherit: masc2
 -врач[n]: acc а, accpl ей, inherit -борщ
 -доктор[n]: pl а, inherit masc2animate
 neu1[n]: nom о, pl ья, gen а, genpl ьев, dat у, datpl ьям, acc о, accpl ья, instr ом, instrpl ьями, prep е, preppl ьях
