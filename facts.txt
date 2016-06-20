@@ -185,11 +185,11 @@ grammar: adj@preppl
 grammar: yo-yosh-yot@3
 grammar: -друг@pl
 дела--ть: n/a, inflect: -встречать
-grammar: n@accpl
 разн--ый: n/a, inflect: ныйadj
 плох--ой: bad, inflect: ойadj2, tag: sleep, tag: weather
 grammar: ыйadj@accinanpl
 grammar: yo-yosh-yot@2pl
+grammar: n@accpl
 --они: they, inflect: -они
 стар--ый: n/a, inflect: ыйadj, tag: family
 grammar: -они@nom
@@ -197,16 +197,17 @@ grammar: -мы@nom
 grammar: -встречать@inf
 --мы: we, inflect: -мы
 grammar: -встречать@3pl
+grammar: adj@accinanpl
 grammar: yo-yosh-yot@2
 скучн--ый: n/a, inflect: ныйadj
+да: yes
+и: and
+одн--<ин: n/a, inflect: -один, tag: number
 grammar: adj@accn
 grammar: -вы@acc, tag: accusative
-да: yes
 там: there
-и: and
 grammar: -один@m, tag: number
 grammar: -один@f, tag: number
-одн--<ин: n/a, inflect: -один, tag: number
 дв--а: n/a, inflect: -два, tag: number
 grammar: -два@accinanpl, tag: number
 grammar: -три@accinanpl, tag: number
@@ -392,7 +393,6 @@ grammar: neu1@acc
 покупк--а: n/a, inflect: femka
 grammar: adj@accanm, tag: accusative
 grammar: -ребёнок@acc
-grammar: adj@accinanpl
 grammar: -есть@3pl
 входи--ть: n/a, inflect: -ходить, tag: motion
 войд--<ти: n/a, inflect: -войти, tag: motion
@@ -497,7 +497,7 @@ grammar: -о@std, tag: preposition
 о--: about, inflect: -о, tag: preposition
 ещё: again
 бы: 
-себя: himself / herself, inflect: -себя
+--себя: himself / herself, inflect: -себя
 до: from, tag: preposition
 если: if
 врем--я: time, inflect: -время
@@ -1086,7 +1086,7 @@ grammar: sya@pastm
 вход--: n/a, inflect: masc1
 выход--: n/a, inflect: masc1
 запасн--ой: n/a, inflect: ойadj2
-здание: n/a, inflect: иеnoun
+здан--ие: n/a, inflect: иеnoun
 grammar: -они@instr
 grammar: -давать@impr
 билет--: n/a, inflect: masc1
@@ -1113,3 +1113,92 @@ grammar: sya@1
 grammar: -начать@inf
 закрыт--ый: n/a, inflect: ыйadj
 grammar: -россия@acc
+grammar: -весь@prepm
+уверенн--ый: n/a, inflect: -уверенный
+прид--ти: n/a, inflect: -придти
+роман--: n/a, inflect: masc1animate
+сложн--ый: n/a, inflect: ыйadj
+вста--вать: n/a, inflect: -давать
+реклам--а: n/a, inflect: fem1
+спальн--я: n/a, inflect: -спальня
+бабушк--а: n/a, inflect: -кошка, tag: family
+объясни--ть: n/a, inflect: -дарить
+всё: n/a
+счита--ть: n/a, inflect: -встречать
+раньше: n/a
+grammar: -себя@acc
+пример--: n/a, inflect: masc1
+посмотри--<еть: n/a, inflect: -смотреть
+поговори--ть: n/a, inflect: -дарить
+объясня--ть: n/a, inflect: -встречать
+мороз--: n/a, inflect: -мороз
+совету--<овать: n/a, inflect: -чувствовать
+ненавиди--<еть: n/a, inflect: -сидеть
+расскаж--<зать: n/a, inflect: -показать
+выучи--ть: n/a, inflect: -учить
+повери--ть: n/a, inflect: -верить
+тяжёл--ый: n/a, inflect: ыйadj
+зажигалк--а: n/a, inflect: femka
+опаздыва--ть: n/a, inflect: -встречать
+дочер--<<ь: n/a, inflect: -мать, tag: family
+что-то: n/a
+убь--<ить: n/a, inflect: -убить
+регистраци--я: n/a, inflect: -регистрация
+жаль: n/a
+счастлив--ый: n/a, inflect: ыйadj
+вкусн--ый: n/a, inflect: ыйadj
+иде--я: n/a, inflect: -идея
+пройд--<ти: n/a, inflect: -войти
+согласн--ый: n/a, inflect: -согласный
+касс--а: n/a, inflect: fem1
+встрети--ть: n/a, inflect: -ответить
+достаточн--ый: n/a, inflect: ыйadj
+выбер--<<рать: n/a, inflect: -выбрать
+grammar: -хороший@genm
+рад: n/a
+закончи--ться: n/a, inflect: -случиться
+паспорт--: n/a, inflect: masc3
+верн--ый: n/a, inflect: ыйadj
+треть--<ий: n/a, inflect: -третий, tag: number
+попробу--<овать: n/a, inflect: -чувствовать
+украд--<сть: n/a, inflect: -украсть
+хвати--ть: n/a, inflect: -хватить
+дяд--я: n/a, inflect: -дядя, tag: family
+некотор--ый: n/a, inflect: ыйadj
+животн--ый: n/a, inflect: ыйadj
+правил--о: n/a, inflect: neu3
+продавц--<ец: n/a, inflect: -отец
+по--<еть: n/a, inflect: -петь
+доверя--ть: n/a, inflect: -встречать
+кухн--я: n/a, inflect: -кухня
+замужем: n/a
+яблок--о: n/a, inflect: -яблоко
+медленн--ый: n/a, inflect: ыйadj
+дальше: n/a
+бумаг--а: n/a, inflect: fem2
+международный: n/a
+тих--ий: n/a, inflect: ийadj
+особенн--ый: n/a, inflect: ыйadj
+заплати--ть: n/a, inflect: -хватить
+рыб--а: n/a, inflect: -мама
+набер--<<рать: n/a, inflect: -набрать
+grammar: -начать@impr
+салат--: n/a, inflect: masc1
+заказыва--ть: n/a, inflect: -встречать
+плати--ть: n/a, inflect: -хватить
+одеял--о: n/a, inflect: neu3
+подушк--а: n/a, inflect: femka2
+сдач--а: n/a, inflect: -крыша
+лишний: n/a
+grammar: -родитель@acc
+grammar: -чей@m
+grammar: -чей@accinanm
+grammar: -время@gen
+половин--а: n/a, inflect: fem1
+номер--: n/a, inflect: masc3
+принес--ти: n/a, inflect: -принести
+этаж--: n/a, inflect: -борщ
+сосед--: n/a, inflect: -сосед
+grammar: -борщ@nom
+grammar: -врач@accpl
+grammar: -борщ@pl
