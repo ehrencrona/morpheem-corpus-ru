@@ -22,11 +22,11 @@ masc2animate[n]: acc gen-, accpl genpl-, inherit masc2
 -глаз[n]: genpl , inherit masc3
 -город[n]: pl а, inherit masc1
 -день[n]: nom ень, pl ни, gen ня, genpl ней, dat ню, datpl ням, instr нём, instrpl нями, prep не, preppl нях, inherit masc1
--ребёнок[n]: nom <ок, genpl ков, gen а, inherit masc1animate
+-ребёнок[n]: nom <ок, gen а, genpl ков, inherit masc1animate
 -подарок[n]: nom <ок, inherit masc2
 -друг[n]: pl <зья, genpl <зей, datpl <зьям, instrpl <зьями, preppl <зьях, inherit masc1animate
 -словарь[n]: pl и, gen я, dat ю, instr ём, prep е, inherit fem4
--борщ[n]: genpl ей, datpl ам, instrpl ами, preppl ах, inherit: masc2
+-борщ[n]: genpl ей, datpl ам, instrpl ами, preppl ах, inherit masc2
 -врач[n]: acc а, accpl ей, inherit -борщ
 -доктор[n]: pl а, inherit masc2animate
 neu1[n]: nom о, pl ья, gen а, genpl ьев, dat у, datpl ьям, acc о, accpl ья, instr ом, instrpl ьями, prep е, preppl ьях
@@ -71,8 +71,8 @@ adj[adj]: m ***, n ое, f ая, pl ие, genm ого, genn ого, genf ой, g
 -тот[adj]: pl е, genpl ех, datpl ем, accinanpl ех, accanpl е, instrpl еми, preppl ех, inherit -этот
 -я[pron]: nom я, gen меня, dat мне, acc меня, instr мной, prep мне
 -ты[pron]: nom ты, gen тебя, dat тебе, acc тебя, instr тобой, prep тебе
--он[pron]: nom он, gen его, dat ему, acc его, instr им, prep нём, genalt него, datalt нему, accalt него, instralt ним
--она[pron]: nom она, gen её, dat ей, acc её, instr ей, prep ней, genalt неё, datalt ней, accalt неё, instralt ней
+-он[pron]: nom он, gen его, genalt него, dat ему, datalt нему, acc его, accalt него, instr им, instralt ним, prep нём
+-она[pron]: nom она, gen её, genalt неё, dat ей, datalt ней, acc её, accalt неё, instr ей, instralt ней, prep ней
 -мы[pron]: nom мы, gen нас, dat нам, acc нас, instr нами, prep нас
 -вы[pron]: nom вы, gen вас, dat вам, acc вас, instr вами, prep вас
 -они[pron]: nom они, gen их, dat им, acc их, instr ими, prep них
@@ -209,3 +209,6 @@ oprep[prep]: std , alt о
 -набрать[v]: inf <<рать, inherit -начать
 -принести[v]: pastm <<ёс, pastn ло, pastf ла, pastpl ли, inherit -идти
 -сосед[n]: datpl ям, instrpl ями, preppl ях, inherit -врач
+-жениться[v]: 1 <юсь, inherit -находиться
+-съесть[v]: impr ешь, inherit -есть
+-одеться[v]: pastm <лся, pastn <лось, pastf <лась, pastpl <лись, impr ься, inherit -остаться
