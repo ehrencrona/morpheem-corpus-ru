@@ -75,7 +75,6 @@ grammar: it-im-ite@2
 пиш--<сать: read, inflect: -писать
 газет--а: newspaper, inflect: fem1
 журнал--: magazine, inflect: masc1
-grammar: masc1@acc, tag: accusative
 встреча--ть: meet, inflect: -встречать
 гуля--ть: take a walk, inflect: -встречать
 отличн--ый: great, inflect: ныйadj
@@ -119,10 +118,9 @@ grammar: -статья@acc, tag: accusative
 стать--я: article, inflect: -статья
 grammar: -статья@nom
 grammar: y-esh-et@2
-grammar: ойadj@accinanm, tag: accusative
 grammar: ийadj@accinanm, tag: accusative
 grammar: ыйadj@accinanm, tag: accusative
-кроват--ь: bed, inflect: fem4, tag: sleep
+кроват--ь: bed, inflect: fem3, tag: sleep
 лежи--<ать: lie, inflect: -лежать
 под: under, tag: preposition
 grammar: fem3@instr, tag: instrumental
@@ -134,7 +132,7 @@ grammar: fem1@instr, tag: instrumental
 grammar: oprep@alt, tag: preposition
 штор--а: curtain, inflect: fem1
 grammar: fem3@pl
-двер--ь: door, inflect: fem4
+двер--ь: door, inflect: fem3
 открыт--ый: open, inflect: ыйadj
 grammar: n@pl
 grammar: -свой@accf
@@ -165,7 +163,7 @@ grammar: -этот@accinanm
 дом--: house, inflect: masc3, tag: city
 grammar: ыйadj@pl
 работ--а: n/a, inflect: fem1
-д--ень: day, inflect: -день, tag: time, tag: pleasantries
+дн--<ень: day, inflect: -день, tag: time, tag: pleasantries
 кажд--ый: n/a, inflect: ыйadj
 grammar: -день@nom
 grammar: -что@nom
@@ -338,7 +336,6 @@ grammar: -есть@1
 его: his
 ед--<хать: n/a, inflect: -ехать, tag: motion
 езди--ть: n/a, inflect: -ходить, tag: motion
-grammar: -писать@1pl, tag: motion
 grammar: -писать@3pl, tag: motion
 ходи--ть: n/a, inflect: -ходить, tag: motion
 grammar: -я@instr, tag: instrumental
@@ -353,7 +350,6 @@ grammar: -я@instr, tag: instrumental
 дешёв--ый: n/a, inflect: -дешёвый
 grammar: -сколько@pl
 скольк--о: n/a, inflect: -сколько
-grammar: -наш@accanpl, tag: accusative
 фрукт--: n/a, inflect: masc1
 сумк--а: n/a, inflect: femka
 пожалуйста: n/a, tag: pleasantries
@@ -362,7 +358,6 @@ grammar: v@imprpl, tag: imperative
 покаж--<зать: n/a, inflect: -показать
 grammar: -жить@inf
 да--ть: n/a, inflect: -дать
-grammar: masc1@accpl
 овощ--: n/a, inflect: -овощ, tag: food
 стои--ть: n/a, inflect: -дарить
 так--ой: such a, inflect: ойadj
@@ -386,7 +381,6 @@ grammar: -кто@gen, tag: genitive
 ни--что: what, inflect: -что
 grammar: neu1@nom
 масл--о: n/a, inflect: -масло
-grammar: neu1@acc
 покупк--а: n/a, inflect: femka
 grammar: adj@accanm, tag: accusative
 grammar: -есть@3pl
@@ -405,9 +399,8 @@ grammar: -лежать@inf
 низк--ий: low, inflect: ийadj
 долго: n/a, tag: time
 высок--ий: tall, inflect: ийadj
-grammar: fem4@accpl
-grammar: -смотреть@inf
 grammar: fem3@accpl
+grammar: -смотреть@inf
 grammar: adj@genm
 grammar: adj@genn
 grammar: adj@genf
@@ -423,7 +416,7 @@ grammar: -писать@inf
 grammar: neu1@prep
 grammar: -этот@accinanpl
 стран--а: country, inflect: fem1
-обув--ь: shoe, inflect: fem4
+обув--ь: shoe, inflect: fem3
 или: or
 голов--а: head, inflect: fem1
 забыва--ть: to forget, inflect: -встречать
@@ -437,7 +430,6 @@ grammar: -свой@n
 несколько: a few
 язык--: n/a, inflect: masc2
 grammar: adj@accanpl
-grammar: -ребёнок@gen
 grammar: -мы@gen
 grammar: it-im-ite@1pl
 урок--: n/a, inflect: masc2
@@ -464,7 +456,6 @@ grammar: ыйadj@instrm, tag: instrumental
 grammar: neu1@instr, tag: instrumental
 grammar: -что@instr, tag: family, tag: instrumental
 grammar: -кто@instr, tag: instrumental
-grammar: -наш@instrm, tag: instrumental
 grammar: -родитель@instr, tag: instrumental
 учител--ь: n/a, inflect: -учитель, tag: profession, tag: instrumental, tag: Frequency
 grammar: -наш@instrf, tag: instrumental
@@ -492,7 +483,7 @@ grammar: -о@std, tag: preposition
 --себя: himself / herself, inflect: -себя
 до: from, tag: preposition
 если: if
-врем--я: time, inflect: -время
+времен--<<я: time, inflect: -время
 рук--а: hand, inflect: fem1
 сам--ый: most, inflect: ыйadj
 ни: neither/nor
@@ -519,8 +510,6 @@ grammar: -хороший@genn
 grammar: -хороший@prepm
 grammar: neuie@nom
 grammar: neuie@pl
-grammar: neuie@acc
-grammar: neuie@accpl
 grammar: neuie@prep
 упражнени--е: n/a, inflect: neuie
 решени--е: n/a, inflect: neuie
@@ -568,7 +557,6 @@ grammar: -он@prep
 над: n/a, tag: preposition
 взя--ть: n/a, inflect: -взять
 земл--я: n/a, inflect: -земля
-grammar: -показать@impr
 конц--<ец: n/a, inflect: -конец
 час--: n/a, inflect: masc1, tag: sleep
 голос--: n/a, inflect: masc3
@@ -583,7 +571,6 @@ grammar: -они@acc
 меню: n/a
 grammar: neu2@pl
 яйц--о: n/a, inflect: -яйцо
-grammar: neu2@accpl
 grammar: -он@dat
 grammar: -наш@m
 grammar: -наш@accf
@@ -667,7 +654,7 @@ grammar: it-im-ite@impr, tag: imperative
 полн--ый: n/a, inflect: ныйadj
 люб--ой: n/a, inflect: -второй
 наконец: n/a
-мысл--ь: n/a, inflect: fem4
+мысл--ь: n/a, inflect: fem3
 узна--ть: n/a, inflect: -встречать
 назад: n/a, tag: time
 общий: n/a
@@ -681,7 +668,7 @@ grammar: it-im-ite@impr, tag: imperative
 пор--а: n/a, inflect: fem1
 гляди--<еть: n/a, inflect: -глядеть
 оно: n/a
-им--я: n/a, inflect: -имя
+имен--<<я: n/a, inflect: -имя
 разговор--: n/a, inflect: masc1
 тел--о: n/a, inflect: neu3
 стен--а: n/a, inflect: fem1, tag: home
@@ -717,13 +704,13 @@ grammar: it-im-ite@impr, tag: imperative
 чувству--<овать: n/a, inflect: -чувствовать
 сердц--е: n/a, inflect: -сердце
 успех--: n/a, inflect: masc2
-смерт--ь: n/a, inflect: fem4
+смерт--ь: n/a, inflect: fem3
 grammar: -бояться@1
 образ--: n/a, inflect: masc1
 вокруг: n/a
 путешеству--<овать: n/a, inflect: -чувствовать
 путешестви--е: n/a, inflect: neuie
-власт--ь: n/a, inflect: fem4
+власт--ь: n/a, inflect: fem3
 воздух--: n/a, inflect: masc2, tag: weather
 проси--ть: n/a, inflect: -спросить, tag: imperative
 собственный: n/a
@@ -735,7 +722,7 @@ grammar: -бояться@1
 спрашива--ть: n/a, inflect: -встречать
 броси--ть: n/a, inflect: -бросить
 парн--<ень: n/a, inflect: -парень
-кров--ь: n/a, inflect: fem4
+кров--ь: n/a, inflect: fem3
 находи--ться: n/a, inflect: -находиться
 шаг--: n/a, inflect: masc2
 мало: n/a
@@ -772,12 +759,12 @@ grammar: -вернуться@1
 кричи--<ать: n/a, inflect: -лежать
 прекрати--ть: n/a, inflect: -прекратить
 grammar: it-im-ite@inf
-возможност--ь: n/a, inflect: fem4
+возможност--ь: n/a, inflect: fem3
 ладно: n/a
 карман--: n/a, inflect: masc1
 наверное: n/a
 зуб--: n/a, inflect: masc1
-ого--нь: n/a, inflect: -огонь
+огн--<онь: n/a, inflect: -огонь
 гост--ь: n/a, inflect: -родитель
 собира--ть: n/a, inflect: -встречать
 уме--ть: n/a, inflect: -встречать
@@ -796,7 +783,7 @@ grammar: -весь@accf
 grammar: -парень@nom
 кофе: n/a
 молок--о: n/a, inflect: neu1
-осен--ь: n/a, inflect: fem4, tag: season, mask: pl
+осен--ь: n/a, inflect: fem3, tag: season, mask: pl
 grammar: -ходить@1
 трав--а: n/a, inflect: fem1
 grammar: -мы@instr
@@ -818,7 +805,6 @@ grammar: -брат@acc
 grammar: -чувствовать@inf
 grammar: adj@instrm
 обычн--ый: n/a, inflect: ныйadj
-grammar: -наш@datpl
 grammar: -весь@datpl
 grammar: -этот@n
 grammar: -весь@accanpl
@@ -847,7 +833,6 @@ grammar: -случай@acc, tag: accusative
 grammar: -она@prep
 grammar: -ты@prep
 подождё--<ать: n/a, inflect: -ждать
-grammar: -родитель@accpl
 останови--ться: n/a, inflect: -становиться
 сем--ь: n/a, inflect: -пять
 девят--ь: n/a, inflect: -пять, tag: number
@@ -869,7 +854,6 @@ grammar: -церковь@nom
 grammar: -родитель@prep
 grammar: fem3@dat
 grammar: -наш@genn
-grammar: -femшь@genpl
 крыш--а: n/a, inflect: -крыша
 grammar: -сказать@impr, tag: imperative
 grammar: -хотеть@impr
@@ -904,7 +888,6 @@ grammar: -месяц@genpl
 градус--: n/a, inflect: masc1, tag: weather
 матч--: n/a, inflect: -овощ
 выигра--ть: n/a, inflect: -встречать
-grammar: -наш@genpl
 слома--ть: n/a, inflect: -встречать
 grammar: ыйadj@instrn
 роди--ть: n/a, inflect: -ходить
@@ -922,7 +905,6 @@ grammar: -кошка@accpl
 grammar: -чувствовать@pastm
 плава--ть: n/a, inflect: -встречать
 озёр--<<еро: n/a, inflect: -озеро
-grammar: -наш@instrpl
 grammar: -воскресенье@prep
 grammar: neuie@instr
 grammar: neuie@dat
@@ -989,7 +971,6 @@ grammar: -кино@nom
 вредно: n/a
 здоровь--е: n/a, inflect: -воскресенье
 следи--ть: n/a, inflect: -ходить
-grammar: -наш@instrn
 двор--: n/a, inflect: masc1
 налево: n/a
 направо: n/a
@@ -1043,9 +1024,7 @@ grammar: -случай@nom
 получа--ть: n/a, inflect: -встречать
 недалеко: n/a
 grammar: adj@comp
-grammar: -время@accpl
 grammar: -время@nom
-grammar: -время@acc
 фабрик--а: n/a, inflect: fem2
 класс--: n/a, inflect: masc1
 чь--<ей: n/a, inflect: -чей
@@ -1071,7 +1050,7 @@ grammar: -словарь@prep
 grammar: sya@pastpl
 лёгк--ий: n/a, inflect: -лёгкий
 grammar: sya@pastm
-очеред--ь: n/a, inflect: fem4
+очеред--ь: n/a, inflect: fem3
 вход--: n/a, inflect: masc1
 выход--: n/a, inflect: masc1
 запасн--ой: n/a, inflect: ойadj
@@ -1144,7 +1123,7 @@ grammar: -себя@acc
 достаточн--ый: n/a, inflect: ыйadj
 выбер--<<рать: n/a, inflect: -выбрать
 grammar: -хороший@genm
-рад: n/a
+рад--: n/a, inflect: -рад
 закончи--ться: n/a, inflect: -случиться
 паспорт--: n/a, inflect: masc3
 верн--ый: n/a, inflect: ыйadj
@@ -1205,7 +1184,7 @@ grammar: -себя@dat
 одева--ться: n/a, inflect: -пытаться
 grammar: -пытаться@impr
 тёпл--ый: n/a, inflect: ыйadj
-свидание: n/a
+свидан--ие: n/a, inflect: иеnoun
 позвони--ть: n/a, inflect: -дарить
 grammar: adj@instrn
 grammar: -весь@genn
@@ -1236,7 +1215,7 @@ grammar: -убить@inf
 пар--а: n/a, inflect: fem1
 удобн--ый: n/a, inflect: ыйadj
 лекци--я: n/a, inflect: -регистрация
-спеши--ть: n/a, inflect: -значить
+спеши--ть: n/a, inflect: -учить
 grammar: -мать@acc
 экзамен--: n/a, inflect: masc1
 grammar: sya@imprpl
