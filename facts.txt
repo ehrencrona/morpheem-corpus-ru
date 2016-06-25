@@ -377,7 +377,7 @@ grammar: -пить@3
 олигарх--: oligarch, inflect: masc2animate
 письм--о: letter, inflect: -письмо
 grammar: -что@gen, tag: genitive
-grammar: neu@gen
+grammar: neu@gen, tag: genitive
 grammar: -кто@gen, tag: genitive
 grammar: neu@nom
 ни--что: what, inflect: -что
@@ -1188,11 +1188,62 @@ grammar: -мать@acc, tag: accusative
 экзамен--: n/a, inflect: masc1
 пойм--<<нять: n/a, inflect: -понять
 вечеринк--а: n/a, inflect: fem1
-grammar: n@acc
+grammar: n@acc, tag: accusative
 grammar: -выбрать@inf
 grammar: -принести@pastpl
-grammar: neanderthal@instrf
-grammar: -она@datalt
+grammar: neanderthal@instrf, tag: instrumental
+grammar: -она@datalt, tag: dative
 grammar: -весь@prepn, tag: prepositional
-grammar: neanderthal@prepf
-grammar: neu@instr
+grammar: neanderthal@prepf, tag: prepositional
+grammar: neu@instr, tag: instrumental
+grammar: -идти@pastpl
+grammar: neanderthal@datm
+grammar: neanderthal@genm
+grammar: neanderthal@genn
+grammar: neanderthal@datn
+grammar: neanderthal@datf
+grammar: neanderthal@genf
+grammar: neanderthal@accanm
+grammar: neanderthal@prepm
+grammar: neanderthal@prepn
+grammar: neanderthal@accn
+grammar: -они@datalt
+grammar: -они@genalt
+grammar: -они@accalt
+grammar: -они@instralt
+grammar: -они@prep
+grammar: -тот@genpl
+grammar: -тот@datpl
+grammar: -тот@accanpl
+grammar: -тот@instrpl
+grammar: adj@shortpl
+grammar: -домашний@accf
+grammar: -словарь@accpl
+grammar: -мама@accpl
+grammar: -собака@accpl
+grammar: -хороший@comp
+grammar: -день@dat
+grammar: -день@instr
+grammar: -день@instrpl
+grammar: -день@datpl
+grammar: -день@preppl
+grammar: neu@dat
+grammar: neu@accpl
+grammar: -ночь@datpl
+grammar: -ночь@instrpl
+grammar: -пять@datpl
+grammar: -статья@datpl
+grammar: -статья@instrpl
+grammar: -статья@preppl
+grammar: -борщ@genpl
+grammar: -глаз@genpl
+grammar: -неделя@genpl
+grammar: -неделя@instr
+grammar: -россия@instr
+grammar: -подарок@nom
+grammar: -словарь@nom
+grammar: neu@prep
+grammar: -свой@prepn
+grammar: -время@dat
+grammar: -время@pl
+grammar: -время@genpl
