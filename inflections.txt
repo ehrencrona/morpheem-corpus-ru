@@ -1,4 +1,4 @@
-n[n]: nom ***, acc nom-, accpl pl-, pl ы, datpl ам, accpl ы, instrpl ами, preppl ах
+n[n]: nom ***, pl ы, datpl ам, acc nom-, accpl ы, instrpl ами, preppl ах
 fem1[n]: nom а, gen ы, genpl , dat е, acc у, instr ой, prep е, inherit n
 fem2[n]: pl и, gen и, accpl и, inherit fem1
 fem3[n]: nom ь, pl и, gen и, genpl ей, dat и, datpl ям, acc ь, accpl ей, instr ью, instrpl ями, prep и, preppl ях
@@ -6,11 +6,11 @@ femka[n]: genpl <ок, inherit fem2
 femka2[n]: genpl <ек, inherit fem2
 -статья[n]: nom я, genpl <ей, datpl ям, acc ю, instr ёй, instrpl ями, preppl ях, inherit fem2
 -деньга[n]: genpl <<ег, inherit fem2
--родитель[n]: gen я, dat ю, acc я, accpl ей, instr ем, prep е, inherit fem3
+-родитель[n]: gen я, dat ю, acc я, instr ем, prep е, inherit fem3
 -лошадь[n]: instrpl ьми, inherit fem3
 -кошка[n]: genpl <ек, accpl <ек, inherit fem2
 -собака[n]: accpl , inherit fem2
--femшь[n]: genpl ей, datpl ам, instrpl ами, preppl ах, inherit fem3
+-femшь[n]: datpl ам, instrpl ами, preppl ах, inherit fem3
 -мама[n]: accpl , inherit fem1
 -люди[n]: instrpl ьми, inherit fem3
 masc1[n]: nom , gen а, genpl ов, dat у, instr ом, prep е, inherit n
@@ -20,36 +20,36 @@ masc1animate[n]: acc gen-, accpl genpl-, inherit masc1
 masc2animate[n]: acc gen-, accpl genpl-, inherit masc2
 -глаз[n]: genpl , inherit masc3
 -город[n]: pl а, inherit masc1
--день[n]: nom <ень, pl и, gen я, genpl ей, dat ю, datpl ям, instr ём, instrpl ями, prep е, preppl ях, inherit masc2
--огонь[n]: nom <онь, instr ём, inherit -день
--ребёнок[n]: nom <ок, gen а, genpl ков, inherit masc1animate
+-день[n]: nom <ень, gen я, genpl ей, dat ю, datpl ям, instr ём, instrpl ями, preppl ях, inherit masc2
+-огонь[n]: nom <онь, inherit -день
+-ребёнок[n]: nom <ок, genpl ков, inherit masc1animate
 -подарок[n]: nom <ок, inherit masc2
 -друг[n]: pl <зья, genpl <зей, datpl <зьям, instrpl <зьями, preppl <зьях, inherit masc1animate
--словарь[n]: nom: ь, accpl pl-, inherit -день
+-словарь[n]: nom ь, accpl pl-, inherit -день
 -отель[n]: instr ем, inherit -словарь
--борщ[n]: genpl ей, datpl ам, instrpl ами, preppl ах, inherit masc2
+-борщ[n]: genpl ей, inherit masc2
 -врач[n]: acc а, accpl ей, inherit -борщ
 -доктор[n]: pl а, inherit masc2animate
-neu[n]: nom о, gen а, dat у, pl а, accpl а, instr ом, prep е, genpl , inherit n
+neu[n]: nom о, pl а, gen а, genpl , dat у, accpl а, instr ом, prep е, inherit n
 -дерево[n]: pl ья, genpl ьев, datpl ьям, instrpl ьями, preppl ьях, inherit neu
--окно[n]: pl а, genpl <он, inherit neu
+-окно[n]: genpl <он, inherit neu
 -письмо[n]: genpl <<ем, inherit -окно
-neuie[n]: nom е, acc nom-, pl я, accpl pl-, gen я, genpl й, dat ю, datpl ям, instr ем, instrpl ями, prep и, preppl ях, inherit n
--время[n]: nom <<я, pl а, gen и, genpl ён, dat и, datpl ами, instr ем, instrpl ами, prep и, preppl ах, inherit n
+neuie[n]: nom е, pl я, gen я, genpl й, dat ю, datpl ям, acc nom-, accpl pl-, instr ем, instrpl ями, prep и, preppl ях, inherit n
+-время[n]: nom <<я, pl а, gen и, genpl ён, dat и, datpl ами, instr ем, prep и, inherit n
 -имя[n]: gen <<, genpl <<ён, datpl ам, inherit -время
 -год[n]: genpl <<<лет, prep у, inherit masc1
 -раз[n]: genpl , inherit masc1
 -ключ[n]: genpl ей, inherit masc2
 v[v]: inf ****, 1 у, pastm inf-<<л, pastn pastm-о, pastf pastm-а, pastpl pastm-и, imprpl impr-те
-y-esh-et[v]: inf ****, 1pl ем, 2 ешь, 2pl ете, 3 ет, impr й, inherit v
+y-esh-et[v]: 1pl ем, 2 ешь, 2pl ете, 3 ет, impr й, inherit v
 -встречать[v]: inf ть, 1 ю, 3pl ют, inherit y-esh-et
--писать[v]: inf <сать, 1pl ем, 2pl ете, 3pl ут, impr и, inherit y-esh-et
+-писать[v]: inf <сать, 3pl ут, impr и, inherit y-esh-et
 -бытьfut[v]: inf <<ыть, impr ь, imprpl ьте, inherit -писать
 -хотеть[v]: inf <теть, 1pl <тим, 2pl <тите, 3pl <тят, impr <ти, inherit y-esh-et
 -сказать[v]: inf <зать, 2pl и, 3pl ите, impr и, inherit y-esh-et
--мочь[v]: inf <чь, 1 <гу, 1pl ем, 2pl ете, 3pl <гут, pastm <г, pastn <гло, pastf <гла, pastpl <гли, impr <ги, inherit y-esh-et
+-мочь[v]: inf <чь, 1 <гу, 3pl <гут, pastm <г, pastn <гло, pastf <гла, pastpl <гли, impr <ги, inherit y-esh-et
 -стать[v]: inf <ть, 3pl ут, impr ьй, inherit y-esh-et
-yo-yosh-yot[v]: inf ****, 1pl ём, 2 ёшь, 2pl ёте, 3 ёт, inherit v
+yo-yosh-yot[v]: 1pl ём, 2 ёшь, 2pl ёте, 3 ёт, inherit v
 -жить[v]: inf <ть, 3pl ут, inherit yo-yosh-yot
 -давать[v]: inf вать, 1 ю, 3pl ют, impr вай, inherit yo-yosh-yot
 -быть[v]: inf быть, 1 есть, inherit v
@@ -58,8 +58,8 @@ yo-yosh-yot[v]: inf ****, 1pl ём, 2 ёшь, 2pl ёте, 3 ёт, inherit v
 adj[adj]: m ***, n ое, f ая, pl ие, genm ого, genn ого, genf ой, genpl их, datm ому, datn ому, datf ой, datpl им, accinanm m-, accanm ого, accn ое, accf ую, accinanpl ие, accanpl их, instrm им, instrn им, instrf ой, instrpl ими, prepm ом, prepn ом, prepf ой, preppl их, shortm , shortn shortm-о, shortf shortm-а, shortpl shortm-и, adv о, comp shortf-<ее
 ойadj[adj]: m ой, inherit adj
 -большой[adj]: comp е, inherit ойadj
-neanderthal[adj]: genm его, genn его, genf ей, genpl их, datm ему, datn ему, datf ей, accanm его, accn е, instrf ей, prepm ем, prepn ем, prepf ей, inherit adj
--наш[adj]: m , n е, f а, pl и, genm его, genn его, genf ей, genpl их, datm ему, datn ему, datf ей, accanm его, accn е, accf у, accinanpl pl-, instrf ей, prepm ем, prepn ем, prepf ей, inherit neanderthal
+neanderthal[adj]: genm его, genn его, genf ей, datm ему, datn ему, datf ей, accanm его, accn е, instrf ей, prepm ем, prepn ем, prepf ей, inherit adj
+-наш[adj]: m , n е, f а, pl и, accf у, accinanpl pl-, inherit neanderthal
 ыйadj[adj]: m ый, pl ые, genpl ых, datpl ым, accinanm ый, accinanpl ые, accanpl ых, instrm ым, instrn ым, instrpl ыми, preppl ых, shortpl ы, inherit adj
 ныйadj[adj]: shortm <ен, shortn о, shortf а, inherit ыйadj
 -чёрный[adj]: shortn <<<ерно, shortf <<<ерна, shortpl <<<ерны, inherit ныйadj
@@ -68,24 +68,24 @@ neanderthal[adj]: genm его, genn его, genf ей, genpl их, datm ему, 
 -высокий[adj]: comp <<<ше, inherit ийadj
 -низкий[adj]: comp <<ше, inherit ийadj
 -дорогой[adj]: comp <же, inherit ойadj
--хороший[adj]: m ий, genm его, genn его, genf ей, datm ему, datn ему, datf ей, accanm его, instrf ей, prepm ем, prepn ем, prepf ей, n ее, accn ее, comp <<<<<лучше, inherit neanderthal
+-хороший[adj]: m ий, n ее, accn ее, comp <<<<<лучше, inherit neanderthal
 -домашний[adj]: accf юю, inherit -хороший
 -этот[adj]: m от, n о, f а, pl и, accinanm от, accn о, accf у, accinanpl и, shortm ***, shortn ***, shortf ***, inherit adj
 -тот[adj]: pl е, genpl ех, datpl ем, accinanpl ех, accanpl е, instrpl еми, preppl ех, inherit -этот
--рад[adj]: shortm , shortf а, shortn о, shortpl ы
+-рад[adj]: shortm , shortn о, shortf а, shortpl ы
 -я[pron]: nom я, gen меня, dat мне, acc меня, instr мной, prep мне
 -ты[pron]: nom ты, gen тебя, dat тебе, acc тебя, instr тобой, prep тебе
 -он[pron]: nom он, gen его, genalt него, dat ему, datalt нему, acc его, accalt него, instr им, instralt ним, prep нём
 -она[pron]: nom она, gen её, genalt неё, dat ей, datalt ней, acc её, accalt неё, instr ей, instralt ней, prep ней
 -мы[pron]: nom мы, gen нас, dat нам, acc нас, instr нами, prep нас
 -вы[pron]: nom вы, gen вас, dat вам, acc вас, instr вами, prep вас
--они[pron]: nom они, gen их, dat им, acc их, instr ими, prep них, genalt них, datalt ним, accalt них, instralt ними
+-они[pron]: nom они, gen их, genalt них, dat им, datalt ним, acc их, accalt них, instr ими, instralt ними, prep них
 -себя[pron]: gen себя, dat себе, acc себя, instr собой, prep себе
 -что[n]: nom что, gen чего, dat чему, acc что, instr чем, prep чём
 -кто[n]: nom кто, gen кого, dat кому, acc кого, instr кем, prep ком
 -сколько[adj]: pl о, genpl их, datpl им, accinanpl о, accanpl их, instrpl ими, preppl их
 -много[adj]: m о, pl о, accinanpl о, inherit ийadj
--сам[adj]: m , accinanm , accn о, inherit -этот
+-сам[adj]: m , accinanm , inherit -этот
 -взять[v]: impr <<озьми, inherit -встречать
 -земля[n]: genpl <ель, inherit -статья
 -конец[n]: nom <ец, inherit masc1
@@ -94,9 +94,9 @@ neanderthal[adj]: genm его, genn его, genf ей, genpl их, datm ему, 
 -овощ[n]: instr ем, inherit -ключ
 -яйцо[n]: genpl <<иц, inherit -окно
 -масло[n]: genpl <<ел, inherit neu
--здоровый[adj]: shortm , inherit ыйadj
+-здоровый[adj]: , inherit ыйadj
 -дать[v]: 1 м, 1pl дим, 2 шь, 2pl дите, 3 ст, 3pl дут, inherit -встречать
--показать[v]: inf <зать, impr и, inherit -писать
+-показать[v]: inf <зать, inherit -писать
 -забыть[v]: inf <<ыть, 3pl <<ыт, impr ь, inherit y-esh-et
 -весь[adj]: m <есь, n ё, f я, pl е, genm его, genn его, genf ей, genpl <сех, datm ему, datn ему, datf ей, datpl ем, accinanm <есь, accanm его, accn ё, accf ю, accinanpl ех, accanpl е, instrm ем, instrn ем, instrf ей, instrpl еми, prepm ём, prepn ём, prepf ей, preppl ех
 -открыть[v]: inf <ыть, inherit -встречать
@@ -199,7 +199,7 @@ oprep[prep]: std , alt о
 -регистрация[n]: genpl й, accpl и, inherit -россия
 -идея[n]: instr ей, inherit -статья
 -выбрать[v]: inf <<рать, inherit -писать
--третий[adj]: m <ий, f я, accinanm <ий, accn е, accf ю, inherit -наш
+-третий[adj]: m <ий, f я, accinanm <ий, accf ю, inherit -наш
 -украсть[v]: inf <сть, pastm <л, inherit -начать
 -хватить[v]: 1 <<чу, inherit it-im-ite
 -дядя[n]: pl ья, genpl ьев, accpl ьёв, inherit -неделя
@@ -214,3 +214,4 @@ oprep[prep]: std , alt о
 -одеться[v]: pastm <лся, pastn <лось, pastf <лась, pastpl <лись, impr ься, inherit -остаться
 -встретиться[v]: 1 <<чусь, inherit -нравиться
 -понять[v]: inf <<нять, inherit -начать
+-палец[n]: nom <<ец, inherit -месяц
