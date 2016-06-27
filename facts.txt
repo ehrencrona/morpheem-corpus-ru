@@ -1247,7 +1247,7 @@ grammar: -свой@prepn, tag: prepositional
 grammar: -время@dat, tag: dative
 grammar: -время@pl
 grammar: -время@genpl, tag: genitive
-grammar: -она@instr
+grammar: -она@instr, tag: instrumental
 grammar: sya@2pl
 grammar: sya@3pl
 grammar: -пить@1pl
@@ -1261,27 +1261,39 @@ grammar: -случиться@3pl
 grammar: -есть@2pl
 grammar: -сестра@pl
 grammar: -брат@pl
-grammar: -второй@accinanm
-grammar: -этот@accn, tag: neuter
+grammar: -второй@accinanm, tag: accusative
+grammar: -этот@accn, tag: accusative, tag: neuter
 grammar: -рад@shortpl
 grammar: -рад@shortm
 grammar: -рад@shortf
 grammar: -писать@impr
-grammar: -себя@gen
+grammar: -себя@gen, tag: genitive
 grammar: -придти@pastm
 grammar: -конец@nom
 в гости: n/a
-grammar: -лошадь@instrpl
-grammar: -femшь@datpl
-grammar: -femшь@instrpl
-grammar: -femшь@preppl
+grammar: -лошадь@instrpl, tag: instrumental
+grammar: -femшь@datpl, tag: dative
+grammar: -femшь@instrpl, tag: instrumental
+grammar: -femшь@preppl, tag: prepositional
 grammar: -звать@inf
-grammar: masc2animate@acc
-grammar: -мы@prep
-grammar: -весь@preppl
+grammar: masc2animate@acc, tag: accusative
+grammar: -мы@prep, tag: prepositional
+grammar: -весь@preppl, tag: prepositional
 grammar: -петь@inf
 хор--: n/a, inflect: masc1
 нарису--<овать: n/a, inflect: -чувствовать
 пальц--<<ец: n/a, inflect: -палец
 grammar: sya@pastn
 grammar: -сказать@inf
+grammar: -курица@pl
+grammar: -сын@genpl, tag: genitive
+grammar: -весь@genpl, tag: genitive
+grammar: -мочь@pastm
+grammar: -дать@3
+grammar: -остаться@1
+grammar: -хотеть@3pl
+grammar: -надеяться@2
+grammar: -вернуться@3
+grammar: -встречаться@2pl
+grammar: -весь@instrpl
+grammar: -стать@3pl
