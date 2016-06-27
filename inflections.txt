@@ -8,7 +8,7 @@ femka2[n]: genpl <ек, inherit fem2
 -деньга[n]: genpl <<ег, inherit fem2
 femь[n]: nom ь, pl и, gen и, genpl ей, dat и, datpl ям, instr ью, instrpl ями, prep и, preppl ях, inherit n
 femьanimate[n]: accpl ей, inherit femь
-femьinanimate[n]: , inherit femь
+femьinanimate[n]: inherit femь
 -мать[n]: nom <<ь, acc <<ь, inherit femьanimate
 -лошадь[n]: instrpl ьми, inherit femьanimate
 -часть[n]: instr ию, inherit femьinanimate
@@ -71,7 +71,6 @@ masc2animate[n]: acc gen-, accpl genpl-, inherit masc2
 -овощ[n]: instr ем, inherit -ключ
 -солнце[n]: nom е, instr ем, inherit -глаз
 -зуб[n]: pl ья, genpl ьев, datpl ьям, instrpl ьями, preppl ьях, inherit masc1
--стул[n]: , inherit -зуб
 -брат[n]: pl ья, genpl ьев, datpl ьям, instrpl ьями, preppl ьях, inherit masc1animate
 -отец[n]: nom <ец, inherit masc1animate
 -сын[n]: genpl овей, datpl овьям, instrpl овьями, preppl овьях, inherit masc1animate
@@ -129,7 +128,6 @@ neanderthal[adj]: genm его, genf ей, datm ему, datf ей, accanm его,
 -рад[adj]: shortm , shortn о, shortf а, shortpl ы
 -много[adj]: m о, pl о, inherit adj
 -второй[adj]: m ой, inherit ыйadj
--здоровый[adj]: , inherit ыйadj
 -дешёвый[adj]: shortm <<<<ёшев, shortn <<<<ёшево, shortf <<ева, shortpl <<<<ёшевы, inherit ыйadj
 -лёгкий[adj]: adv <<<<легко, inherit ийadj
 -уверенный[adj]: shortm <, inherit ыйadj
@@ -152,7 +150,6 @@ neanderthal[adj]: genm его, genf ей, datm ему, datf ей, accanm его,
 -показать[v]: inf <зать, inherit -писать
 -забыть[v]: inf <<ыть, 3pl <<ыт, impr ь, inherit y-esh-et
 -открыть[v]: inf <ыть, inherit -встречать
--встать[v]: , inherit -стать
 it-im-ite[v]: inf ть, 1pl м, 2 шь, 2pl те, 3 т, 3pl <ят, impr , inherit v
 -дарить[v]: 1 <ю, inherit it-im-ite
 -стоить[v]: impr <й, imprpl impr-те, inherit -дарить
@@ -206,7 +203,7 @@ sya[v]: inf ться, 1 юсь, 1pl мся, 2 шься, 2pl тесь, 3 тся, 
 oprep[prep]: std , alt о
 -о[prep]: std , alt б, alt2 бо
 -пробежать[v]: impr <<ги, inherit -лежать
--сесть[v]: inf <<есть, pastm <<ел, inherit -встать
+-сесть[v]: inf <<есть, pastm <<ел, inherit -стать
 -повернуть[v]: inf уть, inherit -начать
 -поехать[v]: impr <зжай, inherit -ехать
 -разлить[v]: inf <<<лить, impr <<<лей, inherit -давать
@@ -220,7 +217,6 @@ oprep[prep]: std , alt о
 -набрать[v]: inf <<рать, inherit -начать
 -принести[v]: pastm <<ёс, pastn ло, pastf ла, pastpl ли, inherit -идти
 -жениться[v]: 1 <юсь, inherit -находиться
--съесть[v]: , inherit -есть
 -одеться[v]: pastn <лось, pastf <лась, pastpl <лись, inherit -остаться
 -встретиться[v]: 1 <<чусь, inherit -нравиться
 -понять[v]: inf <<нять, inherit -жить
