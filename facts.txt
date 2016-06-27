@@ -19,7 +19,7 @@ grammar: masc1@nom
 университет--: university, inflect: masc1
 в--: at, inflect: oprep
 grammar: oprep@std
-grammar: n@prep
+grammar: n@prep, tag: prepositional
 grammar: ийadj@m
 планшет--: tablet, inflect: masc1
 хорош--ий: good, inflect: -хороший
@@ -54,7 +54,7 @@ grammar: it-im-ite@3
 grammar: -глядеть@1
 види--<еть: see, inflect: -видеть
 grammar: -учить@1
-grammar: fem@acc
+grammar: fem@acc, tag: accusative
 grammar: -кто@nom
 grammar: n@acc, tag: accusative
 --кто: who, inflect: -кто
@@ -127,7 +127,7 @@ grammar: masc1@instr, tag: instrumental
 штор--а: curtain, inflect: fem1
 grammar: femь@pl
 двер--ь: door, inflect: femьinanimate
-grammar: fem@instr
+grammar: fem@instr, tag: instrumental
 открыт--ый: open, inflect: ыйadj
 grammar: n@pl
 grammar: -свой@accf, tag: accusative
@@ -429,7 +429,6 @@ grammar: it-im-ite@1pl
 прекрасн--ый: n/a, inflect: ныйadj
 grammar: y-esh-et@1pl
 пакет--: n/a, inflect: masc1
-grammar: -ребёнок@genpl, tag: genitive
 холодн--ый: n/a, inflect: ныйadj
 grammar: -давать@inf
 grammar: -друг@instrpl, tag: instrumental
@@ -866,7 +865,7 @@ grammar: -кошка@genpl, tag: genitive
 grammar: -кошка@accpl, tag: accusative
 grammar: -чувствовать@pastm
 плава--ть: n/a, inflect: -встречать
-озёр--<<еро: n/a, inflect: -озеро
+озер---о: n/a, inflect: -озеро
 grammar: -воскресенье@prep, tag: prepositional
 grammar: neuie@instr, tag: instrumental
 grammar: neuie@dat, tag: dative
@@ -922,7 +921,6 @@ grammar: -выйти@pastm
 готовий: n/a
 готов--ый: n/a, inflect: ыйadj
 grammar: masc2animate@accpl, tag: accusative
-grammar: -кино@nom
 окого: n/a
 вредно: n/a
 здоровь--е: n/a, inflect: -воскресенье
@@ -1083,7 +1081,7 @@ grammar: -себя@acc, tag: accusative
 доверя--ть: n/a, inflect: -встречать
 кухн--я: n/a, inflect: -кухня
 замужем: n/a
-яблок--о: n/a, inflect: -яблоко
+яблок--о: n/a, inflect: neu
 медленн--ый: n/a, inflect: ыйadj
 дальше: n/a
 бумаг--а: n/a, inflect: fem2
@@ -1212,8 +1210,6 @@ grammar: -случиться@3pl
 grammar: -есть@2pl
 grammar: -сестра@pl
 grammar: -брат@pl
-grammar: -второй@accinanm, tag: accusative
-grammar: -этот@accn, tag: accusative, tag: neuter
 grammar: -рад@shortpl
 grammar: -рад@shortm
 grammar: -рад@shortf
@@ -1223,9 +1219,6 @@ grammar: -придти@pastm
 grammar: -конец@nom
 в гости: n/a
 grammar: -лошадь@instrpl, tag: instrumental
-grammar: -femшь@datpl, tag: dative
-grammar: -femшь@instrpl, tag: instrumental
-grammar: -femшь@preppl, tag: prepositional
 grammar: -звать@inf
 grammar: masc2animate@acc, tag: accusative
 grammar: -мы@prep, tag: prepositional
@@ -1245,9 +1238,8 @@ grammar: -хотеть@3pl
 grammar: -надеяться@2
 grammar: -вернуться@3
 grammar: -встречаться@2pl
-grammar: -весь@instrpl
+grammar: -весь@instrpl, tag: instrumental
 grammar: -стать@3pl
 пальц--<<ец: n/a, inflect: -палец
 пойм--<<нять: n/a, inflect: -понять
 grammar: -встречаться@3pl
-grammar: -весь@datn
