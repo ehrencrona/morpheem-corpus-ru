@@ -44,7 +44,7 @@ grammar: -встречать@1
 grammar: y-esh-et@3
 игра--ть: play, inflect: -встречать
 девочк--а: n/a, inflect: -девочка
-ребёнк--<ок: child, inflect: -ребёнок
+ребёнк--<ок: child, inflect: -ребёнок, mask: pl
 grammar: -ребёнок@nom
 площад--ь: square, inflect: femьinanimate
 grammar: femь@prep, tag: prepositional
@@ -451,6 +451,7 @@ grammar: -родитель@instr, tag: instrumental
 перед: forward
 grammar: -весь@m
 вс--<есь: n/a, inflect: -весь
+всего: n/a
 grammar: -весь@n
 grammar: -весь@accn, tag: accusative
 потому что: because
@@ -640,7 +641,7 @@ grammar: it-im-ite@impr
 боя--ться: n/a, inflect: -бояться
 прямо: n/a
 быстр--ый: n/a, inflect: ыйadj
-лес--: n/a, inflect: masc3
+лес--: n/a, inflect: -лес
 похож--ий: n/a, inflect: -хороший
 пор--а: n/a, inflect: fem1
 гляди--<еть: n/a, inflect: -глядеть
@@ -695,7 +696,6 @@ grammar: -бояться@1
 вспомни--ть: n/a, inflect: -дарить
 откуда: n/a
 вроде: n/a
-особенно: n/a
 спрашива--ть: n/a, inflect: -встречать
 броси--ть: n/a, inflect: -бросить
 парн--<ень: n/a, inflect: -парень
@@ -836,7 +836,7 @@ grammar: -дать@1
 grammar: -о@alt2
 пешком: n/a
 grammar: -месяц@genpl, tag: genitive
-сто: n/a
+ст--о: n/a, inflect: -сто
 рубл--ь: n/a, inflect: -словарь
 тысяч--а: n/a, inflect: -тысяча
 столько: n/a
@@ -1041,7 +1041,7 @@ grammar: -себя@acc, tag: accusative
 посмотри--<еть: n/a, inflect: -смотреть
 поговори--ть: n/a, inflect: -дарить
 объясня--ть: n/a, inflect: -встречать
-мороз--: n/a, inflect: -мороз
+мороз--: n/a, inflect: masc1
 совету--<овать: n/a, inflect: -чувствовать
 ненавиди--<еть: n/a, inflect: -видеть
 расскаж--<зать: n/a, inflect: -показать

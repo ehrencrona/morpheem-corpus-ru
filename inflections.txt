@@ -32,7 +32,7 @@ femя[n]: nom я, datpl ям, acc ю, instr ей, instrpl ями, preppl ях, i
 -неделя[n]: genpl ь, inherit femя
 -земля[n]: genpl <ель, inherit -статья
 -время[n]: nom <<я, pl а, genpl <<ён, instr ем, inherit femsoftьinanimate
--имя[n]: gen <<, inherit -время
+-имя[n]: accpl <<ён, inherit -время
 -дядя[n]: pl ья, genpl ьев, accpl ьёв, inherit -неделя
 -спальня[n]: genpl <<ен, inherit -неделя
 -кухня[n]: genpl <онь, inherit -неделя
@@ -56,6 +56,7 @@ masc2[n]: pl и, inherit masc1
 masc3[n]: pl а, inherit masc1
 masc1animate[n]: acc gen-, accpl genpl-, inherit masc1
 masc2animate[n]: acc gen-, accpl genpl-, inherit masc2
+-лес[n]: prep у, accinanpl а, inherit masc3
 -ребёнок[n]: nom <ок, inherit masc1animate
 -подарок[n]: nom <ок, inherit masc2
 -друг[n]: pl <зья, genpl <зей, datpl <зьям, instrpl <зьями, preppl <зьях, inherit masc1animate
@@ -89,7 +90,6 @@ masc2animate[n]: acc gen-, accpl genpl-, inherit masc2
 -море[n]: genpl ей, inherit -воскресенье
 -случай[n]: nom й, genpl ев, acc й, accpl и, inherit -родитель
 -чай[n]: genpl ёв, inherit -случай
--мороз[n]: gen , dat , instr , prep , inherit masc1
 
 
 adj[adj]: m ***, n ое, f ая, pl ие, genm ого, genn genm-, genf ой, genpl их, datm ому, datn datm-, datf ой, datpl им, accinanm m-, accanm ого, accn n-, accf ую, accinanpl pl-, accanpl их, instrm им, instrn instrm-, instrf ой, instrpl ими, prepm ом, prepn prepm-, prepf ой, preppl их, shortm , shortn shortm-о, shortf shortm-а, shortpl shortm-и, adv о, comp shortf-<ее
@@ -140,6 +140,7 @@ oprep[prep]: std , alt о
 -три[num]: pl и, genpl ёх, datpl ём, accinanpl pl-, accanpl ёх, instrpl емя, preppl ёх
 -четыре[num]: pl е, instrpl ьмя, inherit -три
 -пять[num]: pl ь, genpl и, datpl и, accinanpl ь, accanpl ь, instrpl ью, preppl и
+-сто[num]: pl о, genpl а, datpl а, instrpl а, preppl а 
 
 v[v]: inf ****, 1 у, pastm inf-<<л, pastn pastm-о, pastf pastm-а, pastpl pastm-и, imprpl impr-те
 y-esh-et[v]: 1pl ем, 2 ешь, 2pl ете, 3 ет, impr й, inherit v
