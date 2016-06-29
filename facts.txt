@@ -19,7 +19,7 @@ grammar: masc1@nom
 университет--: university, inflect: masc1
 в--: at, inflect: oprep
 grammar: oprep@std
-grammar: n@prep
+grammar: n@prep, tag: prepositional
 grammar: ийadj@m
 планшет--: tablet, inflect: masc1
 хорош--ий: good, inflect: -хороший
@@ -54,7 +54,7 @@ grammar: it-im-ite@3
 grammar: -глядеть@1
 види--<еть: see, inflect: -видеть
 grammar: -учить@1
-grammar: fem@acc
+grammar: fem@acc, tag: accusative
 grammar: -кто@nom
 grammar: n@acc, tag: accusative
 --кто: who, inflect: -кто
@@ -127,7 +127,7 @@ grammar: masc1@instr, tag: instrumental
 штор--а: curtain, inflect: fem1
 grammar: femь@pl
 двер--ь: door, inflect: femьinanimate
-grammar: fem@instr
+grammar: fem@instr, tag: instrumental
 открыт--ый: open, inflect: ыйadj
 grammar: n@pl
 grammar: -свой@accf, tag: accusative
@@ -247,6 +247,7 @@ grammar: -дарить@1
 телевизор--: n/a, inflect: masc1
 смотри--<еть: n/a, inflect: -смотреть
 можно: be able to; be allowed to
+grammar: -подарок@nom
 замк--<ок: n/a, inflect: -подарок
 кури--ть: n/a, inflect: -дарить
 говори--ть: n/a, inflect: -дарить
@@ -1195,7 +1196,6 @@ grammar: -борщ@genpl, tag: genitive
 grammar: -глаз@genpl, tag: genitive
 grammar: -неделя@genpl, tag: genitive
 grammar: -россия@instr, tag: instrumental
-grammar: -подарок@nom
 grammar: -время@pl
 grammar: -время@genpl, tag: genitive
 grammar: -она@instr, tag: instrumental
@@ -1212,8 +1212,6 @@ grammar: -случиться@3pl
 grammar: -есть@2pl
 grammar: -сестра@pl
 grammar: -брат@pl
-grammar: -второй@accinanm, tag: accusative
-grammar: -этот@accn, tag: accusative, tag: neuter
 grammar: -рад@shortpl
 grammar: -рад@shortm
 grammar: -рад@shortf
@@ -1223,9 +1221,6 @@ grammar: -придти@pastm
 grammar: -конец@nom
 в гости: n/a
 grammar: -лошадь@instrpl, tag: instrumental
-grammar: -femшь@datpl, tag: dative
-grammar: -femшь@instrpl, tag: instrumental
-grammar: -femшь@preppl, tag: prepositional
 grammar: -звать@inf
 grammar: masc2animate@acc, tag: accusative
 grammar: -мы@prep, tag: prepositional
@@ -1245,9 +1240,65 @@ grammar: -хотеть@3pl
 grammar: -надеяться@2
 grammar: -вернуться@3
 grammar: -встречаться@2pl
-grammar: -весь@instrpl
+grammar: -весь@instrpl, tag: instrumental
 grammar: -стать@3pl
 пальц--<<ец: n/a, inflect: -палец
 пойм--<<нять: n/a, inflect: -понять
 grammar: -встречаться@3pl
-grammar: -весь@datn
+их: n/a
+grammar: femя@acc
+grammar: femя@nom
+grammar: femя@datpl
+grammar: femя@instr
+grammar: femя@instrpl
+grammar: femя@preppl
+grammar: fem2@genpl
+grammar: fem@dat
+grammar: -что@gen
+grammar: -день@pl
+grammar: -остаться@inf
+grammar: -остаться@3pl
+grammar: -остаться@pastm
+grammar: -остаться@impr
+grammar: -слышать@3pl
+grammar: -слышать@impr
+grammar: -родитель@gen
+grammar: -родитель@dat
+grammar: femьanimate@accpl
+grammar: -идея@genpl
+grammar: -регистрация@genpl
+grammar: -крыша@instr
+grammar: -отель@instr
+grammar: -овощ@instr
+grammar: -случай@genpl
+grammar: -случай@accpl
+grammar: femsoftьinanimate@datpl
+grammar: femsoftьinanimate@instrpl
+grammar: -домашний@f
+grammar: -зуб@pl
+grammar: -зуб@genpl
+grammar: -зуб@datpl
+grammar: -зуб@instrpl
+grammar: -зуб@preppl
+grammar: ойadj2@m
+grammar: -казаться@inf
+grammar: -казаться@pastm
+grammar: -казаться@pastn
+grammar: -казаться@pastpl
+grammar: -казаться@pastf
+grammar: -казаться@impr
+grammar: -идти@pastn
+grammar: -жить@impr
+grammar: -наш@n
+grammar: -глядеть@inf
+grammar: -открыть@inf
+grammar: -стать@impr
+grammar: -становиться@impr
+grammar: sya@impr
+идиот--: n/a, inflect: masc1animate
+grammar: -тот@pl
+grammar: -вернуться@1pl
+grammar: -вернуться@2pl
+устан--<ть: n/a, inflect: -стать
+grammar: -брат@genpl
+grammar: -уверенный@shortm
