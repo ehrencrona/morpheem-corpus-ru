@@ -3,10 +3,12 @@ fem[n]: nom а, dat е, acc у, instr ой, gen ы, genpl , inherit n
 femka[n]: genpl <ок, inherit fem
 femka2[n]: genpl <ек, inherit fem
 -девочка[n]: accpl <ек, inherit femka2
+-деньга[n]: genpl <<ег, inherit fem
 
--деньга[n]: genpl <<ег, inherit fem2
-femь[n]: nom ь, pl и, gen и, genpl ей, dat и, datpl ям, instr ью, instrpl ями, prep и, preppl ях, inherit n
-femьanimate[n]: accpl ей, inherit femь
+femяь[n]: gen и, pl и, datpl ям, instrpl ями, preppl ях, inherit fem
+
+femь[n]: nom ь, acc nom-, genpl ей, dat и, instr ью, prep и, inherit femяь
+femьanimate[n]: accpl genpl-, inherit femь
 
 -мать[n]: nom <<ь, acc <<ь, inherit femьanimate
 -лошадь[n]: instrpl ьми, inherit femьanimate
