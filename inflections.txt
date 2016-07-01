@@ -20,7 +20,7 @@ femь-я-to-а[n]: datpl ам, instrpl ами, preppl ах, inherit femь
 -лошадь[n]: instrpl ьми, inherit abstr-anim, inherit femь
 -часть[n]: instr ию, inherit femь
 -путь[n]: instr ём, inherit femь
--люди[n]: instrpl ьми, inherit femь
+-люди[n]: instrpl ьми, inherit abstr-anim, inherit femь
 -церковь[n]: nom <овь, acc <овь, instr <овью, inherit femь
 
 -кошка[n]: genpl <ек, inherit abstr-anim, inherit fem
@@ -96,17 +96,17 @@ mascь-animate[n]: inherit abstr-masc-anim, inherit -mascь
 -учитель[n]: pl я, inherit mascь-animate
 -парень[n]: nom <ень, inherit mascь-animate
 
-adj[adj]: m ый, n ое, f ая, pl ые, genm ого, genn genm-, genf ой, genpl ых, datm ому, datn datm-, datf ой, datpl ым, accinanm m-, accanm ого, accn n-, accf ую, accinanpl pl-, accanpl ых, instrm ым, instrn instrm-, instrf ой, instrpl instrm-и, prepm ом, prepn prepm-, prepf ой, preppl ых, shortm , shortn shortm-о, shortf shortm-а, shortpl shortm-и, adv о, comp shortf-<ее, transform: yToI
+adj[adj]: m ый, n ое, f ая, pl ые, genm ого, genn genm-, genf ой, genpl ых, datm ому, datn datm-, datf ой, datpl ым, accinanm m-, accanm ого, accn n-, accf ую, accinanpl pl-, accanpl ых, instrm ым, instrn instrm-, instrf ой, instrpl instrm-и, prepm ом, prepn prepm-, prepf ой, preppl ых, shortm , shortn shortm-о, shortf shortm-а, shortpl shortm-ы, adv о, comp shortf-<ее, transform: yToI
 ойadj[adj]: m ой, inherit adj
 ийadj[adj]: pl ие, genpl их, accanpl их, instrm им, datpl им, preppl их, inherit adj
 егоadj[adj]: genm его, genf ей, datm ему, datf ей, accanm его, instrf ей, prepm ем, prepf ей, inherit ийadj
 -хороший[adj]: n ее, comp <<<<<лучше, inherit егоadj
 -наш[adj]: m , n е, f а, pl и, accf у, inherit егоadj
--домашний[adj]: n ее, m ий, f яя, accf юю, inherit егоadj
+-домашний[adj]: n ее, m ий, f яя, accf юю, shortpl и, inherit егоadj
 -свой[adj]: m й, n ё, f я, pl и, accf ю, prepm ём, inherit егоadj
 -весь[adj]: m <есь, pl е, genpl <сех, datpl ем, accinanpl ех, accanpl е, instrm ем, preppl ех, inherit -свой
 -третий[adj]: m <ий, f я, accf ю, inherit -наш
-ныйadj[adj]: shortm <ен, shortn о, shortf а, shortpl и, inherit adj
+ныйadj[adj]: shortm <ен, shortn о, shortf а, shortpl ы, inherit adj
 -большой[adj]: comp е, inherit ойadj
 -чёрный[adj]: shortn <<<ерно, shortf <<<ерна, shortpl <<<ерны, inherit ныйadj
 -маленький[adj]: shortm <<<<, comp <<<<<<еньше, inherit adj
