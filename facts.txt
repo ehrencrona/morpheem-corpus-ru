@@ -1246,44 +1246,54 @@ grammar: -уверенный@shortm
 лети--<еть: n/a, inflect: -лететь
 grammar: -стоять@inf, tag: verb
 grammar: -себя@prep, tag: prepositional
-grammar: -ждать@3pl
-grammar: femь@acc
-grammar: ийadj@accanpl
-grammar: -россия@dat
-grammar: mascьanimate@datpl
-grammar: -mascь@dat
-grammar: mascьanimate@dat
-grammar: -mascь@datpl
-grammar: ийadj@datpl
-grammar: -mascь@genpl
-grammar: mascьanimate@genpl
-grammar: ийadj@genpl
-grammar: -врач@genpl
-grammar: -mascь@gen
-grammar: mascьanimate@gen
-grammar: -находиться@impr
-grammar: -ответить@impr
-grammar: sya@imprpl
-grammar: -mascь@instr
-grammar: femяь@instrpl
+grammar: -ждать@3pl, tag: verb
+grammar: femь@acc, tag: accusative
+grammar: ийadj@accanpl, tag: accusative
+grammar: -россия@dat, tag: dative
+grammar: mascьanimate@datpl, tag: dative
+grammar: -mascь@dat, tag: dative
+grammar: mascьanimate@dat, tag: dative
+grammar: -mascь@datpl, tag: dative
+grammar: ийadj@datpl, tag: dative
+grammar: -mascь@genpl, tag: genitive
+grammar: mascьanimate@genpl, tag: genitive
+grammar: ийadj@genpl, tag: genitive
+grammar: -врач@genpl, tag: genitive
+grammar: -mascь@gen, tag: genitive
+grammar: mascьanimate@gen, tag: genitive
+grammar: -находиться@impr, tag: verb
+grammar: -ответить@impr, tag: verb
+grammar: sya@imprpl, tag: verb
+grammar: -mascь@instr, tag: instrumental
+grammar: femяь@instrpl, tag: instrumental
 grammar: -домашний@m
 grammar: -домашний@n
 grammar: mascьanimate@pl
 grammar: femяь@pl
-grammar: -россия@prep
-grammar: mascьanimate@preppl
-grammar: ийadj@preppl
-grammar: -mascь@preppl
-grammar: mascьanimate@instrpl
-grammar: -mascь@instrpl
-grammar: ийadj@instrm
+grammar: -россия@prep, tag: prepositional
+grammar: mascьanimate@preppl, tag: prepositional
+grammar: ийadj@preppl, tag: prepositional
+grammar: -mascь@preppl, tag: prepositional
+grammar: mascьanimate@instrpl, tag: instrumental
+grammar: -mascь@instrpl, tag: instrumental
+grammar: ийadj@instrm, tag: instrumental
 grammar: mascьanimate@nom
 grammar: ийadj@pl
-grammar: -тот@instrm
+grammar: -тот@instrm, tag: instrumental
 бог--: n/a, inflect: mascanimate
-grammar: -бытьfut@impr
+grammar: -бытьfut@impr, tag: verb
 grammar: -свой@pl
-grammar: -он@datalt
-grammar: -они@instr
+grammar: -он@datalt, tag: dative
+grammar: -они@instr, tag: instrumental
 grammar: -mascь@pl
 grammar: -учитель@pl
+grammar: -лес@prep
+grammar: -есть@impr
+grammar: -оставаться@pastn
+лекарств--о: n/a, inflect: neu
+настроение: n/a
+смож--<чь: n/a, inflect: -мочь
+почувству--<овать: n/a, inflect: -чувствовать
+grammar: -земля@instr
+grammar: mascе@nom
+grammar: -быть@impr
