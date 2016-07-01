@@ -12,9 +12,9 @@ grammar: femь@nom
 мыш--ь: mouse, inflect: -мышь
 маленьк--ий: small, inflect: -маленький
 –: is
-grammar: adj@m
 машин--а: car, inflect: fem
 grammar: masc@nom
+grammar: adj@m
 свитер--: sweater, inflect: masc
 университет--: university, inflect: masc
 в--: at, inflect: oprep
@@ -500,6 +500,7 @@ grammar: -этот@n
 научи--ть: undefined, inflect: -учить
 ваш--: undefined, inflect: -наш
 наш--: undefined, inflect: -наш
+grammar: -наш@pl
 grammar: -кто@acc, tag: accusative
 врач--: n/a, inflect: -врач
 grammar: -мочь@3pl, tag: verb
@@ -870,7 +871,6 @@ grammar: -стать@inf, tag: verb
 грустн--ый: n/a, inflect: adj
 предлага--ть: n/a, inflect: -встречать
 grammar: -яйцо@genpl, tag: genitive
-grammar: -окно@genpl, tag: genitive
 grammar: -сестра@genpl, tag: genitive
 grammar: -весь@pl
 grammar: -спать@inf, tag: verb
@@ -1150,6 +1150,7 @@ grammar: -день@instr, tag: instrumental
 grammar: neu@dat, tag: dative
 grammar: -пять@datpl, tag: dative
 grammar: -глаз@genpl, tag: genitive
+grammar: -окно@genpl, tag: genitive
 grammar: -неделя@genpl, tag: genitive
 grammar: -время@pl
 grammar: -время@genpl, tag: genitive
@@ -1246,3 +1247,54 @@ grammar: -уверенный@shortm
 лети--<еть: n/a, inflect: -лететь
 grammar: -стоять@inf, tag: verb
 grammar: -себя@prep, tag: prepositional
+grammar: -ждать@3pl, tag: verb
+grammar: femь@acc, tag: accusative
+grammar: ийadj@accanpl, tag: accusative
+grammar: -россия@dat, tag: dative
+grammar: mascьanimate@datpl, tag: dative
+grammar: -mascь@dat, tag: dative
+grammar: mascьanimate@dat, tag: dative
+grammar: -mascь@datpl, tag: dative
+grammar: ийadj@datpl, tag: dative
+grammar: -mascь@genpl, tag: genitive
+grammar: mascьanimate@genpl, tag: genitive
+grammar: ийadj@genpl, tag: genitive
+grammar: -врач@genpl, tag: genitive
+grammar: -mascь@gen, tag: genitive
+grammar: mascьanimate@gen, tag: genitive
+grammar: -находиться@impr, tag: verb
+grammar: -ответить@impr, tag: verb
+grammar: sya@imprpl, tag: verb
+grammar: -mascь@instr, tag: instrumental
+grammar: femяь@instrpl, tag: instrumental
+grammar: -домашний@m
+grammar: -домашний@n
+grammar: mascьanimate@pl
+grammar: femяь@pl
+grammar: -россия@prep, tag: prepositional
+grammar: mascьanimate@preppl, tag: prepositional
+grammar: ийadj@preppl, tag: prepositional
+grammar: -mascь@preppl, tag: prepositional
+grammar: mascьanimate@instrpl, tag: instrumental
+grammar: -mascь@instrpl, tag: instrumental
+grammar: ийadj@instrm, tag: instrumental
+grammar: mascьanimate@nom
+grammar: ийadj@pl
+grammar: -тот@instrm, tag: instrumental
+бог--: n/a, inflect: masc-animate
+grammar: -бытьfut@impr, tag: verb
+grammar: -свой@pl
+grammar: -он@datalt, tag: dative
+grammar: -они@instr, tag: instrumental
+grammar: -mascь@pl
+grammar: -учитель@pl
+grammar: -лес@prep
+grammar: -есть@impr
+grammar: -оставаться@pastn
+лекарств--о: n/a, inflect: neu
+настроение: n/a
+смож--<чь: n/a, inflect: -мочь
+почувству--<овать: n/a, inflect: -чувствовать
+grammar: -земля@instr
+grammar: mascе@nom
+grammar: -быть@impr
