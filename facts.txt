@@ -97,7 +97,7 @@ grammar: ойadj@m
 дорог--ой: expensive, inflect: -дорогой
 grammar: -свой@m
 нет: is not
-мо--й: my, inflect: -свой
+мо--й: my, inflect: -свой, mask: nonstd
 больш--ой: big, inflect: -большой
 как--ой: which, inflect: ойadj
 очень: very
@@ -108,7 +108,7 @@ grammar: -он@acc, tag: accusative
 зов--<<вать: n/a, inflect: -звать
 grammar: -она@acc, tag: accusative
 grammar: -жить@3pl, tag: verb
-тво--й: your, inflect: -свой
+тво--й: your, inflect: -свой, mask: nonstd
 телефон--: telephone, inflect: masc
 покупа--ть: buy, inflect: -встречать
 grammar: adj@accf, tag: accusative
@@ -165,7 +165,7 @@ grammar: -наш@pl
 офис--: n/a, inflect: masc
 grammar: -этот@pl
 жив--<ть: live, inflect: -жить
-люд--ь: people, inflect: -люди
+люд--ь: people, inflect: -люди, mask: sg
 ошибк--а: n/a, inflect: femka
 grammar: n@preppl, tag: prepositional
 grammar: adj@preppl, tag: prepositional
@@ -265,7 +265,7 @@ grammar: n@datpl, tag: dative
 grammar: adj@datn, tag: dative
 grammar: adj@datf, tag: dative
 grammar: -ты@gen, tag: genitive
-сво--й: his/min (refers to the subject), inflect: -свой
+сво--й: his/min (refers to the subject), inflect: -свой, mask: nonstd
 grammar: -она@gen, tag: genitive
 grammar: -друг@datpl, tag: dative
 grammar: -давать@1, tag: verb
