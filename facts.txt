@@ -1115,7 +1115,6 @@ grammar: -убить@inf, tag: verb
 удобн--ый: n/a, inflect: adj
 лекци--я: n/a, inflect: -регистрация
 спеши--ть: n/a, inflect: -спешить
-grammar: -мать@acc, tag: accusative
 экзамен--: n/a, inflect: masc
 grammar: neu@pl
 grammar: -четыре@pl
@@ -1287,13 +1286,13 @@ grammar: -он@datalt, tag: dative
 grammar: -они@instr, tag: instrumental
 grammar: -mascь@pl
 grammar: -учитель@pl
-grammar: -лес@prep
-grammar: -есть@impr
-grammar: -оставаться@pastn
+grammar: -лес@prep, tag: prepositional
+grammar: -есть@impr, tag: verb
+grammar: -оставаться@pastn, tag: verb
 лекарств--о: n/a, inflect: neu
 настроение: n/a
 смож--<чь: n/a, inflect: -мочь
 почувству--<овать: n/a, inflect: -чувствовать
-grammar: -земля@instr
+grammar: -земля@instr, tag: instrumental
 grammar: mascе@nom
-grammar: -быть@impr
+grammar: -быть@impr, tag: verb
