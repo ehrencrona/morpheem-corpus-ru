@@ -243,7 +243,8 @@ grammar: -дарить@1, tag: verb
 смотри--<еть: n/a, inflect: -смотреть
 можно: be able to; be allowed to
 grammar: -подарок@nom
-замк--<ок: n/a, inflect: -подарок
+замк--<ок[castle]: castle, inflect: -подарок
+замк--<ок[lock]: lock, inflect: -подарок
 кури--ть: n/a, inflect: -дарить
 говори--ть: n/a, inflect: -дарить
 нельзя: it's not allowed to
@@ -411,7 +412,7 @@ grammar: -свой@n
 часто: often
 иногда: sometimes
 несколько: a few
-язык--: n/a, inflect: masc
+язык--[lang]: n/a, inflect: masc
 grammar: adj@accanpl, tag: accusative
 grammar: -мы@gen, tag: genitive
 grammar: it-im-ite@1pl, tag: verb
@@ -487,7 +488,7 @@ grammar: neuie@nom
 grammar: neuie@pl
 grammar: neuie@prep, tag: prepositional
 упражнени--е: n/a, inflect: neuie
-морожено--е: n/a, inflect: neuie
+морожен--ое: n/a, inflect: neuadjoe
 grammar: -этот@n
 сообщени--е: n/a, inflect: neuie
 решени--е: n/a, inflect: neuie
@@ -584,7 +585,8 @@ grammar: it-im-ite@impr, tag: verb
 строи--ть: n/a, inflect: -дарить
 случа--й: n/a, inflect: -случай
 сразу: n/a
-мир--: n/a, inflect: masc
+мир--[world]: n/a, inflect: masc
+мир--[peace]: n/a, inflect: masc
 совсем: n/a
 остан--<ться: n/a, inflect: -остаться
 каж--<заться: n/a, inflect: -казаться
@@ -1297,3 +1299,6 @@ grammar: -оставаться@pastn, tag: verb
 grammar: -земля@instr, tag: instrumental
 grammar: mascе@nom
 grammar: -быть@impr, tag: verb
+животн--ое: animal, inflect: neuadjoe
+теря--ть: inflect: -встречать
+границ--а: inflect -улица
