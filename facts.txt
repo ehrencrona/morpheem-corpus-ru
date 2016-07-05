@@ -242,7 +242,6 @@ grammar: -дарить@1, tag: verb
 телевизор--: n/a, inflect: masc
 смотри--<еть: n/a, inflect: -смотреть
 можно: be able to; be allowed to
-grammar: -подарок@nom
 замк--<ок[castle]: castle, inflect: -подарок
 замк--<ок[lock]: lock, inflect: -подарок
 кури--ть: n/a, inflect: -дарить
@@ -438,7 +437,6 @@ grammar: n@instrpl, tag: instrumental
 grammar: adj@instrm, tag: instrumental
 grammar: -что@instr, tag: instrumental
 grammar: -кто@instr, tag: instrumental
-grammar: mascь-animate@instr, tag: instrumental
 учител--ь: n/a, inflect: -учитель
 занима--ться: n/a, inflect: -пытаться
 перед: forward
@@ -501,7 +499,6 @@ grammar: -этот@n
 научи--ть: undefined, inflect: -учить
 ваш--: undefined, inflect: -наш
 наш--: undefined, inflect: -наш
-grammar: -наш@pl
 grammar: -кто@acc, tag: accusative
 врач--: n/a, inflect: -врач
 grammar: -мочь@3pl, tag: verb
@@ -1145,7 +1142,6 @@ grammar: -тот@genpl, tag: genitive
 grammar: -тот@datpl, tag: dative
 grammar: -тот@accanpl, tag: accusative
 grammar: -домашний@accf, tag: accusative
-grammar: fem-animate@accpl, tag: accusative
 grammar: -хороший@comp
 grammar: -день@instr, tag: instrumental
 grammar: neu@dat, tag: dative
@@ -1168,7 +1164,6 @@ grammar: -случиться@1, tag: verb
 grammar: -случиться@3pl, tag: verb
 grammar: -есть@2pl, tag: verb
 grammar: -сестра@pl
-grammar: -брат@pl
 grammar: -рад@shortpl
 grammar: -рад@shortm
 grammar: -рад@shortf
@@ -1210,7 +1205,6 @@ grammar: -остаться@3pl, tag: verb
 grammar: -остаться@pastm, tag: verb
 grammar: -остаться@impr, tag: verb
 grammar: -слышать@impr, tag: verb
-grammar: femь-animate@accpl, tag: accusative
 grammar: -идея@genpl, tag: genitive
 grammar: -регистрация@genpl, tag: genitive
 grammar: -отель@instr, tag: instrumental
@@ -1243,7 +1237,6 @@ grammar: -тот@pl
 grammar: -вернуться@1pl, tag: verb
 grammar: -вернуться@2pl, tag: verb
 устан--<ть: n/a, inflect: -стать
-grammar: -брат@genpl, tag: genitive
 grammar: -уверенный@shortm
 лети--<еть: n/a, inflect: -лететь
 grammar: -стоять@inf, tag: verb
@@ -1252,17 +1245,12 @@ grammar: -ждать@3pl, tag: verb
 grammar: femь@acc, tag: accusative
 grammar: ийadj@accanpl, tag: accusative
 grammar: -россия@dat, tag: dative
-grammar: mascьanimate@datpl, tag: dative
 grammar: -mascь@dat, tag: dative
-grammar: mascьanimate@dat, tag: dative
 grammar: -mascь@datpl, tag: dative
 grammar: ийadj@datpl, tag: dative
 grammar: -mascь@genpl, tag: genitive
-grammar: mascьanimate@genpl, tag: genitive
 grammar: ийadj@genpl, tag: genitive
-grammar: -врач@genpl, tag: genitive
 grammar: -mascь@gen, tag: genitive
-grammar: mascьanimate@gen, tag: genitive
 grammar: -находиться@impr, tag: verb
 grammar: -ответить@impr, tag: verb
 grammar: sya@imprpl, tag: verb
@@ -1270,16 +1258,12 @@ grammar: -mascь@instr, tag: instrumental
 grammar: femяь@instrpl, tag: instrumental
 grammar: -домашний@m
 grammar: -домашний@n
-grammar: mascьanimate@pl
 grammar: femяь@pl
 grammar: -россия@prep, tag: prepositional
-grammar: mascьanimate@preppl, tag: prepositional
 grammar: ийadj@preppl, tag: prepositional
 grammar: -mascь@preppl, tag: prepositional
-grammar: mascьanimate@instrpl, tag: instrumental
 grammar: -mascь@instrpl, tag: instrumental
 grammar: ийadj@instrm, tag: instrumental
-grammar: mascьanimate@nom
 grammar: ийadj@pl
 grammar: -тот@instrm, tag: instrumental
 бог--: n/a, inflect: masc-animate
@@ -1300,5 +1284,10 @@ grammar: -земля@instr, tag: instrumental
 grammar: mascе@nom
 grammar: -быть@impr, tag: verb
 животн--ое: animal, inflect: neuadjoe
-теря--ть: inflect: -встречать
-границ--а: inflect -улица
+теря--ть: , inflect: -встречать
+границ--а: , inflect: -улица
+grammar: -мать@nom
+grammar: -много@pl
+grammar: -mascь@nom
+уж--: n/a, inflect: -врач
+звонк--<ок: n/a, inflect: -подарок
