@@ -137,6 +137,7 @@ grammar: it-im-ite@3pl, tag: verb
 grammar: adj@pl
 доктор--: doctor, physician, inflect: -доктор
 профессор--: professor, don, inflect: -доктор
+да: yes
 здесь: here
 зна--ть: know, ken, inflect: -встречать
 --вы: you, y'all, ye, inflect: -вы
@@ -187,7 +188,6 @@ grammar: -встречать@3pl, tag: verb
 grammar: adj@accinanpl, tag: accusative
 grammar: yo-yosh-yot@2, tag: verb
 скучн--ый: boring, tedious, inflect: ныйadj
-да: yes
 и: and
 одн--<ин: one, alone, single, inflect: -один
 grammar: adj@accn, tag: accusative
@@ -644,8 +644,8 @@ grammar: -кто@gen, tag: genitive
 выйд--<ти: exit, leave, go out, inflect: -выйти
 приходи--ть: come, arrive, inflect: -ходить
 выходи--ть: go out, come out, walk out, inflect: -ходить
-прийти: n/a
 води--ть: lead, steer, inflect: -ходить
+прийти: n/a
 окн--о: window, box, inflect: -окно
 цен--а: price, cost, inflect: fem
 ждё--<ать: wait, await, inflect: -ждать
@@ -1291,3 +1291,17 @@ grammar: -они@instr, tag: instrumental
 границ--а: border, boundary, inflect: -улица
 уж--: viper, inflect: -врач
 звонк--<ок: bell, call, inflect: -подарок
+grammar: -лететь@1, tag: verb
+grammar: neuadjoe@acc, tag: accusative
+grammar: neuadjoe@nom
+grammar: -доктор@pl
+grammar: -сосед@pl
+grammar: -яблоко@pl
+grammar: -лёгкий@adv
+grammar: ныйadj@shortpl
+grammar: -искать@inf
+grammar: -один@instrm
+grammar: -взять@inf
+grammar: -выйти@pastn
+grammar: -мочь@pastf
+grammar: -сто@pl
