@@ -1299,9 +1299,26 @@ grammar: -сосед@pl
 grammar: -яблоко@pl
 grammar: -лёгкий@adv
 grammar: ныйadj@shortpl
-grammar: -искать@inf
-grammar: -один@instrm
-grammar: -взять@inf
-grammar: -выйти@pastn
-grammar: -мочь@pastf
+grammar: -искать@inf, tag: verb
+grammar: -один@instrm, tag: instrumental
+grammar: -взять@inf, tag: verb
+grammar: -выйти@pastn, tag: verb
+grammar: -мочь@pastf, tag: verb
 grammar: -сто@pl
+мусульман: n/a
+grammar: -дерево@instrpl, tag: instrumental
+бер--<<рать: n/a, inflect: -набрать
+grammar: -набрать@inf, tag: verb
+то: n/a
+вегетарианц--<ец: n/a, inflect: -вегетарианец
+голодн--ый: n/a, inflect: -голодный
+слева: n/a
+справ--а: n/a, inflect: fem
+grammar: -показать@inf, tag: verb
+цветк--<ок: n/a, inflect: -цветок
+вкус--: n/a, inflect: masc
+автор--: n/a, inflect: masc-animate
+grammar: -хотеть@inf, tag: verb
+grammar: -хотеть@1pl, tag: verb
+grammar: -жениться@1
+grammar: -один@accn
