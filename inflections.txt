@@ -68,8 +68,8 @@ mascе[n]: nom е, instr ем, inherit masc3
 -год[n]: genpl <<<лет, prep у, inherit masc
 -конец[n]: nom <ец, inherit masc
 -овощ[n]: instr ем, inherit -борщ
--зуб[n]: pl ья, genpl ьев, datpl ьям, instrpl ьями, preppl ьях, inherit masc
--брат[n]: inherit abstr-masc-anim, inherit -зуб
+-стул[n]: pl ья, genpl ьев, datpl ьям, instrpl ьями, preppl ьях, inherit masc
+-брат[n]: inherit abstr-masc-anim, inherit -стул
 -отец[n]: nom <ец, inherit abstr-masc-anim, inherit masc
 -сын[n]: genpl овей, datpl овьям, instrpl овьями, preppl овьях, inherit abstr-masc-anim, inherit masc
 -mascь[n]: nom ь, pl и, gen я, genpl ей, dat ю, datpl ям, instr ем, instrpl ями, preppl ях, inherit masc
@@ -91,7 +91,7 @@ eeadj[adj]: n ее, inherit егоadj
 -наш[adj]: m , n е, f а, pl и, accf у, inherit егоadj
 -домашний[adj]: m ий, n ее, f яя, accf юю, shortm <ен, shortn е, shortf я, shortpl и, inherit егоadj
 -свой[adj]: m й, n ё, f я, pl и, accf ю, prepm ём, inherit егоadj
--весь[adj]: m <есь, pl е, genpl <сех, datpl ем, accinanpl ех, accanpl е, instrm ем, preppl ех, inherit -свой
+-весь[adj]: m <есь, pl е, genpl <сех, datpl ем, accinanpl е, accanpl ех, instrm ем, preppl ех, inherit -свой
 -третий[adj]: m <ий, f я, accf ю, inherit -наш
 ныйadj[adj]: shortm <ен, shortn о, shortf а, shortpl ы, inherit adj
 -большой[adj]: comp е, inherit ойadj
@@ -99,6 +99,7 @@ eeadj[adj]: n ее, inherit егоadj
 -маленький[adj]: shortm <<<<, comp <<<<<<еньше, inherit adj
 -высокий[adj]: comp <<<ше, inherit adj
 -дорогой[adj]: comp <же, inherit ойadj
+-простой[adj]: comp <<ще, inherit ойadj
 -рад[adj]: shortm , shortn о, shortf а, shortpl ы
 -много[adj]: m о, pl о, inherit adj
 -второй[adj]: m ой, inherit adj
@@ -212,3 +213,6 @@ sya[v]: inf ться, 1 юсь, 1pl мся, 2 шься, 2pl тесь, 3 тся, 
 -встретиться[v]: 1 <<чусь, inherit -нравиться
 -понять[v]: inf <<нять, inherit -жить
 -лететь[v]: 1 <<чу, inherit -смотреть
+-вегетарианец[n]: genpl ев, instr ем, inherit -отец
+-голодный[adj]: inherit adj
+-цветок[n]: pl <ы, genpl <ов, inherit -подарок

@@ -121,7 +121,7 @@ grammar: y-esh-et@2, tag: verb
 grammar: femь@instr, tag: instrumental
 стол--: table, desk, inflect: masc
 grammar: masc@instr, tag: instrumental
-стул--: chair, stool, inflect: -зуб
+стул--: chair, stool, inflect: -стул
 за: behind
 штор--а: curtain, shade, inflect: fem
 двер--ь: door, gate, inflect: femь
@@ -137,10 +137,11 @@ grammar: it-im-ite@3pl, tag: verb
 grammar: adj@pl
 доктор--: doctor, physician, inflect: -доктор
 профессор--: professor, don, inflect: -доктор
+да: yes
 здесь: here
 зна--ть: know, ken, inflect: -встречать
 --вы: you, y'all, ye, inflect: -вы
-grammar: -вы@nom
+grammar: -вы@pl
 grammar: it-im-ite@2pl, tag: verb
 банк--: bank, banc, inflect: masc
 ресторан--: restaurant, saloon, inflect: masc
@@ -179,19 +180,18 @@ grammar: yo-yosh-yot@2pl, tag: verb
 grammar: n@accpl, tag: accusative
 --они: they, future, them, inflect: -они
 стар--ый: old, aged, inflect: adj
-grammar: -они@nom
-grammar: -мы@nom
+grammar: -они@pl
+grammar: -мы@pl
 grammar: -встречать@inf, tag: verb
 --мы: we, you, us, inflect: -мы
 grammar: -встречать@3pl, tag: verb
 grammar: adj@accinanpl, tag: accusative
 grammar: yo-yosh-yot@2, tag: verb
 скучн--ый: boring, tedious, inflect: ныйadj
-да: yes
 и: and
 одн--<ин: one, alone, single, inflect: -один
 grammar: adj@accn, tag: accusative
-grammar: -вы@acc, tag: accusative
+grammar: -вы@accpl, tag: accusative
 там: there
 grammar: -один@m
 grammar: -один@f
@@ -207,10 +207,10 @@ grammar: -два@pl
 шоколад--: chocolate, choc, inflect: masc
 подарк--<ок: present, gift, inflect: -подарок
 grammar: -я@dat, tag: dative
-grammar: -вы@dat, tag: dative
+grammar: -вы@datpl, tag: dative
 grammar: -кто@dat, tag: dative
 grammar: -она@dat, tag: dative
-grammar: -мы@dat, tag: dative
+grammar: -мы@datpl, tag: dative
 да--вать: give, impart, inflect: -давать
 grammar: sya@3, tag: verb
 нрави--ться: like, please, inflect: -нравиться
@@ -469,7 +469,7 @@ grammar: -встречаться@2, tag: verb
 grammar: -случай@nom
 grammar: mascе@nom
 grammar: -встречаться@1pl, tag: verb
-grammar: -зуб@pl
+grammar: -стул@pl
 grammar: -рад@shortf
 grammar: -хотеть@3pl, tag: verb
 grammar: -давать@impr, tag: verb
@@ -478,7 +478,7 @@ grammar: -убить@inf, tag: verb
 grammar: -сестра@genpl, tag: genitive
 grammar: -забыть@impr, tag: verb
 grammar: -наш@f
-grammar: -зуб@genpl, tag: genitive
+grammar: -стул@genpl, tag: genitive
 grammar: -жить@impr, tag: verb
 grammar: -чей@m
 grammar: sya@1, tag: verb
@@ -507,12 +507,13 @@ grammar: -месяц@genpl, tag: genitive
 grammar: -быть@impr, tag: verb
 grammar: -становиться@impr, tag: verb
 grammar: -стоять@inf, tag: verb
+--пить: drink, imbibe, inflect: -пить
 grammar: -петь@inf, tag: verb
 grammar: -вернуться@3, tag: verb
 grammar: -mascь@dat, tag: dative
 grammar: -домашний@n
 grammar: -пить@3pl, tag: verb
-grammar: -зуб@preppl, tag: prepositional
+grammar: -стул@preppl, tag: prepositional
 grammar: -казаться@inf, tag: verb
 grammar: -дать@1, tag: verb
 grammar: -казаться@pastn, tag: verb
@@ -550,8 +551,8 @@ grammar: -надеяться@2, tag: verb
 grammar: -звать@inf, tag: verb
 grammar: -случиться@3pl, tag: verb
 grammar: -конец@nom
-grammar: -зуб@instrpl, tag: instrumental
-grammar: -зуб@datpl, tag: dative
+grammar: -стул@instrpl, tag: instrumental
+grammar: -стул@datpl, tag: dative
 grammar: -тот@instrm, tag: instrumental
 grammar: sya@imprpl, tag: verb
 grammar: -тот@pl
@@ -627,7 +628,6 @@ grammar: -я@instr, tag: instrumental
 здоров--ый: healthy, sound, inflect: adj
 сувенир--: souvenir, memento, present, inflect: masc
 для: for; for the benefit of
---пить: drink, imbibe, inflect: -пить
 проблем--а: problem, trouble, inflect: fem
 борщ--: borscht, inflect: -борщ
 красн--ый: red, sanguine, inflect: ныйadj
@@ -644,8 +644,8 @@ grammar: -кто@gen, tag: genitive
 выйд--<ти: exit, leave, go out, inflect: -выйти
 приходи--ть: come, arrive, inflect: -ходить
 выходи--ть: go out, come out, walk out, inflect: -ходить
-прийти: n/a
 води--ть: lead, steer, inflect: -ходить
+прийти: n/a
 окн--о: window, box, inflect: -окно
 цен--а: price, cost, inflect: fem
 ждё--<ать: wait, await, inflect: -ждать
@@ -667,7 +667,7 @@ grammar: -кто@gen, tag: genitive
 иногда: sometimes
 несколько: a few
 язык--[lang]: language, tongue, inflect: masc
-grammar: -мы@gen, tag: genitive
+grammar: -мы@genpl, tag: genitive
 урок--: lesson, class, inflect: masc
 деньг--а: money, purse, inflect: -деньга, mask: sg
 её: her / their
@@ -762,7 +762,7 @@ grammar: -он@prep, tag: prepositional
 тогда: n/a
 ведь: n/a
 сторон--а: side, facet, inflect: fem
-прост--ой: simple, common, inflect: ойadj
+прост--ой: simple, common, inflect: -простой
 ног--а: leg, foot, inflect: fem
 последн--ий: last, ultimate, inflect: -домашний
 име--ть: possess, matter, inflect: -встречать
@@ -777,9 +777,9 @@ grammar: -он@prep, tag: prepositional
 хотя: n/a
 втор--ой: second, dewlap, latter, inflect: -второй
 куда: n/a
-grammar: -вы@gen, tag: genitive
-grammar: -они@dat, tag: dative
-grammar: -они@acc, tag: accusative
+grammar: -вы@genpl, tag: genitive
+grammar: -они@datpl, tag: dative
+grammar: -они@accpl, tag: accusative
 меню: n/a
 яйц--о: egg, ball, inflect: -яйцо
 откро--<ыть: open, discover, turn on, inflect: -открыть
@@ -943,7 +943,7 @@ grammar: -они@acc, tag: accusative
 разве: n/a
 движени--е: movement, motion, inflect: neuie
 порядк--<ок: order, routine, inflect: -подарок
-тихо: n/a
+тихо: n/a, tag: accusative, tag: dative, tag: genitive, tag: instrumental, tag: prepositional, tag: verb
 знакомств--о: acquaintance, acquaintanceship, inflect: neu
 познакоми--ться: meet, get to know, familiarize, inflect: -нравиться
 сильн--ый: strong, powerful, inflect: ныйadj
@@ -955,7 +955,7 @@ grammar: -они@acc, tag: accusative
 ладно: n/a
 карман--: pocket, clipboard, inflect: masc
 наверное: n/a
-зуб--: tooth, cog, inflect: -зуб
+зуб--: tooth, cog, inflect: masc
 огн--<онь: fire, blaze, inflect: -огонь
 гост--ь: guest, visitor, inflect: mascь-animate
 собира--ть: collect, gather, inflect: -встречать
@@ -973,7 +973,7 @@ grammar: -они@acc, tag: accusative
 молок--о: milk, inflect: neu, mask: pl
 осен--ь: season, inflect: femь, mask: pl
 трав--а: grass, herb, inflect: fem
-grammar: -мы@instr, tag: instrumental
+grammar: -мы@instrpl, tag: instrumental
 grammar: -ты@instr, tag: instrumental
 обычн--ый: common, ordinary, inflect: ныйadj
 церкв--<овь: church, chapel, inflect: -церковь
@@ -982,7 +982,7 @@ grammar: -ты@instr, tag: instrumental
 здравству--<овать: hello, hi, welcome, inflect: -чувствовать, mask: non_impr
 спасибо: n/a
 добр--ый: good, kind, inflect: adj
-grammar: -мы@acc, tag: accusative
+grammar: -мы@accpl, tag: accusative
 пока: n/a
 прости--ть: pardon, forgive, excuse, inflect: -простить
 центральн--ый: central, center, inflect: adj
@@ -1062,7 +1062,7 @@ grammar: -о@alt2
 зарядк--а: loading, physical exercises, calisthenics, inflect: femka
 ноутбук--: laptop, notebook, laptop computer, inflect: masc
 grammar: -один@accf, tag: accusative
-grammar: -они@gen, tag: genitive
+grammar: -они@genpl, tag: genitive
 вероятн--ый: likely, plausible, inflect: adj
 найд--<ти: find, bump, inflect: -войти
 нигде: n/a
@@ -1261,16 +1261,16 @@ grammar: -четыре@pl
 постоянн--ый: constant, permanent, inflect: adj
 вечеринк--а: party, soiree, inflect: femka
 grammar: -она@datalt, tag: dative
-grammar: -они@datalt, tag: dative
-grammar: -они@genalt, tag: genitive
-grammar: -они@accalt, tag: accusative
-grammar: -они@instralt, tag: instrumental
-grammar: -они@prep, tag: prepositional
+grammar: -они@datplalt, tag: dative
+grammar: -они@genplalt, tag: genitive
+grammar: -они@accplalt, tag: accusative
+grammar: -они@instrplalt, tag: instrumental
+grammar: -они@preppl, tag: prepositional
 grammar: -пять@datpl, tag: dative
 grammar: -она@instr, tag: instrumental
 grammar: -себя@gen, tag: genitive
 в гости: n/a
-grammar: -мы@prep, tag: prepositional
+grammar: -мы@preppl, tag: prepositional
 хор--: choir, chorus, inflect: masc
 нарису--<овать: draw, paint, picture, inflect: -чувствовать
 пальц--<<ец: finger, toe, inflect: -палец
@@ -1283,7 +1283,7 @@ grammar: -что@gen, tag: genitive
 grammar: -себя@prep, tag: prepositional
 бог--: god, creator, inflect: masc-animate
 grammar: -он@datalt, tag: dative
-grammar: -они@instr, tag: instrumental
+grammar: -они@instrpl, tag: instrumental
 лекарств--о: medicine, drug, inflect: neu
 настроение: n/a
 смож--<чь: can, be able to, manage, inflect: -мочь
@@ -1293,8 +1293,37 @@ grammar: -они@instr, tag: instrumental
 границ--а: border, boundary, inflect: -улица
 уж: 
 звонк--<ок: bell, call, inflect: -подарок
-вкус: n/a
-grammar: neuadjoe@nom
-grammar: neuadjoe@acc
-цветок: n/a
 и[part]: adds stress
+grammar: -лететь@1, tag: verb
+grammar: neuadjoe@acc, tag: accusative
+grammar: neuadjoe@nom
+grammar: -доктор@pl
+grammar: -сосед@pl
+grammar: -яблоко@pl
+grammar: -лёгкий@adv
+grammar: ныйadj@shortpl
+grammar: -искать@inf, tag: verb
+grammar: -один@instrm, tag: instrumental
+grammar: -взять@inf, tag: verb
+grammar: -выйти@pastn, tag: verb
+grammar: -мочь@pastf, tag: verb
+grammar: -сто@pl
+grammar: -дерево@instrpl, tag: instrumental
+бер--<<рать: n/a, inflect: -набрать
+grammar: -набрать@inf, tag: verb
+то: n/a
+вегетарианц--<ец: n/a, inflect: -вегетарианец
+голодн--ый: n/a, inflect: -голодный
+слева: n/a
+справ--а: n/a, inflect: fem
+grammar: -показать@inf, tag: verb
+цветк--<ок: n/a, inflect: -цветок
+вкус--: n/a, inflect: masc
+автор--: n/a, inflect: masc-animate
+grammar: -хотеть@inf, tag: verb
+grammar: -хотеть@1pl, tag: verb
+grammar: -жениться@1, tag: verb
+grammar: -один@accn, tag: accusative
+вверх: n/a
+вниз: n/a
+занят--ой: n/a, inflect ойadj
