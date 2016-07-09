@@ -507,6 +507,7 @@ grammar: -месяц@genpl, tag: genitive
 grammar: -быть@impr, tag: verb
 grammar: -становиться@impr, tag: verb
 grammar: -стоять@inf, tag: verb
+--пить: drink, imbibe, inflect: -пить
 grammar: -петь@inf, tag: verb
 grammar: -вернуться@3, tag: verb
 grammar: -mascь@dat, tag: dative
@@ -627,7 +628,6 @@ grammar: -я@instr, tag: instrumental
 здоров--ый: healthy, sound, inflect: adj
 сувенир--: souvenir, memento, present, inflect: masc
 для: for; for the benefit of
---пить: drink, imbibe, inflect: -пить
 проблем--а: problem, trouble, inflect: fem
 борщ--: borscht, inflect: -борщ
 красн--ый: red, sanguine, inflect: ныйadj
@@ -941,7 +941,7 @@ grammar: -они@acc, tag: accusative
 разве: n/a
 движени--е: movement, motion, inflect: neuie
 порядк--<ок: order, routine, inflect: -подарок
-тихо: n/a
+тихо: n/a, tag: accusative, tag: dative, tag: genitive, tag: instrumental, tag: prepositional, tag: verb
 знакомств--о: acquaintance, acquaintanceship, inflect: neu
 познакоми--ться: meet, get to know, familiarize, inflect: -нравиться
 сильн--ый: strong, powerful, inflect: ныйadj
@@ -1320,5 +1320,8 @@ grammar: -показать@inf, tag: verb
 автор--: n/a, inflect: masc-animate
 grammar: -хотеть@inf, tag: verb
 grammar: -хотеть@1pl, tag: verb
-grammar: -жениться@1
-grammar: -один@accn
+grammar: -жениться@1, tag: verb
+grammar: -один@accn, tag: accusative
+вверх: n/a
+вниз: n/a
+занятый: n/a

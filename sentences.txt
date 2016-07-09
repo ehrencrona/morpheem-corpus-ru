@@ -703,7 +703,7 @@
 702 я@nom открывать@1 книга@acc: I open the apartment.
 703 зачем ты@nom закрывать@2 дверь@acc ?: 
 704 почему ты@nom в@std библиотека@prep ?: 
-705 почему весь@pl твой@pl друг@pl — студент@pl ?: 
+705 почему весь@pl твой@pl друг@pl – студент@pl ?: 
 706 я@nom тут гулять@1: 
 707 он@nom не профессор@nom: 
 708 я@nom не олигарх@nom: 
@@ -951,7 +951,7 @@
 950 в@std мой@preppl комната@preppl низкий@f температура@nom: 
 951 он@nom работать@3 в@std разный@preppl страна@preppl: 
 952 они@nom жить@3pl в@std этот@preppl квартира@preppl: 
-953 на улица@preppl машина@pl: 
+953 на улица@preppl город@gen всегда быть@1 машина@pl: There are always cars on city streets.
 954 на улица@preppl много@pl машина@genpl: 
 955 старый@pl люди@pl сидеть@3pl в@std ресторан@prep: 
 956 на улица@preppl много@pl люди@genpl: 
@@ -1552,7 +1552,7 @@
 1551 зачем старый@datpl люди@datpl нужный@shortpl собака@pl ?: 
 1552 известный@datpl люди@datpl нужный@shortpl известный@pl друг@pl: 
 1553 старый@datpl люди@datpl нужно гулять@inf в@std парк@preppl: 
-1554 маленький@datf собака@dat нужно гулять@inf: 
+1554 она@nom думать@3 , что@acc маленький@datf собака@dat не нужно гулять@inf: 
 1555 большой@datf квартира@dat нужный@shortpl большой@pl комната@pl: 
 1556 новый@datf библиотека@dat не нужный@shortpl старый@pl книга@pl: 
 1557 этот@datf площадь@dat нужный@shortpl дерево@pl: 
@@ -1611,7 +1611,7 @@
 1610 я@dat нужный@shortf чёрный@f ручка@nom: 
 1611 мой@pl ручка@pl лежать@3pl на стол@prep в@std комната@prep: 
 1612 кто@dat ты@nom одалживать@2 свой@accinanpl ручка@accpl ?: 
-1613 у весь@accinanpl быть@1 ручка@pl ?: 
+1613 у весь@genpl быть@1 ручка@pl ?: 
 1614 у ты@gen быть@1 ручка@nom ?: 
 1615 мама@nom писать@3 ручка@instr: 
 1616 у ты@gen много@pl ручка@genpl ?: 
@@ -2203,7 +2203,7 @@
 2202 когда я@nom быть@pastm студент@instr , я@nom ничто@gen не понимать@pastm (author: andreas): 
 2203 слушать@imprpl я@acc ! я@nom сейчас говорить@1 (author: pasha): 
 2204 не играть@imprpl на мой@prepm планшет@prep ! он@nom только для работа@gen (author: pasha): 
-2205 закрывать@imprpl дверь@acc в@std квартира@acc (author: pasha): 
+2205 закрывать@imprpl дверь@acc в@std квартира@acc ! (author: pasha): 
 2206 когда я@nom жить@pastm в@alt Владивосток@prep , у я@gen не быть@pastn друг@genpl (author: andreas): 
 2207 работать@imprpl в@std офис@prep , играть@imprpl дома (author: pasha): 
 2208 когда ты@nom работать@2 сегодня ? (author: andreas): 
@@ -2668,7 +2668,7 @@
 2667 он@nom писать@3 в@std книга@prep (author: pasha): 
 2668 какой@f собака@nom мой@f ? (author: pasha): 
 2669 она@nom читать@3 журнал@acc в@std магазин@prep (author: pasha): He reads a magazine
-2670 — быть@1 ? — быть@1 ! (author: andreas): 
+2670 — быть@1 работа@acc ? — быть@1 ! (author: andreas): – Is there work? – There is!
 2671 тут быть@1 кошка@nom ? быть@1 . (author: andreas): 
 2672 тут быть@1 белый@f кошка@nom (author: andreas): 
 2673 тут быть@1 чёрный@f кошка@nom (author: andreas): 
@@ -2834,7 +2834,7 @@
 2833 он@nom слышать@3 свой@accanm взрослый@accanm папа@acc . (author: sergei): 
 2834 твой@f жена@nom взрослый@f ? (author: sergei): 
 2835 твой@m сын@nom взрослый@m ? (author: sergei): 
-2836 — и не говорить@impr , что@acc я@nom не взрослый@m . (author: sergei): 
+2836 — и не говорить@impr , что@acc я@nom не взрослый@m ! (author: sergei): 
 2837 он@nom не знать@pastm , что@acc давать@3 взрослый@f жизнь@nom . (author: sergei): 
 2838 его собака@nom уже взрослый@f . (author: sergei): 
 2839 мой@f мама@nom очень взрослый@f . (author: sergei): 
@@ -2984,7 +2984,7 @@
 2983 — она@nom работать@3 в@std университет@prep ? — да (author: sergei): 
 2984 — Маша@nom в@std библиотека@prep ? — да , она@nom там (author: sergei): 
 2985 — ты@nom знать@2 этот@accf площадь@acc ? — да (author: sergei): 
-2986 — ты@nom не любить@2 этот@accf газета@acc ? — да (author: sergei): 
+2986 — ты@nom любить@2 этот@accf газета@acc ? — да (author: sergei): 
 2987 — кто@nom это ? — мы@nom ! (author: sergei): 
 2988 — мы@nom красивый@pl ? (author: sergei): 
 2989 — мы@nom в@std школа@prep ? (author: sergei): 
@@ -3060,7 +3060,7 @@
 3059 входить@imprpl ! дверь@pl открытый@shortpl . (author: pasha): 
 
 3061 кровать@pl стоять@3pl у я@gen в@std комната@prep (author: pasha): 
-3062 — это дверь@pl в@std школа@acc ? (author: pasha): 
+3062 — это дверь@nom в@std школа@acc ? (author: pasha): 
 
 3064 он@nom покупать@3 белый@accinanm свитер@acc ? (author: pasha): He buys a white sweater?
 3065 — ты@nom покупать@2 чёрный@accinanm свитер@acc ? — нет , покупать@1 белый@accinanm (author: pasha): 
@@ -3125,7 +3125,7 @@
 3124 я@nom любить@1 этот@accinanm дом@acc . он@nom мой@m ! (author: pasha): 
 3125 один@accinanm день@acc — это слишком мало (author: sergei): 
 
-3127 я@nom любить@1 этот@accinanm журнал@nom (author: pasha): 
+3127 я@nom любить@1 этот@accinanm журнал@acc (author: pasha): 
 3128 ты@nom сегодня один@m ? (author: sergei): 
 3129 это быть@pastm один@m длинный@m и трудный@m день@nom в@std мой@prepf жизнь@prep (author: sergei): 
 3130 Маша@nom , я@nom очень любить@pastm вы@acc , но теперь я@nom любить@1 Саша@acc . извинить@imprpl ! (author: pasha): 
@@ -3213,7 +3213,7 @@
 3212 я@nom не дать@1 свой@accf еда@acc никто@dat . она@nom мой@f ! (author: roman): 
 3213 никто@nom не любить@3 этот@accf кошка@acc (author: roman): 
 3214 он@gen никто@nom не любить@3 . (author: roman): 
-3215 у я@gen два@pl собака@gen (author: adam): 
+
 3216 сказать@impr я@dat , что@nom я@nom красивый@f (author: adam): 
 3217 у друг@acc сегодня три@pl урок@gen математика@gen в@std школа@dat и много@adv домашний@genn задание@gen . (author: pasha): 
 3218 купить@impr два@accinanpl пакет@gen молоко@gen , пожалуйста (author: pasha): 
@@ -3225,12 +3225,12 @@
 3224 сегодня вы@dat нужно работать@inf ; а завтра ? (author: pasha): 
 3225 я@dat не нужно читать@inf книга@accpl на ночь@acc . я@nom уже большой@m (author: pasha): 
 3226 — я@dat это очень нужно ! (author: pasha): 
-3227 — кто@nom вы@dat доктор@nom ? (author: pasha): 
+3227 — кто@nom ваш@shortm доктор@nom ? (author: pasha): 
 3228 профессор@nom , студент@pl дарить@3pl вы@dat подарок@accpl ? (author: pasha): 
 3229 вы@dat нужно знать@inf как решить@inf этот@accf проблема@acc (author: pasha): 
 3230 — вы@dat плохой@adv ? (author: pasha): 
 
-3232 зачем вы@dat два@pl телефон@gen ? (author: pasha): 
+3232 зачем вы@dat два@accinanpl телефон@gen ? (author: pasha): 
 3233 зачем вы@dat это ? (author: pasha): 
 3234 — как долго ты@nom здесь работать@2 ? — три@pl год@gen (author: andreas): 
 3235 — как долго ты@nom здесь жить@2 ? — шесть@pl месяц@genpl (author: andreas): 
@@ -3307,7 +3307,7 @@
 3306 — кто@instr он@nom хотеть@2 стать@inf ? — студент@instr (author: sergei): 
 3307 давно пора@nom сказать@inf он@dat весь@accn , что@acc я@nom о@std он@prep думать@1 ! (author: andreas): 
 3308 — кто@instr я@dat можно стать@inf в@std этот@prepf жизнь@prep ? доктор@instr , профессор@instr или учитель@instr (author: sergei): 
-3309 — кто@instr я@nom мочь@1 стать@inf ? сейчас я@nom этот@genn не знать@1 (author: sergei): 
+3309 — кто@instr я@nom мочь@1 стать@inf ? пока я@nom этот@genn не знать@1 (author: sergei): 
 3310 — кто@instr ты@nom хотеть@2 стать@inf ? я@nom видеть@1 себя@acc доктор@instr (author: sergei): 
 3311 она@nom хотеть@3 стать@inf учитель@instr ? (author: sergei): 
 3312 — кто@instr она@nom хотеть@3 стать@inf , когда выйти@3 из университет@gen ? (author: sergei): 
@@ -3406,18 +3406,18 @@
 3405 мой@m брат@nom говорить@3 , что@nom мы@nom она@acc ещё не встречать@pastpl (author: andreas): 
 3406 я@nom часто слышать@pastm о@alt этот@prepm город@prep и даже видеть@pastm он@acc в@std кино (author: andreas): 
 3407 сколько@accinanpl себя@acc помнить@1 , я@nom хотеть@pastf стать@inf врач@instr (author: andreas): 
-3408 он@nom говорить@pastm , что@nom здесь можно купить@inf яйцо@accpl , но на самый@prepm дело@prep этот@m магазин@nom уже не работать@3 (author: andreas): 
+3408 он@nom говорить@pastm , что@acc здесь можно купить@inf яйцо@accpl , но на самый@prepm дело@prep этот@accinanm магазин@acc уже не работать@3 (author: andreas): 
 3409 до сих пора@nom он@nom всегда быть@pastm веселый , но сегодня он@nom грустный@m (author: andreas): 
 
 3411 мой@m отец@nom любить@3 свой@accanpl кошка@accpl . (author: pasha): 
-3412 мой@m отец@nom любить@3 весь@accinanpl собака@accpl . (author: pasha): 
+3412 мой@m отец@nom любить@3 весь@accanpl собака@accpl . (author: pasha): 
 3413 мой@m отец@nom не любить@3 собака@accpl . (author: pasha): 
 3414 на площадь@prep нет машина@genpl (author: pasha): 
 3415 в@std магазин@prep нет окно@genpl (author: pasha): 
 3416 телефон@nom лежать@3 в@std комната@prep на стол@prep у кровать@gen (author: pasha): The phone is in the room.
 3417 — что@nom там в@std комната@prep ? (author: pasha): 
 3418 сколько@pl у ты@gen брат@genpl и сестра@genpl ? (author: andreas): 
-3419 где машина@gen олигарх@gen ? почему они@nom весь@pl чёрный@pl ? (author: pasha): 
+
 3420 почему ты@nom не в@std свой@prepf комната@prep ? уже поздно , ты@dat пора@nom спать@inf (author: pasha): 
 3421 в@std этот@prepf квартира@prep маленький@pl комната@pl (author: pasha): 
 3422 какой@accanpl люди@accpl ты@nom встречать@2 на работа@prep , а какой@accanpl – в@std университет@prep ? (author: pasha): 
@@ -3436,17 +3436,17 @@
 3435 твой@f температура@nom слишком низкий@f (author: pasha): 
 3436 это город@nom без библиотека@gen: в@std он@prep никто@nom не читать@3 книга@accpl (author: pasha):
 3437 — я@nom сегодня без телефон@gen , он@nom сесть@pastm . (author: pasha): 
-3438 у я@gen сесть@pastm телефон@nom , такой@shortm что@nom не звонить@impr я@dat сегодня (author: pasha): 
+3438 у я@gen сесть@pastm телефон@nom , такой@shortm что@acc не звонить@impr я@dat сегодня (author: pasha): 
 
-3440 я@nom любить@1 этот@accinanm город@acc с@std высокий@instrpl дом@instrpl (author: pasha): 
+3440 я@nom любить@1 этот@accinanm город@acc за его высокий@accinanpl дом@accpl (author: pasha): 
 3441 в@std квартира@prep нет кровать@gen , поэтому я@nom спать@1 на диван@prep (author: pasha): 
 3442 где мой@f зарядка@nom для телефон@gen ? (author: pasha): 
 3443 кто@nom видеть@pastm мой@accf зарядка@acc для телефон@gen ? (author: pasha): 
 3444 где мой@f зарядка@nom для ноутбук@gen ? (author: pasha): 
-3445 где мой@f зарядка@nom для ноутбук@gen ? он@nom скорый@adv сесть@3 (author: pasha): 
+
 3446 у ты@gen быть@1 зарядка@nom для такой@genm телефон@gen ? (author: pasha): 
 3447 у кто@gen тут быть@1 зарядка@nom для мой@genm планшет@gen ? (author: pasha): 
-3448 мой@m планшет@nom скорый@adv сесть@3 . я@dat нужный@shortf зарядка@nom прямо сейчас (author: pasha): 
+
 3449 мой@f мама@nom потерять@pastf свой@accf зарядка@acc для ноутбук@gen и просить@3 я@acc купить@inf она@dat новый@accf (author: pasha): 
 3450 зачем ты@dat два@pl зарядка@gen для телефон@gen ? дать@impr я@dat один@accf из они@gen (author: pasha): 
 3451 — мочь@2 дать@inf я@dat свой@accinanm ноутбук@acc на день@acc ? (author: pasha): 
@@ -3457,7 +3457,7 @@
 3456 извинить@impr , я@nom нигде не видеть@1 твой@genf зарядка@gen (author: pasha): 
 3457 кто@nom видеть@pastm мой@accf зарядка@acc ? я@nom нигде не мочь@1 она@gen найти@inf (author: pasha): 
 3458 она@nom найти@pastf твой@accf зарядка@acc под кровать@instr (author: pasha): 
-3459 спасибо , что@nom найти@pastf мой@accf зарядка@acc . где она@nom лежать@pastf ? (author: pasha): 
+3459 спасибо , что@acc найти@pastf мой@accf зарядка@acc . где она@nom лежать@pastf ? (author: pasha): 
 3460 никто@nom не видеть@pastm мой@accf маленький@accf чёрный@accf зарядка@acc ? (author: pasha): 
 3461 если бы я@nom купить@pastm квартира@acc в@std этот@prepm город@prep десять@accinanpl год@genpl назад , я@nom быть@pastm бы сейчас олигарх@instr (author: andreas): 
 3462 — как стать@inf олигарх@instr ? — если бы я@nom только знать@pastm . (author: andreas): 
@@ -3741,9 +3741,9 @@
 
 3741 когда я@nom пить@1 много@pl кофе , у я@gen болеть@3 голова@nom и я@nom не мочь@1 работать@inf (author: pasha): 
 3742 нельзя пить@inf большой@comp пять@genpl чашка@genpl кофе в@std день@acc (author: pasha): 
-3743 на завтрак@acc я@nom обычный@adv есть@1 булочка@acc и пить@1 чашка@acc чёрный@genm кофе . (author: pasha): 
+3743 на завтрак@acc я@nom обычный@adv есть@1 булочка@acc и пить@1 чашка@acc чёрный@accanm кофе . (author: pasha): 
 3744 — Маша@nom , выходить@impr гулять@inf в@alt двор@nom ! (author: pasha): 
-3745 Маша@nom остановиться@pastf в@std известный@prepm отель@prep « Россия@nom » в@alt Владивосток@prep , хоть там и очень дорогой@adv (author: pasha): 
+3745 Маша@nom остановиться@pastf в@std известный@prepm отель@prep « Россия@nom » в@alt Владивосток@prep , хоть там и очень дорогой@shortn (author: pasha): 
 3746 Маша@nom встречаться@pastf с@std Саша@instr два@accinanpl год@gen , когда они@nom вместе ходить@pastpl в@std университет@acc (author: pasha): 
 3747 мой@f мама@nom пытаться@pastf сам@f найти@inf дорога@acc домой , но в@std конец@prep конец@genpl потеряться@pastf в@std метро . (author: pasha): 
 3748 я@nom не взять@pastm с@std себя@instr телефон@acc . (author: andreas): 
@@ -3792,7 +3792,7 @@
 3791 где я@dat купить@inf билет@acc на этот@accinanm поезд@acc ? (author: sergei): 
 
 3793 когда ты@nom закончить@2 работать@inf ? (author: andreas): 
-3794 газон@dat (author: pasha): 
+
 3795 ты@nom уже купить@pastf билет@accpl на самолёт@acc ? (author: pasha): 
 3796 — извинить@imprpl , молодой@m человек@nom , на этот@accinanm поезд@acc билет@genpl большой@comp нет (author: pasha): 
 3797 — нельзя ехать@inf в@std поезд@prep без билет@gen . выходить@imprpl ! (author: pasha): 
@@ -3961,7 +3961,7 @@
 3960 хоть она@nom и красивый@adv писать@3 , она@gen книга@pl очень скучный@pl (author: pasha): 
 3961 хоть я@nom и успеть@pastf на автобус@acc , я@nom весь@n равный@shortn опоздать@pastf на урок@acc (author: pasha): 
 3962 хоть я@nom и встать@pastm рано , я@nom весь@n равный@shortn не успеть@pastm съесть@inf полный@accinanm завтрак@acc (author: pasha): 
-3963 хоть я@dat и нравиться@3 твой@m свитер@nom , ты@nom не мочь@2 приходить@inf в@std он@prep в@std офис@acc (author: pasha): 
+3963 хоть я@dat и нравиться@3 твой@accinanm свитер@acc , ты@nom не мочь@2 приходить@inf в@std он@prep в@std офис@acc (author: pasha): 
 3964 хоть у она@genalt и хороший@m характер@nom , с@std она@instralt весь@n равный@shortn трудный@adv работать@inf (author: pasha): 
 3965 с@std она@instralt тяжёлый@shortn найти@inf общий язык[lang]@acc , потому_что у она@genalt трудный@m характер@nom (author: pasha): 
 
@@ -4060,10 +4060,10 @@
 4059 на ваш@prepm диван@prep очень удобный@adv сидеть@inf , но совсем нельзя спать@inf (author: pasha): 
 4060 мама@nom разрешить@pastf мы@dat смотреть@inf телевизор@acc за завтрак@instr ! (author: pasha): 
 4061 разрешить@imprpl я@dat пройти@inf , я@nom очень спешить@1 (author: pasha): 
-4062 вчера мы@nom очень спешить@pastpl успеть@inf на самолёт@acc и забыть@pastpl наш@accf дочь@acc дома . совсем как в@std кино ! (author: pasha): 
-4063 мы@nom так спешить@pastpl выучить@inf весь@accanpl слово@accpl перед экзамен@instr , что@nom в@std конец@prep конец@genpl весь@accn забыть@pastpl (author: pasha): 
+4062 — мы@nom очень спешить@pastpl успеть@inf на самолёт@acc и забыть@pastpl наш@accf дочь@acc дома . — совсем как в@std кино ! (author: pasha): 
+4063 мы@nom так спешить@pastpl выучить@inf весь@accanpl слово@accpl перед экзамен@instr , что@acc в@std конец@prep конец@genpl весь@accn забыть@pastpl (author: pasha): 
 4064 утро@instr весь@pl спешить@3pl на работа@acc , а вечер@instr – домой (author: pasha): 
-4065 у я@gen быть@1 время@nom , я@nom не спешить@1 (author: pasha): 
+4065 у я@gen быть@1 время@acc , я@nom не спешить@1 (author: pasha): 
 4066 остановиться@imprpl ! куда вы@nom весь@accn время@acc спешить@2pl ? (author: pasha): 
 4067 извинить@imprpl , я@nom неправильно вы@acc понимать@pastm (author: pasha): 
 4068 неужели вы@nom никогда не быть@pastpl в@std Россия@prep ? вы@nom так хороший@adv говорить@2pl по-русски (author: pasha): 
@@ -4071,7 +4071,7 @@
 4070 чей@m вы@nom друг@nom ? или вы@nom придти@pastpl на вечеринка@acc сам@pl ? (author: pasha): 
 4071 чей@m это ноутбук@nom ? ваш@m ? вот он@nom , вы@nom забыть@pastpl он@acc в@std библиотека@prep (author: pasha): 
 4072 я@nom не уметь@1 плавать@inf , мой@pl родители@pl я@acc не научить@pastpl . на самый@prepn дело@prep , они@nom тоже не уметь@3pl (author: pasha): 
-4073 — вы@nom уметь@2pl плавать@inf ? я@nom тоже нет (author: pasha): 
+4073 — вы@nom уметь@2pl плавать@inf ? (author: pasha): 
 4074 молодой@pl люди@pl в@std наш@accinanpl день@accpl совсем не ходить@3pl в@std церковь@acc (author: pasha): 
 4075 только бабушка@pl ходить@3pl в@std церковь@acc в@std этот@prepf страна@prep (author: pasha): 
 4076 я@nom уже давно не ходить@pastm в@std церковь@acc , надо пойти@inf на этот@preppl выходной@preppl (author: pasha): 
@@ -4174,32 +4174,32 @@
 4173 она@nom любить@3 спать@inf на два@preppl подушка@preppl (author: sergei): She loves sleeping on two pillows.
 4174 она@nom учиться@pastf в@std два@preppl школа@preppl , пока не придти@pastf в@std этот@accf школа@acc (author: sergei): She had studied in two schools before she came to this school.
 4175 я@nom быть[fut]@1 ждать@inf тут до два@genpl (author: sergei): I will wait here until two.
-4176 – я@nom не мочь@1 рассказать@inf в@std два@preppl слово@preppl (author: sergei): I can't tell this in a couple of words.
-4177 я@nom сидеть@1 на два@preppl стул@preppl (author: sergei): 
-4178 я@nom ничто@gen не знать@1 о@alt этот@preppl два@preppl собака@preppl (author: sergei): 
-4179 ты@nom знать@2 о@std два@preppl фильм@preppl , который@pl лежать@3pl у я@gen под кровать@instr (author: sergei): 
-4180 они@nom жить@3pl на три@preppl разный@genpl этаж@preppl (author: sergei): 
+4176 — я@nom не мочь@1 рассказать@inf в@std два@preppl слово@preppl (author: sergei): I can't tell this in a couple of words.
+4177 я@nom сидеть@1 на два@preppl стул@preppl (author: sergei): I'm sitting on two chairs.
+4178 я@nom ничто@gen не знать@1 о@alt этот@preppl два@preppl собака@preppl (author: sergei): I know nothing about these two dogs.
+4179 ты@nom знать@2 о@std два@preppl фильм@preppl , который@pl лежать@3pl у я@gen под кровать@instr ? (author: sergei): Do you know about the two movies that lie under my bed?
+4180 они@nom жить@3pl на три@preppl разный@preppl этаж@preppl (author: sergei): They live on three different floors.
 4181 мы@nom разлить@pastpl весь@accf вода@acc на четыре@preppl стол@preppl (author: sergei): 
-4182 мы@nom остановиться@pastpl на три@preppl кошка@preppl и один@prepf собака@prep (author: sergei): 
-4183 ты@nom мочь@2 взять@inf не большой@comp три@genpl (author: sergei): 
-4184 я@nom говорить@1 о@std три@preppl известный@preppl люди@preppl (author: sergei): 
-4185 ты@nom работать@pastpl на четыре@preppl стол@preppl (author: sergei): 
-4186 я@nom учиться@pastm в@std три@preppl школа@preppl перед университет@instr (author: sergei): 
-4187 собака@nom ходить@3 на четыре@preppl нога@preppl (author: sergei): 
-4188 крыша@nom стоить@3 на четыре@preppl стена@preppl (author: sergei): 
-4189 я@nom быть[fut]@1 говорить@inf о@std пять@preppl известный@preppl люди@preppl (author: sergei): 
-4190 « на семь@preppl гора@preppl » (author: sergei): 
-4191 он@nom работать@3 на девять@preppl телефон@preppl (author: sergei): 
-4192 я@nom слышать@pastm только о@std шесть@preppl море@preppl (author: sergei): 
-4193 этот@datpl лето@instr мы@nom быть@pastpl в@std пять@preppl город@preppl (author: sergei): 
-4194 я@nom уже жить@pastm в@std десять@genpl квартира@preppl , везде быть@pastn плохой@shortn . (author: sergei): 
-4195 сегодня я@nom сидеть@pastm на пять@preppl урок@preppl (author: sergei): 
-4196 она@nom остановиться@pastf на шесть@preppl задание@preppl за один@m день@nom (author: sergei): 
+4182 мы@nom остановиться@pastpl на три@preppl кошка@preppl и один@prepf собака@prep (author: sergei): We stopped at three cats and one dog.
+4183 ты@nom мочь@2 взять@inf не большой@comp три@genpl (author: sergei): You may take no more than three.
+4184 на мой@preppl лекция@preppl я@nom говорить@1 о@std три@preppl известный@preppl люди@preppl (author: sergei): During my lectures I talk about three famous people
+4185 ты@nom работать@pastf на этот@preppl четыре@preppl стол@preppl ? (author: sergei): Did you work on these four tables?
+4186 я@nom учиться@pastm в@std три@preppl школа@preppl перед университет@instr (author: sergei): I studied in four schools before university.
+
+4188 крыша@nom стоять@3 на четыре@preppl стена@preppl (author: sergei): A roof stands on four walls.
+4189 я@nom быть[fut]@1 говорить@inf о@std пять@preppl известный@preppl люди@preppl (author: sergei): I will be talking about five famous people.
+4190 наш@m город@nom стоять@3 на семь@preppl гора@preppl . мы@nom постоянный@adv ходить@1pl вверх и вниз (author: sergei): Our city stands on seven mountains. We are constantly walking up and down.
+
+4192 я@nom слышать@pastm только о@std шесть@preppl море@preppl . почему она@nom петь@3 о@std семь@preppl ? (author: sergei): I only ever heard of six seas. Why does she sing about seven?
+4193 этот@instrn лето@instr мы@nom быть@pastpl в@std пять@preppl город@preppl (author: sergei): This summer we have been to five cities.
+4194 я@nom уже жить@pastm в@std десять@preppl квартира@preppl , везде быть@pastn плохой@adv . (author: sergei): I have already lived in ten apartments, it sucked everywhere.
+4195 сегодня я@nom сидеть@pastm на пять@preppl урок@preppl (author: sergei): I sat through five lessons today.
+4196 она@nom остановиться@pastf на шесть@preppl задание@preppl за один@accinanm день@acc (author: sergei): She stopped at six tasks for one day.
 4197 мы@nom принести@pastpl продукт@accpl в@std шесть@preppl пакет@preppl (author: sergei): 
-4198 я@nom читать@pastm книга@acc о@alt этот@prepm писатель@prep (author: sergei): 
-4199 я@nom слышать@pastm о@alt этот@prepm случай@prep в@std банк@prep (author: sergei): 
-4200 никто@nom не знать@3 о@alt этот@prepm парень@prep правда@acc (author: sergei): 
-4201 я@nom видеть@pastm странный@genpl люди@genpl в@std музей@prep (author: sergei): 
+4198 я@nom читать@pastm книга@acc о@alt этот@prepm писатель@prep (author: sergei): I read a book about this writer.
+4199 я@nom слышать@pastm о@alt этот@prepm случай@prep в@std банк@prep (author: sergei): I've heard about this case in the bank.
+4200 никто@nom не знать@3 правда@acc о@alt этот@prepm парень@prep (author: sergei): Nobody knows the truth about this guy.
+4201 я@nom видеть@pastm странный@accanpl люди@accpl в@std музей@prep (author: sergei): I saw strange people at the museum.
 4202 в@std музей@prep быть@pastn много@accinanpl люди@accpl (author: sergei): 
 4203 ты@nom что@nom , никто@gen из они@genalt никогда не видеть@pastm ? вот это да ! (author: roman): 
 4204 кто@acc ты@nom искать@2 здесь ? (author: roman): 
@@ -4318,7 +4318,7 @@
 4317 этот@m город@nom известный@shortm свой@instrpl три@instrpl площадь@instrpl в@std центр@prep (author: sergei): 
 4318 я@nom гулять@1 на улица@dat с@std наш@instrpl три@instrpl собака@instrpl (author: sergei): 
 4319 мама@nom придти@pastf из магазин@gen с@std три@instrpl сумка@instrpl (author: sergei): 
-4320 я@nom видеть@1 он@gen с@std пять@instrpl дочь@instrpl (author: sergei): 
+4320 я@nom видеть@1 он@gen с@std пять@instrpl дочь@instrpl (author: sergei): I see her with five daughters.
 4321 он@nom должный@shortm прийти между шесть@instrpl и семья@acc (author: sergei): 
 4322 я@nom сегодня быть@pastm в@std дом@prep с@std шесть@instrpl комната@instrpl (author: sergei): 
 4323 я@nom выйти@pastm из дома с@std десять@instrpl рубль@instrpl в@std карман@prep (author: sergei): 
@@ -4367,7 +4367,7 @@
 4366 сколько@pl стоить@3pl десять@pl яйцо@genpl ? (author: roman): 
 
 4368 в@std этот@prepm старый@prepm дом@prep совсем нет окно@genpl . (author: roman): 
-4369 не открывать@imprpl окно@genpl – холодный@adv . (author: roman): 
+4369 не открывать@imprpl окно@genpl , а тот@n холодный@adv . (author: roman): 
 
 4371 я@nom закрыть@pastm весь@pl шесть@accinanpl окно@genpl . (author: roman): 
 4372 я@nom закрыть@pastm весь@pl шесть@accinanpl окно@genpl . теперь в@std дом@prep ничто@gen не видно . (author: roman): 
@@ -4399,8 +4399,8 @@
 4398 я@nom хотеть@pastm бы поехать@inf к@std море@dat с@std ты@instr . (author: andreas): I would like to go to the seaside with you.
 4399 мы@nom ещё не придти@pastpl к@std решение@dat . (author: andreas): We haven't come to a decision yet.
 4400 кажеться@3 , по домашний@datm задание@dat я@nom быть[fut]@1 совсем не готовый@shortm . (author: andreas): 
-4401 они@nom знать@3pl проблема@acc к@std любой@datm решение@dat . (author: andreas): 
-4402 я@nom ехать@1 на университет@prep . (author: andreas): 
+4401 они@nom знать@3pl решение@acc любой@accinanm проблема@gen . (author: andreas): 
+4402 я@nom ехать@1 в@std университет@acc . (author: andreas): 
 4403 входить@imprpl , пожалуйста ! (author: andreas): Please come in.
 4404 я@nom видеть@pastm , как она@nom входить@pastf в@std комната@acc . (author: andreas): 
 4405 не входить@imprpl в@std мой@accf комната@acc ! (author: andreas): Don't come into my room.
@@ -4412,26 +4412,26 @@
 4411 вы@nom жить@2pl в@std квартира@prep или в@std дом@prep ? (author: andreas): 
 4412 — он@nom говорить@3 по-французски или по-русски ? (author: andreas): 
 4413 ваш@f собака@nom маленький@f или большой@f ? (author: andreas): 
-4414 вы@nom пить@2pl маленький@n или большой@n кофе ? (author: andreas): 
+4414 вы@nom пить@2pl маленький@accinanm или большой@accinanm кофе ? (author: andreas): 
 4415 погода@nom быть[fut]@3 хороший@f или плохой@f ? (author: andreas): 
 4416 у ты@gen кошка@nom или собака@nom ? (author: andreas): 
 4417 у ты@gen брат@nom или сестра@nom ? (author: andreas): 
 4418 у ты@gen брат@pl или сестра@pl ? (author: andreas): 
-4419 телефон@nom для Маша@gen или для Саша@gen ? (author: andreas): 
-4420 — ты@nom идти@2 на метро или на машина@acc ? (author: andreas): 
-4421 у я@gen нет радио или телевизор@nom (author: andreas): 
-4422 он@nom хороший@m человек@nom или нет ? (author: andreas): 
-4423 у я@gen пять@pl или шесть@pl хороший@genpl друг@genpl . (author: andreas): 
+4419 ты@dat нужный@shortm телефон@nom для Маша@gen или для Саша@gen ? (author: andreas): 
+4420 — ты@nom идти@2 на метро или к@std свой@datf машина@dat ? (author: andreas): 
+4421 у я@gen нет радио или телевизор@gen (author: andreas): 
+4422 он@nom хороший@accinanm человек@nom или нет ? (author: andreas): 
+4423 у я@gen пять@accinanpl или шесть@accinanpl хороший@genpl друг@genpl . (author: andreas): 
 4424 — он@nom в@std библиотека@prep или дома ? (author: andreas): 
-4425 — Саша@nom быть@1 ? — нет . (author: andreas): 
+4425 — тут Саша@nom быть@1 ? — нет . (author: andreas): 
 4426 — где вы@nom работать@2pl ? (author: andreas): 
 4427 я@dat нравиться@3pl собака@pl . (author: andreas): 
 4428 я@dat нравиться@3 гулять@inf в@std парк@prep (author: andreas): 
 4429 Маша@nom я@dat не нравиться@3 . (author: andreas): 
-4430 свой@f работа@nom он@dat не нравиться@3 . (author: andreas): 
+4430 он@dat не нравиться@3 его работа@nom . (author: andreas): 
 4431 он@dat очень нравиться@3 музыка@nom . (author: andreas): He is very fond of music.
 4432 он@dat очень нравиться@3 английский@accinanm язык[lang]@acc . (author: andreas): He likes English very much.
-4433 вы@dat какой@f машина@nom большой@comp нравиться@3 ? (author: andreas): What car do you like more?
+4433 какой@f машина@nom вы@dat большой@comp нравиться@3 ? (author: andreas): 
 4434 он@dat не нравиться@3 кофе . (author: andreas): He doesn't like coffee.
 4435 парк@nom находиться@3 в@std центр@prep город@gen . (author: andreas): 
 4436 она@nom я@dat нравиться@3 . (author: andreas): 
@@ -4443,7 +4443,7 @@
 4442 я@nom думать@pastm , ты@nom любить@2 изучать@inf новый@accinanpl вещь@accpl . (author: andreas): 
 4443 какой@f ваш@shortf группа@nom кровь@gen ? (author: andreas): What's your blood type?
 4444 этот@n вопрос@acc жизнь@gen и смерть@gen . (author: andreas): It's a matter of life and death.
-4445 сказать@inf и сделать@inf – этот@n разный@pl вещь@pl . (author: andreas): 
+4445 сказать@inf и сделать@inf – этот@accn разный@accinanpl вещь@accpl . (author: andreas): 
 
 4447 с@std каждый@instrm день@instr становиться@3 холодный@comp . (author: roman): 
 4448 вы@nom свободный@shortpl день@instr ? (author: roman): 
@@ -4463,7 +4463,7 @@
 4462 пожалуйста , закрыть@impr за себя@instr дверь@acc . (author: roman): 
 4463 у ты@gen ноутбук@nom с@std себя@instr ? (author: roman): 
 4464 смотреть@imprpl прямо перед себя@instr . (author: roman): 
-4465 вы@nom слышать@pastpl о@std она@instralt в@std последний@comp время@nom ? (author: roman): 
+4465 вы@nom слышать@pastpl о@std она@instralt в@std последний@comp время@acc ? (author: roman): 
 4466 где и когда вы@nom с@std она@instralt познакомиться@pastpl ? (author: roman): 
 4467 он@nom часто ходить@3 с@std она@instralt в@std кино . (author: roman): 
 4468 я@nom ничто@gen о@std она@instralt не знать@1 . (author: roman): 
@@ -4473,7 +4473,7 @@
 4472 ты@dat нужный@shortn встретиться@inf с@std она@instralt ? (author: roman): 
 4473 он@nom сесть@pastm ряд@instr с@std она@instralt . (author: roman): 
 4474 он@nom к@std она@instralt добрый@shortm . (author: roman): 
-4475 я@nom никогда не встречаться@pastm с@std она@instralt . она@nom мой@f подруга@nom . (author: roman): 
+
 4476 мой@m папа@nom самый@m сильный@m — он@nom никто@gen не бояться@3 . (author: alexey): 
 4477 я@nom с@std они@datalt в@std хороший@accanpl отношение@preppl . (author: roman): 
 4478 я@nom большой@comp не мочь@1 с@std они@datalt жить@inf . (author: roman): 
@@ -4496,7 +4496,7 @@
 4495 ты@nom работать@2 в@std этот@prepm ресторан@prep ? (author: andreas): 
 4496 я@nom работать@1 в@std ресторан@prep . (author: andreas): 
 4497 — видеть@2 тот@m маленький@accinanm магазин@acc ? (author: andreas): 
-4498 мой@m город@acc уже не тот@m , что@nom быть@pastm раньше . (author: andreas): 
+4498 мой@m город@acc уже не тот@accinanm , что@acc быть@pastm раньше . (author: andreas): 
 
 4500 дети@datpl нужный@shortf самый@f хороший@f еда@nom (author: andreas): 
 4501 в@std тот@prepm магазин@prep очень красивый@pl стол@pl и стул@pl . (author: andreas): 
@@ -4809,7 +4809,7 @@
 4808 некоторый@pl люди@pl встречаться@3pl много@adv год@genpl , прежде что@instr жениться@inf , а некоторый@pl – весь@genn пара@acc месяц@genpl (author: pasha): 
 4809 у я@gen много@pl брат@genpl и сестра@genpl . (author: roman): 
 4810 — видеть@2 тот@accanpl парень@accpl ? они@nom идиот@pl (author: pasha): 
-4811 сколько@pl у ты@gen брат@genpl и сестра@genpl ? (author: roman): 
+
 4812 у она@genalt нет ни брат@accpl , ни сестра@genpl . (author: roman): 
 4813 у я@gen нет сестра@genpl . (author: roman): 
 4814 я@nom не очень любить@1 учитель@accpl в@std мой@prepf школа@prep . в@std следующий@prepm год@prep я@nom пойти@1 в@std другой@accf (author: pasha): 
@@ -4840,14 +4840,14 @@
 4839 она@nom любить@3 говорить@inf только о@std мы@prep с@std она@instralt (author: sergei): 
 4840 — почему ты@nom не знать@2 о@std мы@prep ? мы@nom самый@accinanpl известный@accinanpl в@std школа@prep (author: sergei): 
 4841 на мы@prep весь@pl быть[fut]@3pl смотреть@inf , если мы@nom пойти@1pl в@std такой@preppl свитер@preppl , они@nom очень старый@accinanpl (author: sergei): 
-4842 ты@nom мочь@2 купить@inf мясо@acc на мы@acc весь@accinanpl ? (author: sergei): 
-4843 она@nom весь@m день@acc думать@pastf только о@std мы@prep (author: sergei): 
+4842 ты@nom мочь@2 купить@inf мясо@acc на мы@acc весь@accanpl ? (author: sergei): 
+4843 она@nom весь@accinanm день@acc думать@pastf только о@std мы@prep (author: sergei): 
 4844 он@nom знать@3 всё и о@alt2 весь@preppl (author: sergei): 
 4845 — ты@nom готовый@shortm сделать@inf этот@n при весь@preppl ? (author: sergei): 
 4846 я@nom знать@1 о@alt2 весь@preppl учитель@preppl в@std этот@prepf школа@prep , хотя учиться@1 я@nom в@std она@instralt только второй@accf неделя@acc (author: sergei): 
 4847 ты@nom мочь@2 искать@inf в@alt весь@preppl только хороший@accn ? (author: sergei): 
-4848 я@nom купить@pastm на весь@accinanpl , тут мясо@nom и пиво@nom ! (author: sergei): 
-4849 я@nom мочь@1 заказывать@inf еда@acc в@std этот@prepn ресторан@prep на весь@accinanpl свой@accanpl друг@accpl , я@nom знать@1 что@acc они@nom любить@3pl есть@inf и пить@inf (author: sergei): 
+4848 я@nom купить@pastm на весь@accanpl , тут мясо@nom и пиво@nom ! (author: sergei): 
+4849 я@nom мочь@1 заказывать@inf еда@acc в@std этот@prepn ресторан@prep на весь@accanpl свой@accanpl друг@accpl , я@nom знать@1 что@acc они@nom любить@3pl есть@inf и пить@inf (author: sergei): 
 4850 к@alt я@prep сегодня должный@shortpl прийти гость@pl и я@nom готовить@1 ужин@acc на весь@preppl (author: sergei): 
 4851 — библиотека@nom находиться@3 за следующий@prepf улица@instr ? (author: sergei): 
 4852 — какой@accinanm день@acc неделя@gen за пятница@instr ? — я@nom уверенный@shortm , что@acc этот@n суббота@nom ! (author: sergei): 
@@ -5222,7 +5222,7 @@
 5221 я@nom не уверенный@shortm , кто@dat я@dat давать@inf подарок@acc: девочка@dat или мальчик@dat ? (author: roman):
 5222 что@acc они@nom мочь@3pl сделать@inf ? (author: roman): 
 5223 в@std мир[world]@prep быть@1 много@adv люди@genpl , который@accinanpl мочь@3pl сделать@inf тот@accn же самый@accn , что@acc и ты@nom . (author: roman): 
-5224 этот@accn мочь@3pl весь@pl . (author: roman): 
+5224 этот@accn мочь@3pl весь@accinanpl . (author: roman): 
 5225 они@nom мочь@3pl ходить@inf на рука@preppl . (author: roman): 
 5226 они@nom мочь@3pl пойти@inf в@std библиотека@acc . (author: roman): 
 5227 ты@nom хотя бы спать@pastm , а я@nom весь@accf ночь@acc работать@pastf (author: andreas): 
@@ -5359,7 +5359,7 @@
 5358 мы@nom бегать@pastpl в@std парк@prep . (author: andreas): We ran in the park.
 5359 я@nom мочь@1 ответить@inf на он@acc вопрос@acc . (author: roman): I can respond to his question.
 5360 он@nom бегать@3 быстрый@comp я@acc . (author: andreas): 
-5361 я@nom бегать@1 быстрый@comp весь@accinanpl . (author: andreas): I am the fastest runner.
+5361 я@nom бегать@1 быстрый@comp весь@accanpl . (author: andreas): 
 5362 они@nom сейчас изучать@3pl этот@accinanm вопрос@acc . (author: roman): 
 5363 вопрос@nom в@std тот@prepm , придти@3 ли она@nom или нет . (author: roman): 
 5364 что@acc ты@nom собираться@2 сегодня делать@inf ? (author: andreas): What are you going to do today?
@@ -6036,7 +6036,7 @@
 6035 его дом@nom в@std три@accinanpl раз@gen большой@comp мой@genm . (author: pasha): 
 6036 он@nom вернуться@pastm через три@accinanpl день@gen . (author: pasha): 
 6037 три@pl мальчик@gen посмотреть@pastpl друг@nom на друг@acc . (author: pasha): 
-6038 у он@genalt три@pl дочь@gen . (author: pasha): 
+6038 у он@genalt три@pl дочь@gen и нет сын@genpl . (author: pasha): 
 6039 — встретиться@1pl в@std три@accinanpl . (author: pasha): 
 6040 ещё три@pl месяц@gen , и наш@m дом@nom быть[fut]@3 готовый@shortm . (author: pasha): 
 6041 второй@accinanm раз@acc в@std жизнь@prep я@nom лететь@1 на самолёт@prep . (author: pasha): 
@@ -6086,8 +6086,8 @@
 6085 мой@n сердце@nom хотеть@3 один@accanm ты@acc . (author: andreas): 
 6086 давать@impr всегда быть[fut]@1pl друг@instrpl . (author: andreas): 
 6087 если давать@2 , тот@n давать@impr быстрый@adv . (author: andreas): 
-6088 кто@nom этот@m человек@nom ? (author: mark): 
-6089 что@nom этот@n значить@3 ? (author: mark): 
+6088 — кто@nom этот@m человек@nom ? (author: mark): 
+6089 что@acc этот@n значить@3 ? (author: mark): 
 6090 — что@acc новый@genn ? (author: mark): 
 6091 простить@imprpl , что@acc вы@nom сказать@pastpl ? (author: mark): 
 
@@ -6172,12 +6172,12 @@
 6171 этот@n , очевидно , плохой@m пример@nom . (author: roman): 
 6172 очевидно , его отец@nom за граница@instr . (author: roman): 
 6173 ты@nom опоздать@pastm ! (author: pasha): 
-6174  (author: mark): 
+
 6175  (author: mark): 
 6176 всего ! (author: mark): 
-6177 весь@genn хороший@genn ! (author: mark): 
-6178 привет@nom весь@datpl ! (author: mark): 
-6179  (author: mark): 
+6177 — весь@genn хороший@genn ! (author: mark): 
+6178 — привет@nom весь@datpl ! (author: mark): 
+
 6180 — кто@dat вы@nom читать@2pl книга@acc ? (author: mark): 
 6181 выйти@pastm "Я_вышел_из_ресторана_из-за_того,_что_у_них_не_было_вегетарианского_меню" "Я_вышел_из_автобуса_на_остановке_"Черртнг-кросс"" "Подсудимый_утвердил_что_вышел_из_аудитории_в_восемь_часов_ночи" "Мой_друг_вышел_из-за_занавески,_махая_ко_мне_руками" (author: 577df1fd4e570e4f7f173a3e): 
 6182 брат@pl "Мои_братья_все_работают_программистами._У_нас_семья_такая" ""Братья!"_Воскликнула_я_в_ярости,_"У_меня_лишь_братья,_а_ни_одной_сестры"" "Были_многие_известные_братья_вдоль_человеческой_истории._К_примеру,_братья_Райт,_Лумиер_и_Уорнер" "На_Украинском_гимне_поют_"и_покажем_что_мы,_братья,_Козакского_рода"" (author: 577df1fd4e570e4f7f173a3e): 
@@ -6197,20 +6197,20 @@
 6196 этот@m шкаф@nom стоить@3 справа@nom . (author: mark): 
 6197 этот@f женщина@nom хороший@adv говорить@3 по-русски . (author: mark): 
 6198 какой@f женщина@nom хороший@adv говорить@3 по-русски ? (author: mark): 
-6199  (author: mark): 
+
 6200 — кто@nom написать@pastm этот@accn письмо@acc ? — этот@accn письмо@acc написать@pastf мать@nom . (author: mark): 
 6201 — кто@nom написать@pastm этот@accf книга@acc ? — этот@accf книга@acc написать@pastm автор@nom . (author: mark): 
 6202 — кто@dat вы@nom написать@pastpl письмо@acc ? — я@nom написать@pastm письмо@acc мать@dat . (author: mark): 
 
 6204 — о@std кто@prep ты@nom думать@2 ? — я@nom думать@1 о@std мать@dat . (author: mark): 
 6205 — о@std кто@prep ты@nom думать@2 ? — я@nom думать@1 о@alt отец@prep . (author: mark): 
-6206  (author: mark): 
+
 6207 весь@datpl свой@n . (author: andreas): То еаch his own.
 6208 — мороженое@acc какой@genn вкус@nom вы@nom хотеть@2pl ? — каждый@genn по один@datn . (author: andreas): – What kind of icecream would you like? – One of each.
-6209  (author: mark): 
+
 6210 — кто@nom написать@pastm этот@accn письмо@acc ? — этот@accn письмо@acc написать@pastm отец@nom . (author: mark): 
 6211  (author: mark): 
-6212 автор@nom (author: mark): 
+
 6213 — кто@nom написать@pastm этот@accf книга@acc ? — этот@accf книга@acc написать@pastm Саша@nom . (author: mark): 
 6214 — кто@nom написать@pastm этот@accf книга@acc ? — этот@accf книга@acc написать@pastf мама@nom . (author: mark): 
 6215 — кто@acc вы@nom давно не видеть@pastpl ? — я@nom давно не видеть@pastm мать@acc . (author: mark): 
@@ -6221,17 +6221,109 @@
 
 6221 мой@m брат@nom учить@3 за граница@instr . (author: nani): 
 6222 — мы@nom говорить@1pl сейчас о@std он@prep и о@std она@prep . (author: mark): 
-6223  (author: mark): 
+
 6224 — о@std кто@prep вы@nom говорить@2pl сейчас ? — мы@nom говорить@1pl сейчас о@std он@prep и о@std она@prep . (author: mark): 
-6225  (author: mark): 
-6226  (author: mark): 
+
+
 6227 — о@std кто@prep вы@nom говорить@2pl сейчас ? — мы@nom говорить@1pl сейчас о@std он@prep и о@std она@prep . (author: mark): 
 6228 мы@nom хотеть@1pl знать@inf русский@accinanm язык[lang]@acc . (author: mark): 
 6229 — какой@n этот@n письмо@nom ? — этот@n короткий@n письмо@nom . (author: mark): 
 6230 — какой@pl книга@pl лежать@3pl на стол@prep ? — на стол@prep лежать@3pl большой@pl роман@pl . (author: mark): 
-6231 на (author: mark): 
+
 6232 — какой@m фильм@nom вы@nom смотреть@pastpl в@std среда@acc ? — мы@nom смотреть@pastpl длинный@accinanm фильм@acc в@std среда@acc . (author: mark): 
 6233 я@nom большой@comp рад@shortm твой@datf собака@dat , что@instr ты@dat (author: pasha): 
 6234 я@nom любить@1 читать@inf книга@accpl большой@comp , что@instr смотреть@inf фильм@accpl (author: pasha): 
 6235 писать@inf сообщение@accpl простой@comp , что@instr говорить@inf с@std человек@instr по телефон@dat (author: pasha): 
 6236 лететь@inf на самолёт@prep быстрый@comp , что@instr ехать@inf на поезд@prep , но не так интересный@adv (author: pasha): Flying on a plane is faster than going by train, but it is less interesting.
+6237 в@std этот@prepf комната@prep нет стул@genpl . (author: andreas): 
+6238 — принести@impr ещё пара@acc стул@genpl . (author: andreas): 
+6239 как он@nom ни стараться@pastm , ничто@gen не работать@pastn . (author: roman): 
+6240 он@nom стараться@pastm сделать@inf жена@acc счастливый@instrf , но не мочь@pastm . (author: roman): 
+6241 я@nom простой@adv стараться@pastm делать@inf свой@accf работа@acc . (author: roman): 
+6242 я@nom стараться@1 о@alt этот@prepn не думать@inf . (author: roman): 
+6243 я@nom не мочь@1 выйти@inf из дом@gen даже на короткий@accn время@acc . (author: roman): 
+6244 часто говорить@3pl , что@nom жизнь@nom короткий@shortf . (author: roman): 
+6245 я@nom знать@1 короткий@m путь@acc . (author: roman): 
+6246 короткий@m вопрос@nom – длинный@m ответ@nom . (author: roman): 
+6247 поезд@nom сделать@pastm короткий@accf остановка@acc . (author: roman): 
+6248 я@nom не знать@1 , как ответить@inf короткий@adv и верный@adv . (author: roman): 
+6249 лето@nom у мы@gen короткий@n , но тёплый@n . (author: roman): 
+6250 он@nom собирать@3 свой@accinanpl бумага@accpl . (author: roman): 
+6251 кто@nom быть[fut]@3 собирать@inf яблоко@accpl осень@instr ? (author: roman): 
+6252 почему ты@nom собирать@2 вещь@accpl ? (author: roman): 
+6253 этот@n быть@pastn он@gen работа@instr , собирать@inf яйцо@accpl . (author: roman): 
+6254 он@nom собирать@3 на покупка@acc дом@gen . (author: roman): 
+6255 они@nom собирать@3pl деньги@accpl для церковь@gen . (author: roman): 
+6256 мы@nom собирать@1pl книга@accpl с@alt весь@genm мир[world]@gen . (author: roman): 
+6257 студент@pl тихий@adv сидеть@pastpl и слушать@pastpl лекция@acc . (author: roman): 
+6258 в@std этот@prepm лес@prep тихий@adv и спокойный@adv . (author: roman): 
+6259 когда ты@nom тихий@adv говорить@2 , я@nom ты@gen не понимать@1 . (author: roman): 
+6260 там быть@pastn тихий@adv и красивый@adv . (author: roman): 
+6261 она@nom тихий@adv войти@pastf в@std комната@acc . (author: roman): 
+6262 он@nom тихий@adv закрыть@pastm дверь@acc в@std спальня@acc . (author: roman): 
+6263 вы@nom мочь@2pl оставаться@inf здесь , пока сидеть@2pl тихий@adv . (author: roman): 
+6264 пока всё в@std порядок@prep . (author: roman): 
+6265 но сейчас всё в@std порядок@prep или нет ? (author: roman): 
+6266 я@nom хотеть@1 верить@inf , что@nom всё в@std порядок@prep . (author: roman): 
+6267 опаздывать@inf быть@pastn для он@genalt в@std порядок@prep вещь@genpl . (author: roman): 
+6268 дорога@acc открыть@pastpl для движение@gen . (author: roman): 
+6269 у мой@genf мама@gen полный@adv дело@genpl , так что@nom она@nom всегда в@std движение@prep . (author: roman): 
+6270 мы@nom должный@shortpl продолжать@inf движение@acc . (author: roman): 
+6271 в@std пять@pl час@genpl здесь всегда большой@n движение@nom . (author: roman): 
+6272 какой@n сильный@n движение@nom ! (author: roman): 
+6273 прекратить@impr говорить@inf и слушать@impr музыка@acc . (author: roman): Do stop talking and listen to the music.
+6274 пожалуйста , прекратить@imprpl война@acc . (author: roman): 
+6275 ты@nom прекратить@2 бояться@inf , когда ты@nom прекратить@2 надеяться@inf . (author: roman): 
+6276 ты@nom должный@shortm прекратить@inf курить@inf . (author: roman): You should stop smoking.
+6277 прекратить@imprpl говорить@inf о@std себя@prep и начать@imprpl говорить@inf о@std другой@preppl ! (author: roman): 
+6278 не нужно кричать@inf . я@nom слышать@1 ты@acc . (author: roman): 
+6279 мой@f сестра@nom часто кричать@3 . (author: roman): My sister often cries.
+6280 я@nom кричать@1 , но никто@nom я@acc не слышать@3 . (author: roman): 
+6281 ребёнок@nom кричать@pastm весь@accf ночь@acc . (author: roman): 
+6282 пройти@pastf неделя@nom после знакомство@gen . (author: roman): 
+6283 я@nom не знак@instr с@std она@instralt , и не думать@1 , что@nom быть[fut]@1 рад@shortm этот@datn знакомство@dat . (author: roman): 
+6284 очень рад@shortm знакомство@dat . (author: roman): I'm delighted to meet you.
+6285 у он@genalt много@pl разный@genpl знакомство@genpl (author: roman): 
+6286 почему бы ты@dat не взять@inf такси ? (author: roman): 
+6287 я@nom поехать@pastm в@std отель@acc на такси . (author: roman): 
+6288 я@nom взять@pastm такси от вокзал@gen до отель@gen . (author: roman): I took a taxi from the station to the hotel.
+6289 мы@nom поехать@1pl на машина@prep или на такси ? (author: roman): 
+6290 что@nom быстрый@comp , такси или метро ? (author: roman): 
+6291 давать@impr выйти@1pl из такси . (author: roman): Let's get out of the taxi.
+6292 почему сегодня на вокзал@prep нет такси ? (author: roman): 
+6293 не мочь@pastpl бы вы@nom показать@inf я@dat , где здесь туалет@nom ? (author: roman): 
+6294 в@std этот@prepn здание@prep нет туалет@genpl . (author: roman): 
+6295 туалет@nom закрытый@shortm на обед@acc . (author: roman): 
+6296 выйти@impr из туалет@gen , он@nom я@dat нужный@shortm . (author: roman): 
+6297 он@nom встать@pastm рано утро@instr , чтобы пойти@inf в@std туалет@acc . (author: roman): 
+6298 он@nom спросить@pastm у я@gen , где туалет@nom . (author: roman): 
+6299 можно я@dat в@std туалет@acc ? (author: roman): 
+6300 не курить@imprpl в@std туалет@prep . (author: roman): 
+6301 у он@accalt книга@genpl большой@comp , что@instr он@nom мочь@3 прочитать@inf . (author: roman): 
+6302 ты@nom уже прочитать@pastm этот@accf книга@acc ? (author: roman): 
+6303 вы@nom должный@shortpl прочитать@inf этот@accf книга@acc . (author: roman): You must read this book.
+6304 я@nom прочитать@pastm в@std газета@prep , что@nom он@acc убить@pastpl . (author: roman): 
+6305 я@nom должный@shortm прочитать@inf этот@accf статья@acc . (author: roman): I have to read this article.
+6306 ты@nom прочитать@pastf книга@acc до конец@gen ? (author: roman): Have you done with the book?
+6307 это быть@pastf такой@f хороший@f книга@nom , что@nom я@nom прочитать@pastm она@acc три@pl раз@gen . (author: roman): 
+6308 какой@accinanpl книга@accpl ты@nom прочитать@pastm на французский@prepm ? (author: roman): 
+6309 я@nom никогда не говорить@1 с@std люди@instrpl после ужин@gen . (author: ian): 
+6310 около шесть@genpl час@genpl , она@nom пойти@pastf . (author: ian): 
+
+6312 я@nom жить@1 около ресторан@gen (author: ian): 
+6313 около наш@genm дом@gen стоить@3 человек@nom (author: ian): 
+
+
+6316 я@nom очень любить@1 собирать@inf яблоко@accpl (author: ian): 
+6317 этот@m чай@nom очень хороший@m . (author: roman): 
+6318 где чай@nom с@std молоко@instr ? (author: roman): 
+6319 музей@nom работать@3 с@std девять@genpl час@genpl утро@gen . (author: roman): 
+6320 у мы@gen закончиться@pastm чай@nom . (author: roman): 
+
+6322 я@nom очень любить@1 собирать@inf яблоко@accpl . (author: ian): 
+6323 это сын@nom или дочь@nom ? (author: andreas): 
+6324 сколько@pl год@genpl ваш@genf дочь@gen ? (author: andreas): 
+6325 он@nom хотеть@3 жениться@inf на мой@prepf дочь@prep . (author: andreas): 
+6326 они@nom не пить@3pl . (author: andreas): They don't drink.
+6327 пить@3pl ли чай@acc в@std ваш@prepf страна@prep ? (author: andreas): 
+6328 они@nom сидеть@3pl на кухня@prep и пить@3pl чай@acc . (author: andreas): 
