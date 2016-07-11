@@ -52,6 +52,7 @@ neuadjoe[n]: "neuter nouns formed like adjectives" nom ое, pl ые, gen ого
 masc[n]: "masculine nouns" nom , gen а, genpl ов, dat у, instr ом, inherit n
 masc-animate[n]: inherit abstr-masc-anim, inherit masc
 -подарок[n]: nom <ок, inherit masc
+-цветок[n]: pl <ы, genpl <ов, inherit -подарок
 -ребёнок[n]: inherit abstr-masc-anim, inherit -подарок
 -друг[n]: pl <зья, genpl <зей, datpl <зьям, instrpl <зьями, preppl <зьях, inherit masc-animate
 -борщ[n]: genpl ей, inherit masc
@@ -218,4 +219,3 @@ sya[v]: inf ться, 1 юсь, 1pl мся, 2 шься, 2pl тесь, 3 тся, 
 -лететь[v]: 1 <<чу, inherit -смотреть
 -вегетарианец[n]: genpl ев, instr ем, inherit -отец
 -голодный[adj]: inherit adj
--цветок[n]: pl <ы, genpl <ов, inherit -подарок
