@@ -87,11 +87,11 @@ mascь-animate[n]: inherit abstr-masc-anim, inherit -mascь
 adj[adj]: m ый, n ое, f ая, pl ые, genm ого, genn genm-, genf ой, genpl ых, datm ому, datn datm-, datf ой, datpl ым, accinanm m-, accanm ого, accn n-, accf ую, accinanpl pl-, accanpl ых, instrm ым, instrn instrm-, instrf ой, instrpl instrm-и, prepm ом, prepn prepm-, prepf ой, preppl ых, shortm , shortn shortm-о, shortf shortm-а, shortpl shortm-ы, adv о, comp shortf-<ее, transform yToI
 ойadj[adj]: m ой, inherit adj
 ийadj[adj]: pl ие, genpl их, datpl им, accanpl их, instrm им, preppl их, inherit adj
-егоadj[adj]: genm его, genf ей, datm ему, datf ей, accanm его, instrf ей, prepm ем, prepf ей, inherit ийadj
-eeadj[adj]: n ее, inherit егоadj
+егоadj[adj]: "adjectives having ж, ч, ш, щ, ц or о before the ending" genm его, genf ей, datm ему, datf ей, accanm его, instrf ей, prepm ем, prepf ей, inherit ийadj
+eeadj[adj]: "adjectives having ж, ч, ш, щ, ц before the ending and not stressing the ending" n ее, inherit егоadj
 -хороший[adj]: comp <<<<<лучше, inherit eeadj
 -наш[adj]: m , n е, f а, pl и, accf у, inherit егоadj
--домашний[adj]: m ий, n ее, f яя, accf юю, shortm <ен, shortn е, shortf я, shortpl и, inherit егоadj
+-домашний[adj]: "adjectives ending in -ний" m ий, f яя, accf юю, shortm <ен, shortn е, shortf я, shortpl и, inherit eeadj
 -свой[adj]: m й, n ё, f я, pl и, accf ю, prepm ём, inherit егоadj
 -весь[adj]: m <есь, pl е, genpl <сех, datpl ем, accinanpl е, accanpl ех, instrm ем, preppl ех, inherit -свой
 -третий[adj]: m <ий, f я, accf ю, inherit -наш
@@ -113,13 +113,14 @@ eeadj[adj]: n ее, inherit егоadj
 -этот[adj]: m от, n о, f а, pl и, accf у, inherit ийadj
 -тот[adj]: pl е, genpl ех, datpl ем, accanpl ех, instrm ем, preppl ех, inherit -этот
 -сам[adj]: m , inherit -этот
--я[pron]: nom я, gen меня, dat мне, acc nom-, instr мной, prep мне
--ты[pron]: nom ты, gen тебя, dat тебе, acc nom-, instr тобой, prep тебе
--он[pron]: nom он, gen его, genalt него, dat ему, datalt нему, acc nom-, accalt него, instr им, instralt ним, prep нём
--она[pron]: nom она, gen её, genalt неё, dat ей, datalt ней, acc nom-, accalt неё, instr ей, instralt ней, prep ней
--мы[pron]: pl мы, genpl нас, datpl нам, accpl нас, instrpl нами, preppl нас
--вы[pron]: pl вы, genpl вас, datpl вам, accpl вас, instrpl вами, preppl вас
--они[pron]: pl они, genpl их, genplalt них, datpl им, datplalt ним, accpl их, accplalt них, instrpl ими, instrplalt ними, preppl них
+perspron[pron]: acc: gen-, accpl: genpl-, accalt: genalt-, accplalt: genplalt-
+-я[pron]: nom я, gen меня, dat мне, acc nom-, instr мной, prep мне, inherit perspron
+-ты[pron]: nom ты, gen тебя, dat тебе, instr тобой, prep тебе, inherit perspron
+-он[pron]: nom он, gen его, genalt него, dat ему, datalt нему, instr им, instralt ним, prep нём, inherit perspron
+-она[pron]: nom она, gen её, genalt неё, dat ей, datalt ней, instr ей, instralt ней, prep ней, inherit perspron
+-мы[pron]: pl мы, genpl нас, datpl нам, instrpl нами, preppl нас, inherit perspron
+-вы[pron]: pl вы, genpl вас, datpl вам, instrpl вами, preppl вас, inherit perspron
+-они[pron]: pl они, genpl их, genplalt них, datpl им, datplalt ним, instrpl ими, instrplalt ними, preppl них, inherit perspron
 -себя[case]: gen себя, dat себе, acc себя, instr собой, prep себе
 oprep[prep]: std , alt о
 -о[prep]: std , alt б, alt2 бо
@@ -131,8 +132,8 @@ oprep[prep]: std , alt о
 -четыре[num]: pl е, instrpl ьмя, inherit -три
 -пять[num]: pl ь, genpl и, datpl и, accinanpl ь, accanpl ь, instrpl ью, preppl и
 -сто[num]: pl о, genpl а, datpl а, instrpl а, preppl а
-v[v]: inf ****, 1 у, pastm inf-<<л, pastn pastm-о, pastf pastm-а, pastpl pastm-и, imprpl impr-те
-y-esh-et[v]: 1pl ем, 2 ешь, 2pl ете, 3 ет, impr й, inherit v
+v[v]: "verbs" inf ****, 1 у, pastm inf-<<л, pastn pastm-о, pastf pastm-а, pastpl pastm-и, imprpl impr-те
+y-esh-et[v]: "verbs having ч, ш, щ, ж before their ending" 1pl ем, 2 ешь, 2pl ете, 3 ет, impr й, inherit v
 -встречать[v]: inf ть, 1 ю, 3pl ют, inherit y-esh-et
 -писать[v]: inf <сать, 3pl ут, impr и, inherit y-esh-et
 -бытьfut[v]: inf <<ыть, impr ь, imprpl ьте, inherit -писать
@@ -144,7 +145,7 @@ yo-yosh-yot[v]: 1pl ём, 2 ёшь, 2pl ёте, 3 ёт, inherit v
 -жить[v]: inf <ть, 3pl ут, impr и, inherit yo-yosh-yot
 -взять[v]: inf <<<<зять, inherit -жить
 -давать[v]: inf вать, 1 ю, 3pl ют, impr вай, inherit yo-yosh-yot
--быть[v]: inf быть, 1 есть, impr будь, inherit v
+-быть[v]: "быть" inf быть, 1 есть, impr будь, inherit v
 -есть[v]: inf есть, 1 ем, 1pl едим, 2 ешь, 2pl едите, 3 ест, 3pl едят, pastm ел, impr ешь, inherit v
 -пить[v]: inf пить, 1 пью, 1pl пьём, 2 пьёшь, 2pl пьёте, 3 пьёт, 3pl пьют, pastm пил, impr пей, inherit v
 -ехать[v]: inf <хать, impr <<<<<поезжай, inherit -писать
@@ -152,7 +153,7 @@ yo-yosh-yot[v]: 1pl ём, 2 ёшь, 2pl ёте, 3 ёт, inherit v
 -показать[v]: inf <зать, inherit -писать
 -забыть[v]: inf <<ыть, 3pl ут, impr ь, inherit y-esh-et
 -открыть[v]: inf <ыть, inherit -встречать
-it-im-ite[v]: inf ть, 1pl м, 2 шь, 2pl те, 3 т, 3pl <ят, impr , inherit v
+it-im-ite[v]: "verbs not having ч, ш, щ, ж before their ending" inf ть, 1pl м, 2 шь, 2pl те, 3 т, 3pl <ят, impr , inherit v
 -дарить[v]: 1 <ю, inherit it-im-ite
 -стоить[v]: impr <й, imprpl impr-те, inherit -дарить
 -стоять[v]: inf <ять, inherit -стоить
