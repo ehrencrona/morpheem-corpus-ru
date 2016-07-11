@@ -125,7 +125,6 @@ grammar: masc@instr, tag: instrumental
 за: behind
 штор--а: curtain, shade, inflect: fem
 двер--ь: door, gate, inflect: femь
-grammar: fem@instr, tag: instrumental
 открыт--ый: open, bleak, inflect: adj
 grammar: n@pl
 grammar: -свой@accf, tag: accusative
@@ -169,7 +168,6 @@ grammar: -этот@pl
 жив--<ть: live, reside, inflect: -жить
 люд--ь: people, men, human, inflect: -люди, mask: sg
 ошибк--а: error, mistake, inflect: femka
-grammar: n@preppl, tag: prepositional
 grammar: adj@preppl, tag: prepositional
 grammar: yo-yosh-yot@3, tag: verb
 grammar: -друг@pl
@@ -229,16 +227,17 @@ grammar: -ты@dat, tag: dative
 хоч--<теть: wish, like, inflect: -хотеть
 с--: with, from, inflect: oprep
 ед--а: food, meal, inflect: fem
+grammar: fem@instr, tag: instrumental
 интернет--: internet, inflect: masc
 радио: radio
 котор--ый: which, that, what, inflect: adj
 музык--а: music, chime, inflect: fem
-grammar: abstr-anim@accpl, tag: accusative
 grammar: yo-yosh-yot@1pl, tag: verb
 только: only
 фильм--: movie, film, inflect: masc
 grammar: -дарить@1, tag: verb
 слуша--ть: listen, hark, inflect: -встречать
+grammar: n@preppl, tag: prepositional
 телевизор--: television, telly, inflect: masc
 смотри--<еть: look, watch, inflect: -смотреть
 можно: be able to; be allowed to
@@ -262,7 +261,6 @@ grammar: -он@gen, tag: genitive
 четыр--е: four, quaternion, inflect: -четыре
 grammar: femяь@datpl, tag: dative
 grammar: adj@datpl, tag: dative
-grammar: n@datpl, tag: dative
 grammar: adj@datn, tag: dative
 grammar: adj@datf, tag: dative
 grammar: -ты@gen, tag: genitive
@@ -275,9 +273,7 @@ grammar: -давать@1, tag: verb
 мног--о: many, much, a lot, inflect: -много, mask: sg
 grammar: masc@genpl, tag: genitive
 grammar: -друг@genpl, tag: genitive
-grammar: adj@genpl, tag: genitive
 grammar: adj@adv
-grammar: fem@genpl, tag: genitive
 grammar: femь@genpl, tag: genitive
 grammar: femka@genpl, tag: genitive
 понима--ть: understand, comprehend, inflect: -встречать
@@ -301,32 +297,30 @@ grammar: v@pastn, tag: verb
 grammar: it-im-ite@inf, tag: verb
 grammar: -много@pl
 grammar: v@pastpl, tag: verb
+grammar: fem@genpl, tag: genitive
 grammar: femь@acc, tag: accusative
+grammar: adj@genpl, tag: genitive
 grammar: v@imprpl, tag: verb
 grammar: femяь@pl
 grammar: fem@dat, tag: dative
 grammar: neu@nom
 grammar: neu@instr, tag: instrumental
 grammar: -этот@n
-grammar: adj@n
 grammar: -свой@pl
 grammar: adj@instrm, tag: instrumental
 grammar: adj@instrpl, tag: instrumental
 grammar: -войти@inf, tag: verb
 grammar: femя@acc, tag: accusative
 grammar: adj@prepn, tag: prepositional
-grammar: adj@genm, tag: genitive
 grammar: it-im-ite@impr, tag: verb
 grammar: -мочь@1, tag: verb
 grammar: -большой@comp
 grammar: -mascь@pl
 grammar: neu@gen, tag: genitive
 grammar: adj@shortn
-grammar: adj@genf, tag: genitive
 grammar: adj@shortm
 grammar: -идти@pastm, tag: verb
 grammar: it-im-ite@1pl, tag: verb
-grammar: n@instrpl, tag: instrumental
 grammar: y-esh-et@1pl, tag: verb
 grammar: -есть@inf, tag: verb
 grammar: -жить@inf, tag: verb
@@ -337,11 +331,11 @@ grammar: -писать@inf, tag: verb
 grammar: adj@shortf
 grammar: sya@inf, tag: verb
 grammar: -свой@n
-grammar: adj@genn, tag: genitive
 grammar: -отец@nom
 grammar: -весь@pl
 grammar: ийadj@datpl, tag: dative
-grammar: abstr-soft-final@instr, tag: instrumental
+grammar: abstr-soft-final@instr
+grammar: n@datpl, tag: dative
 grammar: -свой@prepm, tag: prepositional
 grammar: y-esh-et@impr, tag: verb
 grammar: -словарь@nom
@@ -357,6 +351,7 @@ grammar: -mascь@genpl, tag: genitive
 grammar: -идти@inf, tag: verb
 grammar: -деньга@genpl, tag: genitive
 grammar: -друг@instrpl, tag: instrumental
+grammar: oprep@alt
 grammar: егоadj@genm, tag: genitive
 grammar: adj@comp
 grammar: ийadj@genpl, tag: genitive
@@ -364,7 +359,7 @@ grammar: neuie@gen, tag: genitive
 grammar: femяь@preppl, tag: prepositional
 grammar: adj@accanpl, tag: accusative
 grammar: sya@pastm, tag: verb
-grammar: -день@instr, tag: instrumental
+grammar: abstr-anim@accpl, tag: accusative
 grammar: -mascь@gen, tag: genitive
 grammar: -встречаться@3, tag: verb
 grammar: -быть@inf, tag: verb
@@ -413,7 +408,6 @@ grammar: neuie@dat, tag: dative
 grammar: -мочь@3pl, tag: verb
 grammar: егоadj@datm, tag: dative
 grammar: -наш@m
-grammar: neuie@instr, tag: instrumental
 grammar: -mascь@nom
 grammar: -яйцо@genpl, tag: genitive
 grammar: -стать@3pl, tag: verb
@@ -442,7 +436,6 @@ grammar: -пить@3, tag: verb
 grammar: -окно@genpl, tag: genitive
 grammar: -давать@3pl, tag: verb
 grammar: -воскресенье@prep, tag: prepositional
-grammar: -церковь@acc, tag: accusative
 grammar: -статья@instr, tag: instrumental
 grammar: -весь@preppl, tag: prepositional
 grammar: -весь@m
@@ -525,7 +518,6 @@ grammar: -рад@shortpl
 grammar: -повернуть@inf, tag: verb
 grammar: -домашний@accf, tag: accusative
 grammar: -тот@datpl, tag: dative
-grammar: -отель@instr, tag: instrumental
 grammar: -остаться@1, tag: verb
 grammar: -есть@impr, tag: verb
 grammar: sya@2, tag: verb
@@ -568,7 +560,6 @@ grammar: -находиться@impr, tag: verb
 grammar: -ответить@impr, tag: verb
 grammar: -казаться@pastf, tag: verb
 grammar: -случай@genpl, tag: genitive
-grammar: -овощ@instr, tag: instrumental
 grammar: -слышать@impr, tag: verb
 grammar: -наш@n
 grammar: -много@m
@@ -597,7 +588,6 @@ grammar: adj@accinanm, tag: accusative
 взросл--ый: adult, mature, inflect: adj
 год--: year, age, inflect: -год
 --есть: eat, roger, inflect: -есть
-grammar: oprep@alt
 его: his
 ед--<хать: ride, go, inflect: -ехать
 езди--ть: go, ride, inflect: -ходить
@@ -655,10 +645,13 @@ grammar: -кто@gen, tag: genitive
 вокзал--: station, terminal, inflect: masc
 утр--о: morning, morrow, inflect: neu
 дерев--о: tree, wood, inflect: -дерево
+grammar: adj@genm, tag: genitive
 сейчас: now
+grammar: adj@n
 стран--а: country, land, inflect: fem
 обув--ь: footwear, shoe, inflect: femь
 голов--а: head, brain, inflect: fem
+grammar: adj@genf, tag: genitive
 забыва--ть: forget, leave behind, inflect: -встречать
 цвет--: color, calla, inflect: masc3
 температур--а: temperature, fever, inflect: fem
@@ -694,6 +687,7 @@ grammar: -кто@instr, tag: instrumental
 к--: to, by, inflect: oprep
 из: from
 так: so, thus, that, sic, this way, as, like that, well, yeah, yep, yes, such, this, appearing that, having the appearance of, like, looking like, seeming that, that way, thereby, as follows, hence, isn't it, like this, segue
+grammar: adj@genn, tag: genitive
 же: however, segue
 от: to
 скор--ый: fast, rapid, inflect: adj
@@ -753,6 +747,7 @@ grammar: -он@prep, tag: prepositional
 теперь: n/a
 тоже: n/a
 стои--<ять: stand, stop, inflect: -стоять
+grammar: n@instrpl, tag: instrumental
 после: n/a
 дума--ть: think, believe, inflect: -встречать
 мест--о: place, location, inflect: neu
