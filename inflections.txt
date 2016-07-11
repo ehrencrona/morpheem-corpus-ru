@@ -68,8 +68,8 @@ mascе[n]: nom е, instr ем, inherit masc3
 -год[n]: genpl <<<лет, prep у, inherit masc
 -конец[n]: nom <ец, inherit masc
 -овощ[n]: instr ем, inherit -борщ
--зуб[n]: pl ья, genpl ьев, datpl ьям, instrpl ьями, preppl ьях, inherit masc
--брат[n]: inherit abstr-masc-anim, inherit -зуб
+-стул[n]: pl ья, genpl ьев, datpl ьям, instrpl ьями, preppl ьях, inherit masc
+-брат[n]: inherit abstr-masc-anim, inherit -стул
 -отец[n]: nom <ец, inherit abstr-masc-anim, inherit masc
 -сын[n]: genpl овей, datpl овьям, instrpl овьями, preppl овьях, inherit abstr-masc-anim, inherit masc
 -mascь[n]: nom ь, pl и, gen я, genpl ей, dat ю, datpl ям, instr ем, instrpl ями, preppl ях, inherit masc
@@ -89,9 +89,9 @@ adj[adj]: m ый, n ое, f ая, pl ые, genm ого, genn genm-, genf ой, g
 eeadj[adj]: n ее, inherit егоadj
 -хороший[adj]: comp <<<<<лучше, inherit eeadj
 -наш[adj]: m , n е, f а, pl и, accf у, inherit егоadj
--домашний[adj]: m ий, n ее, f яя, accf юю, shortpl и, inherit егоadj
+-домашний[adj]: m ий, n ее, f яя, accf юю, shortm <ен, shortn е, shortf я, shortpl и, inherit егоadj
 -свой[adj]: m й, n ё, f я, pl и, accf ю, prepm ём, inherit егоadj
--весь[adj]: m <есь, pl е, genpl <сех, datpl ем, accinanpl ех, accanpl е, instrm ем, preppl ех, inherit -свой
+-весь[adj]: m <есь, pl е, genpl <сех, datpl ем, accinanpl е, accanpl ех, instrm ем, preppl ех, inherit -свой
 -третий[adj]: m <ий, f я, accf ю, inherit -наш
 ныйadj[adj]: shortm <ен, shortn о, shortf а, shortpl ы, inherit adj
 -большой[adj]: comp е, inherit ойadj
@@ -99,9 +99,11 @@ eeadj[adj]: n ее, inherit егоadj
 -маленький[adj]: shortm <<<<, comp <<<<<<еньше, inherit adj
 -высокий[adj]: comp <<<ше, inherit adj
 -дорогой[adj]: comp <же, inherit ойadj
+-простой[adj]: comp <<ще, inherit ойadj
 -рад[adj]: shortm , shortn о, shortf а, shortpl ы
 -много[adj]: m о, pl о, inherit adj
 -второй[adj]: m ой, inherit adj
+-молодой[adj]: comp <же, inherit -второй
 -дешёвый[adj]: shortm <<<<ёшев, shortn <<<<ёшево, shortf <<ева, shortpl <<<<ёшевы, inherit adj
 -лёгкий[adj]: adv <<<<легко, inherit adj
 -уверенный[adj]: shortm <, inherit adj
@@ -113,14 +115,14 @@ eeadj[adj]: n ее, inherit егоadj
 -ты[pron]: nom ты, gen тебя, dat тебе, acc тебя, instr тобой, prep тебе
 -он[pron]: nom он, gen его, genalt него, dat ему, datalt нему, acc его, accalt него, instr им, instralt ним, prep нём
 -она[pron]: nom она, gen её, genalt неё, dat ей, datalt ней, acc её, accalt неё, instr ей, instralt ней, prep ней
--мы[pron]: nom мы, gen нас, dat нам, acc нас, instr нами, prep нас
--вы[pron]: nom вы, gen вас, dat вам, acc вас, instr вами, prep вас
--они[pron]: nom они, gen их, genalt них, dat им, datalt ним, acc их, accalt них, instr ими, instralt ними, prep них
--себя[pron]: gen себя, dat себе, acc себя, instr собой, prep себе
+-мы[pron]: pl мы, genpl нас, datpl нам, accpl нас, instrpl нами, preppl нас
+-вы[pron]: pl вы, genpl вас, datpl вам, accpl вас, instrpl вами, preppl вас
+-они[pron]: pl они, genpl их, genplalt них, datpl им, datplalt ним, accpl их, accplalt них, instrpl ими, instrplalt ними, preppl них
+-себя[case]: gen себя, dat себе, acc себя, instr собой, prep себе
 oprep[prep]: std , alt о
 -о[prep]: std , alt б, alt2 бо
--что[pron]: nom что, gen чего, dat чему, acc что, instr чем, prep чём
--кто[pron]: nom кто, gen кого, dat кому, acc кого, instr кем, prep ком
+-что[case]: nom что, gen чего, dat чему, acc что, instr чем, prep чём
+-кто[case]: nom кто, gen кого, dat кому, acc кого, instr кем, prep ком
 -один[num]: m <ин, n о, f а, pl и, genpl их, datpl им, accn о, accf у, accinanpl и, accanpl их, instrm им, instrpl ими, preppl их, inherit adj
 -два[num]: pl а, genpl ух, datpl ум, accinanpl а, accanpl ух, instrpl умя, preppl ух
 -три[num]: pl и, genpl ёх, datpl ём, accinanpl pl-, accanpl ёх, instrpl емя, preppl ёх
