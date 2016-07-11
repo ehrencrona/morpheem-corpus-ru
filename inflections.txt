@@ -9,11 +9,10 @@ femka2[n]: genpl <ек, inherit fem
 fem-animate[n]: "feminine nouns describing animals or people" inherit abstr-anim, inherit fem
 -девочка[n]: inherit abstr-anim, inherit femka2
 -деньга[n]: genpl <<ег, inherit fem
-femяь[n]: "feminine nouns ending in я or ь" pl и, gen и, datpl ям, instrpl ями, preppl ях, inherit fem
+femяь[n]: "feminine nouns ending in я or ь" pl и, gen и, datpl ям, instrpl ями, preppl ях, inherit fem, transform yaToA
 femь[n]: "feminine nouns ending in ь" nom ь, genpl ей, dat и, acc nom-, instr ью, prep и, inherit femяь
 femь-я-to-а[n]: datpl ам, instrpl ами, preppl ах, inherit femь
--мышь[n]: inherit abstr-anim, inherit femь-я-to-а
--время[n]: nom <<я, pl а, genpl <<ён, inherit abstr-soft-final, inherit femь-я-to-а
+-мышь[n]: inherit abstr-anim, inherit femь
 -мать[n]: nom <<ь, inherit abstr-anim, inherit femь
 -лошадь[n]: instrpl ьми, inherit abstr-anim, inherit femь
 -часть[n]: instr ию, inherit femь
@@ -33,10 +32,11 @@ femя[n]: "feminine nouns ending in я" nom я, acc ю, instr ей, inherit fem�
 -земля[n]: genpl <ель, instr ёй, inherit femя
 -спальня[n]: genpl <<ен, inherit -неделя
 -кухня[n]: genpl <онь, inherit -неделя
--сестра[n]: pl <<<<ёстры, genpl <ёр, datpl <<<<ёстрам, accpl <ёр, instrpl <<<<ёстрами, preppl <<<<ёстрах, inherit fem
--весна[n]: pl <<<ёсны, genpl <<<ёсен, datpl <<<ёснам, accpl <<<ёсны, instrpl <<<ёснами, preppl <<<ёснах, inherit fem
+-сестра[n]: pl <<<<ёстры, genpl <ёр, datpl <<<<ёстрам, instrpl <<<<ёстрами, preppl <<<<ёстрах, inherit fem-animate
+-весна[n]: pl <<<ёсны, genpl <<<ёсен, datpl <<<ёснам, instrpl <<<ёснами, preppl <<<ёснах, inherit fem
 -жена[n]: pl <<ёны, genpl <<ён, datpl <<ёнам, accpl <<ён, instrpl <<ёнами, preppl <<ёнах, inherit fem
 neu[n]: "neuter nouns" nom о, pl а, gen а, genpl , dat у, instr ом, inherit n
+-время[n]: nom <<я, prep и, dat и, gen и, genpl <<ён, inherit abstr-soft-final, inherit neu
 -яблоко[n]: pl и, inherit neu
 -дерево[n]: pl ья, genpl ьев, datpl ьям, accpl pl-, instrpl ьями, preppl ьях, inherit neu
 -окно[n]: genpl <он, inherit neu
@@ -134,12 +134,20 @@ oprep[prep]: std , alt о
 -пять[num]: pl ь, genpl и, datpl и, accinanpl ь, accanpl ь, instrpl ью, preppl и
 -сто[num]: pl о, genpl а, datpl а, instrpl а, preppl а
 v[v]: "verbs" inf ****, 1 у, pastm inf-<<л, pastn pastm-о, pastf pastm-а, pastpl pastm-и, imprpl impr-те
-y-esh-et[v]: "verbs having ч, ш, щ, ж before their ending" 1pl ем, 2 ешь, 2pl ете, 3 ет, impr й, inherit v
--встречать[v]: inf ть, 1 ю, 3pl ют, inherit y-esh-et
--писать[v]: inf <сать, 3pl ут, impr и, inherit y-esh-et
--бытьfut[v]: inf <<ыть, impr ь, imprpl ьте, inherit -писать
+y-esh-et[v]: "verbs having ч, ш, щ, ж before their ending" 1pl ем, 2 ешь, 2pl ете, 3 ет, 3pl ут, impr и, inherit v, transform ioToY
+ать[v]: "verbs ending in -ать or -ять" inf ть, 1 ю, 3pl ют, impr й, inherit y-esh-et
+-писать[v]: inf <сать, impr и, inherit y-esh-et
+-ехать[v]: inf <хать, impr <<<<<поезжай, inherit y-esh-et
+-бытьfut[v]: inf <<ыть, impr ь, imprpl ьте, inherit y-esh-et
+-выйти[v]: inf <ти, pastm <<шел, pastn pastm-<<ло, pastf pastm-<<ла, pastpl pastm-<<ли, inherit -писать
+-выбрать[v]: inf <<рать, inherit -писать
+-чувствовать[v]: inf <овать, pastm <овал, inherit ать
+-открыть[v]: inf <ыть, inherit ать
+-дать[v]: 1 м, 1pl дим, 2 шь, 2pl дите, 3 ст, 3pl дут, inherit ать
+
+
+-сказать[v]: inf <зать, impr и, inherit y-esh-et
 -хотеть[v]: inf <теть, 1pl <тим, 2pl <тите, 3pl <тят, impr <ти, inherit y-esh-et
--сказать[v]: inf <зать, 3pl ут, impr и, inherit y-esh-et
 -мочь[v]: inf <чь, 1 <гу, 3pl <гут, pastm <г, pastn <гло, pastf <гла, pastpl <гли, impr <ги, inherit y-esh-et
 -стать[v]: inf <ть, 3pl ут, impr ь, inherit y-esh-et
 yo-yosh-yot[v]: 1pl ём, 2 ёшь, 2pl ёте, 3 ёт, inherit v
@@ -149,11 +157,7 @@ yo-yosh-yot[v]: 1pl ём, 2 ёшь, 2pl ёте, 3 ёт, inherit v
 -быть[v]: "быть" inf быть, 1 есть, impr будь, inherit v
 -есть[v]: inf есть, 1 ем, 1pl едим, 2 ешь, 2pl едите, 3 ест, 3pl едят, pastm ел, impr ешь, inherit v
 -пить[v]: inf пить, 1 пью, 1pl пьём, 2 пьёшь, 2pl пьёте, 3 пьёт, 3pl пьют, pastm пил, impr пей, inherit v
--ехать[v]: inf <хать, impr <<<<<поезжай, inherit -писать
--дать[v]: 1 м, 1pl дим, 2 шь, 2pl дите, 3 ст, 3pl дут, inherit -встречать
 -показать[v]: inf <зать, inherit -писать
--забыть[v]: inf <<ыть, 3pl ут, impr ь, inherit y-esh-et
--открыть[v]: inf <ыть, inherit -встречать
 it-im-ite[v]: "verbs not having ч, ш, щ, ж before their ending" inf ть, 1pl м, 2 шь, 2pl те, 3 т, 3pl <ят, impr , inherit v
 -дарить[v]: 1 <ю, inherit it-im-ite
 -стоить[v]: impr <й, imprpl impr-те, inherit -дарить
@@ -173,9 +177,9 @@ it-im-ite[v]: "verbs not having ч, ш, щ, ж before their ending" inf ть, 1p
 -спать[v]: inf <ать, inherit -любить
 sya[v]: inf ться, 1 юсь, 1pl мся, 2 шься, 2pl тесь, 3 тся, 3pl тся, pastm лся, pastn pastm-<<ось, pastf pastm-<<ась, pastpl pastm-<<ись, impr <ься, imprpl impr-<<тесь
 -нравиться[v]: 1 <люсь, 3pl <ятся, inherit sya
--встречаться[v]: 1pl емся, 2 ешься, 2pl етесь, 3 ется, 3pl ются, inherit sya
--остаться[v]: inf <ться, 1 усь, 3pl утся, pastm <лся, impr ься, inherit -встречаться
--пытаться[v]: impr йся, inherit -встречаться
+аться[v]: 1pl емся, 2 ешься, 2pl етесь, 3 ется, 3pl ются, inherit sya
+-остаться[v]: inf <ться, 1 усь, 3pl утся, pastm <лся, impr ься, inherit аться
+-пытаться[v]: impr йся, inherit аться
 -казаться[v]: inf <заться, pastm <зался, pastn <залось, pastf <залась, pastpl <зались, impr ись, imprpl итесь, inherit -остаться
 -вернуться[v]: 1 сь, 1pl <ёмся, 2 <ёшься, 2pl <ётесь, 3 <ётся, impr <ись, inherit sya
 -бояться[v]: 1 <юсь, 1pl <имся, 2 <ишься, 2pl <итесь, 3 <ится, impr <йся, inherit sya
@@ -183,12 +187,10 @@ sya[v]: inf ться, 1 юсь, 1pl мся, 2 шься, 2pl тесь, 3 тся, 
 -оставаться[v]: inf <ваться, pastm <вался, pastn <валось, pastf <валась, pastpl <вались, impr <вайся, inherit -вернуться
 -ходить[v]: 1 <<жу, inherit it-im-ite
 -идти[v]: inf ти, pastm <<шёл, pastn pastm-<<ло, pastf pastm-<<ла, pastpl pastm-<<ли, inherit -жить
--выйти[v]: inf <ти, pastm <<шел, pastn pastm-<<ло, pastf pastm-<<ла, pastpl pastm-<<ли, inherit -писать
 -войти[v]: inf <ти, inherit -идти
 -начать[v]: inf <ать, inherit -жить
 -ответить[v]: 1 <<чу, impr <ь, inherit it-im-ite
 -значить[v]: impr <ь, inherit -учить
--чувствовать[v]: inf <овать, pastm <овал, inherit -встречать
 -бросить[v]: impr <ь, inherit -спросить
 -находиться[v]: 1 <<жусь, impr сь, inherit -нравиться
 -оставить[v]: impr <ь, inherit -любить
@@ -206,7 +208,6 @@ sya[v]: inf ться, 1 юсь, 1pl мся, 2 шься, 2pl тесь, 3 тся, 
 -разлить[v]: inf <<<лить, impr <<<лей, inherit -давать
 -придти[v]: pastm <шёл, inherit -идти
 -убить[v]: inf <ить, impr <ей, inherit -давать
--выбрать[v]: inf <<рать, inherit -писать
 -украсть[v]: inf <сть, pastm <л, inherit -начать
 -хватить[v]: 1 <<чу, inherit it-im-ite
 -петь[v]: inf <еть, impr й, inherit -давать
