@@ -60,9 +60,9 @@
 59 я@nom видеть@1 ты@acc на улица@prep: 
 60 я@nom видеть@1 он@acc на улица@prep: 
 61 я@nom видеть@1 она@acc на улица@prep: 
-62 я@nom встречать@1 ты@acc на площадь@prep: I meet you on the square.
-63 я@nom встречать@1 он@acc на площадь@prep: I meet him on the square.
-64 я@nom встречать@1 она@acc на площадь@prep: I meet her on the square.
+62 я@nom встречать[meet]@1 ты@acc на площадь@prep: I meet you on the square.
+63 я@nom встречать[meet]@1 он@acc на площадь@prep: I meet him on the square.
+64 я@nom встречать[meet]@1 она@acc на площадь@prep: I meet her on the square.
 65 я@nom видеть@1 собака@acc на улица@prep: I see a dog on the street.
 66 я@nom видеть@1 кошка@acc на улица@prep: I see a cat on the street.
 67 я@nom видеть@1 лошадь@acc на улица@prep: I see a horse on the street.
@@ -82,7 +82,7 @@
 81 что@acc ты@nom видеть@2 ?: 
 82 что@acc ты@nom слышать@2 ?: 
 
-84 кто@acc ты@nom встречать@2 ?: 
+84 кто@acc ты@nom встречать[meet]@2 ?: 
 
 86 ты@nom видеть@2 магазин@acc ?: Do you see the shop?
 87 ты@nom видеть@2 машина@acc ?: Do you see the car?
@@ -124,8 +124,8 @@
 123 собака@nom видеть@3 я@acc: Тhe dog sees me.
 124 собака@nom видеть@3 он@acc: Тhe dog sees him.
 
-126 я@nom встречать@1 кошка@acc: I meet the cat.
-127 я@nom встречать@1 лошадь@accpl: 
+126 я@nom встречать[meet]@1 кошка@acc: I meet the cat.
+127 я@nom встречать[meet]@1 лошадь@accpl: 
 
 
 
@@ -384,11 +384,11 @@
 383 друг@nom покупать@3 дорогой@accf машина@acc в@std магазин@prep: 
 384 она@nom покупать@3 белый@accf мышь@acc в@std магазин@prep: She buys a white mouse at the shop.
 385 он@nom читать@3 отличный@accf книга@acc: He reads a great book.
-386 я@nom встречать@1 большой@accf собака@acc: I meet a large dog.
-387 я@nom встречать@1 большой@accf кошка@acc: I meet a large cat.
+386 я@nom встречать[meet]@1 большой@accf собака@acc: I meet a large dog.
+387 я@nom встречать[meet]@1 большой@accf кошка@acc: I meet a large cat.
 388 я@nom покупать@1 белый@accinanm телефон@acc: I buy a white phone.
-389 он@nom встречать@3 маленький@accanm ребёнок@acc: 
-390 он@nom встречать@3 маленький@accf собака@acc: He meets a small dog.
+389 он@nom встречать[meet]@3 маленький@accanm ребёнок@acc: 
+390 он@nom встречать[meet]@3 маленький@accf собака@acc: He meets a small dog.
 391 я@nom читать@1 твой@accf статья@acc: I read your article.
 392 я@nom читать@1 твой@accf книга@acc: I read your book.
 393 какой@f мышь@acc твой@f ?: 
@@ -401,7 +401,7 @@
 
 
 
-403 я@nom встречать@1 твой@genn друг@acc: 
+403 я@nom встречать[meet]@1 твой@genn друг@acc: 
 404 я@nom видеть@1 белый@accf мышь@acc: 
 405 я@nom видеть@1 чёрный@accf мышь@acc: 
 406 я@nom видеть@1 белый@accf кошка@acc: I see a white cat.
@@ -452,7 +452,7 @@
 451 в@std квартира@prep чёрный@pl штора@pl: 
 452 в@std машина@prep быть@1 штора@pl: 
 453 в@std квартира@prep открытый@shortpl штора@pl: 
-454 я@nom встречать@1 он@acc в@std дверь@preppl: 
+454 я@nom встречать[meet]@1 он@acc в@std дверь@preppl: 
 455 мой@m друг@nom очень открытый@m человек@nom: My friend is a very outgoing person.
 456 — стул@nom за стол@instr: 
 457 на стол@prep лежать@3pl газета@pl: 
@@ -560,7 +560,7 @@
 559 он@nom студент@nom в@std хороший@prepm университет@prep: 
 560 он@nom – студент@nom в@std университет@prep: 
 561 мой@f квартира@nom в@std центр@prep: 
-562 он@nom встречать@3 друг@acc в@std центр@prep: 
+562 он@nom встречать[meet]@3 друг@acc в@std центр@prep: 
 563 магазин@pl в@std центр@prep открытый@shortpl: 
 564 она@nom работать@3 в@std центр@prep: 
 565 — журнал@nom дорогой@m !: 
@@ -569,7 +569,7 @@
 568 я@nom любить@1 читать@inf журнал@accpl: 
 569 в@std квартира@prep новый@accinanpl штора@pl: 
 570 она@nom покупать@3 чёрный@accinanpl штора@pl: 
-571 я@nom встречать@1 человек@acc на площадь@prep: 
+571 я@nom встречать[meet]@1 человек@acc на площадь@prep: 
 572 он@nom маленький@m человек@nom: 
 573 белый@f кошка@nom лежать@3 на стул@prep: 
 574 ребёнок@nom лежать@3 за свой@instrf мама@instr: 
@@ -606,7 +606,7 @@
 605 почему ты@nom я@acc не любить@2 ?: 
 606 почему ты@nom не сидеть@2 ?: 
 607 почему ты@nom на кровать@prep ?: 
-608 почему ты@nom она@acc не встречать@2 ?: 
+608 почему ты@nom она@acc не встречать[meet]@2 ?: 
 609 почему сегодня ?: 
 610 почему тут ?: 
 611 почему он@nom здесь ?: 
@@ -695,7 +695,7 @@
 694 в@std квартира@prep маленький@pl комната@pl: 
 695 какой@accinanpl газета@accpl ты@nom читать@2 ?: 
 696 какой@accanpl люди@accpl ты@nom любить@2 ?: 
-697 какой@accanpl люди@accpl ты@nom встречать@2 ?: 
+697 какой@accanpl люди@accpl ты@nom встречать[meet]@2 ?: 
 698 почему ты@nom не писать@2 книга@acc ?: 
 699 у я@gen много@pl друг@genpl: 
 
@@ -802,11 +802,11 @@
 801 этот@pl книга@pl слишком большой@pl: 
 802 почему у ты@gen нет друг@genpl ?: 
 803 почему играть@2 на улица@prep ?: 
-804 почему ты@nom не встречать@2 мама@acc ?: 
+804 почему ты@nom не встречать[meet]@2 мама@acc ?: 
 805 что@acc твой@f кошка@nom делать@3 в@std мой@prepf комната@prep ?: 
 806 он@nom открывать@3 магазин@acc: 
 807 у профессор@nom много@pl студент@genpl: 
-808 я@nom встречать@1 новый@accanm профессор@acc: 
+808 я@nom встречать[meet]@1 новый@accanm профессор@acc: 
 809 профессор@nom работать@3 в@std университет@prep: 
 810 он@nom мой@m профессор@nom: 
 811 он@nom читать@3 мой@accn письмо@acc: 
@@ -897,7 +897,7 @@
 896 в@std центр@prep хороший@accinanpl ресторан@accpl: 
 897 он@nom любить@3 этот@accinanm ресторан@acc: 
 898 я@nom знать@1 хороший@accinanm ресторан@acc: 
-899 он@nom встречать@3 друг@acc в@std ресторан@prep: 
+899 он@nom встречать[meet]@3 друг@acc в@std ресторан@prep: 
 900 я@nom любить@1 этот@accf машина@acc: 
 901 я@nom работать@1 в@std этот@prepm магазин@prep: 
 902 этот@m университет@nom хороший@m: 
@@ -910,7 +910,7 @@
 909 я@nom не знать@1 математика@acc: 
 910 он@nom не знать@3 французский@accinanm: 
 911 я@nom не знать@1 как ты@nom это делать@2: 
-912 я@nom не знать@1 где она@acc встречать@inf .: 
+912 я@nom не знать@1 где она@acc встречать[meet]@inf .: 
 913 он@nom большой@m как лошадь@nom: 
 914 я@nom слышать@1 как она@nom закрывать@3 дверь@acc: 
 915 собака@nom большой@f как лошадь@nom: 
@@ -1214,16 +1214,16 @@
 1213 они@pl мой@pl родители@pl: 
 1214 они@pl не в@std ресторан@prep: 
 1215 они@pl не знать@3pl я@acc: 
-1216 мама@nom встречать@3 она@acc: 
+1216 мама@nom встречать[meet]@3 она@acc: 
 1217 я@nom видеть@1 она@acc: 
 1218 он@nom она@acc знать@3: 
 1219 он@nom любить@3 она@acc: 
-1220 он@nom встречать@3 она@acc сегодня: 
+1220 он@nom встречать[meet]@3 она@acc сегодня: 
 1221 ты@nom не видеть@2 она@acc: 
-1222 мама@nom встречать@3 он@acc: 
+1222 мама@nom встречать[meet]@3 он@acc: 
 1223 я@nom видеть@1 он@acc: 
 1224 она@nom любить@3 он@acc: 
-1225 она@nom встречать@3 он@acc сегодня: 
+1225 она@nom встречать[meet]@3 он@acc сегодня: 
 1226 ты@nom не видеть@2 он@acc: 
 1227 я@nom читать@1 хороший@accf статья@acc: 
 1228 он@nom писать@3 хороший@accf статья@acc: 
@@ -1231,7 +1231,7 @@
 1230 в@std газета@prep статья@nom профессор@gen: 
 1231 — почему ты@nom не красивый@m ?: 
 1232 почему здесь ?: 
-1233 я@nom встречать@1 он@acc: 
+1233 я@nom встречать[meet]@1 он@acc: 
 1234 я@nom он@acc слышать@1: 
 1235 мы@datpl можно открывать@inf дверь@acc: 
 1236 здесь можно делать@inf покупка@accpl ?: 
@@ -1265,7 +1265,7 @@
 1264 он@nom очень интересный@m человек@nom: 
 1265 у я@gen интересный@f работа@nom: 
 1266 она@nom жить@3 в@std интересный@prepm дом@prep: 
-1267 я@nom встречать@1 интересный@accanm человек@acc: 
+1267 я@nom встречать[meet]@1 интересный@accanm человек@acc: 
 1268 дом@nom в@std парк@prep очень интересный@m: 
 1269 видеть@1 интересный@accf машина@acc: 
 1270 у машина@gen нет дверь@genpl: 
@@ -1295,7 +1295,7 @@
 1294 он@nom не хотеть@3 машина@acc: 
 1295 он@nom хотеть@3 понимать@inf математика@acc , но не мочь@3: 
 1296 ребёнок@nom хотеть@3 шоколад@acc: 
-1297 хотеть@1 встречать@inf интересный@accanpl люди@genpl: 
+1297 хотеть@1 встречать[meet]@inf интересный@accanpl люди@genpl: 
 
 
 1300 — где ты@nom хотеть@2 смотреть@inf кино ? у я@gen , или у ты@gen ?: 
@@ -1582,7 +1582,7 @@
 1581 студент@pl всегда читать@3pl книга@accpl .: 
 1582 он@nom всегда в@std офис@prep .: 
 1583 он@nom всегда курить@3: 
-1584 я@nom часто встречать@1 мой@genn профессор@gen в@std библиотека@prep .: 
+1584 я@nom часто встречать[meet]@1 мой@genn профессор@gen в@std библиотека@prep .: 
 1585 он@nom всегда покупать@3 дорогой@accinanpl подарок@accpl: 
 1586 я@dat нужный@shortm русский@m словарь@nom: 
 1587 зачем ты@dat знать@inf французский@accinanm язык[lang]@acc ?: 
@@ -1693,7 +1693,7 @@
 1692 ребёнок@nom , который@m гулять@3 в@std парк@prep , наверное потеряться@pastm: 
 1693 книга@nom , который@accf он@nom писать@3 , никогда не быть[fut]@3 в@std магазин@preppl: 
 1694 в@std парк@prep , который@m открытый@shortm утро@instr , всегда много@pl люди@genpl: 
-1695 кошка@nom , который@f не встречать@3 я@acc вечер@instr , любить@3 я@acc: 
+1695 кошка@nom , который@f не встречать[meet]@3 я@acc вечер@instr , любить@3 я@acc: 
 
 1697 человек@nom работать@3 вечер@instr: 
 1698 он@nom закрывать@3 магазин@acc вечер@instr: 
@@ -1788,8 +1788,8 @@
 1787 ты@nom завтра работать@2 ? (author: andreas): 
 1788 где ты@nom завтра быть[fut]@2 ? (author: andreas): 
 1789 я@nom завтра в@std университет@prep (author: andreas): 
-1790 завтра я@nom встречать@1 друг@acc (author: andreas): 
-1791 завтра я@nom она@acc встречать@1 (author: andreas): 
+1790 завтра я@nom встречать[meet]@1 друг@acc (author: andreas): 
+1791 завтра я@nom она@acc встречать[meet]@1 (author: andreas): 
 1792 — завтра покупать@1 книга@acc ! (author: andreas): 
 1793 завтра мы@pl гулять@1pl в@std парк@prep (author: andreas): 
 1794 собака@nom – белый@f (author: andreas): 
@@ -1841,12 +1841,12 @@
 1840 я@nom любить@1 собака@acc (author: andreas): 
 1841 я@nom любить@1 девочка@acc (author: andreas): 
 1842 я@nom любить@1 свой@accanm друг@acc (author: andreas): 
-1843 он@nom встречать@3 студент@acc в@std библиотека@prep (author: andreas): 
-1844 он@nom встречать@3 мальчик@acc (author: andreas): 
+1843 он@nom встречать[meet]@3 студент@acc в@std библиотека@prep (author: andreas): 
+1844 он@nom встречать[meet]@3 мальчик@acc (author: andreas): 
 1845 он@nom видеть@3 мальчик@acc (author: andreas): 
 1846 он@nom слышать@3 мальчик@acc (author: andreas): 
 1847 я@nom любить@1 мальчик@acc (author: andreas): 
-1848 я@nom встречать@1 друг@acc (author: andreas): 
+1848 я@nom встречать[meet]@1 друг@acc (author: andreas): 
 1849 он@nom я@acc не любить@3 (author: andreas): 
 1850 он@nom не в@std комната@prep (author: andreas): 
 1851 я@nom не писать@1 письмо@accpl (author: andreas): 
@@ -2038,8 +2038,8 @@
 2037 он@nom видеть@3 её планшет@acc дома (author: sergei): 
 
 2039 он@nom читать@3 книга@acc дома (author: sergei): 
-2040 мальчик@nom встречать@3 девочка@acc дома (author: sergei): 
-2041 собака@nom встречать@3 мальчик@acc дома (author: sergei): 
+2040 мальчик@nom встречать[meet]@3 девочка@acc дома (author: sergei): 
+2041 собака@nom встречать[meet]@3 мальчик@acc дома (author: sergei): 
 2042 какой@accinanpl фрукт@accpl ты@nom любить@2 есть@inf на завтрак@acc ? (author: pasha): 
 2043 она@nom не есть@3 овощ@accpl , только фрукт@accpl (author: pasha): 
 2044 она@gen дети@pl очень любить@3pl фрукт@accpl (author: pasha): 
@@ -2082,7 +2082,7 @@
 
 2082 я@nom видеть@pastm вокзал@acc в@std центр@prep город@gen (author: sergei): 
 2083 я@nom покупать@1 сувенир@accpl на вокзал@prep (author: sergei): 
-2084 я@nom встречать@1 он@acc в@std ресторан@prep на вокзал@prep (author: sergei): 
+2084 я@nom встречать[meet]@1 он@acc в@std ресторан@prep на вокзал@prep (author: sergei): 
 2085 он@nom любить@3 каждый@accinanm цвет@acc в@std мой@prepf комната@prep (author: sergei): 
 2086 собака@nom не видеть@3 цвет@accpl (author: sergei): 
 2087 его улица@nom открывать@3 для мы@genpl разный@accinanpl цвет@accpl (author: sergei): 
@@ -2228,7 +2228,7 @@
 2227 что@acc ты@nom делать@pastm вчера вечер@instr ? (author: andreas): 
 2228 ты@nom уже есть@pastf ? (author: andreas): 
 2229 я@dat уже скучный@adv . (author: andreas): 
-2230 ты@nom она@acc уже встречать@pastm ? (author: andreas): 
+2230 ты@nom она@acc уже встречать[meet]@pastm ? (author: andreas): 
 2231 у мы@genpl сейчас другой@m урок@nom (author: sergei): 
 
 2233 мы@pl идти@1pl в@std другой@accinanm магазин@acc (author: sergei): 
@@ -2702,7 +2702,7 @@
 2701 мы@pl не его семья@nom (author: sergei): 
 2702 ты@nom знать@2 его семья@acc ? (author: sergei): 
 2703 он@nom хотеть@3 жить@inf с@std твой@instrf семья@instr (author: sergei): 
-2704 я@nom встречать@1 свой@accf семья@acc (author: sergei): 
+2704 я@nom встречать[meet]@1 свой@accf семья@acc (author: sergei): 
 2705 где жить@3 твой@f семья@nom ? (author: sergei): 
 2706 мой@f семья@nom жить@3 в@std этот@prepm дом@prep (author: sergei): 
 2707 я@nom никогда не видеть@pastm его семья@acc (author: sergei): 
@@ -2740,8 +2740,8 @@
 2739 вы@pl не давать@2pl я@dat работать@inf (author: pasha): 
 2740 я@nom Саша@nom . (author: andreas): 
 2741 я@nom Маша@nom . (author: andreas): 
-2742 я@nom встречать@1 Маша@acc . (author: andreas): 
-2743 я@nom встречать@1 Саша@acc . (author: andreas): 
+2742 я@nom встречать[meet]@1 Маша@acc . (author: andreas): 
+2743 я@nom встречать[meet]@1 Саша@acc . (author: andreas): 
 2744 он@nom – Саша@nom (author: andreas): 
 2745 она@nom – Маша@nom (author: andreas): 
 2746 где Саша@nom ? — Саша@nom в@std библиотека@prep . (author: andreas): 
@@ -2877,7 +2877,7 @@
 2876 — где я@nom тут видеть@pastm банк@acc ? (author: sergei): 
 2877 ты@nom видеть@pastm новый@accinanm банк@acc ? (author: sergei): 
 2878 она@nom работать@3 в@std банк@prep . (author: sergei): 
-2879 он@nom встречать@3 она@acc в@std банк@prep . (author: sergei): 
+2879 он@nom встречать[meet]@3 она@acc в@std банк@prep . (author: sergei): 
 2880 какой@m это банк@nom ? (author: sergei): 
 2881 ты@nom работать@2 в@std банк@prep ? (author: sergei): 
 2882 мальчик@nom не работать@3 в@std банк@prep . (author: sergei): 
@@ -2904,12 +2904,12 @@
 2903 я@nom писать@1 статья@acc на французский@prepm язык[lang]@prep (author: andreas): 
 2904 — она@nom слышать@3 — нет ! (author: sergei): 
 2905 — где ты@nom ? я@nom ждать@1 уже час@acc . (author: andreas): 
-2906 Саша@nom встречать@3 друг@acc в@std парк@prep (author: pasha): 
+2906 Саша@nom встречать[meet]@3 друг@acc в@std парк@prep (author: pasha): 
 2907 она@nom видеть@3 друг@acc на улица@prep (author: pasha): 
 2908 она@nom слышать@3 голос@acc свой@genm друг@gen в@std другой@prepf комната@prep (author: pasha): 
 
 2910 Маша@nom видеть@3 студент@acc в@std библиотека@prep (author: pasha): 
-2911 Саша@nom встречать@3 студент@acc в@std университет@prep (author: pasha): 
+2911 Саша@nom встречать[meet]@3 студент@acc в@std университет@prep (author: pasha): 
 2912 я@nom работать@1 на друг@acc (author: pasha): 
 
 2914 я@nom любить@1 Маша@acc (author: pasha): 
@@ -3280,7 +3280,7 @@
 3279 я@nom работать@1 в@std офис@prep с@alt свой@instrpl друг@instrpl (author: sergei): 
 3280 — ты@nom читать@2 книга@accpl с@std друг@instrpl ? — нет , они@pl любить@3pl фильм@accpl (author: sergei): 
 3281 я@nom никогда не видеть@pastm такой@accf маленький@accf собака@acc . (author: andreas): 
-3282 — когда ты@nom встречать@2 свой@accf мама@acc ? — вечер@instr . сейчас она@nom с@std друг@instrpl в@std центр@prep (author: sergei): 
+3282 — когда ты@nom встречать[meet]@2 свой@accf мама@acc ? — вечер@instr . сейчас она@nom с@std друг@instrpl в@std центр@prep (author: sergei): 
 3283 в@std жизнь@acc у я@gen быть@pastn много@pl проблема@genpl . (author: andreas): 
 3284 урок@nom начинаться@3 в@std пять@accinanpl вечер@gen . (author: andreas): 
 3285 я@nom хотеть@1 стать@inf для ты@gen друг@instr (author: sergei): 
@@ -3403,7 +3403,7 @@
 3402 мальчик@nom играть@3 на улица@dat даже когда холодный@adv (author: andreas): 
 3403 лето@instr я@nom обычный@adv идти@1 на море@prep с@std мой@instrpl родители@instrpl (author: andreas): 
 3404 в@std следующий@n воскресенье@prep мы@pl идти@1pl на море@prep с@std друг@instrpl (author: andreas): 
-3405 мой@m брат@nom говорить@3 , что@nom мы@pl она@acc ещё не встречать@pastpl (author: andreas): 
+3405 мой@m брат@nom говорить@3 , что@nom мы@pl она@acc ещё не встречать[meet]@pastpl (author: andreas): 
 3406 я@nom часто слышать@pastm о@alt этот@prepm город@prep и даже видеть@pastm он@acc в@std кино (author: andreas): 
 3407 сколько@accinanpl себя@acc помнить@1 , я@nom хотеть@pastf стать@inf врач@instr (author: andreas): 
 3408 он@nom говорить@pastm , что@acc здесь можно купить@inf яйцо@accpl , но на самый@prepm дело@prep этот@accinanm магазин@acc уже не работать@3 (author: andreas): 
@@ -3420,7 +3420,7 @@
 
 3420 почему ты@nom не в@std свой@prepf комната@prep ? уже поздно , ты@dat пора@nom спать@inf (author: pasha): 
 3421 в@std этот@prepf квартира@prep маленький@pl комната@pl (author: pasha): 
-3422 какой@accanpl люди@accpl ты@nom встречать@2 на работа@prep , а какой@accanpl – в@std университет@prep ? (author: pasha): 
+3422 какой@accanpl люди@accpl ты@nom встречать[meet]@2 на работа@prep , а какой@accanpl – в@std университет@prep ? (author: pasha): 
 3423 я@nom открывать@1 книга@acc , но не читать@1 она@gen , а простой@adv смотреть@1 на слово@accpl (author: pasha): 
 
 3425 на (author: mark): 
@@ -3484,8 +3484,8 @@
 3483 кофе уже готовый@shortm ? (author: andreas): 
 3484 — почему ты@nom ещё спать@2 ? уже девять@pl час@genpl ! (author: andreas): 
 3485 — я@nom не понимать@1 (author: pasha): 
-3486 где ты@nom встречать@2 мама@acc после работа@gen ? (author: pasha): 
-3487 я@nom встречать@1 мама@acc после работа@gen у метро (author: pasha): 
+3486 где ты@nom встречать[meet]@2 мама@acc после работа@gen ? (author: pasha): 
+3487 я@nom встречать[meet]@1 мама@acc после работа@gen у метро (author: pasha): 
 3488 сегодня последний@m урок@nom в@std этот@prepm год@prep . я@nom дать@1 профессор@dat подарок@acc . (author: andreas): 
 3489 почему кошка@nom в@std комната@prep ? (author: pasha): 
 3490 сегодня последний@m урок@nom в@std этот@prepm год@prep . (author: andreas): 
@@ -3612,7 +3612,7 @@
 3611 он@nom быть[fut]@3 работать@inf завтра (author: andreas): 
 3612 только дать@impr я@dat возможность@acc , и я@nom выиграть@1 в@std любой@prepm дело@prep (author: sergei): 
 3613 завтра быть[fut]@3 хороший@f погода@nom . (author: andreas): 
-3614 я@nom должный@shortm встречать@inf друг@accpl сегодня вечер@instr в@std шесть@accinanpl на вокзал@prep (author: andreas): 
+3614 я@nom должный@shortm встречать[meet]@inf друг@accpl сегодня вечер@instr в@std шесть@accinanpl на вокзал@prep (author: andreas): 
 3615 он@nom не видеть@3 свой@accinanpl возможность@accpl (author: sergei): 
 3616 я@nom найти@pastm деньги@accpl в@std свой@prepm карман@prep (author: sergei): 
 3617 — кто@nom тут закон@nom ? (author: sergei): 
@@ -5295,7 +5295,7 @@
 5294 в@std этот@prepm город@prep я@nom никто@acc не знать@1 . (author: roman): 
 5295 на кто@acc он@nom работать@3 ? (author: roman): Who does he work for?
 
-5297 никогда не встречать@pastm никто@acc , кто@nom бы не любить@pastm шоколад@acc . (author: roman): 
+5297 никогда не встречать[meet]@pastm никто@acc , кто@nom бы не любить@pastm шоколад@acc . (author: roman): 
 5298 я@nom никто@acc не ждать@1 . (author: roman): I don't wait for anybody.
 5299 пожалуйста , говорить@imprpl с@alt я@instr по-английски . (author: roman): 
 5300 мой@f мама@nom не очень хороший@adv говорить@3 по-английски . (author: roman): 
@@ -6403,7 +6403,7 @@
 6402 я@nom найти@pastm этот@accinanm вопрос@acc очень лёгкий@instrm . (author: roman): 
 6403 сегодня для весь@genpl студент@genpl вход@nom свободный@m . (author: roman): 
 6404 не мочь@pastpl бы вы@pl сказать@inf я@dat , где находиться@3 вход@nom в@std метро ? (author: roman): 
-6405 мы@pl стоять@pastpl у вход@gen и[part] встречать@pastpl гость@genpl . (author: roman): 
+6405 мы@pl стоять@pastpl у вход@gen и[part] встречать[meet]@pastpl гость@genpl . (author: roman): 
 6406 подождать@imprpl я@gen у вход@gen в@std здание@acc . (author: roman): 
 6407 у я@gen быть@1 запасной@m ключ@nom . (author: roman): 
 6408 у ты@gen быть@1 запасной@m ключ@nom ? (author: roman): 
