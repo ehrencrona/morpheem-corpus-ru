@@ -127,12 +127,13 @@ oprep[prep]: std , alt о
 -о[prep]: std , alt б, alt2 бо
 -что[case]: nom что, gen чего, dat чему, acc nom-, instr чем, prep чём
 -кто[case]: nom кто, gen кого, dat кому, acc кого, instr кем, prep ком
--один[num]: m <ин, n о, f а, pl и, genpl их, datpl им, accn о, accf у, accinanpl и, instrm им, instrpl ими, preppl их, inherit adj
--два[num]: pl а, genpl ух, datpl ум, accinanpl а, instrpl умя, preppl ух
--три[num]: pl и, genpl ёх, datpl ём, accinanpl pl-, instrpl емя, preppl ёх
+-один[num]: m <ин, n о, f а, pl и, genpl их, datpl им, accn о, accf у, instrm им, instrpl ими, preppl их, inherit adj
+num[num]: accanpl genpl-, accinanpl pl-
+-два[num]: pl а, genpl ух, datpl ум, instrpl умя, preppl ух, inherit num
+-три[num]: pl и, genpl ёх, datpl ём, instrpl емя, preppl ёх, inherit num
 -четыре[num]: pl е, instrpl ьмя, inherit -три
--пять[num]: pl ь, genpl и, datpl и, accinanpl ь, instrpl ью, preppl и
--сто[num]: pl о, genpl а, datpl а, instrpl а, preppl а
+-пять[num]: pl ь, genpl и, datpl и, instrpl ью, preppl и, inherit num
+-сто[num]: pl о, genpl а, datpl а, instrpl а, preppl а, inherit num
 v[v]: "verbs" inf ****, 1 у, pastm inf-<<л, pastn pastm-о, pastf pastm-а, pastpl pastm-и, imprpl impr-те
 y-esh-et[v]: 1pl ем, 2 ешь, 2pl ете, 3 ет, 3pl ут, impr и, inherit v, transform ioToY
 ать[v]: "verbs ending in -ать or -ять" inf ть, 1 ю, 3pl ют, impr й, inherit y-esh-et
