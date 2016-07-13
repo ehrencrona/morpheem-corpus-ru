@@ -185,17 +185,17 @@ grammar: adj@accinanpl, tag: accusative
 grammar: yo-yosh-yot@2, tag: verb
 скучн--ый: boring, tedious, inflect: ныйadj
 и: and
-одн--<ин: one, alone, single, inflect: -один
+одн--<ин: one, alone, single, inflect: -один, tag: number
 grammar: adj@accn, tag: accusative
 там: there
 grammar: -один@m
 grammar: -один@f
-дв--а: two, fortnight, couple, inflect: -два
+дв--а: two, fortnight, couple, inflect: -два, tag: number
 grammar: -два@accinanpl, tag: accusative
 grammar: -три@accinanpl, tag: accusative
 grammar: -три@pl
 grammar: -два@pl
-тр--и: three, ternary, tri-, inflect: -три
+тр--и: three, ternary, tri-, inflect: -три, tag: number
 а: and
 булочк--а: bun, roll, bread roll, inflect: femka2
 возвраща--ть: return, recover, inflect: ать
@@ -252,10 +252,10 @@ grammar: -этот@accf, tag: accusative
 grammar: -я@gen, tag: genitive
 бутылк--а: bottle, flask, inflect: femka
 grammar: -он@gen, tag: genitive
-пят--ь: five, nickel, inflect: -пять
-шест--ь: six, half-dozen, inflect: -пять
-десят--ь: ten, 10, deca-, inflect: -пять
-четыр--е: four, quaternion, inflect: -четыре
+пят--ь: five, nickel, inflect: -пять, tag: number
+шест--ь: six, half-dozen, inflect: -пять, tag: number
+десят--ь: ten, 10, deca-, inflect: -пять, tag: number
+четыр--е: four, quaternion, inflect: -четыре, tag: number
 grammar: femяь@datpl, tag: dative
 grammar: adj@datpl, tag: dative
 grammar: adj@datn, tag: dative
@@ -905,9 +905,9 @@ grammar: -она@prep, tag: prepositional
 grammar: -ты@prep, tag: prepositional
 подождё--<ать: wait, await, expect, inflect: -ждать
 останови--ться: stop, stand still, halt, inflect: -становиться
-сем--ь: seven, hepta-, septenary, inflect: -пять
+сем--ь: seven, hepta-, septenary, inflect: -пять, tag: number
 grammar: -воскресенье@prep, tag: prepositional
-девят--ь: nine, no, inflect: -пять
+девят--ь: nine, no, inflect: -пять, tag: number
 grammar: -один@n
 grammar: -один@pl
 grammar: -два@genpl, tag: genitive
@@ -935,7 +935,7 @@ grammar: -сам@m
 рубл--ь: ruble, inflect: -словарь
 тысяч--а: mil, inflect: -улица
 столько: n/a
-восемь: n/a
+восемь: n/a, tag: number
 чашк--а: cup, teacup, inflect: femka2
 забуд--<<ыть: forget, leave, let it go, inflect: -бытьfut
 потеря--ть: lose, SBD, lose something, inflect: ать
@@ -1298,9 +1298,13 @@ grammar: -слышать@impr, tag: verb
 grammar: perspron@accpl, tag: accusative
 grammar: abstr-soft-final-stressed@instr, tag: instrumental
 grammar: -огонь@nom
-grammar: -бытьfut@inf
-grammar: аться@3
+grammar: -бытьfut@inf, tag: verb
+grammar: аться@3, tag: verb
 grammar: -много@m
 grammar: -хотеть@impr, tag: verb
 grammar: -время@genpl, tag: genitive
 grammar: -воскресенье@genpl, tag: genitive
+phrase: о-prep
+phrase: в-час
+phrase: в-num-час
+phrase: 2-gen
