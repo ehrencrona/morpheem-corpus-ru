@@ -1,4 +1,13 @@
-о-prep: "о is followed by the prepositional form" о@ @prep
-в-час: "at one о'clock" в@ час@acc
-в-num-час: "at ... o'clock" в@ tag:number час@
-2-gen: "два is used with genitive" два@ @gen
+о-prep: "о чем-то" о@ @prep
+в-час: "в час" в@ час@acc
+в-num-час: "в ... часов" в@ tag:number час@
+2-gen: "два чего-то" два@ @gen
+per-time: "в час/день/..." в@ tag:time
+not-gen: "нет чего-то" нет@ @gen
+gen-of: "TODO Genitive means "of", e.g. "a glass of water"" tag:uncountable
+gen-possession: "кого-то" tag:animate
+teach: "научить кто-то чему-то" научить@ any @dat
+рад-dat: "рад чему-то" рад@ @dat
+чем-чем: "чем ... чем ..." что@instr any что@instr
+если-то: "если ... то" если@ any то[если]@
+how-old: "сколько лет кого-то ... ?" сколько@ год@genpl @dat
