@@ -87,9 +87,12 @@ mascь-animate[n]: inherit abstr-masc-anim, inherit -mascь
 -парень[n]: nom <ень, inherit mascь-animate
 adj[adj]: m ый, n ое, f ая, pl ые, genm ого, genn genm-, genf ой, genpl ых, datm ому, datn datm-, datf ой, datpl ым, accinanm m-, accanm genm-, accn n-, accf ую, accinanpl pl-, accanpl genpl-, instrm ым, instrn instrm-, instrf ой, instrpl instrm-и, prepm ом, prepn prepm-, prepf ой, preppl ых, shortm , shortn shortm-о, shortf shortm-а, shortpl shortm-ы, adv о, comp shortf-<ее, transform yToI
 ойadj[adj]: m ой, inherit adj
-ийadj[adj]: pl ие, genpl их, datpl им, instrm им, preppl их, inherit adj
+abstr-ийadj[adj]: m ий, pl ие, genpl их, datpl им, instrm им, preppl их
+ийadj[adj]: inherit abstr-ийadj, inherit adj
 егоadj[adj]: "adjectives having ж, ч, ш, щ, ц or о before the ending" genm его, genf ей, datm ему, datf ей, instrf ей, prepm ем, prepf ей, inherit ийadj
-eeadj[adj]: "adjectives having ж, ч, ш, щ, ц before the ending and not stressing the ending" n ее, inherit егоadj
+eeadj[adj]: "adjectives having ж, ч, ш, щ, ц, and н before the ending and not stressing the ending" n ее, inherit егоadj
+-ранний[adj]: adv <o, comp <ьше, inherit abstr-ийadj, inherit eeadj
+-поздний[adj]: inherit abstr-ийadj, inherit eeadj
 -хороший[adj]: comp <<<<<лучше, inherit eeadj
 -наш[adj]: m , n е, f а, pl и, accf у, inherit егоadj
 -домашний[adj]: "adjectives ending in -ний" m ий, f яя, accf юю, shortm <ен, shortn е, shortf я, shortpl и, inherit eeadj
@@ -147,7 +150,6 @@ y-esh-et[v]: 1pl ем, 2 ешь, 2pl ете, 3 ет, 3pl ут, impr и, inherit 
 -дать[v]: 1 м, 1pl дим, 2 шь, 2pl дите, 3 ст, 3pl дут, inherit ать
 -сказать[v]: inf <зать, impr и, inherit y-esh-et
 -хотеть[v]: inf <теть, 1pl <тим, 2pl <тите, 3pl <тят, impr <ти, inherit y-esh-et
-
 -мочь[v]: inf <чь, 1 <гу, 3pl <гут, pastm <г, pastn <гло, pastf <гла, pastpl <гли, impr <ги, inherit y-esh-et
 -стать[v]: inf <ть, 3pl ут, impr ь, inherit y-esh-et
 yo-yosh-yot[v]: 1pl ём, 2 ёшь, 2pl ёте, 3 ёт, inherit v
