@@ -504,7 +504,8 @@ grammar: adj@genn, tag: genitive
 же: however
 от: from
 grammar: -mascь@nom
-скор--ый: fast, express, inflect: adj
+скор--ый: fast, express, inflect: adj, mask: adv
+скор--ый: rather, inflect: adj, mask: allbutadv
 может быть: maybe
 мож--<чь: can, be able to, inflect: -мочь
 grammar: -о@std
@@ -635,8 +636,8 @@ grammar: -они@datpl, tag: dative
 grammar: -открыть@inf, tag: verb
 встан--<ть: to get up, inflect: -стать
 ноч--ь: night, inflect: femь-я-to-а, tag: at-inst
-рано: early
-поздно: late
+ранн--ий: early, inflect: -ранний 
+поздн--ий: late, inflect: -поздний
 grammar: -мочь@pastpl, tag: verb
 дожд--ь: rain, inflect: -словарь, tag: rain
 неб--о: sky, inflect: -небо
@@ -773,9 +774,8 @@ grammar: -казаться@pastf, tag: verb
 grammar: -оставаться@inf, tag: verb
 помога--ть: to help, inflect: ать
 звони--ть: to call, inflect: -дарить
-быстро: quickly
 grammar: -оставаться@impr, tag: verb
-совершенно: completely
+совершенн--ый: complete, inflect: ныйadj
 кроме: apart from
 цел--ый: whole, entire, inflect: adj
 огромн--ый: huge, inflect: ныйadj
@@ -834,7 +834,6 @@ grammar: -парень@nom
 впрочем: nevertheless
 видно: it looks like, obviously
 разве: used instead of inversion in questions
-движени--е: movement, motion, inflect: neuie
 порядк--<ок: order, inflect: -подарок
 тихо: quietly, tag: accusative, tag: dative, tag: genitive, tag: instrumental, tag: prepositional, tag: verb
 знакомств--о: acquaintance, inflect: neu
@@ -1010,8 +1009,8 @@ grammar: neuie@dat, tag: dative
 автобус--: bus, inflect: masc
 привет--: hey, howdy, inflect: masc
 grammar: -вернуться@1pl, tag: verb
-правильно: correctly
-неправильно: incorrectly
+правильн--ый: correct, inflect: ныйadj
+неправильн--ый: incorrect, inflect: ныйadj
 разреши--ть: to allow, inflect: -учить
 поед--<хать: to go by vehicle,  inflect: -поехать
 предупреди--ть: to warn, inflect: -ходить
