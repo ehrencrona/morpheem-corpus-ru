@@ -24,15 +24,15 @@ grammar: n@prep, tag: prepositional
 хорош--ий: good, inflect: -хороший
 магазин--: shop,  inflect: masc
 комнат--а: room,  inflect: fem
---я: I, inflect: -я
+--я: I, inflect: -я, tag: animate
 grammar: -я@nom
---он: he, inflect: -он
+--он: he, inflect: -он, tag: animate
 grammar: -он@nom
 transform: yToI
 Саш--а: , inflect: -улица, mask: pl
 библиотек--а: library, inflect: fem
 grammar: -она@nom
---она: she, inflect: -она
+--она: she, inflect: -она, tag: animate
 Маш--а: , inflect: -улица, mask: pl
 школ--а: school, inflect: fem
 улиц--а: street, inflect: -улица
@@ -41,7 +41,7 @@ grammar: -она@nom
 работа--ть: work, inflect: ать
 grammar: ать@1, tag: verb
 grammar: y-esh-et@3, tag: verb
-игра--ть: play, act inflect: ать
+игра--ть: play, inflect: ать
 девочк--а: girl, inflect: -девочка
 ребёнк--<ок: child, inflect: -ребёнок, mask: pl
 grammar: -подарок@nom
@@ -60,7 +60,7 @@ grammar: n@acc, tag: accusative
 мам--а: mom, inflect: fem-animate
 люби--ть: love, like, inflect: -любить
 grammar: perspron@acc, tag: accusative
---ты: you, inflect: -ты
+--ты: you, inflect: -ты, tag: animate
 grammar: -ты@nom
 не: not
 ни--кто: nobody, inflect: -кто
@@ -89,7 +89,7 @@ grammar: -любить@1, tag: verb
 зачем: what for
 почему: why
 grammar: -быть@1, tag: verb
---быть: to be inflect: -быть
+--быть: to be, inflect: -быть
 квартир--а: apartment, flat, inflect: fem
 grammar: -свой@f
 вот: here (is)
@@ -136,7 +136,7 @@ grammar: adj@pl
 да: yes
 здесь: here
 зна--ть: to know, inflect: ать
---вы: you, inflect: -вы
+--вы: you, inflect: -вы, tag: animate
 grammar: -вы@pl
 grammar: it-im-ite@2pl, tag: verb
 банк--: bank, inflect: masc
@@ -173,12 +173,12 @@ grammar: -друг@pl
 плох--ой: bad, inflect: ойadj
 grammar: yo-yosh-yot@2pl, tag: verb
 grammar: n@accpl, tag: accusative
---они: they, inflect: -они
+--они: they, inflect: -они, tag: animate
 стар--ый: old, inflect: adj
 grammar: -они@pl
 grammar: -мы@pl
 grammar: ать@inf, tag: verb
---мы: we, inflect: -мы
+--мы: we, inflect: -мы, tag: animate
 grammar: ать@3pl, tag: verb
 grammar: adj@accinanpl, tag: accusative
 grammar: yo-yosh-yot@2, tag: verb
@@ -194,11 +194,11 @@ grammar: -два@accinanpl, tag: accusative
 grammar: -три@accinanpl, tag: accusative
 grammar: -три@pl
 grammar: -два@pl
-тр--и: three, inflect: -три
+тр--и: three, inflect: -три, tag: number
 а: and, but
 булочк--а: bun, inflect: femka2
 возвраща--ть: to return, inflect: ать
-шоколад--: chocolate, inflect: masc
+шоколад--: chocolate, inflect: masc, tag: uncountable
 подарк--<ок: gift, inflect: -подарок
 grammar: -я@dat, tag: dative
 grammar: -вы@datpl, tag: dative
@@ -220,7 +220,7 @@ grammar: adj@datm, tag: dative
 grammar: -нравиться@3pl, tag: verb
 grammar: -он@dat, tag: dative
 grammar: -ты@dat, tag: dative
-хоч--<теть: to wish, to want inflect: -хотеть
+хоч--<теть: to wish, to want, inflect: -хотеть
 с--: with, from, inflect: oprep
 ед--а: food, inflect: fem
 grammar: fem@instr, tag: instrumental
@@ -410,7 +410,7 @@ grammar: -дать@2, tag: verb
 так--ой: such, so, inflect: ойadj
 вод--а: water,  inflect: fem
 grammar: -сестра@pl
-здоров--ый: healthy, sound inflect: adj
+здоров--ый: healthy, sound, inflect: adj
 grammar: it-im-ite@1pl, tag: verb
 grammar: -дать@1, tag: verb
 сувенир--: souvenir, inflect: masc
@@ -425,8 +425,8 @@ grammar: -есть@3, tag: verb
 ни--что: nothing, inflect: -что
 мяс--о: meat, inflect: neu, mask: pl
 масл--о: oil, butter, inflect: -масло
-вин--о: wine, inflect: neu
-пив--о: beer, inflect: neu, mask: pl
+вин--о: wine, inflect: neu, tag: uncountable
+пив--о: beer, inflect: neu, tag: uncountable, mask: pl
 покупк--а: a purchase, inflect: femka
 войд--<ти: to come in, inflect: -войти
 выйд--<ти: to go out, inflect: -выйти
@@ -446,7 +446,7 @@ grammar: -ходить@1, tag: verb
 долг--ий: lengthy in terms of time, inflect: adj
 высок--ий: high, tall, inflect: adj
 вокзал--: terminal station, inflect: masc
-утр--о: morning, inflect: neu
+утр--о: morning, inflect: neu, tag: at-instr
 дерев--о: tree, inflect: -дерево
 grammar: -пить@1, tag: verb
 grammar: adj@genm, tag: genitive
@@ -461,7 +461,7 @@ grammar: adj@genf, tag: genitive
 grammar: neu@nom
 цвет--: color, inflect: masc3
 температур--а: temperature, inflect: fem
-температур--а: fever, inflect: fem
+температур--а[fever]: fever, inflect: fem
 всегда: always
 часто: often
 иногда: sometimes
@@ -476,14 +476,14 @@ grammar: -мы@genpl, tag: genitive
 пакет--: plastic or paper bag, inflect: masc
 холодн--ый: cold, inflect: ныйadj
 по: on
-вечер--: evening, inflect: masc3
+вечер--: evening, inflect: masc3, tag: at-instr
 дет--ь: children, inflect: -люди, mask: sg
 стан--<ть: to become, inflect: -стать
 писател--ь: writer, inflect: mascь-animate
-лет--о: summer, inflect: neu, mask: pl
-весн--а: spring, inflect: -весна, mask: pl
+лет--о: summer, inflect: neu, tag: at-instr, mask: pl
+весн--а: spring, inflect: -весна, tag: at-instr, mask: pl
 grammar: neu@instr, tag: instrumental
-зим--а: winter, inflect: fem, mask: pl
+зим--а: winter, inflect: fem, tag: at-instr, mask: pl
 grammar: -что@instr, tag: instrumental
 grammar: -кто@instr, tag: instrumental
 grammar: -большой@comp
@@ -494,7 +494,7 @@ grammar: -большой@comp
 всего: than everything
 потому что: because
 но: but
-к--: to, towards inflect: oprep
+к--: to, towards, inflect: oprep
 grammar: -весь@m
 grammar: abstr-soft-final@instr, tag: instrumental
 grammar: neu@pl
@@ -504,7 +504,7 @@ grammar: adj@genn, tag: genitive
 же: however
 от: from
 grammar: -mascь@nom
-скор--ый: fast, express inflect: adj
+скор--ый: fast, express, inflect: adj
 может быть: maybe
 мож--<чь: can, be able to, inflect: -мочь
 grammar: -о@std
@@ -515,7 +515,7 @@ grammar: -о@std
 grammar: -весь@datpl, tag: dative
 до: to, before
 если: if
-времен--<<я: time, inflect: -время
+времен--<<я: time, inflect: -время, tag: tim
 рук--а: arm, hand, inflect: fem
 grammar: sya@1, tag: verb
 сам--ый: most, inflect: adj
@@ -523,7 +523,7 @@ grammar: sya@1, tag: verb
 даже: even
 друг--ой: other, another, different, inflect: ойadj
 ну: well, meh,
-дел--о: business, matter, case inflect: neu
+дел--о: business, matter, case, inflect: neu
 раз--: time, inflect: -раз
 чтобы: in order to
 ручк--а: pen, inflect: femka2
@@ -541,15 +541,15 @@ grammar: -стать@inf, tag: verb
 grammar: -деньга@genpl, tag: genitive
 grammar: егоadj@genm, tag: genitive
 grammar: -о@alt
-домашн--ий: domestic, home inflect: -домашний
+домашн--ий: domestic, home, inflect: -домашний
 задани--е: task, inflect: neuie
 упражнени--е: exercise, inflect: neuie
-морожен--ое: ice cream, inflect: neuadjoe
+морожен--ое: ice cream, inflect: neuadjoe, tag: uncountable
 сообщени--е: message, inflect: neuie
 решени--е: solution, decision, inflect: neuie
 чуть-чуть: a little bit
 немног--о: a little, inflect: -много, mask: sg
-жизн--ь: life, inflect: femь
+жизн--ь: life, inflect: femь, tag: time
 глаз--: eye, inflect: -глаз
 grammar: neuie@gen, tag: genitive
 перв--ый: first, inflect: adj
@@ -579,7 +579,7 @@ grammar: -наш@accf, tag: accusative
 grammar: n@instrpl, tag: instrumental
 после: after
 дума--ть: to think, inflect: ать
-мест--о: place, space inflect: neu
+мест--о: place, space, inflect: neu
 grammar: -наш@m
 grammar: adj@prepn, tag: prepositional
 grammar: adj@shortf
@@ -634,11 +634,11 @@ grammar: -они@datpl, tag: dative
 спи--<ать: to sleep, inflect: -спать
 grammar: -открыть@inf, tag: verb
 встан--<ть: to get up, inflect: -стать
-ноч--ь: night, inflect: femь-я-to-а
+ноч--ь: night, inflect: femь-я-to-а, tag: at-inst
 рано: early
 поздно: late
 grammar: -мочь@pastpl, tag: verb
-дожд--ь: rain, inflect: -словарь
+дожд--ь: rain, inflect: -словарь, tag: rain
 неб--о: sky, inflect: -небо
 солнц--е: sun, inflect: -солнце
 grammar: -словарь@nom
@@ -646,7 +646,7 @@ grammar: -год@prep, tag: prepositional
 grammar: -кто@gen, tag: genitive
 grammar: mascе@nom
 голуб--ой: light blue, inflect: -второй
-град--: hail, inflect: masc
+град--: hail, inflect: masc, tag: rain
 grammar: -второй@m
 встреча--ться: to meet, inflect: -пытаться
 встреча--ться[date]: to date, inflect: -пытаться
@@ -817,7 +817,7 @@ grammar: -спросить@1, tag: verb
 grammar: -мочь@pastm, tag: verb
 велик--ий: grand, inflect: ийadj
 действительно: really
-остави--ть: to leave, to abandon inflect: -оставить
+остави--ть: to leave, to abandon, inflect: -оставить
 ищ--<скать: to look for, inflect: -искать
 grammar: -парень@nom
 спокойн--ый: calm, inflect: ныйadj
@@ -843,11 +843,11 @@ grammar: -mascь@datpl, tag: dative
 grammar: neuie@instrpl, tag: instrumental
 grammar: neu@dat, tag: dative
 сильн--ый: strong, powerful, inflect: ныйadj
-снег--: snow, inflect: masc3
+снег--: snow, inflect: masc3, tag: rain
 против: against
 кричи--<ать: to shout, inflect: -лежать
 grammar: sya@2, tag: verb
-прекрати--ть: to cease, to stop inflect: -спросить
+прекрати--ть: to cease, to stop, inflect: -спросить
 grammar: -весь@preppl, tag: prepositional
 возможност--ь: possibility, chance, inflect: femь
 ладно: all right, fine
@@ -877,7 +877,7 @@ grammar: -сын@genpl, tag: genitive
 должн--ый: must, inflect: ныйadj
 кофе: coffee
 молок--о: milk, inflect: neu, mask: pl
-осен--ь: autumn, inflect: femь, mask: pl
+осен--ь: autumn, inflect: femь, tag: at-instr, mask: pl
 трав--а: grass, herb, inflect: fem
 grammar: -мы@instrpl, tag: instrumental
 grammar: -ты@instr, tag: instrumental
@@ -962,7 +962,7 @@ grammar: -идея@genpl, tag: genitive
 плава--ть: to swim, to float, inflect: ать
 озер--о: lake, inflect: -озеро
 гор--а: mountain, mount, inflect: fem
-собира--ться: to assemble, to pack, to intent inflect: -пытаться
+собира--ться: to assemble, to pack, to intent, inflect: -пытаться
 сначала: at first
 либо: either
 единственный: the only
@@ -1059,7 +1059,7 @@ grammar: -чувствовать@inf, tag: verb
 вход--: entrance, inflect: masc
 выход--: exit, way out, inflect: masc
 grammar: sya@pastn, tag: verb
-запасн--ой: backup, extra inflect: ойadj
+запасн--ой: backup, extra, inflect: ойadj
 здани--е: building, inflect: neuie
 grammar: -чувствовать@pastm, tag: verb
 билет--: ticket, inflect: masc
@@ -1147,7 +1147,7 @@ grammar: -выбрать@inf, tag: verb
 попробу--<овать: to taste, to try, to attempt, inflect: -чувствовать
 украд--<сть: to steal, inflect: -украсть
 хвати--ть: to suffice, to be enough, inflect: -хватить
-дяд--я: uncle, mister (when kids are talking to adults) inflect: -дядя
+дяд--я: uncle, mister (when kids are talking to adults), inflect: -дядя
 некотор--ый: some, certain, inflect: adj
 животн--ый: animal, inflect: adj
 правил--о: rule, inflect: neu
@@ -1305,3 +1305,58 @@ grammar: -много@m
 grammar: -хотеть@impr, tag: verb
 grammar: -время@genpl, tag: genitive
 grammar: -воскресенье@genpl, tag: genitive
+phrase: о-prep
+phrase: в-час
+phrase: в-num-час
+phrase: 2-gen
+phrase: per-time
+grammar: num@accinanpl, tag: accusative
+grammar: ать@impr, tag: verb
+phrase: not-gen
+phrase: gen-of
+phrase: gen-possession
+phrase: teach
+phrase: рад-dat
+grammar: -время@gen, tag: genitive
+grammar: -дерево@pl
+phrase: чем-чем
+phrase: если-то
+grammar: аться@3pl, tag: verb
+grammar: аться@2, tag: verb
+grammar: -третий@m
+grammar: аться@2pl, tag: verb
+grammar: аться@1pl, tag: verb
+phrase: how-old
+phrase: с-gen
+phrase: с-чего-взял
+phrase: time-acc
+phrase: много-gen
+phrase: без-gen
+phrase: at-instr
+phrase: more-than
+phrase: три-gen
+phrase: четыре-gen
+phrase: мало-gen
+phrase: немного-gen
+phrase: с-instr
+phrase: при-prep
+phrase: по-dat
+phrase: сам-по-себе
+phrase: из-за-того
+предложение: n/a
+phrase: больше-v
+phrase: поверить-dat
+phrase: идти-rain
+phrase: у-кого-есть
+phrase: ни-any-кто
+phrase: ни-any-что
+phrase: с-тех-пор
+phrase: мы-с-instr
+grammar: -простой@comp
+ремонт--: n/a, inflect: masc
+phrase: no-matter-what
+phrase: в-пути
+phrase: на-пути
+phrase: всё-ещё
+phrase: столько-всего
+phrase: нет-равных
