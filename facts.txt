@@ -1148,7 +1148,7 @@ grammar: -выбрать@inf, tag: verb
 медленн--ый: slow, inflect: adj
 дальше: further, farther
 бумаг--а: paper, document, inflect: fem
-международный: international
+международный: international, inflect: adj 
 тих--ий: quiet, inflect: adj
 особенн--ый: special, particular, inflect: adj
 заплати--ть: to pay, inflect: -хватить
@@ -1195,19 +1195,20 @@ grammar: -себя@dat, tag: dative
 свидани--е: date, rendezvous, inflect: neuie
 позвони--ть: call, ring, dial, inflect: -дарить
 предложи--ть: propose, suggest, offer, inflect: -учить
-из-за: n/a
-приноси--ть: bring, fetch, inflect: -спросить
+из-за: because of 
+из-за[from behind]: from behind
+приноси--ть: to bring, inflect: -спросить
 grammar: -себя@instr, tag: instrumental
-прежде: n/a
-встрети--ться: meet, encounter, be found, inflect: -встретиться
+прежде: before
+встрети--ться: to meet, to get together, inflect: -встретиться
 пар--а: couple, pair, inflect: fem
 удобн--ый: comfortable, convenient, inflect: adj
-лекци--я: lecture, talk, inflect: -регистрация
-спеши--ть: hurry, hasten, inflect: -спешить
-экзамен--: test, examination, inflect: masc
+лекци--я: lecture, inflect: -регистрация
+спеши--ть: to hurry, to hasten, inflect: -спешить
+экзамен--: exam, inflect: masc
 grammar: -четыре@pl
 постоянн--ый: constant, permanent, inflect: adj
-вечеринк--а: party, soiree, inflect: femka
+вечеринк--а: party, inflect: femka
 grammar: -она@datalt, tag: dative
 grammar: -они@datplalt, tag: dative
 grammar: -они@genplalt, tag: genitive
@@ -1216,31 +1217,31 @@ grammar: -они@preppl, tag: prepositional
 grammar: -пять@datpl, tag: dative
 grammar: -она@instr, tag: instrumental
 grammar: -себя@gen, tag: genitive
-в гости: n/a
+в гости: visit someone as a guest
 grammar: -мы@preppl, tag: prepositional
-хор--: choir, chorus, inflect: masc
-нарису--<овать: draw, paint, picture, inflect: -чувствовать
+хор--: choir, inflect: masc
+нарису--<овать: to draw, to paint, inflect: -чувствовать
 пальц--<<ец: finger, toe, inflect: -палец
-пойм--<<нять: understand, catch, inflect: -понять
-их: n/a
+пойм--<<нять: to understand, inflect: -понять
+их: them, their, theirs
 grammar: -что@gen, tag: genitive
-идиот--: idiot, dope, inflect: masc-animate
-устан--<ть: fatigue, get tired, inflect: -стать
-лети--<еть: fly, soar, inflect: -лететь
+идиот--: idiot, inflect: masc-animate
+устан--<ть: to get tired, inflect: -стать
+лети--<еть: to fly, inflect: -лететь
 grammar: -себя@prep, tag: prepositional
-бог--: god, creator, inflect: masc-animate
+бог--: God, inflect: masc-animate
 grammar: -регистрация@genpl, tag: genitive
 grammar: -он@datalt, tag: dative
 grammar: -они@instrpl, tag: instrumental
-лекарств--о: medicine, drug, inflect: neu
-настроение: n/a
-смож--<чь: can, be able to, manage, inflect: -мочь
-почувству--<овать: feel, sense, conceive, inflect: -чувствовать
-животн--ое: animal, beast, inflect: neuadjoe
+лекарств--о: medication, inflect: neu
+настроение: mood, inflect: neuie
+смож--<чь: can, to be able to, manage, inflect: -мочь
+почувству--<овать: to feel, to sense, inflect: -чувствовать
+животн--ое: animal, inflect: neuadjoe
 теря--ть: lose, drop, inflect: ать
-границ--а: border, boundary, inflect: -улица
-уж: 
-звонк--<ок: bell, call, inflect: -подарок
+границ--а: border, inflect: -улица
+уж: "drama" particle
+звонк--<ок: call, inflect: -подарок
 и[part]: adds stress
 grammar: -лететь@1, tag: verb
 grammar: neuadjoe@acc, tag: accusative
@@ -1257,33 +1258,33 @@ grammar: -выйти@pastn, tag: verb
 grammar: -мочь@pastf, tag: verb
 grammar: -сто@pl
 grammar: -дерево@instrpl, tag: instrumental
-бер--<<рать: n/a, inflect: -набрать
+бер--<<рать: to take, inflect: -набрать
 grammar: -набрать@inf, tag: verb
-то: n/a
-вегетарианц--<ец: n/a, inflect: -вегетарианец
-голодн--ый: n/a, inflect: -голодный
-слева: n/a
-справ--а: n/a, inflect: fem
+то: then
+вегетарианц--<ец: vegitarian, inflect: -вегетарианец
+голодн--ый: hungry, inflect: -голодный
+слева: on the left
+справа: on the right
 grammar: -показать@inf, tag: verb
-цветк--<ок: n/a, inflect: -цветок
-вкус--: n/a, inflect: masc
-автор--: n/a, inflect: masc-animate
+цветк--<ок: flower, inflect: -цветок
+вкус--: taste, inflect: masc
+автор--: author, inflect: masc-animate
 grammar: -хотеть@inf, tag: verb
 grammar: -хотеть@1pl, tag: verb
 grammar: -жениться@1, tag: verb
 grammar: -один@accn, tag: accusative
-вверх: n/a
-вниз: n/a
+вверх: up (direction)
+вниз: down (direction)
 grammar: -кто@prep, tag: prepositional
-занятой: n/a, inflect ойadj
-грязн--ый: n/a, inflect: adj
-отпуск--: n/a, inflect: masc3
+занятой: busy, inflect ойadj
+грязн--ый: dirty, inflect: adj
+отпуск--: vacation, inflect: masc3
 grammar: -бояться@3, tag: verb
 grammar: sya@1pl, tag: verb
 grammar: -хватить@1, tag: verb
 grammar: -казаться@impr, tag: verb
 grammar: -слышать@impr, tag: verb
-довольн--ый: n/a, inflect: adj
+довольн--ый: satisfied, inflect: adj
 grammar: perspron@accpl, tag: accusative
 grammar: abstr-soft-final-stressed@instr, tag: instrumental
 grammar: -огонь@nom
@@ -1331,7 +1332,8 @@ phrase: при-prep
 phrase: по-dat
 phrase: сам-по-себе
 phrase: из-за-того
-предложение: n/a
+предложение: sentence, inflect: neuie
+предложение[offer]: offer, inflect: neuie
 phrase: больше-v
 phrase: поверить-dat
 phrase: идти-rain
@@ -1341,7 +1343,7 @@ phrase: ни-any-что
 phrase: с-тех-пор
 phrase: мы-с-instr
 grammar: -простой@comp
-ремонт--: n/a, inflect: masc
+ремонт--: renovation, inflect: masc
 phrase: no-matter-what
 phrase: в-пути
 phrase: на-пути
@@ -1353,7 +1355,7 @@ phrase: так-adv
 phrase: смотреть-с
 grammar: num@accanpl, tag: accusative
 phrase: по-карману
-далёк--ий: n/a, inflect: adj
+далёк--ий: far away, inflect: adj
 grammar: -ранний@adv
 grammar: -ранний@comp
 phrase: не-так-ли
