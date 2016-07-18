@@ -6,7 +6,7 @@ grammar: fem@nom
 бел--ый: white, inflect: adj
 grammar: adj@f
 чёрн--ый: black, inflect: -чёрный
-где: where
+где: where, tag: question
 лошад--ь: horse, inflect: -лошадь
 grammar: femь@nom
 мыш--ь: mouse, inflect: -мышь
@@ -55,7 +55,7 @@ grammar: -глядеть@1, tag: verb
 grammar: fem@acc, tag: accusative
 grammar: -кто@nom
 grammar: n@acc, tag: accusative
---кто: who, whom, inflect: -кто
+--кто: who, whom, inflect: -кто, tag: question
 слыши--<ать: listen, inflect: -слышать
 мам--а: mom, inflect: fem-animate
 люби--ть: love, like, inflect: -любить
@@ -64,7 +64,7 @@ grammar: perspron@acc, tag: accusative
 grammar: -ты@nom
 не: not
 ни--кто: nobody, inflect: -кто
---что: what, that, inflect: -что
+--что: what, that, inflect: -что, tag: question
 grammar: -что@acc, tag: accusative
 grammar: it-im-ite@2, tag: verb
 книг--а: book, inflect: fem
@@ -157,6 +157,7 @@ grammar: -что@nom
 grammar: adj@prepm, tag: prepositional
 город--: city, inflect: masc3
 grammar: adj@prepf, tag: prepositional
+наш--: our, ours, inflect: -наш
 grammar: v@1, tag: verb
 grammar: -наш@pl
 родител--ь: parents, inflect: mascь-animate, mask: sg
@@ -553,7 +554,6 @@ grammar: -выйти@inf, tag: verb
 научи--ть: to teach, inflect: -учить
 grammar: -борщ@genpl, tag: genitive
 ваш--: your, yours, inflect: -наш
-наш--: our, ours, inflect: -наш
 grammar: -кто@acc, tag: accusative
 grammar: -сказать@inf, tag: verb
 врач--: doctor, inflect: -врач
@@ -610,7 +610,7 @@ grammar: -домашний@f
 хотя: even though
 grammar: neuie@pl
 втор--ой: second, inflect: -второй
-куда: where
+куда: where, tag: question
 grammar: егоadj@instrf, tag: instrumental
 grammar: -вы@genpl, tag: genitive
 grammar: -конец@nom
@@ -790,7 +790,7 @@ grammar: neuie@preppl, tag: prepositional
 собственн--ый: own, inflect: ныйadj
 пыта--ться: to try, inflect: -пытаться
 вспомни--ть: to recall, inflect: -дарить
-откуда: where from
+откуда: where from, tag: question
 вроде: seems like
 спрашива--ть: to ask, inflect: ать
 grammar: -идти@inf, tag: verb
@@ -1357,4 +1357,11 @@ phrase: по-карману
 grammar: -ранний@adv
 grammar: -ранний@comp
 phrase: не-так-ли
-grammar: -стоить@impr
+grammar: -стоить@impr, tag: verb
+grammar: -ехать@impr
+grammar: abstr-ийadj@pl
+phrase: бы-не-past
+phrase: следить-за
+phrase: за-то-что
+phrase: во-что-бы-то-ни
+phrase: в-курсе
