@@ -8,11 +8,13 @@
 7 на площадь@prep собака@nom: A dog is on the square
 8 собака@nom в@std библиотека@prep: 
 9 в@std квартира@prep собака@nom: There is a dog in the flat
+
 11 он@nom тут: He is here.
 12 я@nom тут !: 
 13 он@nom в@std квартира@prep: 
 14 я@nom в@std квартира@prep: I'm in the flat.
 15 телефон@nom в@std квартира@prep: The phone is in the flat.
+
 17 я@nom в@std библиотека@prep: 
 18 собака@nom в@std квартира@prep: A dog is in the flat.
 19 кошка@nom в@std квартира@prep: A cat is in the flat.
@@ -46,6 +48,7 @@
 47 где мой@m друг@nom ?: Where is my friend?
 48 где мой@m телефон@nom ?: Where is my phone?
 49 мой@m друг@nom – на улица@prep: 
+
 51 это мой@m университет@nom ?: Is this my university?
 52 он@nom видеть@3 лошадь@acc в@std парк@prep: He seed a horse in the park.
 53 я@nom видеть@1 лошадь@acc в@std парк@prep: I see a horse in the park.
@@ -835,7 +838,7 @@
 837 почему вы@pl сидеть@2pl здесь ?: 
 838 вы@pl сидеть@2pl на стул@prep: 
 839 вы@pl не любить@2pl кошка@accpl: 
-840 вы@pl не любить@2pl борщ@acc: 
+840 — вы@pl уже есть@pastpl борщ@acc ?: 
 
 842 что@acc вы@pl любить@2pl ?: 
 843 почему вы@pl я@acc не любить@2pl ?: 
@@ -1861,7 +1864,7 @@
 1863 это должный@shortn работать@inf (author: sergei): 
 1864 это его машина@nom (author: sergei): 
 
-1866 его видеть@inf очень трудный@adv (author: sergei): 
+1866 он@acc видеть@inf очень трудный@adv (author: sergei): 
 1867 его машина@nom очень хороший@shortf (author: sergei): 
 1868 это его магазин@nom , он@dat можно играть@inf тут (author: sergei): 
 
@@ -2048,7 +2051,7 @@
 2050 фрукт@pl – это очень здоровый@f еда@nom (author: pasha): 
 2051 дети@pl , весь@datpl нужно есть@inf фрукт@accpl и овощ@accpl ! (author: pasha): 
 2052 твой@f мама@nom покупать@3 ты@dat фрукт@accpl ? (author: pasha): 
-2053 ну ты@nom и овощ@nom ! (author: pasha): 
+
 2054 что@nom он@nom за фрукт@nom ? (author: pasha): 
 2055 мы@pl готовить@1pl овощ@accpl на ужин@acc (author: pasha): 
 2056 какой@accinanpl овощ@accpl ты@nom любить@2 ? (author: pasha): 
@@ -3175,7 +3178,7 @@
 
 3178 — вы@pl жить@2pl в@std большой@prepf квартира@prep ? (author: pasha): 
 3179 — вы@pl жить@2pl в@std маленький@prepf комната@prep ? (author: pasha): 
-3180 кто@acc вы@pl звать@2pl в@std дорогой@accinanm ресторан@acc в@std суббота@acc вечер@instr , а ? (author: pasha): 
+3180 кто@acc вы@pl звать@2pl в@std дорогой@accinanm ресторан@acc в@std суббота@acc вечер@instr ? (author: pasha): 
 3181 вы@pl звать@2pl я@acc Саша@nom , но я@nom Маша@nom ! (author: pasha): 
 3182 вы@pl жить@2pl на работа@prep ! (author: pasha): 
 3183 почему ты@nom не звать@2 я@acc в@std ресторан@acc ? (author: pasha): 
@@ -3739,7 +3742,7 @@
 3741 когда я@nom пить@1 много@pl кофе , у я@gen болеть@3 голова@nom и я@nom не мочь@1 работать@inf (author: pasha): 
 3742 нельзя пить@inf большой@comp пять@genpl чашка@genpl кофе в@std день@acc (author: pasha): 
 3743 на завтрак@acc я@nom обычный@adv есть@1 булочка@acc и пить@1 чашка@acc чёрный@accanm кофе . (author: pasha): 
-3744 — Маша@nom , выходить@impr гулять@inf в@alt двор@nom ! (author: pasha): 
+3744 — Маша@nom , выходить@impr гулять@inf в@alt двор@acc ! (author: pasha): 
 3745 Маша@nom остановиться@pastf в@std известный@prepm отель@prep « Россия@nom » в@alt Владивосток@prep , хоть там и очень дорогой@shortn (author: pasha): 
 3746 Маша@nom встречаться@pastf с@std Саша@instr два@accinanpl год@gen , когда они@pl вместе ходить@pastpl в@std университет@acc (author: pasha): Masha and Sasha dated for two years when they went to university together.
 3747 мой@f мама@nom пытаться@pastf сам@f найти@inf дорога@acc домой , но в@std конец@prep конец@genpl потеряться@pastf в@std метро . (author: pasha): 
@@ -4678,6 +4681,7 @@
 4680 мой@m учитель@nom быть@pastm рад@shortm мой@datpl решение@datpl задание@genpl (author: sergei): 
 4681 у я@gen быть@1 много@pl фильм@genpl с@std наш@instrpl путешествие@instrpl по мир[world]@dat (author: sergei): 
 
+
 4684 — и ты@nom довольный@shortf ваш@instrpl отношение@instrpl с@std он@instralt ? (author: sergei): 
 4685 мы@pl идти@pastpl по улица@prep между высокий@instrpl здание@instrpl (author: sergei): 
 4686 я@nom сидеть@1 между бабушка@instr и мой@instrf сестра@instr (author: sergei): 
@@ -4935,7 +4939,7 @@
 4938 ты@dat не нужно ходить@inf везде за весь@instrpl , быть@impr сильный@comp и выбрать@impr свой@accinanm путь@acc сам@m ! (author: sergei): 
 4939 я@nom пойти@1 к@std врач@dat за весь@instrpl в@std этот@prepf очередь@prep , потому_что придти@pastm поздний@adv и теперь я@nom последний@m (author: sergei): 
 4940 я@nom похожий@comp оставить@1 этот@accinanm подарок@acc себя@dat ! (author: sergei): 
-4941 — ты@nom купить@pastm этот@accn себя@dat ? — нет это подарок@acc мой@datf жена@dat (author: sergei): 
+4941 — ты@nom купить@pastm этот@accn себя@dat ? — нет , это подарок@nom мой@datf жена@dat (author: sergei): 
 4942 ты@dat нужно помнить@inf не только о@std себя@prep , но и о@std свой@prepf семья@prep (author: sergei): 
 4943 сегодня я@nom купить@pastm себя@dat слишком много@accinanpl вещь@genpl , большой@comp , что@instr я@dat нужно (author: sergei): 
 4944 — ты@nom взять@pastm весь@accf этот@accf ехать@1 только себя@dat ? — нет , этот@n для весь@genf семья@gen (author: sergei): 
@@ -5256,7 +5260,7 @@
 5259 Саша@nom третий@m в@std ряд@dat . (author: andreas): 
 5260 у я@gen быть@1 несколько@pl билет@genpl в@alt второй@accinanm ряд@acc . (author: andreas): 
 5261 — тогда начать@1pl . (author: andreas): 
-5262 тогда это проблема@nom . . . (author: andreas): 
+5262 если автобус@gen не быть[fut]@3 через час@acc , тогда это проблема@nom . а пока – стоять@impr и ждать@impr (author: andreas): 
 5263 сказать@impr я@dat , что@acc ты@nom тогда видеть@pastm . (author: andreas): Tell me what you were seeing then.
 5264 что@acc он@nom делать@pastm тогда , когда ты@nom видеть@pastm он@acc ? (author: andreas): What was he doing when you saw him?
 5265 я@acc здесь не быть@pastn тогда , когда это случиться@pastn (author: andreas): 
@@ -5509,8 +5513,8 @@
 5512 я@nom он@acc сразу узнать@pastm . (author: roman): 
 5513 ты@nom должный@shortm сделать@inf этот@accn сразу . (author: roman): 
 5514 не любить@impr два@genpl люди@genpl сразу . (author: roman): 
-5515 обычный@adv град@nom бывать@3 лето@instr . (author: roman): 
-5516 на улица@prep идти@3 град@nom . (author: roman): 
+
+
 5517 вот ваш@accinanpl ключ@accpl . (author: roman): 
 5518 как пройти@pastpl ваш@accinanpl выходной@pl ? (author: roman): 
 5519 в@std наш@accinanpl день@accpl дети@pl большой@comp не играть@3pl на улица@prep . (author: roman): 
@@ -5591,12 +5595,12 @@
 5594 этот@f мысль@nom никогда не приходить@pastf я@dat в@std голова@acc . (author: roman): 
 5595 я@nom думать@1 , этот@n хороший@f мысль@nom . (author: roman): 
 5596 вы@pl как будто мысль@accpl читать@2pl ! (author: roman): 
-5597 вчера быть@pastm очень сильный@m град@nom (author: roman): 
 
-5599 я@nom хотеть@pastm погулять@inf , но пойти@pastm град@nom (author: roman): 
-5600 сидеть@imprpl дома — на улица@prep град@nom (author: roman): 
-5601 я@nom бояться@1 град@gen (author: roman): 
-5602 никто@nom не рад@shortm град@dat (author: roman): 
+
+
+
+
+
 5603 — у вы@genpl быть@1 билет@pl в@std кино ? — да , быть@1 (author: pasha): 
 5604 — Саша@nom быть@1 дома ? — быть@1 ! (author: pasha): 
 5605 пожалуйста , повторять@imprpl за я@instr . (author: andreas): Please repeat after me.
@@ -6264,6 +6268,9 @@
 6267 опаздывать@inf быть@pastn для он@genalt в@std порядок@prep вещь@genpl . (author: roman): 
 
 
+
+
+
 6273 прекратить@impr говорить@inf и слушать@impr музыка@acc . (author: roman): Do stop talking and listen to the music.
 6274 пожалуйста , прекратить@imprpl война@acc . (author: roman): 
 6275 ты@nom прекратить@2 бояться@inf , когда ты@nom прекратить@2 надеяться@inf . (author: roman): 
@@ -6746,7 +6753,7 @@
 6752 ждать@impr в@std машина@prep . (author: sergei): 
 6753 ждать@impr тут . (author: sergei): You wait right here.
 6754 ждать@impr ! (author: sergei): Wait!
-6755 ждать@impr я@gen там . (author: sergei): 
+6755 ждать@impr я@gen там , я@nom скоро@adv вернуться@1 . (author: sergei): 
 6756 мама@nom , не ждать@impr я@acc к@std обед@dat . (author: sergei): 
 6757 ждать@impr здесь , пока он@nom не вернуться@3 . (author: sergei): Wait here till he comes back.
 6758 не ждать@impr , что@acc я@nom стать@1 помогать@inf ты@dat с@std домашний@instrn задание@instr . (author: sergei): 
