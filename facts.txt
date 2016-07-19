@@ -150,7 +150,7 @@ grammar: y-esh-et@2pl, tag: verb
 красив--ый: beautiful, inflect: adj
 дом--: home, house, inflect: masc3
 работ--а: work, job, inflect: fem
-дн--<ень: day, inflect: -день
+дн--<ень: day, inflect: -день, tag: time
 кажд--ый: every, inflect: adj
 grammar: -день@nom
 grammar: -что@nom
@@ -185,12 +185,12 @@ grammar: adj@accinanpl, tag: accusative
 grammar: yo-yosh-yot@2, tag: verb
 скучн--ый: boring, inflect: ныйadj
 и: and
-одн--<ин: one, alone, inflect: -один
+одн--<ин: one, alone, inflect: -один, tag: number
 grammar: adj@accn, tag: accusative
 там: there
 grammar: -один@m
 grammar: -один@f
-дв--а: two, inflect: -два
+дв--а: two, inflect: -два, tag: number
 grammar: -три@pl
 grammar: -два@pl
 тр--и: three, inflect: -три, tag: number
@@ -250,10 +250,10 @@ grammar: -этот@accf, tag: accusative
 grammar: -я@gen, tag: genitive
 бутылк--а: bottle, inflect: femka
 grammar: -он@gen, tag: genitive
-пят--ь: five, inflect: -пять
-шест--ь: six, inflect: -пять
+пят--ь: five, inflect: -пять, tag: number
+шест--ь: six, inflect: -пять, tag: number
 десят--ь: ten, inflect: -пять
-четыр--е: four, inflect: -четыре
+четыр--е: four, inflect: -четыре, tag: number
 grammar: femяь@datpl, tag: dative
 grammar: adj@datpl, tag: dative
 grammar: adj@datn, tag: dative
@@ -312,7 +312,7 @@ grammar: femя@nom
 grammar: -писать@inf, tag: verb
 жен--а: wife, inflect: -жена
 отц--<ец: father, inflect: -отец, tag: animate
-год--: year, inflect: -год
+год--: year, inflect: -год, tag: time
 grammar: n@datpl, tag: dative
 grammar: -свой@prepm, tag: prepositional
 его: his
@@ -386,7 +386,7 @@ grammar: егоadj@datf, tag: dative
 grammar: егоadj@datm, tag: dative
 конц--<ец: end, inflect: -конец
 мест--о: place, space, inflect: neu
-час--: time, clock, inflect: masc
+час--: time, clock, inflect: masc, tag: time
 grammar: -статья@instr, tag: instrumental
 grammar: -нравиться@1, tag: verb
 яйц--о: egg, inflect: -яйцо
@@ -431,7 +431,7 @@ grammar: -пить@pastm, tag: verb
 grammar: sya@2pl, tag: verb
 воскресень--е: Sunday, inflect: -воскресенье
 пятниц--а: Friday, inflect: -улица
-месяц--: month, inflect: -месяц
+месяц--: month, inflect: -месяц, tag: time
 grammar: adj@accinanm, tag: accusative
 grammar: adj@instrm, tag: instrumental
 боли--<еть: to be ill, inflect: -смотреть
@@ -487,15 +487,15 @@ grammar: -пить@2, tag: verb
 домой: home (direction)
 grammar: -есть@3, tag: verb
 grammar: -хотеть@2pl, tag: verb
-сем--ь: seven, inflect: -пять
+сем--ь: seven, inflect: -пять, tag: number
 музе--й: museum, inflect: -случай
 grammar: -есть@1, tag: verb
 ст--о: a hundred, inflect: -сто
-девят--ь: nine, inflect: -пять
+девят--ь: nine, inflect: -пять, tag: number
 рубл--ь: ruble, inflect: -словарь
 grammar: -выйти@pastm, tag: verb
 grammar: neu@gen, tag: genitive
-восемь: eight
+восемь: eight, tag: number
 тысяч--а: mil, inflect: -улица
 grammar: -ходить@1, tag: verb
 забуд--<<ыть: to forget, inflect: -бытьfut
