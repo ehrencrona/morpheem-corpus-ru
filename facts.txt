@@ -7,7 +7,7 @@ grammar: fem@nom
 grammar: adj@f
 чёрн--ый: black, inflect: -чёрный
 где: where, tag: question
-лошад--ь: horse, inflect: -лошадь
+лошад--ь: horse, inflect: -лошадь, tag: animate
 grammar: femь@nom
 мыш--ь: mouse, inflect: -мышь, tag: animate
 маленьк--ий: small, inflect: -маленький
@@ -75,7 +75,7 @@ grammar: it-im-ite@2, tag: verb
 встреча--ть[meet]: meet, inflect: ать
 гуля--ть: take a walk, inflect: ать
 отличн--ый: excellent, inflect: ныйadj
-друг--: friend, inflect: -друг
+друг--: friend, inflect: -друг, tag: animate
 студент--: student, inflect: masc-animate
 дома: at home
 grammar: abstr-masc-anim@acc, tag: accusative
@@ -345,7 +345,7 @@ grammar: adj@accanpl, tag: accusative
 grammar: abstr-anim@accpl, tag: accusative
 grammar: -быть@inf, tag: verb
 стан--<ть: to become, inflect: -стать
-дет--ь: children, inflect: -люди, mask: sg
+дет--ь: children, inflect: -люди, tag: animate, mask: sg
 grammar: -смотреть@inf, tag: verb
 весн--а: spring, inflect: -весна, tag: at-instr, mask: pl
 лет--о: summer, inflect: neu, tag: at-instr, mask: pl
@@ -398,7 +398,7 @@ grammar: -стул@pl
 grammar: -хотеть@3pl, tag: verb
 grammar: -давать@impr, tag: verb
 дожд--ь: rain, inflect: -словарь, tag: rain
-ноч--ь: night, inflect: femь-я-to-а, tag: at-inst
+ноч--ь: night, inflect: femь-я-to-а, tag: at-inst, tag: at-instr
 grammar: -стул@genpl, tag: genitive
 начина--ть: to begin, inflect: ать
 солнц--е: sun, inflect: -солнце
@@ -594,7 +594,7 @@ grammar: neuie@prep, tag: prepositional
 раньше: before, previously
 grammar: -наш@accf, tag: accusative
 grammar: n@instrpl, tag: instrumental
-дочер--<<ь: daughter, inflect: -мать
+дочер--<<ь: daughter, inflect: -мать, tag: animate
 пример--: example, inflect: masc
 grammar: -наш@m
 иде--я: idea, inflect: -идея
@@ -825,7 +825,7 @@ grammar: -весь@genpl, tag: genitive
 цел--ый: whole, entire, inflect: adj
 кроме: apart from
 grammar: -сын@genpl, tag: genitive
-grammar: -мы@instrpl, tag: instrumental
+grammar: -мы@instrpl, tag: instrumental, tag: animate
 grammar: -ты@instr, tag: instrumental
 парн--<ень: guy, inflect: -парень
 grammar: -остаться@impr, tag: verb
@@ -1196,6 +1196,8 @@ grammar: -время@genpl, tag: genitive
 реши--ть: to decide, to solve, inflect: -учить
 получи--ть: to receive, inflect: -учить
 grammar: -воскресенье@genpl, tag: genitive
+phrase: not-gen
+phrase: 2-gen
 phrase: о-prep
 наконец: finally
 хоть: at least, even though
@@ -1204,7 +1206,6 @@ phrase: в-час
 узна--ть: to find out, to recognize, inflect: ать
 словно: as if
 phrase: в-num-час
-phrase: 2-gen
 надея--ться: to hope, inflect: -надеяться
 гляди--<еть: to look, to stare, inflect: -глядеть
 уставш--ий: tired, inflect: adj
@@ -1216,7 +1217,6 @@ grammar: ать@impr, tag: verb
 настоящий: real
 спин--а: back, inflect: fem
 точно: exactly
-phrase: not-gen
 phrase: gen-of
 среди: among
 пусть: let
@@ -1368,3 +1368,4 @@ phrase: в-курсе
 цветк--<ок: flower, inflect: -цветок
 занятой: busy, inflect ойadj
 phrase: verb-acc
+phrase: с-чем
