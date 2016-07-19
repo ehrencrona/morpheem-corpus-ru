@@ -345,7 +345,7 @@ grammar: adj@accanpl, tag: accusative
 grammar: abstr-anim@accpl, tag: accusative
 grammar: -быть@inf, tag: verb
 стан--<ть: to become, inflect: -стать
-дет--ь: children, inflect: -люди, tag: animate, mask: sg
+дет--ь: children, inflect: -люди, mask: sg
 grammar: -смотреть@inf, tag: verb
 весн--а: spring, inflect: -весна, tag: at-instr, mask: pl
 лет--о: summer, inflect: neu, tag: at-instr, mask: pl
@@ -468,7 +468,7 @@ grammar: -случай@nom
 grammar: -есть@inf, tag: verb
 мор--е: sea, inflect: -море
 коротк--ий: short, inflect: adj
-кофе: coffee
+кофе: coffee, tag: uncountable
 grammar: -есть@pastm, tag: verb
 grammar: -дать@2, tag: verb
 осен--ь: autumn, inflect: femь, tag: at-instr, mask: pl
@@ -649,7 +649,7 @@ grammar: -вы@genpl, tag: genitive
 ед--<хать: to go by vehicle on land, inflect: -ехать
 grammar: -конец@nom
 grammar: -они@datpl, tag: dative
-ча--й: tea, inflect: -чай
+ча--й: tea, inflect: -чай, tag: uncountable
 ходи--ть: to walk on foot, to go, inflect: -ходить
 grammar: -открыть@inf, tag: verb
 фрукт--: fruit, inflect: masc
@@ -660,7 +660,7 @@ grammar: -словарь@nom
 стои--ть: to cost, inflect: -стоить
 скаж--<зать: to say, to tell, inflect: -сказать
 grammar: -год@prep, tag: prepositional
-вод--а: water, inflect: fem
+вод--а: water, inflect: fem, tag: uncountable
 так--ой: such, so, inflect: ойadj
 проблем--а: problem, inflect: fem
 grammar: -кто@gen, tag: genitive
@@ -1198,6 +1198,8 @@ grammar: -время@genpl, tag: genitive
 grammar: -воскресенье@genpl, tag: genitive
 phrase: not-gen
 phrase: 2-gen
+phrase: три-gen
+phrase: четыре-gen
 phrase: о-prep
 наконец: finally
 хоть: at least, even though
@@ -1264,11 +1266,9 @@ phrase: at-instr
 phrase: more-than
 пробежи--<ать: to run, inflect: -пробежать
 потеря--ть: to lose, inflect: ать
-phrase: три-gen
 роди--ть: to give birth, inflect: -ходить
 стира--ть: to wash clothes, inflect: ать
 отношени--е: relation, inflect: neuie
-phrase: четыре-gen
 phrase: мало-gen
 напиш--<сать: to write, inflect: -писать
 отношени--е[regard]: regard, inflect: neuie
@@ -1369,3 +1369,9 @@ phrase: в-курсе
 занятой: busy, inflect ойadj
 phrase: verb-acc
 phrase: с-чем
+phrase: говорить-с
+phrase: встречать-с
+phrase: обращаться-с
+phrase: обращаться-к
+phrase: у-его-нет
+phrase: у-кого
