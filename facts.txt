@@ -17,7 +17,7 @@ grammar: masc@nom
 grammar: adj@m
 свитер--: sweater, inflect: masc
 университет--: university, inflect: masc
-в--: in, at, inflect: oprep
+в--: in, at, inflect: oprep, tag: untranslatable
 grammar: oprep@std
 grammar: n@prep, tag: prepositional
 планшет--: tablet, inflect: masc
@@ -36,7 +36,7 @@ grammar: -она@nom
 Маш--а: , inflect: -улица, tag: animate, mask: pl
 школ--а: school, inflect: fem
 улиц--а: street, inflect: -улица
-на: on, 
+на: on, , tag: untranslatable
 газон--: lawn, inflect: masc
 работа--ть: work, inflect: ать
 grammar: ать@1, tag: verb
@@ -119,7 +119,7 @@ grammar: femь@instr, tag: instrumental
 стол--: table, desk, inflect: masc
 grammar: masc@instr, tag: instrumental
 стул--: chair, inflect: -стул
-за: behind
+за: behind, tag: untranslatable
 штор--а: curtain, inflect: fem
 двер--ь: door, inflect: femь
 открыт--ый: open, inflect: adj
@@ -220,7 +220,7 @@ grammar: -нравиться@3pl, tag: verb
 grammar: -он@dat, tag: dative
 grammar: -ты@dat, tag: dative
 хоч--<теть: to wish, to want, inflect: -хотеть
-с--: with, from, inflect: oprep
+с--: with, from, inflect: oprep, tag: untranslatable
 ед--а: food, inflect: fem
 grammar: fem@instr, tag: instrumental
 интернет--: internet, inflect: masc
@@ -245,7 +245,7 @@ grammar: n@preppl, tag: prepositional
 grammar: femяь@gen, tag: genitive
 grammar: fem@gen, tag: genitive
 grammar: masc@gen, tag: genitive
-у: by, also indicates "to have"
+у: by, also indicates "to have", tag: untranslatable
 grammar: -этот@accf, tag: accusative
 grammar: -я@gen, tag: genitive
 бутылк--а: bottle, inflect: femka
@@ -339,7 +339,7 @@ grammar: y-esh-et@1pl, tag: verb
 её: her, hers
 деньг--а: money, inflect: -деньга, mask: sg
 grammar: adj@accanpl, tag: accusative
-по: on
+по: on, tag: untranslatable
 холодн--ый: cold, inflect: ныйadj
 вечер--: evening, inflect: masc3, tag: at-instr
 grammar: abstr-anim@accpl, tag: accusative
@@ -355,13 +355,13 @@ grammar: adj@accanm, tag: accusative
 потому что: because
 учител--ь: teacher, inflect: -учитель, tag: animate
 grammar: -учить@3pl, tag: verb
-к--: to, towards, inflect: oprep
+к--: to, towards, inflect: oprep, tag: untranslatable
 но: but
 из: from
 grammar: femь@dat, tag: dative
 grammar: -спать@inf, tag: verb
 ещё: still, also, more
-о--: about, inflect: -о
+о--: about, inflect: -о, tag: untranslatable
 grammar: neuie@nom
 русск--ий: Russian, inflect: adj
 английск--ий: English, inflect: adj
@@ -710,7 +710,7 @@ grammar: -казаться@pastm, tag: verb
 может быть: maybe
 grammar: -мать@nom
 grammar: -казаться@inf, tag: verb
-до: to, before
+до: to, before, tag: untranslatable
 мож--<чь: can, be able to, inflect: -мочь
 если: if
 grammar: it-im-ite@impr, tag: verb
@@ -1145,7 +1145,7 @@ grammar: -дерево@instrpl, tag: instrumental
 grammar: -набрать@inf, tag: verb
 grammar: -показать@inf, tag: verb
 возьм--<<<<зять: to take, inflect: -взять
-над: above, over
+над: above, over, tag: untranslatable
 grammar: -хотеть@inf, tag: verb
 хотя: even though
 земл--я: earth, land, inflect: -земля
@@ -1200,6 +1200,9 @@ phrase: not-gen
 phrase: 2-gen
 phrase: три-gen
 phrase: четыре-gen
+phrase: много-gen
+phrase: немного-gen
+phrase: мало-gen
 phrase: о-prep
 наконец: finally
 хоть: at least, even though
@@ -1255,7 +1258,6 @@ phrase: с-чего-взял
 возможност--ь: possibility, chance, inflect: femь
 карман--: pocket, inflect: masc
 phrase: time-acc
-phrase: много-gen
 прочита--ть: to read, inflect: ать
 стара--ться: to try, to strive, inflect: -пытаться
 phrase: без-gen
@@ -1269,10 +1271,8 @@ phrase: more-than
 роди--ть: to give birth, inflect: -ходить
 стира--ть: to wash clothes, inflect: ать
 отношени--е: relation, inflect: neuie
-phrase: мало-gen
 напиш--<сать: to write, inflect: -писать
 отношени--е[regard]: regard, inflect: neuie
-phrase: немного-gen
 способн--ый: able, capable, inflect: adj
 единственный: the only
 начина--ться: to begin, inflect: -пытаться
@@ -1375,3 +1375,10 @@ phrase: обращаться-с
 phrase: обращаться-к
 phrase: у-его-нет
 phrase: у-кого
+phrase: из-gen-departure
+phrase: at-datpl
+grammar: abstr-ийadj@genpl
+grammar: abstr-ийadj@datpl
+grammar: abstr-ийadj@preppl
+grammar: abstr-ийadj@instrm
+grammar: abstr-ийadj@m

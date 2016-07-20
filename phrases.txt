@@ -9,19 +9,19 @@ gen-possession: "кого-то что-то" "" noun tag:animate@gen
 teach: "научить кого-то чему-то" "" научить@ any dat
 рад-dat: "рад чему-то" "" рад@ dat
 чем-чем: "чем ... тем ..." "" что@instr any тот@instrn
-если-то: "если ... то" "" если@ any то[если]@
+если-то: "если ... то" "if ... then ... " если@ any то[если]@
 how-old: "сколько лет кому-то ... ?" "how old is someone?" сколько@ год@genpl dat
 с-gen: "с чего" "from somewhere/someone/something" с@ gen
 с-чего-взял: "с чего кто-то взять" "" с@ что@gen tag:animate взять@
-time-acc: "время (interval/repeating)" "for a time period" adjective* tag:time@acc
-много-gen: "много чего-то" "many/a lot of something" много@ gen
+time-acc: "время (interval/repeating)" "for a certain amount of time" adjective* tag:time@acc
+много-gen: "много чего-то (A1)" "many/a lot of something" много@ gen
 без-gen: "без чего-то" "without something" без@ gen
-at-instr: "утром / вечером / зимой ..." "in the morning/evening/winter/..." tag:at-instr
+at-instr: "утром / вечером / зимой ..." "in the morning/evening/winter/..." tag:at-instr@instr
 more-than: "больше / лучше / ... чем чему" "more/better/... than someone/something" comp any что@instr dat
 три-gen: "три чего-то (A1)" "three of something" три@ gen
 четыре-gen: "четыре чего-то (A1)" "four of something" четыре@ gen
-мало-gen: "мало чего-то" "not much something" мало@ gen
-немного-gen: "немного чего-то" "some of something" немного@ gen
+мало-gen: "мало чего-то (A1)" "not much of something" мало@ gen
+немного-gen: "немного чего-то (A1)" "some of something" немного@ gen
 с-instr: "с кем" "together with someone" с@ adjective* tag:animate@instr
 при-prep: "при ком/чём" "" при@ prep
 по-dat: "по кому/чему" "" по@ dat
@@ -30,7 +30,7 @@ more-than: "больше / лучше / ... чем чему" "more/better/... th
 больше-v: "больше что-то делать" "" большой@comp verb
 поверить-dat: "поверить чему-то" "" поверить@ dat
 идти-rain: "идти дождь / снег" "to rain/snow" идти@ any tag:rain
-у-кого-есть: "у кого есть …" "who has a/some" у@ кто@gen any быть@
+у-кого-есть: "у кого есть …" "who has a/some ...?" у@ кто@gen any быть@
 ни-any-кто: "ни ... кто" "no one" ни@ any кто@
 ни-any-что: "ни ... что" "nothing" ни@ any что@
 с-тех-пор: "с тех пор" "" с@ тот@ пора@
@@ -59,3 +59,5 @@ verb-acc: "делать что-то / видить кого-то / ..." "" verb 
 обращаться-к: "обращаться к" "to address someone / turn to someone" обращаться@ к@ dat
 у-его-нет: "у кого-то нет кого-то" "someone does not have something" у@ tag:animate@gen нет@ gen
 у-кого: "у кого" "someone has" у@ tag:animate@gen
+из-gen-departure: "из пункта отправления" "from point of departure" из@ gen
+at-datpl: "по утрам / вечерам ..." "every morning / evening /..." по@ tag:at-instr@datpl
