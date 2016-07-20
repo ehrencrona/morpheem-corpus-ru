@@ -1201,9 +1201,23 @@ phrase: not-gen
 phrase: 2-gen
 phrase: три-gen
 phrase: четыре-gen
+phrase: у-кого
 phrase: много-gen
 phrase: немного-gen
 phrase: мало-gen
+phrase: из-gen-departure
+phrase: с-gen
+phrase: у-кого-location
+phrase: от-gen-departure
+phrase: часть-чего-то
+phrase: до-point-of-destination
+phrase: до-какого-то-времени
+phrase: после-чего-то
+phrase: во-время-чего-то
+phrase: от-кого-source
+phrase: около-чего-то
+phrase: далеко-от-чего-то
+phrase: недалеко-от-чего-то
 phrase: о-prep
 наконец: finally
 хоть: at least, even though
@@ -1251,7 +1265,6 @@ grammar: аться@1pl, tag: verb
 видно: it looks like, obviously
 знакомств--о: acquaintance, inflect: neu
 phrase: how-old
-phrase: с-gen
 прекрати--ть: to cease, to stop, inflect: -спросить
 познакоми--ться: get to know, inflect: -нравиться
 phrase: с-чего-взял
@@ -1375,11 +1388,19 @@ phrase: встречать-с
 phrase: обращаться-с
 phrase: обращаться-к
 phrase: у-его-нет
-phrase: у-кого
-phrase: из-gen-departure
 phrase: at-datpl
-grammar: abstr-ийadj@genpl
-grammar: abstr-ийadj@datpl
-grammar: abstr-ийadj@preppl
-grammar: abstr-ийadj@instrm
+grammar: abstr-ийadj@genpl, tag: genitive
+grammar: abstr-ийadj@datpl, tag: dative
+grammar: abstr-ийadj@preppl, tag: prepositional
+grammar: abstr-ийadj@instrm, tag: instrumental
 grammar: abstr-ийadj@m
+новост--ь: n/a, inflect: femь
+возвраща--ться: n/a, inflect: -пытаться
+phrase: справа-от-чего-то
+phrase: слева-от-чего-то
+phrase: вокруг-чего-то
+phrase: напротив-чего-то
+phrase: среди-чего-то
+phrase: для-чего-то
+phrase: ни-за-что
+phrase: к-кому-чему
