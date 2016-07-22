@@ -11,6 +11,7 @@ grammar: adj@f
 grammar: femь@nom
 мыш--ь: mouse, inflect: -мышь, tag: animate
 маленьк--ий: small, inflect: -маленький
+маленьк--ий: less, inflect: -маленький, mask: allbutcomp
 –: is
 машин--а: car, inflect: fem
 grammar: masc@nom
@@ -96,9 +97,12 @@ grammar: -свой@f
 grammar: ойadj@m
 дорог--ой: expensive, inflect: -дорогой
 grammar: -свой@m
-нет: no, have none
+нет[none]: have none
+нет[part]: have none
 мо--й: my, mine, inflect: -свой, mask: nonstd
 больш--ой: big, inflect: -большой
+больш--ой: more, inflect: -большой, mask: allbutcomp
+больш--ой[longer]: longer, inflect: -большой, mask: allbutcomp
 как--ой: what, which, inflect: ойadj
 очень: very
 погод--а: weather, inflect: fem
@@ -385,7 +389,8 @@ grammar: егоadj@datf, tag: dative
 после: after
 grammar: егоadj@datm, tag: dative
 конц--<ец: end, inflect: -конец
-мест--о: place, space, inflect: neu
+мест--о: place, inflect: neu
+мест--о[space]: space, room, inflect: neu
 час--: time, clock, inflect: masc, tag: time
 час--[clock]: clock, watch, inflect: masc, mask: sg
 grammar: -статья@instr, tag: instrumental
@@ -591,6 +596,7 @@ grammar: -он@prep, tag: prepositional
 реклам--а: advertisement, inflect: fem
 grammar: neuie@prep, tag: prepositional
 счита--ть: to calculate, to count, inflect: ать
+счита--ть[consider]: to consider, inflect: ать
 всё: everything
 раньше: before, previously
 grammar: -наш@accf, tag: accusative
@@ -770,7 +776,8 @@ grammar: -время@nom
 grammar: neuie@preppl, tag: prepositional
 сердц--е: heart, inflect: -сердце
 успех--: success, inflect: masc
-образ--: image, inflect: masc
+образ--[way]: way of doing something, inflect: masc
+образ--[image]: image, inflect: masc
 вокруг: around
 власт--ь: power, inflect: femь
 воздух--: air, inflect: masc
@@ -1351,7 +1358,6 @@ phrase: так-adv
 принес--ти: to bring, inflect: -принести
 сдач--а: change, payback, inflect: -улица
 жени--ться: to marry (a woman), to get married, inflect: -жениться
-phrase: смотреть-с
 grammar: num@accanpl, tag: accusative
 одева--ться: dress, attire, inflect: -пытаться
 оден--<ться: get dressed, dress, inflect: -одеться
@@ -1372,7 +1378,6 @@ grammar: abstr-ийadj@pl
 phrase: бы-не-past
 phrase: следить-за
 phrase: за-то-что
-phrase: во-что-бы-то-ни
 phrase: в-курсе
 почувству--<овать: to feel, to sense, inflect: -чувствовать
 смож--<чь: can, to be able to, manage, inflect: -мочь
@@ -1414,3 +1419,4 @@ phrase: в-направление
 phrase: в-time
 phrase: каждый-time
 phrase: так-же
+phrase: не-больше

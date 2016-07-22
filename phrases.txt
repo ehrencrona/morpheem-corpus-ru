@@ -3,7 +3,7 @@
 в-num-час: "в ... часов" "at [time] o'clock" в@ tag:number час@
 2-gen: "два чего-то (A1)" "two [something]" два@ gen
 per-time: "deleteme" "" в@ tag:time@acc
-not-gen: "нет чего-то (A1)" "there is/are no" нет@ gen
+not-gen: "нет чего-то (A1)" "there is/are no" нет[none]@ gen
 gen-of: "что-то чего-то" "[amount] of [something]" noun tag:uncountable@gen
 gen-possession: "кого-то что-то" "[someone]'s [something]" noun tag:animate@gen
 teach: "научить кого-то чему-то" "teach [someone] [something]" научить@ any dat
@@ -40,16 +40,14 @@ no-matter-what: "во что бы то ни стало" "come what may" в@alt �
 на-пути: "на пути" "on the road" на@ adjective* путь@
 всё-ещё: "всё ещё" "still" всё@ ещё@
 столько-всего: "столько всего" "so much" столько@ всего@
-нет-равных: "нет равных" "have no equal" нет@ равный@genpl
+нет-равных: "нет равных" "have no equal" нет[none]@ равный@genpl
 ни-не: "ни чего-то не " "not anything [of something]" ни@ gen не@
 так-adv: "так много / …" "so much [something]" так@ adv
-смотреть-с: "смотреть с TODO DELETETETETETETE" "look at [something]" смотреть@ с@ gen
 по-карману: "по карману" "can afford" по@ карман@dat
 не-так-ли: "не так ли" "is that not so?" не@ так@ ли@
 бы-не-past: "" "no matter where/what [someone] [did something]" tag:question бы@ tag:animate не@ pastm
 следить-за: "следить за" "take care of [something / someone]" следить@ за@ instr
 за-то-что: "за то, что" "for doing something" за@ тот@accn
-во-что-бы-то-ни: "во что бы то ни стало TODO: duplicate" "no matter what" в@alt что@acc бы@ тот@n ни@ стать@pastn
 в-курсе: "в курсе TODO: might need a second phrase with gen at the end" "to be aware of [something]" в@ курс@prep
 verb-acc: "делать что-то / видить кого-то / ..." "[do (e.g. eat, see, meet, ...) something]" verb acc
 с-чем: "с чем" "with [something or someone]" с@ adjective* instr
@@ -57,7 +55,7 @@ verb-acc: "делать что-то / видить кого-то / ..." "[do (e.
 встречать-с: "встречаться с" "meet (with) [someone]" встречаться@ any с@
 обращаться-с: "обращаться с" "deal with [something] / treat [someone]" обращаться@ с@ instr
 обращаться-к: "обращаться к" "to address / turn to [someone]" обращаться@ к@ dat
-у-его-нет: "у кого-то нет кого-то" "[someone] does not have [something]" у@ tag:animate@gen нет@ gen
+у-его-нет: "у кого-то нет кого-то" "[someone] does not have [something]" у@ tag:animate@gen нет[none]@ gen
 у-кого: "у кого-то (есть) (A1)" "[someone] has [something]" у@ tag:animate@gen
 из-gen-departure: "из пункта отправления (A1)" "from" из@ gen
 at-datpl: "по утрам / вечерам ..." "every [time of day/season]" по@ tag:at-instr@datpl
@@ -90,3 +88,4 @@ comp-gen: "больше / лучше / ... with genitive (B1) - TODO: split into
 в-time: "в (moment in time/day) (A1)" "in [moment in time], on [day]" в@ adjective* tag:time@acc
 каждый-time: "каждый (time)" "every [time]" каждый@ adjective* tag:time@acc
 так-же: "так же" "just like" такой@ же@
+не-больше: "больше не" "no longer" больше[longer]@comp не@
