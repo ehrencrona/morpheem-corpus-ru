@@ -281,9 +281,9 @@ grammar: femka@genpl, tag: genitive
 Владивосток--: , inflect: masc
 вчера: yesterday
 никогда: never
-суббот--а: Saturday, inflect: fem
+суббот--а: Saturday, inflect: fem, tag: time
 grammar: v@pastm, tag: verb
-понедельник--: Monday, inflect: masc
+понедельник--: Monday, inflect: masc, tag: time
 прошл--ый: last, previous, inflect: adj
 недел--я: week, inflect: -неделя
 уже: already
@@ -347,8 +347,8 @@ grammar: -быть@inf, tag: verb
 стан--<ть: to become, inflect: -стать
 дет--ь: children, inflect: -люди, mask: sg
 grammar: -смотреть@inf, tag: verb
-весн--а: spring, inflect: -весна, tag: at-instr, mask: pl
-лет--о: summer, inflect: neu, tag: at-instr, mask: pl
+весн--а: spring, inflect: -весна, tag: at-instr, tag: time, mask: pl
+лет--о: summer, inflect: neu, tag: at-instr, tag: time, mask: pl
 зим--а: winter, inflect: fem, tag: at-instr, mask: pl
 grammar: adj@instrf, tag: instrumental
 grammar: adj@accanm, tag: accusative
@@ -424,14 +424,14 @@ grammar: -стул@instrpl, tag: instrumental
 grammar: -стул@datpl, tag: dative
 разговор--: conversation, inflect: masc
 имен--<<я: name, inflect: -время
-вторник--: Tuesday, inflect: masc
+вторник--: Tuesday, inflect: masc, tag: time
 grammar: -пить@2pl, tag: verb
 grammar: -пить@pastm, tag: verb
-четверг--: Thursday, inflect: masc
-сред--а: Wednesday, inflect: fem
+четверг--: Thursday, inflect: masc, tag: time
+сред--а: Wednesday, inflect: fem, tag: time
 grammar: sya@2pl, tag: verb
-воскресень--е: Sunday, inflect: -воскресенье
-пятниц--а: Friday, inflect: -улица
+воскресень--е: Sunday, inflect: -воскресенье, tag: time
+пятниц--а: Friday, inflect: -улица, tag: time
 месяц--: month, inflect: -месяц, tag: time
 grammar: adj@accinanm, tag: accusative
 grammar: adj@instrm, tag: instrumental
@@ -472,7 +472,7 @@ grammar: -есть@inf, tag: verb
 кофе: coffee, tag: uncountable
 grammar: -есть@pastm, tag: verb
 grammar: -дать@2, tag: verb
-осен--ь: autumn, inflect: femь, tag: at-instr, mask: pl
+осен--ь: autumn, inflect: femь, tag: at-instr, tag: time, mask: pl
 молок--о: milk, inflect: neu, mask: pl
 grammar: -сестра@pl
 обычн--ый: ordinary, inflect: ныйadj
@@ -721,7 +721,7 @@ grammar: -вернуться@2pl, tag: verb
 grammar: -вернуться@2, tag: verb
 дел--о: business, matter, case, inflect: neu
 ну: well, meh, 
-раз--: time, inflect: -раз
+раз--: time, inflect: -раз, tag: time
 grammar: -вернуться@3, tag: verb
 grammar: -казаться@pastpl, tag: verb
 ключ--: key, inflect: -борщ
@@ -1264,7 +1264,6 @@ grammar: аться@1pl, tag: verb
 разве: used instead of inversion in questions
 видно: it looks like, obviously
 знакомств--о: acquaintance, inflect: neu
-phrase: how-old
 прекрати--ть: to cease, to stop, inflect: -спросить
 познакоми--ться: get to know, inflect: -нравиться
 phrase: с-чего-взял
@@ -1279,6 +1278,7 @@ phrase: без-gen
 центральн--ый: central, inflect: adj
 останови--ться: to stop, inflect: -становиться
 phrase: at-instr
+phrase: how-old
 phrase: more-than
 пробежи--<ать: to run, inflect: -пробежать
 потеря--ть: to lose, inflect: ать
@@ -1404,3 +1404,13 @@ phrase: среди-чего-то
 phrase: для-чего-то
 phrase: ни-за-что
 phrase: к-кому-чему
+phrase: ждать-for-something-abstract
+phrase: хотеть-something-abstract
+phrase: comp-gen
+phrase: звать-кого-то
+phrase: на-направление
+phrase: на-завтрак-обед-ужин
+phrase: в-направление
+phrase: в-time
+phrase: каждый-time
+phrase: так-же
