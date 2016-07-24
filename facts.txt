@@ -290,7 +290,7 @@ grammar: femka@genpl, tag: genitive
 grammar: v@pastm, tag: verb
 понедельник--: Monday, inflect: masc, tag: time
 прошл--ый: last, previous, inflect: adj
-недел--я: week, inflect: -неделя
+недел--я: week, inflect: -неделя, tag: time
 уже: already
 grammar: v@pastf, tag: verb
 grammar: v@pastn, tag: verb
@@ -416,7 +416,7 @@ grammar: -пить@3pl, tag: verb
 ответи--ть: to answer, inflect: -ответить
 grammar: -стул@preppl, tag: prepositional
 правд--а: truth, inflect: fem
-минут--а: minute, inflect: fem
+минут--а: minute, inflect: fem, tag: time
 свет--: light, inflect: masc
 grammar: -кошка@genpl, tag: genitive
 grammar: -пить@1pl, tag: verb
@@ -1438,3 +1438,11 @@ phrase: hyperbole
 phrase: доволен-instr
 phrase: ждать-что-то
 phrase: хотеть-что-то
+phrase: за-direction
+phrase: через-direction
+phrase: через-time
+phrase: на-time
+phrase: за-time
+phrase: person-experiencing-a-state
+phrase: по-place-of-movement
+phrase: по-mode-of-communication

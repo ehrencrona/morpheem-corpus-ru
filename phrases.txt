@@ -76,7 +76,7 @@ at-datpl: "по утрам / вечерам ..." "every [time of day/season]" п
 среди-чего-то: "среди чего-то (B1)" "amongst / in the middle of [something]" среди@ gen
 для-чего-то: "для чего-то или кого-то (B1)" "for something or someone" для@ gen
 ни-за-что: "ни за что" "no way" ни@ за@ что@
-к-кому-чему: "к кому-то, чему-то" "to go to [someone or something]" к@ dat
+к-кому-чему: "к (кому-то, чему-то) (A1)" "to go to [someone or something]" к@ dat
 ждать-for-something-abstract: "ждать for something abstract (B1)" "wait for [something abstract]" ждать@ gen
 хотеть-something-abstract: "хотеть something abstract (B1)" "to want [something abstract]" хотеть@ gen
 comp-gen: "больше / лучше / ... with genitive (B1) - TODO: split into 'more' and 'more than' (and 'most of'?)" "comperative with genitive when don't use 'than'" comp gen
@@ -98,3 +98,11 @@ hyperbole: "hyperbole" "hyperbole" instr
 доволен-instr: "доволен" "satisfied with" довольный@ instr
 ждать-что-то: "ждать for something (B1)" "wait [for something or someone] (B1)" ждать@ acc
 хотеть-что-то: "хотеть [something or someone] (B1)" "want [something or someone] (B1)" хотеть@ acc
+за-direction: "за (направление) (B1)" "behind/beyond [direction]" за@ acc
+через-direction: "через (направление) (B1)" "across, through [direction]" через@ acc
+через-time: "через (время) (B1)" "after, in [time]" через@ any tag:time
+на-time: "на (время) (B1)" "for [time]" на@ tag:time@acc
+за-time: "за (время) (B1)" "in [time]" за@ tag:time@acc
+person-experiencing-a-state: "кому-то хорошо/плохо... (A2)" "a person experiencing a state" noun@dat adv
+по-place-of-movement: "по (дороге/улице...)" "along, on [somewhere]" по@ dat
+по-mode-of-communication: "по (телефону/телевизору....) (A2)" "on [mode of communication]" по@ dat
