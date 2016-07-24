@@ -18,7 +18,7 @@ grammar: masc@nom
 grammar: adj@m
 свитер--: sweater, inflect: masc
 университет--: university, inflect: masc
-в--: in, at, inflect: oprep, tag: untranslatable
+в--: n/a, inflect: oprep, tag: untranslatable
 grammar: oprep@std
 grammar: n@prep, tag: prepositional
 планшет--: tablet, inflect: masc
@@ -37,7 +37,7 @@ grammar: -она@nom
 Маш--а: , inflect: -улица, tag: animate, mask: pl
 школ--а: school, inflect: fem
 улиц--а: street, inflect: -улица
-на: on, , tag: untranslatable
+на: n/a, tag: untranslatable
 газон--: lawn, inflect: masc
 работа--ть: work, inflect: ать
 grammar: ать@1, tag: verb
@@ -108,7 +108,8 @@ grammar: -свой@m
 погод--а: weather, inflect: fem
 сегодня: today
 завтра: tomorrow
-зов--<<вать: to call, to invite, inflect: -звать
+зов--<<вать: to call, inflect: -звать
+зов--<<вать[invite]: to invite, inflect: -звать
 grammar: -жить@3pl, tag: verb
 тво--й: your, yours, inflect: -свой, mask: nonstd
 телефон--: telephone, inflect: masc
@@ -123,7 +124,7 @@ grammar: femь@instr, tag: instrumental
 стол--: table, desk, inflect: masc
 grammar: masc@instr, tag: instrumental
 стул--: chair, inflect: -стул
-за: behind, tag: untranslatable
+за: n/a, tag: untranslatable
 штор--а: curtain, inflect: fem
 двер--ь: door, inflect: femь
 открыт--ый: open, inflect: adj
@@ -224,7 +225,7 @@ grammar: -нравиться@3pl, tag: verb
 grammar: -он@dat, tag: dative
 grammar: -ты@dat, tag: dative
 хоч--<теть: to wish, to want, inflect: -хотеть
-с--: with, from, inflect: oprep, tag: untranslatable
+с--: n/a, inflect: oprep, tag: untranslatable
 ед--а: food, inflect: fem
 grammar: fem@instr, tag: instrumental
 интернет--: internet, inflect: masc
@@ -249,7 +250,7 @@ grammar: n@preppl, tag: prepositional
 grammar: femяь@gen, tag: genitive
 grammar: fem@gen, tag: genitive
 grammar: masc@gen, tag: genitive
-у: by, also indicates "to have", tag: untranslatable
+у: n/a, tag: untranslatable
 grammar: -этот@accf, tag: accusative
 grammar: -я@gen, tag: genitive
 бутылк--а: bottle, inflect: femka
@@ -343,7 +344,7 @@ grammar: y-esh-et@1pl, tag: verb
 её: her, hers
 деньг--а: money, inflect: -деньга, mask: sg
 grammar: adj@accanpl, tag: accusative
-по: on, tag: untranslatable
+по: n/a, tag: untranslatable
 холодн--ый: cold, inflect: ныйadj
 вечер--: evening, inflect: masc3, tag: at-instr
 grammar: abstr-anim@accpl, tag: accusative
@@ -359,13 +360,13 @@ grammar: adj@accanm, tag: accusative
 потому что: because
 учител--ь: teacher, inflect: -учитель, tag: animate
 grammar: -учить@3pl, tag: verb
-к--: to, towards, inflect: oprep, tag: untranslatable
+к--: n/a, inflect: oprep, tag: untranslatable
 но: but
 из: from
 grammar: femь@dat, tag: dative
 grammar: -спать@inf, tag: verb
 ещё: still, also, more
-о--: about, inflect: -о, tag: untranslatable
+о--: n/a, inflect: -о, tag: untranslatable
 grammar: neuie@nom
 русск--ий: Russian, inflect: adj
 английск--ий: English, inflect: adj
@@ -390,8 +391,8 @@ grammar: егоadj@datf, tag: dative
 grammar: егоadj@datm, tag: dative
 конц--<ец: end, inflect: -конец
 мест--о: place, inflect: neu
-мест--о[space]: space, room, inflect: neu
-час--: time, clock, inflect: masc, tag: time
+мест--о[room]: space, room, inflect: neu
+час--: time, inflect: masc, tag: time
 час--[clock]: clock, watch, inflect: masc, mask: sg
 grammar: -статья@instr, tag: instrumental
 grammar: -нравиться@1, tag: verb
@@ -596,7 +597,7 @@ grammar: -он@prep, tag: prepositional
 реклам--а: advertisement, inflect: fem
 grammar: neuie@prep, tag: prepositional
 счита--ть: to calculate, to count, inflect: ать
-счита--ть[consider]: to consider, inflect: ать
+счита--ть[consider]: to consider someone to be something, inflect: ать
 всё: everything
 раньше: before, previously
 grammar: -наш@accf, tag: accusative
@@ -717,7 +718,7 @@ grammar: -казаться@pastm, tag: verb
 может быть: maybe
 grammar: -мать@nom
 grammar: -казаться@inf, tag: verb
-до: to, before, tag: untranslatable
+до: n/a, tag: untranslatable
 мож--<чь: can, be able to, inflect: -мочь
 если: if
 grammar: it-im-ite@impr, tag: verb
@@ -1153,7 +1154,7 @@ grammar: -дерево@instrpl, tag: instrumental
 grammar: -набрать@inf, tag: verb
 grammar: -показать@inf, tag: verb
 возьм--<<<<зять: to take, inflect: -взять
-над: above, over, tag: untranslatable
+над: n/a, tag: untranslatable
 grammar: -хотеть@inf, tag: verb
 хотя: even though
 земл--я: earth, land, inflect: -земля
