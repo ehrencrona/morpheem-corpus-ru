@@ -60,7 +60,7 @@ masc-animate[n]: inherit abstr-masc-anim, inherit masc
 -доктор[n]: pl а, inherit masc-animate
 -сосед[n]: pl и, datpl ям, instrpl ями, preppl ях, inherit -врач
 masc3[n]: pl а, inherit masc
--лес[n]: prep у, inherit masc3
+-лес[n]: prep у, loc у, inherit masc3
 -глаз[n]: genpl , inherit masc3
 mascе[n]: "masculine nouns ending in е" nom е, inherit abstr-soft-final, inherit masc3
 -солнце[n]: genpl , inherit mascе
@@ -85,6 +85,7 @@ mascе[n]: "masculine nouns ending in е" nom е, inherit abstr-soft-final, inhe
 mascь-animate[n]: inherit abstr-masc-anim, inherit -mascь
 -учитель[n]: pl я, inherit mascь-animate
 -парень[n]: nom <ень, inherit mascь-animate
+-гость[n]: loc и, locpl ях, inherit mascь-animate
 adj[adj]: m ый, n ое, f ая, pl ые, genm ого, genn genm-, genf ой, genpl ых, datm ому, datn datm-, datf ой, datpl ым, accinanm m-, accanm genm-, accn n-, accf ую, accinanpl pl-, accanpl genpl-, instrm ым, instrn instrm-, instrf ой, instrpl instrm-и, prepm ом, prepn prepm-, prepf ой, preppl ых, shortm , shortn shortm-о, shortf shortm-а, shortpl shortm-ы, adv о, comp shortf-<ее, transform yToI
 ойadj[adj]: m ой, inherit adj
 abstr-ийadj[adj]: m ий, pl ие, genpl их, datpl им, instrm им, preppl их
@@ -95,6 +96,8 @@ eeadj[adj]: "adjectives having ж, ч, ш, щ, ц, and н before the ending and 
 -поздний[adj]: inherit abstr-ийadj, inherit eeadj
 -похожий[adj]: adv <<<<<похоже, inherit eeadj
 -хороший[adj]: comp <<<<<лучше, inherit eeadj
+-плохой[adj]: comp <<<<хуже, inherit ойadj
+-долгий[adj]: comp <ьше, inherit adj
 -наш[adj]: m , n е, f а, pl и, accf у, inherit егоadj
 -домашний[adj]: "adjectives ending in -ний" f яя, accf юю, shortm <ен, shortn е, shortf я, shortpl и, inherit eeadj
 -свой[adj]: m й, n ё, f я, pl и, accf ю, prepm ём, inherit егоadj
@@ -134,7 +137,7 @@ oprep[prep]: std , alt о
 -кто[case]: nom кто, gen кого, dat кому, acc кого, instr кем, prep ком
 -один[num]: m <ин, n о, f а, pl и, genpl их, datpl им, accn о, accf у, instrm им, instrpl ими, preppl их, inherit adj
 num[num]: accanpl genpl-, accinanpl pl-
--два[num]: pl а, genpl ух, datpl ум, instrpl умя, preppl ух, inherit num
+-два[num]: pl а, fpl е, accpl pl-, accinanfpl fpl-, genpl ух, datpl ум, instrpl умя, preppl ух, inherit num
 -три[num]: pl и, genpl ёх, datpl ём, instrpl емя, preppl ёх, inherit num
 -четыре[num]: pl е, instrpl ьмя, inherit -три
 -пять[num]: pl ь, genpl и, datpl и, instrpl ью, preppl и, inherit num
