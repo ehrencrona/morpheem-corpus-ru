@@ -12,7 +12,7 @@ teach: "научить кого-то чему-то" "teach [someone] [something]
 если-то: "если ... то" "if [something] then [something]" если@ any то[если]@
 how-old: "сколько лет кому-то ... ?" "how old is [someone]?" сколько@ год@genpl dat
 с-gen: "с пункта отправления (A1)" "from [somewhere]" с@ gen
-с-чего-взял: "с чего кто-то взять" "where did [someone] get [some idea] from?" с@ что@gen tag:animate взять@
+с-чего-взял: "с чего кто-то взял" "where did [someone] get [some idea] from?" с@ что@gen tag:animate взять@
 time-acc: "время (interval/repeating) TODO: only apply this one if nothing with prepositions applies(A1)" "for a [certain amount of time]" adjective@* tag:time@acc
 много-gen: "много чего-то (A1)" "many/a lot of [something]" много@ gen
 без-gen: "без чего-то (B1)" "without [something]" без@ gen
@@ -22,7 +22,7 @@ more-than: "больше / лучше / ... чем чему" "[more something] t
 четыре-gen: "четыре чего-то (A1)" "four [something]" четыре@ gen
 мало-gen: "мало чего-то (A1)" "not much/many [something]" мало@ gen
 немного-gen: "немного чего-то (A1)" "some [something]" немного@ gen
-с-instr: "с кем" "together with [someone]" с@ adjective@* tag:animate@instr
+с-instr: "с (кем-то) (A1)" "together with [someone]" с@ adjective@* tag:animate@instr
 при-prep: "при ком/чём" "[someone] having [an item] with him/her" при@ prep
 по-dat: "по кому/чему TODO: split up" "on [something]" по@ dat
 сам-по-себе: "сам по себе" "by -self" сам@ по@ себя@dat
@@ -48,7 +48,7 @@ no-matter-what: "во что бы то ни стало" "come what may" в@alt �
 за-то-что: "за то, что" "for doing something" за@ тот@accn
 в-курсе: "в курсе TODO: might need a second phrase with gen at the end" "to be aware" в@ курс@prep
 verb-acc: "делать что-то / видить кого-то / ..." "[verb@+] [something]" verb@+ acc
-с-чем: "с чем" "with [something or someone]" с@ adjective@instr* instr
+с-чем: "с (чем-то) (A1)" "with [something or someone]" с@ adjective@instr* instr
 говорить-с: "говорить с кем" "talk to [someone]" говорить@ с@ instr
 встречать-с: "встречаться с" "meet (with) [someone]" встречаться@ any с@
 обращаться-с: "обращаться с" "deal with [something] / treat [someone]" обращаться@ с@ instr
@@ -56,7 +56,7 @@ verb-acc: "делать что-то / видить кого-то / ..." "[verb@+
 у-его-нет: "у кого-то нет кого-то" "[someone] does not have [something]" у@ gen нет[none]@ gen
 у-кого: "у кого-то (есть) (A1)" "[someone] has" у@ tag:animate@gen
 из-gen-departure: "из пункта отправления (A1)" "from" из@ gen
-at-datpl: "по утрам / вечерам ..." "every [time of day/season]" по@ tag:at-instr@datpl
+at-datpl: "по (утрам / вечерам ...) (B1)" "every [day of the week/time of day/season] " по@ tag:time@datpl
 у-кого-location: "у кого-то (место) (A2)" "at [someone]'s location" у@ tag:animate@gen
 от-gen-departure: "откуда (A2)" "from where [something] is located" от@ gen
 от-кого-source: "ключ от чего-то" "key to [something]" ключ@ от@ gen
@@ -104,5 +104,18 @@ hyperbole: "hyperbole" "hyperbole" instr
 на-time: "на (время) (B1)" "for [time]" на@ tag:time@acc
 за-time: "за (время) (B1)" "in [time]" за@ tag:time@acc
 person-experiencing-a-state: "кому-то хорошо/плохо... (A2)" "[dat] feel(s) adjective@adv+" tag:animate@dat adjective@adv+
-по-place-of-movement: "по (дороге/улице...)" "along, on [somewhere]" по@ dat
+по-place-of-movement: "по (дороге/улице...) (A2)" "along, on [somewhere]" по@ dat
 по-mode-of-communication: "по (телефону/телевизору....) (A2)" "on [mode of communication]" по@ dat
+как-можно-comp: "как можно (скорее...)" "as [comp] as possible" как@ можно@ comp
+по-definition: "по (математике...) (A2)" "по [definition]" по@ dat
+кому-то-надо: "(кому-то) надо (B1)" "[someone] needs" dat any надо@
+кому-то-нужно: "(кому-то) нужно (A1)" "[someone] needs" dat any нужно@
+на-твоем-месте: "на твоём месте" "in [someone's] position" бы@ на@ adjective@prep место@prep
+кому-то-можно: "(кому-то) можно (B1)" "[someone] may, is allowed to" dat можно@
+кому-то-нельзя: "(кому-то) нельзя (B1)" "[someone] is not allowed" dat нельзя@
+по-очереди: "по очереди" "one by one" по@ очередь@dat
+по-возможности: "по возможности" "if possible" по@ возможность@dat
+заниматься-чем-то: "заниматься (чем-то) (A1)" "to part-take in [activity]" заниматься@ instr
+быть-кем-то: "быть (кем-то) (A1)" "to be [someone]" быть@ instr
+стать-кем-то: "стать (кем-то) (A2)" "to become [someone]" стать@ instr
+работать-кем-то: "работать (кем-то) (A2)" "to work as [someone]" работать@ instr
