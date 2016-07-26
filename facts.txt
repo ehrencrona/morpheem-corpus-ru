@@ -333,7 +333,7 @@ grammar: егоadj@genf, tag: genitive
 grammar: -глядеть@inf, tag: verb
 grammar: -mascь@genpl, tag: genitive
 дерев--о: tree, inflect: -дерево
-утр--о: morning, inflect: neu, tag: at-instr
+утр--о: morning, inflect: neu, tag: at-instr, tag: time
 grammar: -друг@instrpl, tag: instrumental
 язык--[lang]: language, inflect: masc
 сейчас: now
@@ -345,7 +345,7 @@ grammar: y-esh-et@1pl, tag: verb
 grammar: adj@accanpl, tag: accusative
 по: on, tag: untranslatable
 холодн--ый: cold, inflect: ныйadj
-вечер--: evening, inflect: masc3, tag: at-instr
+вечер--: evening, inflect: masc3, tag: at-instr, tag: time
 grammar: abstr-anim@accpl, tag: accusative
 grammar: -быть@inf, tag: verb
 стан--<ть: to become, inflect: -стать
@@ -404,7 +404,7 @@ grammar: -стул@pl
 grammar: -хотеть@3pl, tag: verb
 grammar: -давать@impr, tag: verb
 дожд--ь: rain, inflect: -словарь, tag: rain
-ноч--ь: night, inflect: femь-я-to-а, tag: at-inst, tag: at-instr
+ноч--ь: night, inflect: femь-я-to-а, tag: at-inst, tag: at-instr, tag: time
 grammar: -стул@genpl, tag: genitive
 начина--ть: to begin, inflect: ать
 солнц--е: sun, inflect: -солнце
@@ -467,7 +467,7 @@ grammar: -есть@2, tag: verb
 кричи--<ать: to shout, inflect: -лежать
 снег--: snow, inflect: masc3, tag: rain
 grammar: -жить@impr, tag: verb
-гост--ь: guest, inflect: mascь-animate, inflect: -гость
+гост--ь: guest, inflect: -гость
 зуб--: tooth, inflect: masc
 странн--ый: strange, inflect: ныйadj
 grammar: -случай@nom
@@ -689,7 +689,7 @@ grammar: -весь@pl
 ждё--<ать: to wait, inflect: -ждать
 grammar: adj@instrn, tag: instrumental
 высок--ий: high, tall, inflect: adj
-долг--ий: long (time), inflect: adj, inflect: -долгий
+долг--ий: long (time), inflect: -долгий
 голов--а: head, inflect: fem
 grammar: -остаться@inf, tag: verb
 grammar: -остаться@1, tag: verb
@@ -1160,7 +1160,7 @@ grammar: -хотеть@inf, tag: verb
 меню: menu
 grammar: -хотеть@1pl, tag: verb
 grammar: -жениться@1, tag: verb
-выходн--ой: day off, inflect: ойadj
+выходн--ой: day off, inflect: ойadj, tag: time
 сдела--ть: to make, to do, inflect: ать
 встреча--ться: to meet, inflect: -пытаться
 grammar: -один@accn, tag: accusative
@@ -1438,25 +1438,8 @@ phrase: доволен-instr
 phrase: ждать-что-то
 phrase: хотеть-что-то
 phrase: похоже
-phrase: для-того
-grammar: -цветок@pl
-phrase: давно-пора
-phrase: тут-и-там
-футбол--: n/a, inflect: masc
-phrase: друг-другу
-приед--<хать: n/a, inflect: -ехать
-любим--ый: n/a, inflect: adj
-концерт--: n/a, inflect: masc
-выгляди--<еть: n/a, inflect: -глядеть
-реша--ться: n/a, inflect: -пытаться
-реши--ться: n/a, inflect: -случиться
-phrase: работать-над-чем-то
-phrase: hyperbole
-phrase: доволен-instr
-phrase: ждать-что-то
-phrase: хотеть-что-то
 grammar: -плохой@comp
-grammar: -два@accinanfpl
+grammar: -два@accinanfpl, tag: accusative
 phrase: за-direction
 phrase: через-direction
 phrase: через-time
@@ -1465,3 +1448,17 @@ phrase: за-time
 phrase: person-experiencing-a-state
 phrase: по-place-of-movement
 phrase: по-mode-of-communication
+phrase: как-можно-comp
+phrase: по-definition
+phrase: кому-то-надо
+phrase: кому-то-нужно
+grammar: -маленький@comp, tag: at-instr
+phrase: на-твоем-месте
+phrase: кому-то-можно
+phrase: кому-то-нельзя
+phrase: по-очереди
+phrase: по-возможности
+phrase: заниматься-чем-то
+phrase: быть-кем-то
+phrase: стать-кем-то
+phrase: работать-кем-то
