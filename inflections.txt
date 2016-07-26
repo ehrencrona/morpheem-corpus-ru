@@ -36,7 +36,7 @@ femя[n]: "feminine nouns ending in я" nom я, acc ю, instr ей, inherit fem�
 -весна[n]: pl <<<ёсны, genpl <<<ёсен, datpl <<<ёснам, instrpl <<<ёснами, preppl <<<ёснах, inherit fem
 -жена[n]: pl <<ёны, genpl <<ён, datpl <<ёнам, accpl <<ён, instrpl <<ёнами, preppl <<ёнах, inherit fem
 neu[n]: "neuter nouns" nom о, pl а, gen а, genpl , dat у, instr ом, inherit n
--время[n]: nom <<я, prep и, dat и, gen и, genpl <<ён, inherit abstr-soft-final, inherit neu
+-время[n]: nom <<я, gen и, genpl <<ён, dat и, prep и, inherit abstr-soft-final, inherit neu
 -яблоко[n]: pl и, inherit neu
 -дерево[n]: pl ья, genpl ьев, datpl ьям, accpl pl-, instrpl ьями, preppl ьях, inherit neu
 -окно[n]: genpl <он, inherit neu
@@ -122,7 +122,7 @@ eeadj[adj]: "adjectives having ж, ч, ш, щ, ц, and н before the ending and 
 -этот[adj]: m от, n о, f а, pl и, accf у, inherit ийadj
 -тот[adj]: pl е, genpl ех, datpl ем, instrm ем, preppl ех, inherit -этот
 -сам[adj]: m , inherit -этот
-perspron[pron]: acc: gen-, accpl: genpl-, accalt: genalt-, accplalt: genplalt-
+perspron[pron]: acc gen-, accalt genalt-, accpl genpl-, accplalt genplalt-
 -я[pron]: nom я, gen меня, dat мне, instr мной, prep мне, inherit perspron
 -ты[pron]: nom ты, gen тебя, dat тебе, instr тобой, prep тебе, inherit perspron
 -он[pron]: nom он, gen его, genalt него, dat ему, datalt нему, instr им, instralt ним, prep нём, inherit perspron
@@ -136,8 +136,8 @@ oprep[prep]: std , alt о
 -что[case]: nom что, gen чего, dat чему, acc nom-, instr чем, prep чём
 -кто[case]: nom кто, gen кого, dat кому, acc кого, instr кем, prep ком
 -один[num]: m <ин, n о, f а, pl и, genpl их, datpl им, accn о, accf у, instrm им, instrpl ими, preppl их, inherit adj
-num[num]: accanpl genpl-, accinanpl pl-
--два[num]: pl а, fpl е, accpl pl-, accinanfpl fpl-, genpl ух, datpl ум, instrpl умя, preppl ух, inherit num
+num[num]: accinanpl pl-, accanpl genpl-
+-два[num]: pl а, fpl е, genpl ух, datpl ум, accinanfpl fpl-, instrpl умя, preppl ух, inherit num
 -три[num]: pl и, genpl ёх, datpl ём, instrpl емя, preppl ёх, inherit num
 -четыре[num]: pl е, instrpl ьмя, inherit -три
 -пять[num]: pl ь, genpl и, datpl и, instrpl ью, preppl и, inherit num
@@ -145,7 +145,7 @@ num[num]: accanpl genpl-, accinanpl pl-
 v[v]: "verbs" inf ****, 1 у, pastm inf-<<л, pastn pastm-о, pastf pastm-а, pastpl pastm-и, imprpl impr-те
 y-esh-et[v]: 1pl ем, 2 ешь, 2pl ете, 3 ет, 3pl ут, impr и, inherit v, transform ioToY
 ать[v]: "verbs ending in -ать or -ять" inf ть, 1 ю, 3pl ют, impr й, inherit y-esh-et
--писать[v]: inf <сать, impr и, inherit y-esh-et
+-писать[v]: inf <сать, inherit y-esh-et
 -ехать[v]: inf <хать, impr <<<<<поезжай, inherit y-esh-et
 -бытьfut[v]: inf <<ыть, impr ь, imprpl ьте, inherit y-esh-et
 -выйти[v]: inf <ти, pastm <<шел, pastn pastm-<<ло, pastf pastm-<<ла, pastpl pastm-<<ли, inherit -писать
@@ -153,10 +153,10 @@ y-esh-et[v]: 1pl ем, 2 ешь, 2pl ете, 3 ет, 3pl ут, impr и, inherit 
 -чувствовать[v]: inf <овать, pastm <овал, inherit ать
 -открыть[v]: inf <ыть, inherit ать
 -дать[v]: 1 м, 1pl дим, 2 шь, 2pl дите, 3 ст, 3pl дут, inherit ать
--сказать[v]: inf <зать, impr и, inherit y-esh-et
+-сказать[v]: inf <зать, inherit y-esh-et
 -хотеть[v]: inf <теть, 1pl <тим, 2pl <тите, 3pl <тят, impr <ти, inherit y-esh-et
 -мочь[v]: inf <чь, 1 <гу, 3pl <гут, pastm <г, pastn <гло, pastf <гла, pastpl <гли, impr <ги, inherit y-esh-et
--стать[v]: inf <ть, 3pl ут, impr ь, inherit y-esh-et
+-стать[v]: inf <ть, impr ь, inherit y-esh-et
 yo-yosh-yot[v]: 1pl ём, 2 ёшь, 2pl ёте, 3 ёт, inherit v
 -жить[v]: inf <ть, 3pl ут, impr и, inherit yo-yosh-yot
 -взять[v]: inf <<<<зять, inherit -жить
@@ -226,3 +226,5 @@ sya[v]: inf ться, 1 юсь, 1pl мся, 2 шься, 2pl тесь, 3 тся, 
 -лететь[v]: 1 <<чу, inherit -смотреть
 -вегетарианец[n]: genpl ев, instr ем, inherit -отец
 -голодный[adj]: inherit adj
+-платье[n]: genpl ев, inherit -воскресенье
+-интересоваться[v]: inf <оваться, pastm <овался, inherit -пытаться

@@ -13,7 +13,7 @@ grammar: femь@nom
 маленьк--ий: small, inflect: -маленький
 маленьк--ий: less, inflect: -маленький, mask: allbutcomp
 –: is
-машин--а: car, inflect: fem
+машин--а: car, inflect: fem, tag: tansport
 grammar: masc@nom
 grammar: adj@m
 свитер--: sweater, inflect: masc
@@ -279,7 +279,7 @@ grammar: femka@genpl, tag: genitive
 помни--ть: to remember, inflect: -дарить
 буд--<<ыть[fut]: to be, inflect: -бытьfut, mask: past
 математик--а: mathematics, inflect: fem
-французск--ий: french, inflect: adj
+французск--ий: french, inflect: adj, tag: language
 словар--ь: dictionary, vocabulary, inflect: -словарь
 когда: when
 Владивосток--: , inflect: masc
@@ -368,8 +368,8 @@ grammar: -спать@inf, tag: verb
 ещё: still, also, more
 о--: about, inflect: -о, tag: untranslatable
 grammar: neuie@nom
-русск--ий: Russian, inflect: adj
-английск--ий: English, inflect: adj
+русск--ий: Russian, inflect: adj, tag: language
+английск--ий: English, inflect: adj, tag: language
 по-французски: in French
 grammar: егоadj@prepm, tag: prepositional
 grammar: -mascь@preppl, tag: prepositional
@@ -486,7 +486,7 @@ grammar: -сестра@pl
 церкв--<овь: church, inflect: -церковь
 grammar: it-im-ite@1pl, tag: verb
 grammar: -дать@1, tag: verb
-такси: taxi
+такси: taxi, tag: tansport
 туалет--: toilet, inflect: masc
 grammar: -пить@2, tag: verb
 метро: subway
@@ -536,7 +536,7 @@ grammar: -что@instr, tag: instrumental
 grammar: -кто@instr, tag: instrumental
 направо: to the right (direction)
 налево: to the left (direction)
-автобус--: bus, inflect: masc
+автобус--: bus, inflect: masc, tag: tansport
 grammar: -большой@comp
 grammar: -весь@m
 кафе: cafe
@@ -573,11 +573,11 @@ grammar: -стать@inf, tag: verb
 grammar: -деньга@genpl, tag: genitive
 билет--: ticket, inflect: masc
 выход--: exit, way out, inflect: masc
-самолёт--: airplane, inflect: masc
+самолёт--: airplane, inflect: masc, tag: tansport
 grammar: егоadj@genm, tag: genitive
 grammar: -о@alt
 куриц--а: chicken, hen, inflect: -курица, tag: animate
-поезд--: train, inflect: masc3
+поезд--: train, inflect: masc3, tag: tansport
 grammar: neuie@gen, tag: genitive
 включи--ть: to turn on, inflect: -учить
 холодильник--: refrigerator, inflect: masc
@@ -1313,7 +1313,6 @@ phrase: из-за-того
 неправильн--ый: incorrect, inflect: -правильный
 предупреди--ть: to warn, inflect: -ходить
 предложени--е[offer]: offer, inflect: neuie
-phrase: больше-v
 неужели: denotes disbelief
 получа--ть: to receive, to get, inflect: ать
 phrase: поверить-dat
@@ -1464,3 +1463,23 @@ phrase: стать-кем-то
 phrase: работать-кем-то
 phrase: над-чем-то
 phrase: под-чем-то
+рядом: n/a
+phrase: рядом-с
+phrase: между-чем-то
+phrase: за-место
+плать--е: n/a, inflect: -платье
+одежд--а: n/a, inflect: fem
+phrase: следить-за-кем-то
+phrase: за-столом
+phrase: за-границей
+phrase: перед-location
+phrase: перед-time
+phrase: за-goal
+phrase: за-time-of-action
+интересу--<оваться: n/a, inflect: -интересоваться
+phrase: интересоваться-чем-то
+phrase: в-place
+phrase: на-place
+phrase: на-языке
+phrase: на-транспорте
+grammar: y-esh-et@3pl
