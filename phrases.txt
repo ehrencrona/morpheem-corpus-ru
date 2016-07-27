@@ -1,12 +1,12 @@
 о-prep: "о чем-то (A1)" "about [a topic]" о@ @prep
 в-час: "в час (частота)" "per [duration]" в@ tag:time@acc
-в-num-час: "в ... часов" "at [time] o'clock" в@ tag:number час@
-2-gen: "два чего-то (A1)" "two [something]" два@ @gen
-per-time: "deleteme" "" в@ tag:time@acc
-not-gen: "нет чего-то (A1)" "there is/are no" нет[none]@ @gen
+в-num-час: "в ... часов (A2)" "at [time] o'clock" в@ tag:number час@
+в-num-час: "в ... часов (A2)" "at [time]" в@ tag:number
+2-gen: "два чего-то (A1)" "two [something]" два@ @genitive
+not-gen: "нет чего-то (A1)" "there is/are no [something]" нет[none]@ @genitive
 gen-of: "что-то чего-то" "of [something]" tag:uncountable@gen
-gen-possession: "что-то чьё-то" "noun of [someone]" noun@* tag:animate@gen
-teach: "научить кого-то чему-то" "teach [someone] [something]" научить@ @acc @dat
+gen-possession: "что-то чьё-то" "noun@+ of [someone]" noun@+ tag:animate@genitive
+teach: "научить кого-то чему-то" "teach [someone] [something]" научить@ @accusative+ @dative+
 рад-dat: "рад чему-то" " happy to see [someone]" рад@ @dat
 чем-чем: "чем ... тем ..." "the ... the" что@instr any тот@instrn
 если-то: "если ... то" "if ... then" если@ any то[если]@
@@ -14,16 +14,18 @@ how-old: "сколько лет кому-то ... ?" "how old is [someone]" ск
 с-gen: "с пункта отправления (A1)" "from [somewhere]" с@ @gen
 с-чего-взял: "с чего кто-то взял" "where did tag:animate get the idea from" с@ что@gen tag:animate взять@
 time-acc: "время (interval/repeating) TODO: only apply this one if nothing with prepositions applies(A1)" "for a [certain amount of time]" tag:time@acc
+time-acc: "время (interval/repeating) TODO: only apply this one if nothing with prepositions applies(A1)" "for [number] tag:time" tag:number@accusative tag:time
 много-gen: "много чего-то (A1)" "many/a lot of [something]" много@ @gen
 без-gen: "без чего-то (B1)" "without [something]" без@ @gen
 at-instr: "утром / вечером / зимой ... (B2)" "in the [time of day/season]" tag:at-instr@instr
-more-than: "больше / лучше / ... чем чему" "[comp] than [someone/something]" @comp, @ что@instr @dat
+more-than: "больше / лучше / ... чем чему" "[comp] than [someone/something]" @comp any ,@ что@instr
+more-than: "больше / лучше / ... чем чему" "[comp] than [someone/something]" @comp ,@ что@instr
 три-gen: "три чего-то (A1)" "three [something]" три@ @gen
 четыре-gen: "четыре чего-то (A1)" "four [something]" четыре@ @gen
 мало-gen: "мало чего-то (A1)" "not much/many [something] " мало@ @gen
 немного-gen: "немного чего-то (A1)" "some/a bit [something]" немного@ @gen
 с-instr: "(вместе) с (кем-то) (A1)" "together with [someone]" с@ adjective@* tag:animate@instr
-при-prep: "при ком/чём" "is with [him/her]" при@ @prep
+при-prep: "при ком/чём" "is with [him/her]" при@ @prepositional
 по-dat: "по кому/чему TODO: split up" "on [something]" по@ @dat
 сам-по-себе: "сам по себе" "by -self" сам@ по@ себя@dat
 из-за-того: "из-за того" "because of" из-за@ тот@genn
@@ -45,14 +47,15 @@ no-matter-what: "во что бы то ни стало" "come what may" в@alt �
 бы-не-past: "no matter what" "no matter tag:question tag:animate" tag:question бы@ tag:animate не@
 за-то-что: "за то, что" "for doing something" за@ тот@accn
 в-курсе: "в курсе TODO: might need a second phrase with gen at the end" "to be aware" в@ курс@prep
-verb-acc: "делать что-то / видить кого-то / ..." "verb@+ [something]" verb@+ @accusative
+verb-acc: "делать что-то / видить кого-то / ..." "verb@+ [something]" verb@+ any @accusative+
+verb-acc: "делать что-то / видить кого-то / ..." "[something] verb@!" @accusative+ verb@*
 с-чем: "с (чем-то) (A1)" "with [something or someone]" с@ adjective@instr* @instr
 говорить-с: "говорить с кем" "talk to [someone]" говорить@ с@ @instr
 встречать-с: "встречаться с" "meet (with) [someone]" встречаться@ any с@
 обращаться-с: "обращаться с" "deal with [something] / treat [someone]" обращаться@ с@ @instr
 обращаться-к: "обращаться к" "address / turn to [someone]" обращаться@ к@ @dat
-у-его-нет: "у кого-то нет кого-то" "[someone] does not have [something]" у@ @gen нет[none]@ @gen
-у-кого: "у кого-то (есть) (A1)" "[someone] has" у@ tag:animate@gen
+у-его-нет: "у кого-то нет чего-то (A1)" "[someone] does not have [something]" у@ @genitive нет[none]@ @genitive
+у-кого: "у кого-то (есть) (A1)" "[someone] have" у@ tag:animate@genitive
 из-gen-departure: "из пункта отправления (A1)" "from" из@ @gen
 at-datpl: "по (утрам / вечерам ...) (B1)" "every [day of the week/time of day/season] " по@ tag:time@datpl
 у-кого-location: "у кого-то (место) (A2)" "at [someone]'s location" у@ tag:animate@gen
@@ -73,19 +76,21 @@ at-datpl: "по (утрам / вечерам ...) (B1)" "every [day of the week/
 среди-чего-то: "среди чего-то (B1)" "amongst / in the middle of [something]" среди@ @gen
 для-чего-то: "для чего-то или кого-то (B1)" "for [something or someone]" для@ @gen
 ни-за-что: "ни за что" "no way" ни@ за@ что@
-к-кому-чему: "к (кому-то, чему-то) (A1)" "to [someone or something]" к@ @dat
+к-кому-чему: "к (кому-то, чему-то) (A1)" "to [someone or something]" к@ @dative
 ждать-for-something-abstract: "ждать for something abstract (B1)" "wait for [something abstract]" ждать@ @gen
 хотеть-something-abstract: "хотеть something abstract (B1)" "want [something abstract]" хотеть@ @gen
 comp-gen: "больше / лучше / ... with genitive (B1) " "comp [something]" @comp @gen+
 звать-кого-то: "звать кого-то  (A1) TODO: pattern needs to work in reverse order too" "to call someone" звать@ @acc
-на-направление: "на somewhere (направление) (A1)" "to [somewhere]" на@ @acc
-на-завтрак-обед-ужин: "на завтрак/обед/ужин" "for breakfast/lunch/dinner" на@ adjective@acc* @acc
+на-направление: "на somewhere (направление) (A1)" "to [somewhere]" на@ @accusative
+на-завтрак-обед-ужин: "на завтрак/обед/ужин" "for [meal]" на@ tag:meal@acc
 в-направление: "в направление (A1)" "to [direction]" в@ @accusative
-в-time: "в (moment in time/day) (A1)" "in [moment in time], on [day]" в@ adjective@acc* tag:time@acc
-каждый-time: "каждый/весь/целый... (time)" "adjective@acc+ [time]" adjective@acc+ tag:time@acc
+в-time: "в четверг (moment in time/day) (A1)" "at [moment in time]" в@ adjective@accusative* tag:time@accusative
+в-time: "в четверг (moment in time/day) (A1)" "deleteme" tag:deleteme
+каждый-time: "каждый/весь/целый... (time)" "adjective@accusative+ [time]" adjective@accusative+ tag:time@accusative
 так-же: "так же" "like" такой@ же@
 не-больше: "больше не" "no longer" больше[longer]@comp не@
-для-того: "для того что" "adjective enough to" adjective@* для@ тот@genn, @* чтобы@
+для-того: "для того что" "adjective enough to" adjective@* для@ тот@genn
+для-того: "для того что" "adjective enough to" @* чтобы@
 давно-пора: "давно пора" "it is high time" давно@ пора@
 похожо: "похожо" "seems like" похожий@adv
 тут-и-там: "тут и там" "here and there" там@ и@ тут@
@@ -131,6 +136,16 @@ person-experiencing-a-state: "кому-то хорошо/плохо... (A2)" "[d
 за-time-of-action: "за (время проишествия) (B2)" "during [time of action]" за@ @instr
 интересоваться-чем-то: "интересоваться (чем-то) (A2)" "to be interested in [something]" интересоваться@ @instr
 в-place: "в (где-то) (A1)" "in, at [a place]" в@ @prep
-на-place: "на (где-то)" "at, in [a place]" на@ @prep
-на-языке: "на языке" "in [language]" на@ tag:language@prep
+на-place: "на (где-то)" "at, in [a place]" на@ @prepositional+
+на-языке: "на языке (B1)" "in [language]" на@ tag:language@prep
 на-транспорте: "на транспорте (A1) TODO: make метро, такси inflect" "by [means of transportation]" на@ tag:tansport@prep
+aslongas: "as long as" "as long as ... ," сколько@accinanpl any ,@
+no-matter-how: "no matter how" "no matter how much/long" сколько@accinanpl any ни@ any ,@
+nazad: "назад" "[time] ago" @accusative+ назад@
+во-сколько: "во сколько? (A2)" "at what time" в@ сколько@
+при-condition: "при (каком-то условии)" "while [something]" 
+someone-had: "у кого-то был (A1)" "[someone] had" у@ tag:animate@genitive быть@pastn
+did-not-have: "у кого-то не было (A1)" "[someone] didn't have" у@ tag:animate@genitive не@ быть@pastn
+деньги-на: "деньги на (что-то)" "money for [something]" деньги@ на@ adjective@accusative* @accusative
+will-have: "у кого-то будет (A1)" "[someone] will have" у@ tag:animate@genitive быть[fut]@
+will-not-have: "у кого-то не будет (A1)" "[someone] won't have" у@ tag:animate@genitive не@ быть[fut]@

@@ -243,7 +243,7 @@ grammar: n@preppl, tag: prepositional
 замк--<ок[castle]: castle, inflect: -подарок
 замк--<ок[lock]: lock, inflect: -подарок
 кури--ть: smoke, inflect: -дарить
-говори--ть: to speak, to talk, inflect: -дарить
+говори--ть: to speak, to talk, inflect: -дарить, tag: speech
 нельзя: it's not allowed to
 известн--ый: famous, inflect: ныйadj
 grammar: femяь@gen, tag: genitive
@@ -386,7 +386,7 @@ grammar: -mascь@instrpl, tag: instrumental
 стои--<ять: to stand, inflect: -стоять
 grammar: -люди@instrpl, tag: instrumental
 grammar: егоadj@datf, tag: dative
-дума--ть: to think, inflect: ать
+дума--ть: to think, inflect: ать, tag: speech
 после: after
 grammar: егоadj@datm, tag: dative
 конц--<ец: end, inflect: -конец
@@ -649,11 +649,11 @@ grammar: neuie@pl
 втор--ой: second, inflect: -второй
 куда: where, tag: question
 grammar: егоadj@instrf, tag: instrumental
-скольк--о: how much, how many, how long, inflect: -много, mask: allbutpl
+скольк--о: how much, how many, how long, inflect: -много, tag: time, mask: allbutpl
 отпуск--: vacation, inflect: masc3
 grammar: -вы@genpl, tag: genitive
 семь--я: family, inflect: -статья
-завтрак--: breakfast, inflect: masc
+завтрак--: breakfast, inflect: masc, tag: meal
 ед--<хать: to go by vehicle on land, inflect: -ехать
 grammar: -конец@nom
 grammar: -они@datpl, tag: dative
@@ -1069,10 +1069,10 @@ grammar: -себя@instr, tag: instrumental
 grammar: -четыре@pl
 grammar: -она@datalt, tag: dative
 входи--ть: to go in, inflect: -ходить
-обед--: lunch, inflect: masc
+обед--: lunch, inflect: masc, tag: meal
 grammar: -они@datplalt, tag: dative
 дешёв--ый: cheap, inflect: -дешёвый
-ужин--: dinner, inflect: masc
+ужин--: dinner, inflect: masc, tag: meal
 сумк--а: bag, inflect: femka
 grammar: -они@genplalt, tag: genitive
 grammar: -они@instrplalt, tag: instrumental
@@ -1111,7 +1111,7 @@ grammar: -они@instrpl, tag: instrumental
 скор--ый: rather, inflect: adj, mask: allbutcomp
 скор--ый: fast, express, inflect: adj
 grammar: -лететь@1, tag: verb
---себя: myself, themselves, herself, inflect: -себя
+--себя: myself, themselves, herself, inflect: -себя, tag: animate
 бы: would particle
 времен--<<я: time, inflect: -время, tag: time
 grammar: neuadjoe@acc, tag: accusative
@@ -1238,7 +1238,6 @@ phrase: в-num-час
 надея--ться: to hope, inflect: -надеяться
 гляди--<еть: to look, to stare, inflect: -глядеть
 уставш--ий: tired, inflect: adj
-phrase: per-time
 grammar: num@accinanpl, tag: accusative
 огромн--ый: huge, inflect: ныйadj
 предпочита--ть: to prefer, inflect: ать
@@ -1482,3 +1481,14 @@ phrase: на-place
 phrase: на-языке
 phrase: на-транспорте
 grammar: y-esh-et@3pl, tag: verb
+phrase: aslongas
+phrase: no-matter-how
+phrase: nazad
+phrase: во-сколько
+phrase: при-condition
+phrase: someone-had
+phrase: did-not-have
+phrase: деньги-на
+phrase: will-have
+phrase: will-not-have
+grammar: -два@fpl
