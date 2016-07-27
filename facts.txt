@@ -43,7 +43,7 @@ grammar: -она@nom
 grammar: ать@1, tag: verb
 grammar: y-esh-et@3, tag: verb
 игра--ть: play, inflect: ать
-девочк--а: girl, inflect: -девочка
+девочк--а: girl, inflect: -девочка, tag: animate
 ребёнк--<ок: child, inflect: -ребёнок, tag: animate, mask: pl
 grammar: -подарок@nom
 площад--ь: square, inflect: femь
@@ -1492,3 +1492,4 @@ phrase: деньги-на
 phrase: will-have
 phrase: will-not-have
 grammar: -два@fpl
+phrase: как-зовут
