@@ -16,7 +16,7 @@ how-old: "сколько лет кому-то ... ?" "how old is [someone]" ск
 time-acc: "время (interval/repeating) TODO: only apply this one if nothing with prepositions applies(A1)" "for a [certain amount of time]" tag:time@acc
 time-acc: "время (interval/repeating) TODO: only apply this one if nothing with prepositions applies(A1)" "for [number] tag:time" tag:number@accusative tag:time
 много-gen: "много чего-то (A1)" "many/a lot of [something]" много@ @genitive
-без-gen: "без чего-то (B1)" "without [something]" без@ @gen
+без-gen: "без чего-то (B1)" "without [something]" без@ adjective@genitive* @genitive
 at-instr: "утром / вечером / зимой ... (B2)" "in the [time of day/season]" tag:at-instr@instr
 more-than: "больше / лучше / ... чем чему" "[comp] than [someone/something]" @comp any
 more-than: "больше / лучше / ... чем чему" "[comp] than [someone/something]" @ что@instr
@@ -132,14 +132,14 @@ person-experiencing-a-state: "кому-то хорошо/плохо... (A2)" "[d
 между-чем-то: "между (чем-то) (B1)" "between [something]" между@ @instr
 за-место: "за (чем-то - место) (B1)" "behind, after [something]" за@ @instr+
 следить-за-кем-то: "следить (за кем-то) TODO make pattern include nouns and pronouns that follow the verb" "follow, look after [someone or something]" следить@ за@ any @instrumental
-за-столом: "за столом" "at the [table/desk]" за@ any стол@instr
+за-столом: "за столом" "at the [table/desk - location]" за@ adjective@instrumental* стол@instr
 за-границей: "за границей" "abroad" за@ граница@instr
 перед-location: "перед (где)" "in front of [something]" перед@ @instr
 перед-time: "перед (когда) (B1)" "before [some moment in time]" перед@ @instr
 за-goal: "за чем-то (цель) (B1)" "to get [something]" за@ @instr
 за-time-of-action: "за (время проишествия) (B2)" "during [time of action]" за@ @instr
 интересоваться-чем-то: "интересоваться (чем-то) (A2)" "to be interested in [something]" интересоваться@ @instr
-в-place: "в (где-то) (A1)" "in, at [a place]" в@ @prep
+в-place: "в (где-то) (A1)" "in, at [a place]" в@ adjective@prepositional* @prepositional
 на-place: "на (где-то)" "at, in [a place]" на@ @prepositional+
 на-языке: "на языке (B1)" "in [language]" на@ tag:language@prep
 на-транспорте: "на транспорте (A1) TODO: make метро, такси inflect" "by [means of transportation]" на@ tag:tansport@prep
@@ -157,4 +157,6 @@ will-have: "у кого-то будет (A1)" "[someone] will have" у@ tag:anim
 will-not-have: "у кого-то не будет (A1)" "[someone] won't have" у@ tag:animate@genitive не@ быть[fut]@
 как-зовут: "как зовут" "how are/is [person] called" как@ tag:animate@acc звать@
 как-зовут: "как зовут" "how is [person] called" как@ звать@ any tag:animate@accusative
-play-with: "играть на (игр)" "play with [toy]" играть@ на@ @prepositional
+play-with: "играть на чём-то" "play (on) [instrument, device]" играть@ на@ @prepositional
+за-окном: "за окном TODO: add instrpl?" "outside the window" за@ окно@instr
+за-стол: "за стол (куда)" "at the table [where to]" за@ стол@acc

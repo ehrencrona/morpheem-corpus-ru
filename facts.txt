@@ -109,7 +109,8 @@ grammar: -свой@m
 погод--а: weather, inflect: fem
 сегодня: today
 завтра: tomorrow
-зов--<<вать: to call, to invite, inflect: -звать
+зов--<<вать: to call, inflect: -звать
+зов--<<вать[invite]: to invite, inflect: -звать
 grammar: -жить@3pl, tag: verb
 тво--й: your, yours, inflect: -свой, mask: nonstd
 телефон--: telephone, inflect: masc
@@ -1495,3 +1496,5 @@ phrase: will-not-have
 grammar: -два@fpl
 phrase: как-зовут
 phrase: play-with
+phrase: за-окном
+phrase: за-стол
