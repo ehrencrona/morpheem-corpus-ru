@@ -90,7 +90,8 @@ comp-gen: "больше / лучше / ... with genitive (B1) " "comp [something
 в-time: "в четверг (moment in time/day) (A1)" "at [moment in time]" в@ adjective@accusative* tag:time@accusative
 в-time: "в четверг (moment in time/day) (A1)" "deleteme" tag:deleteme
 каждый-time: "каждый/весь/целый... (time)" "adjective@accusative+ [time]" adjective@accusative+ tag:time@accusative
-так-же: "так же, как" "like" такой@ же@ any ,@ как@
+так-же: "так же, как" "like" такой@ же@ any
+так-же: "так же, как" "like" @ как@
 не-больше: "больше не" "no longer" больше[longer]@comp не@
 для-того: "для того что" "adjective enough to" adjective@* для@ тот@genn
 для-того: "для того что" "adjective enough to" @* чтобы@
@@ -156,3 +157,4 @@ will-have: "у кого-то будет (A1)" "[someone] will have" у@ tag:anim
 will-not-have: "у кого-то не будет (A1)" "[someone] won't have" у@ tag:animate@genitive не@ быть[fut]@
 как-зовут: "как зовут" "how are/is [person] called" как@ tag:animate@acc звать@
 как-зовут: "как зовут" "how is [person] called" как@ звать@ any tag:animate@accusative
+play-with: "играть на (игр)" "play with [toy]" играть@ на@ @prepositional

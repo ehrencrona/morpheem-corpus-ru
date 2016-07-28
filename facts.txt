@@ -66,7 +66,7 @@ grammar: -ты@nom
 не: not
 ни--кто: nobody, inflect: -кто
 --что: what, inflect: -что, tag: question
---что[that]: that
+что[that]: that
 grammar: -что@acc, tag: accusative
 grammar: it-im-ite@2, tag: verb
 книг--а: book, inflect: fem
@@ -104,7 +104,7 @@ grammar: -свой@m
 больш--ой: big, inflect: -большой
 больш--ой: more, inflect: -большой, mask: allbutcomp
 больш--ой[longer]: longer, inflect: -большой, mask: allbutcomp
-как--ой: what, which, inflect: ойadj
+как--ой: which, what kind of, inflect: ойadj
 очень: very
 погод--а: weather, inflect: fem
 сегодня: today
@@ -1494,3 +1494,4 @@ phrase: will-have
 phrase: will-not-have
 grammar: -два@fpl
 phrase: как-зовут
+phrase: play-with
