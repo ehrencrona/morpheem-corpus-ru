@@ -73,7 +73,7 @@ grammar: it-im-ite@2, tag: verb
 чита--ть: read, inflect: ать
 пиш--<сать: write, inflect: -писать
 газет--а: newspaper, inflect: fem
-журнал--: journal, inflect: masc
+журнал--: magazine, inflect: masc
 встреча--ть[meet]: meet, inflect: ать
 гуля--ть: take a walk, inflect: ать
 отличн--ый: excellent, inflect: ныйadj
@@ -110,7 +110,6 @@ grammar: -свой@m
 сегодня: today
 завтра: tomorrow
 зов--<<вать: to call, inflect: -звать
-зов--<<вать[invite]: to invite, inflect: -звать
 grammar: -жить@3pl, tag: verb
 тво--й: your, yours, inflect: -свой, mask: nonstd
 телефон--: telephone, inflect: masc
@@ -171,7 +170,7 @@ grammar: -наш@pl
 grammar: -этот@pl
 жив--<ть: to live, inflect: -жить
 люд--ь: people, inflect: -люди, mask: sg
-ошибк--а: error, inflect: femka
+ошибк--а: mistake, inflect: femka
 grammar: adj@preppl, tag: prepositional
 grammar: yo-yosh-yot@3, tag: verb
 grammar: -друг@pl
@@ -215,7 +214,7 @@ grammar: sya@3, tag: verb
 нрави--ться: to like, inflect: -нравиться
 grammar: masc@dat, tag: dative
 дари--ть: to give a gift, inflect: -дарить
-нужно: to need n/a
+нужно: to need
 нужн--ый: necessary, needed, inflect: ныйadj, mask: adv
 grammar: ныйadj@shortf
 grammar: ныйadj@shortn
@@ -651,7 +650,7 @@ grammar: neuie@pl
 втор--ой: second, inflect: -второй
 куда: where, tag: question
 grammar: егоadj@instrf, tag: instrumental
-скольк--о: how much, how many, how long, inflect: -много, tag: time, mask: allbutpl
+скольк--о: how much, how many, inflect: -много, tag: time, mask: allbutpl
 отпуск--: vacation, inflect: masc3
 grammar: -вы@genpl, tag: genitive
 семь--я: family, inflect: -статья
@@ -677,7 +676,7 @@ grammar: -кто@gen, tag: genitive
 grammar: mascе@nom
 красн--ый: red, inflect: ныйadj
 борщ--: borscht, inflect: -борщ
-олигарх--: oligarch, inflect: masc-animate, tag: animate
+миллионер--: n/a, inflect: masc-animate
 grammar: -второй@m
 grammar: -начать@inf, tag: verb
 вин--о: wine, inflect: neu, tag: uncountable
@@ -711,6 +710,7 @@ grammar: -тот@instrm, tag: instrumental
 пакет--: (plastic/paper) bag, inflect: masc
 перед: before
 grammar: -неделя@genpl, tag: genitive
+зов--<<вать[invite]: to invite, inflect: -звать
 grammar: -остаться@3pl, tag: verb
 всего: than everything
 вс--<есь: all, entire, whole, inflect: -весь, mask: nonstd
@@ -1230,6 +1230,7 @@ phrase: около-чего-то
 phrase: далеко-от-чего-то
 phrase: недалеко-от-чего-то
 phrase: о-prep
+phrase: сколько-время
 наконец: finally
 хоть: at least, even though
 phrase: в-час
@@ -1278,7 +1279,7 @@ grammar: аться@1pl, tag: verb
 познакоми--ться: get to know, inflect: -нравиться
 phrase: с-чего-взял
 ладно: all right, fine
-возможност--ь: possibility, chance, inflect: femь
+возможност--ь: possibility, inflect: femь
 карман--: pocket, inflect: masc
 phrase: time-acc
 прочита--ть: to read, inflect: ать
@@ -1319,7 +1320,7 @@ phrase: из-за-того
 phrase: поверить-dat
 очеред--ь: queue, inflect: femь
 разоль--<<<лить: to spill, inflect: -разлить
-запасн--ой: backup, extra, inflect: ойadj
+запасн--ой: spare, inflect: ойadj
 погуля--ть: to take a walk, inflect: ать
 окончи--ть: to complete, to end, inflect: -учить
 phrase: ни-any-кто
@@ -1498,3 +1499,6 @@ phrase: как-зовут
 phrase: play-with
 phrase: за-окном
 phrase: за-стол
+phrase: сколько-distance
+phrase: go-do
+grammar: -лес@loc
