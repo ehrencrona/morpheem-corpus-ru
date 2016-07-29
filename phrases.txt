@@ -5,7 +5,7 @@
 2-gen: "два чего-то (A1)" "two [something]" два@ adjective@genitive* noun@genitive*
 not-gen: "нет чего-то (A1)" "there is/are no [something]" нет[none]@ @genitive
 not-gen: "нет чего-то (A1)" "there were no [something]" не@ быть@ @genitive
-gen-of: "что-то чего-то" "of [something]" @genitive
+gen-of: "что-то чего-то" "of [something]" @genitive+
 gen-possession: "что-то чьё-то" "of [someone]" tag:animate@genitive
 teach: "научить кого-то чему-то" "teach [someone] [something]" научить@ @accusative+ @dative+
 рад-dat: "рад чему-то" " happy to see [someone]" рад@ @dat
@@ -19,14 +19,14 @@ time-acc: "время (interval/repeating) TODO: only apply this one if nothing 
 много-gen: "много чего-то (A1)" "many/a lot of [something]" много@ @genitive
 без-gen: "без чего-то (B1)" "without [something]" без@ adjective@genitive* @genitive
 at-instr: "утром / вечером / зимой ... (B2)" "in the [time of day/season]" tag:at-instr@instrumental
-more-than: "больше / лучше / ... чем" "[comp] than [someone/something]" @comp any ,@ что@instr
+more-than: "больше / лучше / ... чем" "more @comp than [someone/something]" @comp any ,@ что@instr
 три-gen: "три чего-то (A1)" "three [something]" три@ adjective@genitive* noun@genitive+
 четыре-gen: "четыре чего-то (A1)" "four [something]" четыре@ adjective@genitive* noun@genitive*
 мало-gen: "мало чего-то (A1)" "not much/many [something] " мало@ adjective@genitive* noun@genitive*
 немного-gen: "немного чего-то (A1)" "some/a bit [something]" немного@ adjective@genitive* noun@genitive*
 немного-gen: "немного чего-то (A1)" "some/a bit [something]" adjective@genitive* noun@genitive* немного@
 с-instr: "(вместе) с (кем-то) (A1)" "together with [someone]" с@ adjective@* tag:animate@instrumental
-при-prep: "при ком/чём" "is with [him/her]" при@ @prepositional
+при-prep: "при ком/чём" "is with [him/her]" при@ @prepositional+
 по-dat: "по кому/чему TODO: split up" "on [something]" по@ @dat
 сам-по-себе: "сам по себе" "by -self" сам@ по@ себя@dat
 из-за-того: "из-за того" "because of" из-за@ тот@genn
@@ -54,10 +54,10 @@ verb-acc: "делать что-то / видить кого-то / ..." "[someth
 говорить-с: "говорить с кем" "talk to [someone]" говорить@ с@ @instr
 встречать-с: "встречаться с" "meet (with) [someone]" встречаться@ any с@
 обращаться-с: "обращаться с" "deal with [something] / treat [someone]" обращаться@ с@ @instr
-обращаться-к: "обращаться к" "address / turn to [someone]" обращаться@ к@ @dat
+обращаться-к: "обращаться к" "address / turn to [someone]" обращаться@ к@ @dative+
 у-его-нет: "у кого-то нет чего-то (A1)" "[someone] does not have [something]" у@ @genitive нет[none]@ @genitive
 у-кого: "у кого-то (есть) (A1)" "[someone] have" у@ tag:animate@genitive
-из-gen-departure: "из пункта отправления (A1)" "from" из@ @genitive
+из-gen-departure: "из пункта отправления (A1)" "from [point of departure/source]" из@ @genitive+
 at-datpl: "по (утрам / вечерам ...) (B1)" "every [day of the week/time of day/season] " по@ tag:time@datpl
 у-кого-location: "у кого-то (место) (A2)" "at [someone]'s location" у@ tag:animate@genitive
 от-gen-departure: "откуда (A2)" "from where [something] is located" от@ @genitive
@@ -74,10 +74,10 @@ at-datpl: "по (утрам / вечерам ...) (B1)" "every [day of the week/
 слева-от-чего-то: "слева от чего-то (B1)" "to the left of [something]" слева@ от@ @gen
 вокруг-чего-то: "вокруг чего-то (B1)" "around [something]" вокруг@ @gen
 напротив-чего-то: "напротив чего-то (B1)" "across from [something]" напротив@ @gen
-среди-чего-то: "среди чего-то (B1)" "amongst / in the middle of [something]" среди@ @gen
+среди-чего-то: "среди чего-то (B1)" "amongst / in the middle of [something]" среди@ @genitive
 для-чего-то: "для чего-то или кого-то (B1)" "for [something or someone]" для@ @gen
 ни-за-что: "ни за что" "no way" ни@ за@ что@
-к-кому-чему: "к (кому-то, чему-то) (A1)" "to [someone or something]" к@ @dative
+к-кому-чему: "к (кому-то) (A1)" "to [person as destination]" к@ @dative+
 ждать-for-something-abstract: "ждать for something abstract (B1)" "wait for [something abstract]" ждать@ @gen
 хотеть-something-abstract: "хотеть something abstract (B1)" "want [something abstract]" хотеть@ @gen
 comp-gen: "больше / лучше / ... with genitive (B1) " "comp [something]" @comp @gen+
@@ -144,7 +144,7 @@ aslongas: "as long as" "as long as" сколько@accinanpl any
 no-matter-how: "no matter how" "no matter how much/long" сколько@accinanpl any ни@ any
 nazad: "назад" "[time] ago" @accusative+ назад@
 во-сколько: "во сколько? (A2)" "at what time" в@ сколько@
-при-condition: "при (каком-то условии)" "while [something]" 
+при-condition: "при (каком-то условии) (B1)" "while [something]" при@ @prepositional+
 someone-had: "у кого-то был (A1)" "[someone] had" у@ tag:animate@genitive быть@pastn
 did-not-have: "у кого-то не было (A1)" "[someone] didn't have" у@ tag:animate@genitive не@ быть@pastn
 деньги-на: "деньги на (что-то)" "money for [something]" деньги@ на@ adjective@accusative* @accusative
@@ -158,3 +158,5 @@ play-with: "играть на чём-то" "play (on) [instrument, device]" иг
 сколько-время: "сколько [время]" "how long" сколько@
 сколько-distance: "сколько [расстояние]" "how far" сколько@
 go-do: "идти verb" "go [verb] " идти@ verb@+
+к-чему-то: "к чему-то (B1)" "to [place, not person]" к@ @dative+
+к-time: "к какому-то времени (?B1)" "by [moment in time]" к@ adjective@dative* tag:time@dative

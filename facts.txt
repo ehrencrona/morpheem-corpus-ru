@@ -458,7 +458,7 @@ grammar: -я@instr, tag: instrumental
 ищ--<скать: to look for, inflect: -искать
 grammar: -есть@3pl, tag: verb
 grammar: -пить@3, tag: verb
-момент--: moment, inflect: masc
+момент--: moment, inflect: masc, tag: time
 спокойн--ый: calm, inflect: ныйadj
 grammar: -есть@impr, tag: verb
 тихо: quietly, tag: accusative, tag: dative, tag: genitive, tag: instrumental, tag: prepositional, tag: verb
@@ -654,7 +654,7 @@ grammar: егоadj@instrf, tag: instrumental
 отпуск--: vacation, inflect: masc3
 grammar: -вы@genpl, tag: genitive
 семь--я: family, inflect: -статья
-завтрак--: breakfast, inflect: masc, tag: meal
+завтрак--: breakfast, inflect: masc, tag: meal, tag: time
 ед--<хать: to go by vehicle on land, inflect: -ехать
 grammar: -конец@nom
 grammar: -они@datpl, tag: dative
@@ -1071,10 +1071,10 @@ grammar: -себя@instr, tag: instrumental
 grammar: -четыре@pl
 grammar: -она@datalt, tag: dative
 входи--ть: to go in, inflect: -ходить
-обед--: lunch, inflect: masc, tag: meal
+обед--: lunch, inflect: masc, tag: meal, tag: time
 grammar: -они@datplalt, tag: dative
 дешёв--ый: cheap, inflect: -дешёвый
-ужин--: dinner, inflect: masc, tag: meal
+ужин--: dinner, inflect: masc, tag: meal, tag: time
 сумк--а: bag, inflect: femka
 grammar: -они@genplalt, tag: genitive
 grammar: -они@instrplalt, tag: instrumental
@@ -1502,3 +1502,6 @@ phrase: за-стол
 phrase: сколько-distance
 phrase: go-do
 grammar: -лес@loc
+grammar: -сидеть@impr
+phrase: к-чему-то
+phrase: к-time
