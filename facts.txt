@@ -270,7 +270,7 @@ grammar: -друг@datpl, tag: dative
 grammar: -давать@1, tag: verb
 интересн--ый: interesting, inflect: ныйadj
 без: without
-мног--о: many, much, a lot, inflect: -много, mask: sg
+мног--о: many, much, a lot, inflect: -много, tag: number, mask: sg
 grammar: masc@genpl, tag: genitive
 grammar: -друг@genpl, tag: genitive
 grammar: adj@adv
@@ -453,7 +453,7 @@ grammar: -есть@1pl, tag: verb
 путешеству--<овать: to travel, inflect: -чувствовать
 смерт--ь: death, inflect: femь
 grammar: -я@instr, tag: instrumental
-мало: a little, little
+мало: a little, little, tag: number
 путешестви--е: journey, travel, inflect: neuie
 ищ--<скать: to look for, inflect: -искать
 grammar: -есть@3pl, tag: verb
@@ -549,14 +549,14 @@ grammar: abstr-soft-final@instr, tag: instrumental
 grammar: neu@pl
 grammar: adj@genn, tag: genitive
 врё--<ать: to lie, inflect: -ждать
-карт--а: map, card, inflect: fem
+карт--а: map, inflect: fem
 grammar: -mascь@nom
 подруг--а: friend, inflect: fem-animate
 продукт--: groceries, product, inflect: masc
 фабрик--а: factory, inflect: fem
 grammar: -о@std
 grammar: -весь@datpl, tag: dative
-положи--ть: to place, to put, inflect: -учить
+положи--ть: to put, inflect: -учить
 класс--: class, classroom, inflect: masc
 grammar: sya@1, tag: verb
 нормальн--ый: normal, inflect: adj
@@ -703,7 +703,7 @@ grammar: -остаться@pastm, tag: verb
 часто: often
 grammar: -казаться@pastn, tag: verb
 grammar: -случай@genpl, tag: genitive
-нескольк--о: a few, inflect: -много, mask: allbutpl
+нескольк--о: a few, inflect: -много, tag: number, mask: allbutpl
 иногда: sometimes
 grammar: -тот@instrm, tag: instrumental
 писател--ь: writer, inflect: mascь-animate
@@ -742,7 +742,7 @@ grammar: sya@imprpl, tag: verb
 grammar: neuie@genpl, tag: genitive
 grammar: -ответить@1, tag: verb
 перв--ый: first, inflect: adj
-немног--о: a little, inflect: -много, mask: sg
+немног--о: a little, inflect: -много, tag: number, mask: sg
 grammar: -ответить@impr, tag: verb
 потом: later, then
 grammar: -мочь@1, tag: verb
@@ -1278,7 +1278,7 @@ grammar: аться@1pl, tag: verb
 прекрати--ть: to cease, to stop, inflect: -спросить
 познакоми--ться: get to know, inflect: -нравиться
 phrase: с-чего-взял
-ладно: all right, fine
+ладно: all right
 возможност--ь: possibility, inflect: femь
 карман--: pocket, inflect: masc
 phrase: time-acc
@@ -1502,6 +1502,13 @@ phrase: за-стол
 phrase: сколько-distance
 phrase: go-do
 grammar: -лес@loc
-grammar: -сидеть@impr
+grammar: -сидеть@impr, tag: verb
 phrase: к-чему-то
 phrase: к-time
+phrase: думать-над
+phrase: сколько-amount
+зонт--: n/a, inflect: masc
+отдыха--ть: n/a, inflect: ать
+phrase: Вот-это
+phrase: можно-noun
+grammar: -раз@genpl
