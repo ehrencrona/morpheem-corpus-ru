@@ -113,6 +113,7 @@ grammar: -свой@m
 grammar: -жить@3pl, tag: verb
 тво--й: your, yours, inflect: -свой, mask: nonstd
 телефон--: telephone, inflect: masc
+телефон--[number]: phone number, inflect: masc
 покупа--ть: to buy, inflect: ать
 grammar: adj@accf, tag: accusative
 стать--я: article, inflect: -статья
@@ -461,7 +462,6 @@ grammar: -пить@3, tag: verb
 момент--: moment, inflect: masc, tag: time
 спокойн--ый: calm, inflect: ныйadj
 grammar: -есть@impr, tag: verb
-тихо: quietly, tag: accusative, tag: dative, tag: genitive, tag: instrumental, tag: prepositional, tag: verb
 порядк--<ок: order, inflect: -подарок
 сильн--ый: strong, powerful, inflect: ныйadj
 grammar: -ехать@inf, tag: verb
@@ -687,7 +687,7 @@ grammar: -этот@n
 цен--а: price, inflect: fem
 grammar: -идти@pastm, tag: verb
 grammar: -весь@pl
-низк--ий: low, short, inflect: adj
+низк--ий: low, short, inflect: -низкий
 ждё--<ать: to wait, inflect: -ждать
 grammar: adj@instrn, tag: instrumental
 высок--ий: high, tall, inflect: adj
@@ -875,6 +875,7 @@ grammar: -два@preppl, tag: prepositional
 спасибо: thank you
 здравству--<овать: hello, hi, welcome, inflect: -чувствовать, mask: non_impr
 пока: for now
+пока[while]: while
 grammar: -три@genpl, tag: genitive
 grammar: -три@instrpl, tag: instrumental
 извини--ть: to excuse, inflect: -дарить
