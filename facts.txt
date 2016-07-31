@@ -78,7 +78,7 @@ grammar: it-im-ite@2, tag: verb
 гуля--ть: take a walk, inflect: ать
 отличн--ый: excellent, inflect: ныйadj
 друг--: friend, inflect: -друг, tag: animate
-студент--: student, inflect: masc-animate
+студент--: student, inflect: masc-animate, tag: animate
 дома: at home
 grammar: abstr-masc-anim@acc, tag: accusative
 пап--а: dad, inflect: fem-animate
@@ -243,12 +243,12 @@ grammar: -дарить@1, tag: verb
 grammar: n@preppl, tag: prepositional
 телевизор--: television, inflect: masc
 смотри--<еть: to look, to watch, inflect: -смотреть
-можно: be able to; to be allowed to
+можно: can
 замк--<ок[castle]: castle, inflect: -подарок
 замк--<ок[lock]: lock, inflect: -подарок
 кури--ть: smoke, inflect: -дарить
 говори--ть: to speak, to talk, inflect: -дарить, tag: speech
-нельзя: it's not allowed to
+нельзя: can't
 известн--ый: famous, inflect: ныйadj
 grammar: femяь@gen, tag: genitive
 grammar: fem@gen, tag: genitive
@@ -396,7 +396,8 @@ grammar: егоadj@datm, tag: dative
 конц--<ец: end, inflect: -конец
 мест--о: place, inflect: neu
 мест--о[space]: space, room, inflect: neu
-час--: time, inflect: masc, tag: time
+час--: hour, inflect: masc, tag: time
+час--[time]: time, inflect: masc, tag: time
 час--[clock]: clock, watch, inflect: masc, mask: sg
 grammar: -статья@instr, tag: instrumental
 grammar: -нравиться@1, tag: verb
@@ -672,7 +673,7 @@ grammar: -словарь@nom
 скаж--<зать: to say, to tell, inflect: -сказать
 grammar: -год@prep, tag: prepositional
 вод--а: water, inflect: fem, tag: uncountable
-так--ой: such, inflect: ойadj
+так--ой: such, inflect: ойadj, mask: nonstd
 проблем--а: problem, inflect: fem
 grammar: -кто@gen, tag: genitive
 grammar: mascе@nom
@@ -1518,3 +1519,7 @@ phrase: так-что
 phrase: так-как
 phrase: время-от-времени
 phrase: как-только
+phrase: так...как
+phrase: такой..как
+phrase: стоить-дорогой
+phrase: у-thing
