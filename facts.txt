@@ -85,8 +85,9 @@ grammar: abstr-masc-anim@acc, tag: accusative
 мальчик--: boy, inflect: masc-animate
 grammar: -учить@1, tag: verb
 grammar: -любить@1, tag: verb
-как: like
-как[how]: how
+как[like]: as
+как: how
+как[when]: when
 центр--: center, inflect: masc
 человек--: person, inflect: masc-animate, tag: animate
 зачем: what for
@@ -105,7 +106,7 @@ grammar: -свой@m
 больш--ой: big, inflect: -большой
 больш--ой: more, inflect: -большой, mask: allbutcomp
 больш--ой[longer]: longer, inflect: -большой, mask: allbutcomp
-как--ой: which, what kind of, inflect: ойadj
+как--ой: which, what kind of, inflect: ойadj, mask: short
 очень: very
 погод--а: weather, inflect: fem
 сегодня: today
@@ -272,7 +273,7 @@ grammar: -друг@datpl, tag: dative
 grammar: -давать@1, tag: verb
 интересн--ый: interesting, inflect: ныйadj
 без: without
-мног--о: many, much, a lot, inflect: -много, tag: number, mask: sg
+мног--о: many / much, inflect: -много, tag: number, mask: sg
 grammar: masc@genpl, tag: genitive
 grammar: -друг@genpl, tag: genitive
 grammar: adj@adv
@@ -671,7 +672,7 @@ grammar: -словарь@nom
 скаж--<зать: to say, to tell, inflect: -сказать
 grammar: -год@prep, tag: prepositional
 вод--а: water, inflect: fem, tag: uncountable
-так--ой: such, so, inflect: ойadj
+так--ой: such, inflect: ойadj
 проблем--а: problem, inflect: fem
 grammar: -кто@gen, tag: genitive
 grammar: mascе@nom
@@ -717,7 +718,7 @@ grammar: -остаться@3pl, tag: verb
 вс--<есь: all, entire, whole, inflect: -весь, mask: nonstd
 grammar: -казаться@pastm, tag: verb
 от: from
-так: so
+так: in that way
 grammar: -мать@nom
 grammar: -казаться@inf, tag: verb
 до: to, before, tag: untranslatable
@@ -742,7 +743,7 @@ grammar: sya@imprpl, tag: verb
 grammar: neuie@genpl, tag: genitive
 grammar: -ответить@1, tag: verb
 перв--ый: first, inflect: adj
-немног--о: a little, inflect: -много, tag: number, mask: sg
+немног--о: little / few, inflect: -много, tag: number, mask: sg
 grammar: -ответить@impr, tag: verb
 потом: later, then
 grammar: -мочь@1, tag: verb
@@ -1107,7 +1108,7 @@ grammar: -себя@prep, tag: prepositional
 grammar: -регистрация@genpl, tag: genitive
 занима--ться: to go in for, inflect: -пытаться
 прекрасн--ый: beautiful, inflect: ныйadj
-же: however
+же: [wow!], tag: untranslatable
 grammar: -он@datalt, tag: dative
 grammar: -они@instrpl, tag: instrumental
 скор--ый: rather, inflect: adj, mask: allbutcomp
@@ -1417,7 +1418,6 @@ phrase: на-завтрак-обед-ужин
 phrase: в-направление
 phrase: в-time
 phrase: каждый-time
-phrase: так-же
 phrase: не-больше
 phrase: для-того
 grammar: -цветок@pl
@@ -1517,3 +1517,4 @@ phrase: уверен-в
 phrase: так-что
 phrase: так-как
 phrase: время-от-времени
+phrase: как-только
