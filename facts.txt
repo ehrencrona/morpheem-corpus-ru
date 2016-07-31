@@ -85,7 +85,8 @@ grammar: abstr-masc-anim@acc, tag: accusative
 мальчик--: boy, inflect: masc-animate
 grammar: -учить@1, tag: verb
 grammar: -любить@1, tag: verb
-как: how
+как: like
+как[how]: how
 центр--: center, inflect: masc
 человек--: person, inflect: masc-animate, tag: animate
 зачем: what for
@@ -519,7 +520,7 @@ grammar: adj@n
 гор--а: mountain, mount, inflect: fem
 grammar: -ждать@3pl, tag: verb
 grammar: adj@genf, tag: genitive
-веселый: fun
+весёл--ый: fun, inflect: -весёлый
 кино: movie, cinema
 grammar: neu@nom
 факультет--: faculty, inflect: masc
@@ -687,7 +688,7 @@ grammar: -этот@n
 цен--а: price, inflect: fem
 grammar: -идти@pastm, tag: verb
 grammar: -весь@pl
-низк--ий: low, short, inflect: -низкий
+низк--ий: low, short, inflect: -низкий, mask: adv
 ждё--<ать: to wait, inflect: -ждать
 grammar: adj@instrn, tag: instrumental
 высок--ий: high, tall, inflect: adj
@@ -717,7 +718,6 @@ grammar: -остаться@3pl, tag: verb
 grammar: -казаться@pastm, tag: verb
 от: from
 так: so
-может быть: maybe
 grammar: -мать@nom
 grammar: -казаться@inf, tag: verb
 до: to, before, tag: untranslatable
