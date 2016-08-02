@@ -3,8 +3,8 @@
 в-num-час: "в ... часов (A2)" "at [time] o'clock" в@ tag:number час@
 в-num-час: "в ... часов (A2)" "at [time]" в@ tag:number
 2-gen: "два чего-то (A1)" "two [something]" два@ adjective@genitive* noun@genitive*
-not-gen: "нет чего-то (A1)" "there is/are no [something]" нет[none]@ @genitive
-not-gen: "нет чего-то (A1)" "there were no [something]" не@ быть@ @genitive
+not-gen: "нет чего-то (A1)" "there is/are no [something]" нет[none]@ any @genitive+
+not-gen: "нет чего-то (A1)" "there were no [something]" не@ быть@past any @genitive+
 gen-of: "что-то чего-то" "of [something]" @genitive+
 gen-possession: "что-то чьё-то" "of [someone]" tag:animate@genitive
 teach: "научить кого-то чему-то" "teach [someone] [something]" научить|учить@ @accusative+ @dative+
@@ -48,7 +48,7 @@ no-matter-what: "во что бы то ни стало" "come what may" в@alt �
 бы-не-past: "no matter what" "no matter tag:question tag:animate" tag:question бы@ tag:animate не@
 за-то-что: "за то, что" "for doing something" за@ тот@accn
 в-курсе: "в курсе TODO: might need a second phrase with gen at the end" "to be aware" в@ курс@prep
-verb-acc: "делать что-то / видить кого-то / ..." "verb [something]" verb@+ any @accusative+
+verb-acc: "делать что-то / видить кого-то / ..." "verb@+ [something]" verb@+ any @accusative+
 verb-acc: "делать что-то / видить кого-то / ..." "[something] verb" @accusative+ any verb@+
 с-чем: "с (чем-то) (A1)" "with [something or someone]" с@ adjective@instr* @instrumental
 говорить-с: "говорить с кем" "talk to [someone]" говорить@ с@ @instr
@@ -57,7 +57,7 @@ verb-acc: "делать что-то / видить кого-то / ..." "[someth
 обращаться-к: "обращаться к" "address / turn to [someone]" обращаться@ к@ @dative+
 у-его-нет: "у кого-то нет чего-то (A1)" "[someone] does not have [something]" у@ @genitive нет[none]@ @genitive
 у-кого: "у кого-то (есть) (A1)" "[someone] have" у@ tag:animate@genitive
-из-gen-departure: "из пункта отправления (A1)" "from [point of departure/source]" из@ @genitive+
+из-gen-departure: "из (откуда) (A1)" "from [point of departure/source]" из@ @genitive+
 at-datpl: "по (утрам / вечерам ...) (B1)" "every [day of the week/time of day/season] " по@ tag:time@datpl
 у-кого-location: "у кого-то (место) (A2)" "at [someone]'s location" у@ tag:animate@genitive
 от-gen-departure: "откуда (A2)" "from where [something] is located" от@ @genitive
@@ -86,16 +86,15 @@ comp-gen: "больше / лучше / ... with genitive (B1) " "comp [something
 на-направление: "на somewhere (направление) (A1)" "to [somewhere]" на@ @accusative
 на-завтрак-обед-ужин: "на завтрак/обед/ужин" "for [meal]" на@ tag:meal@acc
 в-направление: "в направление (A1)" "to [direction]" в@ @accusative
-в-time: "в четверг (moment in time/day) (A1)" "at [moment in time]" в@ adjective@accusative* tag:time@accusative
+в-time: "в четверг (moment in time/day) (A1)" "on, at [moment in time]" в@ adjective@accusative* tag:time@accusative
 каждый-time: "каждый/весь/целый... (time)" "adjective@accusative+ [time]" adjective@accusative+ tag:time@accusative
 не-больше: "больше не" "no longer" больше[longer]@comp не@
 для-того: "для того что" "adjective enough to" adjective@+ для@ тот@genn ,@ @* чтобы@
 давно-пора: "давно пора" "it is high time" давно@ пора@
-похожо: "похожо" "seems like" похожий@adv
 тут-и-там: "тут и там" "here and there" там@ и@ тут@
 друг-другу: "друг другу" "each other" друг@ any друг@
 работать-над-чем-то: "работать над чем-то" "work on [something]" работать@ над@ @instrumental
-hyperbole: "hyperbole" "@instrumental+ (exaggerating)" @instrumental+
+hyperbole: "hyperbole" "@instrumental+ (exaggerating)" adjective@instrpl* tag:time@instrpl
 доволен-instr: "доволен" "satisfied with [something]" довольный@ @instrumental+
 ждать-что-то: "ждать for something (B1)" "wait for [something or someone]" ждать@ @acc
 хотеть-что-то: "хотеть [something or someone] (B1)" "want [something or someone] (B1)" хотеть@ @accusative
@@ -103,7 +102,7 @@ hyperbole: "hyperbole" "@instrumental+ (exaggerating)" @instrumental+
 за-direction: "за (направление) (B1)" "behind/beyond [direction]" за@ @acc
 через-direction: "через (направление) (B1)" "through, across [direction]" через@ @accusative
 через-time: "через (время) (B1)" "after, in [time]" через@ any tag:time@acc
-на-time: "на (время) (B1)" "for [time]" на@ tag:time@acc
+на-time: "на (время) (B1)" "for [time]" на@ tag:time@accusative
 за-time: "за (время) (B1)" "in [time]" за@ any tag:time@acc
 person-experiencing-a-state: "кому-то хорошо/плохо... (A2)" "[dat] feel(s) adjective@adv+" tag:animate@dat adjective@adv+
 по-place-of-movement: "по (дороге/улице...) (A2)" "along, through [somewhere]" по@ @dative+

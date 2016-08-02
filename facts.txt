@@ -149,7 +149,7 @@ grammar: -вы@pl
 grammar: it-im-ite@2pl, tag: verb
 банк--: bank, inflect: masc
 ресторан--: restaurant, inflect: masc
-эт--от: this, this one, inflect: -этот, mask: nonstd
+эт--от: this, inflect: -этот, mask: nonstd
 grammar: -этот@f
 grammar: -этот@m
 слишком: too
@@ -327,7 +327,7 @@ grammar: -свой@prepm, tag: prepositional
 --есть: to eat, inflect: -есть
 grammar: y-esh-et@impr, tag: verb
 купи--ть: to buy, inflect: -любить
-ид--ти: to go, to walk on foot, inflect: -идти
+ид--ти: to go (by foot), inflect: -идти
 ид--ти[rain]: to fall, inflect: -идти
 или: or
 grammar: егоadj@prepf, tag: prepositional
@@ -1088,7 +1088,6 @@ grammar: -они@preppl, tag: prepositional
 сувенир--: souvenir, inflect: masc
 grammar: -пять@datpl, tag: dative
 grammar: -она@instr, tag: instrumental
-масл--о: oil, butter, inflect: -масло
 ни--что: nothing, inflect: -что
 grammar: -себя@gen, tag: genitive
 войд--<ти: to come in, inflect: -войти
@@ -1423,7 +1422,6 @@ phrase: не-больше
 phrase: для-того
 grammar: -цветок@pl
 phrase: давно-пора
-phrase: похожо
 phrase: тут-и-там
 футбол--: n/a, inflect: masc
 phrase: друг-другу
@@ -1523,3 +1521,4 @@ phrase: так...как
 phrase: такой..как
 phrase: стоить-дорогой
 phrase: у-thing
+grammar: neuadjoe@genpl
