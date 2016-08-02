@@ -46,7 +46,7 @@ no-matter-what: "во что бы то ни стало" "come what may" в@alt �
 по-карману: "по карману" "can afford" по@ карман@dat
 не-так-ли: "не так ли" "is that not so?" не@ так@ ли@
 бы-не-past: "no matter what" "no matter tag:question tag:animate" tag:question бы@ tag:animate не@
-за-то-что: "за то, что" "for doing something" за@ тот@accn
+за-то-что: "за то, что - question: is this not just за accusative?" "for that, which" за@ тот@accn ,@ что[that]@
 в-курсе: "в курсе TODO: might need a second phrase with gen at the end" "to be aware" в@ курс@prep
 verb-acc: "делать что-то / видить кого-то / ..." "verb@+ [something]" verb@+ any @accusative+
 verb-acc: "делать что-то / видить кого-то / ..." "[something] verb" @accusative+ any verb@+
@@ -103,7 +103,7 @@ hyperbole: "hyperbole" "@instrumental+ (exaggerating)" adjective@instrpl* tag:ti
 через-direction: "через (направление) (B1)" "through, across [direction]" через@ @accusative
 через-time: "через (время) (B1)" "after, in [time]" через@ any tag:time@acc
 на-time: "на (время) (B1)" "for [time]" на@ tag:time@accusative
-за-time: "за (время) (B1)" "in [time]" за@ any tag:time@acc
+за-time: "за (время) (B1)" "in [time]" за@ @accusative+
 person-experiencing-a-state: "кому-то хорошо/плохо... (A2)" "[dat] feel(s) adjective@adv+" tag:animate@dat adjective@adv+
 по-place-of-movement: "по (дороге/улице...) (A2)" "along, through [somewhere]" по@ @dative+
 по-mode-of-communication: "по (телефону/телевизору....) (A2)" "on [mode of communication]" по@ @dat
@@ -173,3 +173,8 @@ go-do: "идти verb" "go [verb] " идти@ verb@+
 стоить-дорогой: "стоить дорогой" "is ... дорогой|дешёвый@" стоить@ any дорогой|дешёвый@
 стоить-дорогой: "стоить дорогой" "" 
 у-thing: "у чего-то" "by [something]" у@ @genitive+
+тот-самый: "тот самый" "the same" тот@ самый@
+тот-самый: "тот самый" "the same" тот@ же@ самый@
+за-acc: "за" "for" за@ @accusative+
+за-что: "за что" "what for" за@ что@
+то-что: "то что" "that, which" тот@n ,@ что[that]@
