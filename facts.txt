@@ -1,6 +1,6 @@
 тут: here
 это: this (is)
-собак--а: dog, inflect: fem-animate
+собак--а: dog, inflect: fem-animate, tag: animate
 grammar: fem@nom
 кошк--а: cat, inflect: -кошка, tag: animate
 бел--ый: white, inflect: adj
@@ -273,7 +273,7 @@ grammar: -друг@datpl, tag: dative
 grammar: -давать@1, tag: verb
 интересн--ый: interesting, inflect: ныйadj
 без: without
-мног--о: many / much, inflect: -много, tag: number, mask: sg
+мног--о: many / much, inflect: -много, tag: number, tag: amount, mask: sg
 grammar: masc@genpl, tag: genitive
 grammar: -друг@genpl, tag: genitive
 grammar: adj@adv
@@ -394,7 +394,7 @@ grammar: егоadj@datf, tag: dative
 после: after
 grammar: егоadj@datm, tag: dative
 конц--<ец: end, inflect: -конец
-мест--о: place, inflect: neu
+мест--о: place, seat , inflect: neu
 мест--о[space]: space, room, inflect: neu
 час--: hour, inflect: masc, tag: time
 час--[time]: time, inflect: masc, tag: time
@@ -706,14 +706,14 @@ grammar: -остаться@pastm, tag: verb
 часто: often
 grammar: -казаться@pastn, tag: verb
 grammar: -случай@genpl, tag: genitive
-нескольк--о: a few, inflect: -много, tag: number, mask: allbutpl
+нескольк--о: a few, inflect: -много, tag: number, tag: amount, mask: allbutpl
 иногда: sometimes
 grammar: -тот@instrm, tag: instrumental
 писател--ь: writer, inflect: mascь-animate
 пакет--: (plastic/paper) bag, inflect: masc
 перед: before
 grammar: -неделя@genpl, tag: genitive
-зов--<<вать[invite]: to invite, inflect: -звать
+зов--<<вать[invite]: to invite to join, inflect: -звать
 grammar: -остаться@3pl, tag: verb
 всего: than everything
 вс--<есь: all, entire, whole, inflect: -весь, mask: nonstd
@@ -744,7 +744,7 @@ grammar: sya@imprpl, tag: verb
 grammar: neuie@genpl, tag: genitive
 grammar: -ответить@1, tag: verb
 перв--ый: first, inflect: adj
-немног--о: little / few, inflect: -много, tag: number, mask: sg
+немног--о: little / few, inflect: -много, tag: number, tag: amount, mask: sg
 grammar: -ответить@impr, tag: verb
 потом: later, then
 grammar: -мочь@1, tag: verb
@@ -798,7 +798,7 @@ grammar: neuie@preppl, tag: prepositional
 grammar: -идти@inf, tag: verb
 grammar: -спросить@1, tag: verb
 лишь: onlu
-значи--ть: mean, denote, inflect: -значить
+значи--ть: mean, inflect: -значить
 grammar: -мочь@pastm, tag: verb
 дорог--а: road, inflect: fem
 главн--ый: main, chief, inflect: ныйadj
@@ -929,7 +929,7 @@ grammar: -сестра@genpl, tag: genitive
 следи--ть: to watch, to follow, inflect: -ходить
 grammar: -месяц@genpl, tag: genitive
 grammar: -один@accf, tag: accusative
-напротив: against, opposite
+напротив: across from
 двор--: yard, inflect: masc
 grammar: -они@genpl, tag: genitive
 поед--<хать: to go by vehicle, inflect: -поехать
@@ -1043,7 +1043,7 @@ grammar: -рад@shortpl
 границ--а: border, inflect: -улица
 grammar: -принести@pastpl, tag: verb
 grammar: -россия@dat, tag: dative
-и[part]: adds stress
+и[part]: adds stress, tag: untranslatable
 звонк--<ок: call, inflect: -подарок
 grammar: sya@impr, tag: verb
 то: then
@@ -1069,7 +1069,7 @@ grammar: -себя@dat, tag: dative
 grammar: -себя@instr, tag: instrumental
 езди--ть: to go by vehicle on land, inflect: -ходить
 взросл--ый: adult, inflect: adj
-готови--ть: to prepare, to cook, inflect: -готовить
+готови--ть: to cook, inflect: -готовить
 grammar: -четыре@pl
 grammar: -она@datalt, tag: dative
 входи--ть: to go in, inflect: -ходить
@@ -1215,7 +1215,6 @@ phrase: три-gen
 phrase: четыре-gen
 phrase: у-кого
 phrase: много-gen
-phrase: немного-gen
 phrase: мало-gen
 phrase: из-gen-departure
 phrase: с-gen
@@ -1258,7 +1257,7 @@ phrase: рад-dat
 grammar: -время@gen, tag: genitive
 grammar: -дерево@pl
 phrase: чем-чем
-броси--ть: to throw, to abandon, inflect: -бросить
+броси--ть: to abandon, inflect: -бросить
 phrase: если-то
 шаг--: step, inflect: masc
 находи--ться: to be located, inflect: -находиться
@@ -1369,7 +1368,7 @@ phrase: по-карману
 прежде: before
 приноси--ть: to bring, inflect: -спросить
 grammar: -ранний@adv
-пар--а: couple, pair, inflect: fem
+пар--а: couple, pair, inflect: fem, tag: amount
 встрети--ться: to meet, to get together, inflect: -встретиться
 пальц--<<ец: finger, toe, inflect: -палец
 grammar: -ранний@comp
@@ -1377,7 +1376,6 @@ phrase: не-так-ли
 grammar: -стоить@impr, tag: verb
 grammar: -ехать@impr, tag: verb
 grammar: abstr-ийadj@pl
-phrase: бы-не-past
 phrase: за-то-что
 phrase: в-курсе
 почувству--<овать: to feel, to sense, inflect: -чувствовать
@@ -1522,7 +1520,34 @@ phrase: такой..как
 phrase: стоить-дорогой
 phrase: у-thing
 grammar: neuadjoe@genpl, tag: genitive
-phrase: тот-самый
 phrase: за-acc
 phrase: за-что
 phrase: то-что
+phrase: когда-то
+phrase: то-же
+phrase: не-gen
+phrase: ни-ни
+phrase: если-бы
+phrase: куда-бы
+phrase: кроме-gen
+phrase: против-gen
+phrase: если-только
+phrase: ask-someone
+phrase: comp-gen2
+phrase: need-to-be
+phrase: чтобы-that
+phrase: выйти-из
+phrase: за-городом
+phrase: за-город
+phrase: сидеть-в-интернете
+phrase: на-самом-деле
+phrase: смотреть-на
+одолжи--ть: to lend, inflect: -учить
+grammar: -гость@loc
+grammar: -гость@locpl
+в гостях: for a visit
+grammar: neuadjoe@accpl
+phrase: про-что-то
+phrase: играть-в-игру
+уход--: n/a, inflect: masc
+обратн--ый: n/a, inflect: adj
