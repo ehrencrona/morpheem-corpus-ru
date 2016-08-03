@@ -11,7 +11,6 @@ teach: "научить кого-то чему-то" "teach [someone] [something]
 рад-dat: "рад чему-то" " happy to see [someone]" рад@ @dat
 чем-чем: "чем ... тем ..." "the ... the" что@instr any тот@instrn
 если-то: "если ... то" "if ... then" если@ any то@
-how-old: "сколько лет кому-то ... ?" "how old is [someone]" сколько@ год@genpl @dative
 с-gen: "с (откуда, с какого времени) (A1)" "from [somewhere, sometime, something]" с@ @genitive
 с-чего-взял: "с чего кто-то взял" "where did tag:animate get the idea from" с@ что@gen tag:animate взять@
 time-acc: "время (interval/repeating) TODO: only apply this one if nothing with prepositions applies(A1)" "for a [certain amount of time]" tag:time@acc
@@ -37,7 +36,7 @@ more-than: "больше / лучше / ... чем" "more @comp than [someone/so
 no-matter-what: "во что бы то ни стало" "no matter what" в@alt что@ бы@ тот@n ни@ стать@
 в-пути: "в пути" "on the road" в@ путь@
 на-пути: "на пути" "on the adjective@* road" на@ adjective@* путь@
-всё-ещё: "всё@ ещё" "still" всё@ ещё@
+всё-ещё: "всё@ ещё" "still" весь@ ещё@
 столько-всего: "столько всего" "so much" столько@ всего@
 нет-равных: "нет равных" "have no equal" нет[none]@ равный@genpl
 ни-не: "ни чего-то не " "not any [something]" ни@ @gen не@
@@ -84,8 +83,8 @@ comp-gen: "лучше than genitive (B1) " "comp than [something]" @comp @geniti
 на-направление: "на somewhere (направление) (A1)" "to [somewhere]" на@ @accusative
 на-завтрак-обед-ужин: "на завтрак/обед/ужин" "for [meal]" на@ tag:meal@acc
 в-направление: "в направление (A1)" "to [direction]" в@ @accusative+
-в-time: "в четверг (moment in time/day) (A1)" "on, at [moment in time]" в@ adjective@accusative* tag:time@accusative
-каждый-time: "каждый/весь/целый... (time)" "adjective@accusative+ [time]" adjective@accusative+ tag:time@accusative
+в-time: "в четверг (moment in time/day) (A1)" "on [moment in time]" в@ adjective@accusative* tag:time@accusative
+каждый-time: "каждый/весь/целый... (time)" "on [time]" adjective@accusative+ tag:time@accusative
 не-больше: "больше не" "no longer" больше[longer]@comp не@
 для-того: "для того что" "adjective enough to" adjective@+ для@ тот@genn ,@ @* чтобы@
 давно-пора: "давно пора" "it is high time" давно@ пора@
@@ -102,17 +101,17 @@ hyperbole: "hyperbole" "@instrumental+ (exaggerating)" adjective@instrpl* tag:ti
 через-time: "через (время) (B1)" "after, in [time]" через@ any tag:time@acc
 на-time: "на (время) (B1)" "for [time]" на@ tag:time@accusative
 за-time: "за (время) (B1)" "in [time]" за@ @accusative+
-person-experiencing-a-state: "кому-то хорошо/плохо... (A2)" "[dat] feel(s) adjective@adv+" tag:animate@dat adjective@adv+
 по-place-of-movement: "по (дороге/улице...) (A2)" "along, through [somewhere]" по@ @dative+
-по-mode-of-communication: "по (телефону/телевизору....) (A2)" "on [mode of communication]" по@ @dat
+по-mode-of-communication: "по (телефону/телевизору....) (A2)" "on [mode of communication]" по@ @dative+
 как-можно-comp: "как можно (скорее...)" "as comp as possible" как@ можно@ @comp
 по-definition: "по (математике...) (A2)" "по [definition]" по@ @dat
 кому-то-надо: "(кому-то) надо (B1)" "[someone] needs" @dative+ any надо@
+кому-то-нужно: "(кому-то) нужно (A1)" "[someone] does not need" @dative не@ any нужно@
 кому-то-нужно: "(кому-то) нужно (A1)" "[someone] needs" @dative any нужно@
 на-твоем-месте: "на твоём месте" "in [someone's] position" бы@ на@ adjective@prep* место@prep
 кому-то-можно: "(кому-то) можно (B1)" "[someone] may" @dative+ можно@
 кому-то-можно: "(кому-то) можно (B1)" "may [person]" можно@ @dative+
-кому-то-нельзя: "(кому-то) нельзя (B1)" "[someone] may not" @dative нельзя@
+кому-то-нельзя: "(кому-то) нельзя (B1)" "[someone] may not" @dative+ нельзя@
 по-очереди: "по очереди" "one by one" по@ очередь@dat
 по-возможности: "по возможности" "if possible" по@ возможность@dat
 заниматься-чем-то: "заниматься (чем-то) (A1)" "take part in [activity]" заниматься@ @instr
@@ -198,3 +197,41 @@ need-to-be: "нужно (passive)" "[something] need to be verb@+" @accusative �
 смотреть-на: "смотреть на" "look at" посмотреть|смотреть@ на@
 про-что-то: "про что-то" "about [something]" про@ @accusative+
 играть-в-игру: "играть в игру" "play [a game]" играть@ в@ @accusative
+dat-нужен: "(кому-то) нужен" "[someone] does not need" @dative+ не@ any нужный@
+dat-нужен: "(кому-то) нужен" "[someone] needs" @dative+ any нужный@
+датьetc-dat: "дать/... кому-то чего-то" "tag:something-to-someone [something] to [someone]" tag:something-to-someone any @accusative+ any @dative+
+датьetc-dat: "дать/... кому-то чего-то" "tag:something-to-someone [someone] [something]" tag:something-to-someone any @dative+ any @accusative+
+датьetc-dat: "дать/... кому-то чего-то" "tag:something-to-someone [something] to [someone]" @accusative+ any tag:something-to-someone any @dative+
+датьetc-dat: "дать/... кому-то чего-то" "tag:something-to-someone [someone] [something]" @dative+ any tag:something-to-someone any @accusative+
+датьetc-dat: "дать/... кому-то чего-то" "tag:something-to-someone to [someone]" tag:something-to-someone any @dative+
+датьetc-dat: "дать/... кому-то чего-то" "tag:something-to-someone to [someone]" @dative+ any tag:something-to-someone
+купить-чего-то: "покупать чего-то кому-то" "buy [something] for [someone]" купить|покупать@ any @accusative+ any @dative+
+купить-чего-то: "покупать чего-то кому-то" "buy [someone] [something]" купить|покупать@ any @dative+ any @accusative+
+dat-adv: "кому-то холодно/..." "[someone] feels @adv" @dative+ any @adv
+dat-adv: "кому-то холодно/..." "[someone] felt @adv" @dative+ быть@ any @adv
+кому-то-достаточно: "кому-то достаточно" "[someone] has enough" @dative+ достаточный@adv
+кому-то-достаточно: "кому-то достаточно" "[someone] does not have enough" @dative+ не@ достаточный@adv
+кому-то-достаточно: "кому-то достаточно" "[someone] did not have enough" @dative+ быть@ достаточный@adv
+dat-удобно: "кому-то удобно" "suit [someone]" @dative+ удобный@adv
+dat-нельзя: "кому-то нельзя" "[someone] may not" @dative any нельзя@
+все-равно: "всё равно" "nevertheless" весь@ равный@
+зачем-dat: "зачем кому-то что-то" "why does [person] need" зачем@ @dative
+давать-verb: "давать кому-то делать что-то" "let [someone] verb@+" давать[allow]@ any @dative+ any verb@+
+давать-verb: "давать кому-то делать что-то" "does not let [someone] verb@+" @dative+ any не@ давать[allow]@ any verb@+
+dat-нравится: "кому-то нравится" "[someone] likes" @dative any нравиться|понравиться@
+dat-нравится: "кому-то нравится" "" 
+dat-интересно: "кому-то интересно" "[someone] is interested in" @dative+ any интересный@
+как-dat: "как кому-то что-то" "how [someone] can verb@+" как@ @dative+ any verb@+
+dat-лет: "сколько@ кому-то лет" "how old is [someone]" сколько@ any @dative+ any год@genpl
+dat-лет: "сколько@ кому-то лет" "[someone] is ... years old" @dative+ any год@genpl
+dat-лет: "сколько@ кому-то лет" "how old is [someone]" сколько@ год@genpl @dative+
+both-и-и: "и ... , и ..." "both ... and" и@ any и@
+either-or-или-или: "или ... , или ..." "either ... or" или@ any или@
+после-того-как: "после того как" "after (someone) had [done something]" после@ тот@genitive any как[when]@
+перед-тем-как: "перед тем как" "before [doing something]" перед@ тот@instrumental any как[when]@
+звонить-в-дверь: "звонить в дверь" "ring the doorbell " звонить@ в@ дверь@
+из-material: "из материала" "of [material]" из@ @genitive+
+из-material: "из материала" "consisting of [something]" из@ @genitive+
+из-out-of: "из (выбор)" "out of [several things or people]" из@ @genitive+
+при-чём: "при чём" "what does [something] have to do with this" при@ что@prepositional здесь@
+кому-то-кажется: "кому-то кажется" "it seems to [someone]" @dative+ кажеться@

@@ -71,8 +71,8 @@ grammar: -ты@nom
 grammar: -что@acc, tag: accusative
 grammar: it-im-ite@2, tag: verb
 книг--а: book, inflect: fem
-чита--ть: read, inflect: ать
-пиш--<сать: write, inflect: -писать
+чита--ть: read, inflect: ать, tag: something-to-someone
+пиш--<сать: write, inflect: -писать, tag: something-to-someone
 газет--а: newspaper, inflect: fem
 журнал--: magazine, inflect: masc
 встреча--ть[meet]: meet, inflect: ать
@@ -138,7 +138,7 @@ grammar: -свой@accf, tag: accusative
 grammar: it-im-ite@3pl, tag: verb
 нов--ый: new, inflect: adj
 закрыва--ть: to close, inflect: ать
-открыва--ть: to open, inflect: ать
+открыва--ть: to open, inflect: ать, tag: something-to-someone
 grammar: adj@pl
 доктор--: doctor, inflect: -доктор, tag: animate
 профессор--: professor, inflect: -доктор, tag: animate
@@ -205,7 +205,7 @@ grammar: -два@pl
 тр--и: three, inflect: -три, tag: number
 а: and (in contrast)
 булочк--а: bun, inflect: femka2
-возвраща--ть: to return, inflect: ать
+возвраща--ть: to return, inflect: ать, tag: something-to-someone
 шоколад--: chocolate, inflect: masc, tag: uncountable
 подарк--<ок: gift, inflect: -подарок
 grammar: -я@dat, tag: dative
@@ -213,18 +213,18 @@ grammar: -вы@datpl, tag: dative
 grammar: -кто@dat, tag: dative
 grammar: -она@dat, tag: dative
 grammar: -мы@datpl, tag: dative
-да--вать: to give, inflect: -давать
+да--вать: to give, inflect: -давать, tag: something-to-someone
 grammar: sya@3, tag: verb
 нрави--ться: to like, inflect: -нравиться
 grammar: masc@dat, tag: dative
-дари--ть: to give a gift, inflect: -дарить
+дари--ть: to gift, inflect: -дарить, tag: something-to-someone
 нужно: to need
 нужн--ый: necessary, needed, inflect: ныйadj, mask: adv
 grammar: ныйadj@shortf
 grammar: ныйadj@shortn
 grammar: ныйadj@shortm
 grammar: adj@datm, tag: dative
-одалжива--ть: to borrow, inflect: ать
+одалжива--ть: to borrow, inflect: ать, tag: something-to-someone
 grammar: -нравиться@3pl, tag: verb
 grammar: -он@dat, tag: dative
 grammar: -ты@dat, tag: dative
@@ -248,7 +248,7 @@ grammar: n@preppl, tag: prepositional
 замк--<ок[castle]: castle, inflect: -подарок
 замк--<ок[lock]: lock, inflect: -подарок
 кури--ть: smoke, inflect: -дарить
-говори--ть: to speak, to talk, inflect: -дарить, tag: speech
+говори--ть: to speak, to talk, inflect: -дарить, tag: speech, tag: something-to-someone
 нельзя: can't
 известн--ый: famous, inflect: ныйadj
 grammar: femяь@gen, tag: genitive
@@ -661,7 +661,7 @@ grammar: егоadj@instrf, tag: instrumental
 grammar: -вы@genpl, tag: genitive
 семь--я: family, inflect: -статья
 завтрак--: breakfast, inflect: masc, tag: meal, tag: time
-ед--<хать: to go by vehicle on land, inflect: -ехать
+ед--<хать: to go (by vehicle), inflect: -ехать
 grammar: -конец@nom
 grammar: -они@datpl, tag: dative
 ча--й: tea, inflect: -чай, tag: uncountable
@@ -673,7 +673,7 @@ grammar: -открыть@inf, tag: verb
 grammar: -мочь@pastpl, tag: verb
 grammar: -словарь@nom
 стои--ть: to cost, inflect: -стоить
-скаж--<зать: to say, to tell, inflect: -сказать
+скаж--<зать: to say, to tell, inflect: -сказать, tag: something-to-someone
 grammar: -год@prep, tag: prepositional
 вод--а: water, inflect: fem, tag: uncountable
 так--ой: such, inflect: ойadj, mask: nonstd
@@ -978,7 +978,7 @@ grammar: -чувствовать@pastm, tag: verb
 поговори--ть: to have a word, to talk, inflect: -дарить
 grammar: femя@instr, tag: instrumental
 тяжёл--ый: heavy, difficult, inflect: adj
-расскаж--<зать: to tell, to narrate, inflect: -показать
+расскаж--<зать: to tell, to narrate, inflect: -показать, tag: something-to-someone
 убь--<ить: to kill, inflect: -убить
 grammar: femь-я-to-а@instrpl, tag: instrumental
 grammar: femь-я-to-а@preppl, tag: prepositional
@@ -1015,7 +1015,7 @@ grammar: -тот@pl
 международн--ый: international, inflect: adj
 grammar: -тот@datpl, tag: dative
 подушк--а: pillow, cushion, inflect: femka2
-да--вать[allow]: to allow, inflect: -давать
+да--вать[allow]: to let, inflect: -давать
 особенн--ый: special, particular, inflect: adj
 лишн--ий: spare, unnecessary, inflect: -домашний
 grammar: -давать@inf, tag: verb
@@ -1085,8 +1085,8 @@ grammar: -они@datplalt, tag: dative
 сумк--а: bag, inflect: femka
 grammar: -они@genplalt, tag: genitive
 grammar: -они@instrplalt, tag: instrumental
-да--ть: to give, inflect: -дать
-покаж--<зать: to show, inflect: -показать
+да--ть: to give, inflect: -дать, tag: something-to-someone
+покаж--<зать: to show, inflect: -показать, tag: something-to-someone
 grammar: -они@preppl, tag: prepositional
 здоров--ый: healthy, sound, inflect: adj
 овощ--: vegetable, inflect: -овощ
@@ -1295,7 +1295,6 @@ phrase: без-gen
 центральн--ый: central, inflect: adj
 останови--ться: to stop, inflect: -становиться
 phrase: at-instr
-phrase: how-old
 phrase: more-than
 пробежи--<ать: to run, inflect: -пробежать
 потеря--ть: to lose, inflect: ать
@@ -1448,7 +1447,6 @@ phrase: через-direction
 phrase: через-time
 phrase: на-time
 phrase: за-time
-phrase: person-experiencing-a-state
 phrase: по-place-of-movement
 phrase: по-mode-of-communication
 phrase: как-можно-comp
@@ -1552,8 +1550,34 @@ phrase: смотреть-на
 grammar: -гость@loc
 grammar: -гость@locpl
 в гостях: for a visit
-grammar: neuadjoe@accpl
+grammar: neuadjoe@accpl, tag: accusative
 phrase: про-что-то
 phrase: играть-в-игру
 уход--: n/a, inflect: masc
 обратн--ый: n/a, inflect: adj
+phrase: dat-нужен
+phrase: датьetc-dat
+аэропорт--: n/a, inflect: -аэропорт
+grammar: -аэропорт@loc
+phrase: купить-чего-то
+phrase: dat-adv
+phrase: кому-то-достаточно
+phrase: dat-удобно
+phrase: dat-нельзя
+phrase: все-равно
+phrase: зачем-dat
+phrase: давать-verb
+phrase: dat-нравится
+phrase: dat-интересно
+phrase: как-dat
+phrase: dat-лет
+phrase: both-и-и
+phrase: either-or-или-или
+phrase: после-того-как
+phrase: перед-тем-как
+phrase: звонить-в-дверь
+phrase: из-material
+вовремя: n/a, tag: time
+phrase: из-out-of
+phrase: при-чём
+phrase: кому-то-кажется
