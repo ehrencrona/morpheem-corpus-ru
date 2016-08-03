@@ -39,7 +39,8 @@ grammar: -она@nom
 улиц--а: street, inflect: -улица
 на: on, , tag: untranslatable
 газон--: lawn, inflect: masc
-работа--ть: work, inflect: ать
+работа--ть: to work, inflect: ать
+работа--ть[open]: to be open, inflect: ать
 grammar: ать@1, tag: verb
 grammar: y-esh-et@3, tag: verb
 игра--ть: play, inflect: ать
@@ -273,7 +274,8 @@ grammar: -друг@datpl, tag: dative
 grammar: -давать@1, tag: verb
 интересн--ый: interesting, inflect: ныйadj
 без: without
-мног--о: many / much, inflect: -много, tag: number, tag: amount, mask: sg
+мног--о: many, inflect: -много, tag: number, tag: amount, mask: allbutpl
+мног--о[much]: a lot, inflect: -много, tag: number, tag: amount, mask: allbutplandadv
 grammar: masc@genpl, tag: genitive
 grammar: -друг@genpl, tag: genitive
 grammar: adj@adv
@@ -394,8 +396,9 @@ grammar: егоadj@datf, tag: dative
 после: after
 grammar: егоadj@datm, tag: dative
 конц--<ец: end, inflect: -конец
-мест--о: place, seat , inflect: neu
-мест--о[space]: space, room, inflect: neu
+мест--о: place, inflect: neu
+мест--о[space]: space, room, inflect: neu, mask: pl
+мест--о[seat]: seat, inflect: neu
 час--: hour, inflect: masc, tag: time
 час--[time]: time, inflect: masc, tag: time
 час--[clock]: clock, watch, inflect: masc, mask: sg
@@ -744,7 +747,8 @@ grammar: sya@imprpl, tag: verb
 grammar: neuie@genpl, tag: genitive
 grammar: -ответить@1, tag: verb
 перв--ый: first, inflect: adj
-немног--о: little / few, inflect: -много, tag: number, tag: amount, mask: sg
+немног--о: few, inflect: -много, tag: number, tag: amount, mask: allbutpl
+немног--о[little]: a little, inflect: -много, tag: number, tag: amount, mask: allbutplandadv
 grammar: -ответить@impr, tag: verb
 потом: later, then
 grammar: -мочь@1, tag: verb
@@ -757,7 +761,7 @@ grammar: sya@3pl, tag: verb
 тогда: then
 grammar: -вернуться@1, tag: verb
 grammar: sya@pastf, tag: verb
-то[если]: "then" in "if..then"
+то: then
 давно: long time ago
 недавно: recently
 grammar: -оставаться@pastn, tag: verb
@@ -804,7 +808,7 @@ grammar: -мочь@pastm, tag: verb
 главн--ый: main, chief, inflect: ныйadj
 вместе: together
 grammar: -парень@nom
-берег--: shore, bank, inflect: masc3
+берег--: shore, bank, inflect: -лес
 полн--ый: full, complete, inflect: ныйadj
 быва--ть: to happen, inflect: ать
 grammar: -mascь@datpl, tag: dative
@@ -913,6 +917,7 @@ grammar: -о@alt2
 grammar: -сам@m
 зарядк--а: charger, inflect: femka
 сяд--<<есть: to sit down, inflect: -сесть
+сяд--<<есть[power]: to run out of power, inflect: -сесть
 вероятн--ый: likely, plausible, inflect: adj
 grammar: -дать@3, tag: verb
 grammar: sya@pastpl, tag: verb
@@ -1010,6 +1015,7 @@ grammar: -тот@pl
 международн--ый: international, inflect: adj
 grammar: -тот@datpl, tag: dative
 подушк--а: pillow, cushion, inflect: femka2
+да--вать[allow]: to allow, inflect: -давать
 особенн--ый: special, particular, inflect: adj
 лишн--ий: spare, unnecessary, inflect: -домашний
 grammar: -давать@inf, tag: verb
@@ -1046,7 +1052,6 @@ grammar: -россия@dat, tag: dative
 и[part]: adds stress, tag: untranslatable
 звонк--<ок: call, inflect: -подарок
 grammar: sya@impr, tag: verb
-то: then
 бер--<<рать: to take, inflect: -набрать
 вегетарианц--<ец: vegitarian, inflect: -вегетарианец
 grammar: -она@instralt, tag: instrumental
@@ -1256,6 +1261,7 @@ phrase: teach
 phrase: рад-dat
 grammar: -время@gen, tag: genitive
 grammar: -дерево@pl
+чем: than
 phrase: чем-чем
 броси--ть: to abandon, inflect: -бросить
 phrase: если-то
