@@ -169,7 +169,7 @@ grammar: adj@prepf, tag: prepositional
 наш--: our, ours, inflect: -наш
 grammar: v@1, tag: verb
 grammar: -наш@pl
-родител--ь: parents, inflect: mascь-animate, mask: sg
+родител--ь: parents, inflect: mascь-animate, tag: animate, mask: sg
 офис--: office, inflect: masc
 grammar: -этот@pl
 жив--<ть: to live, inflect: -жить
@@ -400,7 +400,6 @@ grammar: егоadj@datm, tag: dative
 мест--о[space]: space, room, inflect: neu, mask: pl
 мест--о[seat]: seat, inflect: neu
 час--: hour, inflect: -аэропорт, tag: time
-час--[time]: time, inflect: masc, tag: time
 час--[clock]: clock, watch, inflect: masc, mask: sg
 grammar: -статья@instr, tag: instrumental
 grammar: -нравиться@1, tag: verb
@@ -674,7 +673,6 @@ grammar: -мочь@pastpl, tag: verb
 grammar: -словарь@nom
 стои--ть: to cost, inflect: -стоить
 скаж--<зать: to say, inflect: -сказать, tag: something-to-someone, tag: speech
-grammar: -год@prep, tag: prepositional
 вод--а: water, inflect: fem, tag: uncountable
 так--ой: such, inflect: ойadj, mask: nonstd
 проблем--а: problem, inflect: fem
@@ -789,7 +787,7 @@ grammar: neuie@preppl, tag: prepositional
 вокруг: around
 власт--ь: power, inflect: femь
 воздух--: air, inflect: masc
-проси--ть: to ask for, inflect: -спросить
+проси--ть: to ask, inflect: -спросить
 собственн--ый: own, inflect: ныйadj
 пыта--ться: to try, inflect: -пытаться
 вспомни--ть: to recall, inflect: -дарить
@@ -953,7 +951,7 @@ grammar: -повернуть@inf, tag: verb
 чь--<ей: whose, inflect: -чей
 grammar: -я@prep, tag: prepositional
 существу--<овать: to exist, inflect: -чувствовать
-очевидно: evidently
+очевидн--ый: evidently, inflect: ныйadj, mask: short
 здани--е: building, inflect: neuie
 grammar: -идти@pastpl, tag: verb
 grammar: adj@shortpl
@@ -974,7 +972,7 @@ grammar: -чувствовать@inf, tag: verb
 grammar: sya@pastn, tag: verb
 grammar: -чувствовать@pastm, tag: verb
 совету--<овать: to recommend, to advise, inflect: -чувствовать, tag: speech
-поговори--ть: to have a word, to talk, inflect: -дарить
+поговори--ть: to talk, inflect: -дарить, tag: speech
 grammar: femя@instr, tag: instrumental
 тяжёл--ый: heavy, difficult, inflect: adj
 расскаж--<зать: to tell, inflect: -показать, tag: something-to-someone, tag: speech
@@ -1123,7 +1121,7 @@ grammar: -лететь@1, tag: verb
 времен--<<я: time, inflect: -время, tag: time
 grammar: neuadjoe@acc, tag: accusative
 grammar: neuadjoe@nom
-сам--ый: most, inflect: adj
+сам--ый: most, the very, inflect: adj
 рук--а: arm, hand, inflect: fem
 ни: neither/nor
 grammar: -доктор@pl
@@ -1160,7 +1158,7 @@ grammar: -дерево@instrpl, tag: instrumental
 вдруг: suddenly
 grammar: -набрать@inf, tag: verb
 grammar: -показать@inf, tag: verb
-возьм--<<<<зять: to take, inflect: -взять
+возьм--<<<<зять: to take, inflect: -взять, tag: something-to-someone
 над: above, over, tag: untranslatable
 grammar: -хотеть@inf, tag: verb
 хотя: even though
@@ -1194,7 +1192,7 @@ grammar: perspron@accpl, tag: accusative
 grammar: abstr-soft-final-stressed@instr, tag: instrumental
 почти: almost
 каж--<заться: to appear, to seem, inflect: -казаться
-ряд--: row, inflect: masc
+ряд--: row, inflect: -аэропорт
 grammar: -огонь@nom
 grammar: -бытьfut@inf, tag: verb
 подума--ть: to think, inflect: ать
@@ -1278,7 +1276,7 @@ grammar: -третий@m
 grammar: аться@2pl, tag: verb
 grammar: аться@1pl, tag: verb
 разве: really?
-видно: can be seen
+видн--ый: visible, inflect: ныйadj, mask: adv
 знакомств--о: acquaintance, inflect: neu
 прекрати--ть: to cease, to stop, inflect: -спросить
 познакоми--ться: get to know, inflect: -нравиться
@@ -1303,7 +1301,7 @@ phrase: more-than
 напиш--<сать: to write, inflect: -писать, tag: something-to-someone
 отношени--е[regard]: regard, inflect: neuie
 способн--ый: able, capable, inflect: adj
-единственный: the only
+единственн--ый: the only, inflect: adj
 начина--ться: to begin, inflect: -пытаться
 phrase: с-instr
 phrase: при-prep
@@ -1500,7 +1498,6 @@ phrase: за-окном
 phrase: за-стол
 phrase: сколько-distance
 phrase: go-do
-grammar: -лес@loc
 grammar: -сидеть@impr, tag: verb
 phrase: к-чему-то
 phrase: к-time
@@ -1556,12 +1553,10 @@ phrase: играть-в-игру
 phrase: dat-нужен
 phrase: датьetc-dat
 аэропорт--: n/a, inflect: -аэропорт
-grammar: -аэропорт@loc
 phrase: купить-чего-то
 phrase: dat-adv
 phrase: кому-то-достаточно
 phrase: dat-удобно
-phrase: dat-нельзя
 phrase: все-равно
 phrase: зачем-dat
 phrase: давать-verb
@@ -1588,3 +1583,17 @@ phrase: по-отношению
 phrase: рад-кому
 phrase: одется-dat
 phrase: учить-dat
+grammar: abstr-loc@loc
+phrase: сам-с-собой
+phrase: не-стоит
+phrase: просить-о
+стои--ть[should]: should, inflect: -стоить
+phrase: dat-платить
+phrase: верить-в
+phrase: в-году
+phrase: в-время
+phrase: в-неделе
+phrase: как-тебе
+phrase: intended-for
+phrase: in-eyes-of
+phrase: прийти-в-голову
