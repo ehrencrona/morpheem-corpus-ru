@@ -2,6 +2,7 @@ abstr-anim[n]: "animals or people" accpl genpl-
 abstr-masc-anim[n]: "masculine nouns describing animals or people" acc gen-, inherit abstr-anim
 abstr-soft-final[n]: "words ending in a soft, stressed consonant (except ч, щ)" instr ем
 abstr-soft-final-stressed[n]: "words ending in soft consonants (or hard ц, ш, ж if unstressed)" instr ём
+abstr-loc[n]: loc у
 n[n]: "nouns" nom ***, pl ы, datpl ам, acc nom-, accpl pl-, instrpl ами, prep е, preppl ах, transform yToI
 fem[n]: "nouns ending in -а (mostly feminine, known as 'first inflection')" nom а, gen ы, genpl , dat е, acc у, instr ой, inherit n
 femka[n]: "feminine nouns ending in ка" genpl <ок, inherit fem
@@ -60,16 +61,16 @@ masc-animate[n]: inherit abstr-masc-anim, inherit masc
 -доктор[n]: pl а, inherit masc-animate
 -сосед[n]: pl и, datpl ям, instrpl ями, preppl ях, inherit -врач
 masc3[n]: pl а, inherit masc
--лес[n]: loc у, inherit masc3
--аэропорт[n]: loc у, inherit masc
+-лес[n]: inherit masc3, inherit abstr-loc
+-аэропорт[n]: inherit masc, inherit abstr-loc
 -глаз[n]: genpl , inherit masc3
 mascе[n]: "masculine nouns ending in е" nom е, inherit abstr-soft-final, inherit masc3
 -солнце[n]: genpl , inherit mascе
 -сердце[n]: genpl <ец, inherit mascе
 -месяц[n]: genpl ев, inherit abstr-soft-final, inherit masc
 -палец[n]: nom <<ец, inherit -месяц
--раз[n]: genpl , inherit masc
--год[n]: genpl <<<лет, prep у, inherit masc
+-раз[n]: genpl , inherit masc, inherit abstr-loc
+-год[n]: genpl <<<лет, inherit masc, inherit abstr-loc
 -конец[n]: nom <ец, inherit masc
 -овощ[n]: inherit abstr-soft-final, inherit -борщ
 -стул[n]: pl ья, genpl ьев, datpl ьям, instrpl ьями, preppl ьях, inherit masc
