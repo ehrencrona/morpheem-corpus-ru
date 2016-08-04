@@ -28,7 +28,6 @@ more-than: "больше / лучше / ... чем" "more @comp than [someone/so
 по-dat: "по кому/чему TODO: split up" "on [something]" по@ @dat
 сам-по-себе: "сам по себе" "by -self" сам@ по@ себя@dat
 из-за-того: "из-за того" "because of" из-за@ тот@genn
-поверить-dat: "поверить чему-то" "believe [someone]" поверить@ @dat
 ни-any-кто: "ни ... кто" "no one" ни@ any кто@
 ни-any-что: "ни ... что" "nothing" ни@ any что@
 с-тех-пор: "с тех пор" "since the time" с@ тот@ пора@
@@ -124,7 +123,7 @@ hyperbole: "hyperbole" "@instrumental+ (exaggerating)" adjective@instrpl* tag:ti
 между-чем-то: "между (чем-то) (B1)" "between [something]" между@ @instrumental
 за-место: "за (чем-то - место) (B1)" "behind, after [something]" за@ @instr+
 следить-за-кем-то: "следить (за кем-то) TODO make pattern include nouns and pronouns that follow the verb" "follow, look after [someone or something]" следить@ за@ any @instrumental
-за-столом: "за столом" "at the [table/desk - location]" за@ adjective@instrumental* стол@instr
+за-столом: "за столом" "at the table/desk [location]" за@ adjective@instrumental* стол@instr
 за-границей: "за границей" "abroad" за@ граница@instr
 перед-location: "перед (где)" "in front of [something]" перед@ @instr
 перед-time: "перед (когда) (B1)" "before [some moment in time]" перед@ @instr
@@ -148,7 +147,7 @@ will-not-have: "у кого-то не будет (A1)" "[someone] won't have" у
 как-зовут: "как зовут" "how are/is [person] called" как@ tag:animate@acc звать@
 как-зовут: "как зовут" "how is [person] called" как@ звать@ any tag:animate@accusative
 play-with: "играть на чём-то" "play (on) [instrument, device]" играть@ на@ @prepositional
-за-окном: "за окном TODO: add instrpl?" "outside the window" за@ окно@instr
+за-окном: "за окном" "outside the window" за@ adjective@instrumental* окно@instrumental
 за-стол: "за стол (куда)" "at the table [where to]" за@ стол@acc
 сколько-время: "сколько [время]" "how long" сколько@
 сколько-distance: "сколько [расстояние]" "how far" сколько@
@@ -169,7 +168,7 @@ go-do: "идти verb" "go [verb] " идти@ verb@+
 такой..как: "такой..как" "so / such ... as" такой@ any как[like]@
 стоить-дорогой: "стоить дорогой" "is ... дорогой|дешёвый@" стоить@ any дорогой|дешёвый@
 стоить-дорогой: "стоить дорогой" "" 
-у-thing: "у чего-то" "by [something]" у@ @genitive+
+у-thing: "у чего-то (где)" "by [something]" у@ @genitive+
 за-acc: "за" "for" за@ @accusative+
 за-что: "за что" "what for" за@ что@
 то-что: "то что" "that, which" тот@n ,@ что[that]@
@@ -199,15 +198,15 @@ need-to-be: "нужно (passive)" "[something] need to be verb@+" @accusative �
 играть-в-игру: "играть в игру" "play [a game]" играть@ в@ @accusative
 dat-нужен: "(кому-то) нужен" "[someone] does not need" @dative+ не@ any нужный@
 dat-нужен: "(кому-то) нужен" "[someone] needs" @dative+ any нужный@
-датьetc-dat: "дать/... кому-то чего-то" "tag:something-to-someone [something] to [someone]" tag:something-to-someone any @accusative+ any @dative+
-датьetc-dat: "дать/... кому-то чего-то" "tag:something-to-someone [someone] [something]" tag:something-to-someone any @dative+ any @accusative+
+датьetc-dat: "дать/... кому-то чего-то" "tag:something-to-someone [something] to [someone]" tag:something-to-someone @accusative+ any @dative+
+датьetc-dat: "дать/... кому-то чего-то" "tag:something-to-someone [someone] [something]" tag:something-to-someone @dative+ any @accusative+
 датьetc-dat: "дать/... кому-то чего-то" "tag:something-to-someone [something] to [someone]" @accusative+ any tag:something-to-someone any @dative+
 датьetc-dat: "дать/... кому-то чего-то" "tag:something-to-someone [someone] [something]" @dative+ any tag:something-to-someone any @accusative+
 датьetc-dat: "дать/... кому-то чего-то" "tag:something-to-someone to [someone]" tag:something-to-someone any @dative+
 датьetc-dat: "дать/... кому-то чего-то" "tag:something-to-someone to [someone]" @dative+ any tag:something-to-someone
 купить-чего-то: "покупать чего-то кому-то" "buy [something] for [someone]" купить|покупать@ any @accusative+ any @dative+
 купить-чего-то: "покупать чего-то кому-то" "buy [someone] [something]" купить|покупать@ any @dative+ any @accusative+
-dat-adv: "кому-то холодно/..." "[someone] feels @adv" @dative+ any @adv
+dat-adv: "кому-то холодно/..." "[someone] felt @adv" @dative+ any @comp
 dat-adv: "кому-то холодно/..." "[someone] felt @adv" @dative+ быть@ any @adv
 кому-то-достаточно: "кому-то достаточно" "[someone] has enough" @dative+ достаточный@adv
 кому-то-достаточно: "кому-то достаточно" "[someone] does not have enough" @dative+ не@ достаточный@adv
@@ -218,10 +217,12 @@ dat-нельзя: "кому-то нельзя" "[someone] may not" @dative any �
 зачем-dat: "зачем кому-то что-то" "why does [person] need" зачем@ @dative
 давать-verb: "давать кому-то делать что-то" "let [someone] verb@+" давать[allow]@ any @dative+ any verb@+
 давать-verb: "давать кому-то делать что-то" "does not let [someone] verb@+" @dative+ any не@ давать[allow]@ any verb@+
-dat-нравится: "кому-то нравится" "[someone] likes" @dative any нравиться|понравиться@
+давать-verb: "давать кому-то делать что-то" "let [someone] verb@+" давать[allow]@ any verb@+ any @dative+
+dat-нравится: "кому-то нравится" "[someone] likes" @dative+ any нравиться|понравиться@
 dat-нравится: "кому-то нравится" "" 
 dat-интересно: "кому-то интересно" "[someone] is interested in" @dative+ any интересный@
-как-dat: "как кому-то что-то" "how [someone] can verb@+" как@ @dative+ any verb@+
+как-dat: "как кому-то что-то" "how can [someone] verb@+" как@ @dative+ any verb@+
+как-dat: "как кому-то что-то" "how can [someone] best verb@+" как@ @dative+ хороший@comp any verb@+
 dat-лет: "сколько@ кому-то лет" "how old is [someone]" сколько@ any @dative+ any год@genpl
 dat-лет: "сколько@ кому-то лет" "[someone] is ... years old" @dative+ any год@genpl
 dat-лет: "сколько@ кому-то лет" "how old is [someone]" сколько@ год@genpl @dative+
@@ -234,4 +235,11 @@ either-or-или-или: "или ... , или ..." "either ... or" или@ any �
 из-material: "из материала" "consisting of [something]" из@ @genitive+
 из-out-of: "из (выбор)" "out of [several things or people]" из@ @genitive+
 при-чём: "при чём" "what does [something] have to do with this" при@ что@prepositional здесь@
-кому-то-кажется: "кому-то кажется" "it seems to [someone]" @dative+ кажеться@
+кому-то-кажется: "кому-то кажется" "it seems to [someone]" @dative+ any казаться@
+gen-верить: "верить кому-то" "trust [someone]" верить|поверить@ any @dative+
+gen-верить: "верить кому-то" "trust [someone]" @dative+ any верить|поверить@
+dat-speech: "говорить/сказать/... кому-то" "tag:speech [someone]" tag:speech @dative+
+dat-speech: "говорить/сказать/... кому-то" "[someone] tag:speech" @dative+ any tag:speech
+помогать-dat: "помогать-dat" "help [someone]" помогать@ any @dative+
+dat-жаль: "жаль" "[someone] regrets" @dative+ any жаль@
+dat-лучше: "кому-то лучше" "for [someone] it's better to" @dative+ any хороший@comp

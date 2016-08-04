@@ -115,7 +115,7 @@ grammar: -свой@m
 зов--<<вать: to call, inflect: -звать
 grammar: -жить@3pl, tag: verb
 тво--й: your, yours, inflect: -свой, mask: nonstd
-телефон--: telephone, inflect: masc
+телефон--: phone, inflect: masc
 телефон--[number]: phone number, inflect: masc
 покупа--ть: to buy, inflect: ать
 grammar: adj@accf, tag: accusative
@@ -452,7 +452,7 @@ grammar: adj@instrm, tag: instrumental
 боли--<еть: to be ill, inflect: -смотреть
 больниц--а: hospital, inflect: -улица
 grammar: -есть@2pl, tag: verb
-звони--ть: to call, inflect: -дарить
+звони--ть: to call, inflect: -дарить, tag: speech
 помога--ть: to help, inflect: ать
 чувству--<овать: to feel, to sense, inflect: -чувствовать
 grammar: -отец@nom
@@ -554,7 +554,7 @@ grammar: abstr-soft-final@instr, tag: instrumental
 клавиатур--а: keyboard, inflect: fem
 grammar: neu@pl
 grammar: adj@genn, tag: genitive
-врё--<ать: to lie, inflect: -ждать
+врё--<ать: to lie, inflect: -ждать, tag: speech
 карт--а: map, inflect: fem
 grammar: -mascь@nom
 подруг--а: friend, inflect: fem-animate
@@ -673,7 +673,7 @@ grammar: -открыть@inf, tag: verb
 grammar: -мочь@pastpl, tag: verb
 grammar: -словарь@nom
 стои--ть: to cost, inflect: -стоить
-скаж--<зать: to say, to tell, inflect: -сказать, tag: something-to-someone
+скаж--<зать: to say, to tell, inflect: -сказать, tag: something-to-someone, tag: speech
 grammar: -год@prep, tag: prepositional
 вод--а: water, inflect: fem, tag: uncountable
 так--ой: such, inflect: ойadj, mask: nonstd
@@ -833,7 +833,7 @@ grammar: adj@comp
 поэтому: that's why
 grammar: sya@pastm, tag: verb
 grammar: -mascь@gen, tag: genitive
-рассказыва--ть: to tell, inflect: ать
+рассказыва--ть: to tell, inflect: ать, tag: speech
 сад--: garden, inflect: masc
 совершенн--ый: complete, inflect: ныйadj
 grammar: -стоять@inf, tag: verb
@@ -909,7 +909,6 @@ grammar: -становиться@impr, tag: verb
 grammar: -что@prep, tag: prepositional
 либо: either
 сначала: at first
-каже--ться: to seems, to apper to be, inflect: sya
 grammar: -улица@instr, tag: instrumental
 grammar: -о@alt2
 курс--: course, rate, inflect: masc
@@ -974,11 +973,11 @@ grammar: -чувствовать@inf, tag: verb
 посмотри--<еть: to look, to watch, inflect: -смотреть
 grammar: sya@pastn, tag: verb
 grammar: -чувствовать@pastm, tag: verb
-совету--<овать: to recommend, to advise, inflect: -чувствовать
+совету--<овать: to recommend, to advise, inflect: -чувствовать, tag: speech
 поговори--ть: to have a word, to talk, inflect: -дарить
 grammar: femя@instr, tag: instrumental
 тяжёл--ый: heavy, difficult, inflect: adj
-расскаж--<зать: to tell, to narrate, inflect: -показать, tag: something-to-someone
+расскаж--<зать: to tell, to narrate, inflect: -показать, tag: something-to-someone, tag: speech
 убь--<ить: to kill, inflect: -убить
 grammar: femь-я-to-а@instrpl, tag: instrumental
 grammar: femь-я-to-а@preppl, tag: prepositional
@@ -1029,7 +1028,7 @@ grammar: -убить@inf, tag: verb
 grammar: -выбрать@inf, tag: verb
 grammar: -рад@shortm
 из-за: because of
-предложи--ть: propose, suggest, offer, inflect: -учить
+предложи--ть: propose, inflect: -учить, tag: speech
 удобн--ый: comfortable, convenient, inflect: adj
 grammar: -россия@prep, tag: prepositional
 grammar: -рад@shortf
@@ -1279,7 +1278,7 @@ grammar: -третий@m
 grammar: аться@2pl, tag: verb
 grammar: аться@1pl, tag: verb
 разве: really?
-видно: it looks like, obviously
+видно: can be seen
 знакомств--о: acquaintance, inflect: neu
 прекрати--ть: to cease, to stop, inflect: -спросить
 познакоми--ться: get to know, inflect: -нравиться
@@ -1301,7 +1300,7 @@ phrase: more-than
 роди--ть: to give birth, inflect: -ходить
 стира--ть: to wash clothes, inflect: ать
 отношени--е: relation, inflect: neuie
-напиш--<сать: to write, inflect: -писать
+напиш--<сать: to write, inflect: -писать, tag: something-to-someone
 отношени--е[regard]: regard, inflect: neuie
 способн--ый: able, capable, inflect: adj
 единственный: the only
@@ -1309,20 +1308,19 @@ phrase: more-than
 phrase: с-instr
 phrase: при-prep
 поверн--уть: to turn, inflect: -повернуть
-предлага--ть: to offer, inflect: ать
+предлага--ть: to offer, inflect: ать, tag: speech
 phrase: по-dat
 поворот--: turn, inflect: masc
 поворачива--ть: to turn, inflect: ать
 пропусти--ть: to miss, to skip, inflect: -простить
 phrase: сам-по-себе
 phrase: из-за-того
-разреши--ть: to allow, inflect: -учить
+разреши--ть: to allow, inflect: -учить, tag: speech
 неправильн--ый: incorrect, inflect: -правильный
 предупреди--ть: to warn, inflect: -ходить
 предложени--е[offer]: offer, inflect: neuie
 неужели: denotes disbelief
 получа--ть: to receive, to get, inflect: ать
-phrase: поверить-dat
 очеред--ь: queue, inflect: femь
 разоль--<<<лить: to spill, inflect: -разлить
 запасн--ой: spare, inflect: ойadj
@@ -1546,7 +1544,7 @@ phrase: за-город
 phrase: сидеть-в-интернете
 phrase: на-самом-деле
 phrase: смотреть-на
-одолжи--ть: to lend, inflect: -учить
+одолжи--ть: to lend, inflect: -учить, tag: something-to-someone
 grammar: -гость@loc
 grammar: -гость@locpl
 в гостях: for a visit
@@ -1581,3 +1579,8 @@ phrase: из-material
 phrase: из-out-of
 phrase: при-чём
 phrase: кому-то-кажется
+phrase: gen-верить
+phrase: dat-speech
+phrase: помогать-dat
+phrase: dat-жаль
+phrase: dat-лучше
