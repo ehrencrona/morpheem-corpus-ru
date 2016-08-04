@@ -102,7 +102,7 @@ grammar: ойadj@m
 дорог--ой: expensive, inflect: -дорогой
 grammar: -свой@m
 нет[none]: have none
-нет[part]: have none
+нет[part]: no
 мо--й: my, mine, inflect: -свой, mask: nonstd
 больш--ой: big, inflect: -большой
 больш--ой: more, inflect: -большой, mask: allbutcomp
@@ -117,7 +117,7 @@ grammar: -жить@3pl, tag: verb
 тво--й: your, yours, inflect: -свой, mask: nonstd
 телефон--: phone, inflect: masc
 телефон--[number]: phone number, inflect: masc
-покупа--ть: to buy, inflect: ать
+покупа--ть: to buy, inflect: ать, tag: something-to-someone
 grammar: adj@accf, tag: accusative
 стать--я: article, inflect: -статья
 grammar: y-esh-et@2, tag: verb
@@ -228,7 +228,7 @@ grammar: adj@datm, tag: dative
 grammar: -нравиться@3pl, tag: verb
 grammar: -он@dat, tag: dative
 grammar: -ты@dat, tag: dative
-хоч--<теть: to wish, to want, inflect: -хотеть
+хоч--<теть: to want, inflect: -хотеть
 с--: with, from, inflect: oprep, tag: untranslatable
 ед--а: food, inflect: fem
 grammar: fem@instr, tag: instrumental
@@ -328,7 +328,7 @@ grammar: -свой@prepm, tag: prepositional
 его: his
 --есть: to eat, inflect: -есть
 grammar: y-esh-et@impr, tag: verb
-купи--ть: to buy, inflect: -любить
+купи--ть: to buy, inflect: -любить, tag: something-to-someone
 ид--ти: to go (by foot), inflect: -идти
 ид--ти[rain]: to fall, inflect: -идти
 или: or
@@ -642,7 +642,7 @@ grammar: sya@inf, tag: verb
 характер--: character, inflect: masc
 grammar: -давать@3pl, tag: verb
 лекци--я: lecture, inflect: -регистрация
-позвони--ть: call, ring, dial, inflect: -дарить
+позвони--ть: call, ring, dial, inflect: -дарить, tag: speech
 спеши--ть: to hurry, to hasten, inflect: -спешить
 grammar: eeadj@n
 grammar: -лошадь@instrpl, tag: instrumental
@@ -656,7 +656,7 @@ grammar: neuie@pl
 втор--ой: second, inflect: -второй
 куда: where, tag: question
 grammar: егоadj@instrf, tag: instrumental
-скольк--о: how much, how many, inflect: -много, tag: time, mask: allbutpl
+скольк--о: how much, how many, inflect: -много, tag: time, tag: amount, mask: allbutpl
 отпуск--: vacation, inflect: masc3
 grammar: -вы@genpl, tag: genitive
 семь--я: family, inflect: -статья
@@ -853,8 +853,8 @@ grammar: -церковь@nom
 велик--ий: grand, inflect: ийadj
 сюда: here (direction)
 grammar: -учитель@pl
-отвеча--ть: to answer, to reply, inflect: ать
-остави--ть: to leave, to abandon, inflect: -оставить
+отвеча--ть: to answer, to reply, inflect: ать, tag: speech
+остави--ть: to leave, to abandon, inflect: -оставить, tag: something-to-someone
 личн--ый: personal, individual, inflect: ныйadj
 grammar: -быть@impr, tag: verb
 grammar: -бытьfut@impr, tag: verb
@@ -921,7 +921,7 @@ grammar: -сам@m
 grammar: -дать@3, tag: verb
 grammar: sya@pastpl, tag: verb
 нигде: nowhere
-найд--<ти: to find, inflect: -войти
+найд--<ти: to find, inflect: -войти, tag: something-to-someone
 grammar: -яйцо@genpl, tag: genitive
 б: would particle
 остановк--а: stop, inflect: femka
@@ -977,7 +977,7 @@ grammar: -чувствовать@pastm, tag: verb
 поговори--ть: to have a word, to talk, inflect: -дарить
 grammar: femя@instr, tag: instrumental
 тяжёл--ый: heavy, difficult, inflect: adj
-расскаж--<зать: to tell, to narrate, inflect: -показать, tag: something-to-someone, tag: speech
+расскаж--<зать: to tell, inflect: -показать, tag: something-to-someone, tag: speech
 убь--<ить: to kill, inflect: -убить
 grammar: femь-я-to-а@instrpl, tag: instrumental
 grammar: femь-я-to-а@preppl, tag: prepositional
@@ -1038,7 +1038,7 @@ grammar: -уверенный@shortm
 нарису--<овать: to draw, to paint, inflect: -чувствовать
 хор--: choir, inflect: masc
 лети--<еть: to fly, inflect: -лететь
-grammar: -принести@pastm, tag: verb
+grammar: -принести@pastm, tag: verb, tag: something-to-someone
 grammar: -петь@inf, tag: verb
 настроени--е: mood, inflect: neuie
 бог--: God, inflect: masc-animate
@@ -1073,7 +1073,7 @@ grammar: -себя@dat, tag: dative
 grammar: -себя@instr, tag: instrumental
 езди--ть: to go by vehicle on land, inflect: -ходить
 взросл--ый: adult, inflect: adj
-готови--ть: to cook, inflect: -готовить
+готови--ть: to cook, inflect: -готовить, tag: something-to-someone
 grammar: -четыре@pl
 grammar: -она@datalt, tag: dative
 входи--ть: to go in, inflect: -ходить
@@ -1359,7 +1359,7 @@ phrase: ни-не
 одеял--о: blanket, duvet, inflect: neu
 набер--<<рать: to fill, inflect: -набрать
 phrase: так-adv
-принес--ти: to bring, inflect: -принести
+принес--ти: to bring, inflect: -принести, tag: something-to-someone
 сдач--а: change, payback, inflect: -улица
 жени--ться: to marry (a woman), to get married, inflect: -жениться
 grammar: num@accanpl, tag: accusative
@@ -1382,7 +1382,7 @@ grammar: abstr-ийadj@pl
 phrase: за-то-что
 phrase: в-курсе
 почувству--<овать: to feel, to sense, inflect: -чувствовать
-смож--<чь: can, to be able to, manage, inflect: -мочь
+смож--<чь: can, inflect: -мочь
 слева: on the left
 уж: "drama" particle
 справа: on the right
@@ -1584,3 +1584,7 @@ phrase: dat-speech
 phrase: помогать-dat
 phrase: dat-жаль
 phrase: dat-лучше
+phrase: по-отношению
+phrase: рад-кому
+phrase: одется-dat
+phrase: учить-dat
