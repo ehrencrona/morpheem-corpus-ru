@@ -45,8 +45,8 @@ no-matter-what: "во что бы то ни стало" "no matter what" в@alt 
 не-так-ли: "не так ли" "is that not so?" не@ так@ ли@
 за-то-что: "за то, что - question: is this not just за accusative?" "for that, which" за@ тот@accn ,@ что[that]@
 в-курсе: "в курсе TODO: might need a second phrase with gen at the end" "to be aware" в@ курс@prep
-verb-acc: "делать что-то / видить кого-то / ..." "verb@+ [something]" verb@+ any @accusative+
-verb-acc: "делать что-то / видить кого-то / ..." "[something] verb" @accusative+ any verb@+
+verb-acc: "делать что-то / видеть кого-то / ..." "verb@+ [something]" verb@+ any @accusative+
+verb-acc: "делать что-то / видеть кого-то / ..." "[something] verb" @accusative+ any verb@+
 с-чем: "с (чем-то) (A1)" "with [something or someone]" с@ @instrumental+
 говорить-с: "говорить с кем" "talk to [someone]" говорить|поговорить@ any с@ @instrumental+
 говорить-с: "говорить с кем" "talk to [someone]" с@ @instrumental+ any говорить|поговорить@
@@ -177,7 +177,7 @@ go-do: "идти verb" "go [verb] " идти@ verb@+
 стоить-дорогой: "стоить дорогой" "" 
 у-thing: "у чего-то (где)" "by [something]" у@ @genitive+
 за-acc: "за" "for" за@ @accusative+
-за-что: "за что" "what for" за@ что@
+за-что: "за что" "for what reason" за@ что@
 то-что: "то что" "that, which" тот@n ,@ что[that]@
 когда-то: "когда ... то" "when ... then" когда@ any то@
 то-же: "то же" "the same" тот@ же@ самый@
@@ -208,7 +208,7 @@ dat-нужен: "(кому-то) нужен" "[someone] needs" @dative+ any ну
 датьetc-dat: "дать/... кому-то чего-то" "tag:something-to-someone [something] to [someone]" tag:something-to-someone @accusative+ any @dative+
 датьetc-dat: "дать/... кому-то чего-то" "tag:something-to-someone [someone] [something]" tag:something-to-someone @dative+ any @accusative+
 датьetc-dat: "дать/... кому-то чего-то" "tag:something-to-someone [something] to [someone]" @accusative+ any tag:something-to-someone any @dative+
-датьetc-dat: "дать/... кому-то чего-то" "tag:something-to-someone [someone] [something]" @dative+ any tag:something-to-someone any @accusative+
+датьetc-dat: "дать/... кому-то чего-то" "for [someone] tag:something-to-someone [something]" @dative+ any tag:something-to-someone any @accusative+
 датьetc-dat: "дать/... кому-то чего-то" "tag:something-to-someone to [someone]" tag:something-to-someone any @dative+
 датьetc-dat: "дать/... кому-то чего-то" "tag:something-to-someone to [someone]" @dative+ any tag:something-to-someone
 купить-чего-то: "покупать чего-то кому-то" "buy [something] for [someone]" купить|покупать@ any @accusative+ any @dative+
@@ -249,8 +249,11 @@ gen-верить: "верить кому-то" "trust [someone]" @dative+ any в
 dat-speech: "говорить/сказать/... кому-то" "tag:speech to [someone]" tag:speech any @dative+
 dat-speech: "говорить/сказать/... кому-то" "tag:speech to [someone]" @dative+ any tag:speech
 помогать-dat: "помогать-dat" "help [someone]" помогать@ any @dative+
+помогать-dat: "помогать-dat" "[someone] ... not help " @dative+ any не@ помогать@
+помогать-dat: "помогать-dat" "[someone] ... not help " @dative+ any помогать@
 dat-жаль: "жаль" "[someone] regrets" @dative+ any жаль@
 dat-лучше: "кому-то лучше" "for [someone] it's better to" @dative+ any хороший@comp
+dat-лучше: "кому-то лучше" "... for [someone] it's better to" хороший@comp any @dative+
 по-отношению: "по отношению к чему-то" "with regards to [something]" по@ отношение[regard]@dat к@ @dative+
 рад-кому: "рад кому-то" "happy to see [someone]" рад@ any tag:animate@dative
 рад-кому: "рад кому-то" "happy to see [someone]" tag:animate@dative any рад@
@@ -271,4 +274,11 @@ dat-платить: "кому-то платить" "[someone] gets paid" @dative
 как-тебе: "как тебе (нравится)" "how do tag:animate@dative like" как@ tag:animate@dative
 intended-for: "кому-то (intended for)" "intended for [someone]" @dative
 in-eyes-of: "'to', as in the eyes of" "to [someone]" @dative+
-прийти-в-голову: "прийти в голову" "cross [someone]'s mind" @dative+ any @acc в@ голова@acc
+прийти-в-голову: "прийти в голову" "cross [someone]'s mind" @dative+ any прийти|приходить@ в@ голова@accusative
+прийти-в-голову: "прийти в голову" "cross [someone]'s mind" прийти|приходить@ any @dative+ any в@ голова@accusative
+прийти-в-голову: "прийти в голову" "cross [someone]'s mind" @dative+ в@ голова@accusative any прийти|приходить@
+конец-dat: "конец чему-то" "end to [something]" @dative any конец@
+конец-dat: "конец чему-то" "no end to [something]" @dative any нет[none]@ конец@
+сидеть-дома: "сидеть дома" "stay at home" сидеть@ any дома@
+что-за: "что что-то за...?" "what kind of noun@+ is" что@ any за@ noun@+
+за-время: "за весь день" "during adjective@accusative+ tag:time@accusative" за@ adjective@accusative+ tag:time@accusative

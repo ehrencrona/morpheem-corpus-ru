@@ -169,7 +169,7 @@ grammar: adj@prepf, tag: prepositional
 наш--: our, ours, inflect: -наш
 grammar: v@1, tag: verb
 grammar: -наш@pl
-родител--ь: parents, inflect: mascь-animate, tag: animate, mask: sg
+родител--ь: parents, inflect: mascь-animate, mask: sg
 офис--: office, inflect: masc
 grammar: -этот@pl
 жив--<ть: to live, inflect: -жить
@@ -717,7 +717,7 @@ grammar: -неделя@genpl, tag: genitive
 зов--<<вать[invite]: to invite to join, inflect: -звать
 grammar: -остаться@3pl, tag: verb
 всего: than everything
-вс--<есь: all, entire, whole, inflect: -весь, mask: nonstd
+вс--<есь: all, inflect: -весь, mask: nonstd
 grammar: -казаться@pastm, tag: verb
 от: from
 так: in that way
@@ -1093,7 +1093,7 @@ grammar: -она@instr, tag: instrumental
 ни--что: nothing, inflect: -что
 grammar: -себя@gen, tag: genitive
 войд--<ти: to come in, inflect: -войти
-покупк--а: a purchase, inflect: femka
+покупк--а: purchase, inflect: femka
 выйд--<ти: to go out, inflect: -выйти
 в гости: visit someone as a guest
 grammar: -мы@preppl, tag: prepositional
@@ -1596,3 +1596,8 @@ phrase: как-тебе
 phrase: intended-for
 phrase: in-eyes-of
 phrase: прийти-в-голову
+phrase: конец-dat
+phrase: сидеть-дома
+phrase: что-за
+phrase: за-время
+grammar: -сосед@datpl
