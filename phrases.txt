@@ -4,7 +4,7 @@
 в-num-час: "в ... часов (A2)" "at [time]" в@ tag:number
 2-gen: "два чего-то (A1)" "two [something]" два@ @gen+
 not-gen: "нет чего-то (A1)" "there is/are no [something]" нет[none]@ any @genitive+
-not-gen: "нет чего-то (A1)" "there were no [something]" не@ быть@past any @genitive+
+not-gen: "нет чего-то (A1)" "" 
 gen-of: "что-то чего-то" "of [something]" @genitive+
 gen-possession: "что-то чьё-то" "of [someone]" tag:animate@genitive
 teach: "научить кого-то чему-то" "teach [someone] [something]" научить|учить@ @accusative+ @dative+
@@ -13,11 +13,12 @@ teach: "научить кого-то чему-то" "teach [someone] [something]
 чем-чем: "чем ... тем ..." "the ... the" что@instr any тот@instrn
 если-то: "если ... то" "if ... then" если@ any то@
 с-gen: "с (откуда, с какого времени) (A1)" "from [somewhere, sometime, something]" с@ @genitive
-с-чего-взял: "с чего кто-то взял" "where did tag:animate get the idea from" с@ что@gen tag:animate взять@
+с-чего-взял: "с чего кто-то взял" "where did tag:animate get the idea, that" с@ что@gen tag:animate взять@ ,@ что[that]@
+с-чего-взял: "с чего кто-то взял" "where did tag:animate get that idea from" с@ что@gen tag:animate этот@ взять@
 time-acc: "время (interval/repeating) TODO: only apply this one if nothing with prepositions applies(A1)" "for a [certain amount of time]" tag:time@acc
 time-acc: "время (interval/repeating) TODO: only apply this one if nothing with prepositions applies(A1)" "for [number] tag:time" tag:number@accusative tag:time
-много-gen: "amount of чего-то (A1)" "tag:amount [something]" tag:amount @genitive+
-много-gen: "amount of чего-то (A1)" "" 
+много-gen: "amount of чего-то (A1)" "a lot of [something]" много@ @genitive+
+много-gen: "amount of чего-то (A1)" "tag:amount of [something]" tag:amount @genitive+
 без-gen: "без чего-то (B1)" "without [something]" без@ @genitive+
 at-instr: "утром / вечером / зимой ... (B2)" "in the [time of day/season]" tag:at-instr@instrumental
 more-than: "больше / лучше / ... чем" "more @comp than [someone/something]" @comp any ,@ что@instr
@@ -111,7 +112,7 @@ hyperbole: "hyperbole" "@instrumental+ (exaggerating)" adjective@instrpl* tag:ti
 кому-то-надо: "(кому-то) надо (B1)" "[someone] needs" @dative+ any надо@
 кому-то-надо: "(кому-то) надо (B1)" "[someone] should not have" не@ надо@ быть@ @dative+
 кому-то-надо: "(кому-то) надо (B1)" "[someone] should have" надо@ быть@ @dative+
-кому-то-нужно: "(кому-то) нужно (A1)" "[someone] does not need" @dative+ не@ any нужно@
+кому-то-нужно: "(кому-то) нужно (A1)" "[someone] does not need" @dative+ не@ нужно@
 кому-то-нужно: "(кому-то) нужно (A1)" "[someone] needs" @dative+ any нужно@
 кому-то-нужно: "(кому-то) нужно (A1)" "[someone] needs" @dative+ any
 на-твоем-месте: "на твоём месте" "in [someone's] position" бы@ на@ adjective@prep* место@prep
@@ -127,7 +128,8 @@ hyperbole: "hyperbole" "@instrumental+ (exaggerating)" adjective@instrpl* tag:ti
 над-чем-то: "над (чем-то) (A2)" "over [something]" над@ @instrumental
 под-чем-то: "под (чем-то) (A2)" "under [something]" под@ @instr
 рядом-с: "рядом с (чем-то) (A2)" "next to [something]" рядом@ с@ @instr
-между-чем-то: "между (чем-то) (B1)" "between [something]" между@ @instrumental
+между-чем-то: "между (чем-то) (B1)" "between [something]" между@ @instrumental+
+между-чем-то: "между (чем-то) (B1)" "between [something] and [something]" между@ @instrumental+ и@ @instrumental+
 за-место: "за (чем-то - место) (B1)" "behind, after [something]" за@ @instr+
 следить-за-кем-то: "следить (за кем-то) TODO make pattern include nouns and pronouns that follow the verb" "follow, look after [someone or something]" следить@ за@ any @instrumental
 за-столом: "за столом" "at the table/desk [location]" за@ adjective@instrumental* стол@instr
@@ -210,7 +212,7 @@ dat-нужен: "(кому-то) нужен" "[someone] needs" @dative+ any ну
 датьetc-dat: "дать/... кому-то чего-то" "tag:something-to-someone [something] to [someone]" @accusative+ any tag:something-to-someone any @dative+
 датьetc-dat: "дать/... кому-то чего-то" "for [someone] tag:something-to-someone [something]" @dative+ any tag:something-to-someone any @accusative+
 датьetc-dat: "дать/... кому-то чего-то" "tag:something-to-someone to [someone]" tag:something-to-someone any @dative+
-датьetc-dat: "дать/... кому-то чего-то" "tag:something-to-someone to [someone]" @dative+ any tag:something-to-someone
+датьetc-dat: "дать/... кому-то чего-то" "to [someone] ... tag:something-to-someone" @dative+ any tag:something-to-someone
 купить-чего-то: "покупать чего-то кому-то" "buy [something] for [someone]" купить|покупать@ any @accusative+ any @dative+
 купить-чего-то: "покупать чего-то кому-то" "buy [someone] [something]" купить|покупать@ any @dative+ any @accusative+
 dat-adv: "кому-то холодно/..." "[someone] felt @adv" @dative+ any @adv
@@ -242,7 +244,7 @@ either-or-или-или: "или ... , или ..." "either ... or" или@ any �
 из-material: "из материала" "of [material]" из@ @genitive+
 из-material: "из материала" "consisting of [something]" из@ @genitive+
 из-out-of: "из (выбор)" "out of [several things or people]" из@ @genitive+
-при-чём: "при чём" "what does [something] have to do with this" при@ что@prepositional здесь@
+при-чём: "при чём" "what does [something] have to do with this" при@ что@prepositional здесь|тут@
 кому-то-кажется: "кому-то кажется" "it seems to [someone]" @dative+ any казаться@
 gen-верить: "верить кому-то" "trust [someone]" верить|доверять|поверить@ any @dative+
 gen-верить: "верить кому-то" "trust [someone]" @dative+ any верить|доверять|поверить@
@@ -280,5 +282,9 @@ in-eyes-of: "'to', as in the eyes of" "to [someone]" @dative+
 конец-dat: "конец чему-то" "end to [something]" @dative any конец@
 конец-dat: "конец чему-то" "no end to [something]" @dative any нет[none]@ конец@
 сидеть-дома: "сидеть дома" "stay at home" сидеть@ any дома@
-что-за: "что что-то за...?" "what kind of noun@+ is" что@ any за@ noun@+
+что-за: "что за...?" "what kind of noun@+ is" что@ any за@ noun@+
 за-время: "за весь день" "during adjective@accusative+ tag:time@accusative" за@ adjective@accusative+ tag:time@accusative
+there-was-none: "не было чего-то" "there was/were none [of something]" не@ быть@ any @genitive+
+there-will-be-none: "не будет чего-то" "there will be no [something]" не@ быть[fut]@3 any @genitive+
+there-will-be-none: "не будет чего-то" "there will be no [something]" @genitive+ не@ быть[fut]@3
+на-замок: "закрыть на замок" "to lock" закрыть|закрывать|закрытый@ any на@ any замок[lock]@acc

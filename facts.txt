@@ -103,7 +103,7 @@ grammar: ойadj@m
 grammar: -свой@m
 нет[none]: have none
 нет[part]: no
-мо--й: my, mine, inflect: -свой, mask: nonstd
+мо--й: my, inflect: -свой, mask: nonstd
 больш--ой: big, inflect: -большой
 больш--ой: more, inflect: -большой, mask: allbutcomp
 больш--ой[longer]: longer, inflect: -большой, mask: allbutcomp
@@ -218,7 +218,7 @@ grammar: sya@3, tag: verb
 нрави--ться: to like, inflect: -нравиться
 grammar: masc@dat, tag: dative
 дари--ть: to gift, inflect: -дарить, tag: something-to-someone
-нужно: to need
+нужно: need to
 нужн--ый: necessary, needed, inflect: ныйadj, mask: adv
 grammar: ныйadj@shortf
 grammar: ныйadj@shortn
@@ -274,7 +274,7 @@ grammar: -друг@datpl, tag: dative
 grammar: -давать@1, tag: verb
 интересн--ый: interesting, inflect: ныйadj
 без: without
-мног--о: many, inflect: -много, tag: number, tag: amount, mask: allbutpl
+мног--о: many, much, inflect: -много, tag: number, tag: amount, mask: allbutpl
 мног--о[much]: a lot, inflect: -много, tag: number, tag: amount, mask: allbutplandadv
 grammar: masc@genpl, tag: genitive
 grammar: -друг@genpl, tag: genitive
@@ -283,7 +283,7 @@ grammar: femь@genpl, tag: genitive
 grammar: femka@genpl, tag: genitive
 понима--ть: to understand, inflect: ать
 помни--ть: to remember, inflect: -дарить
-буд--<<ыть[fut]: to be, inflect: -бытьfut, mask: past
+буд--<<ыть[fut]: will, inflect: -бытьfut, mask: past
 математик--а: mathematics, inflect: fem
 французск--ий: french, inflect: adj, tag: language
 словар--ь: dictionary, vocabulary, inflect: -словарь
@@ -1120,7 +1120,7 @@ grammar: -лететь@1, tag: verb
 времен--<<я: time, inflect: -время, tag: time
 grammar: neuadjoe@acc, tag: accusative
 grammar: neuadjoe@nom
-сам--ый: most, the very, inflect: adj
+сам--ый: most, inflect: adj
 рук--а: arm, hand, inflect: fem
 ни: neither/nor
 grammar: -доктор@pl
@@ -1600,4 +1600,7 @@ phrase: конец-dat
 phrase: сидеть-дома
 phrase: что-за
 phrase: за-время
-grammar: -сосед@datpl
+grammar: -сосед@datpl, tag: dative
+phrase: there-was-none
+phrase: there-will-be-none
+phrase: на-замок
