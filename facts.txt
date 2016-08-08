@@ -100,7 +100,6 @@ grammar: -свой@f
 вот: here (is)
 grammar: ойadj@m
 дорог--ой: expensive, inflect: -дорогой
-дорог--ой[dear]: dear, inflect: -дорогой
 grammar: -свой@m
 нет[none]: have none
 нет[part]: no
@@ -721,8 +720,8 @@ grammar: -неделя@genpl, tag: genitive
 grammar: -остаться@3pl, tag: verb
 всего: than everything
 вс--<есь: every, inflect: -весь, mask: nonstd
-вс--ё: everything, inflect: -весь-everything
-вс--е[everyone]: everyone, inflect: -весь-everyone
+вс--ё: everything, inflect: -весь-everything, mask: pl
+вс--е[everyone]: everyone, inflect: -весь-everyone, mask: sg
 grammar: -казаться@pastm, tag: verb
 от: from
 так: in that way
@@ -1615,3 +1614,4 @@ phrase: на-замок
 невысоко: n/a
 котор--ый[which]: which one, inflect: adj
 занима--ться[study]: to study, inflect: -пытаться
+дорог--ой[dear]: dear, inflect: -дорогой
