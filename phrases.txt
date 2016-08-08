@@ -92,7 +92,7 @@ comp-gen: "лучше than genitive (B1) " "comp than [something]" @comp @geniti
 давно-пора: "давно пора" "it is high time" давно@ пора@
 тут-и-там: "тут и там" "here and there" там@ и@ тут@
 друг-другу: "друг другу" "each other" друг@ any друг@
-работать-над-чем-то: "работать над чем-то" "work on [something]" работать@ над@ @instrumental
+работать-над-чем-то: "работать над чем-то" "work on [something]" работать@ над@ @instrumental+
 hyperbole: "hyperbole" "@instrumental+ (exaggerating)" adjective@instrpl* tag:time@instrpl
 доволен-instr: "доволен" "satisfied with [something]" довольный@ @instrumental+
 ждать-что-то: "ждать for something (B1)" "wait for [something or someone]" ждать@ @acc
@@ -128,8 +128,8 @@ hyperbole: "hyperbole" "@instrumental+ (exaggerating)" adjective@instrpl* tag:ti
 над-чем-то: "над (чем-то) (A2)" "over [something]" над@ @instrumental
 под-чем-то: "под (чем-то) (A2)" "under [something]" под@ @instr
 рядом-с: "рядом с (чем-то) (A2)" "next to [something]" рядом@ с@ @instr
-между-чем-то: "между (чем-то) (B1)" "between [something]" между@ @instrumental+
 между-чем-то: "между (чем-то) (B1)" "between [something] and [something]" между@ @instrumental+ и@ @instrumental+
+между-чем-то: "между (чем-то) (B1)" "between [something] " между@ @instrumental+
 за-место: "за (чем-то - место) (B1)" "behind, after [something]" за@ @instr+
 следить-за-кем-то: "следить (за кем-то) TODO make pattern include nouns and pronouns that follow the verb" "follow, look after [someone or something]" следить@ за@ any @instrumental
 за-столом: "за столом" "at the table/desk [location]" за@ adjective@instrumental* стол@instr
@@ -269,7 +269,7 @@ dat-лучше: "кому-то лучше" "... for [someone] it's better to" х
 не-стоит: "кому-то стоит" "[someone] should" @dative+ any стоить[should]@3
 просить-о: "просить о чём-то" "ask ... for [something]" просить@ any о@ @prepositional+
 dat-платить: "кому-то платить" "[someone] gets paid" @dative+ any платить@
-верить-в: "верить в чего-то" "believe in [something]" верить@ в@ @accusative+
+верить-в: "верить в кого-то/во что-то" "believe in [something]" верить@ в@ @accusative+
 в-году: "в время (loc)" "at adjective@prepositional+ [time period]" в@ adjective@prepositional+ @loc
 в-время: "на неделе / ..." "during [time]" на@ any @prepositional+
 в-неделе: "в четверг / ..." "on [time]" в@ any @prepositional+

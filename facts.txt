@@ -30,11 +30,11 @@ grammar: -я@nom
 --он: he, inflect: -он, tag: animate
 grammar: -он@nom
 transform: yToI
-Саш--а: , inflect: -улица, tag: animate, mask: pl
+Саш--а: Sasha, inflect: -улица, tag: animate, mask: pl
 библиотек--а: library, inflect: fem
 grammar: -она@nom
 --она: she, inflect: -она, tag: animate
-Маш--а: , inflect: -улица, tag: animate, mask: pl
+Маш--а: Маsha, inflect: -улица, tag: animate, mask: pl
 школ--а: school, inflect: fem
 улиц--а: street, inflect: -улица
 на: on, , tag: untranslatable
@@ -582,7 +582,7 @@ grammar: -деньга@genpl, tag: genitive
 самолёт--: airplane, inflect: masc, tag: tansport
 grammar: егоadj@genm, tag: genitive
 grammar: -о@alt
-куриц--а: chicken, hen, inflect: -курица, tag: animate
+куриц--а: chicken, inflect: -курица, tag: animate
 поезд--: train, inflect: masc3, tag: tansport
 grammar: neuie@gen, tag: genitive
 включи--ть: to turn on, inflect: -учить
@@ -599,7 +599,7 @@ grammar: -кто@acc, tag: accusative
 сложн--ый: complicated, inflect: adj
 grammar: -сказать@inf, tag: verb
 grammar: -он@prep, tag: prepositional
-бабушк--а: grandmother, grandma, inflect: -кошка
+бабушк--а: grandmother, inflect: -кошка
 реклам--а: advertisement, inflect: fem
 grammar: neuie@prep, tag: prepositional
 счита--ть: to calculate, to count, inflect: ать
@@ -826,7 +826,7 @@ grammar: -пытаться@impr, tag: verb
 стен--а: wall, inflect: fem
 тел--о: body, inflect: neu
 grammar: adj@comp
-пут--ь: path, way, inflect: -путь
+пут--ь: way, inflect: -путь
 остаю--<ваться: to remain, inflect: -оставаться
 поэтому: that's why
 grammar: sya@pastm, tag: verb
@@ -1170,7 +1170,7 @@ grammar: -жениться@1, tag: verb
 встреча--ться: to meet, inflect: -пытаться
 grammar: -один@accn, tag: accusative
 grammar: -кто@prep, tag: prepositional
-т--от: that, that one, inflect: -тот, mask: nonstd
+т--от: that, inflect: -тот, mask: nonstd
 встреча--ться[date]: to date, inflect: -пытаться
 grammar: -бояться@3, tag: verb
 начн--<ать: to begin, inflect: -начать
@@ -1604,3 +1604,7 @@ grammar: -сосед@datpl, tag: dative
 phrase: there-was-none
 phrase: there-will-be-none
 phrase: на-замок
+недостаточно: n/a
+неважно: n/a
+невкусно: n/a
+невысоко: n/a
