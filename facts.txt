@@ -59,7 +59,7 @@ grammar: -кто@nom
 grammar: n@acc, tag: accusative
 --кто: who, whom, inflect: -кто, tag: question
 слыши--<ать: listen, inflect: -слышать
-мам--а: mom, inflect: fem-animate
+мам--а: mom, inflect: fem-animate, tag: animate
 люби--ть: love, like, inflect: -любить
 grammar: perspron@acc, tag: accusative
 --ты: you, inflect: -ты, tag: animate
@@ -557,7 +557,7 @@ grammar: adj@genn, tag: genitive
 врё--<ать: to lie, inflect: -ждать, tag: speech
 карт--а: map, inflect: fem
 grammar: -mascь@nom
-подруг--а: friend, inflect: fem-animate
+подруг--а: friend, inflect: fem-animate, tag: animate
 продукт--: groceries, product, inflect: masc
 фабрик--а: factory, inflect: fem
 grammar: -о@std
@@ -1307,7 +1307,6 @@ phrase: more-than
 способн--ый: able, capable, inflect: adj
 единственн--ый: the only, inflect: adj
 начина--ться: to begin, inflect: -пытаться
-phrase: с-instr
 phrase: при-prep
 поверн--уть: to turn, inflect: -повернуть
 предлага--ть: to offer, inflect: ать, tag: speech
@@ -1615,3 +1614,5 @@ phrase: на-замок
 котор--ый[which]: which one, inflect: adj
 занима--ться[study]: to study, inflect: -пытаться
 дорог--ой[dear]: dear, inflect: -дорогой
+grammar: -вы@instrpl
+grammar: -жаль@adv
