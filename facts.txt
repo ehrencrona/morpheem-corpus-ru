@@ -100,6 +100,7 @@ grammar: -свой@f
 вот: here (is)
 grammar: ойadj@m
 дорог--ой: expensive, inflect: -дорогой
+дорог--ой[dear]: dear, inflect: -дорогой
 grammar: -свой@m
 нет[none]: have none
 нет[part]: no
@@ -179,7 +180,8 @@ grammar: adj@preppl, tag: prepositional
 grammar: yo-yosh-yot@3, tag: verb
 grammar: -друг@pl
 дела--ть: to make, to do, inflect: ать
-разн--ый: different, various, inflect: ныйadj
+разн--ый: different, inflect: ныйadj
+разн--ый[various]: various, inflect: ныйadj
 плох--ой: bad, inflect: -плохой
 grammar: yo-yosh-yot@2pl, tag: verb
 grammar: n@accpl, tag: accusative
@@ -234,7 +236,7 @@ grammar: -ты@dat, tag: dative
 grammar: fem@instr, tag: instrumental
 интернет--: internet, inflect: masc
 радио: radio
-котор--ый: which, that, inflect: adj
+котор--ый: that, inflect: adj
 музык--а: music, inflect: fem
 grammar: yo-yosh-yot@1pl, tag: verb
 только: only
@@ -274,8 +276,8 @@ grammar: -друг@datpl, tag: dative
 grammar: -давать@1, tag: verb
 интересн--ый: interesting, inflect: ныйadj
 без: without
-мног--о: many, much, inflect: -много, tag: number, tag: amount, mask: allbutpl
-мног--о[much]: a lot, inflect: -много, tag: number, tag: amount, mask: allbutplandadv
+мног--о: many, inflect: -много, tag: number, tag: amount, mask: allbutpl
+мног--о[much]: much, inflect: -много, tag: number, tag: amount, mask: allbutplandadv
 grammar: masc@genpl, tag: genitive
 grammar: -друг@genpl, tag: genitive
 grammar: adj@adv
@@ -283,7 +285,7 @@ grammar: femь@genpl, tag: genitive
 grammar: femka@genpl, tag: genitive
 понима--ть: to understand, inflect: ать
 помни--ть: to remember, inflect: -дарить
-буд--<<ыть[fut]: will, inflect: -бытьfut, mask: past
+буд--<<ыть[fut]: will be, inflect: -бытьfut, mask: past
 математик--а: mathematics, inflect: fem
 французск--ий: french, inflect: adj, tag: language
 словар--ь: dictionary, vocabulary, inflect: -словарь
@@ -604,7 +606,6 @@ grammar: -он@prep, tag: prepositional
 grammar: neuie@prep, tag: prepositional
 счита--ть: to calculate, to count, inflect: ать
 счита--ть[consider]: to consider, inflect: ать
-всё: everything
 раньше: before, previously
 grammar: -наш@accf, tag: accusative
 grammar: n@instrpl, tag: instrumental
@@ -655,7 +656,8 @@ grammar: neuie@pl
 втор--ой: second, inflect: -второй
 куда: where, tag: question
 grammar: егоadj@instrf, tag: instrumental
-скольк--о: how much, how many, inflect: -много, tag: time, tag: amount, mask: allbutpl
+скольк--о: how much, inflect: -много, tag: time, tag: amount, mask: allbutpl
+скольк--о[many]: how many, inflect: -много, tag: time, tag: amount, mask: allbutpl
 отпуск--: vacation, inflect: masc3
 grammar: -вы@genpl, tag: genitive
 семь--я: family, inflect: -статья
@@ -704,10 +706,11 @@ grammar: -остаться@1, tag: verb
 grammar: -остаться@pastm, tag: verb
 всегда: always
 температур--а: temperature, inflect: fem
-часто: often
+част--ый: often, inflect: -частый
 grammar: -казаться@pastn, tag: verb
 grammar: -случай@genpl, tag: genitive
-нескольк--о: a few, inflect: -много, tag: number, tag: amount, mask: allbutpl
+нескольк--о: a little, inflect: -много, tag: number, tag: amount, mask: allbutpl
+нескольк--о[few]: a few, inflect: -много, tag: number, tag: amount, mask: allbutpl
 иногда: sometimes
 grammar: -тот@instrm, tag: instrumental
 писател--ь: writer, inflect: mascь-animate
@@ -717,7 +720,9 @@ grammar: -неделя@genpl, tag: genitive
 зов--<<вать[invite]: to invite to join, inflect: -звать
 grammar: -остаться@3pl, tag: verb
 всего: than everything
-вс--<есь: all, inflect: -весь, mask: nonstd
+вс--<есь: every, inflect: -весь, mask: nonstd
+вс--ё: everything, inflect: -весь-everything
+вс--е[everyone]: everyone, inflect: -весь-everyone
 grammar: -казаться@pastm, tag: verb
 от: from
 так: in that way
@@ -883,7 +888,7 @@ grammar: -три@genpl, tag: genitive
 grammar: -три@instrpl, tag: instrumental
 извини--ть: to excuse, inflect: -дарить
 прости--ть: to forgive, inflect: -простить
-нечасто: not often
+нечаст--ый: not often, inflect: -частый
 grammar: -три@preppl, tag: prepositional
 grammar: -пять@pl
 везде: everywhere
@@ -979,7 +984,7 @@ grammar: femя@instr, tag: instrumental
 убь--<ить: to kill, inflect: -убить
 grammar: femь-я-to-а@instrpl, tag: instrumental
 grammar: femь-я-to-а@preppl, tag: prepositional
-жаль: pity
+жал--ь: pity, inflect: -жаль, mask: allbutadv
 регистраци--я: registration, inflect: -регистрация
 счастлив--ый: happy, inflect: adj
 grammar: -чей@m
@@ -1107,7 +1112,7 @@ grammar: -себя@prep, tag: prepositional
 температур--а[fever]: fever, inflect: fem
 обув--ь: footwear, inflect: femь
 grammar: -регистрация@genpl, tag: genitive
-занима--ться: to go in for, inflect: -пытаться
+занима--ться: to оccupy yourself with, inflect: -пытаться
 прекрасн--ый: beautiful, inflect: ныйadj
 же: [wow!], tag: untranslatable
 grammar: -он@datalt, tag: dative
@@ -1120,7 +1125,7 @@ grammar: -лететь@1, tag: verb
 времен--<<я: time, inflect: -время, tag: time
 grammar: neuadjoe@acc, tag: accusative
 grammar: neuadjoe@nom
-сам--ый: most, inflect: adj
+сам--ый: most, inflect: adj, mask: short
 рук--а: arm, hand, inflect: fem
 ни: neither/nor
 grammar: -доктор@pl
@@ -1138,7 +1143,7 @@ grammar: ныйadj@shortpl
 grammar: -искать@inf, tag: verb
 врач--: doctor, inflect: -врач, tag: animate
 научи--ть: to teach, inflect: -учить
-сам--: alone, inflect: -сам
+сам--: alone, inflect: -сам, mask: allbutshort
 grammar: -один@instrm, tag: instrumental
 grammar: -взять@inf, tag: verb
 при: with
@@ -1178,7 +1183,8 @@ grammar: -бояться@3, tag: verb
 продолжа--ть: to continue, inflect: ать
 grammar: sya@1pl, tag: verb
 grammar: -хватить@1, tag: verb
-пойд--<ти: to go, to walk on foot, inflect: -войти
+пойд--<ти: to go, inflect: -войти
+пойд--<ти[fall]: fall, inflect: -войти
 повторя--ть: to repeat, inflect: ать
 grammar: -казаться@impr, tag: verb
 строи--ть: to build, inflect: -дарить
@@ -1501,7 +1507,6 @@ grammar: -сидеть@impr, tag: verb
 phrase: к-чему-то
 phrase: к-time
 phrase: думать-над
-phrase: сколько-amount
 зонт--: n/a, inflect: masc
 отдыха--ть: n/a, inflect: ать
 phrase: Вот-это
@@ -1608,3 +1613,5 @@ phrase: на-замок
 неважно: n/a
 невкусно: n/a
 невысоко: n/a
+котор--ый[which]: which one, inflect: adj
+занима--ться[study]: to study, inflect: -пытаться

@@ -146,7 +146,7 @@ hyperbole: "hyperbole" "@instrumental+ (exaggerating)" adjective@instrpl* tag:ti
 aslongas: "as long as" "as long as" сколько@accinanpl any
 no-matter-how: "no matter how" "no matter how much/long" сколько@accinanpl any ни@ any
 nazad: "назад" "[time] ago" @accusative+ назад@
-во-сколько: "во сколько? (A2)" "at what time" в@ сколько@
+во-сколько: "во сколько? (A2)" "at what time" в@ сколько[many]@
 при-condition: "при (каком-то условии) (B1)" "while [something]" при@ @prepositional+
 someone-had: "у кого-то был (A1)" "[someone] had" у@ tag:animate@genitive быть@pastn
 did-not-have: "у кого-то не было (A1)" "[someone] didn't have" у@ tag:animate@genitive не@ быть@past
@@ -164,7 +164,6 @@ go-do: "идти verb" "go [verb] " идти@ verb@+
 к-чему-то: "к чему-то (B1)" "to [place, not person]" к@ @dative+
 к-time: "к какому-то времени (?B1)" "by [moment in time]" к@ @dative+
 думать-над: "думать над чем-то" "think [somthing] over" думать|подумать@ над@
-сколько-amount: "сколько [количество]" "how much" сколько@
 Вот-это: "Вот это" "This is" вот@ это@
 можно-noun: "можно noun" "can I have a noun@+" можно@ noun@+
 пора–не: "пока не" "until" пока@ any не@
@@ -232,9 +231,9 @@ dat-нравится: "кому-то нравится" "is liked by [someone]" �
 dat-интересно: "кому-то интересно" "[someone] is interested in" @dative+ any интересный@
 как-dat: "как кому-то что-то" "how can [someone] verb@+" как@ @dative+ any verb@+
 как-dat: "как кому-то что-то" "how can [someone] best verb@+" как@ @dative+ хороший@comp any verb@+
-dat-лет: "сколько@ кому-то лет" "how old is [someone]" сколько@ any @dative+ any год@genpl
+dat-лет: "сколько@ кому-то лет" "how old is [someone]" сколько[many]@ any @dative+ any год@genpl
 dat-лет: "сколько@ кому-то лет" "[someone] is ... years old" @dative+ any год@genpl
-dat-лет: "сколько@ кому-то лет" "how old is [someone]" сколько@ год@genpl @dative+
+dat-лет: "сколько@ кому-то лет" "how old is [someone]" сколько[many]@ год@genpl @dative+
 dat-лет: "сколько@ кому-то лет" "[someone] is one year old" @dative+ any год@nom
 both-и-и: "и ... , и ..." "both ... and" и@ any и@
 either-or-или-или: "или ... , или ..." "either ... or" или@ any или@
