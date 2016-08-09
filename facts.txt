@@ -712,8 +712,7 @@ grammar: -остаться@pastm, tag: verb
 част--ый: often, inflect: -частый
 grammar: -казаться@pastn, tag: verb
 grammar: -случай@genpl, tag: genitive
-нескольк--о: a little, inflect: -много, tag: number, tag: amount, mask: allbutpl
-нескольк--о[few]: a few, inflect: -много, tag: number, tag: amount, mask: allbutpl
+нескольк--о: a few, inflect: -много, tag: number, tag: amount, mask: allbutpl
 иногда: sometimes, pos: adv
 grammar: -тот@instrm, tag: instrumental
 писател--ь: writer, inflect: mascь-animate
@@ -1621,3 +1620,10 @@ phrase: на-замок
 дорог--ой[dear]: dear, inflect: -дорогой
 grammar: -вы@instrpl, tag: instrumental
 grammar: -жаль@adv
+grammar: -весь-everything@nom
+grammar: -весь-everything@gen
+grammar: -весь-everything@dat
+grammar: -весь-everything@acc
+grammar: -весь-everything@instr
+grammar: -весь-everything@prep
+grammar: -письмо@genpl
