@@ -37,7 +37,7 @@ grammar: -она@nom
 Маш--а: Маsha, inflect: -улица, tag: animate, mask: pl
 школ--а: school, inflect: fem
 улиц--а: street, inflect: -улица
-на: on, , tag: untranslatable
+на: on, tag: untranslatable
 газон--: lawn, inflect: masc
 работа--ть: to work, inflect: ать
 работа--ть[open]: to be open, inflect: ать
@@ -57,10 +57,10 @@ grammar: -глядеть@1, tag: verb
 grammar: fem@acc, tag: accusative
 grammar: -кто@nom
 grammar: n@acc, tag: accusative
---кто: who, whom, inflect: -кто, tag: question
+--кто: who, inflect: -кто, tag: question
 слыши--<ать: listen, inflect: -слышать
 мам--а: mom, inflect: fem-animate, tag: animate
-люби--ть: love, like, inflect: -любить
+люби--ть: like, inflect: -любить
 grammar: perspron@acc, tag: accusative
 --ты: you, inflect: -ты, tag: animate
 grammar: -ты@nom
@@ -95,7 +95,7 @@ grammar: -любить@1, tag: verb
 почему: why
 grammar: -быть@1, tag: verb
 --быть: to be, inflect: -быть
-квартир--а: apartment, flat, inflect: fem
+квартир--а: apartment, inflect: fem
 grammar: -свой@f
 вот: here (is)
 grammar: ойadj@m
@@ -107,14 +107,15 @@ grammar: -свой@m
 больш--ой: big, inflect: -большой
 больш--ой: more, inflect: -большой, mask: allbutcomp
 больш--ой[longer]: longer, inflect: -большой, mask: allbutcomp
-как--ой: which, what kind of, inflect: ойadj, mask: short
+как--ой: which, inflect: ойadj, mask: short
+как--ой[kind]: what kind of, inflect: ойadj, mask: short
 очень: very
 погод--а: weather, inflect: fem
 сегодня: today
 завтра: tomorrow
 зов--<<вать: to call, inflect: -звать
 grammar: -жить@3pl, tag: verb
-тво--й: your, yours, inflect: -свой, mask: nonstd
+тво--й: your, inflect: -свой, mask: nonstd
 телефон--: phone, inflect: masc
 телефон--[number]: phone number, inflect: masc
 покупа--ть: to buy, inflect: ать, tag: something-to-someone
@@ -125,7 +126,7 @@ grammar: y-esh-et@2, tag: verb
 лежи--<ать: to lie, inflect: -лежать
 под: under
 grammar: femь@instr, tag: instrumental
-стол--: table, desk, inflect: masc
+стол--: table, inflect: masc
 grammar: masc@instr, tag: instrumental
 стул--: chair, inflect: -стул
 за: behind, tag: untranslatable
@@ -157,8 +158,8 @@ grammar: -этот@m
 grammar: y-esh-et@2pl, tag: verb
 трудн--ый: difficult, inflect: ныйadj
 красив--ый: beautiful, inflect: adj
-дом--: home, house, inflect: masc3
-работ--а: work, job, inflect: fem
+дом--: home, inflect: masc3
+работ--а: work, inflect: fem
 дн--<ень: day, inflect: -день, tag: time
 кажд--ый: every, inflect: adj
 grammar: -день@nom
@@ -166,7 +167,7 @@ grammar: -что@nom
 grammar: adj@prepm, tag: prepositional
 город--: city, inflect: masc3
 grammar: adj@prepf, tag: prepositional
-наш--: our, ours, inflect: -наш
+наш--: our, inflect: -наш
 grammar: v@1, tag: verb
 grammar: -наш@pl
 родител--ь: parents, inflect: mascь-animate, mask: sg
@@ -178,7 +179,7 @@ grammar: -этот@pl
 grammar: adj@preppl, tag: prepositional
 grammar: yo-yosh-yot@3, tag: verb
 grammar: -друг@pl
-дела--ть: to make, to do, inflect: ать
+дела--ть: to do, inflect: ать
 разн--ый: different, inflect: ныйadj
 разн--ый[various]: various, inflect: ныйadj
 плох--ой: bad, inflect: -плохой
@@ -220,7 +221,7 @@ grammar: sya@3, tag: verb
 grammar: masc@dat, tag: dative
 дари--ть: to gift, inflect: -дарить, tag: something-to-someone
 нужно: need to
-нужн--ый: necessary, needed, inflect: ныйadj, mask: adv
+нужн--ый: needed, inflect: ныйadj, mask: adv
 grammar: ныйadj@shortf
 grammar: ныйadj@shortn
 grammar: ныйadj@shortm
@@ -244,12 +245,12 @@ grammar: -дарить@1, tag: verb
 слуша--ть: to listen, inflect: ать
 grammar: n@preppl, tag: prepositional
 телевизор--: television, inflect: masc
-смотри--<еть: to look, to watch, inflect: -смотреть
+смотри--<еть: to look, inflect: -смотреть
 можно: can
 замк--<ок[castle]: castle, inflect: -подарок
 замк--<ок[lock]: lock, inflect: -подарок
 кури--ть: smoke, inflect: -дарить
-говори--ть: to speak, to talk, inflect: -дарить, tag: speech
+говори--ть: to speak, inflect: -дарить, tag: speech
 нельзя: can't
 известн--ый: famous, inflect: ныйadj
 grammar: femяь@gen, tag: genitive
@@ -287,7 +288,7 @@ grammar: femka@genpl, tag: genitive
 буд--<<ыть[fut]: will be, inflect: -бытьfut, mask: past
 математик--а: mathematics, inflect: fem
 французск--ий: french, inflect: adj, tag: language
-словар--ь: dictionary, vocabulary, inflect: -словарь
+словар--ь: dictionary, inflect: -словарь
 когда: when
 Владивосток--: , inflect: masc
 вчера: yesterday
@@ -295,7 +296,7 @@ grammar: femka@genpl, tag: genitive
 суббот--а: Saturday, inflect: fem, tag: time
 grammar: v@pastm, tag: verb
 понедельник--: Monday, inflect: masc, tag: time
-прошл--ый: last, previous, inflect: adj
+прошл--ый: last, inflect: adj
 недел--я: week, inflect: -неделя, tag: time
 уже: already
 grammar: v@pastf, tag: verb
@@ -977,7 +978,7 @@ grammar: -чувствовать@inf, tag: verb
 посмотри--<еть: to look, inflect: -смотреть
 grammar: sya@pastn, tag: verb
 grammar: -чувствовать@pastm, tag: verb
-совету--<овать: to recommend, to advise, inflect: -чувствовать, tag: speech
+совету--<овать: to advise, inflect: -чувствовать, tag: speech
 поговори--ть: to talk, inflect: -дарить, tag: speech
 grammar: femя@instr, tag: instrumental
 тяжёл--ый: heavy, inflect: adj
