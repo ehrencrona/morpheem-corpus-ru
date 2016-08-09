@@ -36,8 +36,8 @@ more-than: "больше / лучше / ... чем" "more @comp than [someone/so
 no-matter-what: "во что бы то ни стало" "no matter what" в@alt что@ бы@ тот@n ни@ стать@
 в-пути: "в пути" "on the road" в@ путь@
 на-пути: "на пути" "on the adjective@* road" на@ adjective@* путь@
-всё-ещё: "всё@ ещё" "still" всё@ ещё@
-столько-всего: "столько всего" "so much" столько@ всего@
+всё-ещё: "всё@ ещё" "still" весь@ ещё@
+столько-всего: "столько всего" "so much" столько@ всё@gen
 нет-равных: "нет равных" "have no equal" нет[none]@ равный@genpl
 ни-не: "ни чего-то не " "not any [something]" ни@ @gen не@
 так-adv: "так много / долго …" "so @adv" так@ any @adv
@@ -258,10 +258,10 @@ dat-лучше: "кому-то лучше" "... for [someone] it's better to" х
 рад-кому: "рад кому-то" "happy to see [someone]" рад@ any tag:animate@dative
 рад-кому: "рад кому-то" "happy to see [someone]" tag:animate@dative any рад@
 одется-dat: "кому-то одеться" "dress [someone]" @dative+ any одеться@
-учить-dat: "" "teach [someone] [something]" учить|учиться@ any @dative+
-учить-dat: "" " teach [someone] [something]" @accusative+ any @dative+ any учить|учиться@
-учить-dat: "" "" 
-учить-dat: "" "" 
+учить-dat: "учить кому-то" "teach [someone] [something]" учить|учиться@ any @dative+
+учить-dat: "учить кому-то" " teach [someone] [something]" @accusative+ any @dative+ any учить|учиться@
+учить-dat: "учить кому-то" "" 
+учить-dat: "учить кому-то" "" 
 сам-с-собой: "сам с собой" "with -self" сам@ с@ себя@instr
 не-стоит: "кому-то стоит" "[someone] shouldn't" @dative+ any не@ стоить[should]@3
 не-стоит: "кому-то стоит" "[someone] should" @dative+ any стоить[should]@3
