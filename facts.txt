@@ -110,14 +110,14 @@ grammar: -свой@m
 как--ой: which, inflect: ойadj, mask: short
 как--ой[kind]: what kind of, inflect: ойadj, mask: short
 очень: very, pos: adv
-погод--а: weather, pl: weathers, inflect: fem
+погод--а: weather, inflect: fem
 сегодня: today
 завтра: tomorrow
 зов--<<вать: call, 3: calls, past: called, prog: calling, inflect: -звать
 grammar: -жить@3pl, tag: verb
 тво--й: your, inflect: -свой, mask: nonstd
 телефон--: phone, pl: phones, inflect: masc
-телефон--[number]: phone number, inflect: masc
+телефон--[number]: phone number, pl: phone numbers, inflect: masc
 покупа--ть: buy, 3: buy, past: bought, prog: buying, inflect: ать, tag: something-to-someone
 grammar: adj@accf, tag: accusative
 стать--я: article, pl: articles, inflect: -статья
@@ -159,7 +159,7 @@ grammar: y-esh-et@2pl, tag: verb
 трудн--ый: difficult, adv: difficultly, comp: difficulter, super: difficultest, inflect: ныйadj
 красив--ый: beautiful, adv: beautifully, comp: beautifuler, super: beautifulest, inflect: adj
 дом--: home, pl: homes, inflect: masc3
-работ--а: work, pl: workin, inflect: fem
+работ--а: work, pl: jobs, inflect: fem
 дн--<ень: day, pl: days, inflect: -день, tag: time
 кажд--ый: every, inflect: adj
 grammar: -день@nom
@@ -170,11 +170,11 @@ grammar: adj@prepf, tag: prepositional
 наш--: our, inflect: -наш
 grammar: v@1, tag: verb
 grammar: -наш@pl
-родител--ь: parents, inflect: mascь-animate, mask: sg
+родител--ь: , pl: parents, inflect: mascь-animate, mask: sg
 офис--: office, pl: offices, inflect: masc
 grammar: -этот@pl
 жив--<ть: live, 3: lives, past: lived, prog: living, inflect: -жить
-люд--ь: people, pl: people, inflect: -люди, mask: sg
+люд--ь: , pl: people, inflect: -люди, mask: sg
 ошибк--а: mistake, pl: mistakes, inflect: femka
 grammar: adj@preppl, tag: prepositional
 grammar: yo-yosh-yot@3, tag: verb
@@ -237,7 +237,7 @@ grammar: fem@instr, tag: instrumental
 интернет--: internet, inflect: masc
 радио: radio, pl: radios, pos: n
 котор--ый: that, inflect: adj
-музык--а: music, pl: musics, inflect: fem
+музык--а: music, inflect: fem, mask: pl
 grammar: yo-yosh-yot@1pl, tag: verb
 только: only, pos: adv
 фильм--: movie, pl: movies, inflect: masc
@@ -286,7 +286,7 @@ grammar: femka@genpl, tag: genitive
 понима--ть: understand, 3: understands, past: understood, prog: understanding, inflect: ать
 помни--ть: remember, 3: remembers, past: remembered, prog: remembering, inflect: -дарить
 буд--<<ыть[fut]: will be, inflect: -бытьfut, mask: past
-математик--а: mathematics, pl: mathematics, inflect: fem
+математик--а: mathematics, inflect: fem, mask: pl
 французск--ий: french, inflect: adj, tag: language
 словар--ь: dictionary, pl: dictionaries, inflect: -словарь
 когда: when, pos: quest
@@ -350,7 +350,7 @@ grammar: -друг@instrpl, tag: instrumental
 grammar: oprep@alt
 grammar: y-esh-et@1pl, tag: verb
 её: her, pos: pronouns
-деньг--а: money, pl: moneys, inflect: -деньга, mask: sg
+деньг--а: , pl: money, inflect: -деньга, mask: sg
 grammar: adj@accanpl, tag: accusative
 по: on, pos: prep, tag: untranslatable
 холодн--ый: cold, adv: coldly, comp: colder, super: coldest, inflect: ныйadj
@@ -358,7 +358,7 @@ grammar: adj@accanpl, tag: accusative
 grammar: abstr-anim@accpl, tag: accusative
 grammar: -быть@inf, tag: verb
 стан--<ть: become, 3: becomes, past: became, prog: becoming, inflect: -стать
-дет--ь: children, inflect: -люди, mask: sg
+дет--ь: , pl: children, inflect: -люди, mask: sg
 grammar: -смотреть@inf, tag: verb
 весн--а: spring, pl: springs, inflect: -весна, tag: at-instr, tag: time, mask: pl
 лет--о: summer, pl: summers, inflect: neu, tag: at-instr, tag: time, mask: pl
@@ -387,7 +387,7 @@ grammar: -mascь@preppl, tag: prepositional
 grammar: masc3@pl
 учи--ть: learn, 3: learns, past: learnt, prog: learning, inflect: -учить
 слов--о: word, pl: words, inflect: neu
-хлеб--: bread, pl: breads, inflect: masc
+хлеб--: bread, inflect: masc, mask: pl
 grammar: femяь@instrpl, tag: instrumental
 grammar: -mascь@instrpl, tag: instrumental
 тоже: as well, pos: adv
@@ -409,13 +409,13 @@ grammar: -нравиться@1, tag: verb
 яйц--о: egg, pl: eggs, inflect: -яйцо
 голос--: voice, pl: voices, inflect: masc3
 grammar: -стул@pl
-Росси--я: Russia, pl: Russias, inflect: -россия, mask: pl
+Росси--я: Russia, inflect: -россия, mask: pl
 откро--<ыть: open, 3: opens, past: opened, prog: opening, inflect: -открыть
 закончи--ть: finish, 3: finish, past: finished, prog: finishing, inflect: -учить
 grammar: -хотеть@3pl, tag: verb
 grammar: -давать@impr, tag: verb
 дожд--ь: rain, pl: rains, inflect: -словарь, tag: rain
-ноч--ь: night, pl: nighawks, inflect: femь-я-to-а, tag: at-inst, tag: at-instr, tag: time
+ноч--ь: night, pl: nights, inflect: femь-я-to-а, tag: at-inst, tag: at-instr, tag: time
 grammar: -стул@genpl, tag: genitive
 начина--ть: begin, 3: begins, past: began, prog: beginning, inflect: ать
 солнц--е: sun, pl: suns, inflect: -солнце
@@ -425,7 +425,7 @@ grammar: -пить@3pl, tag: verb
 про: about, pos: prep
 ответи--ть: answer, 3: answers, past: answered, prog: answering, inflect: -ответить
 grammar: -стул@preppl, tag: prepositional
-правд--а: truth, pl: truths, inflect: fem
+правд--а: truth, inflect: fem
 минут--а: minute, pl: minutes, inflect: fem, tag: time
 свет--: light, pl: lights, inflect: masc
 grammar: -кошка@genpl, tag: genitive
@@ -488,7 +488,7 @@ grammar: -есть@inf, tag: verb
 grammar: -есть@pastm, tag: verb
 grammar: -дать@2, tag: verb
 осен--ь: autumn, pl: autumns, inflect: femь, tag: at-instr, tag: time, mask: pl
-молок--о: milk, pl: milks, inflect: neu, mask: pl
+молок--о: milk, inflect: neu, mask: pl
 grammar: -сестра@pl
 обычн--ый: ordinary, comp: ordinarier, super: ordinariest, inflect: ныйadj
 трав--а: grass, pl: grasses, inflect: fem
@@ -508,11 +508,11 @@ grammar: -хотеть@2pl, tag: verb
 grammar: -есть@1, tag: verb
 ст--о: a hundred, inflect: -сто
 девят--ь: nine, inflect: -пять, tag: number
-рубл--ь: ruble, inflect: -словарь
+рубл--ь: ruble, pl: rubles, inflect: -словарь
 grammar: -выйти@pastm, tag: verb
 grammar: neu@gen, tag: genitive
 восем--ь: eight, inflect: -пять, tag: number
-тысяч--а: thousand, pl: thousands, inflect: -улица
+тысяч--а: thousand, inflect: -улица
 grammar: -ходить@1, tag: verb
 забуд--<<ыть: forget, 3: forgets, past: forgot, prog: forgetting, inflect: -бытьfut
 чашк--а: cup, pl: cups, inflect: femka2
@@ -537,20 +537,20 @@ grammar: neu@nom
 grammar: -ждать@impr, tag: verb
 grammar: -мы@genpl, tag: genitive
 жарк--ий: hot, adv: hotly, comp: hotter, super: hottest, inflect: adj
-ноутбук--: laptop, inflect: masc
+ноутбук--: laptop, pl: laptops, inflect: masc
 ужасн--ый: terrible, comp: terribler, super: terriblest, inflect: adj
 grammar: neu@instr, tag: instrumental
 grammar: -что@instr, tag: instrumental
 готов--ый: ready, comp: readier, super: readiest, inflect: adj
-юг--: south, pl: souths, inflect: masc
+юг--: south, inflect: masc, mask: pl
 grammar: -кто@instr, tag: instrumental
 направо: to the right (direction), pos: adv
 налево: to the left (direction), pos: adv
 автобус--: bus, pl: buses, inflect: masc, tag: tansport
 grammar: -большой@comp
 grammar: -весь@m
-кафе: cafe, pos: n
-привет--: hello, pl: hellos, inflect: masc
+кафе: cafe, pl: cafes, pos: n
+привет--: hello, inflect: masc, mask: pl
 grammar: abstr-soft-final@instr, tag: instrumental
 важн--ый: important, adv: importantly, comp: importanter, super: importantest, inflect: adj
 ответ--: answer, pl: answers, inflect: masc
@@ -561,7 +561,7 @@ grammar: adj@genn, tag: genitive
 карт--а: map, pl: maps, inflect: fem
 grammar: -mascь@nom
 подруг--а: friend, pl: friends, inflect: fem-animate, tag: animate
-продукт--: groceries, inflect: masc, mask: sg
+продукт--: , pl: groceries, inflect: masc, mask: sg
 фабрик--а: factory, pl: factories, inflect: fem
 grammar: -о@std
 grammar: -весь@datpl, tag: dative
@@ -584,7 +584,7 @@ grammar: -стать@inf, tag: verb
 grammar: -деньга@genpl, tag: genitive
 билет--: ticket, pl: tickets, inflect: masc
 выход--: exit, pl: exits, inflect: masc
-самолёт--: airplane, inflect: masc, tag: tansport
+самолёт--: airplane, pl: airplanes, inflect: masc, tag: tansport
 grammar: егоadj@genm, tag: genitive
 grammar: -о@alt
 куриц--а: chicken, pl: chickens, inflect: -курица, tag: animate
@@ -592,7 +592,7 @@ grammar: -о@alt
 grammar: neuie@gen, tag: genitive
 включи--ть: turn on, inflect: -учить
 холодильник--: refrigerator, pl: refrigerators, inflect: masc
-пельмен--ь: Russian dumplings, inflect: -отель
+пельмен--ь: Russian dumpling, pl: Russian dumplings, inflect: -отель
 grammar: -выйти@inf, tag: verb
 grammar: -борщ@genpl, tag: genitive
 ваш--: your, inflect: -наш
@@ -600,12 +600,12 @@ grammar: -борщ@genpl, tag: genitive
 тарелк--а: plate, pl: plates, inflect: femka
 grammar: -кто@acc, tag: accusative
 роман--: novel, pl: novels, inflect: masc-animate
-помощ--ь: help, pl: helps, inflect: femь-я-to-а
+помощ--ь: help, inflect: femь-я-to-а, mask: pl
 сложн--ый: complicated, adv: complicatedly, comp: complicateder, super: complicatedest, inflect: adj
 grammar: -сказать@inf, tag: verb
 grammar: -он@prep, tag: prepositional
 бабушк--а: grandmother, pl: grandmothers, inflect: -кошка
-реклам--а: advertisement, pl: advertizements, inflect: fem
+реклам--а: advertisement, pl: advertisements, inflect: fem
 grammar: neuie@prep, tag: prepositional
 счита--ть: count, 3: counts, past: counted, prog: counting, inflect: ать
 счита--ть[consider]: consider, 3: considers, past: considered, prog: considering, inflect: ать
@@ -621,7 +621,7 @@ grammar: -наш@m
 grammar: adj@prepn, tag: prepositional
 grammar: adj@shortf
 паспорт--: passport, pl: passports, inflect: masc3
-касс--а: cash-register, inflect: fem
+касс--а: cash register, pl: cash registers, inflect: fem
 grammar: adj@instrpl, tag: instrumental
 медленн--ый: slow, adv: slowly, comp: slower, super: slowest, inflect: adj
 яблок--о: apple, pl: apples, inflect: -яблоко
@@ -629,7 +629,7 @@ grammar: adj@instrpl, tag: instrumental
 grammar: -наш@f
 grammar: -глаз@genpl, tag: genitive
 салат--: salad, pl: salads, inflect: masc
-рыб--а: fish, pl: fish, inflect: fem-animate
+рыб--а: fish, inflect: fem-animate
 grammar: -mascь@dat, tag: dative
 плати--ть: pay, 3: pay, past: paid, prog: paying, inflect: -хватить
 заказыва--ть: order, 3: orders, past: ordered, prog: ordering, inflect: ать
@@ -637,8 +637,8 @@ grammar: -mascь@dat, tag: dative
 grammar: -окно@genpl, tag: genitive
 grammar: -домашний@accf, tag: accusative
 этаж--: floor, pl: floors, inflect: -борщ
-номер--[hotel]: hotel room, inflect: masc3
-сосед--: neighbour, pl: neighbours, inflect: -сосед
+номер--[hotel]: hotel room, pl: hotel rooms, inflect: masc3
+сосед--: neighbor, pl: neighbors, inflect: -сосед
 grammar: -хороший@comp
 grammar: sya@inf, tag: verb
 тёпл--ый: warm, adv: warmly, comp: warmer, super: warmest, inflect: adj
@@ -684,8 +684,8 @@ grammar: -словарь@nom
 grammar: -кто@gen, tag: genitive
 grammar: mascе@nom
 красн--ый: red, comp: redder, super: reddest, inflect: ныйadj
-борщ--: borscht, inflect: -борщ
-миллионер--: n/a, inflect: masc-animate
+борщ--: borscht, inflect: -борщ, mask: pl
+миллионер--: millionaire, pl: millionaires, inflect: masc-animate
 grammar: -второй@m
 grammar: -начать@inf, tag: verb
 вин--о: wine, pl: wines, inflect: neu, tag: uncountable
@@ -704,7 +704,7 @@ grammar: adj@instrn, tag: instrumental
 голов--а: head, pl: heads, inflect: fem
 grammar: -остаться@inf, tag: verb
 grammar: -остаться@1, tag: verb
-цвет--: color, inflect: masc3
+цвет--: color, pl: colors, inflect: masc3
 забыва--ть: forget, 3: forgets, past: forgot, prog: forgetting, inflect: ать
 grammar: -остаться@pastm, tag: verb
 всегда: always, pos: adv
@@ -716,7 +716,7 @@ grammar: -случай@genpl, tag: genitive
 иногда: sometimes, pos: adv
 grammar: -тот@instrm, tag: instrumental
 писател--ь: writer, pl: writers, inflect: mascь-animate
-пакет--: (plastic/paper) bag, inflect: masc
+пакет--: plastic bag, pl: plastic bags, inflect: masc
 перед: before, pos: prep
 grammar: -неделя@genpl, tag: genitive
 зов--<<вать[invite]: invite to join, inflect: -звать
@@ -788,7 +788,7 @@ grammar: -время@nom
 grammar: neuie@preppl, tag: prepositional
 сердц--е: heart, pl: hearts, inflect: -сердце
 успех--: success, pl: successes, inflect: masc
-образ--[way]: way of doing something, inflect: masc
+образ--[way]: way of doing something, pl: ways of doing something, inflect: masc
 образ--[image]: image, pl: images, inflect: masc
 вокруг: around, pos: prep
 власт--ь: power, pl: powers, inflect: femь
@@ -849,8 +849,8 @@ grammar: -мы@instrpl, tag: instrumental, tag: animate
 grammar: -ты@instr, tag: instrumental
 парн--<ень: guy, pl: guys, inflect: -парень
 grammar: -остаться@impr, tag: verb
-внимани--е: attention, pl: attentions, inflect: neuie
-кров--ь: blood, pl: bloods, inflect: femь
+внимани--е: attention, inflect: neuie, mask: pl
+кров--ь: blood, inflect: femь, mask: pl
 туда: there (direction)
 grammar: -войти@inf, tag: verb
 grammar: -церковь@nom
@@ -867,7 +867,7 @@ grammar: -бытьfut@impr, tag: verb
 grammar: -она@prep, tag: prepositional
 наверное: probably, pos: adv
 против: against, pos: prep
-огн--<онь[fire]: fire, inflect: -огонь
+огн--<онь[fire]: fire, pl: fires, inflect: -огонь
 grammar: -ты@prep, tag: prepositional
 grammar: -воскресенье@prep, tag: prepositional
 собира--ть: collect, 3: collects, past: collected, prog: collecting, inflect: ать
@@ -932,7 +932,7 @@ grammar: -яйцо@genpl, tag: genitive
 около: around, pos: prep
 grammar: -идея@genpl, tag: genitive
 grammar: -сестра@genpl, tag: genitive
-здоровь--е: health, pl: healths, inflect: -воскресенье
+здоровь--е: health, inflect: -воскресенье, mask: pl
 вредно: harmful
 следи--ть: look after, inflect: -ходить
 grammar: -месяц@genpl, tag: genitive
@@ -949,7 +949,7 @@ grammar: neuie@dat, tag: dative
 знак--: sign, pl: signs, inflect: masc
 grammar: -вернуться@1pl, tag: verb
 возможн--ый: possible, comp: possibler, super: possiblest, inflect: adj
-стоянк--а: parking lot, inflect: femka
+стоянк--а: parking lot, pl: parking lots, inflect: femka
 недалеко: not far away, pos: adv
 grammar: -сесть@pastm, tag: verb
 grammar: -повернуть@inf, tag: verb
@@ -1010,7 +1010,7 @@ grammar: -надеяться@2, tag: verb
 животн--ый: animal, comp: animaler, super: animalest, inflect: adj
 grammar: -случиться@3pl, tag: verb
 по--<еть: sing, 3: sing, past: sang, prog: singing, inflect: -петь
-продавц--<ец: salesperson, inflect: -отец
+продавц--<ец: salesperson, pl: salespersons, inflect: -отец
 дальше: further, pos: adv
 grammar: -находиться@impr, tag: verb
 grammar: -тот@pl
@@ -1063,7 +1063,7 @@ grammar: -он@instralt, tag: instrumental
 голодн--ый: hungry, comp: hungrier, super: hungriest, inflect: -голодный
 grammar: -он@genalt, tag: genitive
 вверх: up (direction), pos: adv
-автор--: author, pl: authoresses, inflect: masc-animate
+автор--: author, pl: authors, inflect: masc-animate
 вниз: down (direction), pos: adv
 grammar: -она@genalt, tag: genitive
 grammar: -весь@accinanpl, tag: accusative
@@ -1135,7 +1135,7 @@ grammar: -сосед@pl
 ручк--а: pen, pl: pens, inflect: femka2
 grammar: -яблоко@pl
 сообщени--е: message, pl: messages, inflect: neuie
-морожен--ое: ice cream, inflect: neuadjoe, tag: uncountable
+морожен--ое: ice cream, pl: ice creams, inflect: neuadjoe, tag: uncountable
 решени--е: decision, pl: decisions, inflect: neuie
 grammar: -лёгкий@adv
 grammar: ныйadj@shortpl
@@ -1338,7 +1338,7 @@ phrase: ни-any-кто
 теря--ться: get lost, inflect: -пытаться
 phrase: ни-any-что
 phrase: с-тех-пор
-мороз--: freezing cold, inflect: masc
+мороз--: cold, inflect: masc, mask: pl
 объясня--ть: explain, 3: explains, past: explained, prog: explaining, inflect: ать
 phrase: мы-с-instr
 выучи--ть: learn, 3: learns, past: learnt, prog: learning, inflect: -учить
