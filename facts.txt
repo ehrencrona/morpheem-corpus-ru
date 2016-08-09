@@ -40,7 +40,7 @@ grammar: -она@nom
 на: on, pos: prep, tag: untranslatable
 газон--: lawn, pl: lawns, inflect: masc
 работа--ть: work, 3: work, past: worked, prog: working, inflect: ать
-работа--ть[open]: be open, past: was open, inflect: ать
+работа--ть[open]: is open, inf: be open, past: was open, pastpl: were open, inflect: ать
 grammar: ать@1, tag: verb
 grammar: y-esh-et@3, tag: verb
 игра--ть: play, 3: plays, past: played, prog: playing, inflect: ать
@@ -451,7 +451,7 @@ grammar: sya@2pl, tag: verb
 месяц--: month, pl: months, inflect: -месяц, tag: time
 grammar: adj@accinanm, tag: accusative
 grammar: adj@instrm, tag: instrumental
-боли--<еть: be ill, past: was ill, prog: being ill, inflect: -смотреть
+боли--<еть: is ill, inf: be ill, past: was ill, pastpl: were ill, prog: being ill, inflect: -смотреть
 больниц--а: hospital, pl: hospitals, inflect: -улица
 grammar: -есть@2pl, tag: verb
 звони--ть: call, 3: calls, past: called, prog: calling, inflect: -дарить, tag: speech
@@ -570,7 +570,7 @@ grammar: -весь@datpl, tag: dative
 класс--[room]: classroom, pl: classrooms, inflect: masc
 grammar: sya@1, tag: verb
 нормальн--ый: normal, adv: normally, inflect: adj, mask: comp
-опозда--ть: be late, past: was late, prog: being late, inflect: ать
+опозда--ть: is late, inf: be late, past: was late, pastpl: were late, prog: being late, inflect: ать
 закро--<ыть: close, 3: closes, past: closed, prog: closing, inflect: -открыть
 grammar: -мочь@3pl, tag: verb
 grammar: -свой@n
@@ -1027,7 +1027,7 @@ grammar: -придти@pastm, tag: verb
 половин--а: half, pl: halves, inflect: fem
 grammar: -убить@inf, tag: verb
 съ--есть: eat, 3: eats, past: ate, prog: eating, inflect: -есть
-успе--ть: be in time, past: was in time, prog: being in time, inflect: ать
+успе--ть: is in time, inf: be in time, past: was in time, pastpl: were in time, prog: being in time, inflect: ать
 глуп--ый: stupid, adv: stupidly, comp: stupider, super: stupidest, inflect: adj
 grammar: -выбрать@inf, tag: verb
 grammar: -рад@shortm
@@ -1272,7 +1272,7 @@ phrase: чем-чем
 броси--ть: abandon, 3: abandons, past: abandoned, prog: abandoning, inflect: -бросить
 phrase: если-то
 шаг--: step, pl: steps, inflect: masc
-находи--ться: be located, 3: is located, past: was located, inflect: -находиться
+находи--ться: is located, inf: be located, pastpl: were located, past: was located, inflect: -находиться
 действительно: really, pos: adv
 grammar: аться@3pl, tag: verb
 grammar: аться@2, tag: verb
@@ -1346,7 +1346,7 @@ phrase: мы-с-instr
 повери--ть: believe, 3: believes, past: believed, prog: believing, inflect: -верить
 grammar: -простой@comp
 phrase: no-matter-what
-опаздыва--ть: be late, 3: is late, past: was late, prog: being late, inflect: ать
+опаздыва--ть: is late, inf: be late, past: was late, pastpl: were late, prog: being late, inflect: ать
 зажигалк--а: lighter, pl: lighters, inflect: femka
 phrase: в-пути
 закончи--ться: end, 3: ends, past: ended, prog: ending, inflect: -случиться
