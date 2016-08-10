@@ -327,7 +327,7 @@ grammar: -писать@inf, tag: verb
 год--: year, pl: years, inflect: -год, tag: time
 grammar: n@datpl, tag: dative
 grammar: -свой@prepm, tag: prepositional
-его: his, pos: pronouns
+его: his, pos: pron
 --есть: eat, 3: eats, past: ate, prog: eating, inflect: -есть
 grammar: y-esh-et@impr, tag: verb
 купи--ть: buy, 3: buy, past: bought, prog: buying, inflect: -любить, tag: something-to-someone
@@ -349,7 +349,7 @@ grammar: -друг@instrpl, tag: instrumental
 урок--: lesson, pl: lessons, inflect: masc
 grammar: oprep@alt
 grammar: y-esh-et@1pl, tag: verb
-её: her, pos: pronouns
+её: her, pos: pron
 деньг--а: , pl: money, inflect: -деньга, mask: sg
 grammar: adj@accanpl, tag: accusative
 по: on, pos: prep, tag: untranslatable
@@ -616,7 +616,7 @@ grammar: n@instrpl, tag: instrumental
 пример--: example, pl: examples, inflect: masc
 grammar: -наш@m
 иде--я: idea, pl: ideas, inflect: -идея
-что-то: something, pos: pronouns
+что-то: something, pos: pron
 согласн--ый: agreeing, inflect: adj
 grammar: adj@prepn, tag: prepositional
 grammar: adj@shortf
@@ -653,7 +653,7 @@ grammar: -лошадь@instrpl, tag: instrumental
 экзамен--: exam, pl: exams, inflect: masc
 grammar: -домашний@f
 идиот--: idiot, pl: idiots, inflect: masc-animate
-их: their, pos: pronouns
+их: their, pos: pron
 лекарств--о: medication, pl: medications, inflect: neu
 grammar: neuie@pl
 втор--ой: second, inflect: -второй
@@ -826,7 +826,7 @@ grammar: neu@dat, tag: dative
 grammar: sya@2, tag: verb
 пор--а: time to, inflect: fem
 похож--ий: similar, adv: similarly, inflect: -похожий, mask: comp
-оно: it, pos: pronouns
+оно: it, pos: pron
 grammar: -весь@preppl, tag: prepositional
 grammar: -пытаться@impr, tag: verb
 стен--а: wall, pl: walls, inflect: fem
@@ -1121,7 +1121,7 @@ grammar: -они@instrpl, tag: instrumental
 скор--ый: rather, inflect: adj, mask: allbutcomp
 скор--ый: speed, inflect: adj
 grammar: -лететь@1, tag: verb
---себя: -self, inflect: -себя, tag: animate
+--себя: -self, inflect: -себя, pos: pron, tag: animate
 бы: would particle
 времен--<<я: time, pl: times, inflect: -время, tag: time
 grammar: neuadjoe@acc, tag: accusative
