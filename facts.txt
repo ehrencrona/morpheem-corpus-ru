@@ -25,15 +25,15 @@ grammar: n@prep, tag: prepositional
 хорош--ий: good, adv: well, comp: better, super: best, inflect: -хороший
 магазин--: shop, pl: shops, inflect: masc
 комнат--а: room, pl: rooms, inflect: fem
---я: I, inflect: -я, tag: animate
+--я: I, acc: me, inflect: -я, tag: animate
 grammar: -я@nom
---он: he, inflect: -он, tag: animate
+--он: he, acc: him, inflect: -он, tag: animate
 grammar: -он@nom
 transform: yToI
 Саш--а: Sasha, inflect: -улица, tag: animate, mask: pl
 библиотек--а: library, pl: libraries, inflect: fem
 grammar: -она@nom
---она: she, inflect: -она, tag: animate
+--она: she, acc: her, inflect: -она, tag: animate
 Маш--а: Маsha, inflect: -улица, tag: animate, mask: pl
 школ--а: school, pl: schools, inflect: fem
 улиц--а: street, pl: streets, inflect: -улица
@@ -146,7 +146,7 @@ grammar: adj@pl
 да: yes
 здесь: here
 зна--ть: know, 3: knows, past: knew, prog: knowing, inflect: ать
---вы: you, inflect: -вы, tag: animate
+--вы: you (people), inflect: -вы, tag: animate
 grammar: -вы@pl
 grammar: it-im-ite@2pl, tag: verb
 банк--: bank, pl: banks, inflect: masc
@@ -185,12 +185,12 @@ grammar: -друг@pl
 плох--ой: bad, adv: badly, comp: worse, super: worst, inflect: -плохой
 grammar: yo-yosh-yot@2pl, tag: verb
 grammar: n@accpl, tag: accusative
---они: they, inflect: -они, tag: animate
+--они: they, acc: them, inflect: -они, tag: animate
 стар--ый: old, comp: older, super: oldest, inflect: adj
 grammar: -они@pl
 grammar: -мы@pl
 grammar: ать@inf, tag: verb
---мы: we, inflect: -мы, tag: animate
+--мы: we, acc: us, inflect: -мы, tag: animate
 grammar: ать@3pl, tag: verb
 grammar: adj@accinanpl, tag: accusative
 grammar: yo-yosh-yot@2, tag: verb
@@ -1121,7 +1121,7 @@ grammar: -они@instrpl, tag: instrumental
 скор--ый: rather, inflect: adj, mask: allbutcomp
 скор--ый: speed, inflect: adj
 grammar: -лететь@1, tag: verb
---себя: myself, themselves, herself, inflect: -себя, tag: animate
+--себя: -self, inflect: -себя, tag: animate
 бы: would particle
 времен--<<я: time, pl: times, inflect: -время, tag: time
 grammar: neuadjoe@acc, tag: accusative
@@ -1352,7 +1352,6 @@ phrase: в-пути
 закончи--ться: end, 3: ends, past: ended, prog: ending, inflect: -случиться
 встрети--ть: meet, 3: meets, past: met, prog: meeting, inflect: -ответить
 украд--<сть: steal, 3: steals, past: stole, prog: stealing, inflect: -украсть
-phrase: на-пути
 доверя--ть: trust, 3: trusts, past: trusted, prog: trusting, inflect: ать
 хвати--ть: be enough, 3: is enough, past: was enough, prog: being enough, inflect: -хватить
 phrase: столько-всего
@@ -1628,3 +1627,6 @@ grammar: -весь-everything@instr, tag: instrumental
 grammar: -весь-everything@prep, tag: prepositional
 grammar: -письмо@genpl, tag: genitive
 phrase: платить-за
+grammar: -придти@inf
+grammar: perspron@accalt
+grammar: -выйти@pastpl
