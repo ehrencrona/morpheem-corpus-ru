@@ -104,7 +104,7 @@ grammar: -свой@m
 нет[none]: have none
 нет[part]: no
 мо--й: my, inflect: -свой, mask: nonstd
-больш--ой: big, comp: bigger, super: biggest, inflect: -большой
+больш--ой: big, comp: bigger, super: biggest, inflect: -большой, mask: short
 больш--ой: , comp: more, inflect: -большой, mask: allbutcomp
 больш--ой[longer]: longer, inflect: -большой, mask: allbutcomp
 как--ой: which, inflect: ойadj, mask: nonstd
@@ -532,13 +532,13 @@ grammar: adj@genf, tag: genitive
 кино[film]: movie, pl: movies, pos: n
 grammar: neu@nom
 факультет--: faculty, pl: faculties, inflect: masc
-грустн--ый: sad, adv: sadly, comp: sadder, super: saddest, inflect: adj
+грустн--ый: sad, adv: sadly, comp: sadder, super: saddest, inflect: ныйadj
 диван--: couch, pl: couches, inflect: masc
 grammar: -ждать@impr, tag: verb
 grammar: -мы@genpl, tag: genitive
 жарк--ий: hot, adv: hotly, comp: hotter, super: hottest, inflect: adj
 ноутбук--: laptop, pl: laptops, inflect: masc
-ужасн--ый: terrible, comp: more terrible, super: most terrible, inflect: adj
+ужасн--ый: terrible, comp: more terrible, super: most terrible, inflect: ныйadj
 grammar: neu@instr, tag: instrumental
 grammar: -что@instr, tag: instrumental
 готов--ый: ready, comp: readier, super: readiest, inflect: adj, mask: adv
@@ -601,7 +601,7 @@ grammar: -борщ@genpl, tag: genitive
 grammar: -кто@acc, tag: accusative
 роман--: novel, pl: novels, inflect: masc-animate
 помощ--ь: help, inflect: femь-я-to-а, mask: pl
-сложн--ый: complicated, adv: complicatedly, comp: more complicated, super: most complicated, inflect: adj
+сложн--ый: complicated, adv: complicatedly, comp: more complicated, super: most complicated, inflect: ныйadj
 grammar: -сказать@inf, tag: verb
 grammar: -он@prep, tag: prepositional
 бабушк--а: grandmother, pl: grandmothers, inflect: -кошка
@@ -617,7 +617,7 @@ grammar: n@instrpl, tag: instrumental
 grammar: -наш@m
 иде--я: idea, pl: ideas, inflect: -идея
 что-то: something, pos: pron
-согласн--ый: agreeing, inflect: adj
+согласн--ый: agreeing, inflect: ныйadj
 grammar: adj@prepn, tag: prepositional
 grammar: adj@shortf
 паспорт--: passport, pl: passports, inflect: masc3
@@ -904,7 +904,7 @@ grammar: adj@shortm
 выигра--ть: win, 3: wins, past: won, prog: winning, inflect: ать
 grammar: -год@genpl, tag: genitive
 конечно: of course
-серьёзн--ый: serious, adv: seriously, inflect: adj
+серьёзн--ый: serious, adv: seriously, inflect: ныйadj
 картин--а: painting, pl: paintings, inflect: fem
 grammar: femяь@preppl, tag: prepositional
 grammar: -становиться@impr, tag: verb
@@ -945,10 +945,10 @@ grammar: -они@genpl, tag: genitive
 обраща--ться: address, 3: addresses, past: addressed, prog: addressing, inflect: -пытаться
 grammar: adj@shortn
 grammar: neuie@dat, tag: dative
-свободн--ый: free, adv: freely, comp: freer, super: freest, inflect: adj
+свободн--ый: free, adv: freely, comp: freer, super: freest, inflect: ныйadj
 знак--: sign, pl: signs, inflect: masc
 grammar: -вернуться@1pl, tag: verb
-возможн--ый: possible, inflect: adj, mask: comp
+возможн--ый: possible, inflect: ныйadj, mask: comp
 стоянк--а: parking lot, pl: parking lots, inflect: femka
 недалеко: not far away, pos: adv
 grammar: -сесть@pastm, tag: verb
@@ -991,7 +991,7 @@ grammar: femь-я-to-а@preppl, tag: prepositional
 grammar: -чей@m
 grammar: -стать@impr, tag: verb
 пройд--<ти: pass, 3: passes, past: passed, prog: passing, inflect: -войти
-вкусн--ый: tasty, adv: tastily, comp: tastier, super: tastiest, inflect: adj
+вкусн--ый: tasty, adv: tastily, comp: tastier, super: tastiest, inflect: ныйadj
 grammar: -случиться@1, tag: verb
 выбер--<<рать: choose, 3: chooses, past: chose, prog: choosing, inflect: -выбрать
 достаточн--ый: sufficient, adv: enough, inflect: adj, tag: amount, mask: comp
@@ -999,7 +999,7 @@ grammar: -случиться@1, tag: verb
 grammar: -земля@instr, tag: instrumental
 grammar: femь-я-to-а@datpl, tag: dative
 треть--<ий: third, inflect: -третий, mask: nonstd
-верн--ый: right, adv: rightly, inflect: adj, mask: comp
+верн--ый: right, adv: rightly, inflect: ныйadj, mask: comp
 grammar: -идти@pastn, tag: verb
 дяд--я: uncle, pl: uncles, inflect: -дядя, tag: animate
 попробу--<овать: try, 3: tries, past: tried, prog: trying, inflect: -чувствовать
@@ -1023,7 +1023,7 @@ grammar: -тот@datpl, tag: dative
 лишн--ий: spare, inflect: -домашний, mask: nonstd
 grammar: -давать@inf, tag: verb
 grammar: -придти@pastm, tag: verb
-равн--ый: equal, adv: equally, inflect: adj, mask: comp
+равн--ый: equal, adv: equally, inflect: ныйadj, mask: comp
 половин--а: half, pl: halves, inflect: fem
 grammar: -убить@inf, tag: verb
 съ--есть: eat, 3: eats, past: ate, prog: eating, inflect: -есть
@@ -1033,7 +1033,7 @@ grammar: -выбрать@inf, tag: verb
 grammar: -рад@shortm
 из-за: because of, pos: prep
 предложи--ть: propose, 3: proposes, past: proposed, prog: proposing, inflect: -учить, tag: speech
-удобн--ый: comfortable, adv: comfortably, comp: more comfortable, super: most comfortable, inflect: adj
+удобн--ый: comfortable, adv: comfortably, comp: more comfortable, super: most comfortable, inflect: ныйadj
 grammar: -россия@prep, tag: prepositional
 grammar: -рад@shortf
 вечеринк--а: party, pl: parties, inflect: femka
@@ -1067,7 +1067,7 @@ grammar: -он@genalt, tag: genitive
 вниз: down (direction), pos: adv
 grammar: -она@genalt, tag: genitive
 grammar: -весь@accinanpl, tag: accusative
-довольн--ый: satisfied, inflect: adj
+довольн--ый: satisfied, inflect: ныйadj
 грязн--ый: dirty, adv: dirtily, comp: dirtier, super: dirtiest, inflect: adj
 grammar: -себя@dat, tag: dative
 ремонт--: renovation, pl: renovations, inflect: masc
@@ -1309,7 +1309,7 @@ phrase: more-than
 отношени--е: relation, pl: relations, inflect: neuie
 напиш--<сать: write, 3: writes, past: wrote, prog: writing, inflect: -писать, tag: something-to-someone
 отношени--е[regard]: regard, pl: regards, inflect: neuie
-способн--ый: able, adv: ably, comp: abler, super: ablest, inflect: adj
+способн--ый: able, adv: ably, comp: abler, super: ablest, inflect: ныйadj
 единственн--ый: the only, inflect: adj
 начина--ться: begin, 3: begins, past: began, prog: beginning, inflect: -пытаться
 phrase: при-prep
