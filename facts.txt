@@ -170,7 +170,7 @@ grammar: adj@prepf, tag: prepositional
 наш--: our, inflect: -наш, mask: nonstd
 grammar: v@1, tag: verb
 grammar: -наш@pl
-родител--ь: , pl: parents, inflect: mascь-animate, mask: sg
+родител--ь: , pl: parents, inflect: mascь-animate, tag: animate, mask: sg
 офис--: office, pl: offices, inflect: masc
 grammar: -этот@pl
 жив--<ть: live, 3: lives, past: lived, prog: living, inflect: -жить
@@ -277,7 +277,7 @@ grammar: -давать@1, tag: verb
 интересн--ый: interesting, adv: interestingly, comp: more interesting, super: most interesting, inflect: ныйadj
 без: without, pos: prep
 мног--о: many, inflect: -много, tag: number, tag: amount, mask: allbutpl
-мног--о[much]: much, inflect: -много, tag: number, tag: amount, mask: allbutplandadv
+мног--о[much]: much, adv: a lot, comp: more, super: most, inflect: -много, tag: number, tag: amount, mask: allbutplandadv
 grammar: masc@genpl, tag: genitive
 grammar: -друг@genpl, tag: genitive
 grammar: adj@adv
@@ -319,7 +319,7 @@ grammar: -жить@inf, tag: verb
 сестр--а: sister, pl: sisters, inflect: -сестра
 grammar: -лежать@inf, tag: verb
 grammar: femя@nom
-сын--: son, pl: sons, inflect: -сын
+сын--: son, pl: sons, inflect: -сын, tag: animate
 брат--: brother, pl: brothers, inflect: -брат, tag: animate
 grammar: -писать@inf, tag: verb
 жен--а: wife, pl: wives, inflect: -жена
@@ -520,7 +520,7 @@ grammar: -ходить@1, tag: verb
 grammar: -пить@1, tag: verb
 grammar: adj@genm, tag: genitive
 градус--: degree, pl: degrees, inflect: masc
-километр--: kilometre, pl: kilometers, inflect: masc
+километр--: kilometer, pl: kilometers, inflect: masc
 grammar: adj@n
 озер--о: lake, pl: lakes, inflect: -озеро
 матч--: match, pl: matches, inflect: -овощ
@@ -656,7 +656,7 @@ grammar: -домашний@f
 их: their, pos: pronouns
 лекарств--о: medication, pl: medications, inflect: neu
 grammar: neuie@pl
-втор--ой: second, inflect: -второй, hide: nonstd
+втор--ой: second, inflect: -второй
 куда: where, pos: quest, tag: question
 grammar: егоadj@instrf, tag: instrumental
 скольк--о: how much, inflect: -много, tag: time, tag: amount, mask: allbutpl
@@ -685,7 +685,7 @@ grammar: -кто@gen, tag: genitive
 grammar: mascе@nom
 красн--ый: red, comp: redder, super: reddest, inflect: ныйadj, mask: adv
 борщ--: borscht, inflect: -борщ, mask: pl
-миллионер--: millionaire, pl: millionaires, inflect: masc-animate
+миллионер--: millionaire, pl: millionaires, inflect: masc-animate, tag: animate
 grammar: -второй@m
 grammar: -начать@inf, tag: verb
 вин--о: wine, pl: wines, inflect: neu, tag: uncountable
@@ -994,7 +994,7 @@ grammar: -стать@impr, tag: verb
 вкусн--ый: tasty, adv: tastily, comp: tastier, super: tastiest, inflect: adj
 grammar: -случиться@1, tag: verb
 выбер--<<рать: choose, 3: chooses, past: chose, prog: choosing, inflect: -выбрать
-достаточн--ый: sufficient, adv: sufficiently, inflect: adj, mask: comp
+достаточн--ый: sufficient, adv: enough, inflect: adj, tag: amount, mask: comp
 рад--: glad, adv: gladly, comp: gladder, super: gladdest, inflect: -рад
 grammar: -земля@instr, tag: instrumental
 grammar: femь-я-to-а@datpl, tag: dative
@@ -1627,3 +1627,4 @@ grammar: -весь-everything@acc, tag: accusative
 grammar: -весь-everything@instr, tag: instrumental
 grammar: -весь-everything@prep, tag: prepositional
 grammar: -письмо@genpl, tag: genitive
+phrase: платить-за

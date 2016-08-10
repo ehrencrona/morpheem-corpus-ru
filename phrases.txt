@@ -5,8 +5,8 @@
 2-gen: "два чего-то (A1)" "two [something]" два@ @gen+
 not-gen: "нет чего-то (A1)" "there is/are no [something]" нет[none]@ any @genitive+
 not-gen: "нет чего-то (A1)" "" 
-gen-of: "что-то чего-то" "of [something]" @genitive+
-gen-possession: "что-то чьё-то" "of [someone]" tag:animate@genitive
+gen-of: "что-то чего-то" "of [uncountable]" @genitive+
+gen-possession: "что-то чьё-то" "of [owner]" tag:animate@genitive
 teach: "научить кого-то чему-то" "teach [someone] [something]" научить|учить@ @accusative+ @dative+
 рад-dat: "рад чему-то" "happy because of [something]" рад@ any @dative+
 рад-dat: "рад чему-то" "happy because of [something]" @dative+ any рад@
@@ -41,12 +41,14 @@ no-matter-what: "во что бы то ни стало" "no matter what" в@alt 
 нет-равных: "нет равных" "have no equal" нет[none]@ равный@genpl
 ни-не: "ни чего-то не " "not any [something]" ни@ @gen не@
 так-adv: "так много / долго …" "so @adv" так@ any @adv
+так-adv: "так много / долго …" "so many" так@ any много@
+так-adv: "так много / долго …" "so much" так@ any много[much]@
 по-карману: "по карману" "can afford" по@ карман@dat
 не-так-ли: "не так ли" "is that not so?" не@ так@ ли@
 за-то-что: "за то, что - question: is this not just за accusative?" "for that, which" за@ тот@accn ,@ что[that]@
 в-курсе: "в курсе TODO: might need a second phrase with gen at the end" "to be aware" в@ курс@prep
-verb-acc: "делать что-то / видеть кого-то / ..." "verb@+ [something]" verb@ any @accusative+
-verb-acc: "делать что-то / видеть кого-то / ..." "[something] verb" @accusative+ any verb@
+verb-acc: "делать что-то / видеть кого-то / ..." "verb@ [something]" verb@ any @accusative+
+verb-acc: "делать что-то / видеть кого-то / ..." "[something] verb@" @accusative+ any verb@
 с-чем: "с (чем/кем-то) (A1)" "with [something or someone]" с@ @instrumental+
 говорить-с: "говорить с кем" "talk to [someone]" говорить|поговорить@ any с@ @instrumental+
 говорить-с: "говорить с кем" "talk to [someone]" с@ @instrumental+ any говорить|поговорить@
@@ -175,7 +177,7 @@ go-do: "идти verb" "go [verb] " идти@ verb@
 такой..как: "такой..как" "so / such ... as" такой@ any как[like]@
 стоить-дорогой: "стоить дорогой" "is ... дорогой|дешёвый@" стоить@ any дорогой|дешёвый@
 стоить-дорогой: "стоить дорогой" "" 
-у-thing: "у чего-то (где)" "by [something]" у@ @genitive+
+у-thing: "у чего-то (где)" "by [something's location]" у@ @genitive+
 за-acc: "за" "for" за@ @accusative+
 за-что: "за что" "for what reason" за@ что@
 то-что: "то что" "that, which" тот@n ,@ что[that]@
@@ -186,8 +188,8 @@ go-do: "идти verb" "go [verb] " идти@ verb@
 не-gen: "не genitive" "did not verb@past ... [something]" не@ verb@past any @genitive+
 не-gen: "не genitive" "do not verb@ ... [something]" не@ verb@ any @genitive+
 ни-ни: "ни ... ни" "neither ... nor" ни@ any ни@
-если-бы: "если бы" "if ... ... would verb@+" если@ бы@ any ,@ any verb@ бы@
-если-бы: "если бы" "if ... would verb@+" если@ бы@ any ,@ any бы@ any verb@
+если-бы: "если бы" "if ... ... would verb@" если@ бы@ any ,@ any verb@ бы@
+если-бы: "если бы" "if ... would verb@" если@ бы@ any ,@ any бы@ any verb@
 куда-бы: "куда бы" "whereever" куда@ бы@
 кроме-gen: "кроме" "except for [someone]" кроме@ @genitive+
 против-gen: "против" "against [an idea/cause/etc]" против@ @genitive+
@@ -214,7 +216,7 @@ dat-нужен: "(кому-то) нужен" "[someone] needs" @dative+ any ну
 датьetc-dat: "дать/... кому-то чего-то" "to [someone] ... tag:something-to-someone" @dative+ any tag:something-to-someone
 купить-чего-то: "покупать чего-то кому-то" "buy [something] for [someone]" купить|покупать@ any @accusative+ any @dative+
 купить-чего-то: "покупать чего-то кому-то" "buy [someone] [something]" купить|покупать@ any @dative+ any @accusative+
-dat-adv: "кому-то холодно/..." "[someone] felt @adv" @dative+ any @adv
+dat-adv: "кому-то холодно/..." "[someone] feels @adv" @dative+ any @adv
 dat-adv: "кому-то холодно/..." "[someone] felt @adv" @dative+ быть@ any @adv
 кому-то-достаточно: "кому-то достаточно" "[someone] has enough" @dative+ достаточный@adv
 кому-то-достаточно: "кому-то достаточно" "[someone] does not have enough" @dative+ не@ достаточный@adv
@@ -246,7 +248,7 @@ either-or-или-или: "или ... , или ..." "either ... or" или@ any �
 при-чём: "при чём" "what does [something] have to do with this" при@ что@prepositional здесь|тут@
 кому-то-кажется: "кому-то кажется" "it seems to [someone]" @dative+ any казаться@
 gen-верить: "верить кому-то" "trust [someone]" верить|доверять|поверить@ any @dative+
-gen-верить: "верить кому-то" "trust [someone]" @dative+ any верить|доверять|поверить@
+gen-верить: "верить кому-то" "[someone] trust" @dative+ any верить|доверять|поверить@
 dat-speech: "говорить/сказать/... кому-то" "tag:speech to [someone]" tag:speech any @dative+
 dat-speech: "говорить/сказать/... кому-то" "tag:speech to [someone]" @dative+ any tag:speech
 помогать-dat: "помогать-dat" "help [someone]" помогать@ any @dative+
@@ -287,3 +289,5 @@ there-was-none: "не было чего-то" "there was/were none [of something
 there-will-be-none: "не будет чего-то" "there will be no [something]" не@ быть[fut]@3 any @genitive+
 there-will-be-none: "не будет чего-то" "there will be no [something]" @genitive+ не@ быть[fut]@3
 на-замок: "закрыть на замок" "to lock" закрыть|закрывать|закрытый@ any на@ any замок[lock]@acc
+платить-за: "платить за чего-то" "платить|заплатить@ for [something bought]" платить|заплатить@ за@ @accusative+
+платить-за: "платить за чего-то" "for [something bought] платить|заплатить@" за@ @accusative+ any платить|заплатить@
