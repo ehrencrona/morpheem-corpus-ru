@@ -162,7 +162,7 @@ play-with: "играть на чём-то" "play (on) [instrument, device]" иг
 за-стол: "за стол (куда)" "at the table [where to]" за@ стол@acc
 сколько-время: "сколько [время]" "how long" сколько@
 сколько-distance: "сколько [расстояние]" "how far" сколько@
-go-do: "идти verb" "go [verb]" идти@ verb@
+go-do: "идти verb" "go (2)" идти|пойти@ verb@
 к-чему-то: "к чему-то (B1)" "to [place, not person]" к@ @dative+
 к-time: "к какому-то времени (?B1)" "by [moment in time]" к@ @dative+
 думать-над: "думать над чем-то" "think [somthing] over" думать|подумать@ над@
@@ -177,7 +177,8 @@ go-do: "идти verb" "go [verb]" идти@ verb@
 как-только: "как только" "as soon as" как[when]@ только@
 так...как: "так ... как" "as ... as" так@ any как[like]@
 такой..как: "такой..как" "so / such ... as" такой@ any как[like]@
-стоить-дорогой: "стоить дорогой" "is ... (adj)" стоить@ any дорогой|дешёвый@
+стоить-дорогой: "стоить дорогой" "(are,is,was,being,be,are,were,v) ... (adj)" стоить@ any дорогой|дешёвый@adv
+стоить-дорогой: "стоить дорогой" "(are,is,was,being,be,are,were,v) ... (adj)" дорогой|дешёвый@adv стоить@
 у-thing: "у чего-то (где)" "by [something's location]" у@ @genitive+
 за-acc: "за" "for" за@ @accusative+
 за-что: "за что" "for what reason" за@ что@
@@ -294,3 +295,12 @@ there-will-be-none: "не будет чего-то" "there will be no [something
 на-замок: "закрыть на замок" "to lock" закрыть|закрывать|закрытый@ any на@ any замок[lock]@acc
 платить-за: "платить за чего-то" "(v) for [something bought]" платить|заплатить@ за@ @accusative+
 платить-за: "платить за чего-то" "(4) (v) for [something bought] " за@ @accusative+ any платить|заплатить@ @nominative+
+каким-образом: "каким образом" "how" какой@instrn образ[way]@instr
+есть-meal: "есть завтрак/обед/ужин" "have ... (2)" есть@ any завтрак|обед|ужин@
+так-и-не: "так и не" "but still didn't ..." так@ и@ не@
+так-и-не: "так и не" "but still didn't ..." но@ так@ и@ не@
+так-и-не: "так и не" "but still didn't ..." да@ так@ и@ не@
+домашнее-задание: "домашнее задание" "homework" домашний@ задание@
+хватит-что-то-делать: "хватит кричать" "stop (2)" хватить@3 verb@
+answer-to-question: "ответить/ответ на что-то" "answer to (3)" ответ@ на@ @accusative+
+answer-to-question: "ответить/ответ на что-то" "(v) to (3)" ответить|отвечать@ на@ @accusative+
