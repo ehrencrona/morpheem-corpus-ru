@@ -94,7 +94,7 @@ grammar: -любить@1, tag: verb
 зачем: what for, pos: quest
 почему: why, pos: quest
 grammar: -быть@1, tag: verb
---быть: are, 3: is, past: were, inf: be, prog: being, 1: am, inflect: -быть
+--быть: are, 1: am, 3: is, past: were, inf: be, prog: being, inflect: -быть
 квартир--а: apartment, pl: apartments, inflect: fem
 grammar: -свой@f
 вот: here (is)
@@ -104,7 +104,7 @@ grammar: -свой@m
 нет[none]: have none
 нет[part]: no
 мо--й: my, inflect: -свой, mask: nonstd
-больш--ой: big, comp: bigger, super: biggest, inflect: -большой, mask: short
+больш--ой: big, comp: bigger, super: biggest, inflect: -большой, mask: shortandadv
 больш--ой: , comp: more, inflect: -большой, mask: allbutcomp
 больш--ой[longer]: longer, inflect: -большой, mask: allbutcomp
 как--ой: which, inflect: ойadj, mask: nonstd
@@ -641,7 +641,7 @@ grammar: -домашний@accf, tag: accusative
 сосед--: neighbor, pl: neighbors, inflect: -сосед
 grammar: -хороший@comp
 grammar: sya@inf, tag: verb
-тёпл--ый: warm, adv: warmly, comp: warmer, super: warmest, inflect: adj, mask: short
+тёпл--ый: warm, adv: warmly, comp: warmer, super: warmest, inflect: -тёплый, mask: short
 характер--: character, pl: characters, inflect: masc
 grammar: -давать@3pl, tag: verb
 лекци--я: lecture, pl: lectures, inflect: -регистрация
@@ -1121,7 +1121,7 @@ grammar: -они@instrpl, tag: instrumental
 скор--ый: rather, inflect: adj, mask: allbutcomp
 скор--ый: speed, inflect: adj, mask: short
 grammar: -лететь@1, tag: verb
---себя: -self, inflect: -себя, pos: pron, tag: animate
+--себя: -self, inflect: -себя, tag: animate
 бы: would particle
 времен--<<я: time, pl: times, inflect: -время, tag: time
 grammar: neuadjoe@acc, tag: accusative
@@ -1428,7 +1428,7 @@ phrase: для-того
 grammar: -цветок@pl
 phrase: давно-пора
 phrase: тут-и-там
-футбол--: n/a, inflect: masc
+футбол--: n/a, inflect: masc, mask: pl
 phrase: друг-другу
 приед--<хать: n/a, inflect: -ехать
 любим--ый: n/a, inflect: adj, mask: adv
@@ -1472,7 +1472,7 @@ phrase: рядом-с
 phrase: между-чем-то
 phrase: за-место
 плать--е: n/a, inflect: -платье
-одежд--а: n/a, inflect: fem
+одежд--а: n/a, inflect: fem, mask: pl
 phrase: следить-за-кем-то
 phrase: за-столом
 phrase: за-границей
@@ -1553,7 +1553,7 @@ grammar: -гость@locpl
 grammar: neuadjoe@accpl, tag: accusative
 phrase: про-что-то
 phrase: играть-в-игру
-обратн--ый: n/a, inflect: adj, mask: short
+обратн--ый: return, inflect: adj, mask: compandshort
 phrase: dat-нужен
 phrase: датьetc-dat
 аэропорт--: n/a, inflect: -аэропорт
@@ -1638,3 +1638,4 @@ phrase: так-и-не
 phrase: домашнее-задание
 phrase: хватит-что-то-делать
 phrase: answer-to-question
+всего: only, pos: adv
