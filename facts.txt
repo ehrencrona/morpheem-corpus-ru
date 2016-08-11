@@ -58,7 +58,7 @@ grammar: fem@acc, tag: accusative
 grammar: -кто@nom
 grammar: n@acc, tag: accusative
 --кто: who, acc: whom, inflect: -кто, tag: question
-слыши--<ать: listen, 3: listens, past: listened, prog: listening, inflect: -слышать
+слыши--<ать: hear, 3: hears, past: heard, prog: hearing, inflect: -слышать
 мам--а: mom, pl: moms, inflect: fem-animate, tag: animate
 люби--ть: like, 3: likes, past: liked, prog: liking, inflect: -любить
 grammar: perspron@acc, tag: accusative
@@ -94,7 +94,7 @@ grammar: -любить@1, tag: verb
 зачем: what for, pos: quest
 почему: why, pos: quest
 grammar: -быть@1, tag: verb
---быть: am, 3: is, past: were, prog: being, inflect: -быть
+--быть: are, 3: is, past: were, inf: be, prog: being, 1: am, inflect: -быть
 квартир--а: apartment, pl: apartments, inflect: fem
 grammar: -свой@f
 вот: here (is)
@@ -151,7 +151,7 @@ grammar: -вы@pl
 grammar: it-im-ite@2pl, tag: verb
 банк--: bank, pl: banks, inflect: masc
 ресторан--: restaurant, pl: restaurants, inflect: masc
-эт--от: this, inflect: -этот, mask: nonstd
+эт--от: this, pl: these, inflect: -этот, mask: nonstd
 grammar: -этот@f
 grammar: -этот@m
 слишком: too, pos: adv
@@ -1553,7 +1553,6 @@ grammar: -гость@locpl
 grammar: neuadjoe@accpl, tag: accusative
 phrase: про-что-то
 phrase: играть-в-игру
-уход--: n/a, inflect: masc
 обратн--ый: n/a, inflect: adj, mask: short
 phrase: dat-нужен
 phrase: датьetc-dat
@@ -1610,13 +1609,13 @@ grammar: -сосед@datpl, tag: dative
 phrase: there-was-none
 phrase: there-will-be-none
 phrase: на-замок
-недостаточно: n/a, pos: adv
-неважно: n/a, pos: adv
-невкусно: n/a, pos: adv
-невысоко: n/a, pos: adv
-котор--ый[which]: which one, inflect: adj, mask: nonstd
-занима--ться[study]: study, 3: studies, past: studied, prog: studying, inflect: -пытаться
-дорог--ой[dear]: dear, adv: dearly, comp: dearer, super: dearest, inflect: -дорогой
+недостаточно: not enought, pos: adv
+неважно: not important, pos: adv
+невкусно: not tasty, pos: adv
+невысоко: not high up, pos: adv
+котор--ый[which]: which (one), inflect: adj, mask: nonstd
+занима--ться[study]: study, 3: studies, past: studied, inflect: -пытаться
+дорог--ой[dear]: dear, adv: dearly, comp: dearer, inflect: -дорогой
 grammar: -вы@instrpl, tag: instrumental
 grammar: -жаль@adv
 grammar: -весь-everything@nom
@@ -1627,6 +1626,15 @@ grammar: -весь-everything@instr, tag: instrumental
 grammar: -весь-everything@prep, tag: prepositional
 grammar: -письмо@genpl, tag: genitive
 phrase: платить-за
-grammar: -придти@inf
-grammar: perspron@accalt
-grammar: -выйти@pastpl
+grammar: -придти@inf, tag: verb
+grammar: perspron@accalt, tag: accusative
+grammar: -выйти@pastpl, tag: verb
+phrase: каким-образом
+grammar: -интересоваться@inf, tag: verb
+grammar: -интересоваться@pastm, tag: verb
+grammar: -дорогой@comp
+phrase: есть-meal
+phrase: так-и-не
+phrase: домашнее-задание
+phrase: хватит-что-то-делать
+phrase: answer-to-question

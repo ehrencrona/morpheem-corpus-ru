@@ -114,9 +114,10 @@ hyperbole: "hyperbole" "*exaggerating* (instrumental)" adjective@instrpl* tag:ti
 кому-то-надо: "(кому-то) надо (B1)" "[someone] needs" @dative+ any надо@
 кому-то-надо: "(кому-то) надо (B1)" "[someone] should not have" не@ надо@ быть@ @dative+
 кому-то-надо: "(кому-то) надо (B1)" "[someone] should have" надо@ быть@ @dative+
-кому-то-нужно: "(кому-то) нужно (A1)" "[someone] does not need" @dative+ не@ нужно@
-кому-то-нужно: "(кому-то) нужно (A1)" "[someone] needs" @dative+ any нужно@
-кому-то-нужно: "(кому-то) нужно (A1)" "[someone] needs" @dative+ any
+кому-то-нужно: "(кому-то) нужно (A1)" "[someone] do not need" @dative+ не@ нужно@
+кому-то-нужно: "(кому-то) нужно (A1)" "[someone] need (4) (3)" @dative+ нужно@ @adv verb@
+кому-то-нужно: "(кому-то) нужно (A1)" "[someone] need" @dative+ any нужно@
+кому-то-нужно: "(кому-то) нужно (A1)" "[someone] need" @dative+ any
 на-твоем-месте: "на твоём месте" "in [someone's] position" бы@ на@ adjective@prep* место@prep
 кому-то-можно: "(кому-то) можно (B1)" "[someone] may" @dative+ any можно@
 кому-то-можно: "(кому-то) можно (B1)" "may [person]" можно@ any @dative+
@@ -187,11 +188,11 @@ go-do: "идти verb" "go (2)" идти|пойти@ verb@
 то-же: "то же" "the same" тот@ же@ самый@
 то-же: "то же" "the same" тот@ же@
 то-же: "то же" "the same" тот@ самый@
-не-gen: "не genitive" "not (v) ... [something]" не@ verb@past any @genitive+
-не-gen: "не genitive" "(do,does,v) not (v) ... [something]" не@ verb@ any @genitive+
+не-gen: "не genitive" "did not (v->) ... [something]" не@ verb@past any @genitive+
+не-gen: "не genitive" "(do,does,did,v) not (v->) ... [something]" не@ verb@ any @genitive+
 ни-ни: "ни ... ни" "neither ... nor" ни@ any ни@
-если-бы: "если бы" "if ... ... would (v)" если@ бы@ any ,@ any verb@ бы@
-если-бы: "если бы" "if ... , ... would have (v)" если@ бы@ any ,@ any бы@ any verb@
+если-бы: "если бы" "if ... ... (4) would (v->inf)" если@ бы@ any ,@ tag:animate verb@ бы@
+если-бы: "если бы" "if ... , ... would (v->)" если@ бы@ any ,@ any бы@ any verb@
 куда-бы: "куда бы" "whereever" куда@ бы@
 кроме-gen: "кроме" "except for [someone]" кроме@ @genitive+
 против-gen: "против" "against [an idea/cause/etc]" против@ @genitive+
@@ -201,7 +202,7 @@ comp-gen2: "больше genitive (B1) " "(comp) [something]" @comp @genitive+
 need-to-be: "нужно (passive)" "[someone] (need,needs,dative->v) (v) [something]" @dative+ нужно@ verb@ @accusative
 need-to-be: "нужно (passive)" "[someone] (need,needs,dative->v) (v)" @dative+ нужно@ verb@
 need-to-be: "нужно (passive)" "[something] (need,needs,accusative->v) to be (v)" @accusative нужно@ verb@
-чтобы-that: "хочешь, чтобы [that]" "(1) ... that (4) (5)" verb@ any ,@ чтобы@ tag:animate any @past
+чтобы-that: "хочешь, чтобы [that]" "(1) ... that (4) (5->)" verb@ any ,@ чтобы@ tag:animate any @past
 выйти-из: "выйти из" "leave [a building]" выйти@ из@ @genitive
 за-городом: "за городом" "in the countryside" за@ город@instr
 за-город: "за город" "to the countryside" за@ город@acc
@@ -229,9 +230,9 @@ dat-удобно: "кому-то удобно" "suit [someone]" @dative+ any у�
 dat-удобно: "кому-то удобно" "suit [someone]" удобный@adv any @dative+
 все-равно: "всё равно" "nevertheless" весь@ равный@
 зачем-dat: "зачем кому-то что-то" "why does [person] need" зачем@ @dative
-давать-verb: "давать кому-то делать что-то" "let [someone] (3)" давать[allow]@ any @dative+ any verb@
-давать-verb: "давать кому-то делать что-то" "does not let [someone] (4)" @dative+ any не@ давать[allow]@ any verb@
-давать-verb: "давать кому-то делать что-то" "let [someone] (2)" давать[allow]@ any verb@ any @dative+
+давать-verb: "давать кому-то делать что-то" "let [someone] (3->)" давать[allow]@ any @dative+ any verb@
+давать-verb: "давать кому-то делать что-то" "does not let [someone] (4->)" @dative+ any не@ давать[allow]@ any verb@
+давать-verb: "давать кому-то делать что-то" "let [someone] (2->)" давать[allow]@ any verb@ any @dative+
 dat-нравится: "кому-то нравится" "[someone] likes" @dative+ any нравиться|понравиться@
 dat-нравится: "кому-то нравится" "is liked by [someone]" нравиться|понравиться@ any @dative+
 dat-интересно: "кому-то интересно" "[someone] is interested in" @dative+ any интересный@
@@ -277,7 +278,7 @@ dat-платить: "кому-то платить" "[someone] gets paid" @dative
 в-время: "на неделе / ..." "during [time]" на@ any @prepositional+
 в-неделе: "в четверг / ..." "on [time]" в@ any @prepositional+
 как-тебе: "как тебе (нравится)" "how do (2) like" как@ ты@dative
-как-тебе: "как тебе (нравится)" "how does (2) like" как@ tag:animate@dative
+как-тебе: "как тебе (нравится)" "how (do,does,did,2->v) (2->) like" как@ tag:animate@dative
 intended-for: "кому-то (intended for)" "intended for [someone]" @dative
 in-eyes-of: "'to', as in the eyes of" "to [someone]" @dative+
 прийти-в-голову: "прийти в голову" "cross [someone]'s mind" @dative+ any прийти|приходить@ в@ голова@accusative
