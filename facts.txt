@@ -94,7 +94,7 @@ grammar: -любить@1, tag: verb
 зачем: what for, pos: quest
 почему: why, pos: quest
 grammar: -быть@1, tag: verb
---быть: are, 1: am, 3: is, past: were, inf: be, prog: being, inflect: -быть
+--быть: are, 1: am, 3: is, past: were, inf: be, prog: being, pastpl: were, inflect: -быть
 квартир--а: apartment, pl: apartments, inflect: fem
 grammar: -свой@f
 вот: here (is)
@@ -196,7 +196,7 @@ grammar: adj@accinanpl, tag: accusative
 grammar: yo-yosh-yot@2, tag: verb
 скучн--ый: boring, comp: more boring, super: most boring, inflect: ныйadj
 и: and
-одн--<ин: one, alone, inflect: -один, tag: number
+одн--<ин: one, inflect: -один, tag: number
 grammar: adj@accn, tag: accusative
 там: there
 grammar: -один@m
@@ -287,7 +287,7 @@ grammar: femka@genpl, tag: genitive
 помни--ть: remember, 3: remembers, past: remembered, prog: remembering, inflect: -дарить
 буд--<<ыть[fut]: will be, inflect: -бытьfut, mask: past
 математик--а: mathematics, inflect: fem, mask: pl
-французск--ий: french, inflect: adj, tag: language, mask: shortandadv
+французск--ий: French, inflect: adj, tag: language, mask: shortandadv
 словар--ь: dictionary, pl: dictionaries, inflect: -словарь
 когда: when, pos: quest
 Владивосток--: , inflect: masc
@@ -386,6 +386,7 @@ grammar: -mascь@preppl, tag: prepositional
 по-русски: in Russian, pos: adv
 grammar: masc3@pl
 учи--ть: learn, 3: learns, past: learnt, prog: learning, inflect: -учить
+учи--ть[teach]: teach, 3: teaches, past: taught, prog: teaching, inflect: -учить
 слов--о: word, pl: words, inflect: neu
 хлеб--: bread, inflect: masc, mask: pl
 grammar: femяь@instrpl, tag: instrumental
@@ -1143,7 +1144,8 @@ grammar: ныйadj@shortpl
 жизн--ь: life, pl: lives, inflect: femь, tag: time
 grammar: -искать@inf, tag: verb
 врач--: doctor, pl: doctors, inflect: -врач, tag: animate
-научи--ть: teach, 3: teaches, past: taught, prog: teaching, inflect: -учить
+научи--ть: learn, 3: learns, past: learned, prog: learning, inflect: -учить
+научи--ть[teach]: teach, 3: teaches, past: taught, prog: teaching, inflect: -учить
 сам--: alone, inflect: -сам, mask: allbutshort
 grammar: -один@instrm, tag: instrumental
 grammar: -взять@inf, tag: verb
@@ -1639,5 +1641,12 @@ phrase: домашнее-задание
 phrase: хватит-что-то-делать
 phrase: answer-to-question
 всего: only, pos: adv
-преподавател--ь: university teacher, pl: university teachers, inflect: mascь-animate
 девушк--а: girlfriend, pl: girlfriends, inflect: -девочка
+девушк--а[lady]: young lady, pl: young ladies, inflect: -девочка
+одн--<ин[alone]: alone, inflect: -один, tag: number
+phrase: what-a
+grammar: -быть@3, tag: verb
+grammar: -быть@2, tag: verb
+grammar: -быть@1pl
+grammar: -быть@2pl
+grammar: -быть@3pl

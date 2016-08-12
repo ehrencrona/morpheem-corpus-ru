@@ -6,8 +6,7 @@
 not-gen: "нет чего-то (A1)" "(there is no,pl:there are no,gen->v) [something]" нет[none]@ any @genitive+
 gen-of: "что-то чего-то" "of [uncountable]" @genitive+
 gen-possession: "что-то чьё-то" "of [owner]" tag:animate@genitive
-teach: "научить кого-то чему-то" "(teach,teaches,taught,v) [someone] (adj@dat)" научить|учить@ @accusative+ adjective@dative язык[lang]@
-teach: "научить кого-то чему-то" "(teach,teaches,taught,v) [someone] [something]" научить|учить@ @accusative+ @dative+
+teach: "научить кого-то чему-то" "" 
 рад-dat: "рад чему-то" "happy because of [something]" рад@ any @dative+
 рад-dat: "рад чему-то" "happy because of [something]" @dative+ any рад@
 чем-чем: "чем ... тем ..." "the (2) ... the (4)" что@instr @comp any тот@instrn any @comp
@@ -305,3 +304,5 @@ there-will-be-none: "не будет чего-то" "there will be no [something
 хватит-что-то-делать: "хватит кричать" "stop (2->prog)" хватить@3 verb@
 answer-to-question: "ответить/ответ на что-то" "answer to (3)" ответ@ на@ @accusative+
 answer-to-question: "ответить/ответ на что-то" "(v) to (3)" ответить|отвечать@ на@ @accusative+
+what-a: "какой отличный день" "what [nice] [things]" какой@pl adjective@pl noun@pl
+what-a: "какой отличный день" "what a [nice] [thing]" какой@ adjective@nominative noun@nominative
