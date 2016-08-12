@@ -3,7 +3,7 @@
 в-num-час: "в ... часов (A2)" "at [time] o'clock" в@ tag:number час@
 в-num-час: "в ... часов (A2)" "at [time]" в@ tag:number
 2-gen: "два чего-то (A1)" "two [something]" два@ @gen+
-not-gen: "нет чего-то (A1)" "(there is no,pl:there are no,gen->v) [something]" нет[none]@ any @genitive+
+not-gen: "нет чего-то (A1)" "(there is no,pl:there are no,genitive->v) [something]" нет[none]@ any @genitive+
 gen-of: "что-то чего-то" "of [uncountable]" @genitive+
 gen-possession: "что-то чьё-то" "of [owner]" tag:animate@genitive
 teach: "научить кого-то чему-то" "" 
@@ -56,7 +56,9 @@ verb-acc: "делать что-то / видеть кого-то / ..." "[someon
 обращаться-с: "обращаться с" "deal with [something] / treat [someone]" обращаться@ с@ @instr
 обращаться-к: "обращаться к" "address / turn to [someone]" обращаться@ к@ @dative+
 у-его-нет: "у кого-то нет чего-то (A1)" "[someone] does not have [something]" у@ @genitive нет[none]@ @genitive
+у-кого: "у кого-то (есть) (A1)" "[someone] had" у@ tag:animate@genitive быть@past
 у-кого: "у кого-то (есть) (A1)" "[someone] have" у@ tag:animate@genitive
+у-кого: "у кого-то (есть) (A1)" "" 
 из-gen-departure: "из (откуда) (A1)" "from [point of departure/source]" из@ @genitive+
 at-datpl: "по (утрам / вечерам ...) (B1)" "every [day of the week/time of day/season] " по@ tag:time@datpl
 у-кого-location: "у кого-то (место) (A2)" "at [someone]'s location" у@ tag:animate@genitive
@@ -90,7 +92,9 @@ comp-gen: "лучше than genitive (B1) " "(comp) than [something]" @comp @geni
 каждый-time: "каждый/весь/целый... (time)" "on [time]" adjective@accusative tag:time@accusative
 не-больше: "больше не" "no longer" больше[longer]@comp не@
 для-того: "для того что" "adjective enough to" adjective@ для@ тот@genn ,@ @* чтобы@
-давно-пора: "давно пора" "it is high time" давно@ пора@
+давно-пора: "кому-то пора" "it is high time for [someone]" @dative+ давно@ пора@
+давно-пора: "кому-то пора" "it is high time" давно@ пора@
+давно-пора: "кому-то пора" "it is time for [someone]" @dative+ пора@
 тут-и-там: "тут и там" "here and there" там@ и@ тут@
 друг-другу: "друг другу" "each other" друг@ any друг@
 работать-над-чем-то: "работать над чем-то" "work on [something]" работать@ над@ @instrumental+
@@ -225,8 +229,9 @@ dat-adv: "кому-то холодно/..." "[someone] felt (2)" @dative+ быт
 кому-то-достаточно: "кому-то достаточно" "[someone] has enough" @dative+ достаточный@adv
 кому-то-достаточно: "кому-то достаточно" "[someone] does not have enough" @dative+ не@ достаточный@adv
 кому-то-достаточно: "кому-то достаточно" "[someone] did not have enough" @dative+ быть@ достаточный@adv
+dat-удобно: "кому-то удобно" "will suit [someone]" @dative+ any быть[fut]@ удобный@adv
 dat-удобно: "кому-то удобно" "suit [someone]" @dative+ any удобный@adv
-dat-удобно: "кому-то удобно" "suit [someone]" удобный@adv any @dative+
+dat-удобно: "кому-то удобно" "" 
 все-равно: "всё равно" "nevertheless" весь@ равный@
 зачем-dat: "зачем кому-то что-то" "why does [person] need" зачем@ @dative
 давать-verb: "давать кому-то делать что-то" "let [someone] (3->)" давать[allow]@ any @dative+ any verb@
@@ -306,3 +311,20 @@ answer-to-question: "ответить/ответ на что-то" "answer to (3
 answer-to-question: "ответить/ответ на что-то" "(v) to (3)" ответить|отвечать@ на@ @accusative+
 what-a: "какой отличный день" "what [nice] [things]" какой@pl adjective@pl noun@pl
 what-a: "какой отличный день" "what a [nice] [thing]" какой@ adjective@nominative noun@nominative
+such-nice: "такой отличный день" "such [nice] [things]" такой@pl adjective@pl noun@pl
+such-nice: "такой отличный день" "such a [nice] [thing]" такой@ adjective@nominative noun@nominative
+интересно,: "интереснo, ..." "I'd like to know" интересный@adv ,@
+dat-трудно: "кому-то трудно" "it is hard for [someone]" @dative any трудный@adv
+dat-скучно: "кому-то скучно" "[someone] was bored" @dative any быть@past скучный@adv
+dat-скучно: "кому-то скучно" "[someone] is bored" @dative any скучный@adv
+совсем-не: "совсем не" "not at all" совсем@ не@
+совсем-не: "совсем не" "" 
+как-дело: "как дела" "how are you" как@ дело@
+до-сих-пор: "до сих пор" "so far" до@ сих@ пора@genpl
+в-любом-случае: "в любом случае" "in any case" в@ любой@prepm случай@prep
+больше-всего: "больше всего" "more than anything" больше@ всё@
+прежде-всего: "прежде всего" "first of all" прежде@ всё@
+ещё-один: "ещё один" "(2) more" ещё[again]@ tag:number
+ещё-один: "ещё один" "one more time" ещё[again]@ раз@
+ещё-нет: "ещё не" "not yet" ещё@ не@
+ещё-comp: "ещё больше" "even (2)" ещё@ @comp

@@ -93,7 +93,6 @@ grammar: -любить@1, tag: verb
 человек--: person, pl: persons, inflect: masc-animate, tag: animate
 зачем: what for, pos: quest
 почему: why, pos: quest
-grammar: -быть@1, tag: verb
 --быть: are, 1: am, 3: is, past: were, inf: be, prog: being, pastpl: were, inflect: -быть
 квартир--а: apartment, pl: apartments, inflect: fem
 grammar: -свой@f
@@ -101,7 +100,7 @@ grammar: -свой@f
 grammar: ойadj@m
 дорог--ой: expensive, adv: expensively, comp: more expensive, super: most expensive, inflect: -дорогой
 grammar: -свой@m
-нет[none]: have none
+нет[none]: is not, tag: untranslatable
 нет[part]: no
 мо--й: my, inflect: -свой, mask: nonstd
 больш--ой: big, comp: bigger, super: biggest, inflect: -большой, mask: shortandadv
@@ -146,7 +145,7 @@ grammar: adj@pl
 да: yes
 здесь: here
 зна--ть: know, 3: knows, past: knew, prog: knowing, inflect: ать
---вы: you (people), inflect: -вы, tag: animate
+--вы: you [plural], inflect: -вы, tag: animate
 grammar: -вы@pl
 grammar: it-im-ite@2pl, tag: verb
 банк--: bank, pl: banks, inflect: masc
@@ -269,7 +268,7 @@ grammar: femяь@datpl, tag: dative
 grammar: adj@datpl, tag: dative
 grammar: adj@datn, tag: dative
 grammar: adj@datf, tag: dative
-grammar: -ты@gen, tag: genitive
+grammar: -ты@gen, tag: genitive, tag: animate
 сво--й: own, inflect: -свой, mask: nonstd
 grammar: -она@gen, tag: genitive
 grammar: -друг@datpl, tag: dative
@@ -294,20 +293,15 @@ grammar: femka@genpl, tag: genitive
 вчера: yesterday
 никогда: never
 суббот--а: Saturday, pl: Saturdays, inflect: fem, tag: time
-grammar: v@pastm, tag: verb
 понедельник--: Monday, pl: Mondays, inflect: masc, tag: time
 прошл--ый: last, adv: lastly, comp: laster, super: lastest, inflect: adj, mask: shortandadv
 недел--я: week, pl: weeks, inflect: -неделя, tag: time
 уже: already, pos: adv
-grammar: v@pastf, tag: verb
-grammar: v@pastn, tag: verb
 grammar: it-im-ite@inf, tag: verb
 grammar: -много@pl
-grammar: v@pastpl, tag: verb
 grammar: fem@genpl, tag: genitive
 grammar: femь@acc, tag: accusative
 grammar: adj@genpl, tag: genitive
-grammar: v@imprpl, tag: verb
 grammar: femяь@pl
 grammar: fem@dat, tag: dative
 grammar: -свой@pl
@@ -463,7 +457,8 @@ grammar: -есть@1pl, tag: verb
 путешеству--<овать: travel, 3: travels, past: travelled, prog: traveling, inflect: -чувствовать
 смерт--ь: death, pl: deaths, inflect: femь
 grammar: -я@instr, tag: instrumental
-мало: little, pos: adv, tag: number
+мало: not much, pos: adv, tag: number
+мало[few]: few, pos: adv, tag: number
 путешестви--е: travel, pl: travels, inflect: neuie
 ищ--<скать: look for, past: looked for, prog: looking for, inflect: -искать
 grammar: -есть@3pl, tag: verb
@@ -1646,9 +1641,19 @@ phrase: answer-to-question
 одн--<ин[alone]: alone, inflect: -один, tag: number
 phrase: what-a
 grammar: -быть@3, tag: verb
-grammar: -быть@2, tag: verb
-grammar: -быть@1pl
-grammar: -быть@2pl
-grammar: -быть@3pl
+grammar: -быть@3pl, tag: verb
 --он[it]: it, inflect: -он, tag: animate
 --она[it]: it, inflect: -она, tag: animate
+phrase: such-nice
+phrase: интересно,
+phrase: dat-трудно
+phrase: dat-скучно
+phrase: совсем-не
+phrase: как-дело
+phrase: до-сих-пор
+phrase: в-любом-случае
+phrase: больше-всего
+phrase: прежде-всего
+phrase: ещё-один
+phrase: ещё-нет
+phrase: ещё-comp

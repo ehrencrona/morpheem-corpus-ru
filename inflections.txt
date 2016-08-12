@@ -151,7 +151,8 @@ num[num]: accinanpl pl-, accanpl genpl-
 -четыре[num]: pl е, instrpl ьмя, inherit -три
 -пять[num]: pl ь, genpl и, datpl и, instrpl ью, preppl и, inherit num
 -сто[num]: pl о, genpl а, datpl а, instrpl а, preppl а, inherit num
-v[v]: "verbs" inf ****, 1 у, pastm inf-<<л, pastn pastm-о, pastf pastm-а, pastpl pastm-и, imprpl impr-те
+abstr-v[v]: "verbs" inf ****, pastm inf-<<л, pastn pastm-о, pastf pastm-а, pastpl pastm-и, imprpl impr-те
+v[v]: 1 у, inherit abstr-v
 y-esh-et[v]: 1pl ем, 2 ешь, 2pl ете, 3 ет, 3pl ут, impr и, inherit v, transform ioToY
 ать[v]: "verbs ending in -ать or -ять" inf ть, 1 ю, 3pl ют, impr й, inherit y-esh-et
 -писать[v]: inf <сать, inherit y-esh-et
@@ -170,7 +171,7 @@ yo-yosh-yot[v]: 1pl ём, 2 ёшь, 2pl ёте, 3 ёт, inherit v
 -жить[v]: inf <ть, 3pl ут, impr и, inherit yo-yosh-yot
 -взять[v]: inf <<<<зять, inherit -жить
 -давать[v]: inf вать, 1 ю, 3pl ют, impr вай, inherit yo-yosh-yot
--быть[v]: "быть" inf быть, 3 есть, 3pl есть, impr будь, inherit v
+-быть[v]: "быть" inf быть, 3 есть, 3pl есть, impr будь, inherit abstr-v
 -есть[v]: inf есть, 1 ем, 1pl едим, 2 ешь, 2pl едите, 3 ест, 3pl едят, pastm ел, impr ешь, inherit v
 -пить[v]: inf пить, 1 пью, 1pl пьём, 2 пьёшь, 2pl пьёте, 3 пьёт, 3pl пьют, pastm пил, impr пей, inherit v
 -показать[v]: inf <зать, inherit -писать
