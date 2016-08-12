@@ -56,8 +56,6 @@ verb-acc: "делать что-то / видеть кого-то / ..." "[someon
 обращаться-с: "обращаться с" "deal with [something] / treat [someone]" обращаться@ с@ @instr
 обращаться-к: "обращаться к" "address / turn to [someone]" обращаться@ к@ @dative+
 у-его-нет: "у кого-то нет чего-то (A1)" "[someone] does not have [something]" у@ @genitive нет[none]@ @genitive
-у-кого: "у кого-то (есть) (A1)" "[someone] had" у@ tag:animate@genitive быть@past
-у-кого: "у кого-то (есть) (A1)" "[someone] have" у@ tag:animate@genitive
 у-кого: "у кого-то (есть) (A1)" "" 
 из-gen-departure: "из (откуда) (A1)" "from [point of departure/source]" из@ @genitive+
 at-datpl: "по (утрам / вечерам ...) (B1)" "every [day of the week/time of day/season] " по@ tag:time@datpl
@@ -86,7 +84,7 @@ comp-gen: "лучше than genitive (B1) " "(comp) than [something]" @comp @geni
 звать-кого-то: "звать кого-то" "call [someone]" звать@ @accusative+
 звать-кого-то: "звать кого-то" "[someone] is called" @accusative+ звать@
 на-направление: "на somewhere (направление) (A1)" "to [somewhere]" на@ @accusative
-на-завтрак-обед-ужин: "на завтрак/обед/ужин" "for [meal]" на@ tag:meal@acc
+на-завтрак-обед-ужин: "есть/готовить/... на завтрак/обед/ужин" "for [meal]" на@ tag:meal@acc
 в-направление: "в направление (A1)" "to [direction]" в@ @accusative+
 в-time: "в четверг (moment in time/day) (A1)" "on [moment in time]" в@ adjective@accusative* tag:time@accusative
 каждый-time: "каждый/весь/целый... (time)" "on [time]" adjective@accusative tag:time@accusative
@@ -150,13 +148,14 @@ hyperbole: "hyperbole" "*exaggerating* (instrumental)" adjective@instrpl* tag:ti
 на-языке: "на языке (B1)" "in [language]" на@ tag:language@prep
 на-транспорте: "на транспорте (A1) TODO: make метро, такси inflect" "by [means of transportation]" на@ tag:tansport@prep
 aslongas: "as long as" "as long as" сколько@accinanpl any
-no-matter-how: "no matter how" "no matter how much/long" сколько@accinanpl any ни@ any
+no-matter-how: "no matter how" "no matter how much/long" сколько@ бы|б@ any ни@
+no-matter-how: "no matter how" "no matter how much/long" сколько@ any ни@
 nazad: "назад" "[time] ago" @accusative+ назад@
 во-сколько: "во сколько? (A2)" "at what time" в@ сколько[many]@
 при-condition: "при (каком-то условии) (B1)" "while [something]" при@ @prepositional+
 someone-had: "у кого-то был (A1)" "[someone] had" у@ tag:animate@genitive быть@pastn
 did-not-have: "у кого-то не было (A1)" "[someone] didn't have" у@ tag:animate@genitive не@ быть@past
-деньги-на: "деньги на (что-то)" "money for [something]" деньги@ на@ adjective@accusative* @accusative
+деньги-на: "деньги на (что-то)" "money for [something]" деньги@ на@ @accusative+
 will-have: "у кого-то будет (A1)" "[someone] will have" у@ tag:animate@genitive быть[fut]@
 will-not-have: "у кого-то не будет (A1)" "[someone] won't have" у@ tag:animate@genitive не@ быть[fut]@
 как-зовут: "как зовут" "how are/is [person] called" как@ tag:animate@acc звать@
@@ -193,7 +192,8 @@ go-do: "идти verb" "go (2)" идти|пойти@ verb@
 то-же: "то же" "the same" тот@ самый@
 не-gen: "не genitive" "did not (v->) ... [something]" не@ verb@past any @genitive+
 не-gen: "не genitive" "(do,does,did,v) not (v->) ... [something]" не@ verb@ any @genitive+
-ни-ни: "ни ... ни" "neither ... nor" ни@ any ни@
+ни-ни: "ни ... ни" "neither (2) ... nor (4)" ни@ noun@ any ни@ noun@
+ни-ни: "ни ... ни" "neither (2) ... nor (4)" ни@ verb@ any ни@ verb@
 если-бы: "если бы" "if ... ... (4) would (v->inf)" если@ бы@ any ,@ tag:animate verb@ бы@
 если-бы: "если бы" "if ... , ... would (v->)" если@ бы@ any ,@ any бы@ any verb@
 куда-бы: "куда бы" "whereever" куда@ бы@
@@ -211,7 +211,7 @@ need-to-be: "нужно (passive)" "[something] (need,needs,accusative->v) to be
 за-город: "за город" "to the countryside" за@ город@acc
 сидеть-в-интернете: "сидеть в интернете" "surf online" сидеть@ в@ интернет@prep
 на-самом-деле: "на-самом-деле" "in any case" на@ самый@prepn дело@prep
-смотреть-на: "смотреть на" "look at" посмотреть|смотреть@ на@
+смотреть-на: "смотреть на" "look at [something]" посмотреть|смотреть@ на@ @accusative+
 про-что-то: "про что-то" "about [something]" про@ @accusative+
 играть-в-игру: "играть в игру" "play [a game]" играть@ в@ @accusative
 dat-нужен: "(кому-то) нужен" "[someone] does not need" @dative+ не@ any нужный@
@@ -229,8 +229,6 @@ dat-adv: "кому-то холодно/..." "[someone] felt (2)" @dative+ быт
 кому-то-достаточно: "кому-то достаточно" "[someone] has enough" @dative+ достаточный@adv
 кому-то-достаточно: "кому-то достаточно" "[someone] does not have enough" @dative+ не@ достаточный@adv
 кому-то-достаточно: "кому-то достаточно" "[someone] did not have enough" @dative+ быть@ достаточный@adv
-dat-удобно: "кому-то удобно" "will suit [someone]" @dative+ any быть[fut]@ удобный@adv
-dat-удобно: "кому-то удобно" "suit [someone]" @dative+ any удобный@adv
 dat-удобно: "кому-то удобно" "" 
 все-равно: "всё равно" "nevertheless" весь@ равный@
 зачем-dat: "зачем кому-то что-то" "why does [person] need" зачем@ @dative
@@ -313,11 +311,10 @@ what-a: "какой отличный день" "what [nice] [things]" какой
 what-a: "какой отличный день" "what a [nice] [thing]" какой@ adjective@nominative noun@nominative
 such-nice: "такой отличный день" "such [nice] [things]" такой@pl adjective@pl noun@pl
 such-nice: "такой отличный день" "such a [nice] [thing]" такой@ adjective@nominative noun@nominative
-интересно,: "интереснo, ..." "I'd like to know" интересный@adv ,@
+интересно-: "интереснo, ..." "I'd like to know" интересный@adv ,@
 dat-трудно: "кому-то трудно" "it is hard for [someone]" @dative any трудный@adv
 dat-скучно: "кому-то скучно" "[someone] was bored" @dative any быть@past скучный@adv
 dat-скучно: "кому-то скучно" "[someone] is bored" @dative any скучный@adv
-совсем-не: "совсем не" "not at all" совсем@ не@
 совсем-не: "совсем не" "" 
 как-дело: "как дела" "how are you" как@ дело@
 до-сих-пор: "до сих пор" "so far" до@ сих@ пора@genpl
@@ -328,3 +325,5 @@ dat-скучно: "кому-то скучно" "[someone] is bored" @dative any 
 ещё-один: "ещё один" "one more time" ещё[again]@ раз@
 ещё-нет: "ещё не" "not yet" ещё@ не@
 ещё-comp: "ещё больше" "even (2)" ещё@ @comp
+ни-gen: "ни кого-то" "not a [e.g. one word]" ни@ @genitive+
+ни-gen: "ни кого-то" "not a single [thing]" ни@ один@ @genitive+

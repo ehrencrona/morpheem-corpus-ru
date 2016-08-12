@@ -1007,7 +1007,7 @@ grammar: -надеяться@2, tag: verb
 grammar: -случиться@3pl, tag: verb
 по--<еть: sing, 3: sings, past: sang, prog: singing, inflect: -петь
 продавц--<ец: salesperson, pl: salespersons, inflect: -отец
-дальше: further, pos: adv
+дальн--ый: further, inflect: ныйadj
 grammar: -находиться@impr, tag: verb
 grammar: -тот@pl
 тих--ий: quiet, adv: quietly, comp: quieter, super: quietest, inflect: adj
@@ -1124,7 +1124,7 @@ grammar: neuadjoe@acc, tag: accusative
 grammar: neuadjoe@nom
 сам--ый: most, adv: mostly, inflect: adj, mask: short
 рук--а: hand, pl: hands, inflect: fem
-ни: neither/nor
+ни: not
 grammar: -доктор@pl
 grammar: -сосед@pl
 упражнени--е: exercise, pl: exercises, inflect: neuie
@@ -1241,7 +1241,7 @@ phrase: сколько-время
 наконец: finally, pos: adv
 хоть: though
 phrase: в-час
-общий: cummon
+общ--ий: cоmmon, inflect: adj
 узна--ть: find out, 3: finds out, past: found out, prog: finding out, inflect: ать
 узна--ть[recognize]: recognize, 3: recognizes, past: recognised, prog: recognising, inflect: ать
 словно: as if, pos: adv
@@ -1253,7 +1253,7 @@ grammar: num@accinanpl, tag: accusative
 огромн--ый: huge, adv: hugely, inflect: ныйadj, mask: nonstd
 предпочита--ть: prefer, 3: prefers, past: preferred, prog: preferring, inflect: ать
 grammar: ать@impr, tag: verb
-настоящий: real
+настоящ--ий: real, inflect: adj
 спин--а: back, pl: backup, inflect: fem
 точно: exactly, pos: adv
 phrase: gen-of
@@ -1645,7 +1645,7 @@ grammar: -быть@3pl, tag: verb
 --он[it]: it, inflect: -он, tag: animate
 --она[it]: it, inflect: -она, tag: animate
 phrase: such-nice
-phrase: интересно,
+phrase: интересно-
 phrase: dat-трудно
 phrase: dat-скучно
 phrase: совсем-не
@@ -1657,3 +1657,4 @@ phrase: прежде-всего
 phrase: ещё-один
 phrase: ещё-нет
 phrase: ещё-comp
+phrase: ни-gen
