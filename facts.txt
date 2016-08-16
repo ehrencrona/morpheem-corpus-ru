@@ -82,7 +82,7 @@ grammar: it-im-ite@2, tag: verb
 студент--: student, pl: students, inflect: masc-animate, tag: animate
 дома: at home, pos: adv
 grammar: abstr-masc-anim@acc, tag: accusative
-пап--а: dad, pl: dads, inflect: fem-animate
+пап--а: Dad, pl: dads, inflect: fem-animate
 мальчик--: boy, pl: boys, inflect: masc-animate
 grammar: -учить@1, tag: verb
 grammar: -любить@1, tag: verb
@@ -93,7 +93,7 @@ grammar: -любить@1, tag: verb
 человек--: person, pl: persons, inflect: masc-animate, tag: animate
 зачем: what for, pos: quest
 почему: why, pos: quest
---быть: are, 1: am, 3: is, past: were, inf: be, prog: being, pastpl: were, inflect: -быть
+--быть: are, 1: am, 3: is, past: was, inf: be, prog: being, pastpl: were, inflect: -быть
 квартир--а: apartment, pl: apartments, inflect: fem
 grammar: -свой@f
 вот: here (is)
@@ -104,7 +104,7 @@ grammar: -свой@m
 нет[part]: no
 мо--й: my, inflect: -свой, mask: nonstd
 больш--ой: big, comp: bigger, super: biggest, inflect: -большой, mask: shortandadv
-больш--ой: , comp: more, inflect: -большой, mask: allbutcomp
+больш--ой: more, inflect: -большой, mask: allbutcomp
 больш--ой[longer]: longer, inflect: -большой, mask: allbutcomp
 как--ой: which, inflect: ойadj, mask: nonstd
 как--ой[kind]: what kind of, inflect: ойadj, mask: nonstd
@@ -352,7 +352,7 @@ grammar: adj@accanpl, tag: accusative
 grammar: abstr-anim@accpl, tag: accusative
 grammar: -быть@inf, tag: verb
 стан--<ть: become, 3: becomes, past: became, prog: becoming, inflect: -стать
-дет--ь: , pl: children, inflect: -люди, mask: sg
+дет--ь: children, inflect: -люди, mask: sg
 grammar: -смотреть@inf, tag: verb
 весн--а: spring, pl: springs, inflect: -весна, tag: at-instr, tag: time, mask: pl
 лет--о: summer, pl: summers, inflect: neu, tag: at-instr, tag: time, mask: pl
@@ -1477,7 +1477,7 @@ phrase: перед-location
 phrase: перед-time
 phrase: за-goal
 phrase: за-time-of-action
-интересу--<оваться: n/a, inflect: -интересоваться
+интересу--<оваться: are interested in, 1: am interested in, 3: is interested in, past: was interested in, inf: be interested in, pl: are interested in, pastpl: were interested in, prog: being interested in, inflect: -интересоваться
 phrase: интересоваться-чем-то
 phrase: в-place
 phrase: на-place
@@ -1658,3 +1658,14 @@ phrase: ещё-один
 phrase: ещё-нет
 phrase: ещё-comp
 phrase: ни-gen
+grammar: abstr-v@pastm, tag: verb
+возле: next to
+рынк--<ок: n/a, inflect: -подарок
+станци--я: station, pl: stations, inflect: -регистрация
+рубашк--а: shirt, pl: shirts, inflect: femka2
+брюк--а: trousers, inflect: fem, mask: sg
+блузк--а: blouse, pl: blouses, inflect: femka
+phrase: станция-метро
+phrase: возле-чего-то
+сахар--: n/a, inflect: masc3
+grammar: -цветок@genpl

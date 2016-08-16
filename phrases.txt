@@ -151,7 +151,7 @@ aslongas: "as long as" "as long as" сколько@accinanpl any
 no-matter-how: "no matter how" "no matter how much/long" сколько@ бы|б@ any ни@
 no-matter-how: "no matter how" "no matter how much/long" сколько@ any ни@
 nazad: "назад" "[time] ago" @accusative+ назад@
-во-сколько: "во сколько? (A2)" "at what time" в@ сколько[many]@
+во-сколько: "во сколько? (A2)" "at what time" в@ сколько[many]|сколько@
 при-condition: "при (каком-то условии) (B1)" "while [something]" при@ @prepositional+
 someone-had: "у кого-то был (A1)" "[someone] had" у@ tag:animate@genitive быть@pastn
 did-not-have: "у кого-то не было (A1)" "[someone] didn't have" у@ tag:animate@genitive не@ быть@past
@@ -170,7 +170,7 @@ go-do: "идти verb" "go (2)" идти|пойти@ verb@
 к-time: "к какому-то времени (?B1)" "by [moment in time]" к@ @dative+
 думать-над: "думать над чем-то" "think [somthing] over" думать|подумать@ над@
 Вот-это: "Вот это" "This is" вот@ это@
-можно-noun: "можно noun" "can I have (genitive) ?" можно@ @genitive ?@
+можно-noun: "можно noun" "can I have (genitive) ?" можно@ @dative @genitive ?@
 можно-noun: "можно noun" "can I have (accusative) ?" можно@ @accusative ?@
 пора–не: "пока не" "until" пока@ any не@
 уверен-в: "уверен в" "certain of" уверенный@ в@ @prepositional+
@@ -254,8 +254,8 @@ either-or-или-или: "или ... , или ..." "either ... or" или@ any �
 из-out-of: "из (выбор)" "out of [several things or people]" из@ @genitive+
 при-чём: "при чём" "what does [something] have to do with this" при@ что@prepositional здесь|тут@
 кому-то-кажется: "кому-то кажется" "it seems to [someone]" @dative+ any казаться@
-gen-верить: "верить кому-то" "(trust in,trusts in,v) [someone]" верить|доверять|поверить@ any @dative+
-gen-верить: "верить кому-то" "[someone] trust" @dative+ any верить|доверять|поверить@
+gen-верить: "верить кому-то" "(trust in,trusts in,trusted in,v) [someone]" верить|доверять|поверить@ any @dative+
+gen-верить: "верить кому-то" "[someone] (trust,trusts,trusted,v)" @dative+ any верить|доверять|поверить@
 dat-speech: "говорить/сказать/... кому-то" "(v) to [someone]" tag:speech any @dative+
 dat-speech: "говорить/сказать/... кому-то" "(v) to [someone]" @dative+ any tag:speech
 помогать-dat: "помогать-dat" "help [someone]" помогать@ any @dative+
@@ -327,3 +327,5 @@ dat-скучно: "кому-то скучно" "[someone] is bored" @dative any 
 ещё-comp: "ещё больше" "even (2)" ещё@ @comp
 ни-gen: "ни кого-то" "not a [e.g. one word]" ни@ @genitive+
 ни-gen: "ни кого-то" "not a single [thing]" ни@ один@ @genitive+
+станция-метро: "станция метро" "subway station" станция@ метро@
+возле-чего-то: "возле чего-то" "near (something)" возле@ @genitive+
