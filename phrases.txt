@@ -43,7 +43,6 @@ no-matter-what: "во что бы то ни стало" "no matter what" в@alt 
 так-adv: "так много / долго …" "so much" так@ any много[much]@
 по-карману: "по карману" "can afford" по@ карман@dat
 не-так-ли: "не так ли" "is that not so?" не@ так@ ли@
-за-то-что: "за то, что - question: is this not just за accusative?" "for that, which" за@ тот@accn ,@ что[that]@
 в-курсе: "в курсе TODO: might need a second phrase with gen at the end" "to be aware" в@ курс@prep
 verb-acc: "делать что-то / видеть кого-то / ..." "(v) [something]" verb@ any @accusative+
 verb-acc: "делать что-то / видеть кого-то / ..." "[someone] (v) [something]" @nominative+ @accusative+ any verb@
@@ -88,7 +87,7 @@ comp-gen: "лучше than genitive (B1) " "(comp) than [something]" @comp @geni
 в-time: "в четверг (moment in time/day) (A1)" "on [moment in time]" в@ adjective@accusative* tag:time@accusative
 каждый-time: "каждый/весь/целый... (time)" "on [time]" adjective@accusative tag:time@accusative
 не-больше: "больше не" "no longer" больше[longer]@comp не@
-для-того: "для того что" "adjective enough to" adjective@ для@ тот@genn ,@ @* чтобы@
+для-того: "adjective, для того чтобы" "(1) enough to" adjective@ для@ тот@genn ,@ чтобы@
 давно-пора: "кому-то пора" "it is high time for [someone]" @dative+ давно@ пора@
 давно-пора: "кому-то пора" "it is high time" давно@ пора@
 давно-пора: "кому-то пора" "it is time for [someone]" @dative+ пора@
@@ -168,7 +167,7 @@ play-with: "играть на чём-то" "play (on) [instrument, device]" иг
 go-do: "идти verb" "go (2)" идти|пойти@ verb@
 к-чему-то: "к чему-то (B1)" "to [place, not person]" к@ @dative+
 к-time: "к какому-то времени (?B1)" "by [moment in time]" к@ @dative+
-думать-над: "думать над чем-то" "think [somthing] over" думать|подумать@ над@
+думать-над: "думать над чем-то" "(v) (2) over (3)" думать|подумать@inf над@ any @instrumental+
 Вот-это: "Вот это" "This is" вот@ это@
 можно-noun: "можно noun" "deleteme" 
 пора–не: "пока не" "until" пока@ any не@
@@ -211,7 +210,8 @@ need-to-be: "нужно (passive)" "[something] (need,needs,accusative->v) to be
 за-городом: "за городом" "in the countryside" за@ город@instr
 за-город: "за город" "to the countryside" за@ город@acc
 сидеть-в-интернете: "сидеть в интернете" "surf online" сидеть@ в@ интернет@prep
-на-самом-деле: "на самом деле" "in fact" на@ самый@prepn дело@prep
+на-самом-деле: "на самом деле" "in fact" в@std самый@prepn дело@prep
+на-самом-деле: "на самом деле" "in fact" на самый@prepn дело@prep
 смотреть-на: "смотреть на" "look at [something]" посмотреть|смотреть@ на@ @accusative+
 про-что-то: "про что-то" "about [something]" про@ @accusative+
 играть-в-игру: "играть в игру" "play [a game]" играть@ в@ @accusative
@@ -333,3 +333,4 @@ dat-скучно: "кому-то скучно" "[someone] is bored" @dative any 
 возле-чего-то: "возле чего-то" "near (something)" возле@ @genitive+
 так-как-because: "так как = because" "because" так@ как[like]|как[when]|как@
 высокая-цена: "высокая цена" "high (2)" высокий@ цена@
+in-order-to: "для того, чтобы" "in order to" для@ тот@genn ,@ чтобы@
