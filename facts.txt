@@ -717,7 +717,7 @@ grammar: -тот@instrm, tag: instrumental
 grammar: -неделя@genpl, tag: genitive
 зов--<<вать[invite]: invite to join, past: invited to join, prog: inviting to join, inflect: -звать
 grammar: -остаться@3pl, tag: verb
-вс--<есь: every, inflect: -весь, mask: nonstd
+вс--<есь: all, inflect: -весь, mask: nonstd
 вс--ё: everything, inflect: -весь-everything, mask: pl
 вс--е[everyone]: everyone, inflect: -весь-everyone, tag: animate, mask: sg
 grammar: -казаться@pastm, tag: verb
@@ -1260,7 +1260,6 @@ phrase: gen-of
 среди: among, pos: prep
 пусть: let
 phrase: gen-possession
-phrase: teach
 phrase: рад-dat
 grammar: -время@gen, tag: genitive
 grammar: -дерево@pl
@@ -1668,6 +1667,10 @@ grammar: abstr-v@pastm, tag: verb
 phrase: станция-метро
 phrase: возле-чего-то
 сахар--: n/a, inflect: masc3
-grammar: -цветок@genpl
+grammar: -цветок@genpl, tag: genitive
 phrase: так-как-because
-grammar: neuadjoe@gen
+grammar: neuadjoe@gen, tag: genitive
+grammar: abstr-v@pastf, tag: verb
+grammar: -маленький@shortm
+grammar: abstr-v@pastpl, tag: verb
+phrase: высокая-цена

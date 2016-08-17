@@ -6,7 +6,6 @@
 not-gen: "нет чего-то (A1)" "(there is no,pl:there are no,genitive->v) [something]" нет[none]@ any @genitive+
 gen-of: "что-то чего-то" "of [uncountable]" @genitive+
 gen-possession: "что-то чьё-то" "of [owner]" tag:animate@genitive
-teach: "научить кого-то чему-то" "" 
 рад-dat: "рад чему-то" "happy because of [something]" рад@ any @dative+
 рад-dat: "рад чему-то" "happy because of [something]" @dative+ any рад@
 чем-чем: "чем ... тем ..." "the (2) ... the (4)" что@instr @comp any тот@instrn any @comp
@@ -20,8 +19,8 @@ time-acc: "время (interval/repeating) TODO: only apply this one if nothing 
 много-gen: "amount of чего-то (A1)" "tag:amount of [something]" tag:amount @genitive+
 без-gen: "без чего-то (B1)" "without [something]" без@ @genitive+
 at-instr: "утром / вечером / зимой ... (B2)" "in the [time of day/season]" tag:at-instr@instrumental
-more-than: "больше / лучше / ... чем" "(1) and (3) than" @comp и@ @comp any ,@ что@instr
-more-than: "больше / лучше / ... чем" "(comp) than" @comp any ,@ что@instr
+more-than: "больше / лучше / ... чем" "(1) and (3) than" @comp и@ @comp any ,@ чем@
+more-than: "больше / лучше / ... чем" "(comp) than" @comp any ,@ чем@
 три-gen: "три чего-то (A1)" "three [something]" три@ @gen+
 четыре-gen: "четыре чего-то (A1)" "four [something]" четыре@ @gen+
 мало-gen: "мало чего-то (A1)" "not much/many [something] " мало@ adjective@genitive* noun@genitive*
@@ -171,8 +170,6 @@ go-do: "идти verb" "go (2)" идти|пойти@ verb@
 к-time: "к какому-то времени (?B1)" "by [moment in time]" к@ @dative+
 думать-над: "думать над чем-то" "think [somthing] over" думать|подумать@ над@
 Вот-это: "Вот это" "This is" вот@ это@
-можно-noun: "можно noun" "can I have (genitive) ?" можно@ @dative @genitive any ?@
-можно-noun: "можно noun" "can I have (accusative) ?" можно@ @dative @accusative any ?@
 можно-noun: "можно noun" "deleteme" 
 пора–не: "пока не" "until" пока@ any не@
 уверен-в: "уверен в" "certain of" уверенный@ в@ @prepositional+
@@ -214,7 +211,7 @@ need-to-be: "нужно (passive)" "[something] (need,needs,accusative->v) to be
 за-городом: "за городом" "in the countryside" за@ город@instr
 за-город: "за город" "to the countryside" за@ город@acc
 сидеть-в-интернете: "сидеть в интернете" "surf online" сидеть@ в@ интернет@prep
-на-самом-деле: "на-самом-деле" "in any case" на@ самый@prepn дело@prep
+на-самом-деле: "на самом деле" "in fact" на@ самый@prepn дело@prep
 смотреть-на: "смотреть на" "look at [something]" посмотреть|смотреть@ на@ @accusative+
 про-что-то: "про что-то" "about [something]" про@ @accusative+
 играть-в-игру: "играть в игру" "play [a game]" играть@ в@ @accusative
@@ -272,8 +269,9 @@ dat-лучше: "кому-то лучше" "... for [someone] it's better to" х
 рад-кому: "рад кому-то" "happy to see [someone]" рад@ any tag:animate@dative
 рад-кому: "рад кому-то" "happy to see [someone]" tag:animate@dative any рад@
 одется-dat: "кому-то одеться" "dress [someone]" @dative+ any одеться@
-учить-dat: "учить(ся)" "teach [someone] [something]" учить|учиться@ any @dative+
-учить-dat: "учить(ся)" " teach [someone] [something]" @accusative+ any @dative+ any учить|учиться@
+учить-dat: "учить(ся)" "teach [something]" учить[teach]@ any @dative+
+учить-dat: "учить(ся)" " teach [someone] [something]" @accusative+ any @dative+ any учить[teach]@
+учить-dat: "учить(ся)" " teach [someone] [something]" учить[teach]@ @accusative+ @dative+
 сам-с-собой: "сам с собой" "with -self" сам@ с@ себя@instr
 не-стоит: "кому-то стоит" "[someone] shouldn't" @dative+ any не@ стоить[should]@3
 не-стоит: "кому-то стоит" "[someone] should" @dative+ any стоить[should]@3
@@ -334,3 +332,4 @@ dat-скучно: "кому-то скучно" "[someone] is bored" @dative any 
 станция-метро: "станция метро" "subway station" станция@ метро@
 возле-чего-то: "возле чего-то" "near (something)" возле@ @genitive+
 так-как-because: "так как = because" "because" так@ как[like]|как[when]|как@
+высокая-цена: "высокая цена" "high (2)" высокий@ цена@
