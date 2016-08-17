@@ -100,7 +100,7 @@ grammar: -свой@f
 grammar: ойadj@m
 дорог--ой: expensive, adv: expensively, comp: more expensive, super: most expensive, inflect: -дорогой
 grammar: -свой@m
-нет[none]: is not, tag: untranslatable
+нет[none]: none, tag: untranslatable
 нет[part]: no
 мо--й: my, inflect: -свой, mask: nonstd
 больш--ой: big, comp: bigger, super: biggest, inflect: -большой, mask: shortandadv
@@ -379,7 +379,7 @@ grammar: -mascь@preppl, tag: prepositional
 по-английски: in English, pos: adv
 по-русски: in Russian, pos: adv
 grammar: masc3@pl
-учи--ть: learn, 3: learns, past: learnt, prog: learning, inflect: -учить
+учи--ть: study, 3: studies, past: studied, prog: studying, inflect: -учить
 учи--ть[teach]: teach, 3: teaches, past: taught, prog: teaching, inflect: -учить
 слов--о: word, pl: words, inflect: neu
 хлеб--: bread, inflect: masc, mask: pl
@@ -1464,7 +1464,7 @@ phrase: стать-кем-то
 phrase: работать-кем-то
 phrase: над-чем-то
 phrase: под-чем-то
-рядом: n/a, pos: prep
+рядом: close by, pos: prep
 phrase: рядом-с
 phrase: между-чем-то
 phrase: за-место
@@ -1669,3 +1669,5 @@ phrase: станция-метро
 phrase: возле-чего-то
 сахар--: n/a, inflect: masc3
 grammar: -цветок@genpl
+phrase: так-как-because
+grammar: neuadjoe@gen
