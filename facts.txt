@@ -72,7 +72,7 @@ grammar: -что@acc, tag: accusative
 grammar: it-im-ite@2, tag: verb
 книг--а: book, pl: books, inflect: fem
 чита--ть: read, 3: reads, past: read, prog: reading, inflect: ать, tag: something-to-someone
-пиш--<сать: write, 3: writes, past: wrote, prog: writing, inflect: -писать, tag: something-to-someone
+пиш--<сать: write, 3: writes, past: wrote, prog: writing, inflect: -писать, tag: something-to-someone, tag: speech
 газет--а: newspaper, pl: newspapers, inflect: fem
 журнал--: magazine, pl: magazines, inflect: masc
 встреча--ть[meet]: meet, 3: meets, past: met, prog: meeting, inflect: ать
@@ -917,7 +917,6 @@ grammar: -о@alt2
 grammar: -сам@m
 зарядк--а: charger, pl: chargers, inflect: femka
 сяд--<<есть: sit down, past: sat down, prog: sitting down, inflect: -сесть
-сяд--<<есть[power]: run out of power, past: ran out of power, prog: running out of power, inflect: -сесть
 вероятн--ый: likely, adv: probably, comp: likelier, super: likeliest, inflect: adj
 grammar: -дать@3, tag: verb
 grammar: sya@pastpl, tag: verb
@@ -1304,7 +1303,7 @@ phrase: more-than
 роди--ть: give birth, 3: gives birth, past: gave birth, prog: giving birth, inflect: -ходить
 стира--ть: wash clothes, 3: washes clothes, past: washed clothes, prog: washing clothes, inflect: ать
 отношени--е: relation, pl: relations, inflect: neuie
-напиш--<сать: write, 3: writes, past: wrote, prog: writing, inflect: -писать, tag: something-to-someone
+напиш--<сать: write, 3: writes, past: wrote, prog: writing, inflect: -писать, tag: something-to-someone, tag: speech
 отношени--е[regard]: regard, pl: regards, inflect: neuie
 способн--ый: able, adv: ably, comp: abler, super: ablest, inflect: ныйadj, mask: adv
 единственн--ый: the only, inflect: adj, mask: short
@@ -1581,7 +1580,6 @@ phrase: dat-жаль
 phrase: dat-лучше
 phrase: по-отношению
 phrase: рад-кому
-phrase: одется-dat
 phrase: учить-dat
 grammar: abstr-loc@loc
 phrase: сам-с-собой
@@ -1676,4 +1674,5 @@ grammar: abstr-v@pastpl, tag: verb
 phrase: высокая-цена
 grammar: abstr-v@imprpl, tag: verb
 phrase: in-order-to
-grammar: perspron@accplalt
+grammar: perspron@accplalt, tag: accusative
+grammar: abstr-v@pastn

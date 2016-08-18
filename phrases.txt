@@ -65,7 +65,7 @@ at-datpl: "по (утрам / вечерам ...) (B1)" "every [day of the week/
 до-какого-то-времени: "до какого-то времени (A2)" "until [sometime]" до@ genitive
 после-чего-то: "после чего-то (A2)" "after [a time/doing something]" после@ genitive
 во-время-чего-то: "во время чего-то (A2)" "during [some activity]" в@ время@acc genitive
-около-чего-то: "около чего-то (B1)" "around [some location]" около@ adjective@genitive* numeral@genitive* genitive
+около-чего-то: "около чего-то (B1)" "around [some location]" около@ genitive
 далеко-от-чего-то: "далеко от чего-то (B1)" "far away from [something]" далеко@ от@ adjective@genitive* genitive
 недалеко-от-чего-то: "недалеко от чего-то (B1)" "not far away from [something]" недалеко@ от@ adjective@genitive* genitive
 справа-от-чего-то: "справа от чего-то (B1)" "to the right of [something]" справа@ от@ gen
@@ -87,7 +87,7 @@ comp-gen: "лучше than genitive (B1) " "(comp) than [something]" comp @genit
 в-time: "в четверг (moment in time/day) (A1)" "on [moment in time]" в@ adjective@accusative* tag:time@accusative
 каждый-time: "каждый/весь/целый... (time)" "(1) (2)" adjective@accusative tag:time@accusative
 не-больше: "больше не" "no longer" больше[longer]@comp не@
-для-того: "adjective, для того чтобы" "to" для@ тот@genn ,@ чтобы@
+для-того: "adjective, для того чтобы" "to" для@ тот@genn чтобы@
 давно-пора: "кому-то пора" "it is high time for [someone]" @dative+ давно@ пора@
 давно-пора: "кому-то пора" "it is high time" давно@ пора@
 давно-пора: "кому-то пора" "it is time for [someone]" @dative+ пора@
@@ -246,7 +246,7 @@ dat-лет: "сколько@ кому-то лет" "[someone] is ... years old" 
 dat-лет: "сколько@ кому-то лет" "how old is [someone]" сколько[many]@ год@genpl @dative+
 dat-лет: "сколько@ кому-то лет" "[someone] is one year old" @dative+ any год@nom
 both-и-и: "и ... , и ..." "both ... and" и@ any и@
-either-or-или-или: "или ... , или ..." "either ... or" или@ any или@
+either-or-или-или: "или ... , или ..." "either ... , or" или@ any ,@ или@
 после-того-как: "после того как" "after (someone) had [done something]" после@ тот@genitive any как[when]@
 перед-тем-как: "перед тем как" "before [doing something]" перед@ тот@instrumental any как[when]@
 звонить-в-дверь: "звонить в дверь" "ring the doorbell " звонить@ в@ дверь@
@@ -268,7 +268,6 @@ dat-лучше: "кому-то лучше" "... for [someone] it's better to" х
 по-отношению: "по отношению к чему-то" "with regards to [something]" по@ отношение[regard]@dat к@ @dative+
 рад-кому: "рад кому-то" "happy to see [someone]" рад@ any tag:animate@dative
 рад-кому: "рад кому-то" "happy to see [someone]" tag:animate@dative any рад@
-одется-dat: "кому-то одеться" "dress [someone]" @dative+ any одеться@
 учить-dat: "учить(ся)" "teach [something]" учить[teach]@ any @dative+
 учить-dat: "учить(ся)" " teach [someone] [something]" @accusative+ any @dative+ any учить[teach]@
 учить-dat: "учить(ся)" " teach [someone] [something]" учить[teach]@ @accusative+ @dative+
@@ -278,7 +277,7 @@ dat-лучше: "кому-то лучше" "... for [someone] it's better to" х
 просить-о: "просить о чём-то" "ask ... for [something]" просить@ any о@ @prepositional+
 dat-платить: "кому-то платить" "[someone] gets paid" @dative+ any платить@
 верить-в: "верить в кого-то/во что-то" "believe in [something]" верить@ в@ @accusative+
-в-году: "в время (loc)" "at [adj] [time period]" в@ adjective@prepositional loc
+в-году: "в время (loc)" "at [adj] [time period]" в@ adjective@prepositional locative
 в-время: "на неделе / ..." "during [time]" на@ any @prepositional+
 в-неделе: "в четверг / ..." "on [time]" в@ any @prepositional+
 как-тебе: "как тебе (нравится)" "how do (2) like" как@ ты@dative
