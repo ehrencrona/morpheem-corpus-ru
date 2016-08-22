@@ -16,7 +16,10 @@ gen-possession: "что-то чьё-то" "of [owner]" tag:animate@genitive
 time-acc: "время (interval/repeating) TODO: only apply this one if nothing with prepositions applies(A1)" "for a [certain amount of time]" tag:time@acc
 time-acc: "время (interval/repeating) TODO: only apply this one if nothing with prepositions applies(A1)" "for [number] tag:time" tag:number@accusative tag:time
 много-gen: "amount of чего-то (A1)" "a lot of [something]" много@ @genitive+
-много-gen: "amount of чего-то (A1)" "[..]" noun@genitive
+много-gen: "amount of чего-то (A1)" "(1) [something]" много[much]|сколько[many]|несколько@ @genitive+
+много-gen: "amount of чего-то (A1)" "(1) [something]" немного[little]|немного@ @genitive+
+много-gen: "amount of чего-то (A1)" "a couple of [something]" пара@ genitive
+много-gen: "amount of чего-то (A1)" "enough [something]" достаточный@adv genitive
 без-gen: "без чего-то (B1)" "without [something]" без@ @genitive+
 at-instr: "утром / вечером / зимой ... (B2)" "in the [time of day/season]" tag:at-instr@instrumental
 more-than: "больше / лучше / ... чем" "(1) and (3) than" comp и@ comp any ,@ чем@
@@ -90,8 +93,8 @@ comp-gen: "лучше than genitive (B1) " "(comp) than [something]" comp @genit
 в-time: "в четверг (moment in time/day) (A1)" "on [moment in time]" в@ adjective@accusative* tag:time@accusative
 каждый-time: "каждый/весь/целый... (time)" "(1) (2)" adjective@accusative tag:time@accusative
 не-больше: "больше не" "no longer" больше[longer]@comp не@
-для-того: "adjective, для того чтобы" "too (2) to" слишком@ adjective@! ,@ для@ тот@genn чтобы@
-для-того: "adjective, для того чтобы" "(2) enough to" достаточный@adv adjective@! ,@ для@ тот@genn чтобы@
+для-того: "для того чтобы" "too (2) to" слишком@ adjective@! ,@ для@ тот@genn чтобы@
+для-того: "для того чтобы" "(2) enough to" достаточный@adv adjective@! ,@ для@ тот@genn чтобы@
 давно-пора: "кому-то пора" "it is high time for [someone]" @dative+ давно@ пора@
 давно-пора: "кому-то пора" "it is high time" давно@ пора@
 давно-пора: "кому-то пора" "it is time for [someone]" @dative+ пора@
@@ -116,18 +119,18 @@ hyperbole: "for [time period] - hyperbole " "for [time]" tag:time@instrpl
 по-mode-of-communication: "по (телефону/телевизору....) (A2)" "on [mode of communication]" по@ @dative+
 как-можно-comp: "как можно (скорее...)" "as (comp) as possible" как@ можно@ comp
 по-definition: "по (математике...) (A2)" "по [definition]" по@ dat
-кому-то-надо: "(кому-то) надо (B1) TODO:translation" "[someone] needs" @dative+ надо@
-кому-то-надо: "(кому-то) надо (B1) TODO:translation" "[someone] should not have" не@ надо@ быть@ @dative+
-кому-то-надо: "(кому-то) надо (B1) TODO:translation" "[someone] should have" надо@ быть@ @dative+
-кому-то-надо: "(кому-то) надо (B1) TODO:translation" "[someone] does not need" @dative+ не@ надо@
-кому-то-нужно: "(кому-то) нужно (A1)" "[someone] do not need" @dative+ не@ нужно@
-кому-то-нужно: "(кому-то) нужно (A1)" "[someone] need (4) (3)" @dative+ нужно@ adv verb
-кому-то-нужно: "(кому-то) нужно (A1)" "[someone] need" @dative+ any нужно@
-кому-то-нужно: "(кому-то) нужно (A1)" "[someone] need" @dative+ any
+кому-то-надо: "(кому-то) надо (B1) TODO:verb phrase, translation" "[someone] needs" @dative+ надо@
+кому-то-надо: "(кому-то) надо (B1) TODO:verb phrase, translation" "[someone] should not have" не@ надо@ быть@ @dative+
+кому-то-надо: "(кому-то) надо (B1) TODO:verb phrase, translation" "[someone] should have" надо@ быть@ @dative+
+кому-то-надо: "(кому-то) надо (B1) TODO:verb phrase, translation" "[someone] does not need" @dative+ не@ надо@
+кому-то-нужно: "(кому-то) нужно (A1) TODO:verb phrase, translation" "[someone] do not need" @dative+ не@ нужно@
+кому-то-нужно: "(кому-то) нужно (A1) TODO:verb phrase, translation" "[someone] need (4) (3)" @dative+ нужно@ adv verb
+кому-то-нужно: "(кому-то) нужно (A1) TODO:verb phrase, translation" "[someone] need" @dative+ any нужно@
+кому-то-нужно: "(кому-то) нужно (A1) TODO:verb phrase, translation" "[someone] need" @dative+ any
 на-твоем-месте: "на твоём месте" "in [someone's] position" бы@ на@ adjective@prep* место@prep
-кому-то-можно: "(кому-то) можно (B1) TODO:translation" "[someone] may" @dative+ можно@
-кому-то-можно: "(кому-то) можно (B1) TODO:translation" "may [person]" можно@ any @dative+
-кому-то-нельзя: "(кому-то) нельзя (B1)" "[someone] may not" phrase:np@dat нельзя@
+кому-то-можно: "(кому-то) можно (B1) TODO:verb phrase, translation" "[someone] may" @dative+ можно@
+кому-то-можно: "(кому-то) можно (B1) TODO:verb phrase, translation" "may [person]" можно@ any @dative+
+кому-то-нельзя: "(кому-то) нельзя (B1) TODO:verb phrase, translation" "[someone] may not" phrase:np@dat нельзя@
 по-очереди: "по очереди" "one by one" по@ очередь@dat
 по-возможности: "по возможности" "if possible" по@ возможность@dat
 заниматься-чем-то: "заниматься (чем-то) (A1)" "take part in [activity]" заниматься@ instr
@@ -221,8 +224,8 @@ need-to-be: "нужно (passive)" "[something] (need,needs,accusative->v) to be
 смотреть-на: "смотреть на" "look at [something]" посмотреть|смотреть@ на@ @accusative+
 про-что-то: "про что-то" "about [something]" про@ @accusative+
 играть-в-игру: "играть в игру" "play [a game]" играть@ в@ accusative
-dat-нужен: "(кому-то) нужен" "[someone] does not need" @dative+ не@ any нужный@
-dat-нужен: "(кому-то) нужен" "[someone] needs" @dative+ any нужный@
+dat-нужен: "(кому-то) нужен TODO:verb phrase, translation" "[someone] does not need" phrase:np@dat не@ нужный@
+dat-нужен: "(кому-то) нужен TODO:verb phrase, translation" "[someone] needs" phrase:np@dat нужный@
 датьetc-dat: "дать/... кому-то чего-то" "tag:something-to-someone [something] to [someone]" tag:something-to-someone @accusative+ any @dative+
 датьetc-dat: "дать/... кому-то чего-то" "tag:something-to-someone [someone] [something]" tag:something-to-someone @dative+ any @accusative+
 датьetc-dat: "дать/... кому-то чего-то" "tag:something-to-someone [something] to [someone]" @accusative+ any tag:something-to-someone any @dative+
@@ -233,9 +236,9 @@ dat-нужен: "(кому-то) нужен" "[someone] needs" @dative+ any ну
 купить-чего-то: "покупать чего-то кому-то" "buy [someone] [something]" купить|покупать@ any @dative+ any @accusative+
 dat-adv: "кому-то холодно/..." "[someone] (feel,feels,dat->v) (2)" @dative+ any adv
 dat-adv: "кому-то холодно/..." "[someone] felt (2)" @dative+ быть@past any adv
-кому-то-достаточно: "кому-то достаточно" "[someone] has enough" @dative+ достаточный@adv
-кому-то-достаточно: "кому-то достаточно" "[someone] does not have enough" @dative+ не@ достаточный@adv
-кому-то-достаточно: "кому-то достаточно" "[someone] did not have enough" @dative+ быть@ достаточный@adv
+кому-то-достаточно: "кому-то достаточно" "[someone] has [something]" phrase:np@dat phrase:много-gen
+кому-то-достаточно: "кому-то достаточно" "[someone] does not have [something]" phrase:np@dat не@ phrase:много-gen
+кому-то-достаточно: "кому-то достаточно" "[someone] did not have enough" phrase:np@dat не@ быть@ phrase:много-gen
 dat-удобно: "кому-то удобно" "" 
 все-равно: "всё равно" "nevertheless" весь@ равный@
 зачем-dat: "зачем кому-то что-то" "why does [person] need" зачем@ dative
@@ -345,6 +348,7 @@ vp: "vp" "(1) (2)" verb@! phrase:np@acc
 np: "np" "(1) of (2)" tag:amount phrase:np@gen
 np: "np" "(1) (2)" adjective@nominative* noun@nominative
 np: "np" "(1) (2)" tag:possessive noun@nominative
+np: "np" "(1)" tag:animate@nominative
 успеть-на: "успеть на" "catch the (3)" успеть@ на@ поезд|автобус|самолёт@accusative
 успеть-на: "успеть на" "catch the (3) (4)" успеть@ на@ adjective поезд|автобус|самолёт@accusative
 успеть-на: "успеть на" "be in time for" успеть@ на@

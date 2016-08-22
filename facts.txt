@@ -396,7 +396,7 @@ grammar: егоadj@datf, tag: dative
 grammar: егоadj@datm, tag: dative
 конц--<ец: end, pl: ends, inflect: -конец
 мест--о: place, pl: places, inflect: neu
-мест--о[space]: space, room, inflect: neu, mask: pl
+мест--о[space]: space, inflect: neu, mask: pl
 мест--о[seat]: seat, pl: seats, inflect: neu
 час--: hour, pl: hours, inflect: -аэропорт, tag: time
 час--[clock]: watch, pl: watches, inflect: masc, mask: sg
@@ -749,7 +749,7 @@ grammar: neuie@genpl, tag: genitive
 grammar: -ответить@1, tag: verb
 перв--ый: first, adv: firstly, inflect: adj, mask: nonstd
 немног--о: few, inflect: -много, tag: number, tag: amount, mask: allbutpl
-немног--о[little]: a little of, adv: a little, inflect: -много, tag: number, tag: amount, mask: allbutplandadv
+немног--о[little]: some, adv: a little, inflect: -много, tag: number, tag: amount, mask: allbutplandadv
 grammar: -ответить@impr, tag: verb
 потом: later, pos: prep
 grammar: -мочь@1, tag: verb
@@ -1679,4 +1679,3 @@ grammar: abstr-v@pastn, tag: verb
 phrase: np
 phrase: vp
 phrase: успеть-на
-
