@@ -16,7 +16,7 @@ gen-possession: "что-то чьё-то" "of [owner]" tag:animate@genitive
 time-acc: "время (interval/repeating) TODO: only apply this one if nothing with prepositions applies(A1)" "for a [certain amount of time]" tag:time@acc
 time-acc: "время (interval/repeating) TODO: only apply this one if nothing with prepositions applies(A1)" "for [number] tag:time" tag:number@accusative tag:time
 много-gen: "amount of чего-то (A1)" "a lot of [something]" много@ @genitive+
-много-gen: "amount of чего-то (A1)" "tag:amount of [something]" tag:amount @genitive+
+много-gen: "amount of чего-то (A1)" "(1) of [something]" tag:amount @genitive+
 без-gen: "без чего-то (B1)" "without [something]" без@ @genitive+
 at-instr: "утром / вечером / зимой ... (B2)" "in the [time of day/season]" tag:at-instr@instrumental
 more-than: "больше / лучше / ... чем" "(1) and (3) than" comp и@ comp any ,@ чем@
@@ -111,17 +111,18 @@ hyperbole: "hyperbole" "*exaggerating* for (instrumental)" adjective@instrpl* ta
 по-mode-of-communication: "по (телефону/телевизору....) (A2)" "on [mode of communication]" по@ @dative+
 как-можно-comp: "как можно (скорее...)" "as (comp) as possible" как@ можно@ comp
 по-definition: "по (математике...) (A2)" "по [definition]" по@ dat
-кому-то-надо: "(кому-то) надо (B1)" "[someone] needs" @dative+ any надо@
-кому-то-надо: "(кому-то) надо (B1)" "[someone] should not have" не@ надо@ быть@ @dative+
-кому-то-надо: "(кому-то) надо (B1)" "[someone] should have" надо@ быть@ @dative+
+кому-то-надо: "(кому-то) надо (B1) TODO:translation" "[someone] needs" @dative+ надо@
+кому-то-надо: "(кому-то) надо (B1) TODO:translation" "[someone] should not have" не@ надо@ быть@ @dative+
+кому-то-надо: "(кому-то) надо (B1) TODO:translation" "[someone] should have" надо@ быть@ @dative+
+кому-то-надо: "(кому-то) надо (B1) TODO:translation" "[someone] does not need" @dative+ не@ надо@
 кому-то-нужно: "(кому-то) нужно (A1)" "[someone] do not need" @dative+ не@ нужно@
 кому-то-нужно: "(кому-то) нужно (A1)" "[someone] need (4) (3)" @dative+ нужно@ adv verb
 кому-то-нужно: "(кому-то) нужно (A1)" "[someone] need" @dative+ any нужно@
 кому-то-нужно: "(кому-то) нужно (A1)" "[someone] need" @dative+ any
 на-твоем-месте: "на твоём месте" "in [someone's] position" бы@ на@ adjective@prep* место@prep
-кому-то-можно: "(кому-то) можно (B1)" "[someone] may" @dative+ any можно@
-кому-то-можно: "(кому-то) можно (B1)" "may [person]" можно@ any @dative+
-кому-то-нельзя: "(кому-то) нельзя (B1)" "[someone] may not" @dative+ any нельзя@
+кому-то-можно: "(кому-то) можно (B1) TODO:translation" "[someone] may" @dative+ можно@
+кому-то-можно: "(кому-то) можно (B1) TODO:translation" "may [person]" можно@ any @dative+
+кому-то-нельзя: "(кому-то) нельзя (B1)" "[someone] may not" @dative+ нельзя@
 по-очереди: "по очереди" "one by one" по@ очередь@dat
 по-возможности: "по возможности" "if possible" по@ возможность@dat
 заниматься-чем-то: "заниматься (чем-то) (A1)" "take part in [activity]" заниматься@ instr
@@ -283,7 +284,9 @@ dat-платить: "кому-то платить" "[someone] gets paid" @dative
 как-тебе: "как тебе (нравится)" "how do (2) like" как@ ты@dative
 как-тебе: "как тебе (нравится)" "how (do,does,did,2->v) (2->) like" как@ tag:animate@dative
 intended-for: "кому-то (intended for)" "intended for [someone]" dative
-in-eyes-of: "'to', as in the eyes of" "to [someone]" @dative+
+in-eyes-of: "'to', as in the eyes of" "(2) to [someone]" tag:animate@dative phrase:np@instr
+in-eyes-of: "'to', as in the eyes of" "(2) to [someone]" tag:animate@dative adjective
+in-eyes-of: "'to', as in the eyes of" "to [someone]" tag:animate@dative
 прийти-в-голову: "прийти в голову" "cross [someone]'s mind" @dative+ any прийти|приходить@ в@ голова@accusative
 прийти-в-голову: "прийти в голову" "cross [someone]'s mind" прийти|приходить@ any @dative+ any в@ голова@accusative
 прийти-в-голову: "прийти в голову" "cross [someone]'s mind" @dative+ в@ голова@accusative any прийти|приходить@
@@ -333,3 +336,9 @@ dat-скучно: "кому-то скучно" "[someone] is bored" dative any �
 так-как-because: "так как = because" "because" так@ как[like]|как[when]|как@
 высокая-цена: "высокая цена" "high (2)" высокий@ цена@
 in-order-to: "для того, чтобы" "in order to" для@ тот@genn ,@ чтобы@
+у: "у (have)" "(2) has no" у@ phrase:np@gen нет[none]@
+у: "у (have)" "(2) has" у@ phrase:np@gen
+vp: "vp" "(1) (2)" verb@! phrase:np@acc
+np: "np" "(1) of (2)" tag:amount phrase:np@gen
+np: "np" "(1) (2)" adjective@nom* noun@nom
+np: "np" "(1) (2)" tag:possessive noun@nom
