@@ -41,7 +41,9 @@ no-matter-what: "во что бы то ни стало" "no matter what" в@alt 
 так-adv: "так много / долго …" "so (adv)" так@ any adv
 так-adv: "так много / долго …" "so many" так@ any много@
 так-adv: "так много / долго …" "so much" так@ any много[much]@
-по-карману: "по карману" "can afford" по@ карман@dat
+по-карману: "по карману" "(1) can afford" dative any по@ карман@dative
+по-карману: "по карману" "can afford" по@ карман@dative dative
+по-карману: "по карману" "can afford" по@ карман@dative
 не-так-ли: "не так ли" "is that not so?" не@ так@ ли@
 в-курсе: "в курсе TODO: might need a second phrase with gen at the end" "to be aware" в@ курс@prep
 verb-acc: "делать что-то / видеть кого-то / ..." "(v) [something]" verb any @accusative+
@@ -126,8 +128,8 @@ hyperbole: "hyperbole" "*exaggerating* for (instrumental)" adjective@instrpl* ta
 по-очереди: "по очереди" "one by one" по@ очередь@dat
 по-возможности: "по возможности" "if possible" по@ возможность@dat
 заниматься-чем-то: "заниматься (чем-то) (A1)" "take part in [activity]" заниматься@ instr
-быть-кем-то: "быть (кем-то) (A1)" "be [someone]" быть@ @instrumental+
-стать-кем-то: "стать (кем-то) (A2)" "become [someone]" стать@ instr
+быть-кем-то: "быть (кем-то) (A1)" "be [someone]" быть@ any @instrumental+
+стать-кем-то: "стать (кем-то) (A2)" "become [someone]" стать|становиться@ instrumental
 работать-кем-то: "работать (кем-то) (A2)" "work as [someone]" работать@ instr
 над-чем-то: "над (чем-то) (A2)" "over [something]" над@ instrumental
 под-чем-то: "под (чем-то) (A2)" "under [something]" под@ instr
