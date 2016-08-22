@@ -1,7 +1,7 @@
 о-prep: "о чем-то (A1)" "about [a topic]" о@ @prepositional+
 в-час: "в час (частота)" "per [duration]" в@ tag:time@acc
-в-num-час: "в ... часов (A2)" "at [time] o'clock" в@ tag:number час@
-в-num-час: "в ... часов (A2)" "at [time]" в@ tag:number
+в-num-час: "в ... часов (A2)" "at (2) o'clock" в@ tag:number час@
+в-num-час: "в ... часов (A2)" "at (2)" в@ tag:number
 2-gen: "два чего-то (A1)" "two [something]" два@ @gen+
 not-gen: "нет чего-то (A1)" "(there is no,pl:there are no,genitive->v) [something]" нет[none]@ any @genitive+
 gen-of: "что-то чего-то" "of [uncountable]" @genitive+
@@ -16,11 +16,11 @@ gen-possession: "что-то чьё-то" "of [owner]" tag:animate@genitive
 time-acc: "время (interval/repeating) TODO: only apply this one if nothing with prepositions applies(A1)" "for a [certain amount of time]" tag:time@acc
 time-acc: "время (interval/repeating) TODO: only apply this one if nothing with prepositions applies(A1)" "for [number] tag:time" tag:number@accusative tag:time
 много-gen: "amount of чего-то (A1)" "a lot of [something]" много@ @genitive+
-много-gen: "amount of чего-то (A1)" "(1) of [something]" tag:amount @genitive+
+много-gen: "amount of чего-то (A1)" "[..]" noun@genitive
 без-gen: "без чего-то (B1)" "without [something]" без@ @genitive+
 at-instr: "утром / вечером / зимой ... (B2)" "in the [time of day/season]" tag:at-instr@instrumental
 more-than: "больше / лучше / ... чем" "(1) and (3) than" comp и@ comp any ,@ чем@
-more-than: "больше / лучше / ... чем" "(comp) than" comp any ,@ чем@
+more-than: "больше / лучше / ... чем" "(comp) ... than" comp any ,@ чем@
 три-gen: "три чего-то (A1)" "three [something]" три@ @gen+
 четыре-gen: "четыре чего-то (A1)" "four [something]" четыре@ @gen+
 мало-gen: "мало чего-то (A1)" "not much/many [something] " мало@ adjective@genitive* noun@genitive*
@@ -90,14 +90,16 @@ comp-gen: "лучше than genitive (B1) " "(comp) than [something]" comp @genit
 в-time: "в четверг (moment in time/day) (A1)" "on [moment in time]" в@ adjective@accusative* tag:time@accusative
 каждый-time: "каждый/весь/целый... (time)" "(1) (2)" adjective@accusative tag:time@accusative
 не-больше: "больше не" "no longer" больше[longer]@comp не@
-для-того: "adjective, для того чтобы" "to" для@ тот@genn чтобы@
+для-того: "adjective, для того чтобы" "too (2) to" слишком@ adjective@! ,@ для@ тот@genn чтобы@
+для-того: "adjective, для того чтобы" "(2) enough to" достаточный@adv adjective@! ,@ для@ тот@genn чтобы@
 давно-пора: "кому-то пора" "it is high time for [someone]" @dative+ давно@ пора@
 давно-пора: "кому-то пора" "it is high time" давно@ пора@
 давно-пора: "кому-то пора" "it is time for [someone]" @dative+ пора@
 тут-и-там: "тут и там" "here and there" там@ и@ тут@
 друг-другу: "друг другу" "each other" друг@ any друг@
 работать-над-чем-то: "работать над чем-то" "work on [something]" работать@ над@ @instrumental+
-hyperbole: "hyperbole" "*exaggerating* for (instrumental)" adjective@instrpl* tag:time@instrpl
+hyperbole: "for [time period] - hyperbole " "for [adjective] [time period]" adjective@instrpl! tag:time@instrpl
+hyperbole: "for [time period] - hyperbole " "for [time]" tag:time@instrpl
 доволен-instr: "доволен" "satisfied with [something]" довольный@ @instrumental+
 ждать-что-то: "ждать for something (B1)" "wait for [something or someone]" ждать@ @accusative+
 ждать-что-то: "ждать for something (B1)" "wait for [something or someone]" ждать@ @genitive+
@@ -125,7 +127,7 @@ hyperbole: "hyperbole" "*exaggerating* for (instrumental)" adjective@instrpl* ta
 на-твоем-месте: "на твоём месте" "in [someone's] position" бы@ на@ adjective@prep* место@prep
 кому-то-можно: "(кому-то) можно (B1) TODO:translation" "[someone] may" @dative+ можно@
 кому-то-можно: "(кому-то) можно (B1) TODO:translation" "may [person]" можно@ any @dative+
-кому-то-нельзя: "(кому-то) нельзя (B1)" "[someone] may not" @dative+ нельзя@
+кому-то-нельзя: "(кому-то) нельзя (B1)" "[someone] may not" phrase:np@dat нельзя@
 по-очереди: "по очереди" "one by one" по@ очередь@dat
 по-возможности: "по возможности" "if possible" по@ возможность@dat
 заниматься-чем-то: "заниматься (чем-то) (A1)" "take part in [activity]" заниматься@ instr
@@ -146,13 +148,13 @@ hyperbole: "hyperbole" "*exaggerating* for (instrumental)" adjective@instrpl* ta
 за-goal: "за чем-то (цель) (B1)" "to get [something]" за@ instr
 за-time-of-action: "за (время проишествия) (B2)" "during [time of action]" за@ instr
 интересоваться-чем-то: "интересоваться (чем-то) (A2)" "to be interested in [something]" интересоваться@ instr
-в-place: "в (где-то) (A1)" "in, at [a place]" в@ @prepositional+
+в-place: "в (где-то) (A1)" "in/at [place]" в@ phrase:np@prep
 на-place: "на (где-то)" "at, in [a place]" на@ @prepositional+
 на-языке: "на языке (B1)" "in [language]" на@ tag:language@prep
 на-транспорте: "на транспорте (A1) TODO: make метро, такси inflect, add adjective" "by [means of transportation]" на@ tag:tansport@prepositional
 aslongas: "as long as" "as long as" сколько@accinanpl any
-no-matter-how: "no matter how" "no matter how much/long" сколько@ бы|б@ any ни@
-no-matter-how: "no matter how" "no matter how much/long" сколько@ any ни@
+no-matter-how: "no matter how" "no matter how much (3) (5)" сколько@ бы|б@ tag:animate ни@ verb
+no-matter-how: "no matter how" "no matter how much (2) (4)" сколько@ tag:animate ни@ verb
 nazad: "назад" "[time] ago" @accusative+ назад@
 во-сколько: "во сколько? (A2)" "at what time" в@ сколько[many]|сколько@
 при-condition: "при (каком-то условии) (B1)" "while [something]" при@ @prepositional+
@@ -341,9 +343,8 @@ dat-скучно: "кому-то скучно" "[someone] is bored" dative any �
 in-order-to: "для того, чтобы" "in order to" для@ тот@genn ,@ чтобы@
 vp: "vp" "(1) (2)" verb@! phrase:np@acc
 np: "np" "(1) of (2)" tag:amount phrase:np@gen
-np: "np" "(1) (2)" adjective@nom* noun@nom
-np: "np" "(1) (2)" tag:possessive noun@nom
+np: "np" "(1) (2)" adjective@nominative* noun@nominative
+np: "np" "(1) (2)" tag:possessive noun@nominative
 успеть-на: "успеть на" "catch the (3)" успеть@ на@ поезд|автобус|самолёт@accusative
 успеть-на: "успеть на" "catch the (3) (4)" успеть@ на@ adjective поезд|автобус|самолёт@accusative
 успеть-на: "успеть на" "be in time for" успеть@ на@
-
