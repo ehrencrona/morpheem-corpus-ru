@@ -2,7 +2,7 @@
 в-час: "в час (частота)" "per [duration]" в@ tag:time@acc
 в-num-час: "в ... часов (A2)" "at (2) o'clock" в@ tag:number час@
 в-num-час: "в ... часов (A2)" "at (2)" в@ tag:number
-2-gen: "два чего-то (A1)" "two [something]" два@ @gen+
+2-gen: "два/тир/четыре чего-то (A1) TODO: translation needs pl" "two [something]" два|три|четыре@ @gen+
 not-gen: "нет чего-то (A1)" "(there is no,pl:there are no,genitive->v) [something]" нет[none]@ any @genitive+
 gen-of: "что-то чего-то" "of [uncountable]" @genitive+
 gen-possession: "что-то чьё-то" "of [owner]" tag:animate@genitive
@@ -24,8 +24,6 @@ time-acc: "время (interval/repeating) TODO: only apply this one if nothing 
 at-instr: "утром / вечером / зимой ... (B2)" "in the [time of day/season]" tag:at-instr@instrumental
 more-than: "больше / лучше / ... чем" "(1) and (3) than" comp и@ comp any ,@ чем@
 more-than: "больше / лучше / ... чем" "(comp) ... than" comp any ,@ чем@
-три-gen: "три чего-то (A1)" "three [something]" три@ @gen+
-четыре-gen: "четыре чего-то (A1)" "four [something]" четыре@ @gen+
 мало-gen: "мало чего-то (A1)" "not much/many [something] " мало@ adjective@genitive* noun@genitive*
 при-prep: "при ком/чём" "is with [him/her]" при@ @prepositional+
 по-dat: "по кому/чему TODO: split up" "on [something]" по@ @dative+
@@ -51,9 +49,8 @@ no-matter-what: "во что бы то ни стало" "no matter what" в@alt 
 в-курсе: "в курсе TODO: translation should accord with subject" "to be aware of [something]" в@ курс@prep phrase:np@gen
 в-курсе: "в курсе TODO: translation should accord with subject" "not aware" не@ в@ курс@prep
 в-курсе: "в курсе TODO: translation should accord with subject" "are aware" в@ курс@prep
-verb-acc: "делать что-то / видеть кого-то / ..." "(v) [something]" verb any @accusative+
-verb-acc: "делать что-то / видеть кого-то / ..." "[someone] (v) [something]" @nominative+ @accusative+ any verb
-verb-acc: "делать что-то / видеть кого-то / ..." "[someone] (v) [something]" @accusative+ any verb any @nominative+
+verb-acc: "делать что-то / видеть кого-то / ..." "(v) [something]" verb any phrase:np@acc
+verb-acc: "делать что-то / видеть кого-то / ..." "(1) (v) (2)" phrase:np@nom phrase:np@acc verb
 с-чем: "с (чем/кем-то) (A1)" "with [something or someone]" с@ @instrumental+
 говорить-с: "говорить с кем" "talk to [someone]" говорить|поговорить@ any с@ @instrumental+
 говорить-с: "говорить с кем" "talk to [someone]" с@ @instrumental+ any говорить|поговорить@
@@ -101,7 +98,7 @@ comp-gen: "лучше than genitive (B1) " "(comp) than [something]" comp @genit
 давно-пора: "кому-то пора" "it is high time" давно@ пора@
 давно-пора: "кому-то пора" "it is time for [someone]" @dative+ пора@
 тут-и-там: "тут и там" "here and there" там@ и@ тут@
-друг-другу: "друг другу" "each other" друг@ any друг@
+друг-другу: "друг друга" "each other" друг@ any друг@
 работать-над-чем-то: "работать над чем-то" "work on [something]" работать@ над@ @instrumental+
 hyperbole: "for [time period] - hyperbole " "for [adjective] [time period]" adjective@instrpl! tag:time@instrpl
 hyperbole: "for [time period] - hyperbole " "for [time]" tag:time@instrpl
@@ -113,9 +110,8 @@ hyperbole: "for [time period] - hyperbole " "for [time]" tag:time@instrpl
 за-direction: "за (направление) (B1)" "behind/beyond [direction]" за@ acc
 через-direction: "через (направление) (B1)" "through, across [direction]" через@ accusative
 через-time: "через (время) (B1)" "after, in [time]" через@ any tag:time@acc
-на-time: "на (время) (B1)" "for [time]" на@ tag:time@accusative
-на-time: "на (время) (B1)" "for tag:amount@accusative tag:time" на@ tag:amount@accusative tag:time
-на-time: "на (время) (B1)" "for tag:number@accusative tag:time" на@ tag:number@accusative tag:time
+на-time: "на (время) (B1)" "for a (2)" на@ tag:time
+на-time: "на (время) (B1)" "a couple of [time]" на@ пара@ tag:time@genitive
 за-time: "за (время) (B1)" "in [time]" за@ @accusative+
 по-place-of-movement: "по (дороге/улице...) (A2)" "along, through [somewhere]" по@ @dative+
 по-mode-of-communication: "по (телефону/телевизору....) (A2)" "on [mode of communication]" по@ @dative+
@@ -236,17 +232,17 @@ dat-нужен: "(кому-то) нужен TODO:verb phrase, translation" "[som
 датьetc-dat: "дать/... кому-то чего-то" "to [someone] ... (3)" phrase:np@dat any tag:something-to-someone
 купить-чего-то: "покупать чего-то кому-то" "buy [something] for [someone]" купить|покупать@ any @accusative+ any @dative+
 купить-чего-то: "покупать чего-то кому-то" "buy [someone] [something]" купить|покупать@ any @dative+ any @accusative+
-dat-adv: "кому-то холодно/..." "[someone] (feel,feels,dat->v) (2)" @dative+ any adv
-dat-adv: "кому-то холодно/..." "[someone] felt (2)" @dative+ быть@past any adv
+dat-adv: "кому-то холодно/..." "[someone] (feel,feels,dat->v) (3->adj)" @dative+ any adv
+dat-adv: "кому-то холодно/..." "[someone] felt (3->adj)" @dative+ быть@past any adv
 кому-то-достаточно: "кому-то достаточно" "[someone] has [something]" phrase:np@dat phrase:много-gen
 кому-то-достаточно: "кому-то достаточно" "[someone] does not have [something]" phrase:np@dat не@ phrase:много-gen
 кому-то-достаточно: "кому-то достаточно" "[someone] did not have enough" phrase:np@dat не@ быть@ phrase:много-gen
 dat-удобно: "кому-то удобно" "" 
 все-равно: "всё равно" "nevertheless" весь@ равный@
 зачем-dat: "зачем кому-то что-то" "why does [person] need" зачем@ dative
-давать-verb: "давать кому-то делать что-то" "let [someone] (3->)" давать[allow]@ any @dative+ any verb
-давать-verb: "давать кому-то делать что-то" "does not let [someone] (4->)" @dative+ any не@ давать[allow]@ any verb
-давать-verb: "давать кому-то делать что-то" "let [someone] (2->)" давать[allow]@ any verb any @dative+
+давать-verb: "давать кому-то делать что-то" "let [someone] (5->)" давать[allow]@ any @dative+ any verb
+давать-verb: "давать кому-то делать что-то" "does not let [someone] (6->)" @dative+ any не@ давать[allow]@ any verb
+давать-verb: "давать кому-то делать что-то" "let [someone] (3->)" давать[allow]@ any verb any @dative+
 dat-нравится: "кому-то нравится" "[someone] likes" @dative+ any нравиться|понравиться@
 dat-нравится: "кому-то нравится" "is liked by [someone]" нравиться|понравиться@ any @dative+
 dat-интересно: "кому-то интересно" "[someone] is interested in" @dative+ any интересный@
@@ -288,11 +284,11 @@ dat-лучше: "кому-то лучше" "... for [someone] it's better to" х
 просить-о: "просить о чём-то" "ask ... for [something]" просить@ any о@ @prepositional+
 dat-платить: "кому-то платить" "[someone] gets paid" @dative+ any платить@
 верить-в: "верить в кого-то/во что-то" "believe in [something]" верить@ в@ @accusative+
-в-году: "в время (loc)" "" 
+в-году: "в время (loc)" "at what time" в@ который[which]@ час@
+в-году: "в время (loc)" "[adj] [time period]" в@ adjective@prepositional locative
 в-время: "на неделе / ..." "during [time]" на@ any @prepositional+
 в-неделе: "в четверг / ..." "on [time]" в@ any @prepositional+
-как-тебе: "как тебе (нравится)" "how do (2) like" как@ ты@dative
-как-тебе: "как тебе (нравится)" "how (do,does,did,2->v) (2->) like" как@ tag:animate@dative
+как-тебе: "как тебе (нравится)" "how (do,does,did,2->v) [someone] like" как@ tag:animate@dative
 intended-for: "кому-то (intended for)" "intended for [someone]" dative
 in-eyes-of: "'to', as in the eyes of" "(2) to [someone]" tag:animate@dative phrase:np@instr
 in-eyes-of: "'to', as in the eyes of" "(2) to [someone]" tag:animate@dative adjective
@@ -311,9 +307,9 @@ there-will-be-none: "не будет чего-то" "there will be no [something
 there-will-be-none: "не будет чего-то" "there will be no [something]" @genitive+ не@ быть[fut]@3
 на-замок: "закрыть на замок" "to lock" закрыть|закрывать|закрытый@ any на@ any замок[lock]@acc
 платить-за: "платить за что-то" "(v) for [something bought]" платить|заплатить@ за@ @accusative+
-платить-за: "платить за что-то" "(4) (v) for [something bought] " за@ @accusative+ any платить|заплатить@ @nominative+
+платить-за: "платить за что-то" "(5) (v) for [something bought] " за@ @accusative+ any платить|заплатить@ @nominative+
 каким-образом: "каким образом" "how" какой@instrn образ[way]@instr
-есть-meal: "есть завтрак/обед/ужин" "have ... (2)" есть@ any завтрак|обед|ужин@
+есть-meal: "есть завтрак/обед/ужин" "(have,has,had,1) (2)" есть@ завтрак|обед|ужин@
 так-и-не: "так и не" "but still didn't ..." так@ и@ не@
 так-и-не: "так и не" "but still didn't ..." но@ так@ и@ не@
 так-и-не: "так и не" "but still didn't ..." да@ так@ и@ не@
