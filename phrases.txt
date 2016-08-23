@@ -48,7 +48,9 @@ no-matter-what: "во что бы то ни стало" "no matter what" в@alt 
 по-карману: "по карману" "can afford" по@ карман@dative dative
 по-карману: "по карману" "can afford" по@ карман@dative
 не-так-ли: "не так ли" "is that not so?" не@ так@ ли@
-в-курсе: "в курсе TODO: might need a second phrase with gen at the end" "to be aware" в@ курс@prep
+в-курсе: "в курсе TODO: translation should accord with subject" "to be aware of [something]" в@ курс@prep phrase:np@gen
+в-курсе: "в курсе TODO: translation should accord with subject" "not aware" не@ в@ курс@prep
+в-курсе: "в курсе TODO: translation should accord with subject" "are aware" в@ курс@prep
 verb-acc: "делать что-то / видеть кого-то / ..." "(v) [something]" verb any @accusative+
 verb-acc: "делать что-то / видеть кого-то / ..." "[someone] (v) [something]" @nominative+ @accusative+ any verb
 verb-acc: "делать что-то / видеть кого-то / ..." "[someone] (v) [something]" @accusative+ any verb any @nominative+
@@ -226,12 +228,12 @@ need-to-be: "нужно (passive)" "[something] (need,needs,accusative->v) to be
 играть-в-игру: "играть в игру" "play [a game]" играть@ в@ accusative
 dat-нужен: "(кому-то) нужен TODO:verb phrase, translation" "[someone] does not need" phrase:np@dat не@ нужный@
 dat-нужен: "(кому-то) нужен TODO:verb phrase, translation" "[someone] needs" phrase:np@dat нужный@
-датьetc-dat: "дать/... кому-то чего-то" "tag:something-to-someone [something] to [someone]" tag:something-to-someone @accusative+ any @dative+
-датьetc-dat: "дать/... кому-то чего-то" "tag:something-to-someone [someone] [something]" tag:something-to-someone @dative+ any @accusative+
-датьetc-dat: "дать/... кому-то чего-то" "tag:something-to-someone [something] to [someone]" @accusative+ any tag:something-to-someone any @dative+
-датьetc-dat: "дать/... кому-то чего-то" "for [someone] tag:something-to-someone [something]" @dative+ any tag:something-to-someone any @accusative+
-датьetc-dat: "дать/... кому-то чего-то" "tag:something-to-someone to [someone]" tag:something-to-someone any @dative+
-датьetc-dat: "дать/... кому-то чего-то" "to [someone] ... tag:something-to-someone" @dative+ any tag:something-to-someone
+датьetc-dat: "дать/... кому-то чего-то" "(1) [something] to [someone]" tag:something-to-someone phrase:np@acc any phrase:np@dat
+датьetc-dat: "дать/... кому-то чего-то" "(1) [someone] [something]" tag:something-to-someone phrase:np@dat any phrase:np@acc
+датьetc-dat: "дать/... кому-то чего-то" "(1) [something] to [someone]" phrase:np@acc any tag:something-to-someone any phrase:np@dat
+датьetc-dat: "дать/... кому-то чего-то" "for [someone] (3) [something]" phrase:np@dat any tag:something-to-someone any phrase:np@acc
+датьetc-dat: "дать/... кому-то чего-то" "(1) to [someone]" tag:something-to-someone any phrase:np@dat
+датьetc-dat: "дать/... кому-то чего-то" "to [someone] ... (3)" phrase:np@dat any tag:something-to-someone
 купить-чего-то: "покупать чего-то кому-то" "buy [something] for [someone]" купить|покупать@ any @accusative+ any @dative+
 купить-чего-то: "покупать чего-то кому-то" "buy [someone] [something]" купить|покупать@ any @dative+ any @accusative+
 dat-adv: "кому-то холодно/..." "[someone] (feel,feels,dat->v) (2)" @dative+ any adv
@@ -286,7 +288,7 @@ dat-лучше: "кому-то лучше" "... for [someone] it's better to" х
 просить-о: "просить о чём-то" "ask ... for [something]" просить@ any о@ @prepositional+
 dat-платить: "кому-то платить" "[someone] gets paid" @dative+ any платить@
 верить-в: "верить в кого-то/во что-то" "believe in [something]" верить@ в@ @accusative+
-в-году: "в время (loc)" "at [adj] [time period]" в@ adjective@prepositional locative
+в-году: "в время (loc)" "" 
 в-время: "на неделе / ..." "during [time]" на@ any @prepositional+
 в-неделе: "в четверг / ..." "on [time]" в@ any @prepositional+
 как-тебе: "как тебе (нравится)" "how do (2) like" как@ ты@dative
@@ -345,10 +347,11 @@ dat-скучно: "кому-то скучно" "[someone] is bored" dative any �
 высокая-цена: "высокая цена" "high (2)" высокий@ цена@
 in-order-to: "для того, чтобы" "in order to" для@ тот@genn ,@ чтобы@
 vp: "vp" "(1) (2)" verb@! phrase:np@acc
-np: "np" "(1) of (2)" tag:amount phrase:np@gen
-np: "np" "(1) (2)" adjective@nominative* noun@nominative
+np: "np" "(1)" phrase:много-gen@nom
+np: "np" "(1) (2)" adjective@nominative? noun@nominative
 np: "np" "(1) (2)" tag:possessive noun@nominative
 np: "np" "(1)" tag:animate@nominative
 успеть-на: "успеть на" "catch the (3)" успеть@ на@ поезд|автобус|самолёт@accusative
 успеть-на: "успеть на" "catch the (3) (4)" успеть@ на@ adjective поезд|автобус|самолёт@accusative
 успеть-на: "успеть на" "be in time for" успеть@ на@
+как-так: "как ... так" "both ... and ..." как@ any так@
