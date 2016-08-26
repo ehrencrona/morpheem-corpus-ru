@@ -157,7 +157,7 @@ grammar: -этот@m
 grammar: y-esh-et@2pl, tag: verb
 трудн--ый: difficult, adv: difficultly, comp: more difficult, super: most difficult, inflect: ныйadj
 красив--ый: beautiful, adv: beautifully, comp: more beautiful, super: most beautiful, inflect: adj
-дом--: home, pl: homes, inflect: masc3
+дом--: home, pl: homes, inflect: -лес
 работ--а: work, pl: jobs, inflect: fem
 дн--<ень: day, pl: days, inflect: -день, tag: time
 кажд--ый: every, inflect: adj, mask: nonstd
@@ -458,7 +458,7 @@ grammar: -есть@1pl, tag: verb
 путешеству--<овать: travel, 3: travels, past: travelled, prog: traveling, inflect: -чувствовать
 смерт--ь: death, pl: deaths, inflect: femь
 grammar: -я@instr, tag: instrumental
-мало: not much, pos: adv, tag: number
+мало: little, pos: adv, tag: number
 мало[few]: few, pos: adv, tag: number
 путешестви--е: travel, pl: travels, inflect: neuie
 ищ--<скать: look for, past: looked for, prog: looking for, inflect: -искать
@@ -696,7 +696,7 @@ grammar: -весь@pl
 низк--ий: low, adv: lowly, comp: lower, super: lowest, inflect: -низкий, mask: adv
 ждё--<ать: wait, 3: waits, past: waited, prog: waiting, inflect: -ждать
 grammar: adj@instrn, tag: instrumental
-высок--ий: tall, adv: high up, comp: taller, super: tallest, inflect: adj
+высок--ий: tall, adv: high up, comp: taller, super: tallest, inflect: -высокий
 долг--ий: long (time), inflect: -долгий, mask: short
 голов--а: head, pl: heads, inflect: fem
 grammar: -остаться@inf, tag: verb
@@ -970,7 +970,8 @@ grammar: -пять@genpl, tag: genitive
 grammar: -чувствовать@inf, tag: verb
 объясни--ть: explain, 3: explains, past: explained, prog: explaining, inflect: -дарить
 спальн--я: bedroom, pl: bedrooms, inflect: -спальня
-посмотри--<еть: look, 3: looks, past: looked, prog: looking, inflect: -смотреть
+посмотри--<еть[look]: look, 3: looks, past: looked, prog: looking, inflect: -смотреть
+посмотри--<еть: watch, 3: watches, past: watched, prog: watching, inflect: -смотреть
 grammar: sya@pastn, tag: verb
 grammar: -чувствовать@pastm, tag: verb
 совету--<овать: advise, 3: advises, past: advised, prog: advising, inflect: -чувствовать, tag: speech
@@ -1063,7 +1064,7 @@ grammar: -он@genalt, tag: genitive
 вниз: down (direction), pos: adv
 grammar: -она@genalt, tag: genitive
 grammar: -весь@accinanpl, tag: accusative
-довольн--ый: satisfied, inflect: ныйadj
+довольн--ый: satisfied, inflect: -довольный
 грязн--ый: dirty, adv: dirtily, comp: dirtier, super: dirtiest, inflect: adj, mask: short
 grammar: -себя@dat, tag: dative
 ремонт--: renovation, pl: renovations, inflect: masc
@@ -1654,7 +1655,7 @@ phrase: ещё-comp
 phrase: ни-gen
 grammar: abstr-v@pastm, tag: verb
 возле: next to
-рынк--<ок: market, inflect: -подарок
+рынк--<ок: market, pl: markets, inflect: -подарок
 станци--я: station, pl: stations, inflect: -регистрация
 рубашк--а: shirt, pl: shirts, inflect: femka2
 брюк--а: trousers, inflect: fem, mask: sg
@@ -1677,3 +1678,7 @@ phrase: np
 phrase: vp
 phrase: успеть-на
 phrase: как-так
+phrase: для-to
+реша--ть: solve, 3: solves, past: solved, prog: solving, inflect: ать
+phrase: взять-на-работу
+phrase: всё-ещё
