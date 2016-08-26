@@ -2,7 +2,7 @@
 в-час: "в час (частота)" "per [duration]" в@ tag:time@acc
 в-num-час: "в ... часов (A2)" "at (2) o'clock" в@ tag:number час@
 в-num-час: "в ... часов (A2)" "at (2)" в@ tag:number
-2-gen: "два/тир/четыре чего-то (A1) TODO: translation needs pl" "two [something]" два|три|четыре@ @gen+
+2-gen: "два/тир/четыре чего-то (A1) TODO: translation needs pl" "two [something->pl]" два|три|четыре@ noun@gen
 not-gen: "нет чего-то (A1)" "(there is no,pl:there are no,genitive->v) [something]" нет[none]@ any @genitive+
 gen-of: "что-то чего-то" "of [uncountable]" @genitive+
 gen-possession: "что-то чьё-то" "of [owner]" tag:animate@genitive
@@ -115,9 +115,9 @@ hyperbole: "for [time period] - hyperbole " "for [time]" tag:time@instrpl
 по-mode-of-communication: "по (телефону/телевизору....) (A2)" "on [mode of communication]" по@ @dative+
 как-можно-comp: "как можно (скорее...)" "as (comp) as possible" как@ можно@ comp
 по-definition: "по (математике...) (A2)" "по [definition]" по@ dat
-кому-то-надо: "(кому-то) надо (B1) TODO:verb phrase, translation" "[someone] needs" @dative+ надо@
-кому-то-надо: "(кому-то) надо (B1) TODO:verb phrase, translation" "[someone] should not have" не@ надо@ быть@ @dative+
-кому-то-надо: "(кому-то) надо (B1) TODO:verb phrase, translation" "[someone] should have" надо@ быть@ @dative+
+кому-то-надо: "(кому-то) надо (B1) TODO:verb phrase, translation" "[someone->nom] needs" @dative+ надо@
+кому-то-надо: "(кому-то) надо (B1) TODO:verb phrase, translation" "[someone->nom] should not have" не@ надо@ быть@ @dative+
+кому-то-надо: "(кому-то) надо (B1) TODO:verb phrase, translation" "[someone->nom] should have" надо@ быть@ @dative+
 кому-то-надо: "(кому-то) надо (B1) TODO:verb phrase, translation" "[someone] does not need" @dative+ не@ надо@
 кому-то-нужно: "(кому-то) нужно (A1) TODO:verb phrase, translation" "[someone] do not need" @dative+ не@ нужно@
 кому-то-нужно: "(кому-то) нужно (A1) TODO:verb phrase, translation" "[someone] need (4) (3)" @dative+ нужно@ adv verb
@@ -336,7 +336,7 @@ dat-скучно: "кому-то скучно" "[someone] is bored" dative any �
 ни-gen: "ни кого-то" "not a [e.g. one word]" ни@ @genitive+
 ни-gen: "ни кого-то" "not a single [thing]" ни@ один@ @genitive+
 станция-метро: "станция метро" "subway station" станция@ метро@
-возле-чего-то: "возле чего-то" "near (something)" возле@ @genitive+
+возле-чего-то: "возле чего-то" "near [something]" возле@ phrase:np@gen
 так-как-because: "так как = because" "because" так@ как[like]|как[when]|как@
 высокая-цена: "высокая цена" "high (2)" высокий@ цена@
 in-order-to: "для того, чтобы" "in order to" для@ тот@genn ,@ чтобы@
