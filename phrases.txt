@@ -1,11 +1,11 @@
-о-prep: "о чем-то (A1)" "about [a topic]" о@ @prepositional+
+о-prep: "о чем-то (A1)" "about [a topic]" о@ phrase:np@prep
 в-час: "в час (частота)" "per [duration]" в@ tag:time@acc
 в-num-час: "в ... часов (A2)" "at (2) o'clock" в@ tag:number час@
 в-num-час: "в ... часов (A2)" "at (2)" в@ tag:number
 2-gen: "два/три/четыре чего-то (A1)" "(1) [something->pl]" два|три|четыре@nominative genitive
 2-gen: "два/три/четыре чего-то (A1)" "(1) [something->pl]" два|три|четыре@accusative genitive
 not-gen: "нет чего-то (A1)" "(there is no,pl:there are no,genitive->v) [something]" нет[none]@ any @genitive+
-gen-of: "что-то чего-то" "of [uncountable]" @genitive+
+gen-of: "что-то чего-то" "of [uncountable]" phrase:np@gen
 gen-possession: "что-то чьё-то" "of [owner]" tag:animate@genitive
 рад-dat: "рад чему-то" "happy because of [something]" рад@ any @dative+
 рад-dat: "рад чему-то" "happy because of [something]" @dative+ any рад@
@@ -25,7 +25,8 @@ time-acc: "время (interval/repeating) TODO: only apply this one if nothing 
 at-instr: "утром / вечером / зимой ... (B2)" "in the [time of day/season]" tag:at-instr@instrumental
 more-than: "больше / лучше / ... чем" "(1) and (3) than" comp и@ comp any ,@ чем@
 more-than: "больше / лучше / ... чем" "(comp) ... than" comp any ,@ чем@
-мало-gen: "мало чего-то (A1)" "not much/many [something] " мало@ adjective@genitive* noun@genitive*
+мало-gen: "мало чего-то (A1)" "(1) [something] " мало|мало[few]@ phrase:np@gen
+мало-gen: "мало чего-то (A1)" "(2) [something] " phrase:np@gen мало|мало[few]@
 при-prep: "при ком/чём" "is with [him/her]" при@ @prepositional+
 по-dat: "по кому/чему TODO: split up" "on [something]" по@ @dative+
 сам-по-себе: "сам по себе" "by -self" сам@ по@ себя@dat
@@ -54,7 +55,7 @@ no-matter-what: "во что бы то ни стало" "no matter what" в@alt 
 с-чем: "с (чем/кем-то) (A1)" "with whom" с@ кто@instr
 говорить-с: "говорить с кем" "talk to [someone]" говорить|поговорить@ any с@ @instrumental+
 говорить-с: "говорить с кем" "talk to [someone]" с@ @instrumental+ any говорить|поговорить@
-встречать-с: "встречаться с" "date [someone]" встречаться[date]@ any с@ phrase:np@instr
+встречать-с: "встречаться с" "(date,dates,dated,v) [someone]" встречаться[date]@ any с@ phrase:np@instr
 обращаться-с: "обращаться с" "deal with [something] / treat [someone]" обращаться@ с@ instr
 обращаться-к: "обращаться к" "address / turn to [someone]" обращаться@ к@ @dative+
 у-его-нет: "у кого-то нет чего-то (A1)" "[someone] does not have [something]" у@ genitive нет[none]@ genitive
@@ -68,7 +69,7 @@ at-datpl: "по (утрам / вечерам ...) (B1)" "every [day of the week/
 от-кого-source: "ключ от чего-то" "key to [something]" ключ@ от@ genitive
 часть-чего-то: "часть чего-то (A2)" "part of [something]" часть@ genitive
 до-point-of-destination: "до чего-то (A2)" "to [somewhere]" до@ genitive
-до-какого-то-времени: "до какого-то времени (A2)" "until [sometime]" до@ genitive
+до-какого-то-времени: "до какого-то времени (A2)" "until [sometime]" до@ phrase:np@gen
 после-чего-то: "после чего-то (A2)" "after [a time/doing something]" после@ genitive
 во-время-чего-то: "во время чего-то (A2)" "during [some activity]" в@ время@acc genitive
 около-чего-то: "около чего-то (B1)" "around [some location]" около@ genitive
@@ -152,16 +153,17 @@ hyperbole: "for [time period] - hyperbole " "for [time]" tag:time@instrpl
 интересоваться-чем-то: "интересоваться (чем-то) (A2)" "to be interested in [something]" интересоваться@ instr
 в-place: "в (где-то) (A1)" "in/at [place]" в@ phrase:np@prep
 в-place: "в (где-то) (A1)" "in/at [place]" в@ locative
-на-place: "на (где-то)" "at, in [a place]" на@ @prepositional+
+на-place: "на (где-то)" "at, in [a place]" на@ phrase:np@prep
 на-place: "на (где-то)" "at, in [a place]" на@ @locative+
-на-языке: "на языке (B1)" "in [language]" на@ tag:language@prep
+на-языке: "на языке (B1)" "in [language]" на@ tag:language@prepositional
+на-языке: "на языке (B1)" "in (2) (3)" на@ adjective@prepositional* язык[lang]@prep
 на-транспорте: "на транспорте (A1) TODO: make метро, такси inflect, add adjective" "by [means of transportation]" на@ tag:tansport@prepositional
 aslongas: "as long as" "as long as" сколько@accinanpl any
-no-matter-how: "no matter how" "no matter how much (3) (5)" сколько@ бы|б@ tag:animate ни@ verb
 no-matter-how: "no matter how" "no matter how much (2) (4)" сколько@ tag:animate ни@ verb
-nazad: "назад" "[time] ago" @accusative+ назад@
+no-matter-how: "no matter how" "no matter how much (3) (5)" сколько@ бы|б@ tag:animate ни@ verb
+nazad: "назад" "[time] ago" accusative назад@
 во-сколько: "во сколько? (A2)" "at what time" в@ сколько[many]|сколько@
-при-condition: "при (каком-то условии) (B1)" "while [something]" при@ @prepositional+
+при-condition: "при (каком-то условии) (B1)" "with [something]" при@ phrase:np@prep
 someone-had: "у кого-то был (A1)" "[someone] had" у@ tag:animate@genitive быть@past
 did-not-have: "у кого-то не было (A1)" "[someone] didn't have" у@ tag:animate@genitive не@ быть@past
 деньги-на: "деньги на (что-то)" "money for [something]" деньги@ на@ @accusative+
@@ -177,7 +179,7 @@ play-with: "играть на чём-то" "play (on) [instrument, device]" иг
 go-do: "идти verb" "go (2)" идти|пойти@ verb
 к-чему-то: "к чему-то (B1)" "to [place, not person]" к@ @dative+
 к-time: "к какому-то времени (?B1)" "by [moment in time]" к@ @dative+
-думать-над: "думать над чем-то" "(v) (2) over (3)" думать|подумать@inf над@ any @instrumental+
+думать-над: "думать над чем-то" "(v) (2) over (3)" думать|подумать@inf над@ phrase:np@instr
 Вот-это: "Вот это" "This is" вот@ это@
 можно-noun: "можно noun" "deleteme" 
 пора–не: "пока не" "until" пока@ any не@
@@ -190,7 +192,7 @@ go-do: "идти verb" "go (2)" идти|пойти@ verb
 такой..как: "такой..как" "so / such ... as" такой@ any как[like]@
 стоить-дорогой: "стоить дорогой" "(are,is,was,being,be,are,were,v) ... (adj)" стоить@ any дорогой|дешёвый@adv
 стоить-дорогой: "стоить дорогой" "(are,is,was,being,be,are,were,v) ... (adj)" дорогой|дешёвый@adv стоить@
-у-thing: "у чего-то (где)" "by [something's location]" у@ @genitive+
+у-thing: "у чего-то (где)" "by [something's location]" у@ phrase:np@gen
 за-acc: "за" "for [something]" за@ @accusative+
 за-что: "за что" "for what reason" за@ что@
 то-что: "то что" "that, which" тот@n ,@ что[that]@
@@ -227,12 +229,12 @@ need-to-be: "нужно (passive)" "[something] (need,needs,accusative->v) to be
 играть-в-игру: "играть в игру" "play [a game]" играть@ в@ accusative
 dat-нужен: "(кому-то) нужен TODO:verb phrase, translation" "[someone->nom] does not need" phrase:np@dat не@ нужный@
 dat-нужен: "(кому-то) нужен TODO:verb phrase, translation" "[someone->nom] needs" phrase:np@dat нужный@
-датьetc-dat: "дать/... кому-то чего-то" "(1) [something] to [someone]" tag:something-to-someone phrase:np@acc any phrase:np@dat
-датьetc-dat: "дать/... кому-то чего-то" "(1) [someone] [something]" tag:something-to-someone phrase:np@dat any phrase:np@acc
-датьetc-dat: "дать/... кому-то чего-то" "(1) [something] to [someone]" phrase:np@acc any tag:something-to-someone any phrase:np@dat
-датьetc-dat: "дать/... кому-то чего-то" "for [someone] (3) [something]" phrase:np@dat any tag:something-to-someone any phrase:np@acc
-датьetc-dat: "дать/... кому-то чего-то" "(1) to [someone]" tag:something-to-someone any phrase:np@dat
-датьetc-dat: "дать/... кому-то чего-то" "to [someone] ... (3)" phrase:np@dat any tag:something-to-someone
+датьetc-dat: "дать/... кому-то что-то" "(1) [something] to [someone]" tag:something-to-someone phrase:np@acc any phrase:np@dat
+датьetc-dat: "дать/... кому-то что-то" "(1) [someone] [something]" tag:something-to-someone phrase:np@dat any phrase:np@acc
+датьetc-dat: "дать/... кому-то что-то" "(1) [something] to [someone]" phrase:np@acc any tag:something-to-someone any phrase:np@dat
+датьetc-dat: "дать/... кому-то что-то" "for [someone] (3) [something]" phrase:np@dat any tag:something-to-someone any phrase:np@acc
+датьetc-dat: "дать/... кому-то что-то" "(1) to [someone]" tag:something-to-someone any phrase:np@dat
+датьetc-dat: "дать/... кому-то что-то" "to [someone] ... (3)" phrase:np@dat any tag:something-to-someone
 купить-чего-то: "покупать чего-то кому-то" "buy [something] for [someone]" купить|покупать@ any @accusative+ any @dative+
 купить-чего-то: "покупать чего-то кому-то" "buy [someone] [something]" купить|покупать@ any @dative+ any @accusative+
 dat-adv: "кому-то холодно/..." "[someone] (feel,feels,dat->v) (3->adj)" @dative+ any adv
@@ -291,7 +293,7 @@ dat-платить: "кому-то платить" "[someone] gets paid" @dative
 в-году: "в время (loc)" "at what time" в@ который[which]@ час@
 в-году: "в время (loc)" "[adj] [time period]" в@ adjective@prepositional locative
 в-время: "на неделе / ..." "during [time]" на@ any @prepositional+
-в-неделе: "в четверг / ..." "on [time]" в@ any @prepositional+
+в-неделе: "в четверг / ..." "on [time]" в@ adjective@accusative* tag:time@accusative
 как-тебе: "как тебе (нравится)" "how (do,does,did,2->v) [someone] like" как@ tag:animate@dative
 intended-for: "кому-то (intended for)" "intended for [someone]" dative
 in-eyes-of: "'to', as in the eyes of" "(2) to [someone]" tag:animate@dative phrase:np@instr
@@ -350,12 +352,16 @@ vp: "vp" "(1) (2)" verb@! phrase:np@acc
 np: "np" "(1)" phrase:много-gen@nom
 np: "np" "(1) (2)" adjective@nominative* noun@nominative
 np: "np" "(1) (2)" tag:possessive noun@nominative
-np: "np" "(1) (2) (3)" adjective@nominative! tag:possessive noun@nominative
+np: "np" "(1) (2) (3)" tag:possessive adjective@nominative! noun@nominative
 np: "np" "(1)" tag:animate@nominative
 np: "np" "which" который@nominative
-np: "np" "" phrase:2-gen@nom
+np: "np" "(1)" phrase:2-gen@nom
+np: "np" "what" что@nominative
+np: "np" "(1)" кто@nominative
+np: "np" "(1)" этот|который|тот@nominative
 успеть-на: "успеть на" "catch the (3)" успеть@ на@ поезд|автобус|самолёт@accusative
 успеть-на: "успеть на" "catch the (3) (4)" успеть@ на@ adjective поезд|автобус|самолёт@accusative
 успеть-на: "успеть на" "be in time for" успеть@ на@
 как-так: "как ... так" "both ... and ..." как@ any так@
 для-to: "для as in 'to' someone" "to [someone]" для@ tag:animate@genitive
+взять-на-работу: "взять на работу" "hire for (3)" взять|брать@ на@ phrase:np@acc
