@@ -276,8 +276,8 @@ grammar: -друг@datpl, tag: dative
 grammar: -давать@1, tag: verb
 интересн--ый: interesting, adv: interestingly, comp: more interesting, super: most interesting, inflect: ныйadj
 без: without, pos: prep
-мног--о: many, inflect: -много, tag: number, tag: amount, mask: allbutpl
-мног--о[much]: much, adv: a lot, comp: more, super: most, inflect: -много, tag: number, tag: amount, mask: allbutplandadv
+мног--о: many, inflect: -много, tag: amount, mask: allbutpl
+мног--о[much]: much, adv: a lot, comp: more, super: most, inflect: -много, tag: amount, mask: allbutplandadv
 grammar: masc@genpl, tag: genitive
 grammar: -друг@genpl, tag: genitive
 grammar: adj@adv
@@ -458,8 +458,8 @@ grammar: -есть@1pl, tag: verb
 путешеству--<овать: travel, 3: travels, past: travelled, prog: traveling, inflect: -чувствовать
 смерт--ь: death, pl: deaths, inflect: femь
 grammar: -я@instr, tag: instrumental
-мало: little, pos: adv, tag: number
-мало[few]: few, pos: adv, tag: number
+мало: little, pos: adv
+мало[few]: few, pos: adv
 путешестви--е: travel, pl: travels, inflect: neuie
 ищ--<скать: look for, past: looked for, prog: looking for, inflect: -искать
 grammar: -есть@3pl, tag: verb
@@ -503,7 +503,7 @@ grammar: -хотеть@2pl, tag: verb
 сем--ь: seven, inflect: -пять, tag: number
 музе--й: museum, pl: museums, inflect: -случай
 grammar: -есть@1, tag: verb
-ст--о: a hundred, inflect: -сто
+ст--о: a hundred, inflect: -сто, tag: number
 девят--ь: nine, inflect: -пять, tag: number
 рубл--ь: ruble, pl: rubles, inflect: -словарь
 grammar: -выйти@pastm, tag: verb
@@ -709,7 +709,7 @@ grammar: -остаться@pastm, tag: verb
 част--ый: frequent, adv: often, inflect: -частый, mask: short
 grammar: -казаться@pastn, tag: verb
 grammar: -случай@genpl, tag: genitive
-нескольк--о: a few, inflect: -много, tag: number, tag: amount, mask: allbutpl
+нескольк--о: a few, inflect: -много, tag: amount, mask: allbutpl
 иногда: sometimes, pos: adv
 grammar: -тот@instrm, tag: instrumental
 писател--ь: writer, pl: writers, inflect: mascь-animate
@@ -748,8 +748,8 @@ grammar: sya@imprpl, tag: verb
 grammar: neuie@genpl, tag: genitive
 grammar: -ответить@1, tag: verb
 перв--ый: first, adv: firstly, inflect: adj, mask: nonstd
-немног--о: few, inflect: -много, tag: number, tag: amount, mask: allbutpl
-немног--о[little]: some, adv: a little, inflect: -много, tag: number, tag: amount, mask: allbutplandadv
+немног--о: few, inflect: -много, tag: amount, mask: allbutpl
+немног--о[little]: some, adv: a little, inflect: -много, tag: amount, mask: allbutplandadv
 grammar: -ответить@impr, tag: verb
 потом: later, pos: prep
 grammar: -мочь@1, tag: verb
