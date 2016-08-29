@@ -159,7 +159,7 @@ grammar: y-esh-et@2pl, tag: verb
 красив--ый: beautiful, adv: beautifully, comp: more beautiful, super: most beautiful, inflect: adj
 дом--: home, pl: homes, inflect: -лес
 работ--а: work, pl: jobs, inflect: fem
-дн--<ень: day, pl: days, inflect: -день, tag: time
+дн--<ень: day, pl: days, inflect: -день, tag: time, tag: weekday
 кажд--ый: every, inflect: adj, mask: nonstd
 grammar: -день@nom
 grammar: -что@nom
@@ -293,8 +293,8 @@ grammar: femka@genpl, tag: genitive
 Владивосток--: , inflect: masc
 вчера: yesterday
 никогда: never
-суббот--а: Saturday, pl: Saturdays, inflect: fem, tag: time
-понедельник--: Monday, pl: Mondays, inflect: masc, tag: time
+суббот--а: Saturday, pl: Saturdays, inflect: fem, tag: time, tag: weekday
+понедельник--: Monday, pl: Mondays, inflect: masc, tag: time, tag: weekday
 прошл--ый: last, adv: lastly, comp: laster, super: lastest, inflect: adj, mask: shortandadv
 недел--я: week, pl: weeks, inflect: -неделя, tag: time
 уже: already, pos: adv
@@ -436,14 +436,14 @@ grammar: -стул@instrpl, tag: instrumental
 grammar: -стул@datpl, tag: dative
 разговор--: conversation, pl: conversations, inflect: masc
 имен--<<я: name, pl: names, inflect: -время
-вторник--: Tuesday, pl: Tuesdays, inflect: masc, tag: time
+вторник--: Tuesday, pl: Tuesdays, inflect: masc, tag: time, tag: weekday
 grammar: -пить@2pl, tag: verb
 grammar: -пить@pastm, tag: verb
-четверг--: Thursday, pl: Thursdays, inflect: masc, tag: time
-сред--а: Wednesday, pl: Wednesdays, inflect: fem, tag: time
+четверг--: Thursday, pl: Thursdays, inflect: masc, tag: time, tag: weekday
+сред--а: Wednesday, pl: Wednesdays, inflect: fem, tag: time, tag: weekday
 grammar: sya@2pl, tag: verb
-воскресень--е: Sunday, pl: Sundays, inflect: -воскресенье, tag: time
-пятниц--а: Friday, pl: Fridays, inflect: -улица, tag: time
+воскресень--е: Sunday, pl: Sundays, inflect: -воскресенье, tag: time, tag: weekday
+пятниц--а: Friday, pl: Fridays, inflect: -улица, tag: time, tag: weekday
 месяц--: month, pl: months, inflect: -месяц, tag: time
 grammar: adj@accinanm, tag: accusative
 grammar: adj@instrm, tag: instrumental
@@ -1587,7 +1587,6 @@ phrase: dat-платить
 phrase: верить-в
 phrase: в-году
 phrase: в-время
-phrase: в-неделе
 phrase: как-тебе
 phrase: intended-for
 phrase: in-eyes-of
@@ -1682,3 +1681,6 @@ phrase: для-to
 phrase: взять-на-работу
 phrase: всё-ещё
 phrase: number-genpl
+знаком--ый: n/a, inflect: adj
+phrase: в-tag-time
+phrase: кого-то-нет

@@ -10,17 +10,17 @@ gen-possession: "что-то чьё-то" "of [owner]" #animate@genitive
 рад-dat: "рад чему-то" "happy because of [something]" рад@ any @dative+
 рад-dat: "рад чему-то" "happy because of [something]" @dative+ any рад@
 чем-чем: "чем ... тем ..." "the (2) ... the (4)" что@instr comp any тот@instrn any comp
-если-то: "если ... то" "if ... then" если@ any то@
+если-то: "если ... то" "if ... , then" если@ any ,@ то@
 с-gen: "с (откуда, с какого времени) (A1)" "from [somewhere, sometime, something]" с@ phrase:np@gen
 с-чего-взял: "с чего кто-то взял" "where did (3) get the idea, that" с@ что@gen #animate взять@ ,@ что[that]@
 с-чего-взял: "с чего кто-то взял" "where did (3) get that idea from" с@ что@gen #animate этот@ взять@
-time-acc: "время (interval/repeating) TODO: only apply this one if nothing with prepositions applies(A1)" "for a [certain amount of time]" #time@acc
-time-acc: "время (interval/repeating) TODO: only apply this one if nothing with prepositions applies(A1)" "for [number] tag:time" #number@accusative #time
-много-gen: "amount of чего-то (A1)" "a lot of [something]" много@ @genitive+
+time-acc: "время (interval/repeating). only use if nothing with prepositions applies(A1)" "all [time period]" весь@ #time@accusative
+time-acc: "время (interval/repeating). only use if nothing with prepositions applies(A1)" "for [certain amount of time]" phrase:np@acc#time
+много-gen: "amount of чего-то (A1)" "a lot of [something]" много@ phrase:np@gen
 много-gen: "amount of чего-то (A1)" "(1) [something]" много[much]|сколько[many]|несколько@ phrase:np@gen
-много-gen: "amount of чего-то (A1)" "(1) [something]" немного[little]|немного@ @genitive+
-много-gen: "amount of чего-то (A1)" "a couple of [something]" пара@ genitive
-много-gen: "amount of чего-то (A1)" "enough [something]" достаточный@adv genitive
+много-gen: "amount of чего-то (A1)" "(1) [something]" немного[little]|немного@ phrase:np@gen
+много-gen: "amount of чего-то (A1)" "a couple of [something]" пара@ phrase:np@gen
+много-gen: "amount of чего-то (A1)" "enough [something]" достаточный@adv phrase:np@gen
 много-gen: "amount of чего-то (A1)" "(1) [something]" мало|мало[few]@ phrase:np@gen
 без-gen: "без чего-то (B1)" "without [something]" без@ phrase:np@gen
 at-instr: "утром / вечером / зимой ... (B2)" "in the [time of day/season]" #at-instr@instrumental
@@ -35,7 +35,7 @@ more-than: "больше / лучше / ... чем" "(comp) ... than" comp any ,
 с-тех-пор: "с тех пор" "since the time" с@ тот@ пора@
 мы-с-instr: "мы с кем-то" "I and [someone]" мы@ any с@ adjective@instrumental* #animate@instrumental
 no-matter-what: "во что бы то ни стало" "no matter what" в@alt что@ бы@ тот@n ни@ стать@
-в-пути: "в пути" "on the road" в@ путь@
+в-пути: "в пути" "on the way" в@ путь@
 всё-ещё: "всё@ ещё" "still" весь|всё@ ещё@
 столько-всего: "столько всего" "so much" столько@ всё@gen
 нет-равных: "нет равных" "have no equal" нет[none]@ равный@genpl
@@ -47,11 +47,13 @@ no-matter-what: "во что бы то ни стало" "no matter what" в@alt 
 по-карману: "по карману" "can afford" по@ карман@dative dative
 по-карману: "по карману" "can afford" по@ карман@dative
 не-так-ли: "не так ли" "is that not so?" не@ так@ ли@
-в-курсе: "в курсе TODO: translation should accord with subject" "to be aware of [something]" в@ курс@prep phrase:np@gen
-в-курсе: "в курсе TODO: translation should accord with subject" "not aware" не@ в@ курс@prep
-в-курсе: "в курсе TODO: translation should accord with subject" "are aware" в@ курс@prep
+в-курсе: "в курсе" "(1) not aware of [something]" не@ быть@ в@ курс@prep phrase:np@gen
+в-курсе: "в курсе" "(1) aware of [something]" быть@ в@ курс@prep phrase:np@gen
+в-курсе: "в курсе" "aware" в@ курс@prep
+в-курсе: "в курсе" "not aware" не@ в@ курс@prep phrase:np@gen
 с-чем: "с (чем/кем-то) (A1)" "with [something or someone]" с@ phrase:np@instr
 с-чем: "с (чем/кем-то) (A1)" "with whom" с@ кто@instr
+говорить-с: "говорить с кем" "(1) to -self" говорить|поговорить@ any phrase:сам-с-собой
 говорить-с: "говорить с кем" "talk to [someone]" говорить|поговорить@ any с@ @instrumental+
 говорить-с: "говорить с кем" "talk to [someone]" с@ @instrumental+ any говорить|поговорить@
 встречать-с: "встречаться с" "(date,dates,dated,v) [someone]" встречаться[date]@ any с@ phrase:np@instr
@@ -70,6 +72,7 @@ at-datpl: "по (утрам / вечерам ...) (B1)" "every [day of the week/
 до-point-of-destination: "до чего-то (A2)" "to [somewhere]" до@ genitive
 до-какого-то-времени: "до какого-то времени (A2)" "until [sometime]" до@ phrase:np@gen
 после-чего-то: "после чего-то (A2)" "after [a time/doing something]" после@ genitive
+во-время-чего-то: "во время чего-то (A2)" "in the [rain/snow->nom]" в@ время@acc #rain@genitive
 во-время-чего-то: "во время чего-то (A2)" "during [some activity]" в@ время@acc genitive
 около-чего-то: "около чего-то (B1)" "around [some location]" около@ genitive
 далеко-от-чего-то: "далеко от чего-то (B1)" "far away from [something]" далеко@ от@ adjective@genitive* genitive
@@ -90,22 +93,22 @@ comp-gen: "лучше than genitive (B1) " "(comp) than [something]" comp @genit
 на-направление: "на somewhere (направление) (A1)" "to [somewhere]" на@ accusative
 на-завтрак-обед-ужин: "есть/готовить/... на завтрак/обед/ужин" "for [meal]" на@ #meal@acc
 в-направление: "в направление (A1)" "to [direction]" в@ phrase:np@acc
-в-time: "в четверг (moment in time/day) (A1)" "on [moment in time]" в@ adjective@accusative* #time@accusative
-каждый-time: "каждый/весь/целый... (time)" "(1) (2)" adjective@accusative #time@accusative
+в-time: "в четверг (day/weekday) (A1)" "(2) [day/weekday]" в@ этот@accusative #weekday@acc
+в-time: "в четверг (day/weekday) (A1)" "on [day/weekday]" в@ phrase:np@acc#weekday
+каждый-time: "каждый/весь/целый... (time)" "(1)" phrase:np@acc#time
 не-больше: "больше не" "no longer" больше[longer]@comp не@
 для-того: "для того чтобы" "too (2) to" слишком@ adjective@! ,@ для@ тот@genn чтобы@
 для-того: "для того чтобы" "(2) enough to" достаточный@adv adjective@! ,@ для@ тот@genn чтобы@
-давно-пора: "кому-то пора" "it is high time for [someone]" @dative+ давно@ пора@
+давно-пора: "кому-то пора" "it is high time for [someone] to" @dative+ any давно@ пора@
 давно-пора: "кому-то пора" "it is high time" давно@ пора@
-давно-пора: "кому-то пора" "it is time for [someone]" @dative+ пора@
+давно-пора: "кому-то пора" "it is time for [someone]" @dative+ any пора@
 тут-и-там: "тут и там" "here and there" там@ и@ тут@
 друг-другу: "друг друга" "each other" друг@ any друг@
 работать-над-чем-то: "работать над чем-то" "work on [something]" работать@ над@ @instrumental+
-hyperbole: "for [time period] - hyperbole " "for [adjective] [time period]" adjective@instrpl! #time@instrpl
-hyperbole: "for [time period] - hyperbole " "for [time]" #time@instrpl
+hyperbole: "for [time period] - hyperbole " "for [adjective]" phrase:np@instr#time
 доволен-instr: "доволен" "satisfied with [something]" довольный@ @instrumental+
-ждать-что-то: "ждать for something (B1)" "wait for [something or someone]" ждать@ @accusative+
-ждать-что-то: "ждать for something (B1)" "wait for [something or someone]" ждать@ @genitive+
+ждать-что-то: "ждать for something (B1)" "wait for [something or someone]" ждать@ phrase:np@acc
+ждать-что-то: "ждать for something (B1)" "wait for [something or someone]" #animate@acc ждать@
 хотеть-что-то: "хотеть [something or someone] (B1)" "want [something or someone] (B1)" хотеть@ @accusative+
 похоже: "похоже" "seems like" похожий@adv
 за-direction: "за (направление) (B1)" "behind/beyond [direction]" за@ acc
@@ -133,8 +136,8 @@ hyperbole: "for [time period] - hyperbole " "for [time]" #time@instrpl
 по-очереди: "по очереди" "one by one" по@ очередь@dat
 по-возможности: "по возможности" "if possible" по@ возможность@dat
 заниматься-чем-то: "заниматься (чем-то) (A1)" "take part in [activity]" заниматься@ instr
-быть-кем-то: "быть (кем-то) (A1)" "be [someone]" быть@ phrase:np@instr
-быть-кем-то: "быть (кем-то) (A1)" "be [someone]" быть@ any instrumental
+быть-кем-то: "быть (кем-то) (A1)" "(1) [someone]" быть@ phrase:np@instr
+быть-кем-то: "быть (кем-то) (A1)" "(1) [someone]" быть@ any instrumental
 стать-кем-то: "стать (кем-то) (A2)" "become [someone]" стать|становиться@ instrumental
 работать-кем-то: "работать (кем-то) (A2)" "work as [someone]" работать@ instr
 над-чем-то: "над (чем-то) (A2)" "over [something]" над@ instrumental
@@ -146,8 +149,8 @@ hyperbole: "for [time period] - hyperbole " "for [time]" #time@instrpl
 следить-за-кем-то: "следить (за кем-то) TODO make pattern include nouns and pronouns that follow the verb" "look after [someone or something]" следить@ за@ any phrase:np@instr
 за-столом: "за столом" "at the table/desk [location]" за@ adjective@instrumental* стол@instr
 за-границей: "за границей" "abroad" за@ граница@instr
-перед-location: "перед (где)" "in front of [something]" перед@ instr
-перед-time: "перед (когда) (B1)" "before [some moment in time]" перед@ instr
+перед-location: "перед (где)" "in front of [something]" перед@ phrase:np@instr
+перед-time: "перед (когда) (B1)" "before [some moment in time]" перед@ phrase:np@instr
 за-goal: "за чем-то (цель / 'to get') (B1)" "for [something]" за@ phrase:np@instr
 за-time-of-action: "за (время проишествия) (B2)" "during [time of action]" за@ instr
 интересоваться-чем-то: "интересоваться (чем-то) (A2)" "to be interested in [something]" интересоваться@ instr
@@ -193,7 +196,7 @@ go-do: "идти verb" "go (2)" идти|пойти@ verb
 стоить-дорогой: "стоить дорогой" "(are,is,was,being,be,are,were,v) ... (adj)" стоить@ any дорогой|дешёвый@adv
 стоить-дорогой: "стоить дорогой" "(are,is,was,being,be,are,were,v) ... (adj)" дорогой|дешёвый@adv стоить@
 у-thing: "у чего-то (где)" "by [something's location]" у@ phrase:np@gen
-за-acc: "за" "for [something]" за@ @accusative+
+за-acc: "за" "for [something]" за@ phrase:np@acc
 за-что: "за что" "for what reason" за@ что@
 то-что: "то что" "that, which" тот@n ,@ что[that]@
 когда-то: "когда ... то" "when ... then" когда@ any то@
@@ -293,11 +296,8 @@ dat-платить: "кому-то платить" "[someone] gets paid" @dative
 в-году: "в время (loc)" "at what time" в@ который[which]@ час@
 в-году: "в время (loc)" "[adj] [time period]" в@ adjective@prepositional locative
 в-время: "на неделе / ..." "during [time]" на@ any @prepositional+
-в-неделе: "в четверг / ..." "on [time]" в@ adjective@accusative* #time@accusative
 как-тебе: "как тебе (нравится)" "how (do,does,did,2->v) [someone] like" как@ #animate@dative
 intended-for: "кому-то (intended for)" "intended for [someone]" dative
-in-eyes-of: "'to', as in the eyes of" "(2) to [someone]" #animate@dative phrase:np@instr
-in-eyes-of: "'to', as in the eyes of" "(2) to [someone]" #animate@dative adjective
 in-eyes-of: "'to', as in the eyes of" "to [someone]" #animate@dative
 прийти-в-голову: "прийти в голову" "cross [someone]'s mind" @dative+ any прийти|приходить@ в@ голова@accusative
 прийти-в-голову: "прийти в голову" "cross [someone]'s mind" прийти|приходить@ any @dative+ any в@ голова@accusative
@@ -358,6 +358,7 @@ auto-np: "np" "which" который@nominative
 auto-np: "np" "(1)" phrase:2-gen@nom
 auto-np: "np" "(1)" phrase:number-genpl@nom
 auto-np: "np" "what" что@nominative
+auto-np: "np" "(1)" ничто@nominative
 auto-np: "np" "(1)" кто@nominative
 auto-np: "np" "(1)" этот|который|тот@nominative
 успеть-на: "успеть на" "catch the (3)" успеть@ на@ поезд|автобус|самолёт@accusative
@@ -367,3 +368,6 @@ auto-np: "np" "(1)" этот|который|тот@nominative
 для-to: "для as in 'to' someone" "to [someone]" для@ #animate@genitive
 взять-на-работу: "взять на работу" "hire for (3)" взять|брать@ на@ phrase:np@acc
 number-genpl: "5/6/7/... чего-то" "(1) (2) (3)" #number adjective@genpl* genpl
+в-tag-time: "в время/раз/момент..." "(2)" в@ phrase:np@acc#time
+кого-то-нет: "кого-то нет/не было/не будет" "(1) (2) (3)" phrase:np@gen#animate не@ быть[fut]@3
+кого-то-нет: "кого-то нет/не было/не будет" "(1) (2) (3)" phrase:np@gen#animate не@ быть@pastn
