@@ -2,8 +2,10 @@
 в-час: "в час (частота)" "per [duration]" в@ #time@acc
 в-num-час: "в ... часов (A2)" "at (2) o'clock" в@ #number час@
 в-num-час: "в ... часов (A2)" "at (2)" в@ #number
-2-gen: "два/три/четыре чего-то (A1)" "(1) [something->pl]" два|три|четыре@nominative genitive
-2-gen: "два/три/четыре чего-то (A1)" "(1) [something->pl]" два|три|четыре@accusative genitive
+auto-234-gen: "два/три/четыре чего-то (A1)" "(1) [something->pl]" два|три|четыре@nominative genitive
+auto-234-gen: "два/три/четыре чего-то (A1)" "(1) [something->pl]" два|три|четыре@accusative genitive
+auto-567-genpl: "5/6/7/... чего-то" "(1) (2) o'clock" #number@nominative adjective@genpl* час@genpl
+auto-567-genpl: "5/6/7/... чего-то" "(1) (2) (3)" #number@nominative adjective@genpl* genpl
 not-gen: "нет чего-то (A1)" "(there is no,pl:there are no,3->v) [something]" нет[none]@ any @genitive+
 gen-of: "что-то чего-то" "of [uncountable]" phrase:np@gen
 gen-possession: "что-то чьё-то" "of [owner]" #animate@genitive
@@ -350,13 +352,13 @@ dat-скучно: "кому-то скучно" "[someone] is bored" dative any �
 in-order-to: "для того, чтобы" "in order to" для@ тот@genn ,@ чтобы@
 auto-vp: "vp" "(1) (2)" verb@! phrase:np@acc
 auto-np: "np" "(1)" phrase:много-gen@nom
-auto-np: "np" "(1)" phrase:2-gen@nom
+auto-np: "np" "(1)" phrase:234-gen@nom
 auto-np: "np" "(1) (2)" adjective@nominative* noun@nominative
 auto-np: "np" "(1) (2)" #possessive noun@nominative
 auto-np: "np" "(1) (2) (3)" #possessive adjective@nominative! noun@nominative
 auto-np: "np" "(1)" #animate@nominative
 auto-np: "np" "which" который@nominative
-auto-np: "np" "(1)" phrase:number-genpl@nom
+auto-np: "np" "(1)" phrase:567-genpl@nom
 auto-np: "np" "what" что@nominative
 auto-np: "np" "(1)" ничто@nominative
 auto-np: "np" "(1)" кто@nominative
@@ -367,8 +369,6 @@ auto-np: "np" "(1)" этот|который|тот@nominative
 как-так: "как ... так" "both ... and ..." как@ any так@
 для-to: "для as in 'to' someone" "to [someone]" для@ #animate@genitive
 взять-на-работу: "взять на работу" "hire for (3)" взять|брать@ на@ phrase:np@acc
-number-genpl: "5/6/7/... чего-то" "(1) (2) o'clock" #number@nominative adjective@genpl* час@genpl
-number-genpl: "5/6/7/... чего-то" "(1) (2) (3)" #number@nominative adjective@genpl* genpl
 в-tag-time: "в время/раз/момент..." "(2)" в@ phrase:np@acc#time
 кого-то-нет: "кого-то нет/не было/не будет" "(1) (2) (3)" phrase:np@gen#animate не@ быть[fut]@3
 кого-то-нет: "кого-то нет/не было/не будет" "(1) (2) (3)" phrase:np@gen#animate не@ быть@pastn
