@@ -4,7 +4,7 @@
 в-num-час: "в ... часов (A2)" "at (2)" в@ #number
 2-gen: "два/три/четыре чего-то (A1)" "(1) [something->pl]" два|три|четыре@nominative genitive
 2-gen: "два/три/четыре чего-то (A1)" "(1) [something->pl]" два|три|четыре@accusative genitive
-not-gen: "нет чего-то (A1)" "(there is no,pl:there are no,genitive->v) [something]" нет[none]@ any @genitive+
+not-gen: "нет чего-то (A1)" "(there is no,pl:there are no,3->v) [something]" нет[none]@ any @genitive+
 gen-of: "что-то чего-то" "of [uncountable]" phrase:np@gen
 gen-possession: "что-то чьё-то" "of [owner]" #animate@genitive
 рад-dat: "рад чему-то" "happy because of [something]" рад@ any @dative+
@@ -25,7 +25,7 @@ time-acc: "время (interval/repeating). only use if nothing with preposition
 без-gen: "без чего-то (B1)" "without [something]" без@ phrase:np@gen
 at-instr: "утром / вечером / зимой ... (B2)" "in the [time of day/season]" #at-instr@instrumental
 more-than: "больше / лучше / ... чем" "(1) and (3) than" comp и@ comp any ,@ чем@
-more-than: "больше / лучше / ... чем" "(comp) ... than" comp any ,@ чем@
+more-than: "больше / лучше / ... чем" "(1) ... than" comp any ,@ чем@
 при-prep: "при ком/чём" "is with [him/her]" при@ @prepositional+
 по-dat: "по кому/чему TODO: split up" "on [something]" по@ @dative+
 сам-по-себе: "сам по себе" "by -self" сам@ по@ себя@dat
@@ -87,7 +87,7 @@ at-datpl: "по (утрам / вечерам ...) (B1)" "every [day of the week/
 к-кому-чему: "к (кому-то) (A1)" "to [person as destination]" к@ @dative+
 ждать-for-something-abstract: "ждать for something abstract (B1)" "wait for [something abstract]" ждать@ gen
 хотеть-something-abstract: "хотеть something abstract (B1)" "want [something abstract]" хотеть@ gen
-comp-gen: "лучше than genitive (B1) " "(comp) than [something]" comp @genitive+
+comp-gen: "лучше than genitive (B1) " "(1) than [something]" comp @genitive+
 звать-кого-то: "звать кого-то" "call [someone]" звать@ @accusative+
 звать-кого-то: "звать кого-то" "[someone] is called" @accusative+ звать@
 на-направление: "на somewhere (направление) (A1)" "to [somewhere]" на@ accusative
@@ -119,7 +119,7 @@ hyperbole: "for [time period] - hyperbole " "for [adjective]" phrase:np@instr#ti
 за-time: "за (время) (B1)" "in [time]" за@ @accusative+
 по-place-of-movement: "по (дороге/улице...) (A2)" "along, through [somewhere]" по@ @dative+
 по-mode-of-communication: "по (телефону/телевизору....) (A2)" "on [mode of communication]" по@ @dative+
-как-можно-comp: "как можно (скорее...)" "as (comp) as possible" как@ можно@ comp
+как-можно-comp: "как можно (скорее...)" "as (3) as possible" как@ можно@ comp
 по-definition: "по (математике...) (A2)" "по [definition]" по@ dat
 кому-то-надо: "(кому-то) надо (B1) TODO:verb phrase, translation" "[someone->nom] needs" @dative+ надо@
 кому-то-надо: "(кому-то) надо (B1) TODO:verb phrase, translation" "[someone->nom] should not have" не@ надо@ быть@ @dative+
@@ -182,7 +182,7 @@ play-with: "играть на чём-то" "play (on) [instrument, device]" иг
 go-do: "идти verb" "go (2)" идти|пойти@ verb
 к-чему-то: "к чему-то (B1)" "to [place, not person]" к@ @dative+
 к-time: "к какому-то времени (?B1)" "by [moment in time]" к@ @dative+
-думать-над: "думать над чем-то" "(v) (2) over (3)" думать|подумать@inf над@ phrase:np@instr
+думать-над: "думать над чем-то" "(1) (2) over (3)" думать|подумать@inf над@ phrase:np@instr
 Вот-это: "Вот это" "This is" вот@ это@
 можно-noun: "можно noun" "deleteme" 
 пора–не: "пока не" "until" пока@ any не@
@@ -203,22 +203,22 @@ go-do: "идти verb" "go (2)" идти|пойти@ verb
 то-же: "то же" "the same" тот@ же@ самый@
 то-же: "то же" "the same" тот@ же@
 то-же: "то же" "the same" тот@ самый@
-не-gen: "не genitive" "did not (v->) ... [something]" не@ verb@past any @genitive+
-не-gen: "не genitive" "(do,does,did,v) not (v->) ... [something]" не@ verb any @genitive+
+не-gen: "не genitive" "did not (2->) ... [something]" не@ verb@past any @genitive+
+не-gen: "не genitive" "(do,does,did,v) not (2->) ... [something]" не@ verb any @genitive+
 ни-ни: "ни ... ни" "neither (2) ... nor (4)" ни@ noun any ни@ noun
 ни-ни: "ни ... ни" "neither (2) ... nor (4)" ни@ verb any ни@ verb
-если-бы: "если бы" "if ... ... (4) would (v->inf)" если@ бы@ any ,@ #animate verb бы@
-если-бы: "если бы" "if ... , ... would (v->)" если@ бы@ any ,@ any бы@ any verb
+если-бы: "если бы" "if ... (4) would (6->inf)" если@ бы@ any ,@ #animate verb бы@
+если-бы: "если бы" "if ... , ... would (8->)" если@ бы@ any ,@ any бы@ any verb
 куда-бы: "куда бы" "whereever" куда@ бы@
 кроме-gen: "кроме" "except for [someone]" кроме@ @genitive+
 против-gen: "против" "against [an idea/cause/etc]" против@ @genitive+
 если-только: "если бы только" "if ... only (3) (v)" если@ бы@ #animate только@ verb
 ask-someone: "спросить/просить у кого-то" "ask (4) for (2)" просить|спросить|спрашивать@ @genitive+ any у@ @genitive+
 ask-someone: "спросить/просить у кого-то" "ask [someone]" просить|спросить|спрашивать@ у@ @genitive+
-comp-gen2: "больше genitive (B1) " "(comp) [something]" comp @genitive+
-need-to-be: "нужно (passive)" "[someone] (need,needs,dative->v) (v) [something]" @dative+ нужно@ verb accusative
-need-to-be: "нужно (passive)" "[someone] (need,needs,dative->v) (v)" @dative+ нужно@ verb
-need-to-be: "нужно (passive)" "[something] (need,needs,accusative->v) to be (v)" accusative нужно@ verb
+comp-gen2: "больше genitive (B1) " "(1) [something]" comp @genitive+
+need-to-be: "нужно (passive)" "[someone] (need,needs,1->v) (3) [something]" @dative+ нужно@ verb accusative
+need-to-be: "нужно (passive)" "[someone] (need,needs,1->v) (3)" @dative+ нужно@ verb
+need-to-be: "нужно (passive)" "[something] (need,needs,accusative->v) to be (3)" accusative нужно@ verb
 чтобы-that: "хочешь, чтобы [that]" "(1) ... so that (4) not (6->)" verb any ,@ чтобы@ #animate не@ past
 чтобы-that: "хочешь, чтобы [that]" "(1) ... that (4) (5->)" verb any ,@ чтобы@ #animate any past
 выйти-из: "выйти из" "leave [a building]" выйти@ из@ genitive
@@ -270,11 +270,11 @@ either-or-или-или: "или ... , или ..." "either ... , or" или@ any
 из-out-of: "из (выбор)" "out of [several things or people]" из@ @genitive+
 при-чём: "при чём" "what does [something] have to do with this" при@ что@prepositional здесь|тут@
 кому-то-кажется: "кому-то кажется" "it seems to [someone]" @dative+ any казаться@
-gen-верить: "верить кому-то" "(trust in,trusts in,trusted in,v) [someone]" верить|доверять|поверить@ any @dative+
-gen-верить: "верить кому-то" "[someone] (trust,trusts,trusted,v)" @dative+ any верить|доверять|поверить@
-dat-speech: "говорить/сказать/... кому-то" "(v) to [someone]" #speech @dative+
-dat-speech: "говорить/сказать/... кому-то" "(v) to [someone]" @dative+ #speech
-dat-speech: "говорить/сказать/... кому-то" "not (v) to [someone]" @dative+ не@ #speech
+gen-верить: "верить кому-то" "(trust in,trusts in,trusted in,1) ... [someone]" верить|доверять|поверить@ any @dative+
+gen-верить: "верить кому-то" "[someone] ... (trust,trusts,trusted,3)" @dative+ any верить|доверять|поверить@
+dat-speech: "говорить/сказать/... кому-то" "(1) to [someone]" #speech @dative+
+dat-speech: "говорить/сказать/... кому-то" "(2) to [someone]" @dative+ #speech
+dat-speech: "говорить/сказать/... кому-то" "not (3) to [someone]" @dative+ не@ #speech
 помогать-dat: "помогать-dat" "help [someone]" помогать@ any @dative+
 помогать-dat: "помогать-dat" "[someone] ... not help " @dative+ any не@ помогать@
 помогать-dat: "помогать-dat" "[someone] ... not help " @dative+ any помогать@
