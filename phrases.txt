@@ -2,10 +2,11 @@
 в-час: "в час (частота)" "per [duration]" в@ #time@acc
 в-num-час: "в ... часов (A2)" "at (2) o'clock" в@ #number час@
 в-num-час: "в ... часов (A2)" "at (2)" в@ #number
-auto-234-gen: "два/три/четыре чего-то (A1)" "(1) [something->pl]" два|три|четыре@nominative genitive
-auto-234-gen: "два/три/четыре чего-то (A1)" "(1) [something->pl]" два|три|четыре@accusative genitive
+auto-234-gen: "2/3/4 чего-то (A1)" "(1) [something->pl]" два|три|четыре@nominative genitive
+auto-234-gen: "2/3/4 чего-то (A1)" "(1) [something->pl]" два|три|четыре@accusative genitive
 auto-567-genpl: "5/6/7/... чего-то" "(1) (2) o'clock" #number@nominative adjective@genpl* час@genpl
 auto-567-genpl: "5/6/7/... чего-то" "(1) (2) (3)" #number@nominative adjective@genpl* genpl
+auto-1-nom: "1 что-то (A1)" "(1) [something]" один@nominative noun@nominative
 not-gen: "нет чего-то (A1)" "(there is no,pl:there are no,3->v) [something]" нет[none]@ any @genitive+
 gen-of: "что-то чего-то" "of [uncountable]" phrase:np@gen
 gen-possession: "что-то чьё-то" "of [owner]" #animate@genitive
@@ -353,12 +354,13 @@ in-order-to: "для того, чтобы" "in order to" для@ тот@genn ,@ 
 auto-vp: "vp" "(1) (2)" verb@! phrase:np@acc
 auto-np: "np" "(1)" phrase:много-gen@nom
 auto-np: "np" "(1)" phrase:234-gen@nom
+auto-np: "np" "(1)" phrase:567-genpl@nom
+auto-np: "np" "(1)" phrase:1-nom@nom
 auto-np: "np" "(1) (2)" adjective@nominative* noun@nominative
 auto-np: "np" "(1) (2)" #possessive noun@nominative
 auto-np: "np" "(1) (2) (3)" #possessive adjective@nominative! noun@nominative
 auto-np: "np" "(1)" #animate@nominative
 auto-np: "np" "which" который@nominative
-auto-np: "np" "(1)" phrase:567-genpl@nom
 auto-np: "np" "what" что@nominative
 auto-np: "np" "(1)" ничто@nominative
 auto-np: "np" "(1)" кто@nominative
