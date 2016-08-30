@@ -215,7 +215,7 @@ go-do: "идти verb" "go (2)" идти|пойти@ verb
 если-только: "если бы только" "if ... only (3) (v)" если@ бы@ #animate только@ verb
 ask-someone: "спросить/просить у кого-то" "ask (4) for (2)" просить|спросить|спрашивать@ @genitive+ any у@ @genitive+
 ask-someone: "спросить/просить у кого-то" "ask [someone]" просить|спросить|спрашивать@ у@ @genitive+
-comp-gen2: "больше genitive (B1) " "(1) [something]" comp @genitive+
+comp-gen2: "больше genitive (B1) " "(1) [something]" comp phrase:np@gen
 need-to-be: "нужно (passive)" "[someone] (need,needs,1->v) (3) [something]" @dative+ нужно@ verb accusative
 need-to-be: "нужно (passive)" "[someone] (need,needs,1->v) (3)" @dative+ нужно@ verb
 need-to-be: "нужно (passive)" "[something] (need,needs,accusative->v) to be (3)" accusative нужно@ verb
@@ -367,7 +367,8 @@ auto-np: "np" "(1)" этот|который|тот@nominative
 как-так: "как ... так" "both ... and ..." как@ any так@
 для-to: "для as in 'to' someone" "to [someone]" для@ #animate@genitive
 взять-на-работу: "взять на работу" "hire for (3)" взять|брать@ на@ phrase:np@acc
-number-genpl: "5/6/7/... чего-то" "(1) (2) (3)" #number adjective@genpl* genpl
+number-genpl: "5/6/7/... чего-то" "(1) (2) o'clock" #number@nominative adjective@genpl* час@genpl
+number-genpl: "5/6/7/... чего-то" "(1) (2) (3)" #number@nominative adjective@genpl* genpl
 в-tag-time: "в время/раз/момент..." "(2)" в@ phrase:np@acc#time
 кого-то-нет: "кого-то нет/не было/не будет" "(1) (2) (3)" phrase:np@gen#animate не@ быть[fut]@3
 кого-то-нет: "кого-то нет/не было/не будет" "(1) (2) (3)" phrase:np@gen#animate не@ быть@pastn
