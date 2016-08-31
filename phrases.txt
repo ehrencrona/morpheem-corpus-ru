@@ -1,6 +1,6 @@
 о-prep: "о чем-то (A1)" "about [a topic]" о@ phrase:np@prep
 в-час: "в час (частота)" "per [duration]" в@ #time@acc
-в-num-час: "в ... часов (A2)" "at (2) o'clock" в@ #number час@
+в-num-час: "в ... часов (A2)" "at (2) o'clock" в@ #number час[o'clock]@
 в-num-час: "в ... часов (A2)" "at (2)" в@ #number
 auto-234-gen: "2/3/4 чего-то (A1)" "(1) [something->pl]" два|три|четыре@nominative genitive
 auto-567-genpl: "5/6/7/... чего-то" "(1) (2) o'clock" #number@nominative adjective@genpl* час@genpl
