@@ -399,6 +399,7 @@ grammar: егоadj@datm, tag: dative
 мест--о[space]: space, inflect: neu, mask: pl
 мест--о[seat]: seat, pl: seats, inflect: neu
 час--: hour, pl: hours, inflect: -аэропорт, tag: time
+час--[o'clock]: o'clock, inflect: -аэропорт, tag: time
 час--[clock]: , pl: watch, inflect: masc, mask: sg
 grammar: -статья@instr, tag: instrumental
 grammar: -нравиться@1, tag: verb
@@ -509,7 +510,7 @@ grammar: -есть@1, tag: verb
 grammar: -выйти@pastm, tag: verb
 grammar: neu@gen, tag: genitive
 восем--ь: eight, inflect: -пять, tag: number
-тысяч--а: thousand, inflect: -улица
+тысяч--а: thousand, inflect: -улица, pos: num
 grammar: -ходить@1, tag: verb
 забуд--<<ыть: forget, 3: forgets, past: forgot, prog: forgetting, inflect: -бытьfut
 чашк--а: cup, pl: cups, inflect: femka2
