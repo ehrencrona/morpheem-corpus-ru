@@ -57,7 +57,7 @@ grammar: -глядеть@1, tag: verb
 grammar: fem@acc, tag: accusative
 grammar: -кто@nom
 grammar: n@acc, tag: accusative
---кто: who, acc: whom, inflect: -кто, tag: question
+--кто: who, acc: whom, inflect: -кто, tag: question, tag: animate
 слыши--<ать: hear, 3: hears, past: heard, prog: hearing, inflect: -слышать
 мам--а: mom, pl: moms, inflect: fem-animate, tag: animate
 люби--ть: like, 3: likes, past: liked, prog: liking, inflect: -любить
@@ -169,7 +169,7 @@ grammar: adj@prepf, tag: prepositional
 наш--: our, inflect: -наш, tag: possessive, mask: nonstd
 grammar: v@1, tag: verb
 grammar: -наш@pl
-родител--ь: , pl: parents, inflect: mascь-animate, mask: sg
+родител--ь: , pl: parents, inflect: mascь-animate, tag: animate, mask: sg
 офис--: office, pl: offices, inflect: masc
 grammar: -этот@pl
 жив--<ть: live, 3: lives, past: lived, prog: living, inflect: -жить
@@ -510,7 +510,7 @@ grammar: -есть@1, tag: verb
 grammar: -выйти@pastm, tag: verb
 grammar: neu@gen, tag: genitive
 восем--ь: eight, inflect: -пять, tag: number
-тысяч--а: thousand, inflect: -улица, pos: num
+тысяч--а: thousand, inflect: -улица
 grammar: -ходить@1, tag: verb
 забуд--<<ыть: forget, 3: forgets, past: forgot, prog: forgetting, inflect: -бытьfut
 чашк--а: cup, pl: cups, inflect: femka2
@@ -602,7 +602,7 @@ grammar: -кто@acc, tag: accusative
 сложн--ый: complicated, adv: complicatedly, comp: more complicated, super: most complicated, inflect: ныйadj
 grammar: -сказать@inf, tag: verb
 grammar: -он@prep, tag: prepositional
-бабушк--а: grandmother, pl: grandmothers, inflect: -кошка
+бабушк--а: grandmother, pl: grandmothers, inflect: -кошка, tag: animate
 реклам--а: advertisement, pl: advertisements, inflect: fem
 grammar: neuie@prep, tag: prepositional
 счита--ть: count, 3: counts, past: counted, prog: counting, inflect: ать
@@ -1464,7 +1464,7 @@ phrase: рядом-с
 phrase: между-чем-то
 phrase: за-место
 плать--е: n/a, inflect: -платье
-одежд--а: n/a, inflect: fem, mask: pl
+одежд--а: clothes, inflect: fem, mask: pl
 phrase: следить-за-кем-то
 phrase: за-столом
 phrase: за-границей
@@ -1682,6 +1682,4 @@ phrase: auto-567-genpl
 знаком--ый: n/a, inflect: adj
 phrase: в-tag-time
 phrase: кого-то-нет
-phrase: кого-то-нет
-grammar: -весь-everyone@accpl, tag: accusative
 phrase: time-after-time

@@ -13,10 +13,10 @@ gen-possession: "что-то чьё-то" "of [owner]" phrase:np@gen#animate
 рад-dat: "рад чему-то" "happy because of [something]" @dative+ any рад@
 чем-чем: "чем ... тем ..." "the (2) ... the (4)" что@instr comp any тот@instrn any comp
 если-то: "если ... то" "if ... , then" если@ any ,@ то@
-с-gen: "с (откуда, с какого времени) (A1)" "from [somewhere, sometime, something]" с@ phrase:np@gen
+с-gen: "с (откуда, с какого времени) (A1)" "from (2)" с@ phrase:np@gen
 с-чего-взял: "с чего кто-то взял" "where did (3) get the idea, that" с@ что@gen #animate взять@ ,@ что[that]@
 с-чего-взял: "с чего кто-то взял" "where did (3) get that idea from" с@ что@gen #animate этот@ взять@
-много-gen: "amount of чего-то (A1)" "a lot of [something]" много@ phrase:np@gen
+много-gen: "amount of чего-то (A1)" "a lot of (2)" много@ phrase:np@gen
 много-gen: "amount of чего-то (A1)" "(1) [something]" много[much]|сколько[many]|несколько@ phrase:np@gen
 много-gen: "amount of чего-то (A1)" "(1) [something]" немного[little]|немного@ phrase:np@gen
 много-gen: "amount of чего-то (A1)" "a couple of [something]" пара@ phrase:np@gen
@@ -35,7 +35,7 @@ more-than: "больше / лучше / ... чем" "(1) ... than" comp any ,@ �
 с-тех-пор: "с тех пор" "since the time" с@ тот@ пора@ ,@ как|как[when]@
 с-тех-пор: "с тех пор" "since the time" с@ тот@ пора@ как|как[when]@
 с-тех-пор: "с тех пор" "since the time" с@ тот@ пора@
-мы-с-instr: "мы с кем-то" "I and [someone]" мы@ any с@ adjective@instrumental* #animate@instrumental
+мы-с-instr: "мы с кем-то" "(4) and I" мы@ any с@ phrase:np@instr#animate
 no-matter-what: "во что бы то ни стало" "no matter what" в@alt что@ бы@ тот@n ни@ стать@
 в-пути: "в пути" "on the way" в@ путь@
 всё-ещё: "всё@ ещё" "still" весь|всё@ ещё@
@@ -86,7 +86,7 @@ at-datpl: "по (утрам / вечерам ...) (B1)" "every [day of the week/
 среди-чего-то: "среди чего-то (B1)" "amongst / in the middle of [something]" среди@ phrase:np@gen
 для-чего-то: "для чего-то или кого-то (B1)" "for (2)" для@ phrase:np@gen
 ни-за-что: "ни за что" "no way" ни@ за@ что@
-к-кому-чему: "к (кому-то) (A1)" "to [person as destination]" к@ @dative+
+к-кому-чему: "к (кому-то) (A1)" "to (2)" к@ phrase:np@dat#animate
 ждать-for-something-abstract: "ждать for something abstract (B1)" "wait for [something abstract]" ждать@ gen
 хотеть-something-abstract: "хотеть something abstract (B1)" "want [something abstract]" хотеть@ gen
 comp-gen: "лучше than genitive (B1) " "(1) than [something]" comp @genitive+
