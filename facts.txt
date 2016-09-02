@@ -158,7 +158,7 @@ grammar: y-esh-et@2pl, tag: verb
 трудн--ый: difficult, adv: difficultly, comp: more difficult, super: most difficult, inflect: ныйadj
 красив--ый: beautiful, adv: beautifully, comp: more beautiful, super: most beautiful, inflect: adj
 дом--: house, pl: houses, inflect: -лес
-работ--а: work, pl: jobs, inflect: fem
+работ--а: work, pl: jobs, inflect: fem, tag: at
 дн--<ень: day, pl: days, inflect: -день, tag: time, tag: weekday
 кажд--ый: every, inflect: adj, mask: nonstd
 grammar: -день@nom
@@ -169,7 +169,7 @@ grammar: adj@prepf, tag: prepositional
 наш--: our, inflect: -наш, tag: possessive, mask: nonstd
 grammar: v@1, tag: verb
 grammar: -наш@pl
-родител--ь: , pl: parents, inflect: mascь-animate, mask: sg
+родител--ь: parent, pl: parents, inflect: mascь-animate, tag: animate, mask: sg
 офис--: office, pl: offices, inflect: masc
 grammar: -этот@pl
 жив--<ть: live, 3: lives, past: lived, prog: living, inflect: -жить
@@ -333,7 +333,7 @@ grammar: егоadj@prepf, tag: prepositional
 grammar: егоadj@genf, tag: genitive
 письм--о: letter, pl: letters, inflect: -письмо
 для: for, pos: prep
-вокзал--: railway station, pl: railway stations, inflect: masc
+вокзал--: railway station, pl: railway stations, inflect: masc, tag: at
 grammar: -глядеть@inf, tag: verb
 grammar: -mascь@genpl, tag: genitive
 дерев--о: tree, pl: trees, inflect: -дерево
@@ -461,7 +461,7 @@ grammar: -есть@1pl, tag: verb
 grammar: -я@instr, tag: instrumental
 мало: little, pos: adv
 мало[few]: few, pos: adv
-путешестви--е: travel, pl: travels, inflect: neuie
+путешестви--е: trip, pl: trips, inflect: neuie
 ищ--<скать: look for, past: looked for, prog: looking for, inflect: -искать
 grammar: -есть@3pl, tag: verb
 grammar: -пить@3, tag: verb
@@ -529,7 +529,7 @@ grammar: adj@genf, tag: genitive
 кино: cinema, pl: cinemas, pos: n
 кино[film]: movie, pl: movies, pos: n
 grammar: neu@nom
-факультет--: faculty, pl: faculties, inflect: masc
+факультет--: faculty, pl: faculties, inflect: masc, tag: at
 грустн--ый: sad, adv: sadly, comp: sadder, super: saddest, inflect: ныйadj
 диван--: couch, pl: couches, inflect: masc
 grammar: -ждать@impr, tag: verb
@@ -560,7 +560,7 @@ grammar: adj@genn, tag: genitive
 grammar: -mascь@nom
 подруг--а: friend, pl: friends, inflect: fem-animate, tag: animate
 продукт--: , pl: groceries, inflect: masc, mask: sg
-фабрик--а: factory, pl: factories, inflect: fem
+фабрик--а: factory, pl: factories, inflect: fem, tag: at
 grammar: -о@std
 grammar: -весь@datpl, tag: dative
 положи--ть: put, 3: puts, past: put, prog: putting, inflect: -учить
@@ -577,7 +577,7 @@ grammar: -свой@n
 grammar: femka2@genpl, tag: genitive
 лёгк--ий: easy, adv: easily, comp: easier, super: easiest, inflect: -лёгкий, mask: short
 потеря--ться: get lost, past: got lost, prog: getting lost, inflect: -пытаться
-вход--: entrance, pl: entrances, inflect: masc
+вход--: entrance, pl: entrances, inflect: masc, tag: at
 grammar: -стать@inf, tag: verb
 grammar: -деньга@genpl, tag: genitive
 билет--: ticket, pl: tickets, inflect: masc
@@ -925,7 +925,7 @@ grammar: sya@pastpl, tag: verb
 найд--<ти: find, 3: finds, past: found, prog: finding, inflect: -войти, tag: something-to-someone
 grammar: -яйцо@genpl, tag: genitive
 б: would particle
-остановк--а: stop, pl: stops, inflect: femka
+остановк--а: stop, pl: stops, inflect: femka, tag: at
 около: around, pos: prep
 grammar: -идея@genpl, tag: genitive
 grammar: -сестра@genpl, tag: genitive
@@ -1175,7 +1175,7 @@ grammar: -жениться@1, tag: verb
 встреча--ться: meet, 3: meets, past: met, prog: meeting, inflect: -пытаться
 grammar: -один@accn, tag: accusative
 grammar: -кто@prep, tag: prepositional
-т--от: that, inflect: -тот, mask: nonstd
+т--от: that, pl: those, inflect: -тот, mask: nonstd
 встреча--ться[date]: date, 3: dates, past: dated, prog: dating, inflect: -пытаться
 grammar: -бояться@3, tag: verb
 начн--<ать: begin, 3: begins, past: began, prog: beginning, inflect: -начать
@@ -1309,7 +1309,7 @@ phrase: при-prep
 поверн--уть: turn, 3: turns, past: turned, prog: turning, inflect: -повернуть
 предлага--ть: offer, 3: offer, past: offered, prog: offering, inflect: ать, tag: speech
 phrase: по-dat
-поворот--: turn, pl: turns, inflect: masc
+поворот--: turn, pl: turns, inflect: masc, tag: at
 поворачива--ть: turn, 3: turn, past: turned, prog: turning, inflect: ать
 пропусти--ть: miss, 3: misses, past: missed, prog: missing, inflect: -простить
 phrase: сам-по-себе
@@ -1683,9 +1683,14 @@ phrase: в-tag-time
 phrase: кого-то-нет
 phrase: time-after-time
 grammar: -встретиться@1, tag: verb
-grammar: -весь@instrm
+grammar: -весь@instrm, tag: instrumental
 phrase: за-то-что
 phrase: из-за-того-что
-grammar: -простить@1
-grammar: -находиться@1
-grammar: -бояться@2
+grammar: -простить@1, tag: verb
+grammar: -находиться@1, tag: verb
+grammar: -бояться@2, tag: verb
+встреч--а: meeting, pl: meetings, inflect: -улица
+phrase: seeyou
+phrase: готов-к
+phrase: face-to-face
+phrase: жениться-на
