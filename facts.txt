@@ -17,7 +17,7 @@ grammar: femь@nom
 grammar: masc@nom
 grammar: adj@m
 свитер--: sweater, pl: sweaters, inflect: masc
-университет--: university, pl: universities, inflect: masc
+университет--: university, pl: universities, inflect: masc, tag: at
 в--: in, at, inflect: oprep, tag: untranslatable
 grammar: oprep@std
 grammar: n@prep, tag: prepositional
@@ -31,7 +31,7 @@ grammar: -я@nom
 grammar: -он@nom
 transform: yToI
 Саш--а: Sasha, inflect: -улица, tag: animate, mask: pl
-библиотек--а: library, pl: libraries, inflect: fem
+библиотек--а: library, pl: libraries, inflect: fem, tag: at
 grammar: -она@nom
 --она: she, acc: her, inflect: -она, tag: animate
 Маш--а: Маsha, inflect: -улица, tag: animate, mask: pl
@@ -148,7 +148,7 @@ grammar: adj@pl
 --вы: you [plural], inflect: -вы, tag: animate
 grammar: -вы@pl
 grammar: it-im-ite@2pl, tag: verb
-банк--: bank, pl: banks, inflect: masc
+банк--: bank, pl: banks, inflect: masc, tag: at
 ресторан--: restaurant, pl: restaurants, inflect: masc
 эт--от: this, pl: these, inflect: -этот, mask: nonstd
 grammar: -этот@f
@@ -233,7 +233,7 @@ grammar: -ты@dat, tag: dative
 с--: with, from, inflect: oprep, tag: untranslatable
 ед--а: food, pl: foods, inflect: fem
 grammar: fem@instr, tag: instrumental
-интернет--: internet, inflect: masc
+интернет--: internet, inflect: masc, tag: on
 радио: radio, pl: radios, pos: n
 котор--ый: that, inflect: adj, mask: nonstd
 музык--а: music, inflect: fem, mask: pl
@@ -449,7 +449,7 @@ grammar: sya@2pl, tag: verb
 grammar: adj@accinanm, tag: accusative
 grammar: adj@instrm, tag: instrumental
 боли--<еть: is ill, inf: be ill, past: was ill, pastpl: were ill, prog: being ill, inflect: -смотреть
-больниц--а: hospital, pl: hospitals, inflect: -улица
+больниц--а: hospital, pl: hospitals, inflect: -улица, tag: at
 grammar: -есть@2pl, tag: verb
 звони--ть: call, 3: calls, past: called, prog: calling, inflect: -дарить, tag: speech
 помога--ть: help, 3: helps, past: helped, prog: helping, inflect: ать
@@ -803,7 +803,7 @@ grammar: neuie@preppl, tag: prepositional
 опять: again, pos: adv
 grammar: -идти@inf, tag: verb
 grammar: -спросить@1, tag: verb
-лишь: onlu
+лишь: only
 значи--ть: mean, 3: means, past: meant, prog: meaning, inflect: -значить
 grammar: -мочь@pastm, tag: verb
 дорог--а: road, pl: roads, inflect: fem
@@ -1313,7 +1313,6 @@ phrase: по-dat
 поворачива--ть: turn, 3: turn, past: turned, prog: turning, inflect: ать
 пропусти--ть: miss, 3: misses, past: missed, prog: missing, inflect: -простить
 phrase: сам-по-себе
-phrase: из-за-того
 разреши--ть: allow, 3: allows, past: allowed, prog: allowing, inflect: -учить, tag: speech
 неправильн--ый: incorrect, adv: incorrectly, inflect: -правильный, mask: compandshort
 предупреди--ть: warn, 3: warns, past: warned, prog: warning, inflect: -ходить
@@ -1546,7 +1545,7 @@ phrase: играть-в-игру
 обратн--ый: return, inflect: adj, mask: compandshort
 phrase: dat-нужен
 phrase: датьetc-dat
-аэропорт--: n/a, inflect: -аэропорт
+аэропорт--: airport, pl: airports, inflect: -аэропорт
 phrase: купить-чего-то
 phrase: dat-adv
 phrase: кому-то-достаточно
@@ -1683,4 +1682,10 @@ phrase: auto-567-genpl
 phrase: в-tag-time
 phrase: кого-то-нет
 phrase: time-after-time
-grammar: -встретиться@1
+grammar: -встретиться@1, tag: verb
+grammar: -весь@instrm
+phrase: за-то-что
+phrase: из-за-того-что
+grammar: -простить@1
+grammar: -находиться@1
+grammar: -бояться@2
