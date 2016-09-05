@@ -2,9 +2,11 @@
 в-час: "в час (частота)" "per [duration]" в@ #time@acc
 в-num-час: "в ... часов (A2)" "at (2) o'clock" в@ #number час[o'clock]@
 в-num-час: "в ... часов (A2)" "at (2)" в@ #number
-auto-234-gen: "2/3/4 чего-то (A1)" "(1) [something->pl]" два|три|четыре@nominative genitive
+auto-234-gen: "2/3/4 чего-то (A1)" "(1) [something->pl]" два|три|четыре@nominative phrase:np@gen
+auto-234-gen: "2/3/4 чего-то (A1)" "(1) [something->pl]" два|три|четыре@nominative phrase:np@nom
 auto-567-genpl: "5/6/7/... чего-то" "(1) (2) o'clock" #number@nominative adjective@genpl* час@genpl
 auto-567-genpl: "5/6/7/... чего-то" "(1) (2) (3)" #number@nominative adjective@genpl* genpl
+auto-567-genpl: "5/6/7/... чего-то" "(1) (2) (3)" #number@nominative adjective@pl* pl
 auto-1-nom: "1 что-то (A1)" "(1) [something]" один@nominative noun@nominative
 not-gen: "нет чего-то (A1)" "(there is no,pl:there are no,3->v) [something]" нет[none]@ any @genitive+
 gen-of: "что-то чего-то" "(1) (2) of (article) (3) (4)" adjective@* noun@! adjective@genitive* noun@genitive
@@ -49,7 +51,7 @@ no-matter-what: "во что бы то ни стало" "no matter what" в@alt 
 по-карману: "по карману" "(1) can afford" dative any по@ карман@dative
 по-карману: "по карману" "can afford" по@ карман@dative dative
 по-карману: "по карману" "can afford" по@ карман@dative
-не-так-ли: "не так ли" "is that not so?" не@ так@ ли@
+не-так-ли: "не так ли" "is that not so" не@ так@ ли@
 в-курсе: "в курсе" "(2) not aware of [something]" не@ быть@ в@ курс@prep phrase:np@gen
 в-курсе: "в курсе" "(1) aware of [something]" быть@ в@ курс@prep phrase:np@gen
 в-курсе: "в курсе" "aware" в@ курс@prep
@@ -59,7 +61,7 @@ no-matter-what: "во что бы то ни стало" "no matter what" в@alt 
 говорить-с: "говорить с кем" "(1) to -self" говорить|поговорить@ any phrase:сам-с-собой
 говорить-с: "говорить с кем" "talk to [someone]" говорить|поговорить@ any с@ @instrumental+
 говорить-с: "говорить с кем" "talk to [someone]" с@ @instrumental+ any говорить|поговорить@
-встречать-с: "встречаться с" "(date,dates,dated,v) [someone]" встречаться[date]@ any с@ phrase:np@instr
+встречать-с: "встречаться с" "(date,dates,dated,1) [someone]" встречаться[date]@ any с@ phrase:np@instr
 обращаться-с: "обращаться с" "deal with [something] / treat [someone]" обращаться@ с@ instr
 обращаться-к: "обращаться к" "address / turn to [someone]" обращаться@ к@ @dative+
 у-его-нет: "у кого-то нет чего-то (A1)" "(2->nom) does not have (4)" у@ phrase:np@gen нет[none]@ phrase:np@gen
@@ -98,7 +100,7 @@ comp-gen: "лучше than genitive (B1) " "(1) than [something]" comp @genitive
 в-направление: "в направление (A1)" "to [direction]" в@ phrase:np@acc
 в-time: "в четверг (day/weekday) (A1)" "(2) [day/weekday]" в@ этот@accusative #weekday@acc
 в-time: "в четверг (day/weekday) (A1)" "on [day/weekday]" в@ phrase:np@acc#weekday
-каждый-time: "каждый/весь/целый... (time)" "(1)" phrase:np@acc#time
+каждый-time: "два года / весь день / каждый день... (time period)" "(1)" phrase:np@acc#time
 не-больше: "больше не" "no longer" больше[longer]@comp не@
 для-того: "слишком/достаточно ... для того чтобы" "too (2) to" слишком@ adjective@! ,@ для@ тот@genn чтобы@
 для-того: "слишком/достаточно ... для того чтобы" "(2) enough to" достаточный@adv adjective@! ,@ для@ тот@genn чтобы@
@@ -165,7 +167,9 @@ hyperbole: "for [time period] - hyperbole " "for [adjective]" phrase:np@instr#ti
 на-place: "на (где-то)" "on the back" на@ спина@prep
 на-place: "на (где-то)" "at [a place]" на@ phrase:np@prep#at
 на-place: "на (где-то)" "on [a place]" на@ phrase:np@prep
-на-place: "на (где-то)" "at, in [a place]" на@ @locative+
+на-place: "на (где-то)" "at [a place]" на@ @locative+
+на-place: "на (где-то)" "on [a place]" на@ @locative+
+на-языке: "на языке (B1)" "in [language]" на@ #language@prepositional язык[lang]@prepositional
 на-языке: "на языке (B1)" "in [language]" на@ #language@prepositional
 на-языке: "на языке (B1)" "in (2)" на@ phrase:np@prep#language
 на-транспорте: "на транспорте (A1) TODO: make метро, такси inflect, add adjective" "by [means of transportation]" на@ #tansport@prepositional
@@ -190,7 +194,7 @@ play-with: "играть на чём-то" "play (on) (3)" играть@ на@ p
 сколько-distance: "сколько [расстояние]" "how far" сколько@
 go-do: "идти verb" "go (2)" идти|пойти@ verb
 к-чему-то: "к чему-то (B1)" "to (2)" к@ phrase:np@dat
-к-time: "к какому-то времени (?B1)" "by [moment in time]" к@ @dative+
+к-time: "к какому-то времени (?B1)" "by [moment in time]" к@ phrase:np@dat
 думать-над: "думать над чем-то" "(1) about (3)" думать|подумать@inf над@ phrase:np@instr
 Вот-это: "Вот это" "This is" вот@ это@
 пора–не: "пока не" "until" пока@ any не@
@@ -208,7 +212,7 @@ go-do: "идти verb" "go (2)" идти|пойти@ verb
 за-acc: "за (for)" "for (2)" за@ phrase:np@acc
 за-что: "за что" "for what reason" за@ что@
 то-что: "то что" "that, which" тот@n ,@ что[that]@
-когда-то: "когда ... то" "when ... then" когда@ any то@
+когда-то: "когда ... то" "when ... ," когда@ any ,@ то@
 то-же: "то же" "the same" тот@ же@ самый@
 то-же: "то же" "the same" тот@ же@
 то-же: "то же" "the same" тот@ самый@
@@ -251,7 +255,7 @@ dat-нужен: "(кому-то) нужен TODO:verb phrase, translation" "[som
 купить-чего-то: "покупать чего-то кому-то" "buy [someone] [something]" купить|покупать@ any @dative+ any @accusative+
 dat-adv: "кому-то холодно/..." "[someone] (feel,feels,dat->v) (3->adj)" @dative+ any adv
 dat-adv: "кому-то холодно/..." "[someone] felt (3->adj)" @dative+ быть@past any adv
-кому-то-достаточно: "кому-то достаточно" "[someone] has [something]" phrase:np@dat phrase:много-gen
+кому-то-достаточно: "кому-то достаточно" "(1) has (2)" phrase:np@dat phrase:много-gen
 кому-то-достаточно: "кому-то достаточно" "[someone] does not have [something]" phrase:np@dat не@ phrase:много-gen
 кому-то-достаточно: "кому-то достаточно" "[someone] did not have enough" phrase:np@dat не@ быть@ phrase:много-gen
 dat-удобно: "кому-то удобно" "" 
@@ -320,7 +324,7 @@ in-eyes-of: "'to', as in the eyes of" "to [someone]" #animate@dative
 there-was-none: "не было чего-то" "there was/were none [of something]" не@ быть@ any @genitive+
 there-will-be-none: "не будет чего-то" "there will be no [something]" не@ быть[fut]@3 phrase:np@gen
 there-will-be-none: "не будет чего-то" "there will be no [something]" phrase:np@gen не@ быть[fut]@3
-на-замок: "закрыть на замок" "to lock" закрыть|закрывать|закрытый@ any на@ any замок[lock]@acc
+на-замок: "закрыть на замок" "(lock,locks,locked,1)" закрыть|закрывать|закрытый@ any на@ any замок[lock]@acc
 платить-за: "платить за что-то" "(v) for [something bought]" платить|заплатить@ за@ @accusative+
 платить-за: "платить за что-то" "(5) (v) for [something bought] " за@ @accusative+ any платить|заплатить@ @nominative+
 каким-образом: "каким образом" "how" какой@instrn образ[way]@instr

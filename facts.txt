@@ -339,7 +339,7 @@ grammar: -mascь@genpl, tag: genitive
 дерев--о: tree, pl: trees, inflect: -дерево
 утр--о: morning, pl: mornings, inflect: neu, tag: at-instr, tag: time
 grammar: -друг@instrpl, tag: instrumental
-язык--[lang]: language, pl: languages, inflect: masc
+язык--[lang]: language, pl: languages, inflect: masc, tag: language
 сейчас: now
 урок--: lesson, pl: lessons, inflect: masc
 grammar: oprep@alt
@@ -913,7 +913,7 @@ grammar: -что@prep, tag: prepositional
 сначала: at first
 grammar: -улица@instr, tag: instrumental
 grammar: -о@alt2
-курс--: , inflect: masc, tag: untranslatable
+курс--: course, pl: courses, inflect: masc, tag: untranslatable
 сих: this, tag: untranslatable
 grammar: -сам@m
 зарядк--а: charger, pl: chargers, inflect: femka
