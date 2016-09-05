@@ -1,3 +1,4 @@
+о-prep: "о чем-то (A1)" "about nothing" ни@ о@ что@prep
 о-prep: "о чем-то (A1)" "about [a topic]" о@ phrase:np@prep
 в-час: "в час (частота)" "per [duration]" в@ #time@acc
 в-num-час: "в ... часов (A2)" "at (2) o'clock" в@ #number час[o'clock]@
@@ -31,7 +32,6 @@ at-instr: "утром / вечером / зимой ... (B2)" "in the [time of d
 more-than: "больше / лучше / ... чем" "(1) and (3) than" comp и@ comp any ,@ чем@
 more-than: "больше / лучше / ... чем" "(1) ... than" comp any ,@ чем@
 при-prep: "при ком/чём" "is with [him/her]" при@ @prepositional+
-по-dat: "по кому/чему TODO: split up" "on [something]" по@ @dative+
 сам-по-себе: "сам по себе" "by -self" сам@ по@ себя@dat
 ни-any-кто: "ни ... кто" "no one" ни@ any кто@
 ни-any-что: "ни ... что" "nothing" ни@ any что@
@@ -48,9 +48,9 @@ no-matter-what: "во что бы то ни стало" "no matter what" в@alt 
 так-adv: "так много / долго …" "so (adv)" так@ any adv
 так-adv: "так много / долго …" "so many" так@ any много@
 так-adv: "так много / долго …" "so much" так@ any много[much]@
-по-карману: "по карману" "(1) can afford" dative any по@ карман@dative
-по-карману: "по карману" "can afford" по@ карман@dative dative
-по-карману: "по карману" "can afford" по@ карман@dative
+по-карману: "(кому-то) по карману" "(2->nom) could not afford" быть@ dative не@ по@ карман@dative
+по-карману: "(кому-то) по карману" "(2->nom) can not afford" dative не@ по@ карман@dative
+по-карману: "(кому-то) по карману" "(1->nom) can afford" dative по@ карман@dative
 не-так-ли: "не так ли" "is that not so" не@ так@ ли@
 в-курсе: "в курсе" "(2) not aware of [something]" не@ быть@ в@ курс@prep phrase:np@gen
 в-курсе: "в курсе" "(1) aware of [something]" быть@ в@ курс@prep phrase:np@gen
@@ -69,7 +69,9 @@ no-matter-what: "во что бы то ни стало" "no matter what" в@alt 
 у-кого: "у кого-то (есть) (A1)" "(2) have" у@ phrase:np@gen
 из-gen-departure: "из (откуда) (A1)" "from [point of departure/source]" из@ phrase:np@gen
 из-gen-departure: "из (откуда) (A1)" "from [point of departure/source]" из@ adjective@prep* @locative+
-at-datpl: "по (утрам / вечерам ...) (B1)" "every [day of the week/time of day/season] " по@ #time@datpl
+at-datpl: "по (утрам / вечерам ...) (B1)" "on (2)" по@ #weekday@datpl
+at-datpl: "по (утрам / вечерам ...) (B1)" "at night" по@ ночь@datpl
+at-datpl: "по (утрам / вечерам ...) (B1)" "in the (2)" по@ #time@datpl
 у-кого-location: "у кого-то (место) (A2)" "at [someone]'s location" у@ #animate@genitive
 от-gen-departure: "от (откуда) (A2)" "from (2)" от@ phrase:np@gen
 от-кого-source: "ключ от чего-то" "key to [something]" ключ@ от@ genitive
@@ -122,10 +124,13 @@ hyperbole: "for [time period] - hyperbole " "for [adjective]" phrase:np@instr#ti
 через-time: "через (время) (B1)" "in [time]" через@ phrase:np@acc#time
 на-time: "на (время) (B1)" "for (2)" на@ phrase:np@acc#time
 за-time: "за (время) (B1)" "in [time]" за@ phrase:np@acc
-по-place-of-movement: "по (дороге/улице...) (A2)" "along, through [somewhere]" по@ @dative+
+по-place-of-movement: "по (дороге/улице...) (A2)" "on [somewhere]" по@ phrase:np@dat#on
+по-place-of-movement: "по (дороге/улице...) (A2)" "by [somewhere]" по@ phrase:np@dat#by
+по-place-of-movement: "по (дороге/улице...) (A2)" "through [somewhere]" по@ phrase:np@dat
 по-mode-of-communication: "по (телефону/телевизору....) (A2)" "on [mode of communication]" по@ phrase:np@dat
 как-можно-comp: "как можно (скорее...)" "as (3) as possible" как@ можно@ comp
-по-definition: "по (математике...) (A2)" "по [definition]" по@ dat
+по-definition: "по (математике...) (A2)" "(3) (1)" noun по@ adjective@dat #language
+по-definition: "по (математике...) (A2)" "(1) (4) (2)" adjective@* noun по@ phrase:np@dat
 кому-то-надо: "(кому-то) надо (B1) TODO:verb phrase, translation" "[someone->nom] needs" @dative+ надо@
 кому-то-надо: "(кому-то) надо (B1) TODO:verb phrase, translation" "[someone->nom] should not have" не@ надо@ быть@ @dative+
 кому-то-надо: "(кому-то) надо (B1) TODO:verb phrase, translation" "[someone->nom] should have" надо@ быть@ @dative+
@@ -234,7 +239,7 @@ need-to-be: "нужно (passive)" "[someone] (need,needs,1->v) (3)" @dative+ н
 need-to-be: "нужно (passive)" "[something] (need,needs,accusative->v) to be (3)" accusative нужно@ verb
 чтобы-that: "хочешь, чтобы [that]" "(1) ... so that (4) not (6->)" verb any ,@ чтобы@ #animate не@ past
 чтобы-that: "хочешь, чтобы [that]" "(1) ... that (4) (5->)" verb any ,@ чтобы@ #animate any past
-выйти-из: "выйти из" "leave [a building]" выйти@ из@ genitive
+выйти-из: "выйти из" "(get out of,gets out of,got out of,1) [a building]" выйти@ из@ phrase:np@gen
 за-городом: "за городом" "in the countryside" за@ город@instr
 за-город: "за город" "to the countryside" за@ город@acc
 сидеть-в-интернете: "сидеть в интернете" "surf online" сидеть@ в@ интернет@prep

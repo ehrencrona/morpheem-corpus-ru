@@ -13,7 +13,7 @@ grammar: femь@nom
 маленьк--ий: small, comp: smaller, super: smallest, inflect: -маленький, mask: adv
 маленьк--ий: , comp: less, inflect: -маленький, mask: allbutcomp
 –: is
-машин--а: car, pl: cars, inflect: fem, tag: tansport
+машин--а: car, pl: cars, inflect: fem, tag: tansport, tag: on
 grammar: masc@nom
 grammar: adj@m
 свитер--: sweater, pl: sweaters, inflect: masc
@@ -36,9 +36,9 @@ grammar: -она@nom
 --она: she, acc: her, inflect: -она, tag: animate
 Маш--а: Маsha, inflect: -улица, tag: animate, mask: pl
 школ--а: school, pl: schools, inflect: fem
-улиц--а: street, pl: streets, inflect: -улица
+улиц--а: street, pl: streets, inflect: -улица, tag: on
 на: on, pos: prep, tag: untranslatable
-газон--: lawn, pl: lawns, inflect: masc
+газон--: lawn, pl: lawns, inflect: masc, tag: on
 работа--ть: work, 3: work, past: worked, prog: working, inflect: ать
 работа--ть[open]: is open, inf: be open, past: was open, pastpl: were open, inflect: ать
 grammar: ать@1, tag: verb
@@ -73,7 +73,7 @@ grammar: it-im-ite@2, tag: verb
 книг--а: book, pl: books, inflect: fem
 чита--ть: read, 3: reads, past: read, prog: reading, inflect: ать, tag: something-to-someone
 пиш--<сать: write, 3: writes, past: wrote, prog: writing, inflect: -писать, tag: something-to-someone, tag: speech
-газет--а: newspaper, pl: newspapers, inflect: fem
+газет--а: newspaper, pl: newspapers, inflect: fem, tag: on
 журнал--: magazine, pl: magazines, inflect: masc
 встреча--ть[meet]: meet, 3: meets, past: met, prog: meeting, inflect: ать
 гуля--ть: take a walk, past: took a walk, prog: taking a walk, inflect: ать
@@ -404,7 +404,7 @@ grammar: егоadj@datm, tag: dative
 grammar: -статья@instr, tag: instrumental
 grammar: -нравиться@1, tag: verb
 яйц--о: egg, pl: eggs, inflect: -яйцо
-голос--: voice, pl: voices, inflect: masc3
+голос--: voice, pl: voices, inflect: masc3, tag: by
 grammar: -стул@pl
 Росси--я: Russia, inflect: -россия, mask: pl
 откро--<ыть: open, 3: opens, past: opened, prog: opening, inflect: -открыть
@@ -480,7 +480,7 @@ grammar: -жить@impr, tag: verb
 странн--ый: strange, adv: strangely, comp: stranger, super: strangest, inflect: ныйadj, mask: short
 grammar: -случай@nom
 grammar: -есть@inf, tag: verb
-мор--е: sea, pl: seas, inflect: -море
+мор--е: sea, pl: seas, inflect: -море, tag: by
 коротк--ий: short, adv: shortly, comp: shorter, super: shortest, inflect: adj
 кофе: coffee, pl: coffees, pos: n, tag: uncountable
 grammar: -есть@pastm, tag: verb
@@ -618,7 +618,7 @@ grammar: -наш@m
 согласн--ый: agreeing, inflect: ныйadj
 grammar: adj@prepn, tag: prepositional
 grammar: adj@shortf
-паспорт--: passport, pl: passports, inflect: masc3
+паспорт--: passport, pl: passports, inflect: masc3, tag: by
 касс--а: cash register, pl: cash registers, inflect: fem
 grammar: adj@instrpl, tag: instrumental
 медленн--ый: slow, adv: slowly, comp: slower, super: slowest, inflect: adj, mask: short
@@ -743,7 +743,7 @@ grammar: -казаться@pastpl, tag: verb
 ключ--: key, pl: keys, inflect: -борщ
 чтобы: in order to, pos: conj
 grammar: sya@imprpl, tag: verb
-задани--е: task, pl: tasks, inflect: neuie
+задани--е: exercise, pl: exercises, inflect: neuie
 домашн--ий: domestic, inflect: -домашний, mask: nonstd
 чуть-чуть: a little bit, pos: adv
 grammar: neuie@genpl, tag: genitive
@@ -790,7 +790,7 @@ grammar: neuie@preppl, tag: prepositional
 образ--[image]: image, pl: images, inflect: masc
 вокруг: around, pos: prep
 власт--ь: power, pl: powers, inflect: femь
-воздух--: air, pl: airs, inflect: masc
+воздух--: air, pl: airs, inflect: masc, tag: by
 проси--ть: ask, 3: asks, past: asked, prog: asking, inflect: -спросить
 собственн--ый: own, inflect: ныйadj, mask: shortandadv
 пыта--ться: try, 3: tries, past: tried, prog: trying, inflect: -пытаться
@@ -806,7 +806,7 @@ grammar: -спросить@1, tag: verb
 лишь: only
 значи--ть: mean, 3: means, past: meant, prog: meaning, inflect: -значить
 grammar: -мочь@pastm, tag: verb
-дорог--а: road, pl: roads, inflect: fem
+дорог--а: road, pl: roads, inflect: fem, tag: on
 главн--ый: main, inflect: ныйadj, mask: nonstd
 вместе: together, pos: adv
 grammar: -парень@nom
@@ -830,7 +830,7 @@ grammar: -пытаться@impr, tag: verb
 стен--а: wall, pl: walls, inflect: fem
 тел--о: body, pl: bodies, inflect: neu
 grammar: adj@comp
-пут--ь: way, pl: ways, inflect: -путь
+пут--ь: way, pl: ways, inflect: -путь, tag: on
 остаю--<ваться: remain, 3: remains, past: remained, prog: remaining, inflect: -оставаться
 поэтому: that's why, pos: conj
 grammar: sya@pastm, tag: verb
@@ -1005,7 +1005,7 @@ grammar: -идти@pastn, tag: verb
 grammar: -тот@genpl, tag: genitive
 grammar: -надеяться@2, tag: verb
 правил--о: rule, pl: rules, inflect: neu
-животн--ый: animal, pl: animals, inflect: adj, mask: shortandadv
+животн--ый: living, inflect: adj, mask: shortandadv
 grammar: -случиться@3pl, tag: verb
 по--<еть: sing, 3: sings, past: sang, prog: singing, inflect: -петь
 продавц--<ец: salesperson, pl: salespersons, inflect: -отец
@@ -1150,7 +1150,7 @@ grammar: -взять@inf, tag: verb
 ли: whether
 grammar: -выйти@pastn, tag: verb
 ведь: after all
-лиц--о: face, pl: faces, inflect: neu
+лиц--о: face, pl: faces, inflect: neu, tag: by
 сторон--а: side, pl: sides, inflect: fem
 grammar: -мочь@pastf, tag: verb
 grammar: -сто@pl
@@ -1308,7 +1308,6 @@ phrase: more-than
 phrase: при-prep
 поверн--уть: turn, 3: turns, past: turned, prog: turning, inflect: -повернуть
 предлага--ть: offer, 3: offer, past: offered, prog: offering, inflect: ать, tag: speech
-phrase: по-dat
 поворот--: turn, pl: turns, inflect: masc, tag: at
 поворачива--ть: turn, 3: turn, past: turned, prog: turning, inflect: ать
 пропусти--ть: miss, 3: misses, past: missed, prog: missing, inflect: -простить
@@ -1694,13 +1693,14 @@ phrase: seeyou
 phrase: готов-к
 phrase: face-to-face
 phrase: жениться-на
-grammar: -украсть@pastm
-grammar: -сосед@preppl
+grammar: -украсть@pastm, tag: verb
+grammar: -сосед@preppl, tag: prepositional
 grammar: -высокий@comp
 grammar: -долгий@comp
-grammar: -жена@accpl
-grammar: -сердце@genpl
+grammar: -жена@accpl, tag: accusative
+grammar: -сердце@genpl, tag: genitive
 grammar: -тёплый@adv
-grammar: -озеро@genpl
-grammar: -море@genpl
-grammar: -бросить@impr
+grammar: -озеро@genpl, tag: genitive
+grammar: -море@genpl, tag: genitive
+grammar: -бросить@impr, tag: verb
+grammar: neuadjoe@preppl, tag: prepositional
