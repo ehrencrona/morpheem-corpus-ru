@@ -234,7 +234,7 @@ grammar: -ты@dat, tag: dative
 ед--а: food, pl: foods, inflect: fem
 grammar: fem@instr, tag: instrumental
 интернет--: internet, inflect: masc, tag: on
-радио: radio, pl: radios, pos: n
+радио: radio, pl: radios, inflect: uninflected, mask: pl
 котор--ый: that, inflect: adj, mask: nonstd
 музык--а: music, inflect: fem, mask: pl
 grammar: yo-yosh-yot@1pl, tag: verb
@@ -522,7 +522,7 @@ grammar: -есть@inf, tag: verb
 phrase: чем-чем
 мор--е: sea, pl: seas, inflect: -море, tag: by
 коротк--ий: short, adv: shortly, comp: shorter, super: shortest, inflect: adj
-кофе: coffee, pl: coffees, pos: n, tag: uncountable
+кофе: coffee, pl: coffees, inflect: uninflected, tag: uncountable, mask: pl
 grammar: -есть@pastm, tag: verb
 grammar: -дать@2, tag: verb
 phrase: без-gen
@@ -535,11 +535,11 @@ phrase: в-пути
 церкв--<овь: church, pl: churches, inflect: -церковь
 grammar: it-im-ite@1pl, tag: verb
 grammar: -дать@1, tag: verb
-такси: taxi, pl: taxis, pos: n, tag: tansport
+такси: taxi, pl: taxis, inflect: uninflected, tag: tansport, mask: pl
 phrase: ни-не
 туалет--: toilet, pl: toilets, inflect: masc
 grammar: -пить@2, tag: verb
-метро: subway, pl: subways, pos: n
+метро: subway, pl: subways, inflect: uninflected, mask: pl
 добр--ый: good, comp: better, super: best, inflect: adj, mask: adv
 домой: home
 phrase: так-adv
@@ -576,8 +576,8 @@ grammar: -ждать@3pl, tag: verb
 grammar: adj@genf, tag: genitive
 весёл--ый: fun, inflect: -весёлый
 phrase: справа-от-чего-то
-кино: cinema, pl: cinemas, pos: n
-кино[film]: movie, pl: movies, pos: n
+кино: cinema, pl: cinemas, inflect: uninflected, mask: pl
+кино[film]: movie, pl: movies, inflect: uninflected, mask: pl
 grammar: neu@nom
 факультет--: faculty, pl: faculties, inflect: masc, tag: at
 грустн--ый: sad, adv: sadly, comp: sadder, super: saddest, inflect: ныйadj
@@ -601,7 +601,7 @@ phrase: среди-чего-то
 автобус--: bus, pl: buses, inflect: masc, tag: tansport
 grammar: -большой@comp
 grammar: -весь@m
-кафе: cafe, pl: cafes, pos: n
+кафе: cafe, pl: cafes, inflect: uninflected
 привет--: hello, inflect: masc, mask: pl
 phrase: для-чего-то
 grammar: abstr-soft-final@instr, tag: instrumental
@@ -1355,7 +1355,7 @@ phrase: с-тех-пор
 grammar: -хотеть@inf, tag: verb
 хотя: even though
 земл--я: earth, pl: earths, inflect: -земля
-меню: menu, pl: menus, pos: n
+меню: menu, pl: menus, inflect: uninflected, mask: pl
 phrase: no-matter-what
 grammar: -хотеть@1pl, tag: verb
 grammar: -жениться@1, tag: verb
