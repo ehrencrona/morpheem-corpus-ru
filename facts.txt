@@ -1170,7 +1170,7 @@ grammar: -хотеть@inf, tag: verb
 меню: menu, pl: menus, pos: n
 grammar: -хотеть@1pl, tag: verb
 grammar: -жениться@1, tag: verb
-выходн--ой: day off, inflect: ойadj, pos: n, tag: time, mask: shortandadv
+выходн--ой: day off, inflect: ойadj, tag: time, mask: shortandadv
 сдела--ть: do, 3: does, past: did, prog: doing, inflect: ать
 встреча--ться: meet, 3: meets, past: met, prog: meeting, inflect: -пытаться
 grammar: -один@accn, tag: accusative
@@ -1226,7 +1226,6 @@ phrase: из-gen-departure
 phrase: с-gen
 phrase: у-кого-location
 phrase: от-gen-departure
-phrase: часть-чего-то
 phrase: до-point-of-destination
 phrase: до-какого-то-времени
 phrase: после-чего-то
@@ -1706,13 +1705,13 @@ grammar: -сам@shortpl
 phrase: поздравлять-с-instr
 результат--: result, pl: results, inflect: masc
 phrase: самый-adj
-grammar: -дать@1pl
-grammar: -бояться@1pl
-grammar: -надеяться@1pl
-grammar: -дать@2pl
-grammar: -надеяться@2pl
-grammar: -бояться@2pl
-grammar: -надеяться@3
+grammar: -дать@1pl, tag: verb
+grammar: -бояться@1pl, tag: verb
+grammar: -надеяться@1pl, tag: verb
+grammar: -дать@2pl, tag: verb
+grammar: -надеяться@2pl, tag: verb
+grammar: -бояться@2pl, tag: verb
+grammar: -надеяться@3, tag: verb
 grammar: -весёлый@adv
-grammar: -озеро@datpl
+grammar: -озеро@datpl, tag: dative
 grammar: -молодой@comp
