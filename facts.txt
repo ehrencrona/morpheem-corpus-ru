@@ -698,7 +698,7 @@ grammar: -весь@pl
 ждё--<ать: wait, 3: waits, past: waited, prog: waiting, inflect: -ждать
 grammar: adj@instrn, tag: instrumental
 высок--ий: tall, adv: high up, comp: taller, super: tallest, inflect: -высокий
-долг--ий: long (time), inflect: -долгий, mask: short
+долг--ий: long (time), comp: longer (time), super: longest, inflect: -долгий, mask: short
 голов--а: head, pl: heads, inflect: fem
 grammar: -остаться@inf, tag: verb
 grammar: -остаться@1, tag: verb
@@ -906,7 +906,7 @@ grammar: -год@genpl, tag: genitive
 картин--а: painting, pl: paintings, inflect: fem
 grammar: femяь@preppl, tag: prepositional
 grammar: -становиться@impr, tag: verb
-собира--ться: collect, 3: collects, past: collected, prog: collecting, inflect: -пытаться
+собира--ться: intend to, 3: intends to, past: intended to, prog: intending to, inflect: -пытаться
 плава--ть: swim, 3: swims, past: swam, prog: swimming, inflect: ать
 grammar: -что@prep, tag: prepositional
 либо: either, pos: conj
@@ -1235,7 +1235,6 @@ phrase: от-кого-source
 phrase: около-чего-то
 phrase: далеко-от-чего-то
 phrase: о-prep
-phrase: сколько-время
 наконец: finally, pos: adv
 хоть: though
 phrase: в-час
@@ -1422,7 +1421,7 @@ phrase: тут-и-там
 phrase: друг-другу
 приед--<хать: n/a, inflect: -ехать
 любим--ый: favorite, inflect: adj, mask: adv
-концерт--: n/a, inflect: masc
+концерт--: concert, pl: concerts, inflect: masc
 выгляди--<еть: n/a, inflect: -глядеть
 реша--ться: n/a, inflect: -пытаться
 реши--ться: n/a, inflect: -случиться
@@ -1491,7 +1490,6 @@ phrase: как-зовут
 phrase: play-with
 phrase: за-окном
 phrase: за-стол
-phrase: сколько-distance
 phrase: go-do
 grammar: -сидеть@impr, tag: verb
 phrase: к-чему-то
@@ -1641,7 +1639,6 @@ phrase: совсем-не
 phrase: как-дело
 phrase: до-сих-пор
 phrase: в-любом-случае
-phrase: больше-всего
 phrase: прежде-всего
 phrase: ещё-один
 phrase: ещё-нет
@@ -1704,3 +1701,18 @@ grammar: -озеро@genpl, tag: genitive
 grammar: -море@genpl, tag: genitive
 grammar: -бросить@impr, tag: verb
 grammar: neuadjoe@preppl, tag: prepositional
+grammar: -сам@shortpl
+поздравля--ть: congratulate, 3: congratulates, past: congratulated, prog: congratulating, inflect: ать
+phrase: поздравлять-с-instr
+результат--: result, pl: results, inflect: masc
+phrase: самый-adj
+grammar: -дать@1pl
+grammar: -бояться@1pl
+grammar: -надеяться@1pl
+grammar: -дать@2pl
+grammar: -надеяться@2pl
+grammar: -бояться@2pl
+grammar: -надеяться@3
+grammar: -весёлый@adv
+grammar: -озеро@datpl
+grammar: -молодой@comp
