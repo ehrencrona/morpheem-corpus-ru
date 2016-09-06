@@ -28,7 +28,8 @@ gen-possession: "что-то чьё-то" "of [owner]" phrase:np@gen#animate
 много-gen: "amount of чего-то (A1)" "enough [something]" достаточный@adv phrase:np@gen
 много-gen: "amount of чего-то (A1)" "(1) (2)" мало|мало[few]@ phrase:np@gen
 без-gen: "без чего-то (B1)" "without [something]" без@ phrase:np@gen
-at-instr: "утром / вечером / зимой ... (B2)" "in the [time of day/season]" #at-instr@instrumental
+at-instr: "утром / вечером / зимой ... (B2)" "(1) (2)" adjective@instrumental! #at-instr@instrumental
+at-instr: "утром / вечером / зимой ... (B2)" "in the (1)" #at-instr@instrumental
 more-than: "больше / лучше / ... чем" "(1) and (3) than" comp и@ comp any ,@ чем@
 more-than: "больше / лучше / ... чем" "(1) ... than" comp any ,@ чем@
 при-prep: "при ком/чём" "is with [him/her]" при@ @prepositional+
@@ -172,6 +173,7 @@ hyperbole: "for [time period] - hyperbole " "for [adjective]" phrase:np@instr#ti
 в-place: "в (где-то) (A1)" "in [place]" в@ phrase:np@loc
 на-place: "на (где-то)" "on the back" на@ спина@prep
 на-place: "на (где-то)" "at [a place]" на@ phrase:np@prep#at
+на-place: "на (где-то)" "in (2)" на@ phrase:np@prep#in
 на-place: "на (где-то)" "on [a place]" на@ phrase:np@prep
 на-place: "на (где-то)" "at [a place]" на@ @locative+
 на-place: "на (где-то)" "on [a place]" на@ @locative+
@@ -246,7 +248,7 @@ need-to-be: "нужно (passive)" "[something] (need,needs,accusative->v) to be
 сидеть-в-интернете: "сидеть в интернете" "surf online" сидеть@ в@ интернет@prep
 на-самом-деле: "на самом деле" "in fact" в@std самый@prepn дело@prep
 на-самом-деле: "на самом деле" "in fact" на@ самый@prepn дело@prep
-смотреть-на: "смотреть на" "look at [something]" посмотреть|смотреть@ на@ @accusative+
+смотреть-на: "смотреть на" "look at [something]" посмотреть|смотреть|смотреть[look]@ на@ phrase:np@acc
 про-что-то: "про что-то" "about [something]" про@ phrase:np@acc
 играть-в-игру: "играть в игру" "play [a game]" играть@ в@ accusative
 dat-нужен: "(кому-то) нужен TODO:verb phrase, translation" "[someone->nom] does not need" phrase:np@dat не@ нужный@
@@ -255,7 +257,7 @@ dat-нужен: "(кому-то) нужен TODO:verb phrase, translation" "[som
 датьetc-dat: "дать/... кому-то что-то" "(1) [someone] [something]" #something-to-someone phrase:np@dat phrase:np@acc
 датьetc-dat: "дать/... кому-то что-то" "(1) [something] to [someone]" phrase:np@acc any #something-to-someone any phrase:np@dat
 датьetc-dat: "дать/... кому-то что-то" "for [someone] (3) [something]" phrase:np@dat any #something-to-someone any phrase:np@acc
-датьetc-dat: "дать/... кому-то что-то" "(1) to [someone]" #something-to-someone any phrase:np@dat
+датьetc-dat: "дать/... кому-то что-то" "(1) to [someone]" #something-to-someone phrase:np@dat
 датьetc-dat: "дать/... кому-то что-то" "to [someone] ... (3)" phrase:np@dat any #something-to-someone
 купить-чего-то: "покупать чего-то кому-то" "buy [something] for [someone]" купить|покупать@ any @accusative+ any @dative+
 купить-чего-то: "покупать чего-то кому-то" "buy [someone] [something]" купить|покупать@ any @dative+ any @accusative+
@@ -315,7 +317,6 @@ dat-платить: "кому-то платить" "(1->nom) gets paid" @dative+
 в-году: "в котором часу, в этом году (loc)" "at what time" в@ который[which]@ час@
 в-году: "в котором часу, в этом году (loc)" "[adj] [time period]" в@ adjective@prepositional locative
 в-время: "на неделе/выходных ..." "[time]" на@ phrase:np@prep#time
-как-тебе: "как тебе (нравится)" "how (do,does,did,2->v) [someone] like" как@ #animate@dative
 intended-for: "кому-то (intended for)" "intended for [someone]" dative
 in-eyes-of: "'to', as in the eyes of" "to [someone]" #animate@dative
 прийти-в-голову: "прийти в голову" "cross [someone]'s mind" @dative+ any прийти|приходить@ в@ голова@accusative
@@ -404,3 +405,5 @@ face-to-face: "face to face" "face to face" лицо@instr к@ лицо@dat
 жениться-на: "жениться на" "marry (3)" жениться@ на@ phrase:np@prep
 поздравлять-с-instr: "поздравлять с чем-то" "congratulations (3)" поздравлять@ с@ phrase:np@instr
 самый-adj: "самый большой" "the most (2)" самый@ adjective
+двух-шагах: "в двух шагах" "а stone's throw from" в@ два@preppl шаг@preppl от@ phrase:np@gen
+скажите: "скажите пожалуйста" "could you please tell me" сказать@imprpl ,@ пожалуйста@ ,@

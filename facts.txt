@@ -160,7 +160,7 @@ grammar: y-esh-et@2pl, tag: verb
 дом--: house, pl: houses, inflect: -лес
 работ--а: work, pl: jobs, inflect: fem, tag: at
 дн--<ень: day, pl: days, inflect: -день, tag: time, tag: weekday
-кажд--ый: every, inflect: adj, mask: nonstd
+кажд--ый: every, inflect: adj, tag: time, mask: nonstd
 grammar: -день@nom
 grammar: -что@nom
 grammar: adj@prepm, tag: prepositional
@@ -719,7 +719,7 @@ grammar: -тот@instrm, tag: instrumental
 grammar: -неделя@genpl, tag: genitive
 зов--<<вать[invite]: invite to join, past: invited to join, prog: inviting to join, inflect: -звать
 grammar: -остаться@3pl, tag: verb
-вс--<есь: all, inflect: -весь, mask: nonstd
+вс--<есь: all, inflect: -весь, tag: time, mask: nonstd
 вс--ё: everything, inflect: -весь-everything, mask: pl
 вс--е[everyone]: everyone, inflect: -весь-everyone, tag: animate, mask: sg
 grammar: -казаться@pastm, tag: verb
@@ -787,7 +787,6 @@ grammar: neuie@preppl, tag: prepositional
 сердц--е: heart, pl: hearts, inflect: -сердце
 успех--: success, pl: successes, inflect: masc
 образ--[way]: way of doing something, pl: ways of doing something, inflect: masc
-образ--[image]: image, pl: images, inflect: masc
 вокруг: around, pos: prep
 власт--ь: power, pl: powers, inflect: femь
 воздух--: air, pl: airs, inflect: masc, tag: by
@@ -840,7 +839,7 @@ grammar: -mascь@gen, tag: genitive
 совершенн--ый: complete, adv: completely, comp: more completer, super: most complete, inflect: ныйadj
 grammar: -стоять@inf, tag: verb
 grammar: -весь@genpl, tag: genitive
-цел--ый: whole, adv: wholly, inflect: adj, mask: comp
+цел--ый: whole, adv: wholly, inflect: adj, tag: time, mask: comp
 кроме: apart from, pos: prep
 grammar: -сын@genpl, tag: genitive
 grammar: -мы@instrpl, tag: instrumental, tag: animate
@@ -1345,7 +1344,7 @@ phrase: в-пути
 хвати--ть: be enough, 3: is enough, past: was enough, prog: being enough, inflect: -хватить
 phrase: столько-всего
 замужем: married (about a woman)
-кухн--я: kitchen, pl: kitchens, inflect: -кухня
+кухн--я: kitchen, pl: kitchens, inflect: -кухня, tag: in
 заплати--ть: pay, 3: pays, past: paid, prog: paying, inflect: -хватить
 phrase: нет-равных
 phrase: ни-не
@@ -1580,7 +1579,6 @@ phrase: dat-платить
 phrase: верить-в
 phrase: в-году
 phrase: в-время
-phrase: как-тебе
 phrase: intended-for
 phrase: in-eyes-of
 phrase: прийти-в-голову
@@ -1715,3 +1713,5 @@ grammar: -надеяться@3, tag: verb
 grammar: -весёлый@adv
 grammar: -озеро@datpl, tag: dative
 grammar: -молодой@comp
+phrase: двух-шагах
+phrase: скажите
