@@ -116,7 +116,6 @@ grammar: -свой@m
 grammar: -жить@3pl, tag: verb
 тво--й: your, inflect: -свой, tag: possessive, mask: nonstd
 телефон--: phone, pl: phones, inflect: masc
-телефон--[number]: phone number, pl: phone numbers, inflect: masc
 покупа--ть: buy, 3: buy, past: bought, prog: buying, inflect: ать, tag: something-to-someone
 grammar: adj@accf, tag: accusative
 стать--я: article, pl: articles, inflect: -статья
@@ -174,7 +173,7 @@ grammar: -наш@pl
 grammar: -этот@pl
 жив--<ть: live, 3: lives, past: lived, prog: living, inflect: -жить
 люд--ь: , pl: people, inflect: -люди, mask: sg
-ошибк--а: mistake, pl: mistakes, inflect: femka
+ошибк--а: mistake, pl: mistakes, inflect: femka, tag: by
 grammar: adj@preppl, tag: prepositional
 grammar: yo-yosh-yot@3, tag: verb
 grammar: -друг@pl
@@ -234,7 +233,7 @@ grammar: -ты@dat, tag: dative
 ед--а: food, pl: foods, inflect: fem
 grammar: fem@instr, tag: instrumental
 интернет--: internet, inflect: masc, tag: on
-радио: radio, pl: radios, inflect: uninflected, mask: pl
+радио--: radio, pl: radios, inflect: uninflected, mask: pl
 котор--ый: that, inflect: adj, mask: nonstd
 музык--а: music, inflect: fem, mask: pl
 grammar: yo-yosh-yot@1pl, tag: verb
@@ -522,7 +521,7 @@ grammar: -есть@inf, tag: verb
 phrase: чем-чем
 мор--е: sea, pl: seas, inflect: -море, tag: by
 коротк--ий: short, adv: shortly, comp: shorter, super: shortest, inflect: adj
-кофе: coffee, pl: coffees, inflect: uninflected, tag: uncountable, mask: pl
+кофе--: coffee, pl: coffees, inflect: uninflected, tag: uncountable, mask: pl
 grammar: -есть@pastm, tag: verb
 grammar: -дать@2, tag: verb
 phrase: без-gen
@@ -535,11 +534,11 @@ phrase: в-пути
 церкв--<овь: church, pl: churches, inflect: -церковь
 grammar: it-im-ite@1pl, tag: verb
 grammar: -дать@1, tag: verb
-такси: taxi, pl: taxis, inflect: uninflected, tag: tansport, mask: pl
+такси--: taxi, pl: taxis, inflect: uninflected, tag: tansport, mask: pl
 phrase: ни-не
 туалет--: toilet, pl: toilets, inflect: masc
 grammar: -пить@2, tag: verb
-метро: subway, pl: subways, inflect: uninflected, mask: pl
+метро--: subway, pl: subways, inflect: uninflected, tag: tansport, mask: pl
 добр--ый: good, comp: better, super: best, inflect: adj, mask: adv
 домой: home
 phrase: так-adv
@@ -576,8 +575,8 @@ grammar: -ждать@3pl, tag: verb
 grammar: adj@genf, tag: genitive
 весёл--ый: fun, inflect: -весёлый
 phrase: справа-от-чего-то
-кино: cinema, pl: cinemas, inflect: uninflected, mask: pl
-кино[film]: movie, pl: movies, inflect: uninflected, mask: pl
+кино--: cinema, pl: cinemas, inflect: uninflected, mask: pl
+кино--[film]: movie, pl: movies, inflect: uninflected, mask: pl
 grammar: neu@nom
 факультет--: faculty, pl: faculties, inflect: masc, tag: at
 грустн--ый: sad, adv: sadly, comp: sadder, super: saddest, inflect: ныйadj
@@ -601,7 +600,7 @@ phrase: среди-чего-то
 автобус--: bus, pl: buses, inflect: masc, tag: tansport
 grammar: -большой@comp
 grammar: -весь@m
-кафе: cafe, pl: cafes, inflect: uninflected
+кафе--: cafe, pl: cafes, inflect: uninflected
 привет--: hello, inflect: masc, mask: pl
 phrase: для-чего-то
 grammar: abstr-soft-final@instr, tag: instrumental
@@ -757,7 +756,7 @@ grammar: -мочь@pastpl, tag: verb
 phrase: из-material
 grammar: -словарь@nom
 стои--ть: cost, 3: costs, past: did cost, prog: costing, inflect: -стоить
-скаж--<зать: say, 3: saith, past: said, prog: saying, inflect: -сказать, tag: something-to-someone, tag: speech
+скаж--<зать: say, 3: says, past: said, prog: saying, inflect: -сказать, tag: speech
 вод--а: water, pl: waters, inflect: fem, tag: uncountable
 phrase: из-out-of
 так--ой: such, inflect: ойadj, mask: nonstd
@@ -784,7 +783,7 @@ grammar: -весь@pl
 ждё--<ать: wait, 3: waits, past: waited, prog: waiting, inflect: -ждать
 phrase: домашнее-задание
 grammar: adj@instrn, tag: instrumental
-высок--ий: tall, adv: high up, comp: taller, super: tallest, inflect: -высокий
+высок--ий: tall, adv: high up, comp: higher up, super: tallest, inflect: -высокий
 долг--ий: long (time), comp: longer (time), super: longest, inflect: -долгий, mask: short
 голов--а: head, pl: heads, inflect: fem
 phrase: совсем-не
@@ -1355,7 +1354,7 @@ phrase: с-тех-пор
 grammar: -хотеть@inf, tag: verb
 хотя: even though
 земл--я: earth, pl: earths, inflect: -земля
-меню: menu, pl: menus, inflect: uninflected, mask: pl
+меню--: menu, pl: menus, inflect: uninflected, mask: pl
 phrase: no-matter-what
 grammar: -хотеть@1pl, tag: verb
 grammar: -жениться@1, tag: verb
@@ -1715,3 +1714,15 @@ grammar: -молодой@comp
 phrase: двух-шагах
 phrase: face-to-face
 phrase: скажите
+grammar: uninflected@acc, tag: accusative
+phrase: на-for
+phrase: на-num-comp
+phrase: к-на
+grammar: -надеяться@3pl
+grammar: -дать@3pl
+grammar: -третий@accf
+grammar: -дерево@accpl
+grammar: -похожий@adv
+grammar: -низкий@comp
+grammar: -дешёвый@comp
+phrase: сесть-на

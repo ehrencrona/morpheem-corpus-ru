@@ -328,7 +328,7 @@
 327 магазин@nom в@std центр@prep (phrase: в-place): The shop is in the center.
 328 университет@nom в@std центр@prep (phrase: в-place): The university is in the center.
 329 в@std университет@prep библиотека@nom (phrase: в-place): There is a library at the university.
-330 в@std университет@prep хороший@f библиотека@nom (phrase: в-place): There is a good library at the university.
+330 в@std университет@prep хороший@f библиотека@nom . (phrase: в-place): There is a good library at the university.
 331 это маленький@m университет@nom: It is a small university
 332 это маленький@m магазин@nom: It is a small shop
 333 это маленький@f площадь@nom .: It's a small square.
@@ -430,7 +430,7 @@
 429 кто@nom сидеть@3 на стул@prep ? (phrase: на-place): Who sits on the chair?
 430 что@nom под кровать@instr ? (phrase: под-чем-то): What's under the bed?
 431 что@nom под стол@instr ? (phrase: под-чем-то): What's under the table?
-432 что@nom под стул@instr (phrase: под-чем-то): What is under the chair?
+
 433 он@nom лежать@3 под дерево@instr в@std парк@prep (phrase: под-чем-то, phrase: в-place): He lies under a tree in the park.
 434 на стол@prep лежать@3 открытый@f газета@nom (phrase: на-place): On the table lies an open newspaper.
 435 телефон@nom лежать@3 под газета@instr (phrase: под-чем-то): The phone is under the newspaper.
@@ -536,7 +536,7 @@
 535 я@nom учитель@nom .: I am a professor.
 536 он@nom миллионер@nom: He is a millionaire.
 537 тут чёрный@m свитер@nom: Here is the black sweater.
-538 в@std университет@prep белый@f машина@nom (phrase: в-place): At the university is a white car.
+
 539 я@nom видеть@1 газон@acc в@std парк@prep (phrase: в-place): I see a lawn in the park.
 540 планшет@nom в@std магазин@prep (phrase: в-place): A tablet is in the store.
 
@@ -1113,7 +1113,7 @@
 1112 где твой@pl деньги@pl ?: Where's your money?
 1113 я@nom давать@1 деньги@accpl друг@dat (phrase: датьetc-dat): I give the money to a friend.
 
-1115 родители@pl давать@3pl деньги@accpl на такси@prep сын@dat . (phrase: датьetc-dat): The parents give their son money for the taxi.
+1115 родители@pl давать@3pl деньги@accpl на такси@acc сын@dat . (phrase: датьetc-dat, phrase: деньги-на): The parents give their son money for the taxi.
 1116 у студент@gen быть@3pl деньги@pl . (phrase: у-кого): The student has money.
 1117 они@pl давать@3pl деньги@accpl свой@datpl родители@datpl . (phrase: датьetc-dat): They give money to their parents.
 1118 я@nom давать@1 шоколад@acc друг@dat (phrase: датьetc-dat): I give chocolate to a friend.
@@ -1174,14 +1174,14 @@
 1173 вот мой@f улица@nom: This is my street.
 1174 люди@pl гулять@3pl в@std парк@prep (phrase: в-place): People walk in the park.
 1175 люди@pl сидеть@3pl на газон@prep . (phrase: на-place): People sit on the lawn.
-1176 — ты@nom дарить@2 Саша@dat подарок@acc на новый@accinanm год@acc ? (phrase: датьetc-dat): – Are you giving Sasha a gift for New Year's?
+1176 — ты@nom дарить@2 Саша@dat подарок@acc на новый@accinanm год@acc ? (phrase: датьetc-dat, phrase: на-for): – Are you giving Sasha a gift for New Year's?
 1177 я@nom он@acc не знать@1: I do not know him.
 
 1179 мама@dat нужный@shortm шоколад@nom (phrase: dat-нужен): Mom needs chocolate.
 1180 студент@dat нужный@shortm этот@m журнал@nom . (phrase: dat-нужен): The student needs this magazine.
 1181 я@dat не нужный@shortm этот@m журнал@nom (phrase: dat-нужен): I do not need this magazine.
 1182 я@dat нужный@shortm этот@m свитер@nom (phrase: dat-нужен): I need this sweater.
-1183 я@dat нужный@shortm телефон[number]@nom магазин@gen . (phrase: dat-нужен, phrase: gen-of): I need the phone number of the shop.
+1183 ты@nom знать@2 номер@acc телефон@gen магазин@gen ? (phrase: gen-of): Do you know the phone number of the shop?
 1184 кто@dat нужный@shortm новый@m планшет@nom ? (phrase: dat-нужен): Who needs a new tablet?
 1185 вот старый@m замок[castle]@nom: This is an old castle.
 1186 в@std мой@prepm город@prep стоять@3 старый@m замок[castle]@nom (phrase: в-place): There is an old castle in my city.
@@ -1431,8 +1431,8 @@
 1430 я@nom слушать@1 радио@acc утро@instr (phrase: at-instr): I listen to the radio in the morning.
 1431 я@nom слушать@1 музыка@acc только в@std интернет@prep (phrase: в-place): I only listen to music on the Internet.
 1432 я@nom не слушать@1 много@pl музыка@gen (phrase: много-gen): I do not listen to much music.
-1433 на радио@prep хороший@f музыка@nom: There is good music on the radio.
-1434 на радио@prep скучный@f музыка@nom: There is boring music on the radio.
+1433 на радио@prep хороший@f музыка@nom (phrase: на-place): There is good music on the radio.
+1434 на радио@prep скучный@f музыка@nom (phrase: на-place): There is boring music on the radio.
 1435 мой@pl друг@pl любить@3pl музыка@acc: My friends love music.
 1436 — я@nom любить@1 слушать@inf музыка@acc . а ты@nom ?: – I love to listen to music. And you?
 1437 утро@instr я@nom давать@1 еда@acc кошка@dat (phrase: at-instr, phrase: датьetc-dat): In the morning I give the cat food.
@@ -1464,7 +1464,7 @@
 1463 мы@datpl не нужный@shortm новый@m учитель@nom (phrase: dat-нужен): We do not need a new professor.
 1464 мы@datpl нельзя открывать@inf окно@accpl (phrase: кому-то-нельзя): We may not open the windows.
 1465 — мы@datpl можно писать@inf в@std книга@preppl ? (phrase: кому-то-можно, phrase: в-place): - Can we write in the books?
-1466 — зачем мы@datpl делать@inf урок@accpl ? (phrase: зачем-dat): - Why do we have to do homework?
+1466 — зачем мы@datpl нужно* делать@inf урок@accpl ? (phrase: зачем-dat): - Why do we have to do homework?
 1467 мы@datpl нужный@shortm новый@m планшет@nom . (phrase: dat-нужен): We need a new tablet.
 1468 ты@nom не давать@2 мы@datpl хороший@genf еда@gen (phrase: датьetc-dat): You're not giving us good food.
 
@@ -1490,7 +1490,7 @@
 1489 сегодня я@nom смотреть@1 фильм@acc: Today, I am watching a movie.
 1490 сегодня мой@m друг@nom смотреть@3 фильм@acc: Today, my friend is watching a movie.
 1491 я@nom не любить@1 слушать@inf новый@accf музыка@acc: I do not like listening to new music.
-1492 ты@nom любить@2 слушать@inf радио@acc ? : You like listening to the radio?
+1492 ты@nom любить@2 слушать@inf радио@acc ?: You like listening to the radio?
 1493 в@std каждый@prepm парк@prep быть@3pl дерево@pl . (phrase: в-place): There are trees in every park.
 1494 в@std каждый@prepm город@prep быть@3 парк@nom (phrase: в-place): There is a park in every city.
 1495 каждый@datm дом@dat нужный@shortf кошка@nom (phrase: dat-нужен): Every house needs a cat.
@@ -1504,8 +1504,8 @@
 
 1504 студент@pl смотреть@3pl телевизор@acc у родители@genpl в@std квартира@prep (phrase: в-place): Students watch television from their parents in an apartment.
 1505 зачем люди@datpl нужный@shortm телевизор@nom ? (phrase: dat-нужен): Why do people need a TV?
-1506 зачем ты@dat телевизор@acc ? (phrase: зачем-dat): Why do you need a TV?
-1507 зачем твой@datf мама@dat новый@accinanm телевизор@acc ? (phrase: зачем-dat): Why does your mother need a new TV?
+1506 зачем ты@dat нужный@m* телевизор@acc ? (phrase: зачем-dat): Why do you need a TV?
+1507 зачем твой@datf мама@dat нужный@m* новый@m телевизор@nom ?* (phrase: зачем-dat): Why does your mother need a new TV?
 1508 я@dat не нужный@shortm телевизор@acc (phrase: dat-нужен): I do not need a TV.
 1509 у ты@gen быть@3 телевизор@acc (phrase: у-кого): You have a TV set.
 1510 мой@pl студент@pl не брать@3pl книга@accpl из библиотека@gen , они@pl читать@3pl всё@acc в@std интернет@prep . (phrase: из-gen-departure, phrase: в-place): My students do not take books from the library, they read everything on the Internet.
@@ -1518,7 +1518,7 @@
 1517 мой@datpl собака@datpl нужно гулять@inf в@std парк@prep (phrase: кому-то-нужно, phrase: в-place): My dogs need to walk in the park.
 1518 твой@datpl кошка@datpl не нужно гулять@inf в@std парк@prep (phrase: кому-то-нужно, phrase: в-place): Your cats do not need to walk in the park.
 1519 я@nom читать@1 статья@accpl из газета@instr мой@datf бабушка@dat . (phrase: датьetc-dat): I read articles from the newspapers to my grandma.
-1520 зачем твой@datpl родители@datpl новый@f дорогой@f машина@nom ? (phrase: зачем-dat): Why do your parents need a new expensive car?
+1520 зачем твой@datpl родители@datpl нужный@shortf* новый@f дорогой@f машина@nom ? (phrase: зачем-dat): Why do your parents need a new expensive car?
 1521 какой@datm друг@dat ты@nom дарить@2 подарок@accpl ? (phrase: датьetc-dat): Which friend do you give gifts to?
 1522 я@nom дарить@1 подарок@accpl хороший@datm друг@dat (phrase: датьetc-dat): I give gifts to a good friend.
 1523 большой@datm город@dat нужный@shortm новый@m парк@nom (phrase: dat-нужен): The big city needs a new park.
@@ -1585,7 +1585,7 @@
 1584 я@nom частый@adv встречать[meet]@1 мой@accanm учитель@acc в@std библиотека@prep . (phrase: в-place): I often meet my teacher in the library.
 1585 он@nom всегда покупать@3 дорогой@accinanpl подарок@accpl: He always buys expensive gifts.
 1586 я@dat нужный@shortm русский@m словарь@nom (phrase: dat-нужен): I need a Russian dictionary.
-1587 зачем ты@dat знать@inf французский@accinanm язык[lang]@acc ? (phrase: зачем-dat): Why do you need to know French?
+1587 зачем ты@dat нужно* знать@inf французский@accinanm язык[lang]@acc ? (phrase: зачем-dat): Why do you need to know French?
 1588 мы@pl очень любить@1pl французский@accf еда@acc: We love French food very much.
 1589 мой@pl родители@pl сейчас в@alt французский@prepm ресторан@prep (phrase: в-place): My parents are now in a French restaurant.
 1590 где в@std этот@prepm город@prep можно найти@inf хороший@accinanm французский@accinanm ресторан@acc ? (phrase: в-place): Where in this city can you find a good French restaurant?
@@ -1614,13 +1614,13 @@
 1613 у все[everyone]@genpl быть@3pl ручка@pl , чтобы писать@inf ? (phrase: у-кого): Does everyone have pens to write?
 1614 у ты@gen быть@3 ручка@nom ? (phrase: у-кого): Do you have a pen?
 1615 мама@nom писать@3 ручка@instr: Mom writes with a pen.
-1616 зачем ты@dat столько ручка@genpl с@std себя@instr , ты@nom писать@2 разный@instrpl ? (phrase: зачем-dat, phrase: с-чем): Why do you need so many pens, do you write with different pens?
+1616 зачем ты@dat нужный@shortn* столько ручка@genpl с@std себя@instr , ты@nom писать@2 разный@instrpl ? (phrase: зачем-dat, phrase: с-чем): Why do you need so many pens, do you write with different pens?
 1617 я@nom частый@adv забывать@1 ручка@accpl дома , когда идти@1 в@std школа@acc: I often forget pens at home when I go to school.
 1618 где студент@pl покупать@3pl ручка@accpl ?: Where do students buy pens?
 1619 она@nom слушать@3 радио@acc на английский@prepm (phrase: на-языке): She listens to the radio in English.
 1620 я@nom смотреть@1 фильм@accpl на русский@prepm (phrase: на-языке): I watch movies in Russian.
 1621 твой@m преподаватель@nom говорить@3 на английский@prepm ? (phrase: на-языке): Does your professor speak English?
-1622 зачем вы@datpl знать@inf английский@accinanm ? (phrase: зачем-dat): Why do you need to know English?
+1622 зачем вы@datpl нужно* знать@inf английский@accinanm ? (phrase: зачем-dat): Why do you need to know English?
 1623 в@std этот@prepm университет@prep студент@pl хороший@adv говорить@3pl на английский@prepm (phrase: на-языке, phrase: в-place): Students speak English well in this university.
 1624 мой@datf мама@dat на работа@prep нужный@shortm английский@m (phrase: на-place, phrase: dat-нужен): My Mom needs English at work.
 1625 в@std библиотека@prep быть@3pl книга@pl на английский@prepm ? (phrase: на-языке, phrase: в-place): Are there any books in English in the library?
@@ -2013,7 +2013,7 @@
 2012 о@std школа@prep мы@pl с@std она@instralt не говорить@pastpl . (author: sergei, phrase: говорить-с, phrase: о-prep, phrase: с-чем): We did not talk to her about school.
 2013 о@std наш@preppl работа@preppl писать@3pl отличный@accf статья@acc (author: sergei, phrase: о-prep): They are writing a great article about our works.
 2014 этот@f книга@nom о@std страна@prep , в@std который@prepf я@nom жить@1 (author: sergei, phrase: о-prep, phrase: в-place): This book is about the country I live in.
-2015 на радио@prep говорить@3pl о@std погода@prep на сегодня (author: sergei, phrase: о-prep): They are talking about the weather for today on the radio.
+2015 на радио@prep говорить@3pl о@std погода@prep на сегодня (author: sergei, phrase: о-prep, phrase: на-place): They are talking about the weather for today on the radio.
 2016 словарь@nom говорить@3 мы@datpl о@std проблема@preppl с@std этот@instrm слово@instr (author: sergei, phrase: с-чем, phrase: о-prep, phrase: dat-speech): The dictionary tells us about the problems with this word.
 2017 он@nom даже гулять@3 утро@instr перед работа@instr (author: sergei, phrase: at-instr, phrase: перед-time): He even walks in the morning before work.
 2018 даже маленький@m мальчик@nom мочь@3 написать@inf письмо@acc свой@datpl родители@datpl . (author: sergei, phrase: датьetc-dat): Even the little boy can write a letter to his parents.
@@ -2116,7 +2116,7 @@
 2115 ты@nom знать@2 , сколько@pl стоить@3 этот@f квартира@nom ? (author: pasha): Do you know how much this apartment costs?
 2116 сколько@pl стоить@3 обед@nom в@std твой@prepm университет@prep ? (author: pasha, phrase: в-place): How much does lunch cost at your university?
 2117 не стоить[should]@3 гулять@inf в@std этот@prepm парк@prep ! в@std он[it]@prep всегда много@pl странный@genpl люди@genpl . (author: pasha, phrase: в-place, phrase: много-gen): You shouldn't walk around in this park! There is always a lot of strange people in it.
-2118 не нужно дарить@inf Маша@dat подарок@acc на новый@accinanm год@acc . она@nom не любить@3 подарок@accpl . (author: pasha, phrase: датьetc-dat): No need to give Masha a gift for New Year's. She doesn't like gifts.
+2118 не нужно дарить@inf Маша@dat подарок@acc на новый@accinanm год@acc . она@nom не любить@3 подарок@accpl . (author: pasha, phrase: датьetc-dat, phrase: на-for): No need to give Masha a gift for New Year's. She doesn't like gifts.
 2119 я@dat нужный@shortm красивый@m подарок@nom . сколько@pl он@nom стоить@3 в@std этот@prepm магазин@prep ? (author: pasha, phrase: в-place, phrase: dat-нужен): I need a nice gift. How much does it cost in this store?
 2120 мой@f мама@nom всегда покупать@3 сувенир@accpl (author: pasha): My Mom always buys souvenirs.
 2121 не нужно покупать@inf я@dat дорогой@accinanpl сувенир@accpl (author: pasha, phrase: купить-чего-то): You do not need to buy me expensive souvenirs.
@@ -2162,7 +2162,7 @@
 2161 закрывать@imprpl дверь@acc , пожалуйста (author: andreas): Close the door, please.
 2162 сказать@imprpl , пожалуйста , где центр@nom город@gen ? (author: andreas, phrase: скажите): Please tell me where the city center is.
 2163 ты@dat нравиться@3 мой@f новый@f сумка@nom ? (author: andreas, phrase: dat-нравится): Do you like my new bag?
-2164 зачем ты@dat такой@f большой@f сумка@nom ? (author: pasha, phrase: зачем-dat, phrase: such-nice): Why do you have such a big bag?
+2164 зачем ты@dat нужный@shortf* такой@f большой@f сумка@nom ? (author: pasha, phrase: зачем-dat, phrase: such-nice): Why do you have such a big bag?
 2165 показать@imprpl я@dat , пожалуйста , свой@accf квартира@acc в@std центр@prep (author: pasha, phrase: в-place, phrase: датьetc-dat): Please show me your apartment in the center.
 2166 показать@imprpl мы@datpl где можно гулять@inf с@std собака@instr (author: pasha, phrase: датьetc-dat, phrase: с-чем): Show us where we can walk the dog.
 
@@ -2238,7 +2238,7 @@
 2237 иногда он@nom открывать@3 весь@accinanpl дверь@accpl в@std дом@prep , когда на улица@prep жаркий@adv . (author: sergei, phrase: в-place, phrase: на-place): Sometimes he opens all doors in the house.
 2238 иногда я@nom слушать@1 радио@acc или телевизор@acc (author: sergei): I sometimes listen to the radio or TV.
 2239 иногда я@nom в@std библиотека@prep . (author: sergei, phrase: в-place): Sometimes I'm at the library.
-2240 мама@nom говорить@3 мы@datpl не играть@inf с@std собака@instrpl на улица@prep . (author: sergei, phrase: на-place, phrase: датьetc-dat, phrase: dat-speech, phrase: с-чем): Mom tells us not to play with the dogs on the street.
+2240 мама@nom говорить@3 мы@datpl не играть@inf с@std собака@instrpl на улица@prep . (author: sergei, phrase: на-place, phrase: dat-speech, phrase: с-чем): Mom tells us not to play with the dogs on the street.
 2241 иногда я@nom забывать@1 свой@accinanm дом@acc и улица@acc (author: sergei): Sometimes I forget his house and street.
 
 2243 иногда погода@nom дарить@3 мы@datpl отличный@accinanm день@acc (author: sergei, phrase: датьetc-dat): Sometimes the weather gives us a great day.
@@ -2260,7 +2260,7 @@
 2259 я@nom не любить@1 думать@inf о@std работа@prep дома (author: sergei, phrase: о-prep): I do not like to think about work at home.
 
 
-2262 как я@dat не думать@inf о@std проблема@preppl ? (author: sergei, phrase: о-prep): How can I not think about the problems?
+2262 как я@dat не думать@inf о@std проблема@preppl ? (author: sergei, phrase: о-prep, phrase: dat-speech): How can I not think about the problems?
 2263 он@nom говорить@3 мы@datpl думать@inf только о@std хороший@prepn вещь@preppl* . (author: sergei, phrase: о-prep, phrase: dat-speech): He tells us to only think about good things.
 
 2265 я@nom не знать@pastm , что@acc думать@inf . (author: sergei): I did not know what to think.
@@ -2289,7 +2289,6 @@
 2288 у вы@genpl на окно@prep нет[none] место[space]@gen для штора@genpl (author: sergei, phrase: у-кого, phrase: на-place, phrase: для-чего-то): There is no space for curtains by the windows.
 2289 его нога@pl не мочь@3pl больше[longer]@comp идти@inf (author: sergei): His feet can no longer walk.
 2290 у я@gen быть@3pl нога@pl , и у ты@gen они@pl быть@3pl . пойти@1pl пешком ! зачем мы@datpl такси@nom ? (author: sergei, phrase: у-кого, phrase: зачем-dat): You have legs, and so do you. Let's go by foot! Why do we need a taxi?
-
 
 
 2293 она@nom писать@3 так плохой@adv , что[that] казаться@3 будто она@nom писать@3 свой@instrpl нога@instrpl (author: sergei): She writes so badly it seems like she was writing with her feet.
@@ -2350,7 +2349,7 @@
 2348 это хороший@f школа@nom (author: sergei): It is a good school.
 2349 сегодня отличный@m день@nom , я@nom гулять@1 на улица@prep (author: sergei, phrase: на-place): Today is a great day, I am walking on the street.
 2350 кто@nom твой@pl родители@pl ? (author: sergei): Who are your parents?
-2351 я@nom работать@1 на твой@accanpl родители@accpl (author: sergei): I work for your parents.
+2351 я@nom работать@1 на твой@accanpl родители@accpl (author: sergei, phrase: на-for): I work for your parents.
 2352 это хороший@f школа@nom ? (author: andreas): Is it a good school?
 2353 я@nom в@std школа@prep (author: andreas, phrase: в-place): I am at school.
 2354 она@nom в@std университет@prep (author: andreas, phrase: в-place): She is at the university.
@@ -2480,7 +2479,7 @@
 2478 ты@nom говорить@2 , что[that] это скучный@accinanm фильм@acc ? (author: sergei): Are you saying that it is a boring movie?
 2479 она@nom говорить@3 с@alt свой@instrpl дети@instrpl на разный[various]@preppl язык[lang]@preppl . (author: sergei, phrase: говорить-с, phrase: на-языке): She speaks to her children in various languages.
 2480 он@nom говорить@3 мы@datpl , что[that] писать@pastm книга@acc утро@instr (author: sergei, phrase: at-instr, phrase: dat-speech): He tells us that he was writing a book in the morning.
-2481 что@acc она@nom мы@datpl говорить@3 ? (author: sergei, phrase: датьetc-dat, phrase: dat-speech): What is she telling us?
+2481 что@acc она@nom мы@datpl говорить@3 ? (author: sergei, phrase: dat-speech): What is she telling us?
 2482 почему ты@nom не говорить@2 с@std она@instralt ? (author: sergei, phrase: говорить-с): Why are you not talking to her?
 2483 он@dat нельзя это слушать@inf . (author: sergei, phrase: кому-то-нельзя): He may not listen to it.
 2484 мы@datpl нельзя это делать@inf (author: sergei, phrase: кому-то-нельзя): We cannot do it.
@@ -2518,7 +2517,7 @@
 
 
 2518 это самый@m дорогой@m подарок@nom в@std мой@prepf жизнь@prep (author: sergei, phrase: в-place, phrase: самый-adj): It is the most expensive gift in my life.
-2519 это самый@m скучный@m преподаватель@nom на сегодня (author: sergei, phrase: самый-adj): He has been the most boring university teacher for today.
+2519 это самый@m скучный@m преподаватель@nom на сегодня . (author: sergei, phrase: самый-adj): He has been the most boring university teacher for today.
 2520 он@nom видеть@pastm самый@accinanm дешёвый@accinanm фильм@acc (author: sergei, phrase: самый-adj): He has seen the cheapest film.
 2521 мы@datpl нельзя курить@inf в@std квартира@prep (author: andreas, phrase: кому-то-нельзя, phrase: в-place): We may not smoke at the apartment.
 2522 я@nom никогда не курить@pastm (author: andreas): I have never smoked.
@@ -2632,7 +2631,7 @@
 2630 здесь всегда идти@3 дождь@nom (author: andreas): It always rains here.
 2631 мой@m брат@nom говорить@3 с@std учитель@instr на улица@prep (author: sergei, phrase: говорить-с, phrase: на-place): My brother is talking to the teacher on the street.
 2632 я@dat нравиться@inf , когда идти[rain]@3 дождь@nom (author: andreas, phrase: dat-нравится): I like when it rains.
-2633 мой@f мама@nom работать@3 на свой@accanm брат@acc (author: sergei): My Mom works for her brother.
+2633 мой@f мама@nom работать@3 на свой@accanm брат@acc (author: sergei, phrase: на-for): My Mom works for her brother.
 2634 я@dat нравиться@3 путешествовать@inf по новый@datpl страна@datpl . (author: andreas, phrase: dat-нравится, phrase: по-place-of-movement): I like to travel to new countries.
 2635 ты@nom знать@2 , что[that] он@nom мой@m брат@nom ? (author: sergei): Do you know that he is my brother?
 2636 её брат@nom не любить@3 ходить@inf в@std школа@acc (author: sergei): Her brother does not like to go to school.
@@ -2816,7 +2815,7 @@
 2814 « не курить@inf ! » (author: andreas): "No smoking!"
 2815 он@nom не понимать@3 ты@acc . он@nom не говорить@3 по-русски . (author: andreas): He does not understand you. He does not speak Russian.
 2816 — вы@pl хороший@adv говорить@2pl по-русски . — спасибо ! (author: andreas): - You speak Russian well.- Thank you!
-2817 я@nom ехать@1 домой на метро@prep . (author: andreas): I go home by underground.
+2817 я@nom ехать@1 домой на метро@prep . (author: andreas, phrase: на-транспорте): I go home by subway.
 2818 — куда ты@nom ехать@2 ? — домой (author: andreas): - Where are you going? - Home.
 2819 теперь я@nom жить@1 возле центральный@genm рынок@gen . (author: andreas, phrase: возле-чего-то): I now live next to the central market.
 2820 я@nom помнить@1 она@acc когда она@nom быть@pastf молодой@instrf . (author: sergei, phrase: быть-кем-то): I remember her when she was young.
@@ -2867,7 +2866,7 @@
 2865 — что@instr он@nom заниматься@3 на работа@prep ? (author: sergei, phrase: на-place): - What does he do at work?
 2866 он@dat не нравиться@3 этот@instrn заниматься@inf (author: sergei, phrase: заниматься-чем-то, phrase: dat-нравится): He does not like to do it.
 2867 — что@instr ты@nom заниматься[study]@2 в@std школа@prep ? (author: sergei, phrase: в-place): - What do you study at school?
-2868 он@nom говорить@3 я@dat « нет[part] » . (author: sergei, phrase: датьetc-dat, phrase: dat-speech): He tells me "no."
+2868 он@nom говорить@3 я@dat « нет[part] » . (author: sergei, phrase: dat-speech): He tells me "no."
 2869 — какой[kind]@accf погода@acc ты@nom любить@2 ? (author: sergei): What kind of weather do you like?
 2870 — ты@nom гулять@2 завтра ? (author: sergei): - Are you walking tomorrow?
 2871 — я@nom играть@1 завтра . (author: sergei): - I am playing tomorrow.
@@ -2911,7 +2910,7 @@
 
 2910 Маша@nom видеть@3 студент@acc в@std библиотека@prep (author: pasha, phrase: в-place): Masha sees the student in the library.
 2911 Саша@nom встречать[meet]@3 студент@acc в@std университет@prep (author: pasha, phrase: в-place): Sasha meets the student at the university.
-2912 я@nom работать@1 на друг@acc . (author: pasha): I work for a friend.
+2912 я@nom работать@1 на друг@acc . (author: pasha, phrase: на-for): I work for a friend.
 
 2914 я@nom любить@1 Маша@acc (author: pasha): I love Masha.
 2915 я@nom любить@1 Саша@acc (author: pasha): I love Sasha.
@@ -3224,15 +3223,15 @@
 3222 я@dat нравиться@3 твой@m новый@m дом@nom (author: pasha, phrase: dat-нравится): I like your new house.
 3223 кто@nom не давать[allow]@3 вы@datpl работать@inf ? (author: pasha, phrase: давать-verb): Who is not letting you work?
 3224 сегодня вы@datpl нужно работать@inf ; а завтра ? (author: pasha, phrase: кому-то-нужно): Today you need to work; andwhat about tomorrow?
-3225 я@dat не нужно читать@inf книга@accpl на ночь@acc . я@nom уже большой@m (author: pasha, phrase: кому-то-нужно): You do not need to read me books for the night. I am already big.
+3225 я@dat не нужно читать@inf книга@accpl на ночь@acc . я@nom уже большой@m . (author: pasha, phrase: датьetc-dat, phrase: на-time): You do not need to read me books for the night. I am already big.
 3226 — я@dat это очень нужно ! (author: pasha, phrase: кому-то-нужно): - I really need it!
 3227 — кто@nom ваш@shortm доктор@nom ? (author: pasha): - Who is your doctor?
-3228 — Маша@nom , твой@pl дети@pl дарить@3pl ты@dat подарок@accpl на день@acc мать@gen ? (author: pasha, phrase: датьetc-dat): - Masha, do your children give you gifts on Mother's Day?
+3228 — Маша@nom , твой@pl дети@pl дарить@3pl ты@dat подарок@accpl на день@acc мать@gen ? (author: pasha, phrase: датьetc-dat, phrase: gen-of, phrase: на-for): - Masha, do your children give you gifts on Mother's Day?
 3229 вы@datpl нужно знать@inf как решить@inf этот@accf проблема@acc (author: pasha, phrase: кому-то-нужно): You need to know how to solve this problem.
 3230 — вы@datpl плохой@adv ? (author: pasha, phrase: dat-adv): - Do you feel bad?
 
-3232 зачем вы@datpl два@pl телефон@gen ? (author: pasha, phrase: зачем-dat, phrase: auto-234-gen): Why do you need two phones?
-3233 зачем вы@datpl это ? (author: pasha, phrase: зачем-dat): Why do you need this?
+3232 зачем вы@datpl нужный@shortpl* два@pl телефон@gen ? (author: pasha, phrase: зачем-dat, phrase: auto-234-gen): Why do you need two phones?
+3233 зачем вы@datpl нужный@shortn* это ? (author: pasha, phrase: зачем-dat): Why do you need this?
 3234 — как долгий@adv ты@nom здесь работать@2 ? — три@accinanpl год@gen (author: andreas, phrase: каждый-time): - How long have you been working here? - Three years.
 3235 — как долгий@adv ты@nom здесь жить@2 ? — шесть@accinanpl месяц@genpl . (author: andreas, phrase: каждый-time): - How long have you been living here? - Six months.
 
@@ -3449,7 +3448,7 @@
 3447 у кто@gen тут быть@3 зарядка@nom для мой@genm планшет@gen ? (author: pasha, phrase: для-чего-то): Who here has the charger for my tablet?
 
 3449 мой@f мама@nom потерять@pastf свой@accf зарядка@acc и просить@3 я@acc купить@inf она@dat новый@accf . (author: pasha, phrase: купить-чего-то): My Mom lost her charger and is asking me to buy her a new one.
-3450 зачем ты@dat два@fpl зарядка@gen ? дать@impr я@dat один@accf из они@genplalt (author: pasha, phrase: датьetc-dat, phrase: зачем-dat, phrase: из-out-of): Why do you need two chargers? Give me one of them.
+3450 зачем ты@dat нужный@shortpl* два@fpl зарядка@gen ? дать@impr я@dat один@accf из они@genplalt (author: pasha, phrase: датьetc-dat, phrase: зачем-dat, phrase: из-out-of): Why do you need two chargers? Give me one of them.
 3451 — мочь@2 дать@inf я@dat свой@accinanm ноутбук@acc на день@acc ? (author: pasha, phrase: на-time, phrase: датьetc-dat): - Can you give me your laptop for a day?
 3452 — мочь@2 дать@inf я@dat свой@accinanm ноутбук@acc на выходной@accinanpl ? у я@gen много@pl домашний@genm задание@gen (author: pasha, phrase: много-gen, phrase: у-кого, phrase: на-time, phrase: датьetc-dat, phrase: домашнее-задание): - Can you give me your laptop for the weekend? I have a lot of homework.
 
@@ -3543,7 +3542,7 @@
 3541 почему вы@pl молчать@2pl , когда вы@accpl звать@3pl ?: Why do you stay silent when you are called?
 3542 самый@n хороший@n в@std он[it]@prep быть@pastn тот@n , что[that] он@nom уметь@pastm молчать@inf . (phrase: в-place, phrase: то-что, phrase: самый-adj): The best thing about him was that he knew how to be silent.
 3543 против что@gen вы@pl выйти@pastpl на улица@accpl сегодня все[everyone]@pl вместе ? (phrase: против-gen, phrase: на-направление): Against what have you all come out on the street today?
-3544 — ты@nom знать@2 , что[that] я@nom против твой@genm путешествие@gen ? нет[part] , и что@acc мы@datpl теперь делать@inf ? — ты@nom не должный@shortm этот@genn делать@inf . — мама@nom , но весь@datpl мой@datpl друг@datpl разрешить@pastpl . — ты@nom мочь@2 поехать@inf , но тогда не говорить@impr , что[that] я@nom ты@acc не предупредить@pastf (phrase: не-gen, phrase: против-gen, phrase: dat-speech, phrase: кому-то-нужно): - Do you know that I am against your journey? No, and what do we do now? - You should not do that.- But Mom, all my friends were allowed.- You can go but do not say then that I did not warn you.
+3544 — ты@nom знать@2 , что[that] я@nom против твой@genm путешествие@gen ? нет[part] , и что@acc мы@datpl теперь делать@inf ? — ты@nom не должный@shortm этот@genn делать@inf . — мама@nom , но весь@datpl мой@datpl друг@datpl разрешить@pastpl . — ты@nom мочь@2 поехать@inf , но тогда не говорить@impr , что[that] я@nom ты@acc не предупредить@pastf . (phrase: не-gen, phrase: против-gen, phrase: dat-speech, phrase: кому-то-нужно): - Do you know that I am against your journey? No, and what do we do now? - You should not do that.- But Mom, all my friends were allowed.- You can go but do not say then that I did not warn you.
 3545 — мы@datpl ещё далеко ехать@inf ? — я@nom не знать@1 ! — мама@nom , ты@nom говорить@pastf , что[that] мы@pl быть[fut]@1pl на место@prep к@std обед@dat — я@nom не знать@pastf , что[that] магазин@nom так далеко . (phrase: к-time, phrase: на-place, phrase: кому-то-нужно): - Do we still have a long way to go? - I do not know! - Mom, you said that we would be in place by lunch. - I did not know that the store was so far away.
 3546 я@nom потерять@pastm свой@accf зарядка@acc . не знать@2 , где я@nom мочь@1 купить@inf новый@accf ? (author: pasha): I lost my charger. Do you know where I can buy a new one?
 3547 пока[while] она@gen родители@pl в@std город@prep , она@gen парень@nom спать@3 у друг@genpl на диван@prep . (author: pasha, phrase: у-кого-location, phrase: на-place, phrase: в-place): While her parents are in the city, her boyfriend is sleeping on the couch of his friends.
@@ -3600,7 +3599,7 @@
 3598 хороший@adv , что[that] он@nom я@acc предупредить@pastm (author: sergei): It is good that he warned me.
 
 3600 — это далеко ? можно идти@inf пешком ? (author: andreas): - Is it far? Can you go on foot?
-3601 — можно идти@inf пешком ? — нет[part] , хороший@comp ехать@inf на метро@prep (author: andreas): - Can you go on foot? - No, better to go by subway.
+3601 — можно идти@inf пешком ? — нет[part] , хороший@comp ехать@inf на метро@prep (author: andreas, phrase: на-транспорте): - Can you go on foot? - No, better to go by subway.
 3602 ты@nom знать@2 имя@acc его новый@genf подруга@gen ? (author: andreas, phrase: gen-possession): Do you know the name of his new girlfriend?
 3603 все[everyone]@pl , кроме Маша@gen , знать@3pl , что[that] у Саша@gen уже быть@3 девушка@nom . (author: andreas, phrase: у-кого, phrase: кроме-gen): Everyone but Masha knows that Sasha already has a girlfriend.
 3604 в@alt вторник@acc вечер@instr я@nom ходить@1 в@std кино@prep (author: andreas, phrase: at-instr, phrase: в-time): On Tuesday evening, I go to the movies.
@@ -3786,18 +3785,18 @@
 3784 — я@nom весь@accf неделя@acc ждать@1 выходной@accinanm день@acc . мы@pl с@std мама@instr хотеть@pastpl пойти@inf в@std кино@acc (author: sergei, phrase: ждать-что-то, phrase: каждый-time, phrase: мы-с-instr): - I have been waiting for the weekend all week. My Mom and I wanted to go to the movies.
 3785 — где находиться@3 Владивосток@nom ? я@nom не знать@1 , я@nom никогда не видеть@pastm он[it]@acc на карта@prep . (author: sergei, phrase: на-place): - Where is Vladivostok? I do not know, I have never seen it on the map.
 3786 куда бы он@nom ни пойти@pastm , вокруг быть@pastpl лес@pl . (author: sergei, phrase: куда-бы): No matter where he went, there were woods around.
-3787 — зачем ты@dat карта@nom Россия@gen ? — быть[fut]@1 учить@inf город@accpl . (author: sergei, phrase: зачем-dat): - Why do you need a map of Russia? - I am going to learn the cities.
+3787 — зачем ты@dat нужный@shortf* карта@nom Россия@gen ? — быть[fut]@1 учить@inf город@accpl . (author: sergei, phrase: зачем-dat): - Why do you need a map of Russia? - I am going to learn the cities.
 3788 — показать@impr , как я@dat выйти@inf отсюда (author: sergei, phrase: как-dat): - Show me how I can get out of here.
 3789 Маша@nom , мы@datpl нужно как[like] можно быстрый@comp купить@inf билет@accpl в@alt Владивосток@acc (author: pasha, phrase: кому-то-нужно): Masha, we need to buy tickets to Vladivostok as fast as possible.
 3790 этот@m поезд@nom ехать@3 через весь@accf Россия@acc в@alt Владивосток@acc (author: sergei, phrase: через-direction): This train goes through entire Russia to Vladivostok.
-3791 где я@dat купить@inf билет@acc на этот@accinanm поезд@acc ? (author: sergei, phrase: кому-то-нужно): Where can I buy a ticket to this train?
+3791 где я@dat купить@inf билет@acc на этот@accinanm поезд@acc ? (author: sergei, phrase: кому-то-нужно, phrase: на-for): Where can I buy a ticket to this train?
 
 3793 когда ты@nom закончить@2 работать@inf ? (author: andreas): When will you finish working?
 
-3795 ты@nom уже купить@pastf билет@accpl на самолёт@acc ? (author: pasha): Have you already bought the plane tickets?
-3796 — извинить@imprpl , молодой@m человек@nom , на этот@accinanm поезд@acc билет@genpl большой@comp нет[none] (author: pasha): - Sorry, young man, there are no more tickets to this train.
+3795 ты@nom уже купить@pastf билет@accpl на самолёт@acc ? (author: pasha, phrase: на-for): Have you already bought the plane tickets?
+3796 — извинить@imprpl , молодой@m человек@nom , на этот@accinanm поезд@acc билет@genpl большой@comp нет[none] (author: pasha, phrase: на-for): - Sorry, young man, there are no more tickets to this train.
 3797 — нельзя ехать@inf в@std поезд@prep без билет@gen . выходить@imprpl ! (author: pasha, phrase: без-gen, phrase: в-place): - You cannot go by train without a ticket. Get out!
-3798 где можно купить@inf билет@acc на автобус@acc и сколько@pl он@nom стоить@3 ? (author: pasha): Where can I buy a bus ticket and how much does it cost?
+3798 где можно купить@inf билет@acc на автобус@acc и сколько@pl он@nom стоить@3 ? (author: pasha, phrase: на-for): Where can I buy a bus ticket and how much does it cost?
 3799 я@nom сегодня долгий@adv гулять@pastm по парк@dat . (author: alexey, phrase: по-place-of-movement): Today I took a long walk in the park.
 
 
@@ -3856,8 +3855,8 @@
 3854 я@nom выйти@pastm из дом@gen в@std магазин@acc , чтобы купить@inf зажигалка@acc – очень хотеть@pastm курить@inf (author: sergei, phrase: в-направление, phrase: выйти-из): I left the house, went to the store to buy a lighter - I really wanted to smoke.
 3855 — простить@imprpl , у вы@genpl нет[none] зажигалка@gen ? — вот , взять@imprpl (author: sergei, phrase: у-его-нет): - Excuse me, do you have a lighter? - Here, take it.
 3856 — у вы@genpl нет[none] зажигалка@gen ? — нет[part] , я@nom не курить@1 (author: sergei, phrase: у-его-нет): - Do you have a lighter? - No, I do not smoke.
-3857 — у вы@genpl быть@3 регистрация@nom ? — простить@2pl , я@nom не понимать@1 , о@std что@prep вы@pl говорить@2pl . — регистрация@nom на ваш@m самолёт@acc . — конечно , быть@3 . вот она[it]@nom (author: sergei, phrase: у-кого, phrase: о-prep): - Have you checked-in? - I am sorry, I do not understand what you are saying. - A check-in for the plane. - Of course, I have. Here it is.
-3858 — где я@nom мочь@1 пройти@inf регистрация@acc на этот@accinanm самолёт@acc ? — у тот@genf касса@gen . (author: sergei): - Where can I check-in for this flight? - By that till.
+3857 — у вы@genpl быть@3 регистрация@nom ? — простить@2pl , я@nom не понимать@1 , о@std что@prep вы@pl говорить@2pl . — регистрация@nom на ваш@m самолёт@acc . — конечно , быть@3 . вот она[it]@nom (author: sergei, phrase: у-кого, phrase: о-prep, phrase: на-for): - Have you checked-in? - I am sorry, I do not understand what you are saying. - A check-in for the plane. - Of course, I have. Here it is.
+3858 — где я@nom мочь@1 пройти@inf регистрация@acc на этот@accinanm самолёт@acc ? — у тот@genf касса@gen . (author: sergei, phrase: на-for): - Where can I check-in for this flight? - By that till.
 3859 зима@instr у мы@genpl всегда мороз@nom (author: sergei, phrase: у-кого, phrase: at-instr): In winter, it is always freezing here.
 3860 в@std Россия@prep зима@instr очень холодный@adv , и мы@pl говорить@1pl простой@adv « мороз@nom » (author: sergei, phrase: at-instr, phrase: в-place): In winter, it is very cold in Russia, and we simply say "freezing."
 
@@ -3876,7 +3875,7 @@
 3874 — где в@std этот@prepm магазин@prep продавец@nom ? — вы@datpl нужный@shortf тот@f женщина@nom (author: sergei, phrase: в-place, phrase: dat-нужен): - Where is the salesman in this store? - You need that woman.
 3875 — я@nom не мочь@1 найти@inf продавец@acc в@std магазин@prep . — у они@genplalt наверное обед@nom . — но сейчас же только десять@pl час[o'clock]@genpl* утро@gen ! (author: sergei, phrase: у-кого, phrase: в-place): - I cannot find the salesperson in the store. - They are probably having lunch. - But it is only ten in the morning now!
 3876 — ты@nom уже на вокзал@prep ? где я@nom мочь@1 ты@acc найти@inf ? — я@nom стоять@1 рядом с@std третий@instrf касса@instr (author: sergei, phrase: с-чем, phrase: на-place): - Are you already at the station? Where can I find you? - I am standing by the third ticket booth.
-3877 — зачем ты@nom купить@pastm билет@accpl тут ? — в@std что@prep проблема@nom ? — в@std этот@prepf касса@prep билет@pl на поезд@acc , а мы@datpl нужный@shortpl билет@pl на автобус@acc . (author: sergei, phrase: в-place, phrase: dat-нужен): - Why did you buy tickets here ? - What is the problem? - This is a booth that sells train tickets and we need bus tickets.
+3877 — зачем ты@nom купить@pastm билет@accpl тут ? — в@std что@prep проблема@nom ? — в@std этот@prepf касса@prep билет@pl на поезд@acc , а мы@datpl нужный@shortpl билет@pl на автобус@acc . (author: sergei, phrase: в-place, phrase: dat-нужен, phrase: на-for): - Why did you buy tickets here ? - What is the problem? - This is a booth that sells train tickets and we need bus tickets.
 3878 — кто@nom из вы@genpl последний@m из* очередь@gen в@std касса@acc ? (author: sergei, phrase: в-направление, phrase: из-out-of): - Which one of you is the last in the queue to the cashier?
 3879 — почему он@nom говорить@pastm сам@shortm с@std себя@instr ? — я@nom думать@1 он@nom петь@pastm . (author: sergei, phrase: сам-с-собой): — Why was he talking to himself? — I think he was singing.
 3880 — что@acc говорить@3 этот@m продавец@nom ? — я@nom не знать@1 , но он@nom говорить@3 по-русски (author: sergei): - What is this salesman saying? - I do not know but he speaks Russian.
@@ -3935,7 +3934,7 @@
 3933 — сколько[many]@pl год@genpl ты@nom учиться@2 в@std школа@prep ? — только три@accinanpl год@gen . я@nom ещё в@std третий@prepm класс@prep (author: sergei, phrase: в-place, phrase: много-gen, phrase: каждый-time): — How many years have you studied at school? — Only three years. I'm in the third grade now.
 3934 — на какой@prepm этаж@prep ты@nom жить@2 ? — я@nom жить@1 высокий@adv на третий@prepm этаж@prep . — о@std , это невысоко (author: sergei, phrase: на-place): - On which floor do you live? - I live high on the third floor.- Oh, it is not very high.
 3935 — мама@nom , можно я@dat другой@accf подушка@acc ? — что@nom не так с@std твой@instrf подушка@instr* ? — она[it]@nom очень большой@f для я@gen и мой@f голова@nom лежать@3 слишком высокий@adv (author: sergei, phrase: кому-то-можно, phrase: с-чем, phrase: для-чего-то): - Mom, can I have another pillow? - What is wrong with yours? - It is too big for me and my head is too high.
-3936 — смотреть[look]@impr , это твой@m учитель@nom ? — я@nom никто@acc не видеть@1 . — посмотреть[look]@impr на другой@accf сторона@acc улица@gen . — нет[part] , это другой@m человек@nom . (author: sergei, phrase: смотреть-на): — Look, is this your teacher? — I don't see anyone. — Look to the other side of the street. — No, that's a different person.
+3936 — смотреть[look]@impr , это твой@m учитель@nom ? — я@nom никто@acc не видеть@1 . — посмотреть[look]@impr на другой@accf сторона@acc улица@gen . — нет[part] , это другой@m человек@nom . (author: sergei, phrase: смотреть-на, phrase: gen-of): — Look, is this your teacher? — I don't see anyone. — Look to the other side of the street. — No, that's a different person.
 3937 — кто@nom там кричать@3 ? — это наш@pl сосед@pl (author: sergei): - Who is yelling there? - It is our neighbors.
 3938 я@nom звать[invite]@1 свой@accanm сосед@acc на ужин@acc завтра вечер@instr . (author: sergei, phrase: at-instr, phrase: на-направление): I am inviting my neighbor to dinner tomorrow evening.
 3939 мой@m сосед@nom мочь@3 пить@inf и кричать@inf весь@accf ночь@acc . (author: sergei, phrase: каждый-time): My neighbor can drink and yell all night.
@@ -3944,7 +3943,7 @@
 3942 — почему ты@nom не любить@2 свой@accanpl сосед@accpl ? — они@pl частый@adv кричать@3pl друг@nom на друг@acc (author: sergei, phrase: друг-другу): - Why do you not like your neighbors? - They often yell at each other.
 3943 — где твой@f мама@nom ? — она@nom на кухня@prep готовить@3 мы@datpl завтрак@acc . — очень хороший@adv , я@nom сегодня ничто@gen не есть@pastm . — а я@nom ты@gen и[part] не звать[invite]@pastm на завтрак@acc . (author: sergei, phrase: на-place, phrase: intended-for, phrase: на-направление): - Where is your mom? - She is making us breakfast in the kitchen. - Very good, I have not eaten anything today. - And I have not invited you for breakfast.
 3944 — главный@n – не погода@nom на улица@prep , а « погода@nom в@std дом@prep » . — что@nom это значить@3 ? — это значить@3 отношение@accpl у вы@genpl в@std семья@prep . (author: sergei, phrase: на-place, phrase: у-кого, phrase: в-place): The "weather in the house" is more important than the weather outside. - What does it mean? - It means the relationships in your family.
-3945 — я@dat нужно два@pl билет@gen на этот@accinanm поезд@acc . сколько@pl они@pl стоить@3pl ? (author: sergei, phrase: кому-то-нужно, phrase: auto-234-gen): - I need two tickets for this train. How much do they cost?
+3945 — я@dat нужно два@pl билет@gen на этот@accinanm поезд@acc . сколько@pl они@pl стоить@3pl ? (author: sergei, phrase: кому-то-нужно, phrase: auto-234-gen, phrase: на-for): - I need two tickets for this train. How much do they cost?
 3946 — кто@nom сделать@pastm этот@accinanm вкусный@accinanm салат@acc ? — это не салат@nom ! это простой@adv трава@nom с@std улица@gen (author: sergei, phrase: с-gen): - Who made this delicious salad? - It is not a salad! It is just grass from outside.
 3947 — где заплатить@inf за билет@acc в@std кино@prep ? — вы@datpl нужно купить@inf билет@acc в@alt второй@prepf касса@prep . (author: sergei, phrase: кому-то-нужно, phrase: в-place, phrase: платить-за): - Where do I pay for the movie ticket? - You need to buy a ticket from the second booth.
 3948 я@nom сам@shortm платить@1 за свой@accinanpl ошибка@accpl (author: sergei, phrase: платить-за): I pay for my mistakes myself.
@@ -4085,7 +4084,7 @@
 4083 я@nom достаточный@adv взрослый@f , чтобы жить@inf сам@shortf . (author: pasha): I am old enough to live alone.
 4084 я@nom пойти@1 . уже поздний@adv , а я@dat ещё далеко ехать@inf домой (author: pasha, phrase: кому-то-нужно): I should go. It is already late and I still have a long way to go home.
 4085 — ты@dat далеко ехать@inf ? — нет[part] , десять@accinanpl минута@genpl на автобус@prep – и я@nom дома (author: pasha, phrase: на-транспорте, phrase: кому-то-нужно, phrase: каждый-time): - Do you have a long way to go? - No, ten minutes by bus and I am home.
-4086 — ты@dat далеко ехать@inf ? — нет[part] , пять@accinanpl минута@genpl на метро@prep – и я@nom на место@prep (author: pasha, phrase: на-place, phrase: кому-то-нужно, phrase: каждый-time): - Do you have a long way to go? - No, five minutes by the subway and I am at place.
+4086 — ты@dat далеко ехать@inf ? — нет[part] , пять@accinanpl минута@genpl на метро@prep – и я@nom на место@prep (author: pasha, phrase: кому-то-нужно, phrase: каждый-time, phrase: на-транспорте): - Do you have a long way to go? - No, five minutes by the subway and I am at place.
 4087 кто@nom читать@3 журнал@acc ? (author: roman): Who is reading a magazine?
 4088 я@nom читать@1 журнал@acc (author: roman): I am reading a magazine.
 4089 мышь@nom – белый@f . (author: roman): The mouse is white.
@@ -4094,7 +4093,7 @@
 4092 сказать@impr я@dat , он@nom хороший@m человек@nom или нет[part] ? (author: roman): Tell me is he a good person or not?
 4093 сказать@impr преподаватель@dat , что[that] завтра я@gen не быть[fut]@3 в@std университет@prep . (author: roman, phrase: в-place, phrase: dat-speech, phrase: кого-то-нет): Tell the teacher that I will not be at the university tomorrow.
 4094 сказать@impr я@dat , ты@nom быть[fut]@2 этот@accf булочка@acc ? (author: roman, phrase: dat-speech): Tell me are you going to eat this bun?
-4095 сказать@impr я@dat , что@gen ты@nom хотеть@2 ? (author: roman): Tell me what do you want?
+4095 сказать@impr я@dat , что@gen ты@nom хотеть@2 ? (author: roman, phrase: dat-speech): Tell me what do you want?
 4096 позвонить@impr и сказать@impr она@dat , что[that] ты@nom дома . (author: roman, phrase: dat-speech): Call her and tell her that you are at home.
 4097 сказать@impr он@dat , что[that] ты@nom остаться@2 на ночь@acc у я@gen . (author: roman, phrase: у-кого, phrase: на-time, phrase: dat-speech): Tell him that you will stay with me for the night.
 4098 позвонить@impr мой@datf мама@dat и сказать@impr , что[that] я@nom остаться@1 у ты@gen дома . (author: roman, phrase: у-кого, phrase: dat-speech): Call my Mom and tell her that I will stay at your house.
@@ -4194,7 +4193,7 @@
 4192 я@nom слышать@pastm только о@std шесть@preppl море@preppl . почему она@nom петь@3 о@std семь@preppl ? (author: sergei, phrase: о-prep): I only ever heard of six seas. Why does she sing about seven?
 4193 этот@instrn лето@instr мы@pl быть@pastpl в@std пять@preppl город@preppl . (author: sergei, phrase: at-instr, phrase: в-place): This summer we have been to five cities.
 4194 я@nom уже жить@pastm в@std десять@preppl квартира@preppl , везде быть@pastn плохой@adv . (author: sergei, phrase: в-place): I have already lived in ten apartments, it sucked everywhere.
-4195 сегодня я@nom сидеть@pastm на пять@preppl урок@preppl (author: sergei, phrase: в-время): I sat through five lessons today.
+4195 сегодня я@nom сидеть@pastm на пять@preppl урок@preppl . (author: sergei, phrase: в-время): I sat through five lessons today.
 4196 она@nom остановиться@pastf на шесть@preppl задание@preppl за один@accinanm день@acc (author: sergei, phrase: за-time, phrase: на-place): She stopped at six tasks for one day.
 4197 мы@pl принести@pastpl продукты@accpl из магазин@gen в@std шесть@preppl пакет@preppl (author: sergei, phrase: из-gen-departure, phrase: в-place): We brought groceries from the store in six bags.
 4198 я@nom читать@pastm книга@acc о@alt этот@prepm писатель@prep (author: sergei, phrase: о-prep): I read a book about this writer.
@@ -4419,7 +4418,7 @@
 4417 у ты@gen брат@nom или сестра@nom ? (author: andreas, phrase: у-кого): Do you have a brother or a sister?
 4418 у ты@gen брат@pl или сестра@pl ? (author: andreas, phrase: у-кого): Do you have brothers or sisters?
 4419 ты@dat нужный@shortm телефон@nom для Маша@gen или для Саша@gen ? (author: andreas, phrase: для-чего-то, phrase: dat-нужен): Do you need a phone for Masha or Sasha?
-4420 — ты@nom ехать@2 на метро@prep или на свой@prepf машина@prep ? (author: andreas): Are you going by subway or with your car?
+4420 — ты@nom ехать@2 на метро@prep или на свой@prepf машина@prep ? (author: andreas, phrase: на-транспорте): Are you going by subway or with your car?
 4421 у я@gen нет[none] радио@gen или телевизор@gen (author: andreas, phrase: у-кого): I do not have a radio or a TV.
 4422 он@nom хороший@accinanm человек@nom или нет[part] ? (author: andreas): Is he a good person or not?
 4423 у я@gen пять@accinanpl или шесть@accinanpl хороший@genpl друг@genpl . (author: andreas, phrase: у-кого): I have five or six good friends.
@@ -4602,7 +4601,7 @@
 4600 вы@pl любить@2pl путешествовать@inf ? (author: andreas): Do you like travelling?
 
 4602 у он@genalt нет[none] деньги@genpl на путешествие@acc . (author: andreas, phrase: деньги-на, phrase: у-его-нет): He has no money for а journey.
-4603 я@nom быть@pastf очень рад@shortf твой@datn письмо@dat ! писать@impr я@dat каждый@accf неделя@acc (author: pasha, phrase: рад-dat, phrase: каждый-time): I was very happy to get your letter! Write me every week.
+4603 я@nom быть@pastf очень рад@shortf твой@datn письмо@dat ! писать@impr я@dat каждый@accf неделя@acc (author: pasha, phrase: рад-dat, phrase: каждый-time, phrase: dat-speech): I was very happy to get your letter! Write me every week.
 4604 это быть@pastn длинный@n путешествие@acc . (author: andreas): It was a long journey.
 4605 путешествие@nom в@alt Владивосток@acc быть@pastn ужасный@n . (author: andreas, phrase: в-направление): The journey to Vladivostok was terrible.
 4606 погода@nom быть@pastf ужасный@f . (author: andreas): The weather was terrible.
@@ -4754,7 +4753,7 @@
 4752 если вдруг оказаться@2pl в@std центр@prep – звонить@imprpl . я@nom вы@accpl уже давно не видеть@pastf , быть[fut]@1 рад@shortf встретиться@inf . (author: pasha, phrase: в-place): If you happen to be in the center, call. I have not seen you already for a long time, I will be happy to meet.
 4753 в@std наш@prepf страна@prep весь@datpl дети@datpl нужно ходить@inf в@std школа@acc (author: pasha, phrase: кому-то-нужно, phrase: в-place, phrase: в-направление): In our country all children must go to school.
 4754 весь@datpl мама@datpl нельзя курить@inf , да и папа@datpl тоже не стоить[should]@3 (author: pasha, phrase: не-стоит): All moms are not supposed to smoke, and nor are dads.
-4755 все[everyone]@datpl быть@3 что@acc сказать@inf , простой@adv нужно уметь@inf слушать@inf (author: pasha): Everyone has something to say, you just need to know how to listen.
+4755 все[everyone]@datpl быть@3 что@acc сказать@inf , простой@adv нужно уметь@inf слушать@inf . (author: pasha): Everyone has something to say, you just need to know how to listen.
 4756 я@nom не читать@1 газета@accpl . они@datpl нельзя верить@inf (author: pasha, phrase: кому-то-нельзя): I do not read newspapers. You cannot trust them.
 4757 мы@pl купить@pastpl они@datpl много@accinanpl подарок@genpl , но они@pl они@datpl не понравиться@pastpl (author: pasha, phrase: много-gen, phrase: купить-чего-то, phrase: dat-нравится): We bought them many gifts but they did not like them.
 4758 один@genf тарелка@gen суп@gen быть[fut]@3 достаточный@adv . (author: roman, phrase: gen-of): One bowl of soup will be enough.
@@ -4785,7 +4784,7 @@
 4783 много@accinanpl люди@genpl жениться@3pl в@std суббота@acc . (author: roman, phrase: много-gen, phrase: в-time): Many people get married on Saturday.
 4784 некоторый@datpl люди@datpl нравиться@3 море@acc , а другой@datpl больше@comp нравиться@3pl гора@accpl . (author: roman, phrase: dat-нравится): Some people like the sea, and others like the mountains more.
 4785 я@dat нравиться@3pl женщина@pl , я@dat нравиться@3 вино@nom . и если я@dat нужно забыть@inf женщина@accpl , я@nom пить@1 и забывать@1 . (author: roman, phrase: кому-то-нужно, phrase: dat-нравится): I like women, I like wine. And if I need to forget women, I drink and forget.
-4786 завтра у они@genplalt важный@m день@nom на работа@prep . они@pl встать@3pl ранний@adv и поехать@3pl в@std офис@acc на такси@prep (author: pasha, phrase: у-кого, phrase: на-place): Tomorrow they have a big day at work. They will get up early and go to the office by taxi.
+4786 завтра у они@genplalt важный@m день@nom на работа@prep . они@pl встать@3pl ранний@adv и поехать@3pl в@std офис@acc на такси@prep (author: pasha, phrase: у-кого, phrase: на-place, phrase: на-транспорте): Tomorrow they have a big day at work. They will get up early and go to the office by taxi.
 4787 мой@datm сын@dat нравиться@3pl книга@accpl о@std животное@preppl . (author: roman, phrase: о-prep, phrase: dat-нравится): My son likes books about animals.
 4788 что@instr больше@comp я@nom узнать@1 о@std люди@preppl , тот@instrn больше@comp я@dat нравиться@3pl собака@pl . (author: roman, phrase: dat-нравится, phrase: чем-чем, phrase: о-prep): The more I learn about people, the more I like dogs.
 4789 они@pl не стать@3pl этот@genn делать@inf , они@pl хороший@pl люди@pl (author: pasha): They will not do that, they are good people.
@@ -4841,14 +4840,14 @@
 4839 она@nom любить@3 говорить@inf только о@std мы@preppl с@std она@instralt (author: sergei, phrase: о-prep, phrase: говорить-с): She only likes to talk about me and her.
 4840 — почему ты@nom не знать@2 о@std мы@preppl ? мы@pl самый@pl известный@pl люди@pl в@std школа@prep ! (author: sergei, phrase: о-prep, phrase: в-place, phrase: самый-adj): - Why do you not know about us? We are the most famous people at school!
 4841 на мы@accpl все[everyone]@pl быть[fut]@3pl смотреть[look]@inf , если мы@pl пойти@1pl в@std такой@preppl свитер@preppl . они@pl очень старый@pl . (author: sergei, phrase: в-place, phrase: на-направление): Everyone will stare at us if we go in such sweaters. They are very old.
-4842 ты@nom мочь@2 купить@inf мясо@acc на мы@accpl весь@accanpl ? (author: sergei): Can you buy meat for all of us?
+4842 ты@nom мочь@2 купить@inf мясо@acc на мы@accpl все[everyone]@genpl ? (author: sergei, phrase: на-for): Can you buy meat for all of us?
 4843 она@nom весь@accinanm день@acc думать@pastf только о@std мы@preppl (author: sergei, phrase: каждый-time, phrase: о-prep): All day, she was thinking only about us.
 4844 он@nom знать@3 всё@acc и о@alt2 все[everyone]@preppl . (author: sergei, phrase: о-prep): He knows everything about everyone.
 4845 — ты@nom готовый@shortm сделать@inf она@dat этот@accn предложение[offer]@acc при все[everyone]@preppl ? (author: sergei, phrase: при-condition): — Are you ready to make her this offer in front of everyone?
 4846 я@nom знать@1 о@alt2 весь@preppl учитель@preppl в@std этот@prepf школа@prep , хотя учиться@1 я@nom в@std она[it]@prep только второй@accf неделя@acc . (author: sergei, phrase: каждый-time, phrase: о-prep, phrase: в-place): I know about all the teachers in this school, even though I have been going to it just for two weeks.
 4847 ты@nom мочь@2 видеть@inf в@alt все[everyone]@preppl только хороший@accn ? (author: sergei, phrase: в-place): Can you only see goodness in everyone?
-4848 я@nom купить@pastm продукты@genpl на все[everyone]@accanpl , тут мясо@nom и пиво@nom ! (author: sergei): I bought groceries for everyone, here is meat and beer.
-4849 я@nom мочь@1 заказывать@inf еда@acc в@std этот@prepm ресторан@prep на весь@accanpl свой@accanpl друг@accpl , я@nom знать@1 что@acc они@pl любить@3pl есть@inf и пить@inf (author: sergei, phrase: в-place): I can order food at this restaurant for all my friends, I know what they like to eat and drink.
+4848 я@nom купить@pastm продукты@genpl на все[everyone]@accanpl , тут мясо@nom и пиво@nom ! (author: sergei, phrase: на-for): I bought groceries for everyone, here is meat and beer.
+4849 я@nom мочь@1 заказывать@inf еда@acc в@std этот@prepm ресторан@prep на весь@accanpl свой@accanpl друг@accpl , я@nom знать@1 что@acc они@pl любить@3pl есть@inf и пить@inf (author: sergei, phrase: в-place, phrase: на-for): I can order food at this restaurant for all my friends, I know what they like to eat and drink.
 4850 к@alt я@dat сегодня должный@shortpl прийти@inf гость@pl , и я@nom готовить@1 ужин@acc на все[everyone]@preppl (author: sergei, phrase: к-кому-чему): The guests are supposed to come today and I'm cooking dinner for everyone.
 4851 — библиотека@nom находиться@3 здесь ? — нет[part] . вы@datpl нужно вернуться@inf на три@accinanpl улица@accpl назад . (author: sergei): - Is the library here? - No. You need to go back three streets.
 4852 — какой@m день@nom неделя@gen за пятница@instr ? — я@nom уверенный@shortm , что[that] этот@n суббота@nom ! (author: sergei, phrase: за-аfter): - Which day of the week comes after Friday? - I am sure that it is Saturday!
@@ -4946,7 +4945,7 @@
 4944 — ты@nom взять@pastm весь@accf этот@accf еда@acc только себя@dat ? — нет[part] , этот@n для весь@genf семья@gen (author: sergei, phrase: датьetc-dat, phrase: для-чего-то): - Did you take all this food just for yourself? - No, it is for the whole family.
 4945 — почему ты@nom думать@2 только о@std себя@prep ? (author: sergei, phrase: о-prep): - Why do you think only of yourself?
 4946 я@nom пойти@pastm с@std она@instralt к@std себя@dat домой (author: sergei, phrase: к-кому-чему, phrase: с-чем): I went home with her.
-4947 я@nom взять@pastm свой@accf собака@acc к@std себя@dat на работа@acc , потому_что я@nom не хотеть@pastm оставить@inf она[it]@acc один[alone]@accf . (author: sergei, phrase: к-кому-чему): I took my dog ​​with me to work because I did not want to leave it alone.
+4947 я@nom взять@pastm свой@accf собака@acc к@std себя@dat на работа@acc , потому_что я@nom не хотеть@pastm оставить@inf она[it]@acc один[alone]@accf . (author: sergei, phrase: к-кому-чему, phrase: на-направление, phrase: к-на): I took my dog ​​with me to work because I did not want to leave it alone.
 4948 сегодня я@nom сам@shortm по себя@dat , мой@pl друг@pl сидеть@3pl по дом@datpl (author: sergei, phrase: сам-по-себе): Today I am all by myself, my friends are sitting in their homes.
 4949 — ты@nom думать@2 о@std она@prep ? — только когда долгий@adv она@acc не видеть@1 (author: sergei, phrase: о-prep): - Do you think about her? - Only when I do not see her for a long time.
 4950 — мочь@3 сегодня пойти@1pl к@std она@datalt в_гости ? — давать[allow]@impr . надеяться@1 , она@nom быть[fut]@3 дома (author: sergei, phrase: к-кому-чему): - Maybe we can visit her today? - Let's do it. I hope she will be at home.
@@ -5042,12 +5041,12 @@
 5040 встать@impr прямо ! (author: andreas): Stand up straight.
 5041 сесть@impr ! не вставать@impr . (author: andreas): Sit down! Do not get up.
 5042 мы@pl весь@pl вместе ехать@1pl к@std он@datalt домой (author: pasha, phrase: к-кому-чему): We are all going together to his house.
-5043 Саша@nom – очень скучный@m преподаватель@nom , и студент@pl почти никогда не ходить@3pl к@std он@datalt на лекция@accpl . (author: pasha, phrase: к-кому-чему): Sasha is a very boring university teacher, and the students almost never go to his lectures.
+5043 Саша@nom – очень скучный@m преподаватель@nom , и студент@pl почти никогда не ходить@3pl к@std он@datalt на лекция@accpl . (author: pasha, phrase: к-кому-чему, phrase: к-на): Sasha is a very boring university teacher, and the students almost never go to his lectures.
 5044 Маша@nom прийти@pastf к@std он@datalt домой и стать@pastf он@acc там ждать@inf , но он@nom остаться@pastm спать@inf в@std офис@prep до утро@gen (author: pasha, phrase: до-какого-то-времени, phrase: к-кому-чему, phrase: в-place): Masha came to his house and began waiting for him there but he stayed to sleep at the office til morning.
 5045 я@nom по этот@datm паспорт@dat ездить@pastm в@std Россия@acc много@pl год@genpl назад . (author: pasha, phrase: много-gen, phrase: в-направление, phrase: по-place-of-movement): I went to Russia with this passport it many years ago.
 5046 — по газон@dat можно ходить@inf в@std обувь@prep ? (author: pasha, phrase: по-place-of-movement, phrase: what-a): - Can you walk on the lawn in shoes?
-5047 он@nom очень известный@m человек@nom . к@std он@datalt на вечеринка@acc приходить@3pl весь@pl важный@pl люди@pl наш@genm город@gen (author: pasha, phrase: к-кому-чему, phrase: gen-of): He is a very famous person. All the important people of our city come to his party.
-5048 офис@nom Саша@gen очень далеко от центр@gen . я@nom никогда не ездить@pastf к@std он@datalt на работа@acc . (author: pasha, phrase: далеко-от-чего-то, phrase: к-кому-чему, phrase: gen-possession): Sasha's office is very far from the center. I have never went to his work.
+5047 он@nom очень известный@m человек@nom . к@std он@datalt на вечеринка@acc приходить@3pl весь@pl важный@pl люди@pl наш@genm город@gen (author: pasha, phrase: к-кому-чему, phrase: gen-of, phrase: на-направление, phrase: к-на): He is a very famous person. All the important people of our city come to his party.
+5048 офис@nom Саша@gen очень далеко от центр@gen . я@nom никогда не ездить@pastf к@std он@datalt на работа@acc . (author: pasha, phrase: далеко-от-чего-то, phrase: к-кому-чему, phrase: gen-possession, phrase: к-на): Sasha's office is very far from the center. I have never went to his work.
 5049 у я@gen два@pl брат@gen . (author: andreas, phrase: у-кого, phrase: auto-234-gen): I have two brothers.
 
 5051 я@nom точно быть[fut]@1 там в@std два@accinanpl час[o'clock]@gen . (author: andreas, phrase: в-num-час): I'll be there at two o'clock without fail.
@@ -5148,7 +5147,7 @@
 5146 я@nom хотеть@1 молоко@gen . (author: roman, phrase: хотеть-something-abstract): I want milk.
 5147 кошка@nom пить@3 молоко@acc . (author: roman): The cat drinks milk.
 5148 хлеб@nom и молоко@nom – хороший@f еда@nom . (author: roman): Bread and milk is good food.
-5149 у он@genalt на ты@acc зуб@nom . (author: roman, phrase: у-кого): He has a grudge against you.
+
 5150 у она@genalt только два@pl зуб@gen ? (author: roman, phrase: у-кого, phrase: auto-234-gen): Does she only have two teeth?
 
 5152 вы@pl знать@2pl закон@acc . (author: roman): You know the law.
@@ -5294,7 +5293,7 @@
 5292 я@nom не чувствовать@1 нога@genpl . (author: roman, phrase: не-gen): I can't feel my legs.
 5293 у он@genalt длинный@pl нога@pl . (author: roman, phrase: у-кого): He has long legs.
 5294 в@std этот@prepm город@prep я@nom никто@acc не знать@1 . (author: roman, phrase: в-place): I do not know anyone in this city.
-5295 на кто@acc он@nom работать@3 ? (author: roman): Who does he work for?
+5295 на кто@acc он@nom работать@3 ? (author: roman, phrase: на-for): Who does he work for?
 
 5297 никогда не встречать[meet]@pastm никто@acc , кто@nom бы не любить@pastm шоколад@acc . (author: roman): I have never met anyone who does not like chocolate.
 5298 я@nom никто@acc не ждать@1 . (author: roman): I don't wait for anybody.
@@ -5422,14 +5421,14 @@
 5420 куда бы ты@nom хотеть@pastm пойти@inf в@std выходной@accinanpl ? (author: roman, phrase: куда-бы): Where would you like to go on the weekend?
 
 5422 вы@pl помнить@2pl , что@acc делать@pastpl в@std прошлый@accf пятница@acc ? (author: roman, phrase: в-time): Do you remember what you did last Friday?
-5423 я@nom надеяться@1 на этот@accn . (author: roman): I am relying on it.
+5423 я@nom надеяться@1 на этот@accn . (author: roman, phrase: на-for): I am relying on it.
 5424 он@nom говорить@3 слишком быстрый@adv . (author: roman): He talks too fast.
 5425 он@nom пойти@3 в@std больница@acc сегодня . (author: roman, phrase: в-направление): He'll go to the hospital today.
 5426 я@dat не нравиться@3 этот@f больница@nom . (author: roman, phrase: dat-нравится): I do not like this hospital.
 5427 я@nom точно знать@1 , что@acc вы@datpl нужно . (author: roman, phrase: кому-то-нужно): I know exactly what you need.
 5428 он@nom сразу сделать@pastm тот@accn , что@acc я@nom хотеть@pastf . (author: andreas): He immediately did what I wanted.
 5429 я@nom сразу о@std ты@prep подумать@pastm ! (author: andreas, phrase: о-prep): I immediately thought of you!
-5430 мы@pl идти@1pl на юг@acc Россия@gen . (author: roman): We are ging to the South.
+5430 мы@pl идти@1pl на юг@acc Россия@gen . (author: roman, phrase: gen-of, phrase: на-направление): We are gоing to the south of Russia.
 5431 я@nom идти@1 на юг@acc Россия@gen . (author: roman, phrase: на-направление): I am going to the south of Russia.
 5432 он@nom прийти@pastm с@std юг@gen . (author: roman, phrase: с-gen): He came from the south.
 5433 хотеть@2 , мы@pl остаться@1pl ? (author: roman): Do you want us to stay?
@@ -5494,9 +5493,9 @@
 5492 у ты@gen много[much]@pl свободный@genn время@gen . (author: roman, phrase: много-gen, phrase: у-кого): You have a lot of free time.
 5493 в@std сторона@acc юг@gen . (author: roman, phrase: в-направление): Southward.
 5494 на зима@acc я@nom хотеть@1 поехать@inf на юг@acc . (author: roman): I want to go to the South for the winter.
-5495 окно@pl мой@genm дом@gen выходить@3pl на юг@acc . (author: roman, phrase: gen-of): The windows of my house overlook the South.
+5495 окно@pl мой@genm дом@gen выходить@3pl на юг@acc . (author: roman, phrase: gen-of, phrase: на-направление): The windows of my house overlook the south.
 
-5497 — вы@pl хотеть@2pl поехать@inf на юг@acc ? (author: roman): - Do you want to go to the South?
+5497 — вы@pl хотеть@2pl поехать@inf на юг@acc Россия@gen ? (author: roman, phrase: gen-of, phrase: на-направление): - Do you want to go to the south of Russia?
 
 
 
@@ -5543,7 +5542,7 @@
 5541 я@nom любить@1 ты@acc больше@comp все[everyone]@genpl . (author: roman, phrase: comp-gen): I love you more than anyone.
 5542 этот@f книга@nom хороший@comp тот@genf книга@gen , что[that] я@nom читать@pastm на прошлый@prepf неделя@prep . (author: roman, phrase: comp-gen, phrase: в-время): This book is better than the book that I read last week.
 5543 у я@gen быть@3pl всё@gen лишь пять@pl рубль@genpl . (author: roman, phrase: у-кого): I have only five rubles.
-5544 на вечеринка@acc прийти@pastn всё@gen шесть@pl человек@nom . (author: roman): Only six people came to the party.
+5544 на вечеринка@acc прийти@pastn всего шесть@pl человек@nom . (author: roman, phrase: на-направление): Only six people came to the party.
 
 
 5547 этот@n слово@nom быть@3 в@std любой@prepm словарь@prep . (author: roman, phrase: в-place): You can find this word in any dictionary.
@@ -5949,7 +5948,7 @@
 5947 по ваш@datn лицо@dat видный@shortn , что[that] вы@pl не согласный@shortpl . (author: andreas, phrase: по-place-of-movement): I can see in your face that you do not agree.
 5948 не быть@pastn видный@shortn ничто@gen , кроме вода@gen . (author: andreas, phrase: не-gen, phrase: кроме-gen): You could see nothing but water.
 5949 он@nom сидеть@pastm на берег@loc озеро@gen . (author: andreas, phrase: gen-of): He was sitting on the lakeside.
-5950 дети@pl любить@3pl играть@inf на берег@loc море@gen . (author: andreas, phrase: gen-of): Children like playing on the sea shore.
+5950 дети@pl любить@3pl играть@inf на берег@loc море@gen . (author: andreas, phrase: gen-of, phrase: на-place): Children like playing on the sea shore.
 
 5952 посмотреть[look]@imprpl вокруг себя@gen ! (author: roman, phrase: вокруг-чего-то): Look around you!
 
@@ -5978,7 +5977,7 @@
 5976 я@nom принести@pastm она@dat подарок@nom . она@dat вроде понравиться@pastn . (author: roman, phrase: dat-нравится): I brought her a gift. She seems to have liked it.
 5977 — у мы@genpl пиво@nom остаться@pastn ? – в@std холодильник@prep вроде один@f бутылка@nom быть@3 . (author: roman, phrase: у-кого, phrase: в-place): "Do we have any beer left?" - "There seems to be one bottle in the fridge."
 5978 он@nom вроде говорить@pastm , что[that] не собираться@3 жениться@inf . (author: roman): He seemed to say that he was not going to get married.
-5979 я@nom вроде бы ты@dat сказать@pastm идти@inf быстрый@comp . (author: roman, phrase: датьetc-dat): I seemed to have told you to go faster.
+5979 я@nom вроде бы ты@dat сказать@pastm идти@inf быстрый@comp . (author: roman, phrase: датьetc-dat, phrase: dat-speech): I seemed to have told you to go faster.
 5980 хороший@adv , я@nom вроде готовый@shortm . (author: roman): Well, I seem to be ready.
 5981 ты@nom вроде говорить@pastm , что[that] не знать@2 французский@genm . (author: roman, phrase: не-gen): You seemed to have said that you did not know French.
 5982 я@nom потерять@pastm много[much]@accinanpl кровь@gen . (author: roman, phrase: много-gen): I have lost a lot of blood.
@@ -6064,7 +6063,7 @@
 
 6063 наш@pl дети@pl в@std школа@prep , а где ваш@pl ? (author: pasha, phrase: в-place): Our children are at school and where are yours?
 6064 наш@m ресторан@nom хороший@comp весь@genpl ресторан@genpl* . (author: pasha, phrase: comp-gen): Our restaurant is better than the rest.
-6065 мочь@3 быть@inf , он@nom прийти@3 на наш@accf вечеринка@acc . (author: pasha): He may come to our party.
+6065 мочь@3 быть@inf , он@nom прийти@3 на наш@accf вечеринка@acc . (author: pasha, phrase: на-направление): He may come to our party.
 6066 это ваш@n решение@nom . (author: pasha): It is your decision.
 6067 сколько[many]@pl год@genpl ваш@datpl дети@datpl ? (author: pasha, phrase: dat-лет): How old are your children?
 6068 добрый@m вечер@nom , как дело@pl ? (author: pasha): Good evening, how are you doing?
@@ -6286,7 +6285,7 @@
 6284 очень рад@shortm знакомство@dat . (author: roman, phrase: рад-dat): I'm delighted to meet you.
 6285 у он@genalt много[much]@pl разный[various]@genpl знакомство@genpl (author: roman, phrase: много-gen, phrase: у-кого): He has many various acquaintances.
 6286 почему бы ты@dat не взять@inf такси@acc ? (author: roman, phrase: кому-то-нужно): Why would you not take a taxi?
-6287 я@nom поехать@pastm в@std отель@acc на такси@prep . (author: roman, phrase: в-направление): I went to the hotel by taxi.
+6287 я@nom поехать@pastm в@std отель@acc на такси@prep . (author: roman, phrase: в-направление, phrase: на-транспорте): I went to the hotel by taxi.
 6288 я@nom взять@pastm такси@acc от вокзал@gen до отель@gen . (author: roman, phrase: от-gen-departure, phrase: до-point-of-destination): I took a taxi from the station to the hotel.
 6289 мы@pl поехать@1pl на машина@prep или на такси@prep ? (author: roman, phrase: на-транспорте): Are we going by car or by taxi?
 6290 что@nom быстрый@comp , такси@nom или метро@nom ? (author: roman): Which is faster, a taxi or the subway?
@@ -6342,7 +6341,7 @@
 6340 он@nom выйти@pastm из дом@gen в@std восемь@accinanpl час[o'clock]@genpl . (author: roman, phrase: в-num-час, phrase: выйти-из): He left the house at eight o'clock.
 6341 он@nom выйти@pastm из лес@gen . (author: roman, phrase: выйти-из): He came out of the forest.
 6342 автобус@nom остановиться@pastm , но никто@nom не выйти@pastm . (author: roman): The bus stopped but no one came out.
-6343 — если бы я@nom только выйти@pastm из дом@gen на пять@accinanpl минута@genpl ранний@comp ! (author: roman, phrase: выйти-из): - If only I left the house five minutes earlier!
+6343 — если бы я@nom только выйти@pastm из дом@gen на пять@accinanpl минута@genpl ранний@comp ! (author: roman, phrase: выйти-из, phrase: на-num-comp): - If only I left the house five minutes earlier!
 
 6345 я@nom знать@1 , что[that] здесь быть@pastf большой@f церковь@nom . (author: roman): I know that there was a big church here.
 6346 мой@m отец@nom ходить@3 в@std церковь@acc по воскресенье@datpl . (author: roman, phrase: в-направление, phrase: at-datpl): My father goes to church on Sundays.
@@ -6353,10 +6352,10 @@
 6351 я@nom видеть@pastm , как он@nom сесть@pastm в@std машина@acc . (author: roman, phrase: в-направление): I saw how he got into a car.
 6352 я@nom хотеть@1 , чтобы ты@nom сесть@pastm в@std машина@acc . (author: roman, phrase: в-направление, phrase: чтобы-that): I want you to get into the car.
 6353 он@nom сесть@pastm напротив я@gen . (author: roman, phrase: напротив-чего-то): He sat down across from me.
-6354 он@nom по ошибка@dat сесть@pastm не на тот@accinanm автобус@acc . (author: roman): He took the wrong bus by mistake.
+6354 он@nom по ошибка@dat сесть@pastm не на тот@accinanm автобус@acc . (author: roman, phrase: по-place-of-movement, phrase: сесть-на): He took the wrong bus by mistake.
 
-6356 я@nom сесть@pastm на автобус@acc , который@accinanm ехать@3 через центр@acc , чтобы не опоздать@inf в@std кино@prep . (author: roman, phrase: через-direction): I took the bus that goes through the center so as not to be late to the movies.
-6357 это быть@pastm первый@m раз@nom , когда я@nom сесть@pastm на самолёт@acc . (author: roman): It was the first time I got on a plane.
+6356 я@nom сесть@pastm на автобус@acc , который@accinanm ехать@3 через центр@acc , чтобы не опоздать@inf в@std кино@prep . (author: roman, phrase: через-direction, phrase: сесть-на): I took the bus that goes through the center so as not to be late to the movies.
+6357 это быть@pastm первый@m раз@nom , когда я@nom сесть@pastm на самолёт@acc . (author: roman, phrase: сесть-на): It was the first time I got on an airplane.
 6358 я@nom выйти@pastm из поезд@gen , сесть@pastm в@std автобус@acc и[part] поехать@pastm на озеро@acc . (author: roman, phrase: в-направление, phrase: выйти-из, phrase: на-направление): I got off the train, got on the bus and went to the lake.
 6359 я@nom не уверенный@shortm , когда он@nom вернуться@3 . (author: roman): I am not sure when he will be back.
 6360 я@nom не уверенный@shortm , что[that] хотеть@1 этот@accn делать@inf . (author: roman, phrase: хотеть-что-то): I am not sure that I want to do it.
@@ -6386,7 +6385,7 @@
 6384 стараться@impr не смотреть@inf в@std её глаз@accpl . (author: roman): Try not to look into her eyes.
 
 6386 я@dat уже давно пора@nom в@std отпуск@acc , но на работа@prep слишком много@pl дело@genpl . (author: ian, phrase: много-gen, phrase: в-направление, phrase: давно-пора, phrase: на-place): It's high time I went on vacation, but there are too many things at work.
-6387 я@nom нечастый@adv ходить@1 на урок@accpl русский@genm язык[lang]@gen* . (author: ian): I rarely go to the Russian lessons.
+6387 я@nom нечастый@adv ходить@1 на урок@accpl русский@genm язык[lang]@gen* . (author: ian, phrase: gen-of, phrase: на-направление): I rarely go to the Russian lessons.
 6388 мы@datpl нужно начать@inf заниматься@inf этот@instrf проблема@instr . (author: roman, phrase: кому-то-нужно, phrase: заниматься-чем-то): We need to start handling this problem.
 6389 почему бы вы@datpl не начать@inf с@std начать@pastf ? (author: roman, phrase: кому-то-нужно): Why don't you start at the beginning?
 6390 когда мы@pl мочь@1pl начать@inf ? (author: roman): When can we start?
@@ -6533,7 +6532,7 @@
 6531 я@nom думать@1 , что[that] каждый@m должный@shortm знать@inf не только свой@accinanm язык[lang]@acc . (author: roman): I think that everyone needs to know more than their own language.
 6532 он@nom быстрый@adv выучить@pastm французский@accinanm язык[lang]@acc . (author: roman): He quickly learned the French language.
 6533 ты@nom мочь@2 вспомнить@inf первый@accn слово@acc , который@accn ты@nom выучить@pastm на французский@prepm ? (author: roman, phrase: на-языке): Can you remember the first word that you learned in French?
-6534 я@dat жаль@adv , что[that] я@nom так долгий@adv ты@dat не писать@pastm . (author: roman, phrase: так-adv, phrase: dat-жаль): I am sorry that it took me so long to write to you.
+6534 я@dat жаль@adv , что[that] я@nom так долгий@adv ты@dat не писать@pastm . (author: roman, phrase: так-adv, phrase: dat-жаль, phrase: dat-speech): I am sorry that it took me so long to write to you.
 6535 я@dat очень жаль@adv этот@accn слышать@inf . (author: roman, phrase: dat-жаль): I am so sorry to hear that.
 6536 жаль@adv , что[that] я@nom не слышать@pastm этот@genm разговор@gen . (author: roman, phrase: не-gen): It is a pity that I did not hear that conversation.
 6537 жаль@adv , что[that] ты@nom не мочь@2 поехать@inf с@std мы@instrpl . (author: roman, phrase: с-чем): It is a pity that you cannot come with us.
@@ -6572,7 +6571,7 @@
 6570 быть@3 ли что-то , что[that] мы@pl мочь@1pl сделать@inf ? (author: roman): Is there something that we can do?
 6571 я@nom сказать@pastm что-то глупый@accn ? (author: roman): Did I say something stupid?
 6572 в@alt сколько@accinanpl начинаться@3 регистрация@nom ? (author: roman, phrase: во-сколько): At what time does the check-in begin?
-6573 в@std отель@prep быть@pastf ужасный@shortn длинный@f очередь@nom на регистрация@acc . (author: roman, phrase: в-place): There was a terribly long queue for check-in at the hotel.
+6573 в@std отель@prep быть@pastf ужасный@shortn длинный@f очередь@nom на регистрация@acc . (author: roman, phrase: в-place, phrase: на-for): There was a terribly long queue for check-in at the hotel.
 6574 я@dat казаться@3 , что[that] ты@nom не согласный@shortf . (author: roman, phrase: кому-то-кажется): It seems to me that you do not agree.
 6575 почему я@nom должный@shortm есть@inf только тот@accn , что[that] сказать@pastm врач@nom ? (author: roman): Why do I only have to eat what the doctor has said?
 6576 вы@pl с@std мы@instrpl согласный@shortpl ? (author: roman, phrase: с-чем): Do you agree with us?
@@ -6617,7 +6616,7 @@
 6615 они@pl никогда не пить@3pl пиво@gen . (author: sergei, phrase: не-gen): They never drink beer.
 6616 я@nom не хотеть@1 много@accinanpl гость@genpl . не надо больше@comp никто@acc звать[invite]@inf . (author: sergei, phrase: хотеть-что-то, phrase: много-gen): I do not want many guests. Do not invite anyone else.
 6617 как быть[fut]@3pl звать@inf ваш@accanm ребёнок@acc ? (author: sergei, phrase: звать-кого-то): What will your kid be called?
-6618 — зачем мы@datpl он@acc звать@inf ? (author: sergei, phrase: звать-кого-то, phrase: зачем-dat): - Why do we have to invite him?
+6618 — зачем мы@datpl нужно* он@acc звать@inf ? (author: sergei, phrase: звать-кого-то, phrase: зачем-dat): - Why do we have to invite him?
 6619 на улица@prep дождь@nom . я@nom не пойти@1 звать[invite]@inf Саша@acc домой , ты@nom идти@impr . (author: sergei, phrase: на-place, phrase: go-do): It is raining outside. I am not calling Sasha home, you go.
 6620 — как вы@accpl звать@3pl ? (author: sergei): - What is your name?
 6621 я@nom забыть@pastm , как звать@3pl его собака@acc . (author: sergei): I forgot what his dog is called.
@@ -6674,17 +6673,17 @@
 6672 ты@nom должный@shortm над этот@instrn подумать@inf , прежде что@instr отвечать@inf . (author: andreas, phrase: над-чем-то): You have to think it over before answering.
 6673 вы@pl должный@shortpl над этот@instrn подумать@inf , прежде что@instr отвечать@inf . (author: roman, phrase: над-чем-то): You should think about it before answering.
 6674 теперь твой@f очередь@nom отвечать@inf на вопрос@acc . (author: roman, phrase: answer-to-question): Now it is your turn to answer the question.
-6675 отвечать@inf ли я@dat на его письмо@acc ? (author: roman, phrase: dat-speech): Should I answer to his letter?
+6675 отвечать@inf ли я@dat на его письмо@acc ? (author: roman, phrase: dat-speech, phrase: answer-to-question): Should I answer to his letter?
 6676 я@nom не собираться@1 на этот@accn отвечать@inf . (author: roman): I am not going to answer to it.
 6677 чтобы он@nom ни спросить@pastm , ты@nom не должный@shortm отвечать@inf . (author: roman): Whatever he asks, you do not have to answer.
-6678 она@nom не отвечать@3 ни на какой[kind]@accinanpl письмо@accpl . (author: roman): She does nor reply to any kind of letters.
+6678 она@nom не отвечать@3 ни на какой[kind]@accinanpl письмо@accpl . (author: roman, phrase: answer-to-question): She does nor reply to any letters.
 6679 почему ты@nom не отвечать@2 на мой@accinanpl сообщение@accpl ? (author: roman, phrase: answer-to-question): Why are you not answer to my messages?
 6680 не хотеть@2pl идти@inf* – не идти@imprpl . (author: andreas): If you do not want to go, do not go.
 6681 что@acc вы@pl хотеть@2pl сказать@inf ? (author: andreas): What do you want to say?
 6682 что@acc сейчас делать@3 ваш@f сестра@nom ? (author: andreas): What is your sister doing now?
 6683 она@dat нужный@shortf наш@f помощь@nom . (author: andreas, phrase: dat-нужен): She needs our help.
 6684 и вы@pl говорить@2pl , что[that] у она@genalt красивый@m парень@nom ? (author: roman, phrase: gen-possession): And you are saying that she has a handsome boyfriend?
-6685 я@nom ведь вы@datpl говорить@pastm , что[that] он@nom не такой@m уж плохой@m парень@nom . (author: roman, phrase: датьetc-dat, phrase: dat-speech): I told you that he was not such a bad guy.
+6685 я@nom ведь вы@datpl говорить@pastm , что[that] он@nom не такой@m уж плохой@m парень@nom . (author: roman, phrase: dat-speech): I told you that he was not such a bad guy.
 6686 — её парень@nom – идиот@nom . (author: roman): - Her boyfriend is an idiot.
 
 6688 это ваш@f чёрный@f сумка@nom ? (author: andreas): Is it your black bag?
@@ -6727,7 +6726,7 @@
 6725 я@nom быть@pastm достаточный@adv глупый@shortm , для тот@genn чтобы поверить@inf он@dat . (author: roman, phrase: для-того, phrase: gen-верить): I was stupid enough to believe him.
 6726 ты@dat бы хороший@comp одеться@inf . (author: roman, phrase: dat-лучше): You had better get dressed.
 6727 почему бы ты@dat не одеться@inf ? (author: roman): Why do you not get dressed?
-6728 он@nom одеться@pastm и выйти@pastm на улица@acc . (author: roman): He dressed and went outside.
+6728 он@nom одеться@pastm и выйти@pastm на улица@acc . (author: roman, phrase: на-направление): He dressed and went outside.
 6729 какой@accn время@acc год@gen самый@accn тёплый@accn ? (author: roman, phrase: каждый-time, phrase: самый-adj): Which time of the year is the warmest?
 6730 лето@nom – самый@n тёплый@n время@nom год@gen . (author: roman, phrase: gen-of, phrase: самый-adj): Summer is the warmest time of the year.
 
@@ -6762,7 +6761,7 @@
 6760 Маша@nom вернуться@pastf от врач@gen с@std плохой@instrpl новость@instrpl (author: pasha, phrase: с-чем, phrase: от-gen-departure): Masha returned from the doctor with bad news.
 6761 как я@dat хороший@comp ехать@inf домой от ты@gen ? (author: pasha, phrase: от-gen-departure, phrase: как-dat): What's the best way for me to go home from your place?
 6762 мама@nom не любить@3 , когда я@nom поздний@adv возвращаться@1 от друг@genpl (author: pasha, phrase: от-gen-departure): Mom does not like when I get back late from friends.
-6763 я@nom не мочь@1 ехать@inf прямо на работа@acc от ты@gen . я@dat нужно взять@inf свой@accinanm ноутбук@acc из дом@gen (author: pasha, phrase: от-gen-departure, phrase: кому-то-нужно, phrase: из-gen-departure): I cannot go straight to work from you. I need to take my laptop from home.
+6763 я@nom не мочь@1 ехать@inf прямо на работа@acc от ты@gen . я@dat нужно взять@inf свой@accinanm ноутбук@acc из дом@gen (author: pasha, phrase: от-gen-departure, phrase: кому-то-нужно, phrase: из-gen-departure, phrase: на-направление): I cannot go straight to work from you. I need to take my laptop from home.
 6764 дети@pl не должный@shortpl выходить@inf на улица@acc в@alt время@acc урок@genpl (author: pasha, phrase: во-время-чего-то, phrase: на-направление): Children should not go outside during lessons.
 6765 Саша@nom очень любить@3 плавать@inf в@alt время@acc дождь@gen (author: pasha, phrase: во-время-чего-то): Sasha loves to swim in the rain.
 6766 я@nom быть[fut]@1 работать@inf в@std среда@acc (author: sergei, phrase: в-time): I will be working on Wednesday.
@@ -6834,7 +6833,7 @@
 6832 мы@pl уже долгий@adv работать@1pl над этот@instrf проблема@instr , но весь@n ещё не мочь@1pl она[it]@acc решить@inf . (author: pasha, phrase: ещё-нет, phrase: работать-над-чем-то): 
 6833 — вы@pl уже найти@pastpl новый@accf работа@acc ? — нет[part] , но я@nom работать@1 над этот@instrn каждый@accinanm день@acc (author: pasha, phrase: работать-над-чем-то, phrase: каждый-time): 
 
-6835 этот@m дом@nom маленький@comp наш@genn дом@gen* , в@std наш@prepm дом@prep* на один@accf спальня@acc больше@comp . (author: sergei, phrase: comp-gen): 
+6835 этот@m дом@nom маленький@comp наш@genn дом@gen* , в@std наш@prepm дом@prep* на один@accf спальня@acc больше@comp . (author: sergei, phrase: comp-gen, phrase: на-num-comp): 
 6836 я@nom любить@1 читать@inf ; меньше@comp – писать@inf . (author: sergei): 
 
 
@@ -7122,7 +7121,7 @@
 7120 она@nom хотеть@pastf учить[teach]@inf мы@accpl французский@datm язык[lang]@dat . (author: sergei, phrase: учить-dat): She wanted to teach us French language.
 7121 он@nom не быть@pastm знакомый@shortm мы@datpl , и мы@pl не знать@pastpl , как он@acc звать@3pl . (author: sergei, phrase: in-eyes-of, phrase: быть-кем-то): He did not know as and we didn't know what he is called.
 
-7123 я@nom мочь@pastm бы закончить@inf школа@acc на два@accinanpl год@gen ранний@comp , если бы у я@gen быть@pastn больше@comp внимание@gen . (author: sergei, phrase: comp-gen2, phrase: someone-had): I could have finished school two years earlier if I had more attention.
+7123 я@nom мочь@pastm бы закончить@inf школа@acc на два@accinanpl год@gen ранний@comp , если бы у я@gen быть@pastn больше@comp внимание@gen . (author: sergei, phrase: comp-gen2, phrase: someone-had, phrase: на-num-comp): I could have finished school two years earlier if I had more attention.
 7124 ты@nom всегда быть@pastm я@dat хороший@instrm друг@instr . (author: sergei, phrase: in-eyes-of, phrase: быть-кем-то): You have always been a good friend to me.
 7125 она@nom всегда готовить@pastf я@dat завтрак@acc (author: sergei, phrase: intended-for): She always cooked breakfast for me.
 7126 она@nom бывать@3 у свой@genf бабушка@gen только раз@genpl в@std год@acc . (author: sergei, phrase: в-час): She's at her grandmother's only once a year.
@@ -7202,10 +7201,10 @@
 
 7201 если бы ты@nom только знать@pastm , как сильный@adv я@nom ты@acc любить@pastf . (author: sergei, phrase: если-только): If you had only known how strongly I loved you.
 7202 я@nom бы звать[invite]@pastm он@acc к@std себя@dat , если бы я@nom только знать@pastm как он@acc звать@3pl (author: sergei, phrase: если-только, phrase: как-зовут, phrase: звать-кого-то, phrase: к-кому-чему): I would have invited him over, if I had only known his name.
-7203 если бы я@nom только закончить@pastm работа@acc на несколько@accinanpl час@genpl раньше . . . (author: sergei, phrase: если-только, phrase: много-gen): If only I had finished my work a few hours earlier...
+7203 если бы я@nom только закончить@pastm работа@acc на несколько@accinanpl час@genpl ранний@comp . . . (author: sergei, phrase: если-только, phrase: много-gen): If only I had finished my work a few hours earlier...
 7204 если бы она@nom только видеть@pastf я@acc сейчас . . . (author: sergei, phrase: если-только): If she had only seen me now...
 7205 если бы он@nom только успеть@pastm вчера сделать@inf домашний@accinanpl задание@accpl , то сейчас бы у он@genalt не быть@pastn проблема@genpl . (author: sergei, phrase: если-только, phrase: домашнее-задание, phrase: did-not-have): If only he had managed to finish his homework yesterday, he wouldn't have any trouble now.
-7206 если бы я@nom только писать@pastm лекция@acc , а не говорить@pastm с@std сосед@instr , то преподаватель@nom не предложить@pastm бы я@dat выйти@inf из класс[room]@gen . (author: sergei, phrase: dat-speech, phrase: датьetc-dat, phrase: если-только, phrase: не-gen, phrase: говорить-с): If only I were writing down the lecture and not talking to my neighbour, then the teacher wouldn't have asked me to leave the classroom.
+7206 если бы я@nom только писать@pastm лекция@acc , а не говорить@pastm с@std сосед@instr , то преподаватель@nom не предложить@pastm бы я@dat выйти@inf из класс[room]@gen . (author: sergei, phrase: dat-speech, phrase: если-только, phrase: не-gen, phrase: говорить-с): If only I were writing down the lecture and not talking to my neighbour, then the teacher wouldn't have asked me to leave the classroom.
 7207 на выходной@preppl мы@pl хотеть@1pl поехать@inf в@std лес@acc за город@acc . (author: sergei, phrase: в-направление, phrase: за-город, phrase: на-time): 
 7208 мой@pl друг@pl звать[invite]@pastpl я@acc поехать@inf с@std они@instrplalt за город@acc . (author: sergei, phrase: за-город, phrase: с-чем): 
 7209 мы@pl ехать@1pl к@std бабушка@dat за город@acc , потому_что она@nom не любить@3 ездить@inf к@std мы@datpl в@std город@acc . (author: sergei, phrase: к-кому-чему, phrase: за-город, phrase: в-направление): 
@@ -7273,7 +7272,7 @@
 7271 извинить@2pl , но ваш@shortf машина@nom не быть[fut]@3 готовый@shortf к@std завтра (author: sergei): 
 7272 у мы@genpl очень тёплый@f зима@nom и по телевизор@dat сказать@pastpl , что@acc снег@gen не быть[fut]@3 (author: sergei, phrase: по-mode-of-communication, phrase: there-will-be-none): 
 7273 простить@imprpl , но завтра я@gen не быть[fut]@3 здесь , я@nom в@std город@prep на один@accinanm день@acc (author: sergei, phrase: в-place, phrase: на-time, phrase: кого-то-нет): 
-7274 я@nom сегодня опоздать@pastm на поезд@acc и я@prep сказать@pastpl , что@acc завтра он@gen не быть[fut]@3 , потому_что он[it]@nom ходить@3 через день@acc (author: sergei, phrase: через-time, phrase: кого-то-нет): 
+7274 я@nom сегодня опоздать@pastm на поезд@acc и я@prep сказать@pastpl , что@acc завтра он@gen не быть[fut]@3 , потому_что он[it]@nom ходить@3 через день@acc (author: sergei, phrase: через-time, phrase: кого-то-нет, phrase: на-for): 
 7275 сегодня не быть[fut]@3 математика@gen . наш@m учитель@nom не прийти@pastm в@std школа@acc . (author: sergei, phrase: there-will-be-none, phrase: в-направление): There will be no Maths today. Our teacher has not come to school.
 7276 можно он@dat книга@acc , такой@accf же как[like] и[part] у я@gen ? (author: sergei, phrase: такой..как, phrase: intended-for): 
 7277 можно я@dat мороженое@gen ? я@nom очень сильный@adv любить@1 с@std шоколад@instr (author: sergei, phrase: с-чем, phrase: кому-то-можно): 
@@ -7415,7 +7414,7 @@
 7413 весь@datn приходить@3 конец@acc , вот и[part] мой@accinanm планшет@acc больше@comp не работать@3 (author: sergei, phrase: конец-dat): 
 7414 вы@datpl нужно пойти@inf на новый@m фильм@acc , в@std он@prep много@pl известный@genpl люди@genpl (author: sergei, phrase: много-gen, phrase: need-to-be, phrase: в-place): 
 7415 мы@datpl всё@instr нужно подождать@inf учитель@acc десять@accinanpl минута@genpl (author: sergei, phrase: кому-то-нужно, phrase: каждый-time): 
-7416 кто@gen ты@dat нужно спросить@inf , чтобы пойти@inf сегодня на фильм@acc с@std мы@instrpl ? (author: sergei, phrase: need-to-be, phrase: с-чем): 
+7416 кто@gen ты@dat нужно спросить@inf , чтобы пойти@inf сегодня на фильм@acc с@std мы@instrpl ? (author: sergei, phrase: need-to-be, phrase: с-чем, phrase: на-направление): 
 7417 если у вы@genpl быть[fut]@3pl вопрос@pl , обращаться@imprpl к@alt я@dat за помощь@instr . (author: sergei, phrase: обращаться-к, phrase: за-goal, phrase: will-have): If you have any problems, ask me for help.
 7418 вы@datpl нужно обращаться@inf к@alt я@dat по имя@dat (author: sergei, phrase: need-to-be, phrase: обращаться-к): 
 7419 если вы@datpl нужный@shortf помощь@acc , вы@pl мочь@2pl обращаться@inf к@std продавец@datpl (author: sergei, phrase: обращаться-к, phrase: dat-нужен): 
@@ -7460,7 +7459,7 @@
 7458 сколько[many]@pl нужно люди@genpl чтобы играть@inf в@std футбол@acc . (author: sergei, phrase: играть-в-игру, phrase: gen-of): 
 7459 вечер@instr после университет@gen я@nom ходить@1 играть@inf в@std футбол@acc с@std друг@instrpl . (author: sergei, phrase: с-чем, phrase: играть-в-игру, phrase: at-instr, phrase: после-чего-то): 
 7460 он@nom повернуть@pastm за дом@acc и я@nom уже не видеть@pastm он@acc (author: sergei, phrase: за-direction): 
-7461 я@nom сесть@pastm на автобус@acc номер@nom три@accinanpl , потому_что хотеть@pastm поехать@inf через весь@accinanm город@acc (author: sergei, phrase: через-direction): 
+7461 я@nom сесть@pastm на автобус@acc номер@nom три@accinanpl , потому_что хотеть@pastm поехать@inf через весь@accinanm город@acc (author: sergei, phrase: через-direction, phrase: сесть-на): 
 7462 и[part] как только этот@accn мочь@pastn прийти@inf вы@datpl в@std голова@acc (author: sergei, phrase: прийти-в-голову): 
 7463 последний@accinanm раз@acc я@nom видеть@pastm она@acc , наверное , год@acc назад , или даже два@accinanpl . (author: sergei, phrase: nazad, phrase: каждый-time): 
 7464 я@nom закончить@pastm школа@acc год@acc назад , и сейчас я@nom в@std университет@prep на первый@prepm курс@prep (author: sergei, phrase: nazad, phrase: на-place, phrase: в-place): 
@@ -7471,7 +7470,7 @@
 
 7470 никто@nom из мой@accanpl друг@accpl не знать@pastm как нужно играть@inf в@std футбол@acc . (author: sergei, phrase: играть-в-игру): 
 7471 мы@pl быстрый@adv пойти@pastpl через лес@acc , чтобы успеть@inf до ночь@gen вернуться@inf домой . (author: sergei, phrase: через-direction, phrase: до-какого-то-времени): 
-7472 я@nom сказать@pastm идти@inf он@dat за машина@acc , чтобы не потерять@inf он@gen (author: sergei, phrase: за-direction, phrase: датьetc-dat, phrase: не-gen): 
+7472 я@nom сказать@pastm идти@inf он@dat за машина@acc , чтобы не потерять@inf он@gen . (author: sergei, phrase: за-direction, phrase: не-gen): 
 
 7474 мы@pl решить@pastpl пойти@inf в@std парк@acc , чтобы посмотреть[look]@inf на животное@accpl . (author: sergei, phrase: смотреть-на, phrase: в-направление): 
 
@@ -7502,7 +7501,7 @@
 7500 я@prep весь@n равный@adv кто@nom твой@accinanpl родители@pl и кто@instr они@pl работать@3pl (author: sergei, phrase: все-равно): 
 7501 если бы я@nom закончить@pastm школа@acc в@std прошлый@prepm год@loc , то сейчас бы учиться@pastm в@std университет@prep (author: sergei, phrase: если-бы, phrase: в-году, phrase: в-place): 
 7502 за ужин@instr я@nom говорить@pastm с@alt свой@instrf семья@instr (author: sergei, phrase: за-time-of-action, phrase: говорить-с): 
-7503 я@dat никто@nom не звонить@pastm день@acc за день@instr (author: sergei, phrase: time-after-time): No-one called me day after day.
+7503 я@dat никто@nom не звонить@pastm день@acc за день@instr . (author: sergei, phrase: time-after-time, phrase: dat-speech): No-one called me day after day.
 7504 я@nom ехать@pastm весь@accf ночь@acc и начать@pastm петь@inf поворот@acc за поворот@instr (author: sergei, phrase: каждый-time): 
 7505 за завтрак@instr я@nom играть@pastm с@alt свой@instrf собака@instr , который[which]@f сидеть@pastf под стол@instr . (author: sergei, phrase: под-чем-то, phrase: за-time-of-action, phrase: с-чем): 
 7506 она@nom работать@3 учитель@instr уже десять@accinanpl год@genpl (author: sergei, phrase: работать-кем-то, phrase: каждый-time): 
@@ -7510,9 +7509,9 @@
 7508 я@nom весь@accf прошлый@accf неделя@acc работать@pastf целый@instrpl день@instrpl (author: sergei, phrase: hyperbole, phrase: каждый-time): 
 7509 я@nom каждый@m день@acc брать@1 на работа@acc обед@acc (author: sergei, phrase: взять-на-работу, phrase: каждый-time, phrase: на-направление): 
 7510 я@nom не уверенный@shortm , что@acc стоить[should]@3 брать@inf книга@gen на работа@acc (author: sergei, phrase: на-направление): 
-7511 я@nom думать@1 ты@dat разрешить@3pl взять@inf сын@acc на работа@acc . (author: sergei, phrase: на-направление): 
+7511 я@nom думать@1 ты@dat разрешить@3pl взять@inf сын@acc на работа@acc . (author: sergei, phrase: на-направление, phrase: dat-speech): 
 7512 завтра я@prep нужно взять@inf этот@accf одежда@acc на работа@acc (author: sergei, phrase: на-направление): 
-7513 вы@datpl нужно взять@inf ноутбук@acc на работа@acc , потому_что вы@pl поехать@2pl в@std другой@accinanm город@acc (author: sergei, phrase: в-направление, phrase: датьetc-dat, phrase: кому-то-нужно): 
+7513 вы@datpl нужно взять@inf ноутбук@acc на работа@acc , потому_что вы@pl поехать@2pl в@std другой@accinanm город@acc (author: sergei, phrase: в-направление, phrase: кому-то-нужно): 
 7514 я@nom не быть[fut]@1 брать@inf на работа@acc домашний@accf еда@acc , я@nom хотеть@1 быть@3 обед@acc в@std кафе@prep (author: sergei, phrase: взять-на-работу, phrase: каждый-time): 
 7515 вы@datpl не стоить[should]@3 брать@inf на работа@acc кошка@acc или собака@acc , они@pl не быть[fut]@3pl давать[allow]@inf работать@inf весь@datm офис@dat (author: sergei, phrase: взять-на-работу, phrase: давать-verb, phrase: не-стоит): 
 7516 — извинить@2pl , как звать@3pl ваш@accf собака@acc ? (author: sergei, phrase: как-зовут): 
@@ -7528,7 +7527,7 @@
 7526 я@nom пойти@pastm играть@inf в@std футбол@acc для тот@genn , чтобы частый@comp бывать@inf на улица@prep (author: sergei, phrase: играть-в-игру, phrase: in-order-to, phrase: на-place): 
 7527 она@nom приехать@pastf к@alt я@prep для тот@genn , чтобы показать@inf свой@accf новый@accf машина@acc (author: sergei, phrase: in-order-to): 
 7528 я@nom купить@pastm новый@accinanm дом@acc для тот@genn , чтобы мой@datpl дети@datpl и мой@prepf собака@prep быть@pastn где играть@inf (author: sergei, phrase: in-order-to): 
-7529 я@nom купить@pastm новый@accinanm планшет@acc для тот@genn , чтобы дать@inf свой@accinanm старый@accinanm жена@dat (author: sergei, phrase: in-order-to, phrase: датьetc-dat): 
+7529 я@nom купить@pastm новый@accinanm планшет@acc для тот@genn , чтобы дать@inf свой@accinanm старый@accinanm планшет@acc* жена@dat . (author: sergei, phrase: in-order-to, phrase: датьetc-dat): 
 7530 я@nom приехать@pastm в@std этот@accinanm город@acc для тот@genn , чтобы найти@inf новый@accf работа@acc (author: sergei, phrase: в-направление, phrase: in-order-to): 
 7531 — и[part] не забыть@impr закрыть@inf дверь@acc на замок[lock]@acc , когда быть[fut]@2 выходить@inf на работа@acc (author: sergei, phrase: на-замок): 
 7532 я@nom весь@accinanm день@acc пытаться@pastm вспомнить@inf закрыть@pastm ли я@nom квартира@acc на замок[lock]@acc (author: sergei, phrase: на-замок, phrase: каждый-time): 
@@ -7546,7 +7545,7 @@
 7544 мы@pl уже больше@comp час@gen в@std путь@prep (author: sergei, phrase: в-пути, phrase: comp-gen2): 
 7545 день@acc за день@instr я@nom ходить@1 на работа@acc и уже устать@pastm от она[it]@accalt (author: sergei, phrase: time-after-time, phrase: на-направление): 
 7546 я@nom ждать@pastm она@acc день@acc за день@instr , но она@nom так и[part] не прийти@pastf (author: sergei, phrase: time-after-time): 
-7547 раньше я@nom интересоваться@pastm картина@instrpl , но сейчас предпочитать@1 книга@accpl (author: sergei): 
+7547 ранний@comp я@nom интересоваться@pastm картина@instrpl , но сейчас предпочитать@1 книга@accpl (author: sergei): 
 7548 почему ты@nom интересоваться@2 книга@instr этот@genn автор@gen ? (author: sergei, phrase: интересоваться-чем-то): 
 7549 мой@m отец@nom интересоваться@3 твой@instrf машина@instr . сколько@accinanpl она[it]@nom стоить@3 . (author: sergei, phrase: интересоваться-чем-то): 
 7550 мой@f мама@nom слишком частый@adv интересоваться@3 мой@instrf работа@instr (author: sergei, phrase: интересоваться-чем-то): 
@@ -7665,7 +7664,7 @@
 7663 что@gen ты@nom больше@comp всё@gen бояться@2 ? (author: sergei): What's your greatest fear?
 7664 я@nom знать@1 , что@acc ты@nom бояться@2 наш@accanm учитель@gen по русский@datm язык[lang]@dat . (author: sergei, phrase: по-definition, phrase: gen-possession): 
 7665 что@acc тут случиться@pastn ? этот@f женщина@nom хотеть@pastf украсть@inf этот@accf блузка@acc (author: sergei): 
-7666 мой@pl друг@datpl сказать@pastpl я@dat , что@acc ты@nom украсть@pastm у я@gen девушка@acc (author: sergei, phrase: dat-speech, phrase: датьetc-dat): 
+7666 мой@pl друг@datpl сказать@pastpl я@dat , что@acc ты@nom украсть@pastm у я@gen девушка@acc (author: sergei, phrase: dat-speech): 
 7667 простить@impr за тот@accn , что@acc украсть@pastm сегодня этот@accf ручка@acc в@std магазин@prep (author: sergei, phrase: в-place, phrase: за-то-что): 
 7668 продавец@nom сказать@pastm , что@acc я@nom украсть@pastm этот@accf книга@acc , но я@nom этот@genn не делать@pastm . (author: sergei): 
 7669 на помощь@nom ! он@nom украсть@pastm мой@accf сумка@acc (author: sergei): 
@@ -7683,7 +7682,7 @@
 7681 я@nom не знать@1 ничто@gen о@std свой@preppl сосед@preppl , я@nom даже не видеть@pastm они@genpl (author: sergei, phrase: о-prep, phrase: не-gen): 
 
 7683 мы@pl идти@pastpl очень долгий@adv , всё@acc высокий@comp и[part] высокий@comp (author: sergei): 
-7684 я@nom жить@1 на два@accinanpl этаж@gen высокий@comp , чем ты@nom (author: sergei, phrase: more-than, phrase: auto-234-gen): 
+7684 я@nom жить@1 на два@accinanpl этаж@gen высокий@comp , чем ты@nom . (author: sergei, phrase: more-than, phrase: auto-234-gen, phrase: на-num-comp): 
 7685 я@nom хотеть@1 стать@inf высокий@comp весь@preppl в@std свой@prepn класс[room]@prep (author: sergei, phrase: в-place): 
 7686 самолёт@nom лететь@pastm всё@acc высокий@comp и[part] высокий@comp (author: sergei): 
 7687 я@nom надеяться@1 , что@acc в@std следующий@datn год@dat я@nom стать@1 высокий@comp (author: sergei): 
@@ -7725,7 +7724,7 @@
 
 7724 бросить@impr свой@pl дело@pl и[part] пойти@pastpl с@std мы@instrpl (author: sergei, phrase: с-чем): 
 7725 бросить@impr этот@accf книга@acc на стол@acc . (author: sergei, phrase: на-направление): 
-7726 бросить@impr , мы@pl не поверить@1pl в@std твой@accf тот@accn , что@acc ты@nom мы@datpl рассказывать@pastm (author: sergei, phrase: dat-speech): 
+7726 бросить@impr , мы@pl не поверить@1pl в@std твой@accf тот@accn , что@acc ты@nom мы@datpl рассказывать@pastm . (author: sergei, phrase: dat-speech): 
 7727 бросить@impr ты@nom уже этот@accn дело@acc и начать@impr что-то другой@accn (author: sergei): 
 7728 бросить@impr , ты@nom же так не думать@2 ! (author: sergei): 
 7729 бросить@impr этот@accf идея@acc . (author: sergei): 
@@ -7758,31 +7757,31 @@
 
 7757 она@nom знать@pastf , что@acc мы@pl не бояться@1pl собака@genpl (author: sergei, phrase: не-gen): 
 7758 мы@pl не бояться@1pl оставаться@inf один[alone]@pl дома (author: sergei): 
-7759 мы@pl надеяться@1pl на твой@accf сестра@acc (author: sergei): 
+7759 мы@pl надеяться@1pl на твой@accf сестра@acc (author: sergei, phrase: на-for): 
 7760 надеяться@1pl , что@acc получить@1pl письмо@acc на этот@genf неделя@prep (author: sergei): 
 7761 надеяться@1pl , вы@datpl у мы@genpl понравиться@3 . (author: sergei, phrase: у-кого-location): We hope you'll enjoy your stay.
 7762 мы@pl надеяться@1pl вернуться@inf в@std следующий@prepm год@loc . (author: sergei, phrase: в-году): We hope to return next year.
 
-7764 мы@pl в@std любой@prepn дело@prep надеяться@1pl на успех@acc (author: sergei): 
+7764 мы@pl в@std любой@prepn дело@prep надеяться@1pl на успех@acc (author: sergei, phrase: на-for): 
 7765 мы@pl надеяться@1pl , что@acc дождь@gen не быть[fut]@3 , потому_что завтра мы@pl хотеть@pastpl пойти@inf в@std лес@acc (author: sergei, phrase: в-направление, phrase: there-will-be-none): 
 7766 мы@pl надеяться@1pl , что@acc она@nom быть[fut]@3 там ранний@comp мы@genpl (author: sergei, phrase: comp-gen): 
 7767 мы@pl надеяться@1pl , что@acc он@nom остаться@3 на пара@acc неделя@genpl . (author: sergei, phrase: много-gen, phrase: на-time): 
 7768 мы@pl надеяться@1pl , что@acc вы@datpl у мы@genpl понравиться@pastn , мы@pl быть[fut]@1pl рад@shortpl видеть@inf вы@genpl в@std наш@prepm отель@prep снова (author: sergei, phrase: в-place): 
-7769 сделать@impr весь@n правильный@shortn , мы@pl очень на ты@acc надеяться@1pl (author: sergei): 
+7769 сделать@impr весь@n правильный@shortn , мы@pl очень на ты@acc надеяться@1pl (author: sergei, phrase: на-for): 
 7770 она@nom болеть@pastf на прошлый@prepf неделя@prep , но мы@pl надеяться@1pl , что@acc на этот@prepf неделя@prep она@nom выйти@3 на работа@acc (author: sergei, phrase: в-время, phrase: на-направление): 
 7771 вы@pl дать@2pl я@dat работа@acc ? (author: sergei, phrase: датьetc-dat): 
 7772 я@nom не знать@1 кто@dat вы@pl дать@2pl книга@acc , но надеяться@1 , что@acc этот@accn быть[fut]@1 я@nom (author: sergei, phrase: датьetc-dat): 
 7773 сколько[many]@pl деньги@genpl вы@pl я@dat дать@2pl за этот@accf статья@acc ? (author: sergei, phrase: много-gen, phrase: за-acc): 
-7774 вы@pl не дать@2pl я@dat свой@accinanm номер@acc телефон[number]@gen ? (author: sergei, phrase: gen-of, phrase: датьetc-dat): Can I have your telephone number?
+7774 вы@pl не дать@2pl я@dat свой@accinanm номер@acc телефон@gen ? (author: sergei, phrase: gen-of, phrase: датьetc-dat): Can I have your telephone number?
 7775 кто@dat из этот@genpl мальчик@genpl вы@pl дать@2pl книга@acc ? (author: sergei, phrase: из-out-of): Which one of these boys will you give the book to?
 7776 вы@pl дать@2pl я@dat немного[little]@adv время@gen ? (author: sergei, phrase: много-gen, phrase: датьetc-dat): Will you give me some time?
 7777 когда вы@pl дать@2pl я@dat мой@m паспорт@acc обратный@shortn ? (author: sergei, phrase: датьetc-dat): 
 7778 я@nom не мочь@1 понять@inf , вы@pl дать@2pl я@dat ключ@accpl или нет[part] , (author: sergei, phrase: датьetc-dat): 
 7779 и[part] вы@pl надеяться@2pl , что@acc я@nom вы@datpl поверить@1 ? (author: sergei, phrase: gen-верить): 
-7780 на что@acc вы@pl только надеяться@2pl (author: sergei): 
+7780 на что@acc вы@pl только надеяться@2pl (author: sergei, phrase: на-for): 
 7781 вы@pl надеяться@2pl , что@acc он@nom весь@n ещё прийти@3 ? он@nom опаздывать@3 на целый@accinanm час@acc (author: sergei, phrase: всё-ещё, phrase: каждый-time): 
 7782 что@acc вы@pl надеяться@2pl здесь найти@inf ? (author: sergei): 
-7783 вы@pl надеяться@2pl не на тот@accanpl люди@accpl (author: sergei): 
+7783 вы@pl надеяться@2pl не на тот@accanpl люди@accpl (author: sergei, phrase: на-for): 
 7784 почему вы@pl на она@genalt надеяться@2pl ? она@nom никогда не получать@pastf хороший@accinanm результат@acc (author: sergei): 
 7785 вы@pl уже ни на кто@gen не надеяться@2pl (author: sergei, phrase: ни-any-кто): 
 7786 вы@pl не надеяться@2pl выиграть@inf в@std футбол@acc сегодня ? (author: sergei): 
@@ -7800,7 +7799,7 @@
 7798 вы@pl бояться@2pl спать@inf без свет@gen , не правда@nom ли ? (author: sergei, phrase: без-gen): 
 7799 вы@pl бояться@2pl правда@gen , потому_что она[it]@nom мочь@3 открыть@inf все[everyone]@datpl глаз@accpl на вы@genpl (author: sergei): 
 7800 почему вы@pl бояться@2pl кровь@gen ? (author: sergei): 
-7801 ты@nom не знать@2 , на что@acc он@nom надеяться@3 ? (author: sergei): 
+7801 ты@nom не знать@2 , на что@acc он@nom надеяться@3 ? (author: sergei, phrase: на-for): 
 7802 он@nom надеяться@3 получить@inf деньги@pl сегодня вечер@instr (author: sergei, phrase: at-instr): 
 7803 она@nom надеяться@3 , что@acc больше[longer]@comp никогда он@gen не встретить@3 (author: sergei): 
 7804 мама@nom надеяться@3 , что@acc она@gen сын@nom пройти@3 экзамен@acc на пять@accinanpl (author: sergei): 
@@ -7826,3 +7825,45 @@
 7824 мой@f бабушка@nom хотеть@pastf бы быть@inf молодой@comp год@genpl на десять@accinanpl (author: sergei, phrase: comp-gen2): 
 7825 я@nom не уверенный@shortm , что@acc ты@nom найти@2 себя@dat жена@acc ещё молодой@comp (author: sergei, phrase: датьetc-dat, phrase: ещё-comp): 
 7826 — сказать@imprpl , пожалуйста , сколько@pl время@gen ? — почти пять@pl час[o'clock]@genpl . (author: andreas, phrase: скажите): 
+7827 они@pl надеяться@3pl успеть@inf на свой@accinanm самолёт@acc (author: sergei, phrase: успеть-на): 
+7828 мой@pl родители@pl надеяться@3pl , что@acc я@nom приехать@1 в@std гость@loc на следующий@accanpl выходной@accanpl (author: sergei, phrase: в-place): 
+7829 Саша@nom и Маша@nom надеяться@3pl купить@inf новый@accf квартира@acc (author: sergei): 
+7830 они@pl надеяться@3pl купить@inf хороший@accinanpl место[seat]@accpl в@std кино@gen (author: sergei): 
+7831 они@pl надеяться@3pl получить@inf деньги@accpl за свой@accf работа@acc (author: sergei, phrase: за-acc): 
+7832 родители@pl надеяться@3pl , что@acc я@nom закончить@1 университет@acc в@std этот@prepm год@loc (author: sergei, phrase: в-году): 
+7833 учитель@acc в@std Россия@prep надеяться@3pl получать@inf больше@comp деньги@genpl (author: sergei, phrase: в-place, phrase: comp-gen2): 
+7834 люди@pl на улица@preppl надеяться@3pl , что@acc сегодня пойти[fall]@3 дождь@acc , весь@accf неделя@acc быть@pastn очень жаркий@adv (author: sergei, phrase: каждый-time, phrase: на-place): 
+7835 люди@pl надеяться@3pl , что@acc помощь@acc скорый@adv быть[fut]@3 (author: sergei): 
+7836 все[everyone]@pl надеяться@3pl , что@acc Саша@nom прийти@3 на вечеринка@acc (author: sergei, phrase: на-направление): 
+7837 не нужно ждать@inf когда вы@datpl дать@3pl новый@accf работа@acc , просить@imprpl сам@shortpl (author: sergei, phrase: датьetc-dat): 
+7838 посмотреть[look]@impr сколько[many]@accinanpl ты@dat дать@3pl вещь@genpl (author: sergei, phrase: датьetc-dat): 
+7839 когда ты@nom прийти@2 к@std они@datplalt , они@pl дать@3pl ты@dat книга@accpl (author: sergei, phrase: датьetc-dat, phrase: к-кому-чему): 
+7840 ждать@impr , они@pl скорый@adv дать@3pl знак@acc (author: sergei): 
+7841 ты@dat дать@3pl столько , сколько@pl нужно (author: sergei, phrase: датьetc-dat): 
+7842 они@pl не дать@3pl я@dat пойти@inf домой ранний@comp (author: sergei, phrase: датьetc-dat): 
+7843 мой@pl родители@pl не дать@3pl я@prep деньги@genpl на дорога@acc (author: sergei, phrase: не-gen, phrase: деньги-на): 
+7844 мой@pl друг@pl не дать@3pl я@prep сидеть@inf дома один[alone]@datm (author: sergei, phrase: сидеть-дома): 
+7845 сосед@pl не дать@3pl я@dat ключ@pl от их квартира@gen (author: sergei, phrase: датьetc-dat, phrase: не-gen): 
+7846 когда ты@nom приехать@2 , ты@dat дать@3pl работа@acc на сегодня (author: sergei, phrase: датьetc-dat): 
+7847 на этот@prepf неделя@prep я@nom читать@1 уже третий@accf книга@acc (author: sergei, phrase: в-время): 
+7848 я@nom есть@1 уже третий@accf тарелка@acc борщ@gen (author: sergei, phrase: gen-of): 
+7849 я@nom начать@pastm писать@inf третий@accf книга@acc о@std свой@prepf жизнь@prep (author: sergei, phrase: о-prep): 
+7850 она@nom не выходить@pastf из дом@gen уже третий@accf неделя@acc (author: sergei, phrase: из-gen-departure, phrase: каждый-time, phrase: не-gen): 
+7851 мой@f мама@nom прочитать@pastf третий@accf книга@acc за этот@accn лето@acc (author: sergei, phrase: за-time): 
+7852 миллионер@nom покупать@3 уже третий@accf машина@acc на этот@prepf неделя@prep (author: sergei, phrase: в-время): 
+7853 я@nom потерять@pastm уже третий@accf ручка@acc за сегодня (author: sergei): 
+7854 сегодня в@std магазин@prep я@nom найти@pastm третий@accf книга@acc мой@datm любимый@genm автор@gen (author: sergei, phrase: в-place): 
+7855 ты@nom видеть@pastm новый@accinanpl дерево@accpl , который[which]@accinanpl мы@pl купить@pastpl вчера на рынок@prep ? (author: sergei, phrase: на-place): 
+7856 какой[kind]@accinanpl дерево@accpl ты@nom видеть@pastm в@std лес@loc ? (author: sergei): 
+7857 я@nom видеть@pastm красивый@accinanpl дерево@accpl в@std их сад@loc (author: sergei): 
+7858 люди@datpl и животное@datpl нужный@shortpl дерево@accpl (author: sergei, phrase: dat-нужен, phrase: кому-то-нужно): 
+7859 я@nom любить@1 весь@accn дерево@accpl в@std наш@prepm сад@loc (author: sergei, phrase: каждый-time, phrase: в-place): 
+7860 она@nom не похожий@shortf на мой@accf подруга@acc (author: sergei): 
+7861 они@pl , похожий@adv , хотеть@3pl сегодня выиграть@inf у мы@genpl в@std футбол@acc (author: sergei, phrase: похоже): 
+7862 я@nom любить@1 магазин@acc напротив , потому_что в@std он[it]@prep цена@pl низкий@comp (author: sergei, phrase: в-place): 
+7863 извинить@imprpl , вы@datpl нужно на один@accinanm этаж@acc низкий@comp (author: sergei, phrase: на-num-comp): 
+7864 в@std школа@dat я@nom быть@pastm низкий@comp все[everyone]@accpl в@std класс[room]@prep (author: sergei, phrase: в-place): 
+7865 в@std магазин@prep напротив этот@accinanpl же вещь@pl можно купить@inf дешёвый@comp (author: sergei, phrase: в-place): 
+7866 я@nom мочь@1 купить@inf этот@accn дешёвый@comp , что@instr у вы@genpl (author: sergei, phrase: у-кого): 
+7867 я@nom надеяться@1 найти@inf такой@accf же книга@acc на рынок@prep дешёвый@comp , чем в@std магазин@prep (author: sergei, phrase: more-than, phrase: в-place, phrase: на-place): 
+7868 мама@nom купить@pastf овощ@accpl дешёвый@comp , чем купить@pastm я@nom на прошлый@prepf неделя@prep (author: sergei, phrase: more-than, phrase: в-время): 

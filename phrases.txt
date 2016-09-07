@@ -10,7 +10,7 @@ auto-567-genpl: "5/6/7/... чего-то" "(1) (2) (3)" #number@nominative adjec
 auto-567-genpl: "5/6/7/... чего-то" "(1) (2) (3)" #number@nominative adjective@pl* pl
 auto-1-nom: "1 что-то (A1)" "(1) [something]" один@nominative noun@nominative
 not-gen: "нет чего-то (A1)" "(there is no,pl:there are no,3->v) [something]" нет[none]@ any @genitive+
-gen-of: "что-то чего-то" "(1) (2) of (article) (3) (4)" adjective@* noun@! adjective@genitive* noun@genitive
+gen-of: "что-то чего-то" "(1) (2) of (article) (3) (4)" adjective@* noun@! adjective@genitive* noun@genitive!
 gen-possession: "что-то чьё-то" "of [owner]" phrase:np@gen#animate
 рад-dat: "рад чему-то" "happy because of [something]" рад@ any @dative+
 рад-dat: "рад чему-то" "happy because of [something]" @dative+ any рад@
@@ -180,7 +180,7 @@ hyperbole: "for [time period] - hyperbole " "for [adjective]" phrase:np@instr#ti
 на-языке: "на языке (B1)" "in [language]" на@ #language@prepositional язык[lang]@prepositional
 на-языке: "на языке (B1)" "in [language]" на@ #language@prepositional
 на-языке: "на языке (B1)" "in (2)" на@ phrase:np@prep#language
-на-транспорте: "на транспорте (A1) TODO: make метро, такси inflect, add adjective" "by [means of transportation]" на@ #tansport@prepositional
+на-транспорте: "by [means of transportation]" "by [means of transportation]" на@ phrase:np@prep#tansport
 no-matter-how: "no matter how" "no matter how much (2) (4)" сколько|как[like]@ #animate ни@ verb@past
 no-matter-how: "no matter how" "no matter how much (3) (5)" сколько|как[like]@ бы|б@ #animate ни@ verb@past
 nazad: "назад (ago)" "until (2) (3) of age" с@ #number@genitive год@genitive
@@ -248,7 +248,7 @@ need-to-be: "нужно (passive)" "[something] (need,needs,accusative->v) to be
 сидеть-в-интернете: "сидеть в интернете" "surf online" сидеть@ в@ интернет@prep
 на-самом-деле: "на самом деле" "in fact" в@std самый@prepn дело@prep
 на-самом-деле: "на самом деле" "in fact" на@ самый@prepn дело@prep
-смотреть-на: "смотреть на" "look at [something]" посмотреть|смотреть|смотреть[look]@ на@ phrase:np@acc
+смотреть-на: "смотреть на" "look at [something]" посмотреть|посмотреть[look]|смотреть|смотреть[look]@ на@ phrase:np@acc
 про-что-то: "про что-то" "about [something]" про@ phrase:np@acc
 играть-в-игру: "играть в игру" "play [a game]" играть@ в@ accusative
 dat-нужен: "(кому-то) нужен TODO:verb phrase, translation" "[someone->nom] does not need" phrase:np@dat не@ нужный@
@@ -269,9 +269,9 @@ dat-adv: "кому-то холодно/..." "[someone] felt (3->adj)" @dative+ �
 dat-удобно: "кому-то удобно" "" 
 все-равно: "всё равно" "nevertheless" весь@ равный@
 зачем-dat: "зачем кому-то что-то" "why does [person] need" зачем@ dative
-давать-verb: "давать кому-то делать что-то" "let [someone] (5->)" давать[allow]@ any @dative+ any verb
-давать-verb: "давать кому-то делать что-то" "does not let [someone] (6->)" @dative+ any не@ давать[allow]@ any verb
-давать-verb: "давать кому-то делать что-то" "let [someone] (3->)" давать[allow]@ any verb any @dative+
+давать-verb: "давать кому-то делать что-то" "(let,lets,1) [someone] (5->1)" давать[allow]@ any @dative+ any verb
+давать-verb: "давать кому-то делать что-то" "(do,does,did,4) not let [someone] (6->1)" @dative+ any не@ давать[allow]@ any verb
+давать-verb: "давать кому-то делать что-то" "let [someone] (3->1)" давать[allow]@ any verb any @dative+
 dat-нравится: "кому-то нравится" "[someone->nom] liked" @dative+ нравиться|понравиться@
 dat-нравится: "кому-то нравится" "is liked by [someone]" нравиться|понравиться@ any @dative+
 dat-интересно: "кому-то интересно" "[someone] is interested in" @dative+ any интересный@
@@ -293,9 +293,10 @@ either-or-или-или: "или ... , или ..." "either ... , or" или@ any
 кому-то-кажется: "кому-то кажется" "it seems to [someone]" @dative+ any казаться@
 gen-верить: "верить кому-то" "(trust,trusts,trusted,1) (2)" верить|доверять|поверить@ phrase:np@dat
 gen-верить: "верить кому-то" "[someone] ... (trust,trusts,trusted,3)" phrase:np@dat any верить|доверять|поверить@
-dat-speech: "говорить/сказать/... кому-то" "(1) to [someone]" #speech @dative+
-dat-speech: "говорить/сказать/... кому-то" "(2) to [someone]" @dative+ #speech
-dat-speech: "говорить/сказать/... кому-то" "not (3) to [someone]" @dative+ не@ #speech
+dat-speech: "говорить/сказать/... кому-то" "(tell,tells,told,2)  (1)" phrase:np@dat говорить|сказать@
+dat-speech: "говорить/сказать/... кому-то" "(tell,tells,told,1) (2)" говорить|сказать@ phrase:np@dat
+dat-speech: "говорить/сказать/... кому-то" "(2) (1)" phrase:np@dat #speech
+dat-speech: "говорить/сказать/... кому-то" "(1) (2)" #speech phrase:np@dat
 помогать-dat: "помогать-dat" "help [someone]" помогать@ any @dative+
 помогать-dat: "помогать-dat" "[someone] ... not help " @dative+ any не@ помогать@
 помогать-dat: "помогать-dat" "[someone] ... not help " @dative+ any помогать@
@@ -341,8 +342,8 @@ there-will-be-none: "не будет чего-то" "there will be no [something
 так-и-не: "так и не" "but still didn't ..." да@ так@ и@ не@
 домашнее-задание: "домашнее задание" "homework" домашний@ задание@
 хватит-что-то-делать: "хватит кричать" "stop (2->prog)" хватить@3 verb
-answer-to-question: "ответить/ответ на что-то" "answer to (3)" ответ@ на@ @accusative+
-answer-to-question: "ответить/ответ на что-то" "(v) to (3)" ответить|отвечать@ на@ @accusative+
+answer-to-question: "ответить/ответ на что-то" "answer to (3)" ответ@ на@ phrase:np@acc
+answer-to-question: "ответить/ответ на что-то" "(v) to (3)" ответить|отвечать@ на@ phrase:np@acc
 what-a: "какой отличный день" "what [nice] [things]" какой@pl adjective@pl noun@pl
 what-a: "какой отличный день" "what a [nice] [thing]" какой@ adjective@nominative noun@nominative
 such-nice: "такой отличный день" "such [nice] [things]" такой@pl adjective@pl noun@pl
@@ -373,6 +374,7 @@ auto-np: "np" "(article) (1)" phrase:567-genpl@nom
 auto-np: "np" "(article) (1)" phrase:1-nom@nom
 auto-np: "np" "(article) (1)" phrase:gen-of
 auto-np: "np" "(article) (1)" phrase:много-gen
+auto-np: "np" "(article) (1)" phrase:деньги-на
 auto-np: "np" "(article) (1) (2)" adjective@nominative* noun@nominative!
 auto-np: "np" "(1) (2)" #possessive noun@nominative
 auto-np: "np" "(1) (2) (3)" #possessive adjective@nominative! noun@nominative
@@ -407,3 +409,7 @@ face-to-face: "face to face" "face to face" лицо@instr к@ лицо@dat
 самый-adj: "самый большой" "the most (2)" самый@ adjective
 двух-шагах: "в двух шагах" "а stone's throw from" в@ два@preppl шаг@preppl от@ phrase:np@gen
 скажите: "скажите пожалуйста" "could you please tell me" сказать@imprpl ,@ пожалуйста@ ,@
+на-for: "stop for, work for, present for..." "for (2)" на@ phrase:np@acc
+на-num-comp: "на два раза больше" "(2) (3) (4)" на@ #number noun comp
+к-на: "к чему-то на чего-то" "to (5) of (2)" к@ phrase:np@dat any на@ phrase:np@acc
+сесть-на: "сесть на" "(take,takes,took,1) (article) (3)" сесть@ на@ #tansport
