@@ -57,7 +57,7 @@ no-matter-what: "во что бы то ни стало" "no matter what" в@alt 
 в-курсе: "в курсе" "(1) aware of [something]" быть@ в@ курс@prep phrase:np@gen
 в-курсе: "в курсе" "aware" в@ курс@prep
 в-курсе: "в курсе" "not aware" не@ в@ курс@prep phrase:np@gen
-с-чем: "с (чем/кем-то) (A1)" "with (2)" с@ phrase:np@instr
+с-чем: "с (чем/кем-то) (A1)" "with (article) (2)" с@ phrase:np@instr
 с-чем: "с (чем/кем-то) (A1)" "with whom" с@ кто@instr
 говорить-с: "говорить с кем" "(1) ... to -self" говорить|поговорить@ any phrase:сам-с-собой
 говорить-с: "говорить с кем" "(talk,talks,talked,1) to [someone]" говорить|поговорить@ any с@ phrase:np@instr
@@ -137,10 +137,11 @@ hyperbole: "for [time period] - hyperbole " "for [adjective]" phrase:np@instr#ti
 кому-то-надо: "(кому-то) надо (B1) TODO:verb phrase, translation" "[someone->nom] should not have" не@ надо@ быть@ @dative+
 кому-то-надо: "(кому-то) надо (B1) TODO:verb phrase, translation" "[someone->nom] should have" надо@ быть@ @dative+
 кому-то-надо: "(кому-то) надо (B1) TODO:verb phrase, translation" "[someone->nom] does not need" @dative+ не@ надо@
-кому-то-нужно: "(кому-то) нужно (A1) TODO:verb phrase, translation" "[someone->nom] do not need" @dative+ не@ adverb? нужно|нужный@
-кому-то-нужно: "(кому-то) нужно (A1) TODO:verb phrase, translation" "[someone->nom] did not need (4) (3)" @dative+ не@ быть@past adverb? нужно|нужный@
-кому-то-нужно: "(кому-то) нужно (A1) TODO:verb phrase, translation" "(1->nom) will need" @dative+ быть[fut]@ нужно|нужный@
-кому-то-нужно: "(кому-то) нужно (A1) TODO:verb phrase, translation" "(1->nom) (2) needs" @dative+ adverb? нужно|нужный@
+кому-то-нужно: "(кому-то) нужно (A1) TODO:verb phrase, translation" "[someone->nom] (do,does,did,1) not (4)" @dative+ не@ adverb? нужно|нужный@
+кому-то-нужно: "(кому-то) нужно (A1) TODO:verb phrase, translation" "[someone->nom] didn't ever (4) " @dative+ никогда@ не@ нужно|нужный@ быть@past
+кому-то-нужно: "(кому-то) нужно (A1) TODO:verb phrase, translation" "(1->nom) did not (4)" @dative+ не@ нужно|нужный@ быть@past
+кому-то-нужно: "(кому-то) нужно (A1) TODO:verb phrase, translation" "(1->nom) will (3)" @dative+ быть[fut]@ нужно|нужный@
+кому-то-нужно: "(кому-то) нужно (A1) TODO:verb phrase, translation" "(1->nom) (2) (3->1)" @dative+ adverb? нужно|нужный@
 на-твоем-месте: "на твоём месте" "in [someone's] position" бы@ на@ adjective@prep* место@prep
 кому-то-можно: "(кому-то) можно (B1) TODO:verb phrase, translation" "[someone->nom] may" @dative+ можно@
 кому-то-можно: "(кому-то) можно (B1) TODO:verb phrase, translation" "may [person->nom]" можно@ any @dative+
