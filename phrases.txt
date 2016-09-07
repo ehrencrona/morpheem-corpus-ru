@@ -116,7 +116,7 @@ comp-gen: "лучше than genitive (B1) " "(1) than (article) [something]" comp
 работать-над-чем-то: "работать над чем-то" "what ... working on" над@ что@instr any работать@
 hyperbole: "for [time period] - hyperbole " "for [adjective]" phrase:np@instr#time
 доволен-instr: "доволен" "satisfied with [something]" довольный@ @instrumental+
-ждать-что-то: "ждать for something (B1)" "wait for [something or someone]" ждать@ phrase:np@acc
+ждать-что-то: "ждать for something (B1)" "wait for (article) (2)" ждать@ phrase:np@acc
 ждать-что-то: "ждать for something (B1)" "wait for [something or someone]" #animate@acc ждать@
 хотеть-что-то: "хотеть [something or someone] (B1)" "want [something or someone] (B1)" хотеть@ @accusative+
 похоже: "похоже" "seems like" похожий@adv
@@ -137,9 +137,10 @@ hyperbole: "for [time period] - hyperbole " "for [adjective]" phrase:np@instr#ti
 кому-то-надо: "(кому-то) надо (B1) TODO:verb phrase, translation" "[someone->nom] should not have" не@ надо@ быть@ @dative+
 кому-то-надо: "(кому-то) надо (B1) TODO:verb phrase, translation" "[someone->nom] should have" надо@ быть@ @dative+
 кому-то-надо: "(кому-то) надо (B1) TODO:verb phrase, translation" "[someone->nom] does not need" @dative+ не@ надо@
-кому-то-нужно: "(кому-то) нужно (A1) TODO:verb phrase, translation" "[someone->nom] do not need" @dative+ не@ adverb? нужно@
-кому-то-нужно: "(кому-то) нужно (A1) TODO:verb phrase, translation" "[someone->nom] needed (4) (3)" @dative+ не@ быть@past adverb? нужно@
-кому-то-нужно: "(кому-то) нужно (A1) TODO:verb phrase, translation" "[someone->nom] will need" @dative+ быть[fut]@ adverb?
+кому-то-нужно: "(кому-то) нужно (A1) TODO:verb phrase, translation" "[someone->nom] do not need" @dative+ не@ adverb? нужно|нужный@
+кому-то-нужно: "(кому-то) нужно (A1) TODO:verb phrase, translation" "[someone->nom] did not need (4) (3)" @dative+ не@ быть@past adverb? нужно|нужный@
+кому-то-нужно: "(кому-то) нужно (A1) TODO:verb phrase, translation" "(1->nom) will need" @dative+ быть[fut]@ нужно|нужный@
+кому-то-нужно: "(кому-то) нужно (A1) TODO:verb phrase, translation" "(1->nom) (2) needs" @dative+ adverb? нужно|нужный@
 на-твоем-месте: "на твоём месте" "in [someone's] position" бы@ на@ adjective@prep* место@prep
 кому-то-можно: "(кому-то) можно (B1) TODO:verb phrase, translation" "[someone->nom] may" @dative+ можно@
 кому-то-можно: "(кому-то) можно (B1) TODO:verb phrase, translation" "may [person->nom]" можно@ any @dative+
@@ -315,7 +316,7 @@ dat-платить: "кому-то платить" "(1->nom) gets paid" @dative+
 в-году: "в котором часу, в этом году (loc)" "at what time" в@ который[which]@ час@
 в-году: "в котором часу, в этом году (loc)" "[adj] [time period]" в@ adjective@prepositional locative
 в-время: "на неделе/выходных ..." "[time]" на@ phrase:np@prep#time
-intended-for: "кому-то (intended for)" "intended for [someone]" dative
+intended-for: "кому-то (intended for)" "intended for [someone]" phrase:np@dat
 in-eyes-of: "'to', as in the eyes of" "to [someone]" #animate@dative
 прийти-в-голову: "прийти в голову" "cross [someone]'s mind" @dative+ any прийти|приходить@ в@ голова@accusative
 прийти-в-голову: "прийти в голову" "cross [someone]'s mind" прийти|приходить@ any @dative+ any в@ голова@accusative
