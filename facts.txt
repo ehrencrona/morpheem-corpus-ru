@@ -93,7 +93,7 @@ grammar: -любить@1, tag: verb
 человек--: person, pl: persons, inflect: masc-animate, tag: animate
 зачем: what for, pos: quest
 почему: why, pos: quest
---быть: are, 1: am, 3: is, past: was, inf: be, prog: being, pastpl: were, inflect: -быть
+--быть: are, 1: am, 3: is, past: was, inf: to be, prog: being, pastpl: were, inflect: -быть
 квартир--а: apartment, pl: apartments, inflect: fem
 grammar: -свой@f
 вот: here (is)
@@ -555,7 +555,7 @@ grammar: -выйти@pastm, tag: verb
 phrase: говорить-с
 grammar: neu@gen, tag: genitive
 восем--ь: eight, inflect: -пять, tag: number
-тысяч--а: thousand, inflect: -улица
+тысяч--а: thousand, pl: thousands, inflect: -улица
 grammar: -ходить@1, tag: verb
 phrase: встречать-с
 забуд--<<ыть: forget, 3: forgets, past: forgot, prog: forgetting, inflect: -бытьfut
@@ -784,7 +784,7 @@ grammar: -весь@pl
 phrase: домашнее-задание
 grammar: adj@instrn, tag: instrumental
 высок--ий: tall, adv: high up, comp: higher up, super: tallest, inflect: -высокий
-долг--ий: long (time), comp: longer (time), super: longest, inflect: -долгий, mask: short
+долг--ий: long, comp: longer, super: longest, adv: for a long time, inflect: -долгий, mask: short
 голов--а: head, pl: heads, inflect: fem
 phrase: совсем-не
 grammar: -остаться@inf, tag: verb
@@ -1294,7 +1294,7 @@ phrase: ещё-comp
 grammar: -он@datalt, tag: dative
 grammar: -они@instrpl, tag: instrumental
 скор--ый: rather, inflect: adj, mask: allbutcomp
-скор--ый: speed, inflect: adj, mask: short
+скор--ый: fast, adv: quickly, comp: faster, super: fastest, inflect: adj, mask: short
 phrase: ни-gen
 grammar: -лететь@1, tag: verb
 --себя: -self, inflect: -себя, tag: animate
@@ -1461,7 +1461,7 @@ phrase: за-goal
 впрочем: nevertheless, pos: conj
 grammar: аться@2pl, tag: verb
 grammar: аться@1pl, tag: verb
-разве: really?
+разве: really
 phrase: за-time-of-action
 видн--ый: visible, adv: visibly, inflect: ныйadj, mask: adv
 знакомств--о: acquaintance, pl: acquaintances, inflect: neu
@@ -1735,3 +1735,26 @@ phrase: звонить-dat
 phrase: советовать-dat
 phrase: почему-бы
 phrase: лучше-бы-dat
+выпь--<ить: drink, 3: drinks, past: drunk, prog: drinking, inflect: -выпить
+grammar: uninflected@gen, tag: genitive
+phrase: у-gen-в-prep
+grammar: -весёлый@comp
+grammar: -частый@comp
+grammar: uninflected@prep, tag: prepositional
+grammar: -что@dat, tag: dative
+grammar: -время@dat, tag: dative
+grammar: neuadjoe@dat, tag: dative
+grammar: -один@datpl, tag: dative
+grammar: -сын@datpl, tag: dative
+phrase: купить-у-кого-то
+заболи--<еть: n/a, inflect: -смотреть
+grammar: -сто@datpl
+grammar: -небо@datpl
+grammar: -бояться@impr
+grammar: neuadjoe@datpl
+grammar: -два@datpl
+grammar: -сестра@datpl
+grammar: -жена@datpl
+grammar: -кухня@genpl
+phrase: разве-нет
+phrase: не-видно

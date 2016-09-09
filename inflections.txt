@@ -4,7 +4,7 @@ abstr-soft-final[n]: "words ending in a soft, stressed consonant (except ч, щ)
 abstr-soft-final-stressed[n]: "words ending in soft consonants (or hard ц, ш, ж if unstressed)" instr ём
 abstr-loc[n]: loc у
 n[n]: "nouns" nom ***, pl ы, datpl ам, acc nom-, accpl pl-, instrpl ами, prep е, preppl ах, transform yToI
-uninflected[n]: "uninflected noun (mostly foreign words)" nom , dat , gen , acc , instr , prep , pl , datpl , genpl , accpl , instrpl , preppl   
+uninflected[n]: "uninflected noun (mostly foreign words)" nom , pl , gen , genpl , dat , datpl , acc , accpl , instr , instrpl , prep , preppl 
 fem[n]: "nouns ending in -а (mostly feminine, known as 'first inflection')" nom а, gen ы, genpl , dat е, acc у, instr ой, inherit n
 femka[n]: "feminine nouns ending in ка" genpl <ок, inherit fem
 femka2[n]: genpl <ек, inherit fem
@@ -126,7 +126,7 @@ eeadj[adj]: "adjectives having ж, ч, ш, щ, ц, and н before the ending and 
 -молодой[adj]: comp <же, inherit -второй
 -дешёвый[adj]: shortm <<<<ёшев, shortn <<<<ёшево, shortf <<ева, shortpl <<<<ёшевы, comp <<евле, inherit adj
 -лёгкий[adj]: adv <<<<легко, inherit adj
--тёплый[adj]: adv: <<<епло, inherit adj
+-тёплый[adj]: adv <<<епло, inherit adj
 -уверенный[adj]: shortm <, inherit adj
 -довольный[adj]: shortm <<ен, inherit ныйadj
 -чей[adj]: m <ей, inherit -свой
@@ -240,3 +240,4 @@ sya[v]: inf ться, 1 юсь, 1pl мся, 2 шься, 2pl тесь, 3 тся, 
 -голодный[adj]: inherit ныйadj
 -платье[n]: genpl ев, inherit -воскресенье
 -интересоваться[v]: inf <оваться, pastm <овался, inherit -пытаться
+-выпить[v]: inf <ить, impr <ей, inherit ать
