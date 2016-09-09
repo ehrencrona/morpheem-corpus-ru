@@ -9,7 +9,7 @@ auto-567-genpl: "5/6/7/... чего-то" "(1) (2)" #number@nominative phrase:ge
 auto-567-genpl: "5/6/7/... чего-то" "(1) (2) o'clock" #number@nominative adjective@genpl* час@genpl
 auto-567-genpl: "5/6/7/... чего-то" "(1) (2) (3)" #number@nominative adjective@genpl* genpl
 auto-567-genpl: "5/6/7/... чего-то" "(1) (2) (3)" #number@nominative adjective@pl* pl
-auto-1-nom: "1 что-то (A1)" "(1) [something]" один@nominative noun@nominative
+auto-1-nom: "1 что-то (A1)" "(1) (2) (3)" один@nominative adjective@* noun@nominative
 not-gen: "нет чего-то (A1)" "(there is no,pl:there are no,3->v) [something]" нет[none]@ any @genitive+
 gen-of: "что-то чего-то" "(1) (2) of (article) (3) (4)" adjective@* noun@! adjective@genitive* noun@genitive!
 gen-possession: "что-то чьё-то" "of [owner]" phrase:np@gen#animate
@@ -45,7 +45,7 @@ no-matter-what: "во что бы то ни стало" "no matter what" в@alt 
 в-пути: "в пути" "on the way" в@ путь@
 всё-ещё: "всё@ ещё" "still" весь|всё@ ещё@
 столько-всего: "столько всего" "so much" столько@ всё@gen
-нет-равных: "нет равных" "have no equal" нет[none]@ равный@genpl
+нет-равных: "нет равных" "(1->nom) (have,has,has,1) no equal" phrase:np@dat нет[none]@ равный@genpl
 ни-не: "ни чего-то не " "not any [something]" ни@ gen не@
 так-adv: "так много / долго …" "so (adv)" так@ any adv
 так-adv: "так много / долго …" "so many" так@ any много@
@@ -292,17 +292,17 @@ either-or-или-или: "или ... , или ..." "either ... , or" или@ any
 после-того-как: "после того как" "after" после@ тот@genitive any как[when]@
 перед-тем-как: "перед тем как" "before [doing something]" перед@ тот@instrumental any как[when]@
 перед-тем-как: "перед тем как" "before" перед@ тот@instrumental ,@ как[when]@
-звонить-в-дверь: "звонить в дверь" "ring the doorbell " звонить@ в@ дверь@
+звонить-в-дверь: "звонить в дверь" "(ring,rings,rang,1) the doorbell " звонить@ в@ дверь@
 из-material: "из материала" "of [material]" из@ @genitive+
 из-material: "из материала" "consisting of [something]" из@ @genitive+
 из-out-of: "из (выбор)" "out of [several things or people]" из@ @genitive+
 при-чём: "при чём" "what does [something] have to do with this" при@ что@prepositional здесь|тут@
 кому-то-кажется: "кому-то кажется" "it seems to [someone]" @dative+ any казаться@
-gen-верить: "верить кому-то" "cannot trust (4)" не@ мочь@ верить|доверять|поверить@ phrase:np@dat
+gen-верить: "верить кому-то" "cannot trust (5)" не@ мочь@ верить|доверять|поверить@ particle@? phrase:np@dat
 gen-верить: "верить кому-то" "(trust,trusts,trusted,1) (2)" верить|доверять|поверить@ phrase:np@dat
 gen-верить: "верить кому-то" "[someone] ... (trust,trusts,trusted,3)" phrase:np@dat any верить|доверять|поверить@
-dat-speech: "говорить/сказать кому-то" "(tell,tells,told,2)  (1)" phrase:np@dat рассказывать|рассказать|говорить|сказать@
-dat-speech: "говорить/сказать кому-то" "(tell,tells,told,1) (2)" рассказывать|рассказать|говорить|сказать@ phrase:np@dat
+dat-speech: "говорить/сказать кому-то" "(tell,tells,told,3) ... (1)" phrase:np@dat any рассказывать|рассказать|говорить|сказать@
+dat-speech: "говорить/сказать кому-то" "(tell,tells,told,1) ... (3)" рассказывать|рассказать|говорить|сказать@ any phrase:np@dat
 помогать-dat: "помогать-dat" "help [someone]" помогать@ any @dative+
 помогать-dat: "помогать-dat" "[someone] ... not help " @dative+ any не@ помогать@
 помогать-dat: "помогать-dat" "[someone] ... not help " @dative+ any помогать@
@@ -381,6 +381,7 @@ auto-np: "np" "(article) (1)" phrase:1-nom@nom
 auto-np: "np" "(article) (1)" phrase:gen-of
 auto-np: "np" "(article) (1)" phrase:много-gen
 auto-np: "np" "(article) (1)" phrase:деньги-на
+auto-np: "np" "(1)" phrase:один-of@nom
 auto-np: "np" "(article) (1) (article) (2)" adjective@nominative* noun@nominative!
 auto-np: "np" "(1) (2)" #possessive noun@nominative
 auto-np: "np" "(1) (2) (3)" #possessive adjective@nominative! noun@nominative
@@ -439,3 +440,5 @@ face-to-face: "face to face" "face to face" лицо@instr к@ лицо@dat
 не-видно: "не видно" "I can't see anything" ничто@gen не@ видный@shortn
 не-видно: "не видно" "(1->nom) (are,is,was,be,1) ... not visible" phrase:np@gen any не@ видный@shortn
 не-видно: "не видно" "(1->nom) could not be seen" phrase:np@gen видный@shortn не@ быть@past
+один-of: "ни один" "not one of (3) (4->pl)" ни@ один@ #possessive noun
+один-of: "ни один" "not a single (3) (4)" ни@ один@ adjective@* noun

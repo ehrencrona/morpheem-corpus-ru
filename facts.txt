@@ -597,6 +597,7 @@ grammar: -кто@instr, tag: instrumental
 направо: to the right (direction), pos: adv
 налево: to the left (direction), pos: adv
 phrase: среди-чего-то
+phrase: один-of
 автобус--: bus, pl: buses, inflect: masc, tag: transport
 grammar: -большой@comp
 grammar: -весь@m
@@ -846,8 +847,8 @@ phrase: с-gen
 grammar: neuie@genpl, tag: genitive
 grammar: -ответить@1, tag: verb
 перв--ый: first, adv: firstly, inflect: adj, mask: nonstd
-немног--о: few, inflect: -много, pos: adv, tag: amount, mask: allbutpl
-немног--о[little]: some, adv: a little, inflect: -много, pos: adv, tag: amount, mask: allbutplandadv
+немног--о: few, inflect: -много, tag: amount, pos: adv, mask: allbutpl
+немног--о[little]: some, adv: a little, inflect: -много, tag: amount, pos: adv, mask: allbutplandadv
 phrase: во-время-чего-то
 grammar: -ответить@impr, tag: verb
 потом: later, pos: prep
@@ -1213,7 +1214,7 @@ phrase: dat-платить
 grammar: -принести@pastpl, tag: verb
 phrase: intended-for
 grammar: -россия@dat, tag: dative
-и[part]: adds stress, tag: untranslatable, pos: part
+и[part]: adds stress, pos: part, tag: untranslatable
 звонк--<ок: call, pl: calls, inflect: -подарок
 grammar: sya@impr, tag: verb
 бер--<<рать: take, 3: takes, past: took, prog: taking, inflect: -набрать
@@ -1305,7 +1306,7 @@ grammar: neuadjoe@acc, tag: accusative
 grammar: neuadjoe@nom
 сам--ый: most, adv: mostly, inflect: adj, mask: short
 рук--а: hand, pl: hands, inflect: fem
-ни: not
+ни: not, pos: part
 phrase: взять-на-работу
 grammar: -доктор@pl
 grammar: -сосед@pl
@@ -1748,13 +1749,13 @@ grammar: -один@datpl, tag: dative
 grammar: -сын@datpl, tag: dative
 phrase: купить-у-кого-то
 заболи--<еть: n/a, inflect: -смотреть
-grammar: -сто@datpl
-grammar: -небо@datpl
-grammar: -бояться@impr
-grammar: neuadjoe@datpl
-grammar: -два@datpl
-grammar: -сестра@datpl
-grammar: -жена@datpl
-grammar: -кухня@genpl
+grammar: -сто@datpl, tag: dative
+grammar: -небо@datpl, tag: dative
+grammar: -бояться@impr, tag: verb
+grammar: neuadjoe@datpl, tag: dative
+grammar: -два@datpl, tag: dative
+grammar: -сестра@datpl, tag: dative
+grammar: -жена@datpl, tag: dative
+grammar: -кухня@genpl, tag: genitive
 phrase: разве-нет
 phrase: не-видно
