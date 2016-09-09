@@ -265,12 +265,11 @@ dat-нужен: "(кому-то) нужен TODO:verb phrase, translation" "[som
 датьetc-dat: "дать/... кому-то что-то" "to [someone] ... (3)" phrase:np@dat any #something-to-someone
 купить-чего-то: "покупать чего-то кому-то" "buy [something] for [someone]" купить|покупать@ any @accusative+ any @dative+
 купить-чего-то: "покупать чего-то кому-то" "buy [someone] [something]" купить|покупать@ any @dative+ any @accusative+
-dat-adv: "кому-то холодно/..." "(are,is,was,being,is,are,was,am,1) (1) (2->adj)?" phrase:np@dat adv ?@
-dat-adv: "кому-то холодно/..." "(1->nom) (are,is,was,being,is,are,was,am,1) (2) (3->adj)" phrase:np@dat adverb adv
-dat-adv: "кому-то холодно/..." "(1->nom) (2) (3) (4->adj)" phrase:np@dat быть@past adverb adv
+dat-adv: "кому-то холодно/..." "(are,is,was,being,is,are,was,am,1) (1) feeling (2->adj)?" phrase:np@dat adv ?@
+dat-adv: "кому-то холодно/..." "(1->nom) (feel,feels,felt,1) (2) (3->adj)" phrase:np@dat adverb adv
+dat-adv: "кому-то холодно/..." "(1->nom) (feel,feels,felt,1) (2->adj)" phrase:np@dat adv
 dat-adv: "кому-то холодно/..." "(1->nom) (2) (3->adj)" phrase:np@dat быть@past adv
-dat-adv: "кому-то холодно/..." "(1->nom) (are,is,was,being,is,are,was,am,1) (2->adj)" phrase:np@dat adv
-dat-adv: "кому-то холодно/..." "(are,is,was,being,is,are,was,am,1) (1) (2->adj)" phrase:np@dat не@ adv
+dat-adv: "кому-то холодно/..." "(are,is,was,being,is,are,was,am,1) (1) not (3->adj)" phrase:np@dat не@ adv
 кому-то-достаточно: "кому-то достаточно/хватит чего-то" "(1) has (2)" phrase:np@dat phrase:много-gen
 кому-то-достаточно: "кому-то достаточно/хватит чего-то" "" phrase:np@dat не@ phrase:много-gen
 кому-то-достаточно: "кому-то достаточно/хватит чего-то" "[someone] did not have enough" phrase:np@dat не@ быть@ phrase:много-gen
@@ -299,6 +298,7 @@ either-or-или-или: "или ... , или ..." "either ... , or" или@ any
 из-out-of: "из (выбор)" "out of [several things or people]" из@ @genitive+
 при-чём: "при чём" "what does [something] have to do with this" при@ что@prepositional здесь|тут@
 кому-то-кажется: "кому-то кажется" "it seems to [someone]" @dative+ any казаться@
+gen-верить: "верить кому-то" "cannot trust (4)" не@ мочь@ верить|доверять|поверить@ phrase:np@dat
 gen-верить: "верить кому-то" "(trust,trusts,trusted,1) (2)" верить|доверять|поверить@ phrase:np@dat
 gen-верить: "верить кому-то" "[someone] ... (trust,trusts,trusted,3)" phrase:np@dat any верить|доверять|поверить@
 dat-speech: "говорить/сказать кому-то" "(tell,tells,told,2)  (1)" phrase:np@dat рассказывать|рассказать|говорить|сказать@

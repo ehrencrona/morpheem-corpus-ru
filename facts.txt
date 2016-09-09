@@ -110,7 +110,7 @@ grammar: -свой@m
 как--ой[kind]: what kind of, inflect: ойadj, mask: nonstd
 очень: very, pos: adv
 погод--а: weather, inflect: fem
-сегодня: today
+сегодня: today, pos: adv
 завтра: tomorrow
 зов--<<вать: call, 3: calls, past: called, prog: calling, inflect: -звать
 grammar: -жить@3pl, tag: verb
@@ -846,8 +846,8 @@ phrase: с-gen
 grammar: neuie@genpl, tag: genitive
 grammar: -ответить@1, tag: verb
 перв--ый: first, adv: firstly, inflect: adj, mask: nonstd
-немног--о: few, inflect: -много, tag: amount, mask: allbutpl
-немног--о[little]: some, adv: a little, inflect: -много, tag: amount, mask: allbutplandadv
+немног--о: few, inflect: -много, pos: adv, tag: amount, mask: allbutpl
+немног--о[little]: some, adv: a little, inflect: -много, pos: adv, tag: amount, mask: allbutplandadv
 phrase: во-время-чего-то
 grammar: -ответить@impr, tag: verb
 потом: later, pos: prep
