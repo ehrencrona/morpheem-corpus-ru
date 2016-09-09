@@ -101,7 +101,7 @@ grammar: ойadj@m
 дорог--ой: expensive, adv: expensively, comp: more expensive, super: most expensive, inflect: -дорогой
 grammar: -свой@m
 нет[none]: none, tag: untranslatable
-нет[part]: no
+нет[part]: no, pos: part
 мо--й: my, inflect: -свой, tag: possessive, mask: nonstd
 больш--ой: big, comp: bigger, super: biggest, inflect: -большой, mask: shortandadv
 больш--ой: more, inflect: -большой, mask: allbutcomp
@@ -1058,7 +1058,7 @@ phrase: у-thing
 нигде: nowhere
 найд--<ти: find, 3: finds, past: found, prog: finding, inflect: -войти, tag: something-to-someone
 grammar: -яйцо@genpl, tag: genitive
-б: would particle
+б: would particle, pos: part
 phrase: за-acc
 остановк--а: stop, pl: stops, inflect: femka, tag: at
 около: around, pos: prep
@@ -1213,7 +1213,7 @@ phrase: dat-платить
 grammar: -принести@pastpl, tag: verb
 phrase: intended-for
 grammar: -россия@dat, tag: dative
-и[part]: adds stress, tag: untranslatable
+и[part]: adds stress, tag: untranslatable, pos: part
 звонк--<ок: call, pl: calls, inflect: -подарок
 grammar: sya@impr, tag: verb
 бер--<<рать: take, 3: takes, past: took, prog: taking, inflect: -набрать
@@ -1298,7 +1298,7 @@ grammar: -они@instrpl, tag: instrumental
 phrase: ни-gen
 grammar: -лететь@1, tag: verb
 --себя: -self, inflect: -себя, tag: animate
-бы: would particle
+бы: would particle, pos: part
 времен--<<я: time, pl: times, inflect: -время, tag: time
 phrase: как-так
 grammar: neuadjoe@acc, tag: accusative
@@ -1560,7 +1560,7 @@ grammar: abstr-ийadj@pl
 phrase: зачем-dat
 смож--<чь: can, past: could, prog: able to, inflect: -мочь
 слева: on the left, pos: adv
-уж: "drama" particle
+уж: "drama" particle, pos: part
 справа: on the right, pos: adv
 цветк--<ок: flower, pl: flowers, inflect: -цветок
 phrase: давать-verb
