@@ -242,7 +242,7 @@ grammar: yo-yosh-yot@1pl, tag: verb
 grammar: -дарить@1, tag: verb
 слуша--ть: listen, 3: listens, past: listened, prog: listening, inflect: ать
 grammar: n@preppl, tag: prepositional
-телевизор--: television, pl: televisions, inflect: masc
+телевизор--: TV, pl: TV's, inflect: masc
 смотри--<еть: watch, 3: watches, past: watched, prog: watching, inflect: -смотреть
 смотри--<еть[look]: look, 3: looks, past: looked, prog: looking, inflect: -смотреть
 можно: can
@@ -349,7 +349,7 @@ phrase: у-его-нет
 grammar: -друг@instrpl, tag: instrumental
 язык--[lang]: language, pl: languages, inflect: masc, tag: language
 сейчас: now
-урок--: lesson, pl: lessons, inflect: masc
+урок--: lesson, pl: lessons, inflect: masc, tag: time
 grammar: oprep@alt
 phrase: ждать-for-something-abstract
 grammar: y-esh-et@1pl, tag: verb
@@ -435,7 +435,6 @@ phrase: Вот-это
 grammar: -хотеть@3pl, tag: verb
 grammar: -давать@impr, tag: verb
 дожд--ь: rain, pl: rains, inflect: -словарь, tag: rain
-phrase: не-gen
 ноч--ь: night, pl: nights, inflect: femь-я-to-а, tag: at-inst, tag: at-instr, tag: time
 grammar: -стул@genpl, tag: genitive
 начина--ть: begin, 3: begins, past: began, prog: beginning, inflect: ать
@@ -451,6 +450,7 @@ grammar: -стул@preppl, tag: prepositional
 правд--а: truth, inflect: fem, mask: pl
 минут--а: minute, pl: minutes, inflect: fem, tag: time
 свет--: light, pl: lights, inflect: masc
+phrase: не-gen
 phrase: there-was-none
 grammar: -кошка@genpl, tag: genitive
 grammar: -пить@1pl, tag: verb
@@ -1360,7 +1360,7 @@ grammar: -хотеть@inf, tag: verb
 phrase: no-matter-what
 grammar: -хотеть@1pl, tag: verb
 grammar: -жениться@1, tag: verb
-выходн--ой: day off, inflect: ойadj, tag: time, mask: shortandadv
+выходн--ой: day off, inflect: ойadj, tag: time, pos: n, mask: shortandadv
 сдела--ть: do, 3: does, past: did, prog: doing, inflect: ать
 встреча--ться: meet, 3: meets, past: met, prog: meeting, inflect: -пытаться
 phrase: столько-всего
@@ -1521,7 +1521,7 @@ phrase: против-gen
 повери--ть: believe, 3: believes, past: believed, prog: believing, inflect: -верить
 phrase: ask-someone
 grammar: -простой@comp
-опаздыва--ть: is late, inf: be late, past: was late, pastpl: were late, prog: being late, inflect: ать
+опаздыва--ть: are late, 1: am late, 3: is late, inf: be late, past: was late, pastpl: were late, prog: being late, inflect: ать
 зажигалк--а: lighter, pl: lighters, inflect: femka
 закончи--ться: end, 3: ends, past: ended, prog: ending, inflect: -случиться
 встрети--ть: meet, 3: meets, past: met, prog: meeting, inflect: -ответить
@@ -1558,7 +1558,6 @@ grammar: -стоить@impr, tag: verb
 grammar: -ехать@impr, tag: verb
 grammar: abstr-ийadj@pl
 почувству--<овать: feel, 3: feels, past: felt, prog: feeling, inflect: -чувствовать
-phrase: зачем-dat
 смож--<чь: can, past: could, prog: able to, inflect: -мочь
 слева: on the left, pos: adv
 уж: "drama" particle, pos: part
@@ -1759,3 +1758,21 @@ grammar: -жена@datpl, tag: dative
 grammar: -кухня@genpl, tag: genitive
 phrase: разве-нет
 phrase: не-видно
+phrase: такой-же
+phrase: когда-же
+близк--ий: closeclose, adv: close, comp: closer, super: closest, inflect: adj
+phrase: close-to
+phrase: at-the-door
+grammar: -спальня@genpl
+grammar: -три@datpl
+grammar: -дерево@datpl
+grammar: -платье@genpl
+grammar: -третий@f
+grammar: -дядя@genpl
+grammar: -сто@genpl
+grammar: -земля@genpl
+grammar: -вегетарианец@genpl
+grammar: -чай@genpl
+grammar: -жена@genpl
+grammar: -пробежать@impr
+grammar: -пить@impr
