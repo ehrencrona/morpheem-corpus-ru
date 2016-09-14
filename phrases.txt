@@ -118,7 +118,8 @@ comp-gen: "лучше than genitive (B1) " "(1) than (article) [something]" comp
 работать-над-чем-то: "работать над чем-то" "work on (3)" работать@ над@ phrase:np@instr
 работать-над-чем-то: "работать над чем-то" "what ... working on" над@ что@instr any работать@
 hyperbole: "for [time period] - hyperbole " "for [adjective]" phrase:np@instr#time
-доволен-instr: "доволен" "satisfied with [something]" довольный@ @instrumental+
+доволен-instr: "доволен" "(1) (are,is,was,being,be,are,were,am,1) happy with (4->acc)" phrase:np@nom adverb? довольный@ phrase:np@instr
+доволен-instr: "доволен" "(1) (were,was,1) (3) happy with (5->acc)" phrase:np@nom быть@ adverb? довольный@ phrase:np@instr
 ждать-что-то: "ждать for something (B1)" "wait for (article) (2)" ждать@ phrase:np@acc
 ждать-что-то: "ждать for something (B1)" "wait for [something or someone]" #animate@acc ждать@
 хотеть-что-то: "хотеть [something or someone] (B1)" "want [something or someone] (B1)" хотеть@ @accusative+
@@ -158,7 +159,7 @@ hyperbole: "for [time period] - hyperbole " "for [adjective]" phrase:np@instr#ti
 быть-кем-то: "быть (кем-то) (A1)" "(1) [someone]" быть@ phrase:np@instr
 быть-кем-то: "быть (кем-то) (A1)" "(1) [someone]" быть@ any instrumental
 стать-кем-то: "стать (кем-то) (A2)" "become [someone]" стать|становиться@ instrumental
-работать-кем-то: "работать (кем-то) (A2)" "work as [someone]" работать@ instr
+работать-кем-то: "работать (кем-то) (A2)" "(1) as [someone]" работать@ phrase:np@instr
 над-чем-то: "над (чем-то) (A2)" "over [something]" над@ phrase:np@instr
 под-чем-то: "под (чем-то) (A2)" "under (2)" под@ phrase:np@instr
 рядом-с: "рядом с (чем-то) (A2)" "next to (3)" рядом@ с@ phrase:np@instr
@@ -347,7 +348,7 @@ in-eyes-of: "'to', as in the eyes of" "to [someone]" #animate@dative
 сидеть-дома: "сидеть дома" "stay at home" сидеть@ any дома@
 что-за: "что за...?" "what kind of (4) is (2)" что@ #animate за@ noun
 что-за: "что за...?" "what kind of (4) is it" что@ это@ за@ noun
-за-время: "за весь день" "[time] [time]" за@ adjective@accusative #time@accusative
+за-время: "за весь день" "(2) (3)" за@ phrase:np@acc#time
 there-was-none: "не было чего-то" "there was/were none [of something]" не@ быть@ any @genitive+
 there-will-be-none: "не будет чего-то" "there will be no [something]" не@ быть[fut]@3 phrase:np@gen
 there-will-be-none: "не будет чего-то" "there will be no [something]" phrase:np@gen не@ быть[fut]@3
@@ -359,7 +360,6 @@ there-will-be-none: "не будет чего-то" "there will be no [something
 так-и-не: "так и не" "but still didn't ..." так@ и@ не@
 так-и-не: "так и не" "but still didn't ..." но@ так@ и@ не@
 так-и-не: "так и не" "but still didn't ..." да@ так@ и@ не@
-домашнее-задание: "домашнее задание" "homework" домашний@ задание@
 хватит-что-то-делать: "хватит кричать" "stop (2->prog)" хватить@3 verb
 answer-to-question: "ответить/ответ на что-то" "answer to (article) (3)" ответ@ на@ phrase:np@acc
 answer-to-question: "ответить/ответ на что-то" "(v) to (3)" ответить|отвечать@ на@ phrase:np@acc
@@ -392,6 +392,7 @@ auto-np: "np" "(article) (1)" phrase:234-gen@nom
 auto-np: "np" "(article) (1)" phrase:567-genpl@nom
 auto-np: "np" "(article) (1)" phrase:1-nom@nom
 auto-np: "np" "(article) (1)" phrase:gen-of
+auto-np: "np" "(1)" phrase:auto-collocation@nom
 auto-np: "np" "(article) (1)" phrase:много-gen
 auto-np: "np" "(article) (1)" phrase:деньги-на
 auto-np: "np" "(1)" phrase:один-of@nom
@@ -441,7 +442,7 @@ face-to-face: "face to face" "face to face" лицо@instr к@ лицо@dat
 писать-dat: "писать кому-то" "(1) to (2)" писать|написать@ phrase:np@dat
 писать-dat: "писать кому-то" "(2) to (1)" phrase:np@dat писать|написать@
 звонить-dat: "звонить кому-то" "(1) (2)" звонить|позвонить@ phrase:np@dat
-звонить-dat: "звонить кому-то" "(2) (1)" phrase:np@dat звонить|позвонить@
+звонить-dat: "звонить кому-то" "(1) (2)" phrase:np@dat звонить|позвонить@
 советовать-dat: "" "(1) (2)" советовать@ phrase:np@dat
 советовать-dat: "" "(2) (1)" phrase:np@dat советовать@
 почему-бы: "почему бы кому-то " "why don't (3->1) (4)" почему@ бы@ phrase:np@dat adverb? не@
@@ -459,3 +460,11 @@ face-to-face: "face to face" "face to face" лицо@instr к@ лицо@dat
 когда-же: "когда же" "will (3) ever" когда@ же@ #animate
 close-to: "близко к чему-то" "close to (3)" близкий@ к@ phrase:np@dat
 at-the-door: "в дверях" "at the door" в@ дверь@preppl
+домашние-задание: "домашнее задание" "homework" домашний@ задание@
+auto-collocation: "collocation" "(1)" phrase:домашние-задание@nom
+auto-collocation: "collocation" "(1)" phrase:поздняя-ночь@nom
+auto-collocation: "collocation" "(1)" phrase:обратная–дорога@nom
+поздняя-ночь: "поздняя ночь" "late at night" поздний@ ночь@
+поздняя-ночь: "поздняя ночь" "early in the morning" ранний@ утро@
+обратная–дорога: "обратная–дорога" "way back" обратный@ дорога|путь@
+хоть-раз: "хоть раз" "just once" хоть@ раз@

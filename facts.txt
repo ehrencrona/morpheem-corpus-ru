@@ -782,7 +782,6 @@ grammar: -идти@pastm, tag: verb
 grammar: -весь@pl
 низк--ий: low, adv: lowly, comp: lower, super: lowest, inflect: -низкий, mask: adv
 ждё--<ать: wait, 3: waits, past: waited, prog: waiting, inflect: -ждать
-phrase: домашнее-задание
 grammar: adj@instrn, tag: instrumental
 высок--ий: tall, adv: high up, comp: higher up, super: tallest, inflect: -высокий
 долг--ий: long, comp: longer, super: longest, adv: for a long time, inflect: -долгий, mask: short
@@ -1763,28 +1762,34 @@ phrase: когда-же
 близк--ий: closeclose, adv: close, comp: closer, super: closest, inflect: adj
 phrase: close-to
 phrase: at-the-door
-grammar: -спальня@genpl
-grammar: -три@datpl
-grammar: -дерево@datpl
-grammar: -платье@genpl
+grammar: -спальня@genpl, tag: genitive
+grammar: -три@datpl, tag: dative
+grammar: -дерево@datpl, tag: dative
+grammar: -платье@genpl, tag: genitive
 grammar: -третий@f
-grammar: -дядя@genpl
-grammar: -сто@genpl
-grammar: -земля@genpl
-grammar: -вегетарианец@genpl
-grammar: -чай@genpl
-grammar: -жена@genpl
-grammar: -пробежать@impr
-grammar: -пить@impr
-grammar: -дерево@genpl
-grammar: -небо@genpl
-grammar: -выпить@impr
-grammar: -убить@impr
-grammar: -разлить@impr
-grammar: -петь@impr
-grammar: -поехать@impr
-grammar: -готовить@impr
-grammar: -верить@impr
-grammar: -оставить@impr
-grammar: -вернуться@impr
-grammar: -бытьfut@imprpl
+grammar: -дядя@genpl, tag: genitive
+grammar: -сто@genpl, tag: genitive
+grammar: -земля@genpl, tag: genitive
+grammar: -вегетарианец@genpl, tag: genitive
+grammar: -чай@genpl, tag: genitive
+grammar: -жена@genpl, tag: genitive
+grammar: -пробежать@impr, tag: verb
+grammar: -пить@impr, tag: verb
+grammar: -дерево@genpl, tag: genitive
+grammar: -небо@genpl, tag: genitive
+grammar: -выпить@impr, tag: verb
+grammar: -убить@impr, tag: verb
+grammar: -разлить@impr, tag: verb
+grammar: -петь@impr, tag: verb
+grammar: -поехать@impr, tag: verb
+grammar: -готовить@impr, tag: verb
+grammar: -верить@impr, tag: verb
+grammar: -оставить@impr, tag: verb
+grammar: -вернуться@impr, tag: verb
+grammar: -бытьfut@imprpl, tag: verb
+phrase: домашние-задание
+phrase: auto-collocation
+phrase: поздняя-ночь
+phrase: обратная–дорога
+прям--ой: direct, adv: directly, inflect: ойadj
+phrase: хоть-раз
