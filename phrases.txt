@@ -97,6 +97,8 @@ at-datpl: "по (утрам / вечерам ...) (B1)" "in the (2)" по@ #time
 к-кому-чему: "к (кому-то) (A1)" "to (2)" к@ phrase:np@dat#animate
 ждать-for-something-abstract: "ждать for something abstract (B1)" "wait for [something abstract]" ждать@ phrase:np@gen
 хотеть-something-abstract: "хотеть something abstract (B1)" "want [something abstract]" хотеть@ gen
+comp-gen: "лучше than genitive (B1) " "(1) than anyone" comp все[everyone]@genpl
+comp-gen: "лучше than genitive (B1) " "most of all" comp всё@gen
 comp-gen: "лучше than genitive (B1) " "(1) than (article) [something]" comp phrase:np@gen
 звать-кого-то: "звать кого-то" "(call,calls,called,1) [someone]" звать@ phrase:np@acc
 звать-кого-то: "звать кого-то" "(1->nom) (are,is,was,being,be,are,were,am,1) called" @accusative+ звать@
@@ -123,7 +125,7 @@ hyperbole: "for [time period] - hyperbole " "for [adjective]" phrase:np@instr#ti
 ждать-что-то: "ждать for something (B1)" "wait for (article) (2)" ждать@ phrase:np@acc
 ждать-что-то: "ждать for something (B1)" "wait for [something or someone]" #animate@acc ждать@
 хотеть-что-то: "хотеть [something or someone] (B1)" "want [something or someone] (B1)" хотеть@ @accusative+
-похоже: "похоже" "seems like" похожий@adv
+похоже: "похоже" "apparently" похожий@adv
 за-direction: "за (направление) (B1)" "to the other side of [direction]" за@ phrase:np@acc
 через-direction: "через (направление) (B1)" "through, across (2)" через@ phrase:np@acc
 через-time: "через (время) (B1)" "in (2) (3)" через@ adverb? phrase:np@acc#time
@@ -244,7 +246,7 @@ go-do: "идти verb" "(go,goes,went,1) (2)" идти|пойти@ verb
 если-только: "если бы только" "if only (3) (5)" если@ бы@ #animate только@ verb
 ask-someone: "спросить/просить у кого-то" "(1) (5) for (2)" просить|спросить|спрашивать@ @genitive+ any у@ @genitive+
 ask-someone: "спросить/просить у кого-то" "(1) [someone]" просить|спросить|спрашивать@ у@ phrase:np@gen
-comp-gen2: "больше genitive (B1) " "(1) [something]" comp phrase:np@gen
+comp-gen2: "больше noun (B1) " "(1) (2)" comp phrase:np@gen
 need-to-be: "нужно (passive)" "(1->nom) (need,needs,needed,1) to be (3->past)" phrase:np@acc нужно@ verb
 чтобы-that: "хочешь, чтобы [that]" "(1) ... so that (5) not (7->1)" verb any ,@ чтобы@ #animate не@ past
 чтобы-that: "хочешь, чтобы [that]" "(1) ... that (5) (7->1)" verb any ,@ чтобы@ #animate any past
@@ -335,7 +337,7 @@ dat-лучше: "кому-то лучше" "(3->nom)'d better " хороший@c
 просить-о: "просить о чём-то" "ask ... for [something]" просить@ any о@ @prepositional+
 dat-платить: "кому-то платить" "(1->nom) gets paid" @dative+ any платить@
 верить-в: "верить в кого-то/во что-то" "(1) in [something]" верить@ в@ phrase:np@acc
-в-году: "в котором часу, в этом году (loc)" "at what time" в@ который[which]@ час@
+в-году: "в котором часу, в этом году (loc)" "at what time" в@ который[which]@ час@loc
 в-году: "в котором часу, в этом году (loc)" "[adj] [time period]" в@ adjective@prepositional locative
 в-время: "на неделе/выходных ..." "(2)" на@ phrase:np@prep#time
 intended-for: "кому-то (intended for)" "for (1)" phrase:np@dat
@@ -348,7 +350,8 @@ in-eyes-of: "'to', as in the eyes of" "to [someone]" #animate@dative
 сидеть-дома: "сидеть дома" "stay at home" сидеть@ any дома@
 что-за: "что за...?" "what kind of (4) is (2)" что@ #animate за@ noun
 что-за: "что за...?" "what kind of (4) is it" что@ это@ за@ noun
-за-время: "за весь день" "(2) (3)" за@ phrase:np@acc#time
+за-время: "за весь день" "(2) (3)" за@ весь@acc #time@acc
+за-время: "за весь день" "in (2) (3)" за@ phrase:np@acc#time
 there-was-none: "не было чего-то" "there was/were none [of something]" не@ быть@ any @genitive+
 there-will-be-none: "не будет чего-то" "there will be no [something]" не@ быть[fut]@3 phrase:np@gen
 there-will-be-none: "не будет чего-то" "there will be no [something]" phrase:np@gen не@ быть[fut]@3
@@ -468,3 +471,4 @@ auto-collocation: "collocation" "(1)" phrase:обратная–дорога@nom
 поздняя-ночь: "поздняя ночь" "early in the morning" ранний@ утро@
 обратная–дорога: "обратная–дорога" "way back" обратный@ дорога|путь@
 хоть-раз: "хоть раз" "just once" хоть@ раз@
+ни-разу: "ни разу" "not once" ни@ раз@loc
