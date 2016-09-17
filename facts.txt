@@ -1,4 +1,4 @@
-тут: here
+тут: here, pos: adv
 это: this (is)
 собак--а: dog, pl: dogs, inflect: fem-animate, tag: animate
 grammar: fem@nom
@@ -35,7 +35,7 @@ transform: yToI
 grammar: -она@nom
 --она: she, acc: her, inflect: -она, tag: animate
 Маш--а: Маsha, inflect: -улица, tag: animate, mask: pl
-школ--а: school, pl: schools, inflect: fem
+школ--а: school, pl: schools, inflect: fem, tag: at
 улиц--а: street, pl: streets, inflect: -улица, tag: on
 на: on, pos: prep, tag: untranslatable
 газон--: lawn, pl: lawns, inflect: masc, tag: on
@@ -1354,7 +1354,7 @@ grammar: -показать@inf, tag: verb
 phrase: с-тех-пор
 grammar: -хотеть@inf, tag: verb
 хотя: even though
-земл--я: earth, pl: earths, inflect: -земля
+земл--я: earth, pl: earths, inflect: -земля, mask: pl
 меню--: menu, pl: menus, inflect: uninflected, mask: pl
 phrase: no-matter-what
 grammar: -хотеть@1pl, tag: verb
@@ -1794,3 +1794,22 @@ phrase: обратная–дорога
 прям--ой: direct, adv: directly, inflect: ойadj
 phrase: хоть-раз
 phrase: ни-разу
+phrase: номер-телефона
+phrase: comp-на
+grammar: -стоить@imprpl
+grammar: -готовить@imprpl
+grammar: -казаться@imprpl
+grammar: -сесть@inf
+grammar: -украсть@inf
+grammar: -понять@inf
+grammar: -выпить@inf
+grammar: -разлить@inf
+grammar: -друг@preppl
+grammar: -церковь@instr
+grammar: -четыре@instrpl
+grammar: -сестра@instrpl
+позов--<<вать: n/a, inflect: -звать
+grammar: -жена@instrpl
+grammar: -сын@instrpl
+grammar: -выйти@pastf
+grammar: -одеться@pastf
