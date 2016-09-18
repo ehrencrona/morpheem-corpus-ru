@@ -335,7 +335,9 @@ dat-лучше: "кому-то лучше" "(3->nom)'d better " хороший@c
 сам-с-собой: "сам с собой" "with -self" сам@ с@ себя@instr
 не-стоит: "кому-то стоит" "(1->nom) shouldn't (5->inf) (4)" phrase:np@dat не@ стоить[should]@3 adverb? verb
 не-стоит: "кому-то стоит" "(1->nom) should (3)" phrase:np@dat стоить[should]@3 verb
-просить-о: "просить о чём-то" "ask ... for [something]" просить@ any о@ @prepositional+
+просить-о: "просить о чём-то" "(1) (2) for (4)" просить@ #animate@accusative о@ @prepositional+
+просить-о: "просить о чём-то" "(1) (2)" просить@ #animate@accusative
+просить-о: "просить о чём-то" "(1) for (3)" просить@ о@ phrase:np@prep
 dat-платить: "кому-то платить" "(1->nom) (get,gets,got,1) paid" @dative+ платить@
 dat-платить: "кому-то платить" "(1->nom) (get,gets,got,1) paid (3)" @dative+ particle@? adverb платить@
 верить-в: "верить в кого-то/во что-то" "(1) in [something]" верить@ в@ phrase:np@acc
