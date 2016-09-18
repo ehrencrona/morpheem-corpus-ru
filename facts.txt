@@ -110,7 +110,7 @@ grammar: -свой@m
 как--ой[kind]: what kind of, inflect: ойadj, mask: nonstd
 очень: very, pos: adv
 погод--а: weather, inflect: fem
-сегодня: today, pos: adv
+сегодня: today, pos: adv, tag: time
 завтра: tomorrow
 зов--<<вать: call, 3: calls, past: called, prog: calling, inflect: -звать
 grammar: -жить@3pl, tag: verb
@@ -220,9 +220,9 @@ grammar: masc@dat, tag: dative
 дари--ть: gift, 3: gifts, past: gifted, prog: giving, inflect: -дарить, tag: something-to-someone
 нужно: need to
 нужн--ый: needed, inflect: ныйadj, mask: adv
-grammar: ныйadj@shortf
-grammar: ныйadj@shortn
-grammar: ныйadj@shortm
+grammar: abstr-нadj@shortf
+grammar: abstr-нadj@shortn
+grammar: abstr-нadj@shortm
 grammar: adj@datm, tag: dative
 одалжива--ть: borrow, 3: borrows, past: borrowed, prog: borrowing, inflect: ать, tag: something-to-someone
 grammar: -нравиться@3pl, tag: verb
@@ -881,7 +881,6 @@ grammar: -казаться@pastf, tag: verb
 grammar: -оставаться@inf, tag: verb
 мир--[world]: world, pl: worlds, inflect: masc
 голуб--ой: light blue, inflect: -второй, mask: shortandadv
-phrase: обращаться-к
 мир--[peace]: peace, pl: peaces, inflect: masc
 grammar: -оставаться@impr, tag: verb
 grammar: -время@nom
@@ -1077,7 +1076,9 @@ grammar: -они@genpl, tag: genitive
 поед--<хать: go (by vehicle), past: went (by vehicle), prog: going (by vehicle), inflect: -поехать
 правильн--ый: correct, adv: correctly, inflect: -правильный, mask: compandshort
 phrase: когда-то
-обраща--ться: address, 3: addresses, past: addressed, prog: addressing, inflect: -пытаться
+обраща--ться: turn to, 3: turns to, past: turned to, prog: turning to, inflect: -пытаться
+обраща--ться[handle]: handle, 3: handles, past: handled, prog: handling, inflect: -пытаться
+обраща--ться[treat]: treat, 3: treats, past: treated, prog: treating, inflect: -пытаться
 grammar: adj@shortn
 grammar: neuie@dat, tag: dative
 свободн--ый: free, adv: freely, comp: freer, super: freest, inflect: ныйadj
@@ -1085,7 +1086,7 @@ grammar: neuie@dat, tag: dative
 phrase: если-бы
 grammar: -вернуться@1pl, tag: verb
 возможн--ый: possible, inflect: ныйadj, mask: comp
-стоянк--а: parking lot, pl: parking lots, inflect: femka
+стоянк--а: parking lot, pl: parking lots, inflect: femka, tag: in
 недалеко: not far away, pos: adv
 phrase: куда-бы
 grammar: -сесть@pastm, tag: verb
@@ -1318,7 +1319,7 @@ phrase: всё-ещё
 решени--е: decision, pl: decisions, inflect: neuie
 grammar: -лёгкий@adv
 phrase: жениться-на
-grammar: ныйadj@shortpl
+grammar: abstr-нadj@shortpl
 глаз--: eye, pl: eyes, inflect: -глаз
 жизн--ь: life, pl: lives, inflect: femь, tag: time
 grammar: -искать@inf, tag: verb
@@ -1821,4 +1822,8 @@ grammar: -принести@pastf, tag: verb
 grammar: -оставаться@pastm, tag: verb
 grammar: -одеться@pastpl, tag: verb
 grammar: -сын@preppl, tag: prepositional
-больн--ой: ill, inflect: ойadj
+больн--ой: n/a, inflect: -больной
+grammar: -больной@shortm
+phrase: на-улица
+обрати--ться: n/a, inflect: -обратиться
+phrase: обращаться[turn]-с

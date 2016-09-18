@@ -64,8 +64,7 @@ no-matter-what: "во что бы то ни стало" "no matter what" в@alt 
 говорить-с: "говорить с кем" "(talk,talks,talked,1) to [someone]" говорить|поговорить@ any с@ phrase:np@instr
 говорить-с: "говорить с кем" "(talk,talks,talked,3) to [someone]" с@ phrase:np@instr говорить|поговорить@
 встречать-с: "встречаться с" "(date,dates,dated,1) [someone]" встречаться[date]@ any с@ phrase:np@instr
-обращаться-с: "обращаться с" "deal with [something] / treat [someone]" обращаться@ с@ instr
-обращаться-к: "обращаться к" "address / turn to [someone]" обращаться@ к@ @dative+
+обращаться-с: "обращаться с" "(1) [something]" обращаться[handle]|обращаться[treat]@ с@ phrase:np@instr
 у-его-нет: "у кого-то нет чего-то (A1)" "(2->nom) does not have (4)" у@ phrase:np@gen нет[none]@ phrase:np@gen
 у-кого: "у кого-то (есть) (A1)" "(2->nom) had" у@ phrase:np@gen быть@past
 у-кого: "у кого-то (есть) (A1)" "(2->nom) have" у@ phrase:np@gen
@@ -172,6 +171,7 @@ hyperbole: "for [time period] - hyperbole " "for [adjective]" phrase:np@instr#ti
 следить-за-кем-то: "следить (за кем-то) TODO make pattern include nouns and pronouns that follow the verb" "look after [someone or something]" следить@ за@ any phrase:np@instr
 за-столом: "за столом" "at the table/desk [location]" за@ adjective@instrumental* стол@instr
 за-границей: "за границей" "abroad" за@ граница@instr
+за-границей: "за границей" "abroad" за@ граница@acc
 перед-location: "перед (где)" "in front of [something]" перед@ phrase:np@instr
 перед-time: "перед (когда) (B1)" "before [some moment in time]" перед@ phrase:np@instr
 за-goal: "за чем-то (цель / 'to get') (B1)" "for [something]" за@ phrase:np@instr
@@ -233,7 +233,7 @@ go-do: "идти verb" "(go,goes,went,1) (2)" идти|пойти@ verb
 то-же: "то же" "the same" тот@ же@ самый@
 то-же: "то же" "the same" тот@ же@
 то-же: "то же" "the same" тот@ самый@
-не-gen: "не genitive" "did not (2->) ... [something]" не@ verb@past any @genitive+
+не-gen: "не genitive" "did not (2->pres) ... [something]" не@ verb@past any @genitive+
 не-gen: "не genitive" "(do,does,did,2) not (2->) ... [something]" не@ verb any @genitive+
 ни-ни: "ни ... ни" "neither (2) ... nor (4)" ни@ noun any ни@ noun
 ни-ни: "ни ... ни" "neither (2) ... nor (4)" ни@ verb any ни@ verb
@@ -281,9 +281,10 @@ dat-adv: "кому-то холодно/..." "(are,is,was,being,is,are,was,am,1) 
 dat-удобно: "кому-то удобно" "whenever suits (3)" ,@ когда@ pronoun@dative удобный@
 dat-удобно: "кому-то удобно" "it suits (1)" pronoun@dative удобный@
 все-равно: "всё равно" "nevertheless" весь@ равный@
-давать-verb: "давать кому-то делать что-то" "(let,lets,1) [someone] (5->1)" давать[allow]@ any @dative+ any verb
-давать-verb: "давать кому-то делать что-то" "(do,does,did,4) not let [someone] (6->1)" @dative+ any не@ давать[allow]@ any verb
-давать-verb: "давать кому-то делать что-то" "let [someone] (3->1)" давать[allow]@ any verb any @dative+
+давать-verb: "давать кому-то делать что-то" "(1) (2) (3->1)" давать[allow]@ phrase:np@dat verb
+давать-verb: "давать кому-то делать что-то" "(1) (do,does,did,1) not let (2) (5->1)" phrase:np@nom phrase:np@dat не@ давать[allow]@ verb
+давать-verb: "давать кому-то делать что-то" "let (4) (2->1) ..." давать[allow]@ verb@* any phrase:np@dat
+давать-verb: "давать кому-то делать что-то" "(5) did not (3) (1) (4->1)" phrase:np@dat не@ давать[allow]@ verb@* phrase:np@nom
 dat-нравится: "кому-то нравится" "(1->nom) very much (like,likes,liked,1)" phrase:np@dat очень@ нравиться|понравиться@
 dat-нравится: "кому-то нравится" "(2->nom) (3) (like,likes,liked,2) (1->acc)" phrase:np phrase:np@dat adverb? нравиться|понравиться@
 dat-нравится: "кому-то нравится" "(1->nom) (2) (like,likes,liked,1) " phrase:np@dat adverb? нравиться|понравиться@
@@ -315,8 +316,9 @@ gen-верить: "верить кому-то" "cannot trust (5)" не@ мочь
 gen-верить: "верить кому-то" "(1) can trust (3)" phrase:np мочь@ phrase:np@dat верить|доверять|поверить@
 gen-верить: "верить кому-то" "(trust,trusts,trusted,1) (2)" верить|доверять|поверить@ phrase:np@dat
 gen-верить: "верить кому-то" "[someone] ... (trust,trusts,trusted,3)" phrase:np@dat any верить|доверять|поверить@
-dat-speech: "говорить/сказать кому-то" "... (tell,tells,told,3) (1)" phrase:np@dat any рассказывать|рассказать|говорить|сказать@
+dat-speech: "говорить/сказать кому-то" "(tell,tells,told,2) (1)" phrase:np@dat рассказывать|рассказать|говорить|сказать@
 dat-speech: "говорить/сказать кому-то" "(tell,tells,told,1) (2)" рассказывать|рассказать|говорить|сказать@ phrase:np@dat
+dat-speech: "говорить/сказать кому-то" "not (tell,tells,told,2) (1)" phrase:np@dat не@ рассказывать|рассказать|говорить|сказать@
 помогать-dat: "помогать-dat" "help [someone]" помогать@ any @dative+
 помогать-dat: "помогать-dat" "[someone] ... not help " @dative+ any не@ помогать@
 помогать-dat: "помогать-dat" "[someone] ... not help " @dative+ any помогать@
@@ -333,8 +335,8 @@ dat-лучше: "кому-то лучше" "(3->nom)'d better " хороший@c
 учить-dat: "учить(ся)" " teach [someone] [something]" @accusative+ any @dative+ any учить[teach]@
 учить-dat: "учить(ся)" " teach [someone] [something]" учить[teach]@ @accusative+ @dative+
 сам-с-собой: "сам с собой" "with -self" сам@ с@ себя@instr
-не-стоит: "кому-то стоит" "(1->nom) shouldn't (5->inf) (4)" phrase:np@dat не@ стоить[should]@3 adverb? verb
-не-стоит: "кому-то стоит" "(1->nom) should (3)" phrase:np@dat стоить[should]@3 verb
+не-стоит: "кому-то стоит" "(1->nom) (2) shouldn't ... (6->pres) " phrase:np@dat adverb* не@ стоить[should]@3 any verb
+не-стоит: "кому-то стоит" "(1->nom) should (3->pres)" phrase:np@dat стоить[should]@3 verb
 просить-о: "просить о чём-то" "(1) (2) for (4)" просить@ #animate@accusative о@ @prepositional+
 просить-о: "просить о чём-то" "(1) (2)" просить@ phrase:np@acc
 просить-о: "просить о чём-то" "(1) for (3)" просить@ о@ phrase:np@prep
@@ -349,8 +351,8 @@ in-eyes-of: "'to', as in the eyes of" "to [someone]" #animate@dative
 прийти-в-голову: "прийти в голову" "cross [someone]'s mind" @dative+ any прийти|приходить@ в@ голова@accusative
 прийти-в-голову: "прийти в голову" "cross [someone]'s mind" прийти|приходить@ any @dative+ any в@ голова@accusative
 прийти-в-голову: "прийти в голову" "cross [someone]'s mind" @dative+ в@ голова@accusative any прийти|приходить@
-конец-dat: "конец чему-то" "no end to [something]" phrase:np@dat нет[none]@ конец@
-конец-dat: "конец чему-то" "... end to [something]" phrase:np@dat any конец@
+конец-dat: "конец чему-то" "(1) never (end,ends,1)" phrase:np@dat нет[none]@ конец@gen
+конец-dat: "конец чему-то" "(1) (end,ends,ended,3)" phrase:np@dat particle@? прийти|приходить@ конец@
 сидеть-дома: "сидеть дома" "stay at home" сидеть@ any дома@
 что-за: "что за...?" "what kind of (4) is (2)" что@ #animate за@ noun
 что-за: "что за...?" "what kind of (4) is it" что@ это@ за@ noun
@@ -456,7 +458,6 @@ face-to-face: "face to face" "face to face" лицо@instr к@ лицо@dat
 звонить-dat: "звонить кому-то" "(1) (2)" звонить|позвонить@ phrase:np@dat
 звонить-dat: "звонить кому-то" "(1) (2)" phrase:np@dat звонить|позвонить@
 советовать-dat: "советовать" "(1) (2)" советовать@ phrase:np@dat
-советовать-dat: "советовать" "(2) (1)" phrase:np@dat советовать@
 почему-бы: "почему бы кому-то " "why don't (3->1) (4)" почему@ бы@ phrase:np@dat adverb? не@
 лучше-бы-dat: "лучше бы кому-то" "you ought to" хороший@comp бы@ phrase:np@dat
 у-gen-в-prep: "у кого-то в чём-то (где-то)" "in (2->pos) (4)" у@ phrase:np@gen в@ phrase:np@prep
@@ -485,3 +486,7 @@ auto-collocation: "collocation" "(1)" phrase:номер-телефона
 номер-телефона: "номер телефона" "home phone number" домашний@ номер@ телефон@gen
 номер-телефона: "номер телефона" "phone number" номер@ телефон@gen
 comp-на: "на 10 лет (моложе)" "by (2)" на@ phrase:np@acc#number
+на-улица: "на улицу / улице" "outside" на@ улица@acc
+на-улица: "на улицу / улице" "outside" на@ улица@prep
+обращаться[turn]-с: "обращаться с (turn to)" "(1) with (3)" обращаться@ с@ phrase:np@instr
+обращаться[turn]-с: "обращаться с (turn to)" "(1) (3)" обращаться@ к@ phrase:np@dat

@@ -112,7 +112,8 @@ eeadj[adj]: "adjectives having ж, ч, ш, щ, ц, and н before the ending and 
 -весь-everyone[n]: inherit -весь, inherit abstr-masc-anim
 -весь-everything[n]: nom ё, gen его, dat ему, acc ё, instr ем, prep ём
 -третий[adj]: m <ий, f я, accf ю, inherit -наш
-ныйadj[adj]: shortm <ен, shortn о, shortf а, shortpl ы, inherit adj
+abstr-нadj[adj]: shortm <ен, shortn о, shortf а, shortpl ы
+ныйadj[adj]: inherit abstr-нadj, inherit adj
 -правильный[adj]: shortm <<ен, inherit ныйadj
 -большой[adj]: comp е, inherit ойadj
 -чёрный[adj]: shortn <<<ерно, shortf <<<ерна, shortpl <<<ерны, inherit ныйadj
@@ -120,6 +121,7 @@ eeadj[adj]: "adjectives having ж, ч, ш, щ, ц, and н before the ending and 
 -маленький[adj]: shortm <<<<, comp <<<<<<еньше, inherit adj
 -дорогой[adj]: comp <же, inherit ойadj
 -простой[adj]: comp <<ще, inherit ойadj
+-больной[adj]: shortm <<ен, inherit abstr-нadj, inherit ойadj
 -рад[adj]: shortm , shortn о, shortf а, shortpl ы
 -много[adj]: m о, pl о, inherit adj
 -второй[adj]: m ой, inherit adj
@@ -241,3 +243,4 @@ sya[v]: inf ться, 1 юсь, 1pl мся, 2 шься, 2pl тесь, 3 тся, 
 -платье[n]: genpl ев, inherit -воскресенье
 -интересоваться[v]: inf <оваться, pastm <овался, inherit -пытаться
 -выпить[v]: inf <ить, impr <ей, inherit ать
+-обратиться[v]: 1 <<щусь, inherit -находиться
