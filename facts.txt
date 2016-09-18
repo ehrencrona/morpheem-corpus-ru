@@ -220,9 +220,9 @@ grammar: masc@dat, tag: dative
 дари--ть: gift, 3: gifts, past: gifted, prog: giving, inflect: -дарить, tag: something-to-someone
 нужно: need to
 нужн--ый: needed, inflect: ныйadj, mask: adv
-grammar: ныйadj@shortf
-grammar: ныйadj@shortn
-grammar: ныйadj@shortm
+grammar: abstr-нadj@shortf
+grammar: abstr-нadj@shortn
+grammar: abstr-нadj@shortm
 grammar: adj@datm, tag: dative
 одалжива--ть: borrow, 3: borrows, past: borrowed, prog: borrowing, inflect: ать, tag: something-to-someone
 grammar: -нравиться@3pl, tag: verb
@@ -1318,7 +1318,7 @@ phrase: всё-ещё
 решени--е: decision, pl: decisions, inflect: neuie
 grammar: -лёгкий@adv
 phrase: жениться-на
-grammar: ныйadj@shortpl
+grammar: abstr-нadj@shortpl
 глаз--: eye, pl: eyes, inflect: -глаз
 жизн--ь: life, pl: lives, inflect: femь, tag: time
 grammar: -искать@inf, tag: verb
@@ -1813,3 +1813,4 @@ grammar: -жена@instrpl
 grammar: -сын@instrpl
 grammar: -выйти@pastf
 grammar: -одеться@pastf
+больн--ой: n/a, inflect: -больной
