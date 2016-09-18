@@ -1796,28 +1796,29 @@ phrase: хоть-раз
 phrase: ни-разу
 phrase: номер-телефона
 phrase: comp-на
-grammar: -стоить@imprpl
-grammar: -готовить@imprpl
-grammar: -казаться@imprpl
-grammar: -сесть@inf
-grammar: -украсть@inf
-grammar: -понять@inf
-grammar: -выпить@inf
-grammar: -разлить@inf
-grammar: -друг@preppl
-grammar: -церковь@instr
-grammar: -четыре@instrpl
-grammar: -сестра@instrpl
+grammar: -стоить@imprpl, tag: verb
+grammar: -готовить@imprpl, tag: verb
+grammar: -казаться@imprpl, tag: verb
+grammar: -сесть@inf, tag: verb
+grammar: -украсть@inf, tag: verb
+grammar: -понять@inf, tag: verb
+grammar: -выпить@inf, tag: verb
+grammar: -разлить@inf, tag: verb
+grammar: -друг@preppl, tag: prepositional
+grammar: -церковь@instr, tag: instrumental
+grammar: -четыре@instrpl, tag: instrumental
+grammar: -сестра@instrpl, tag: instrumental
 позов--<<вать: n/a, inflect: -звать
-grammar: -жена@instrpl
-grammar: -сын@instrpl
-grammar: -выйти@pastf
-grammar: -одеться@pastf
+grammar: -жена@instrpl, tag: instrumental
+grammar: -сын@instrpl, tag: instrumental
+grammar: -выйти@pastf, tag: verb
+grammar: -одеться@pastf, tag: verb
 трати--ть: spend, 3: spends, past: spent, prog: spending, inflect: -ответить
 потрати--ть: spend, 3: spends, past: spent, prog: spending, inflect: -ответить
-grammar: -оставаться@pastf
-grammar: -оставаться@pastpl
-grammar: -принести@pastf
-grammar: -оставаться@pastm
-grammar: -одеться@pastpl
-grammar: -сын@preppl
+grammar: -оставаться@pastf, tag: verb
+grammar: -оставаться@pastpl, tag: verb
+grammar: -принести@pastf, tag: verb
+grammar: -оставаться@pastm, tag: verb
+grammar: -одеться@pastpl, tag: verb
+grammar: -сын@preppl, tag: prepositional
+больн--ой: ill, inflect: ойadj

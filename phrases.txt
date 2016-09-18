@@ -336,7 +336,7 @@ dat-лучше: "кому-то лучше" "(3->nom)'d better " хороший@c
 не-стоит: "кому-то стоит" "(1->nom) shouldn't (5->inf) (4)" phrase:np@dat не@ стоить[should]@3 adverb? verb
 не-стоит: "кому-то стоит" "(1->nom) should (3)" phrase:np@dat стоить[should]@3 verb
 просить-о: "просить о чём-то" "(1) (2) for (4)" просить@ #animate@accusative о@ @prepositional+
-просить-о: "просить о чём-то" "(1) (2)" просить@ #animate@accusative
+просить-о: "просить о чём-то" "(1) (2)" просить@ phrase:np@acc
 просить-о: "просить о чём-то" "(1) for (3)" просить@ о@ phrase:np@prep
 dat-платить: "кому-то платить" "(1->nom) (get,gets,got,1) paid" @dative+ платить@
 dat-платить: "кому-то платить" "(1->nom) (get,gets,got,1) paid (3)" @dative+ particle@? adverb платить@
@@ -455,8 +455,8 @@ face-to-face: "face to face" "face to face" лицо@instr к@ лицо@dat
 писать-dat: "писать кому-то" "(2) to (1)" phrase:np@dat писать|написать@
 звонить-dat: "звонить кому-то" "(1) (2)" звонить|позвонить@ phrase:np@dat
 звонить-dat: "звонить кому-то" "(1) (2)" phrase:np@dat звонить|позвонить@
-советовать-dat: "" "(1) (2)" советовать@ phrase:np@dat
-советовать-dat: "" "(2) (1)" phrase:np@dat советовать@
+советовать-dat: "советовать" "(1) (2)" советовать@ phrase:np@dat
+советовать-dat: "советовать" "(2) (1)" phrase:np@dat советовать@
 почему-бы: "почему бы кому-то " "why don't (3->1) (4)" почему@ бы@ phrase:np@dat adverb? не@
 лучше-бы-dat: "лучше бы кому-то" "you ought to" хороший@comp бы@ phrase:np@dat
 у-gen-в-prep: "у кого-то в чём-то (где-то)" "in (2->pos) (4)" у@ phrase:np@gen в@ phrase:np@prep
