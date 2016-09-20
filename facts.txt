@@ -816,7 +816,7 @@ grammar: -остаться@3pl, tag: verb
 grammar: -казаться@pastm, tag: verb
 phrase: для-to
 от: from, pos: prep
-так: in that way
+так: like that
 grammar: -мать@nom
 grammar: -казаться@inf, tag: verb
 до: , pos: prep, tag: untranslatable
@@ -865,7 +865,7 @@ grammar: -вернуться@1, tag: verb
 grammar: sya@pastf, tag: verb
 то: then
 phrase: ни-any-кто
-давно: long time ago, pos: adv
+давно: for a long time, pos: adv
 недавно: recently, pos: adv
 grammar: -оставаться@pastn, tag: verb
 grammar: -бояться@1, tag: verb
@@ -1161,7 +1161,6 @@ grammar: -надеяться@2, tag: verb
 животн--ый: living, inflect: adj, mask: shortandadv
 grammar: -случиться@3pl, tag: verb
 по--<еть: sing, 3: sings, past: sang, prog: singing, inflect: -петь
-phrase: как-dat
 продавц--<ец: salesperson, pl: salespersons, inflect: -отец
 дальн--ый: further, inflect: ныйadj
 grammar: -находиться@impr, tag: verb
@@ -1439,6 +1438,7 @@ phrase: как-можно-comp
 настоящ--ий: real, inflect: adj
 спин--а: back, pl: backup, inflect: fem
 точно: exactly, pos: adv
+точно[definitely]: definitely, pos: adv
 среди: among, pos: prep
 пусть: let
 phrase: по-возможности
@@ -1827,3 +1827,8 @@ grammar: -больной@shortm
 phrase: на-улица
 обрати--ться: n/a, inflect: -обратиться
 phrase: обращаться[turn]-с
+grammar: neuadjoe@prep, tag: prepositional
+grammar: uninflected@dat, tag: dative
+сообща--ть: inform, 3: informs, past: informed, prog: informing, inflect: ать
+слома--ться: n/a, inflect: -пытаться
+phrase: ни-за-что-as-adv
