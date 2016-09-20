@@ -408,7 +408,8 @@ auto-vp: "vp" "(1) (2)" verb@! phrase:np@acc
 auto-np: "np" "(article) (1)" phrase:234-gen
 auto-np: "np" "(article) (1)" phrase:567-genpl
 auto-np: "np" "(article) (1)" phrase:1-nom
-auto-np: "np" "(article) (1) (2)" adjective@context* phrase:auto-collocation@context
+auto-np: "np" "(article) (1)" phrase:auto-collocation@context
+auto-np: "np" "(article) (1) (2)" adjective@context phrase:auto-collocation@context
 auto-np: "np" "(article) (1)" phrase:gen-of
 auto-np: "np" "(article) (1)" phrase:много-gen
 auto-np: "np" "(article) (1)" phrase:деньги-на
@@ -446,7 +447,7 @@ face-to-face: "face to face" "face to face" лицо@instr к@ лицо@dat
 самый-adj: "самый большой" "the most (2)" самый@ adjective
 двух-шагах: "в двух шагах" "а stone's throw from" в@ два@preppl шаг@preppl от@ phrase:np@gen
 скажите: "скажите пожалуйста" "could you please tell me" сказать@imprpl ,@ пожалуйста@ ,@
-на-for: "stop for, work for, present for..." "for (2)" на@ phrase:np@acc
+на-for: "(stop/work/present) for..." "for (2)" на@ phrase:np@acc
 на-num-comp: "на два раза больше" "(2) (3) (4)" на@ #number noun comp
 к-на: "к чему-то на чего-то" "to (5) of (2)" к@ phrase:np@dat any на@ phrase:np@acc
 сесть-на: "сесть на" "(take,takes,took,1) (article) (3)" сесть@ на@ #transport
@@ -482,7 +483,8 @@ auto-collocation: "collocation" "(1)" phrase:поздняя-ночь@context
 auto-collocation: "collocation" "(1)" phrase:обратная–дорога@context
 auto-collocation: "collocation" "(1)" phrase:номер-телефона@context
 auto-collocation: "collocation" "(1)" phrase:станция-метро@context
-auto-collocation: "collocation" "(1)" phrase:высокая-цена
+auto-collocation: "collocation" "(1)" phrase:высокая-цена@context
+auto-collocation: "collocation" "(1)" phrase:новый-год@context
 поздняя-ночь: "поздняя ночь" "late at night" поздний@ ночь@
 поздняя-ночь: "поздняя ночь" "early in the morning" ранний@ утро@
 обратная–дорога: "обратная–дорога" "way back" обратный@ дорога|путь@
@@ -495,3 +497,4 @@ comp-на: "на 10 лет (моложе)" "by (2)" на@ phrase:np@acc#number
 обращаться[turn]-с: "обращаться с (turn to)" "(1) with (3)" обращаться@ с@ phrase:np@instr
 обращаться[turn]-с: "обращаться с (turn to)" "(1) (3)" обращаться@ к@ phrase:np@dat
 ни-за-что-as-adv: "ни за что (for no reason)" "for no reason" ни@ за@ что@
+новый-год: "новый год" "New Year's" новый@context год@context
