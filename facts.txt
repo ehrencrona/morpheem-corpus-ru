@@ -1067,6 +1067,8 @@ grammar: -сестра@genpl, tag: genitive
 phrase: за-что
 вредно: harmful
 следи--ть: look after, past: looked after, prog: looking after, inflect: -ходить
+следи--ть[eyeon]: keep an eye on, past: looked after, prog: looking after, inflect: -ходить
+следи--ть[follow]: follow, past: looked after, prog: looking after, inflect: -ходить
 grammar: -месяц@genpl, tag: genitive
 grammar: -один@accf, tag: accusative
 напротив: across from, pos: prep
@@ -1831,7 +1833,7 @@ grammar: uninflected@dat, tag: dative
 слома--ться: n/a, inflect: -пытаться
 phrase: ни-за-что-as-adv
 phrase: новый-год
-grammar: uninflected@instr
+grammar: uninflected@instr, tag: instrumental
 grammar: -довольный@shortm
 grammar: uninflected@nom
 дальний: n/a
@@ -1845,3 +1847,6 @@ grammar: uninflected@nom
 игр--а: n/a, inflect: fem
 grammar: -палец@nom
 рт--<от: n/a, inflect: -рот
+phrase: keep-track
+phrase: за-after
+phrase: keep-an-eye-on

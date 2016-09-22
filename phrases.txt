@@ -170,8 +170,9 @@ hyperbole: "for [time period] - hyperbole " "for [adjective]" phrase:np@instr#ti
 между-чем-то: "между (чем-то) (B1)" "between [something] and [something]" между@ phrase:np@instr и@ phrase:np@instr
 между-чем-то: "между (чем-то) (B1)" "between [something] " между@ phrase:np@instr
 за-место: "за (чем-то - место - behind) (B1)" "behind [something]" за@ phrase:np@instr
-за-аfter: "за (чем-то - место - after) (B1)" "after [something]" за@ phrase:np@instr
-следить-за-кем-то: "следить (за кем-то) TODO make pattern include nouns and pronouns that follow the verb" "look after [someone or something]" следить@ за@ any phrase:np@instr
+за-место: "за (чем-то - место - behind) (B1)" "" phrase:за-окном
+за-after: "за (after) (B1)" "after [something]" за@ phrase:np@instr
+следить-за-кем-то: "следить за - look after" "look after (3)" следить@ за@ phrase:np@instr
 за-столом: "за столом" "at the table/desk [location]" за@ adjective@instrumental* стол@instr
 за-границей: "за границей" "abroad" за@ граница@instr
 за-границей: "за границей" "abroad" за@ граница@acc
@@ -498,3 +499,5 @@ comp-на: "на 10 лет (моложе)" "by (2)" на@ phrase:np@acc#number
 обращаться[turn]-с: "обращаться с (turn to)" "(1) (3)" обращаться@ к@ phrase:np@dat
 ни-за-что-as-adv: "ни за что (for no reason)" "for no reason" ни@ за@ что@
 новый-год: "новый год" "New Year's" новый@context год@context
+keep-track: "следить за - follow" "follow (3)" следить[follow]@ за@ phrase:np@instr
+keep-an-eye-on: "следить за - keep an eye on" "keep an eye on (3)" следить[eyeon]@ за@ phrase:np@instr
