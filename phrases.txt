@@ -416,8 +416,7 @@ auto-np: "np" "(article) (1)" phrase:много-gen
 auto-np: "np" "(article) (1)" phrase:деньги-на
 auto-np: "np" "(1)" phrase:один-of
 auto-np: "np" "(article) (1) (article) (2)" adjective@context* noun@context!
-auto-np: "np" "(1) (2)" #possessive noun@context
-auto-np: "np" "(1) (2) (3)" #possessive adjective@context! noun@context
+auto-np: "np" "(2) (1) (3) (4)" adjective@context* #possessive adjective@context* noun@context!
 auto-np: "np" "(1)" pronoun@context
 auto-np: "np" "which" который@context
 auto-np: "np" "what" что@context
