@@ -1259,6 +1259,7 @@ grammar: -они@genplalt, tag: genitive
 grammar: -они@instrplalt, tag: instrumental
 phrase: such-nice
 да--ть: give, 3: gives, past: gave, prog: giving, inflect: -дать, tag: something-to-someone
+да--ть[let]: let, 3: lets, inflect: -дать, tag: something-to-someone
 покаж--<зать: show, 3: shows, past: showed, prog: showing, inflect: -показать, tag: something-to-someone
 grammar: -они@preppl, tag: prepositional
 здоров--ый: healthy, adv: healthily, comp: healthier, super: healthiest, inflect: adj
@@ -1274,7 +1275,6 @@ grammar: -себя@gen, tag: genitive
 покупк--а: purchase, pl: purchases, inflect: femka
 выйд--<ти: go out, 3: goes out, past: went out, prog: going out, inflect: -выйти
 phrase: dat-скучно
-в гости: visit someone as a guest
 grammar: -мы@preppl, tag: prepositional
 выходи--ть: go out, 3: goes out, past: went out, prog: going out, inflect: -ходить
 приходи--ть: come, 3: comes, past: came, prog: coming, inflect: -ходить
@@ -1576,7 +1576,7 @@ grammar: abstr-ийadj@m
 grammar: -цветок@pl
 phrase: either-or-или-или
 футбол--: football, inflect: masc, mask: pl
-приед--<хать: n/a, inflect: -ехать
+приед--<хать: arrive, 3: arrives, past: arrived, prog: arriving, inflect: -ехать
 любим--ый: favorite, inflect: adj, mask: adv
 концерт--: concert, pl: concerts, inflect: masc
 phrase: после-того-как
@@ -1604,7 +1604,6 @@ grammar: neuadjoe@genpl, tag: genitive
 grammar: -гость@loc
 phrase: по-отношению
 grammar: -гость@locpl
-в гостях: for a visit
 grammar: neuadjoe@accpl, tag: accusative
 обратн--ый: return, adv: back, inflect: adj, mask: compandshort
 phrase: рад-кому
@@ -1852,8 +1851,10 @@ phrase: keep-an-eye-on
 рост--: n/a, inflect: masc3
 муж--: husband, pl: husbands, inflect: -муж
 ложк--а: spoon, pl: spoons, inflect: femka2
-grammar: -бежать@1
+grammar: -бежать@1, tag: verb
 срочно: n/a
 носи--ть: n/a, inflect: -спросить
 горяч--ий: n/a, inflect: eeadj
 выключи--ть: n/a, inflect: -учить
+phrase: в-гости
+phrase: в-гостях
