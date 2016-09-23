@@ -118,7 +118,7 @@ comp-gen: "лучше than genitive (B1) " "(1) than (article) [something]" comp
 давно-пора: "кому-то пора" "it is high time" давно@ пора@
 давно-пора: "кому-то пора" "it is time for [someone]" @dative+ any пора@
 тут-и-там: "тут и там" "here and there" там@ и@ тут@
-друг-другу: "друг друга" "each other" друг@ any друг@
+друг-другу: "друг друга" "(2) each other" друг@nom preposition@? друг@context
 работать-над-чем-то: "работать над чем-то" "work on (3)" работать@ над@ phrase:np@instr
 работать-над-чем-то: "работать над чем-то" "what ... working on" над@ что@instr any работать@
 hyperbole: "for [time period] - hyperbole " "for [adjective]" phrase:np@instr#time
@@ -346,7 +346,7 @@ dat-лучше: "кому-то лучше" "(3->nom)'d better " хороший@c
 просить-о: "просить о чём-то" "(1) for (3)" просить@ о@ phrase:np@prep
 dat-платить: "кому-то платить" "(1->nom) (get,gets,got,1) paid" @dative+ платить@
 dat-платить: "кому-то платить" "(1->nom) (get,gets,got,1) paid (3)" @dative+ particle@? adverb платить@
-верить-в: "верить в кого-то/во что-то" "(1) in [something]" верить@ в@ phrase:np@acc
+верить-в: "верить в кого-то/во что-то" "(1) (2) in (4)" верить@ adverb? в@ phrase:np@acc
 в-году: "в котором часу, в этом году (loc)" "at what time" в@ который[which]@ час@loc
 в-году: "в котором часу, в этом году (loc)" "[adj] [time period]" в@ adjective@prepositional locative
 в-время: "на неделе/выходных ..." "(2)" на@ phrase:np@prep#time
@@ -423,6 +423,7 @@ auto-np: "np" "what" что@context
 auto-np: "np" "(1)" ничто@context
 auto-np: "np" "(1)" кто@context
 auto-np: "np" "(1)" этот|который|тот@context
+auto-np: "np" "(1)" phrase:друг-другу
 успеть-на: "успеть на" "catch the (3)" успеть@ на@ phrase:np@acc#transport
 успеть-на: "успеть на" "be in time for (3)" успеть@ на@ phrase:np@acc
 как-так: "как ... так" "both ... and ..." как@ any так@
@@ -500,3 +501,4 @@ comp-на: "на 10 лет (моложе)" "by (2)" на@ phrase:np@acc#number
 новый-год: "новый год" "New Year's" новый@context год@context
 keep-track: "следить за - follow" "follow (3)" следить[follow]@ за@ phrase:np@instr
 keep-an-eye-on: "следить за - keep an eye on" "keep an eye on (3)" следить[eyeon]@ за@ phrase:np@instr
+counting-on: "надеяться на что-то" "(are,is,was,being,be,are,were,am,1) counting on (3)" надеяться@ на@ phrase:np@acc
