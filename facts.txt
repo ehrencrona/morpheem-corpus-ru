@@ -1066,8 +1066,8 @@ grammar: -сестра@genpl, tag: genitive
 здоровь--е: health, inflect: -воскресенье, mask: pl
 phrase: за-что
 вредно: harmful
-следи--ть: look after, past: looked after, prog: looking after, inflect: -ходить
-следи--ть[eyeon]: keep an eye on, past: looked after, prog: looking after, inflect: -ходить
+следи--ть: look after, 3: looks after, past: looked after, prog: looking after, inflect: -ходить
+следи--ть[eyeon]: keep an eye on, 3: keeps an eye on, past: kept an eye on, prog: keeping an eye on, inflect: -ходить
 следи--ть[follow]: follow, past: looked after, prog: looking after, inflect: -ходить
 grammar: -месяц@genpl, tag: genitive
 grammar: -один@accf, tag: accusative
@@ -1259,6 +1259,7 @@ grammar: -они@genplalt, tag: genitive
 grammar: -они@instrplalt, tag: instrumental
 phrase: such-nice
 да--ть: give, 3: gives, past: gave, prog: giving, inflect: -дать, tag: something-to-someone
+да--ть[let]: let, 3: lets, inflect: -дать, tag: something-to-someone
 покаж--<зать: show, 3: shows, past: showed, prog: showing, inflect: -показать, tag: something-to-someone
 grammar: -они@preppl, tag: prepositional
 здоров--ый: healthy, adv: healthily, comp: healthier, super: healthiest, inflect: adj
@@ -1274,7 +1275,6 @@ grammar: -себя@gen, tag: genitive
 покупк--а: purchase, pl: purchases, inflect: femka
 выйд--<ти: go out, 3: goes out, past: went out, prog: going out, inflect: -выйти
 phrase: dat-скучно
-в гости: visit someone as a guest
 grammar: -мы@preppl, tag: prepositional
 выходи--ть: go out, 3: goes out, past: went out, prog: going out, inflect: -ходить
 приходи--ть: come, 3: comes, past: came, prog: coming, inflect: -ходить
@@ -1447,6 +1447,7 @@ grammar: -время@gen, tag: genitive
 grammar: -дерево@pl
 чем: than, pos: conj
 броси--ть: abandon, 3: abandons, past: abandoned, prog: abandoning, inflect: -бросить
+броси--ть[throw]: throw, 3: throws, past: threw, prog: throwing, inflect: -бросить
 phrase: заниматься-чем-то
 шаг--: step, pl: steps, inflect: masc
 находи--ться: is located, inf: be located, pastpl: were located, past: was located, inflect: -находиться
@@ -1576,7 +1577,7 @@ grammar: abstr-ийadj@m
 grammar: -цветок@pl
 phrase: either-or-или-или
 футбол--: football, inflect: masc, mask: pl
-приед--<хать: n/a, inflect: -ехать
+приед--<хать: arrive, 3: arrives, past: arrived, prog: arriving, inflect: -ехать
 любим--ый: favorite, inflect: adj, mask: adv
 концерт--: concert, pl: concerts, inflect: masc
 phrase: после-того-как
@@ -1604,7 +1605,6 @@ grammar: neuadjoe@genpl, tag: genitive
 grammar: -гость@loc
 phrase: по-отношению
 grammar: -гость@locpl
-в гостях: for a visit
 grammar: neuadjoe@accpl, tag: accusative
 обратн--ый: return, adv: back, inflect: adj, mask: compandshort
 phrase: рад-кому
@@ -1849,7 +1849,7 @@ grammar: -палец@nom
 phrase: keep-track
 phrase: за-after
 phrase: keep-an-eye-on
-рост--: n/a, inflect: masc3
+рост--: hight, inflect: masc3
 муж--: husband, pl: husbands, inflect: -муж
 ложк--а: spoon, pl: spoons, inflect: femka2
 grammar: -бежать@1, tag: verb
@@ -1858,3 +1858,12 @@ grammar: -бежать@1, tag: verb
 горяч--ий: n/a, inflect: eeadj
 выключи--ть: n/a, inflect: -учить
 phrase: counting-on
+phrase: в-гости
+phrase: в-гостях
+броса--ть: abandon, 3: abandons, past: abandoned, inflect: ать
+броса--ть[throw]: throw, 3: throws, past: threw, inflect: ать
+кто-то: someone
+числ--о: n/a, inflect: -масло
+grammar: neuadjoe@pl
+помо--<ыть: n/a, inflect: -открыть
+поскорее: n/a
