@@ -213,7 +213,7 @@ grammar: -вы@datpl, tag: dative
 grammar: -кто@dat, tag: dative
 grammar: -она@dat, tag: dative
 grammar: -мы@datpl, tag: dative
-да--вать: give, 3: gives, past: gave, prog: giving, inflect: -давать, tag: something-to-someone
+да--вать: give, 3: gives, past: gave, prog: giving, inflect: -давать
 grammar: sya@3, tag: verb
 нрави--ться: like, 3: likes, past: liked, prog: liking, inflect: -нравиться
 grammar: masc@dat, tag: dative
@@ -870,7 +870,6 @@ phrase: ни-any-кто
 grammar: -оставаться@pastn, tag: verb
 grammar: -бояться@1, tag: verb
 встан--<ть: get up, past: got up, prog: getting up, inflect: -стать
-phrase: ни-any-что
 спи--<ать: sleep, 3: sleeps, past: slept, prog: sleeping, inflect: -спать
 grammar: neuie@datpl, tag: dative
 поздн--ий: late, adv: lately, comp: later, super: latest, inflect: -поздний, mask: short
@@ -1258,8 +1257,8 @@ phrase: what-a
 grammar: -они@genplalt, tag: genitive
 grammar: -они@instrplalt, tag: instrumental
 phrase: such-nice
-да--ть: give, 3: gives, past: gave, prog: giving, inflect: -дать, tag: something-to-someone
-да--ть[let]: let, 3: lets, inflect: -дать, tag: something-to-someone
+да--ть: give, 3: gives, past: gave, prog: giving, inflect: -дать
+да--ть[let]: let, 3: lets, inflect: -дать
 покаж--<зать: show, 3: shows, past: showed, prog: showing, inflect: -показать, tag: something-to-someone
 grammar: -они@preppl, tag: prepositional
 здоров--ый: healthy, adv: healthily, comp: healthier, super: healthiest, inflect: adj
@@ -1867,3 +1866,6 @@ phrase: в-гостях
 grammar: neuadjoe@pl
 помо--<ыть: n/a, inflect: -открыть
 поскорее: n/a
+phrase: оставить-себе
+приготови--ть: n/a, inflect: -готовить
+крад--<сть: n/a, inflect: -украсть
