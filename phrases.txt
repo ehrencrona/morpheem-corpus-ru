@@ -219,7 +219,7 @@ go-do: "идти verb" "(go,goes,went,1) (2)" идти|пойти@ verb
 думать-над: "думать над чем-то" "(1) about (3)" думать|подумать@ над@ phrase:np@instr
 думать-над: "думать над чем-то" "(3) about (2)" над@ phrase:np@instr думать|подумать@
 Вот-это: "Вот это" "This is (3)" вот@ это@ phrase:np
-пора–не: "пока не" "until (2)" пока@ phrase:np не@
+пора–не: "пока не" "until (2)" пока|пока[while]@ phrase:np не@
 уверен-в: "уверен в" "certain of" уверенный@ в@ phrase:np@prep
 так-что: "так что" "that is why" так@ что[that]@
 так-как: "так, как" "in the way that" так@ ,@ как[like]@
@@ -502,3 +502,6 @@ keep-track: "следить за - follow" "follow (3)" следить[follow]@ 
 keep-an-eye-on: "следить за - keep an eye on" "keep an eye on (3)" следить[eyeon]@ за@ phrase:np@instr
 в-гости: "в гости" "(1->pres) visit" идти|ехать|приходить|ходить|пойти|прийти|лететь|поехать|приехать|ездить@ any в@ гость@loc
 в-гостях: "в гостях" "for a visit" в@ гость@locpl
+продолжать-verb: "продолжать verb" "keep (2->prog)" продолжать@ verb
+в-время2: "в месяце / ..." "(2) (3)" в@ adjective@prep? #time@prep
+в-время2: "в месяце / ..." "at (2)" в@ phrase:np@prep#time

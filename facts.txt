@@ -11,7 +11,6 @@ grammar: adj@f
 grammar: femь@nom
 мыш--ь: mouse, pl: mice, inflect: -мышь, tag: animate
 маленьк--ий: small, comp: smaller, super: smallest, inflect: -маленький, mask: adv
-маленьк--ий: , comp: less, inflect: -маленький, mask: allbutcomp
 –: is
 машин--а: car, pl: cars, inflect: fem, tag: transport, tag: on
 grammar: masc@nom
@@ -601,6 +600,7 @@ phrase: один-of
 автобус--: bus, pl: buses, inflect: masc, tag: transport
 grammar: -большой@comp
 grammar: -весь@m
+маленьк--ий: , comp: less, inflect: -маленький, mask: allbutcomp
 кафе--: cafe, pl: cafes, inflect: uninflected
 привет--: hello, inflect: masc, mask: pl
 phrase: для-чего-то
@@ -1858,3 +1858,5 @@ grammar: -бежать@1, tag: verb
 выключи--ть: n/a, inflect: -учить
 phrase: в-гости
 phrase: в-гостях
+phrase: продолжать-verb
+phrase: в-время2
