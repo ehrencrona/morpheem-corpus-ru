@@ -449,8 +449,8 @@ face-to-face: "face to face" "face to face" лицо@instr к@ лицо@dat
 скажите: "скажите пожалуйста" "could you please tell me" сказать@imprpl ,@ пожалуйста@ ,@
 на-for: "(stop/work/present) for..." "for (2)" на@ phrase:np@acc
 на-num-comp: "на два раза больше" "(2) (3) (4)" на@ #number noun comp
-к-на: "к чему-то на чего-то" "to (5) of (2)" к@ phrase:np@dat any на@ phrase:np@acc
-сесть-на: "сесть на" "(take,takes,took,1) (article) (3)" сесть@ на@ #transport
+к-на: "к себе на работу и т.п." "to (5) of (2)" к@ phrase:np@dat any на@ phrase:np@acc
+сесть-на: "сесть на" "(take,takes,took,1) (article) (3)" сесть@ на@ phrase:np#transport
 врать-dat: "врать кому-то" "(1) to (2)" врать@ phrase:np@dat
 врать-dat: "врать кому-то" "(2) to (1)" phrase:np@dat врать@
 предложить-dat: "предложить кому-то" "(1) (2)" предложить@ phrase:np@dat
@@ -507,3 +507,4 @@ counting-on: "надеяться на что-то" "(are,is,was,being,be,are,wer
 в-время2: "в месяце / ..." "(2) (3)" в@ adjective@prep? #time@prep
 в-время2: "в месяце / ..." "at (2)" в@ phrase:np@prep#time
 оставить-себе: "оставить себе" "(keep,keeps,kept,1) (2)" оставить@ phrase:np@acc себя@dat
+идти-за: "идти за кем-то" "follow (3)" идти|ехать|пойти@ за@ phrase:np@instr
