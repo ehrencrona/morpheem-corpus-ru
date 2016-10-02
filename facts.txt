@@ -1291,7 +1291,6 @@ grammar: -регистрация@genpl, tag: genitive
 phrase: ещё-comp
 же: [wow!], tag: untranslatable
 grammar: -он@datalt, tag: dative
-grammar: -они@instrpl, tag: instrumental
 скор--ый: rather, inflect: adj, mask: allbutcomp
 скор--ый: fast, adv: quickly, comp: faster, super: fastest, inflect: adj, mask: short
 phrase: ни-gen
@@ -1875,7 +1874,7 @@ phrase: идти-за
 фотографи--я: n/a, inflect: -регистрация
 уед--<хать: leave, 3: leaves, past: left, prog: leaving, inflect: -ехать
 уезжа--ть: leave, 3: leaves, past: left, inflect: ать
-grammar: -время@prep
+grammar: -время@prep, tag: prepositional
 никуда: nowhere
 подойд--<ти: , inflect: -войти
 зайд--<ти: n/a, inflect: -войти
@@ -1884,9 +1883,11 @@ grammar: -правильный@shortm
 grammar: -рот@nom
 привез--ти: bring, 3: brings, past: brang, inflect: -привезти
 лечи--ть: treat, 3: treats, past: treated, inflect: -учить
-grammar: -обратиться@1
-grammar: -масло@genpl
+grammar: -обратиться@1, tag: verb
+grammar: -масло@genpl, tag: genitive
 мо--<ыть: wash, 3: washes, past: washed, prog: washing, inflect: -открыть
 phrase: кактак
 phrase: день-матери
 phrase: скорая-помощь
+рождени--е: birth, inflect: neuie
+phrase: день-рождения
