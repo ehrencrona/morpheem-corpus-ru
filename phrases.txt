@@ -115,7 +115,7 @@ comp-gen: "лучше than genitive (B1) " "(1) than (article) [something]" comp
 давно-пора: "кому-то пора" "it is high time for [someone] to" @dative+ any давно@ пора@
 давно-пора: "кому-то пора" "it is high time" давно@ пора@
 давно-пора: "кому-то пора" "it is time for [someone]" @dative+ any пора@
-тут-и-там: "тут и там" "here and there" там@ и@ тут@
+тут-и-там: "там и тут" "here and there" там@ и@ тут@
 друг-другу: "друг друга" "(2) each other" друг@nom preposition@? друг@context
 работать-над-чем-то: "работать над чем-то" "work on (3)" работать@ над@ phrase:np@instr
 работать-над-чем-то: "работать над чем-то" "what ... working on" над@ что@instr any работать@
@@ -425,7 +425,7 @@ auto-np: "np" "(1)" этот|который|тот@context
 auto-np: "np" "(1)" phrase:друг-другу
 успеть-на: "успеть на" "catch the (3)" успеть@ на@ phrase:np@acc#transport
 успеть-на: "успеть на" "be in time for (3)" успеть@ на@ phrase:np@acc
-как-так: "как ... так" "both ... and ..." как@ any так@
+как-так: "как ... так" "both ... and ..." как@ any ,@ так@
 для-to: "для as in 'to' someone" "to [someone]" для@ #animate@genitive
 взять-на-работу: "взять на работу" "hire for (3)" взять|брать@ на@ phrase:np@acc
 в-tag-time: "в время/раз/момент..." "lately" в@ последний@accusative время@accusative
@@ -485,6 +485,9 @@ auto-collocation: "collocation" "(1)" phrase:номер-телефона@context
 auto-collocation: "collocation" "(1)" phrase:станция-метро@context
 auto-collocation: "collocation" "(1)" phrase:высокая-цена@context
 auto-collocation: "collocation" "(1)" phrase:новый-год@context
+auto-collocation: "collocation" "(1)" phrase:день-матери@context
+auto-collocation: "collocation" "(1)" phrase:скорая-помощь
+auto-collocation: "collocation" "(1)" phrase:день-рождения
 поздняя-ночь: "поздняя ночь" "late at night" поздний@ ночь@
 поздняя-ночь: "поздняя ночь" "early in the morning" ранний@ утро@
 обратная–дорога: "обратная–дорога" "way back" обратный@ дорога|путь@
@@ -508,3 +511,7 @@ counting-on: "надеяться на что-то" "(are,is,was,being,be,are,wer
 в-время2: "в месяце / ..." "at (2)" в@ phrase:np@prep#time
 оставить-себе: "оставить себе" "(keep,keeps,kept,1) (2)" оставить@ phrase:np@acc себя@dat
 идти-за: "идти за кем-то" "follow (3)" идти|ехать|пойти@ за@ phrase:np@instr
+кактак: "как так" "how" как@ так@
+день-матери: "день матери" "Mothers' Day" день@context мать@gen
+скорая-помощь: "скорая помощь" "ambulance" скорый@context помощь@context
+день-рождения: "день рождения" "birthday" день@context рождение@gen
