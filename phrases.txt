@@ -10,6 +10,8 @@ auto-567-genpl: "5/6/7/... чего-то" "(1) (2) o'clock" #number@context adje
 auto-567-genpl: "5/6/7/... чего-то" "(1) (2) (3)" #number@context adjective@genpl* genpl
 auto-1-nom: "1 что-то (A1)" "(1) (2) (3)" один@context adjective@context* noun@context
 not-gen: "нет чего-то (A1)" "(there is no,pl:there are no,3->v) [something]" нет[none]@ any @genitive+
+gen-of: "что-то чего-то" "Mother's Day" день@context мать@gen
+gen-of: "что-то чего-то" "Birthday" день@ рождение@gen
 gen-of: "что-то чего-то" "(1) (2) of (article) (3) (4)" adjective@context* noun@context! adjective@genitive* noun@genitive!
 gen-possession: "что-то чьё-то" "of [owner]" phrase:np@gen#animate
 рад-dat: "рад чему-то" "happy because of [something]" рад@ any @dative+
@@ -126,7 +128,7 @@ hyperbole: "for [time period] - hyperbole " "for [adjective]" phrase:np@instr#ti
 ждать-что-то: "ждать for something (B1)" "wait for [something or someone]" #animate@acc ждать@
 хотеть-что-то: "хотеть [something or someone] (B1)" "want [something or someone] (B1)" хотеть@ @accusative+
 похоже: "похоже" "apparently" похожий@adv
-за-direction: "за (направление) (B1)" "to the other side of [direction]" за@ phrase:np@acc
+за-direction: "за (направление) (B1)" "behind [direction]" за@ phrase:np@acc
 через-direction: "через (направление) (B1)" "through, across (2)" через@ phrase:np@acc
 через-time: "через (время) (B1)" "in (2) (3)" через@ adverb? phrase:np@acc#time
 на-time: "на (время) (B1)" "on our day off" на@ выходной@
@@ -143,12 +145,12 @@ hyperbole: "for [time period] - hyperbole " "for [adjective]" phrase:np@instr#ti
 кому-то-надо: "(кому-то) надо (B1) TODO:verb phrase, translation" "[someone->nom] should not have" не@ надо@ быть@ @dative+
 кому-то-надо: "(кому-то) надо (B1) TODO:verb phrase, translation" "[someone->nom] should have" надо@ быть@ @dative+
 кому-то-надо: "(кому-то) надо (B1) TODO:verb phrase, translation" "[someone->nom] does not need" @dative+ не@ надо@
-кому-то-нужно: "(кому-то) нужно (A1)" "[someone->nom] (do,does,did,1) not need" @dative+ не@ adverb? нужно|нужный@
-кому-то-нужно: "(кому-то) нужно (A1)" "[someone->nom] didn't ever need" @dative+ никогда@ не@ нужно|нужный@ быть@past
-кому-то-нужно: "(кому-то) нужно (A1)" "(1->nom) did not need" @dative+ не@ нужно|нужный@ быть@past
-кому-то-нужно: "(кому-то) нужно (A1)" "(1->nom) needed" @dative+ быть@past нужно|нужный@
-кому-то-нужно: "(кому-то) нужно (A1)" "(1->nom) will (3)" @dative+ быть[fut]@ нужно|нужный@
-кому-то-нужно: "(кому-то) нужно (A1)" "(1->nom) (2) (need,needs,needed,1)" @dative+ adverb? нужно|нужный@
+кому-то-нужно: "(кому-то) нужно[need to] (A1)" "[someone->nom] (do,does,did,1) not need" @dative+ не@ adverb? нужно@
+кому-то-нужно: "(кому-то) нужно[need to] (A1)" "[someone->nom] didn't ever need" @dative+ никогда@ не@ нужно@ быть@past
+кому-то-нужно: "(кому-то) нужно[need to] (A1)" "(1->nom) did not need" @dative+ не@ нужно@ быть@past
+кому-то-нужно: "(кому-то) нужно[need to] (A1)" "(1->nom) needed" @dative+ быть@past нужно@
+кому-то-нужно: "(кому-то) нужно[need to] (A1)" "(1->nom) will (3)" @dative+ быть[fut]@ нужно@
+кому-то-нужно: "(кому-то) нужно[need to] (A1)" "(1->nom) (2) (need,needs,needed,1)" @dative+ adverb? нужно@
 на-твоем-месте: "на твоём месте" "if (1) were you, (1) would (6->1sg)" phrase:np бы@ на@ adjective@prep* место@prep verb
 на-твоем-месте: "на твоём месте" "if (1) were you, (1) would not (7->inf)" phrase:np бы@ на@ adjective@prep* место@prep не@ verb
 кому-то-можно: "(кому-то) можно (A1)" "(1->nom) (2) may" @dative+ adverb? можно@
@@ -262,9 +264,9 @@ need-to-be: "нужно (passive)" "(1->nom) (need,needs,needed,1) to be (3->pas
 на-самом-деле: "на самом деле" "in fact" на@ самый@prepn дело@prep
 смотреть-на: "смотреть на" "look at [something]" посмотреть|посмотреть[look]|смотреть|смотреть[look]@ на@ phrase:np@acc
 про-что-то: "про что-то" "about [something]" про@ phrase:np@acc
-играть-в-игру: "играть в игру" "play [a game]" играть@ в@ accusative
-dat-нужен: "(кому-то) нужен TODO:verb phrase, translation" "[someone->nom] (2) (do,does,did,1) not need" phrase:np@dat adverb? не@ нужный@
-dat-нужен: "(кому-то) нужен TODO:verb phrase, translation" "[someone->nom] (need,needs,1)" phrase:np@dat нужный@
+играть-в-игру: "играть в игру" "(play,plays,played,1) (3)" играть@ в@ accusative
+dat-нужен: "(кому-то) нужен[needed] TODO:verb phrase, translation" "[someone->nom] (2) (do,does,did,1) not need" phrase:np@dat adverb? не@ нужный@
+dat-нужен: "(кому-то) нужен[needed] TODO:verb phrase, translation" "[someone->nom] (need,needs,1)" phrase:np@dat нужный@
 датьetc-dat: "дать/взять/... кому-то что-то" "(1) (2) to (3)" #something-to-someone phrase:np@acc phrase:np@dat
 датьetc-dat: "дать/взять/... кому-то что-то" "(1) (2) (3)" #something-to-someone phrase:np@dat phrase:np@acc
 датьetc-dat: "дать/взять/... кому-то что-то" "(1) [something] to [someone]" phrase:np@acc any #something-to-someone any phrase:np@dat
@@ -447,7 +449,8 @@ face-to-face: "face to face" "face to face" лицо@instr к@ лицо@dat
 самый-adj: "самый большой" "the most (2)" самый@ adjective
 двух-шагах: "в двух шагах" "а stone's throw from" в@ два@preppl шаг@preppl от@ phrase:np@gen
 скажите: "скажите пожалуйста" "could you please tell me" сказать@imprpl ,@ пожалуйста@ ,@
-на-for: "(stop/work/present) for..." "for (2)" на@ phrase:np@acc
+на-for: "(stop/work/gift) for..." "for (2)" на@ phrase:np@acc
+на-for: "(stop/work/gift) for..." "for (2)" на@ сегодня|завтра@
 на-num-comp: "на два раза больше" "(2) (3) (4)" на@ #number noun comp
 к-на: "к себе на работу и т.п." "to (5) of (2)" к@ phrase:np@dat any на@ phrase:np@acc
 сесть-на: "сесть на" "(take,takes,took,1) (article) (3)" сесть@ на@ phrase:np#transport
@@ -468,7 +471,7 @@ face-to-face: "face to face" "face to face" лицо@instr к@ лицо@dat
 купить-у-кого-то: "купить/взять у кого-то" "(1) from (3)" купить|покупать|брать|взять@ у@ phrase:np@gen
 разве-нет: "разве не" "(do,does,did,2) (2) not" разве@ pronoun не@
 разве-нет: "разве не" "(do,does,did,1) (1) not" pronoun разве@ не@
-не-видно: "не видно" "I can't see anything" ничто@gen не@ видный@shortn
+не-видно: "не видно" "(1->nom) can't see anything" #animate@dative any ничто@gen не@ видный@shortn
 не-видно: "не видно" "(1->nom) (are,is,was,be,1) ... not visible" phrase:np@gen any не@ видный@shortn
 не-видно: "не видно" "(1->nom) could not be seen" phrase:np@gen видный@shortn не@ быть@past
 один-of: "ни один" "not one of (3) (4->pl)" ни@ один@ #possessive noun
@@ -485,9 +488,7 @@ auto-collocation: "collocation" "(1)" phrase:номер-телефона@context
 auto-collocation: "collocation" "(1)" phrase:станция-метро@context
 auto-collocation: "collocation" "(1)" phrase:высокая-цена@context
 auto-collocation: "collocation" "(1)" phrase:новый-год@context
-auto-collocation: "collocation" "(1)" phrase:день-матери@context
 auto-collocation: "collocation" "(1)" phrase:скорая-помощь
-auto-collocation: "collocation" "(1)" phrase:день-рождения
 поздняя-ночь: "поздняя ночь" "late at night" поздний@ ночь@
 поздняя-ночь: "поздняя ночь" "early in the morning" ранний@ утро@
 обратная–дорога: "обратная–дорога" "way back" обратный@ дорога|путь@
@@ -512,6 +513,5 @@ counting-on: "надеяться на что-то" "(are,is,was,being,be,are,wer
 оставить-себе: "оставить себе" "(keep,keeps,kept,1) (2)" оставить@ phrase:np@acc себя@dat
 идти-за: "идти за кем-то" "follow (3)" идти|ехать|пойти@ за@ phrase:np@instr
 кактак: "как так" "how" как@ так@
-день-матери: "день матери" "Mothers' Day" день@context мать@gen
 скорая-помощь: "скорая помощь" "ambulance" скорый@context помощь@context
-день-рождения: "день рождения" "birthday" день@context рождение@gen
+even-so: "и так - even so" "even so" и[part]@ так@
