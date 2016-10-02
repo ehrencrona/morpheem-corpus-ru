@@ -227,7 +227,7 @@ grammar: adj@datm, tag: dative
 grammar: -нравиться@3pl, tag: verb
 grammar: -он@dat, tag: dative
 grammar: -ты@dat, tag: dative
-хоч--<теть: want, 3: wants, past: wanted, prog: wanting, inflect: -хотеть
+хоч--<теть: want, 3: wants, past: wanted, prog: wanting, inflect: -хотеть, mask: impr
 с--: with, from, inflect: oprep, tag: untranslatable
 ед--а: food, pl: foods, inflect: fem
 grammar: fem@instr, tag: instrumental
@@ -1011,7 +1011,7 @@ phrase: за-стол
 grammar: -три@instrpl, tag: instrumental
 извини--ть: excuse, 3: excuses, past: excused, prog: excusing, inflect: -дарить
 прости--ть: forgive, 3: forgives, past: forgave, prog: forgiving, inflect: -простить
-нечаст--ый: not often, inflect: -частый, mask: short
+нечаст--ый: not often, inflect: -частый, mask: compandshort
 grammar: -три@preppl, tag: prepositional
 phrase: go-do
 grammar: -пять@pl
@@ -1281,7 +1281,7 @@ grammar: -что@gen, tag: genitive
 phrase: ещё-один
 води--ть: drive, 3: drives, past: drove, prog: driving, inflect: -ходить
 стран--а: country, pl: countries, inflect: fem
-устан--<ть: get tired, 3: gets tired, past: got tired, prog: getting tired, inflect: -стать
+устан--<ть: get tired, 3: gets tired, past: got tired, prog: getting tired, inflect: -стать, mask: impr
 grammar: -себя@prep, tag: prepositional
 температур--а[fever]: fever, pl: fevers, inflect: fem
 phrase: ещё-нет
