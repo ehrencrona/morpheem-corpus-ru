@@ -212,7 +212,7 @@ grammar: -вы@datpl, tag: dative
 grammar: -кто@dat, tag: dative
 grammar: -она@dat, tag: dative
 grammar: -мы@datpl, tag: dative
-да--вать: give, 3: gives, past: gave, prog: giving, inflect: -давать
+да--вать: give, 3: gives, past: gave, prog: giving, inflect: -давать, tag: something-to-someone
 grammar: sya@3, tag: verb
 нрави--ться: like, 3: likes, past: liked, prog: liking, inflect: -нравиться
 grammar: masc@dat, tag: dative
@@ -1256,7 +1256,7 @@ phrase: what-a
 grammar: -они@genplalt, tag: genitive
 grammar: -они@instrplalt, tag: instrumental
 phrase: such-nice
-да--ть: give, 3: gives, past: gave, prog: giving, inflect: -дать
+да--ть: give, 3: gives, past: gave, prog: giving, inflect: -дать, tag: something-to-someone
 да--ть[let]: let, 3: lets, inflect: -дать
 покаж--<зать: show, 3: shows, past: showed, prog: showing, inflect: -показать, tag: something-to-someone
 grammar: -они@preppl, tag: prepositional
@@ -1863,12 +1863,30 @@ phrase: в-время2
 броса--ть: abandon, 3: abandons, past: abandoned, inflect: ать
 броса--ть[throw]: throw, 3: throws, past: threw, inflect: ать
 кто-то: someone
-числ--о: n/a, inflect: -масло
+числ--о: number, pl: numbers, inflect: -масло
 grammar: neuadjoe@pl
-помо--<ыть: n/a, inflect: -открыть
-поскорее: n/a
+помо--<ыть: wash, 3: washes, past: washed, prog: washing, inflect: -открыть
+поскорее: faster
 phrase: оставить-себе
 приготови--ть: n/a, inflect: -готовить
-крад--<сть: n/a, inflect: -украсть
+крад--<сть: steal, 3: steals, past: stoles, prog: stealing, inflect: -украсть
 phrase: идти-за
-записа--ть: n/a, inflect: ать
+записа--ть: write down, 3: writes down, past: wrote down, inflect: ать
+фотографи--я: n/a, inflect: -регистрация
+уед--<хать: leave, 3: leaves, past: left, prog: leaving, inflect: -ехать
+уезжа--ть: leave, 3: leaves, past: left, inflect: ать
+grammar: -время@prep
+никуда: nowhere
+подойд--<ти: , inflect: -войти
+зайд--<ти: n/a, inflect: -войти
+верн--уть: return, 3: returns, past: returned, inflect: -повернуть
+grammar: -правильный@shortm
+grammar: -рот@nom
+привез--ти: bring, 3: brings, past: brang, inflect: -привезти
+лечи--ть: treat, 3: treats, past: treated, inflect: -учить
+grammar: -обратиться@1
+grammar: -масло@genpl
+мо--<ыть: wash, 3: washes, past: washed, prog: washing, inflect: -открыть
+phrase: кактак
+phrase: день-матери
+phrase: скорая-помощь
