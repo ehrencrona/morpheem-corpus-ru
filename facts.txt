@@ -1010,7 +1010,7 @@ phrase: за-стол
 grammar: -три@instrpl, tag: instrumental
 извини--ть: excuse, 3: excuses, past: excused, prog: excusing, inflect: -дарить
 прости--ть: forgive, 3: forgives, past: forgave, prog: forgiving, inflect: -простить
-нечаст--ый: not often, inflect: -частый
+нечаст--ый: not often, inflect: -частый, mask: allbutadv
 grammar: -три@preppl, tag: prepositional
 phrase: go-do
 grammar: -пять@pl
@@ -1590,6 +1590,8 @@ grammar: -маленький@comp, tag: at-instr
 одежд--а: clothes, inflect: fem, mask: pl
 phrase: кому-то-кажется
 интересу--<оваться: are interested in, 1: am interested in, 3: is interested in, past: was interested in, inf: be interested in, pl: are interested in, pastpl: were interested in, prog: being interested in, inflect: -интересоваться
+интересу--<оваться[ask]: ask, 3: asks, inflect: -интересоваться
+поинтересу--<оваться[ask]: ask, 3: asks, inflect: -интересоваться
 grammar: y-esh-et@3pl, tag: verb
 grammar: -два@fpl
 grammar: -сидеть@impr, tag: verb
