@@ -348,7 +348,7 @@ phrase: у-его-нет
 grammar: -друг@instrpl, tag: instrumental
 язык--[lang]: language, pl: languages, inflect: masc, tag: language
 сейчас: now
-урок--: lesson, pl: lessons, inflect: masc, tag: time
+урок--: lesson, pl: lessons, inflect: masc, tag: time, tag: at
 grammar: oprep@alt
 phrase: ждать-for-something-abstract
 grammar: y-esh-et@1pl, tag: verb
@@ -1009,7 +1009,7 @@ grammar: -три@genpl, tag: genitive
 phrase: за-стол
 grammar: -три@instrpl, tag: instrumental
 извини--ть: excuse, 3: excuses, past: excused, prog: excusing, inflect: -дарить
-прости--ть: forgive, 3: forgives, past: forgave, prog: forgiving, inflect: -простить
+прости--ть: forgive, 3: forgives, past: forgave, prog: forgiving, inflect: -простить, tag: something-to-someone
 нечаст--ый: not often, inflect: -частый, mask: allbutadv
 grammar: -три@preppl, tag: prepositional
 phrase: go-do
@@ -1502,7 +1502,7 @@ phrase: такой..как
 неужели: denotes disbelief
 phrase: то-же
 получа--ть: get, 3: gets, past: got, prog: getting, inflect: ать
-очеред--ь: queue, pl: queues, inflect: femь
+очеред--ь: line, pl: lines, inflect: femь
 разоль--<<<лить: spill, 3: spills, past: spilled, prog: spilling, inflect: -разлить
 запасн--ой: spare, adv: sparely, inflect: ойadj, mask: nonstd
 погуля--ть: take a walk, 3: takes a walk, past: took a walk, prog: taking a walk, inflect: ать
@@ -1821,7 +1821,7 @@ grammar: -принести@pastf, tag: verb
 grammar: -оставаться@pastm, tag: verb
 grammar: -одеться@pastpl, tag: verb
 grammar: -сын@preppl, tag: prepositional
-больн--ой: n/a, inflect: -больной
+больн--ой: sick, adv: hurt, comp: sicker, inflect: -больной
 grammar: -больной@shortm
 phrase: на-улица
 обрати--ться: n/a, inflect: -обратиться
@@ -1897,3 +1897,8 @@ phrase: even-so
 план--: n/a, inflect: masc
 phrase: устать-от
 phrase: кричать-на
+ясн--ый: clear, inflect: adj
+прода--вать: sell, 3: sells, past: sold, prog: selling, inflect: -давать
+phrase: по-цене
+проща--ть: forgive, 3: forgives, past: forgave, prog: forgiving, inflect: -прощать, tag: something-to-someone
+вперёд: forward
