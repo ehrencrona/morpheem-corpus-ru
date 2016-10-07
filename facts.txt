@@ -202,7 +202,7 @@ grammar: -один@f
 grammar: -три@pl
 grammar: -два@pl
 тр--и: three, inflect: -три, tag: number
-а: and (in contrast)
+а: and
 булочк--а: bun, pl: buns, inflect: femka2
 возвраща--ть: return, 3: returns, past: returned, prog: returning, inflect: ать, tag: something-to-someone
 шоколад--: chocolate, pl: chocolates, inflect: masc, tag: uncountable
@@ -1503,6 +1503,7 @@ phrase: такой..как
 phrase: то-же
 получа--ть: get, 3: gets, past: got, prog: getting, inflect: ать
 очеред--ь: line, pl: lines, inflect: femь
+очеред--ь[turn]: turn, inflect: femь, mask: pl
 разоль--<<<лить: spill, 3: spills, past: spilled, prog: spilling, inflect: -разлить
 запасн--ой: spare, adv: sparely, inflect: ойadj, mask: nonstd
 погуля--ть: take a walk, 3: takes a walk, past: took a walk, prog: taking a walk, inflect: ать
@@ -1902,3 +1903,4 @@ phrase: кричать-на
 phrase: по-цене
 проща--ть: forgive, 3: forgives, past: forgave, prog: forgiving, inflect: -прощать, tag: something-to-someone
 вперёд: forward
+phrase: бояться-genitive

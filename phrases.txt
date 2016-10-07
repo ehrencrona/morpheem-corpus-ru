@@ -9,7 +9,8 @@ auto-567-genpl: "5/6/7/... чего-то" "(1) (2)" #number@context phrase:gen-o
 auto-567-genpl: "5/6/7/... чего-то" "(1) (2) o'clock" #number@context adjective@genpl* час@genpl
 auto-567-genpl: "5/6/7/... чего-то" "(1) (2) (3)" #number@context adjective@genpl* genpl
 auto-1-nom: "1 чего-то (A1)" "(1) (2) (3)" один@context adjective@context* noun@context
-not-gen: "нет чего-то (A1)" "(there is no,pl:there are no,3->v) [something]" нет[none]@ any @genitive+
+not-gen: "нет чего-то (A1)" "(there is no,pl:there are no,3->v) [something]" нет[none]@ any phrase:np@gen
+not-gen: "нет чего-то (A1)" "(there is no,pl:there are no,3->v) [something]" phrase:np@gen any нет[none]@
 gen-of: "что-то чего-то" "Mother's Day" день@context мать@gen
 gen-of: "что-то чего-то" "birthday" день@ рождение@gen
 gen-of: "что-то чего-то" "(1) (2) of (article) (3) (4)" adjective@context* noun@context! adjective@genitive* noun@genitive!
@@ -158,7 +159,7 @@ hyperbole: "for [time period] - hyperbole " "for [adjective]" phrase:np@instr#ti
 кому-то-можно: "(кому-то) можно (A1)" "(1->nom) (2) may" @dative+ adverb? можно@
 кому-то-можно: "(кому-то) можно (A1)" "may (3->nom) (4) (5->1sg)" можно@ particle@? @dative+ adverb? verb
 кому-то-нельзя: "(кому-то) нельзя (B1) TODO:verb phrase, translation" "[someone->nom] may not" phrase:np@dat нельзя@
-по-очереди: "по очереди" "one by one" по@ очередь@dat
+по-очереди: "по очереди" "one by one" по@ очередь[turn]@dat
 по-очереди: "по очереди" "one by one" по@ adjective@? порядок@dat
 по-возможности: "по возможности" "if possible" по@ возможность@dat
 заниматься-чем-то: "заниматься (чем-то) (A1)" "deal with [activity]" заниматься@ phrase:np@instr
@@ -327,8 +328,8 @@ gen-верить: "верить кому-то" "(1) can trust (3)" phrase:np м�
 gen-верить: "верить кому-то" "(trust,trusts,trusted,1) (2)" верить|доверять|поверить@ phrase:np@dat
 gen-верить: "верить кому-то" "[someone] ... (trust,trusts,trusted,3)" phrase:np@dat any верить|доверять|поверить@
 dat-speech: "говорить/сказать кому-то" "(tell,tells,told,2) (1)" phrase:np@dat рассказывать|рассказать|говорить|сказать@
-dat-speech: "говорить/сказать кому-то" "(tell,tells,told,1) (2)" рассказывать|рассказать|говорить|сказать@ any phrase:np@dat
-dat-speech: "говорить/сказать кому-то" "not (tell,tells,told,2) (1)" phrase:np@dat не@ рассказывать|рассказать|говорить|сказать@
+dat-speech: "говорить/сказать кому-то" "(tell,tells,told,1) (3)" рассказывать|рассказать|говорить|сказать@ any phrase:np@dat
+dat-speech: "говорить/сказать кому-то" "not (tell,tells,told,3) (1)" phrase:np@dat не@ рассказывать|рассказать|говорить|сказать@
 помогать-dat: "помогать-dat" "(1) (2)" помогать@ phrase:np@dat
 помогать-dat: "помогать-dat" "(2) (1)" phrase:np@dat помогать@
 помогать-dat: "помогать-dat" "(do,does,did,3) not (3->pres) (1)" phrase:np@dat не@ помогать@
@@ -525,3 +526,5 @@ even-so: "и так - even so" "even so" и[part]@ так@
 устать-от: "устать от чего-то" "tired of (3)" устать@ от@ phrase:np@gen
 кричать-на: "кричать на кого-то" "(1) at (3)" кричать@ на@ phrase:np@acc
 по-цене: "по цене" "for (article) (2) (3)" по@ adjective@dative? цена@dative
+бояться-genitive: "бояться чего-то" "(are,is,was,being,be,are,were,am,2) not afraid of (3)" не@ бояться@ phrase:np@gen
+бояться-genitive: "бояться чего-то" "(are,is,was,being,be,are,were,am,1) afraid of (2)" бояться@ phrase:np@gen
