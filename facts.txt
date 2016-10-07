@@ -624,6 +624,7 @@ grammar: -весь@datpl, tag: dative
 phrase: через-time
 положи--ть: put, 3: puts, past: put, prog: putting, inflect: -учить
 класс--: class, pl: classes, inflect: masc
+класс--[grade]: grade, pl: grades, inflect: masc
 класс--[room]: classroom, pl: classrooms, inflect: masc
 grammar: sya@1, tag: verb
 phrase: по-definition
@@ -1329,7 +1330,7 @@ grammar: -один@instrm, tag: instrumental
 phrase: у-кого-location
 grammar: -взять@inf, tag: verb
 при: with, pos: prep
-ли: whether
+ли: whether, pos: part, tag: untranslatable
 grammar: -выйти@pastn, tag: verb
 ведь: after all
 phrase: с-чего-взял
