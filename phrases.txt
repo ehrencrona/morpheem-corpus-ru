@@ -132,6 +132,7 @@ hyperbole: "for [time period] - hyperbole " "for [adjective]" phrase:np@instr#ti
 похоже: "похоже" "apparently" похожий@adv
 за-direction: "за (направление) (B1)" "behind [direction]" за@ phrase:np@acc
 через-direction: "через (направление) (B1)" "through, across (2)" через@ phrase:np@acc
+через-direction: "через (направление) (B1)" "(1)" phrase:через-интернет
 через-time: "через (время) (B1)" "in (2) (3)" через@ adverb? phrase:np@acc#time
 на-time: "на (время) (B1)" "on our day off" на@ выходной@
 на-time: "на (время) (B1)" "for (2)" на@ phrase:np@acc#time
@@ -251,7 +252,7 @@ go-do: "идти verb" "(go,goes,went,1) (2)" идти|пойти@ verb
 если-бы: "если бы" "if ... (4) would (6->inf)" если@ бы@ any ,@ #animate verb бы@
 если-бы: "если бы" "if ... , ... would (8->)" если@ бы@ any ,@ any бы@ any verb
 куда-бы: "куда бы он ни пошёл" "whereever (3) (5)" куда@ бы@ #animate ни@ verb@past
-кроме-gen: "кроме" "except [someone]" кроме@ @genitive+
+кроме-gen: "кроме" "except for (2)" кроме@ phrase:np@gen
 против-gen: "против" " against" против@ тот@gen ,@ чтобы@
 против-gen: "против" "against [an idea/cause/etc]" против@ phrase:np@gen
 если-только: "если бы только" "if only (3) (5)" если@ бы@ #animate только@ verb
@@ -488,7 +489,7 @@ face-to-face: "face to face" "face to face" лицо@instr к@ лицо@dat
 когда-же: "когда же" "will (3) ever" когда@ же@ #animate
 close-to: "близко к чему-то" "close to (3)" близкий@ к@ phrase:np@dat
 at-the-door: "в дверях" "at the door" в@ дверь@preppl
-домашние-задание: "домашнее задание" "homework" домашний@ задание@
+домашние-задание: "домашнее задание" "homework" домашний@context задание@context
 auto-collocation: "collocation" "(1)" phrase:домашние-задание@context
 auto-collocation: "collocation" "(1)" phrase:поздняя-ночь@context
 auto-collocation: "collocation" "(1)" phrase:обратная–дорога@context
@@ -497,6 +498,7 @@ auto-collocation: "collocation" "(1)" phrase:станция-метро@context
 auto-collocation: "collocation" "(1)" phrase:высокая-цена@context
 auto-collocation: "collocation" "(1)" phrase:новый-год@context
 auto-collocation: "collocation" "(1)" phrase:скорая-помощь
+auto-collocation: "collocation" "(1)" phrase:домашнее-животное
 поздняя-ночь: "поздняя ночь" "late at night" поздний@ ночь@
 поздняя-ночь: "поздняя ночь" "early in the morning" ранний@ утро@
 обратная–дорога: "обратная–дорога" "way back" обратный@ дорога|путь@
@@ -528,3 +530,6 @@ even-so: "и так - even so" "even so" и[part]@ так@
 по-цене: "по цене" "for (article) (2) (3)" по@ adjective@dative? цена@dative
 бояться-genitive: "бояться чего-то" "(are,is,was,being,be,are,were,am,2) not afraid of (3)" не@ бояться@ phrase:np@gen
 бояться-genitive: "бояться чего-то" "(are,is,was,being,be,are,were,am,1) afraid of (2)" бояться@ phrase:np@gen
+через-интернет: "через интернет" "online" через@ интернет@
+кроме-того: "кроме того" "moreover" кроме@ тот@gen
+домашнее-животное: "домашнее животное" "(pet,pets,2)" домашний@context животное@context

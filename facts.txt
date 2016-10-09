@@ -58,7 +58,7 @@ grammar: -кто@nom
 grammar: n@acc, tag: accusative
 --кто: who, acc: whom, inflect: -кто, tag: question, tag: animate
 слыши--<ать: hear, 3: hears, past: heard, prog: hearing, inflect: -слышать
-мам--а: mom, pl: moms, inflect: fem-animate, tag: animate
+мам--а: Mom, pl: moms, inflect: fem-animate, tag: animate
 люби--ть: like, 3: likes, past: liked, prog: liking, inflect: -любить
 grammar: perspron@acc, tag: accusative
 --ты: you, inflect: -ты, tag: animate
@@ -231,7 +231,7 @@ grammar: -ты@dat, tag: dative
 с--: with, from, inflect: oprep, tag: untranslatable
 ед--а: food, pl: foods, inflect: fem
 grammar: fem@instr, tag: instrumental
-интернет--: internet, inflect: masc, tag: on
+интернет--: Internet, inflect: masc, tag: on
 радио--: radio, pl: radios, inflect: uninflected, mask: pl
 котор--ый: that, inflect: adj, mask: nonstd
 музык--а: music, inflect: fem, mask: pl
@@ -1448,7 +1448,7 @@ grammar: -дерево@pl
 броси--ть[throw]: throw, 3: throws, past: threw, prog: throwing, inflect: -бросить
 phrase: заниматься-чем-то
 шаг--: step, pl: steps, inflect: masc
-находи--ться: is located, inf: be located, pastpl: were located, past: was located, inflect: -находиться
+находи--ться: are located, 1: am located, inf: be located, pastpl: were located, past: was located, pl: are located, prog: begin located, inflect: -находиться
 действительно: really, pos: adv
 grammar: аться@3pl, tag: verb
 grammar: аться@2, tag: verb
@@ -1905,3 +1905,7 @@ phrase: по-цене
 проща--ть: forgive, 3: forgives, past: forgave, prog: forgiving, inflect: -прощать, tag: something-to-someone
 вперёд: forward
 phrase: бояться-genitive
+мужчин--а: n/a, inflect: fem-animate
+phrase: через-интернет
+phrase: кроме-того
+phrase: домашнее-животное
