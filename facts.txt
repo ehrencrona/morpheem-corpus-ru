@@ -287,7 +287,7 @@ grammar: femka@genpl, tag: genitive
 французск--ий: French, inflect: adj, tag: language, mask: shortandadv
 словар--ь: dictionary, pl: dictionaries, inflect: -словарь
 когда: when, pos: quest
-Владивосток--: , inflect: masc
+Владивосток--: Vladivostok, inflect: masc
 вчера: yesterday
 никогда: never
 суббот--а: Saturday, pl: Saturdays, inflect: fem, tag: time, tag: weekday
@@ -729,7 +729,7 @@ grammar: -лошадь@instrpl, tag: instrumental
 экзамен--: exam, pl: exams, inflect: masc
 grammar: -домашний@f
 phrase: ни-ни
-их: their, pos: pron
+их: their, pos: pron, tag: possessive
 лекарств--о: medication, pl: medications, inflect: neu
 grammar: neuie@pl
 phrase: need-to-be
@@ -1844,7 +1844,7 @@ grammar: uninflected@nom
 увиди--<еть: n/a, inflect: -видеть
 отправи--ть: n/a, inflect: -готовить
 показыва--ть: n/a, inflect: ать
-игр--а: n/a, inflect: fem
+игр--а: game, pl: games, inflect: fem
 grammar: -палец@nom
 рт--<от: n/a, inflect: -рот
 phrase: keep-track
@@ -1910,3 +1910,10 @@ phrase: через-интернет
 phrase: кроме-того
 phrase: домашнее-животное
 услыши--<ать: hear, 3: hears, past: heard, pl: hear, pastpl: heard, inflect: -слышать
+прода--ть: n/a, inflect: -дать
+начал--о: n/a, inflect: neu
+север--: north, inflect: masc
+рек--а: rever, inflect: fem
+слаб--ый: n/a, inflect: adj
+дедушк--а: grandfather, pl: grandfathers, inflect: -девочка
+grammar: -два@instrpl, tag: instrumental
