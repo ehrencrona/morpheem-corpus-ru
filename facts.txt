@@ -108,7 +108,7 @@ grammar: -свой@m
 как--ой: which, inflect: ойadj, mask: nonstd
 как--ой[kind]: what kind of, inflect: ойadj, mask: nonstd
 очень: very, pos: adv
-погод--а: weather, inflect: fem
+погод--а: weather, inflect: fem, tag: in
 сегодня: today, pos: adv, tag: time
 завтра: tomorrow
 зов--<<вать: call, 3: calls, past: called, prog: calling, inflect: -звать
@@ -216,7 +216,7 @@ grammar: -мы@datpl, tag: dative
 grammar: sya@3, tag: verb
 нрави--ться: like, 3: likes, past: liked, prog: liking, inflect: -нравиться
 grammar: masc@dat, tag: dative
-дари--ть: gift, 3: gifts, past: gifted, prog: giving, inflect: -дарить, tag: something-to-someone
+дари--ть: give, 3: gives, past: gave, prog: giving, inflect: -дарить, tag: something-to-someone
 нужно: need to
 нужн--ый: needed, inflect: ныйadj, mask: adv
 grammar: abstr-нadj@shortf
@@ -357,7 +357,7 @@ grammar: y-esh-et@1pl, tag: verb
 grammar: adj@accanpl, tag: accusative
 по: on, pos: prep, tag: untranslatable
 phrase: хотеть-something-abstract
-холодн--ый: cold, adv: coldly, comp: colder, super: coldest, inflect: ныйadj
+холодн--ый: cold, adv: cold, comp: colder, super: coldest, inflect: ныйadj
 вечер--: evening, pl: evenings, inflect: masc3, tag: at-instr, tag: time
 grammar: abstr-anim@accpl, tag: accusative
 grammar: -быть@inf, tag: verb
@@ -583,7 +583,7 @@ phrase: слева-от-чего-то
 диван--: couch, pl: couches, inflect: masc
 grammar: -ждать@impr, tag: verb
 grammar: -мы@genpl, tag: genitive
-жарк--ий: hot, adv: hotly, comp: hotter, super: hottest, inflect: adj, mask: short
+жарк--ий: hot, adv: hot, comp: hotter, super: hottest, inflect: adj, mask: short
 phrase: вокруг-чего-то
 ноутбук--: laptop, pl: laptops, inflect: masc
 ужасн--ый: terrible, comp: more terrible, super: most terrible, inflect: ныйadj
@@ -1918,3 +1918,4 @@ phrase: домашнее-животное
 дедушк--а: grandfather, pl: grandfathers, inflect: -девочка
 grammar: -два@instrpl, tag: instrumental
 постара--ться: try, 3: tries, past: tried, prog: trying, inflect: -пытаться
+phrase: double-negation

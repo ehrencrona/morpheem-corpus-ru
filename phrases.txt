@@ -70,6 +70,8 @@ no-matter-what: "во что бы то ни стало" "no matter what" в@alt 
 обращаться-с: "обращаться с" "... (4) (2)" с@ phrase:np@instr any обращаться[handle]|обращаться[treat]@
 у-его-нет: "у кого-то нет чего-то (A1)" "(2->nom) does not have (4)" у@ phrase:np@gen нет[none]@ phrase:np@gen
 у-кого: "у кого-то (есть) (A1)" "(2->nom) had" у@ phrase:np@gen быть@past
+у-кого: "у кого-то (есть) (A1)" "(2->nom) did not have" у@ phrase:np@gen не@ быть@past
+у-кого: "у кого-то (есть) (A1)" "(2->nom) never had" у@ phrase:np@gen никогда@ не@ быть@past
 у-кого: "у кого-то (есть) (A1)" "(2->nom) have" у@ phrase:np@gen
 из-gen-departure: "из (откуда) (A1)" "from [point of departure/source]" из@ phrase:np@gen
 из-gen-departure: "из (откуда) (A1)" "from [point of departure/source]" из@ adjective@prep* @locative+
@@ -235,8 +237,8 @@ go-do: "идти verb" "(go,goes,went,1) (2)" идти|пойти@ verb
 так...как: "так ... как" "as ... as" так@ any ,@ как[like]@
 такой..как: "такой..как" "so / such ... as" такой@ any как[like]@
 такой..как: "такой..как" "so / such ... as" такой@ any ,@ как[like]@
-стоить-дорогой: "стоить дорогой" "(are,is,was,being,be,are,were,v) ... (adj)" стоить@ any дорогой|дешёвый@adv
-стоить-дорогой: "стоить дорогой" "(are,is,was,being,be,are,were,v) ... (adj)" дорогой|дешёвый@adv стоить@
+стоить-дорогой: "стоить дорого" "(are,is,was,being,be,are,were,1) ... (3->adj)" стоить@ any дорогой|дешёвый@adv
+стоить-дорогой: "стоить дорого" "(are,is,was,being,be,are,were,2) (1->adj)" дорогой|дешёвый@adv стоить@
 у-thing: "у чего-то (возле)" "by [something's location]" у@ phrase:np@gen
 за-acc: "за (for)" "for (2)" за@ phrase:np@acc
 за-что: "за что" "for what reason" за@ что@
@@ -245,8 +247,7 @@ go-do: "идти verb" "(go,goes,went,1) (2)" идти|пойти@ verb
 то-же: "то же" "the same" тот@ же@ самый@
 то-же: "то же" "the same" тот@ же@
 то-же: "то же" "the same" тот@ самый@
-не-gen: "не genitive" "did not (2->pres) ... [something]" не@ verb@past any @genitive+
-не-gen: "не genitive" "(do,does,did,2) not (2->) ... [something]" не@ verb any @genitive+
+не-gen: "не genitive" "(do,does,did,3) not (2) (3->pres) (5)" не@ adverb? verb any phrase:np@gen
 ни-ни: "ни ... ни" "neither (2) nor (5)" ни@ phrase:np ,@ ни@ phrase:np
 ни-ни: "ни ... ни" "neither (2) ... nor (5)" ни@ verb ,@ ни@ verb
 если-бы: "если бы" "if ... (4) would (6->inf)" если@ бы@ any ,@ #animate verb бы@
@@ -303,6 +304,7 @@ dat-нравится: "кому-то нравится" "(1->nom) (2) very much (
 dat-нравится: "кому-то нравится" "(1->nom) (2) (like,likes,liked,1) (3)" phrase:np@dat adverb? adjective@comp? нравиться|понравиться@
 dat-нравится: "кому-то нравится" "(1->nom) (don't,doesn't,didn't,1) (4) like" phrase:np@dat particle@? не@ adverb? нравиться|понравиться@
 dat-нравится: "кому-то нравится" "(2->nom) (like,likes,liked,2)" нравиться|понравиться@ phrase:np@dat
+dat-нравится: "кому-то нравится" "(1->nom) (2) (3) (like,likes,liked,1)" phrase:np@dat так@ adjective@comp? нравиться|понравиться@
 dat-интересно: "кому-то интересно" "(are,is,was,being,be,are,were,am,1) (1->nom) interested in (3)?" @dative+ интересный@ phrase:np ?@
 dat-интересно: "кому-то интересно" "(1->nom) (are,is,was,being,be,are,were,am,1) interested in (3)" @dative+ интересный@ phrase:np
 dat-интересно: "кому-то интересно" "(are,is,was,being,be,are,were,am,1) (1->nom) not interested?" @dative+ не@ интересный@ ?@
@@ -367,7 +369,7 @@ in-eyes-of: "'to', as in the eyes of" "to [someone]" #animate@dative
 что-за: "что за...?" "what kind of (4) is it" что@ это@ за@ noun
 за-время: "за весь день" "(2) (3)" за@ весь@acc #time@acc
 за-время: "за весь день" "in (2) (3)" за@ phrase:np@acc#time
-there-was-none: "не было чего-то" "there was/were none [of something]" не@ быть@ any @genitive+
+there-was-none: "не было чего-то" "there (were,was,were,4) no [of something]" не@ быть@ any phrase:np@gen
 there-will-be-none: "не будет чего-то" "there will be no [something]" не@ быть[fut]@3 phrase:np@gen
 there-will-be-none: "не будет чего-то" "there will be no [something]" phrase:np@gen не@ быть[fut]@3
 на-замок: "закрыть на замок" "(lock,locks,locked,1)" закрыть|закрывать|закрытый@ any на@ any замок[lock]@acc
@@ -530,3 +532,5 @@ even-so: "и так - even so" "even so" и[part]@ так@
 через-интернет: "через интернет" "online" через@ интернет@
 кроме-того: "кроме того" "moreover" кроме@ тот@gen
 домашнее-животное: "домашнее животное" "(pet,pets,2)" домашний@context животное@context
+double-negation: "ничто не" "nothing (3)" ничто@ не@ случиться|работать@
+double-negation: "ничто не" "(do,does,did,3) not (3->pres) anything" ничто@ не@ verb
