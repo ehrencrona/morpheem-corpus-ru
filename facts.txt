@@ -108,7 +108,7 @@ grammar: -свой@m
 как--ой: which, inflect: ойadj, mask: nonstd
 как--ой[kind]: what kind of, inflect: ойadj, mask: nonstd
 очень: very, pos: adv
-погод--а: weather, inflect: fem, tag: in
+погод--а: weather, inflect: fem, tag: in, tag: time, tag: weather
 сегодня: today, pos: adv, tag: time
 завтра: tomorrow
 зов--<<вать: call, 3: calls, past: called, prog: calling, inflect: -звать
@@ -353,7 +353,7 @@ grammar: oprep@alt
 phrase: ждать-for-something-abstract
 grammar: y-esh-et@1pl, tag: verb
 её: her, pos: pron, tag: possessive
-деньг--а: , pl: money, inflect: -деньга, mask: sg
+деньг--а: money, pl: money, inflect: -деньга, mask: sg
 grammar: adj@accanpl, tag: accusative
 по: on, pos: prep, tag: untranslatable
 phrase: хотеть-something-abstract
@@ -395,7 +395,6 @@ grammar: -mascь@preppl, tag: prepositional
 по-английски: in English, pos: adv
 по-русски: in Russian, pos: adv
 grammar: masc3@pl
-phrase: хотеть-что-то
 учи--ть: study, 3: studies, past: studied, prog: studying, inflect: -учить
 учи--ть[teach]: teach, 3: teaches, past: taught, prog: teaching, inflect: -учить
 слов--о: word, pl: words, inflect: neu
@@ -433,7 +432,7 @@ phrase: Вот-это
 закончи--ть: finish, 3: finishes, past: finished, prog: finishing, inflect: -учить
 grammar: -хотеть@3pl, tag: verb
 grammar: -давать@impr, tag: verb
-дожд--ь: rain, pl: rains, inflect: -словарь, tag: rain
+дожд--ь: rain, pl: rains, inflect: -словарь, tag: rain, tag: weather
 ноч--ь: night, pl: nights, inflect: femь-я-to-а, tag: at-inst, tag: at-instr, tag: time
 grammar: -стул@genpl, tag: genitive
 начина--ть: begin, 3: begins, past: began, prog: beginning, inflect: ать
@@ -509,7 +508,7 @@ grammar: -ехать@inf, tag: verb
 phrase: о-prep
 grammar: -есть@2, tag: verb
 кричи--<ать: shout, 3: shouts, past: shouted, prog: shouting, inflect: -лежать
-снег--: snow, pl: snows, inflect: masc3, tag: rain
+снег--: snow, pl: snows, inflect: masc3, tag: rain, tag: weather
 grammar: -жить@impr, tag: verb
 гост--ь: guest, pl: guests, inflect: -гость
 phrase: рад-dat
@@ -733,7 +732,7 @@ phrase: ни-ни
 лекарств--о: medication, pl: medications, inflect: neu
 grammar: neuie@pl
 phrase: need-to-be
-втор--ой: second, inflect: -второй, mask: shortandadv
+втор--ой: second, adv: secondly, inflect: -второй, tag: ordinal, mask: shortandadv
 куда: where, pos: quest, tag: question
 grammar: егоadj@instrf, tag: instrumental
 скольк--о: how much, inflect: -много, tag: time, tag: amount, mask: allbutpl
@@ -817,7 +816,7 @@ grammar: -остаться@3pl, tag: verb
 grammar: -казаться@pastm, tag: verb
 phrase: для-to
 от: from, pos: prep
-так: like that
+так: so
 grammar: -мать@nom
 grammar: -казаться@inf, tag: verb
 до: , pos: prep, tag: untranslatable
@@ -846,7 +845,7 @@ grammar: sya@imprpl, tag: verb
 phrase: с-gen
 grammar: neuie@genpl, tag: genitive
 grammar: -ответить@1, tag: verb
-перв--ый: first, adv: firstly, inflect: adj, mask: nonstd
+перв--ый: first, adv: firstly, inflect: adj, tag: ordinal, mask: nonstd
 немног--о: few, inflect: -много, tag: amount, pos: adv, mask: allbutpl
 немног--о[little]: some, adv: a little, inflect: -много, tag: amount, pos: adv, mask: allbutplandadv
 phrase: во-время-чего-то
@@ -1127,6 +1126,7 @@ phrase: датьetc-dat
 поговори--ть: talk, 3: talks, past: talked, prog: talking, inflect: -дарить
 grammar: femя@instr, tag: instrumental
 тяжёл--ый: heavy, adv: heavily, comp: heavier, super: heaviest, inflect: adj
+тяжёл--ый[hard]: hard, comp: harder, super: hardest, inflect: adj
 расскаж--<зать: tell, 3: tells, past: told, prog: telling, inflect: -показать, tag: something-to-someone
 phrase: купить-чего-то
 убь--<ить: kill, 3: kills, past: killed, prog: killing, inflect: -убить
@@ -1148,7 +1148,7 @@ grammar: -случиться@1, tag: verb
 phrase: dat-удобно
 grammar: -земля@instr, tag: instrumental
 grammar: femь-я-to-а@datpl, tag: dative
-треть--<ий: third, inflect: -третий, mask: nonstd
+треть--<ий: third, adv: thirdly, inflect: -третий, tag: ordinal, mask: nonstd
 верн--ый: right, adv: rightly, inflect: ныйadj, mask: comp
 grammar: -идти@pastn, tag: verb
 phrase: dat-нравится
@@ -1242,7 +1242,7 @@ grammar: -себя@dat, tag: dative
 phrase: хватит-что-то-делать
 grammar: -себя@instr, tag: instrumental
 езди--ть: go (by vehicle), past: went (by vehicle), prog: going (by vehicle), inflect: -ходить
-взросл--ый: adult, adv: adultly, inflect: adj, mask: compandshort
+взросл--ый: adult, adv: adultly, pl: adults, inflect: adj, mask: compandshort
 готови--ть: cook, 3: cooks, past: cooked, prog: cooking, inflect: -готовить, tag: something-to-someone
 grammar: -четыре@pl
 phrase: answer-to-question
@@ -1514,7 +1514,7 @@ phrase: кроме-gen
 плит--а: stove, pl: stoves, inflect: fem
 теря--ться: get lost, 3: gets lost, past: got lost, prog: getting lost, inflect: -пытаться
 phrase: против-gen
-мороз--: cold, inflect: masc, mask: pl
+мороз--: cold, inflect: masc, tag: weather, mask: pl
 объясня--ть: explain, 3: explains, past: explained, prog: explaining, inflect: ать
 выучи--ть: learn, 3: learns, past: learnt, prog: learning, inflect: -учить
 ненавиди--<еть: hate, 3: hates, past: hated, prog: hating, inflect: -видеть
@@ -1857,7 +1857,7 @@ grammar: -бежать@1, tag: verb
 срочно: n/a
 носи--ть: n/a, inflect: -спросить
 горяч--ий: n/a, inflect: eeadj
-выключи--ть: n/a, inflect: -учить
+выключи--ть: turn off, 3: turns off, past: turned off, prog: turning off, inflect: -учить
 phrase: counting-on
 phrase: в-гости
 phrase: в-гостях
@@ -1919,3 +1919,14 @@ phrase: домашнее-животное
 grammar: -два@instrpl, tag: instrumental
 постара--ться: try, 3: tries, past: tried, prog: trying, inflect: -пытаться
 phrase: double-negation
+phrase: в-погоду
+получи--ться: work out, inflect: -случиться
+phrase: passive
+выбира--ть: choose, 3: chooses, past: chose, prog: choosing, inflect: ать
+phrase: half-to
+phrase: из-за-кого-точего-то
+жела--ть: wish, 3: wishes, past: wished, prog: wishing, inflect: ать
+phrase: wish-something-to-someone
+phrase: from-someone
+phrase: go-for-a-walk
+phrase: не-так
