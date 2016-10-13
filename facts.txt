@@ -329,7 +329,7 @@ grammar: -свой@prepm, tag: prepositional
 grammar: y-esh-et@impr, tag: verb
 phrase: gen-of
 купи--ть: buy, 3: buy, past: bought, prog: buying, inflect: -любить, tag: something-to-someone
-ид--ти: go (by foot), past: went (by foot), prog: going (by foot), inflect: -идти
+ид--ти: go, past: went, prog: going, inflect: -идти
 ид--ти[rain]: fall, 3: fall, past: fell, prog: falling, inflect: -идти
 или: or, pos: conj
 phrase: gen-possession
@@ -1241,7 +1241,7 @@ grammar: -себя@dat, tag: dative
 из-за[from behind]: from behind, pos: prep
 phrase: хватит-что-то-делать
 grammar: -себя@instr, tag: instrumental
-езди--ть: go (by vehicle), past: went (by vehicle), prog: going (by vehicle), inflect: -ходить
+езди--ть: go, past: went, prog: going, inflect: -ходить
 взросл--ый: adult, adv: adultly, pl: adults, inflect: adj, mask: compandshort
 готови--ть: cook, 3: cooks, past: cooked, prog: cooking, inflect: -готовить, tag: something-to-someone
 grammar: -четыре@pl
@@ -1930,7 +1930,8 @@ phrase: wish-something-to-someone
 phrase: from-someone
 phrase: go-for-a-walk
 phrase: не-так
-grammar: -мочь@pastn
+grammar: -мочь@pastn, tag: verb
 phrase: ничего-adj
 подари--ть: give as a gift, inflect: -дарить
 запомина--ть: n/a, inflect: ать
+поезди--ть: go, 3: goes, past: went, prog: going, inflect: -ходить

@@ -13,6 +13,7 @@ not-gen: "нет чего-то (A1)" "(there is no,pl:there are no,3->v) [someth
 not-gen: "нет чего-то (A1)" "(there is no,pl:there are no,3->v) [something]" phrase:np@gen any нет[none]@
 gen-of: "что-то чего-то" "Mother's Day" день@context мать@gen
 gen-of: "что-то чего-то" "birthday" день@ рождение@gen
+gen-of: "что-то чего-то" "(1) (2)" столько@ phrase:np@gen
 gen-of: "что-то чего-то" "(1) (2) of (article) (3) (4)" adjective@context* noun@context! adjective@genitive* noun@genitive!
 gen-of: "что-то чего-то" "(1) (2) of (article) (3) (4)" adjective@context* noun@context! #number@genitive noun@genitive!
 gen-possession: "что-то чьё-то" "of [owner]" phrase:np@gen#animate
@@ -244,7 +245,7 @@ go-do: "идти verb" "(go,goes,went,1) (2)" идти|пойти@ verb
 у-thing: "у чего-то (возле)" "by [something's location]" у@ phrase:np@gen
 за-acc: "за (for)" "for (2)" за@ phrase:np@acc
 за-что: "за что" "for what reason" за@ что@
-то-что: "то что" "that, which" тот@n ,@ что[that]@
+то-что: "то что" "that, what" тот@ ,@ что[that]|что@
 когда-то: "когда ... то" "when ... ," когда@ any ,@ то@
 то-же: "то же" "the same" тот@ же@ самый@
 то-же: "то же" "the same" тот@ же@
@@ -410,8 +411,8 @@ dat-скучно: "кому-то скучно" "(1->nom) (are,is,was,being,is,ar
 ещё-один: "ещё #number / ещё раз" "one more time" ещё[again]|ещё@ раз@
 ещё-нет: "ещё не" "not yet" ещё@ не@
 ещё-comp: "ещё больше" "even (2)" ещё@ comp
-ни-gen: "ни одного чего-то" "not a [e.g. one word]" ни@ @genitive+
-ни-gen: "ни одного чего-то" "not a single [thing]" ни@ один@ @genitive+
+ни-gen: "ни одного чего-то" "not (2)" ни@ phrase:np@gen
+ни-gen: "ни одного чего-то" "not a single (3)" ни@ один@ @genitive+
 станция-метро: "станция метро" "subway station" станция@context метро@gen
 возле-чего-то: "возле чего-то" "near (2)" возле@ phrase:np@gen
 так-как-because: "так как = because" "because" так@ как[like]|как[when]|как@
@@ -535,6 +536,7 @@ even-so: "и так - even so" "even so" и[part]@ так@
 кричать-на: "кричать на кого-то" "(1) at (3)" кричать@ на@ phrase:np@acc
 по-цене: "по цене" "for (article) (2) (3)" по@ adjective@dative? цена@dative
 бояться-genitive: "бояться чего-то" "(are,is,was,being,be,are,were,am,2) not afraid of (3)" не@ бояться@ phrase:np@gen
+бояться-genitive: "бояться чего-то" "" 
 бояться-genitive: "бояться чего-то" "(are,is,was,being,be,are,were,am,1) afraid of (2)" бояться@ phrase:np@gen
 через-интернет: "через интернет" "online" через@ интернет@
 кроме-того: "кроме того" "moreover" кроме@ тот@gen
