@@ -13,7 +13,7 @@ not-gen: "нет чего-то (A1)" "(there is no,pl:there are no,3->v) [someth
 gen-of: "что-то чего-то" "Mother's Day" день@context мать@gen
 gen-of: "что-то чего-то" "birthday" день@ рождение@gen
 gen-of: "что-то чего-то" "(1) (2) of (article) (3) (4)" adjective@context* noun@context! adjective@genitive* noun@genitive!
-gen-possession: "что-то чьё-то" "of [owner]" phrase:np@gen#animate
+gen-possession: "что-то чьё-то" "of (1)" phrase:np@gen#animate
 рад-dat: "рад чему-то" "happy because of [something]" рад@ any @dative+
 рад-dat: "рад чему-то" "happy because of [something]" @dative+ any рад@
 чем-чем: "чем ... тем ..." "the (2) ... , the (7)" что@instr comp any ,@ тот@instrn any comp
