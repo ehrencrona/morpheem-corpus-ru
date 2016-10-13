@@ -224,6 +224,7 @@ grammar: abstr-нadj@shortn
 grammar: abstr-нadj@shortm
 grammar: adj@datm, tag: dative
 одалжива--ть: borrow, 3: borrows, past: borrowed, prog: borrowing, inflect: ать, tag: something-to-someone
+одалжива--ть[lend]: lend, 3: lends, past: lent, prog: lending, inflect: ать, tag: something-to-someone
 grammar: -нравиться@3pl, tag: verb
 grammar: -он@dat, tag: dative
 grammar: -ты@dat, tag: dative
@@ -289,7 +290,7 @@ grammar: femka@genpl, tag: genitive
 когда: when, pos: quest
 Владивосток--: Vladivostok, inflect: masc
 вчера: yesterday
-никогда: never
+никогда: never, pos: adv
 суббот--а: Saturday, pl: Saturdays, inflect: fem, tag: time, tag: weekday
 понедельник--: Monday, pl: Mondays, inflect: masc, tag: time, tag: weekday
 прошл--ый: last, adv: lastly, comp: laster, super: lastest, inflect: adj, mask: shortandadv
@@ -346,8 +347,8 @@ grammar: -mascь@genpl, tag: genitive
 phrase: у-его-нет
 grammar: -друг@instrpl, tag: instrumental
 язык--[lang]: language, pl: languages, inflect: masc, tag: language
+сейчас: now, pos: adv
 замк--<ок[lock]: lock, pl: locks, inflect: -подарок
-сейчас: now
 урок--: lesson, pl: lessons, inflect: masc, tag: time, tag: at
 grammar: oprep@alt
 phrase: ждать-for-something-abstract
@@ -875,7 +876,7 @@ grammar: neuie@datpl, tag: dative
 поздн--ий: late, adv: lately, comp: later, super: latest, inflect: -поздний, mask: short
 ранн--ий: early, adv: early, comp: earlier, super: earliest, inflect: -ранний, mask: short
 phrase: мы-с-instr
-неб--о: sky, pl: skies, inflect: -небо
+неб--о: sky, pl: skies, inflect: -небо, mask: pl
 grammar: -казаться@pastf, tag: verb
 grammar: -оставаться@inf, tag: verb
 мир--[world]: world, pl: worlds, inflect: masc
