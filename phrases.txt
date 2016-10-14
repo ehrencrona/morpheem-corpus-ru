@@ -9,8 +9,8 @@ auto-567-genpl: "5/6/7/... чего-то" "(1) (2)" #number@context phrase:gen-o
 auto-567-genpl: "5/6/7/... чего-то" "(1) (2) o'clock" #number@context adjective@genpl* час@genpl
 auto-567-genpl: "5/6/7/... чего-то" "(1) (2) (3)" #number@context adjective@genpl* genpl
 auto-1-nom: "1 чего-то (A1)" "(1) (2) (3)" один@context adjective@context* noun@context
-not-gen: "нет чего-то (A1)" "(there is no,pl:there are no,3->v) [something]" нет[none]@ any phrase:np@gen
-not-gen: "нет чего-то (A1)" "(there is no,pl:there are no,3->v) [something]" phrase:np@gen any нет[none]@
+not-gen: "нет чего-то (A1)" "(there is no,pl:there are no,3->v) (3)" нет[none]@ any phrase:np@gen
+not-gen: "нет чего-то (A1)" "(there is no,pl:there are no,3->v) (1)" phrase:np@gen any нет[none]@
 gen-of: "что-то чего-то" "Mother's Day" день@context мать@gen
 gen-of: "что-то чего-то" "birthday" день@ рождение@gen
 gen-of: "что-то чего-то" "(1) (2)" столько@ phrase:np@gen
@@ -65,7 +65,7 @@ no-matter-what: "во что бы то ни стало" "no matter what" в@alt 
 с-чем: "с (чем/кем-то) (A1)" "with whom" с@ кто@instr
 говорить-с: "говорить с кем" "(1) ... to -self" говорить|поговорить@ adverb? phrase:сам-с-собой
 говорить-с: "говорить с кем" "(talk,talks,talked,1) to [someone]" говорить|поговорить@ adverb? с@ phrase:np@instr
-говорить-с: "говорить с кем" "(talk,talks,talked,3) to [someone]" с@ phrase:np@instr говорить|поговорить@
+говорить-с: "говорить с кем" "(talk,talks,talked,4) to ... (2)" с@ phrase:np@instr any говорить|поговорить@
 встречать-с: "встречаться с" "(date,dates,dated,1) [someone]" встречаться[date]@ any с@ phrase:np@instr
 обращаться-с: "обращаться с" "(1) (3)" обращаться[handle]|обращаться[treat]@ с@ phrase:np@instr
 обращаться-с: "обращаться с" "... (4) (2)" с@ phrase:np@instr any обращаться[handle]|обращаться[treat]@
@@ -110,7 +110,7 @@ comp-gen: "лучше than genitive (B1) " "(1) than anyone" comp все[everyon
 comp-gen: "лучше than genitive (B1) " "most of all" comp всё@gen
 comp-gen: "лучше than genitive (B1) " "(1) than (article) [something]" comp phrase:np@gen
 звать-кого-то: "звать кого-то" "(1) [someone]" звать@ phrase:np@acc
-звать-кого-то: "звать кого-то" "(1->nom) (are,is,was,being,be,are,were,am,1) called" @accusative+ звать@
+звать-кого-то: "звать кого-то" "(1->nom) (are,is,was,being,been,be,are,were,am,1) called" @accusative+ звать@
 на-направление: "на somewhere (направление) (A1)" "outside" phrase:на-улица@acc
 на-направление: "на somewhere (направление) (A1)" "to [somewhere]" на@ phrase:np@acc
 на-завтрак-обед-ужин: "есть/готовить/... на завтрак/обед/ужин" "for [meal]" на@ #meal@acc
@@ -129,7 +129,7 @@ comp-gen: "лучше than genitive (B1) " "(1) than (article) [something]" comp
 работать-над-чем-то: "работать над чем-то" "work on (3)" работать@ над@ phrase:np@instr
 работать-над-чем-то: "работать над чем-то" "what ... working on" над@ что@instr any работать@
 hyperbole: "for [time period] - hyperbole " "for [adjective]" phrase:np@instr#time
-доволен-instr: "доволен" "(1) (are,is,was,being,be,are,were,am,1) happy with (4->acc)" phrase:np@nom adverb? довольный@ phrase:np@instr
+доволен-instr: "доволен" "(1) (are,is,was,being,been,be,are,were,am,1) happy with (4->acc)" phrase:np@nom adverb? довольный@ phrase:np@instr
 доволен-instr: "доволен" "(1) (were,was,1) (3) happy with (5->acc)" phrase:np@nom быть@ adverb? довольный@ phrase:np@instr
 ждать-что-то: "ждать for something (B1)" "wait for (article) (2)" ждать@ particle@? phrase:np@acc
 ждать-что-то: "ждать for something (B1)" "wait for [something or someone]" #animate@acc ждать@
@@ -190,7 +190,7 @@ hyperbole: "for [time period] - hyperbole " "for [adjective]" phrase:np@instr#ti
 перед-time: "перед (когда) (B1)" "before [some moment in time]" перед@ phrase:np@instr
 за-goal: "за чем-то (цель / 'to get') (B1)" "for [something]" за@ phrase:np@instr
 за-time-of-action: "за (время проишествия) (B2)" "during [time of action]" за@ phrase:np@instr
-интересоваться-чем-то: "интересоваться (чем-то) (A2)" "(be,is,was,being,be,are,were,1) interested in [something]" интересоваться@ phrase:np@instr
+интересоваться-чем-то: "интересоваться (чем-то) (A2)" "(be,is,was,being,been,be,are,were,1) interested in [something]" интересоваться@ phrase:np@instr
 интересоваться-чем-то: "интересоваться (чем-то) (A2)" "(1) about (2)" интересоваться[ask]|поинтересоваться[ask]@ phrase:np@instr
 интересоваться-чем-то: "интересоваться (чем-то) (A2)" "(2) about (1)" phrase:np@instr интересоваться[ask]|поинтересоваться[ask]@
 в-place: "в (где-то) (A1)" "at (2)" в@ phrase:np@prep#at
@@ -213,12 +213,12 @@ no-matter-how: "no matter how" "no matter how much (3) (5)" сколько|ка�
 nazad: "назад (ago)" "[time] ago" phrase:np@acc#time назад@
 во-сколько: "во сколько? (A2)" "at what time" в@ сколько[many]|сколько@
 при-condition: "при (каком-то условии) (B1)" "with [something]" при@ phrase:np@prep
-someone-had: "у кого-то был (A1)" "(2->nom) had" у@ #animate@genitive быть@past
+someone-had: "у кого-то был (A1)" "(2->nom) had" у@ #animate@genitive particle@? быть@past
 did-not-have: "у кого-то не было (A1)" "(2->nom) didn't have" у@ #animate@genitive не@ быть@past
 деньги-на: "деньги/время на (что-то)" "(1) for [something]" деньги|время@ на@ @accusative+
 will-have: "у кого-то будет (A1)" "[someone] will have" у@ #animate@genitive быть[fut]@
 will-not-have: "у кого-то не будет (A1)" "(2->nom) won't have" у@ #animate@genitive не@ быть[fut]@ phrase:np@gen
-как-зовут: "как зовут" "how (are,is,was,being,be,are,were,am,2) (2->nom) called" как@ #animate@acc звать@
+как-зовут: "как зовут" "how (are,is,was,being,been,be,are,were,am,2) (2->nom) called" как@ #animate@acc звать@
 как-зовут: "как зовут" "how is [person] called" как@ звать@ phrase:np@acc
 play-with: "играть на чём-то" "play (on) (3)" играть@ на@ phrase:np@prep
 за-окном: "за окном" "outside the window" за@ adjective@instrumental* окно@instrumental
@@ -240,8 +240,8 @@ go-do: "идти verb" "(go,goes,went,1) (2)" идти|пойти@ verb
 так...как: "так ... как" "as ... as" так@ any ,@ как[like]@
 такой..как: "такой..как" "so / such ... as" такой@ any как[like]@
 такой..как: "такой..как" "so / such ... as" такой@ any ,@ как[like]@
-стоить-дорогой: "стоить дорого" "(are,is,was,being,be,are,were,1) ... (3->adj)" стоить@ any дорогой|дешёвый@adv
-стоить-дорогой: "стоить дорого" "(are,is,was,being,be,are,were,2) (1->adj)" дорогой|дешёвый@adv стоить@
+стоить-дорогой: "стоить дорого" "(are,is,was,being,been,be,are,were,am,1) ... (3->adj)" стоить@ any дорогой|дешёвый@adv
+стоить-дорогой: "стоить дорого" "(are,is,was,being,been,be,are,were,am,2) (1->adj)" дорогой|дешёвый@adv стоить@
 у-thing: "у чего-то (возле)" "by [something's location]" у@ phrase:np@gen
 за-acc: "за (for)" "for (2)" за@ phrase:np@acc
 за-что: "за что" "for what reason" за@ что@
@@ -262,7 +262,7 @@ go-do: "идти verb" "(go,goes,went,1) (2)" идти|пойти@ verb
 если-только: "если бы только" "if only (3) (5)" если@ бы@ #animate только@ verb
 ask-someone: "спросить/просить у кого-то" "(1) (5) for (2)" просить|спросить|спрашивать@ @genitive+ any у@ @genitive+
 ask-someone: "спросить/просить у кого-то" "(1) [someone]" просить|спросить|спрашивать@ у@ phrase:np@gen
-comp-gen2: "больше noun (B1) " "there (are,is,was,being,be,are,were,am,3) no (2) (3)" нет[none]@ comp phrase:np@gen
+comp-gen2: "больше noun (B1) " "there (are,is,was,being,been,be,are,were,am,3) no (2) (3)" нет[none]@ comp phrase:np@gen
 comp-gen2: "больше noun (B1) " "(1) (2)" comp phrase:np@gen
 need-to-be: "нужно (passive)" "(1->nom) (need,needs,needed,1) to be (3->past)" phrase:np@acc нужно@ verb
 чтобы-that: "хочешь, чтобы [that]" "(1) ... so that (5) not (7->1)" verb any ,@ чтобы@ #animate не@ past
@@ -281,21 +281,23 @@ need-to-be: "нужно (passive)" "(1->nom) (need,needs,needed,1) to be (3->pas
 играть-в-игру: "играть в игру" "(play,plays,played,1) (3)" играть@ в@ accusative
 dat-нужен: "(кому-то) нужен[needed] TODO:verb phrase, translation" "[someone->nom] (2) (do,does,did,1) not need" phrase:np@dat adverb? не@ нужный@
 dat-нужен: "(кому-то) нужен[needed] TODO:verb phrase, translation" "[someone->nom] (need,needs,1)" phrase:np@dat нужный@
-датьetc-dat: "дать/взять/... кому-то что-то" "(1) (2) to (3)" #something-to-someone phrase:np@acc phrase:np@dat
+датьetc-dat: "дать/взять/... кому-то что-то" "(1) (2) to (3)" #something-to-someone phrase:np@acc phrase:np@dat
 датьetc-dat: "дать/взять/... кому-то что-то" "(1) (2) (3)" #something-to-someone phrase:np@dat phrase:np@acc
 датьetc-dat: "дать/взять/... кому-то что-то" "(1) [something] to [someone]" phrase:np@acc any #something-to-someone any phrase:np@dat
+датьetc-dat: "дать/взять/... кому-то что-то" "(1) ... (3) ... (5)" phrase:np@acc any phrase:np@dat any #something-to-someone
+датьetc-dat: "дать/взять/... кому-то что-то" "(1) ... (3)" phrase:np@dat any #something-to-someone
 датьetc-dat: "дать/взять/... кому-то что-то" "(3) (5) to (1)" phrase:np@dat any #something-to-someone any phrase:np@acc
-датьetc-dat: "дать/взять/... кому-то что-то" "(1) to [someone]" #something-to-someone phrase:np@dat
 датьetc-dat: "дать/взять/... кому-то что-то" "to [someone] ... (3)" phrase:np@dat any #something-to-someone
+датьetc-dat: "дать/взять/... кому-то что-то" "(1) to [someone]" #something-to-someone phrase:np@dat
 купить-чего-то: "покупать что-то кому-то" "(buy,buys,bought,buying,1) (article) (3) for (5)" купить|покупать@ any phrase:np@acc any phrase:np@dat
 купить-чего-то: "покупать что-то кому-то" "(buy,buys,bought,buying,1) (3) (article) (5)" купить|покупать@ any phrase:np@dat any phrase:np@acc
 dat-adv: "кому-то холодно/..." "(1->nom) (3) (4->adj)" phrase:np@dat adverb? стать@ adv
-dat-adv: "кому-то холодно/..." "(are,is,was,being,is,are,was,am,1) (1) feeling (2->adj)?" phrase:np@dat adv ?@
+dat-adv: "кому-то холодно/..." "(are,is,was,being,been,be,are,were,am,1) (1) feeling (2->adj)?" phrase:np@dat adv ?@
 dat-adv: "кому-то холодно/..." "(1->nom) (feel,feels,felt,1) (2) (3->adj)" phrase:np@dat adverb adv
 dat-adv: "кому-то холодно/..." "(1->nom) (feel,feels,felt,1) (2->adj)" phrase:np@dat adv
 dat-adv: "кому-то холодно/..." "(1->nom) (2) (3->adj)" phrase:np@dat быть@past adv
 dat-adv: "кому-то холодно/..." "(1->nom) (2) (3->adj)" phrase:np@dat быть[fut]@ adv
-dat-adv: "кому-то холодно/..." "(are,is,was,being,is,are,was,am,1) (1) not (3->adj)" phrase:np@dat не@ adv
+dat-adv: "кому-то холодно/..." "(are,is,was,being,been,be,are,were,am,1) (1) not (3->adj)" phrase:np@dat не@ adv
 кому-то-достаточно: "кому-то достаточно/много чего-то" "(1->nom) (have,has,had,1) (2)" phrase:np@dat phrase:много-gen
 кому-то-достаточно: "кому-то достаточно/много чего-то" "(1) (do,does,did,1) not have (3) " phrase:np@dat не@ phrase:много-gen
 кому-то-достаточно: "кому-то достаточно/много чего-то" "(1->nom) did not have (4)" phrase:np@dat не@ быть@ phrase:много-gen
@@ -312,12 +314,13 @@ dat-нравится: "кому-то нравится" "(1->nom) (2) (like,likes
 dat-нравится: "кому-то нравится" "(1->nom) (don't,doesn't,didn't,1) (4) like" phrase:np@dat particle@? не@ adverb? нравиться|понравиться@
 dat-нравится: "кому-то нравится" "(2->nom) (like,likes,liked,2)" нравиться|понравиться@ phrase:np@dat
 dat-нравится: "кому-то нравится" "(1->nom) (2) (3) (like,likes,liked,1)" phrase:np@dat так@ adjective@comp? нравиться|понравиться@
-dat-интересно: "кому-то интересно" "(are,is,was,being,be,are,were,am,1) (1->nom) interested in (3)?" @dative+ интересный@ phrase:np ?@
-dat-интересно: "кому-то интересно" "(1->nom) (are,is,was,being,be,are,were,am,1) interested in (3)" @dative+ интересный@ phrase:np
-dat-интересно: "кому-то интересно" "(are,is,was,being,be,are,were,am,1) (1->nom) not interested?" @dative+ не@ интересный@ ?@
-dat-интересно: "кому-то интересно" "(1->nom) (are,is,was,being,be,are,were,am,1) interested in" @dative+ интересный@
+dat-нравится: "кому-то нравится" "(1->nom) ... (like,likes,liked,3)" phrase:np@dat any нравиться|понравиться@
+dat-интересно: "кому-то интересно" "(are,is,was,being,been,be,are,were,am,1) (1->nom) interested in (3)?" @dative+ интересный@ phrase:np ?@
+dat-интересно: "кому-то интересно" "(1->nom) (are,is,was,being,been,be,are,were,am,1) interested in (3)" @dative+ интересный@ phrase:np
+dat-интересно: "кому-то интересно" "(are,is,was,being,been,be,are,were,am,1) (1->nom) not interested?" @dative+ не@ интересный@ ?@
+dat-интересно: "кому-то интересно" "(1->nom) (are,is,was,being,been,be,are,were,am,1) interested in" @dative+ интересный@
 dat-лет: "сколько@ кому-то лет" "how old is [someone]" сколько[many]@ any @dative+ any год@genpl
-dat-лет: "сколько@ кому-то лет" "(1->nom) (are,is,was,being,be,are,were,am,1) ... years old" @dative+ any год@genpl
+dat-лет: "сколько@ кому-то лет" "(1->nom) (are,is,was,being,been,be,are,were,am,1) ... years old" @dative+ any год@genpl
 dat-лет: "сколько@ кому-то лет" "how old is [someone]" сколько[many]@ год@genpl @dative+
 dat-лет: "сколько@ кому-то лет" "[someone] is one year old" @dative+ any год@context
 both-и-и: "и ... , и ..." "both ... and" и@ any ,@ и@
@@ -340,8 +343,8 @@ dat-speech: "говорить/сказать кому-то" "not (tell,tells,tol
 помогать-dat: "помогать-dat" "(1) (2)" помогать@ phrase:np@dat
 помогать-dat: "помогать-dat" "(2) (1)" phrase:np@dat помогать@
 помогать-dat: "помогать-dat" "(do,does,did,3) not (3->pres) (1)" phrase:np@dat не@ помогать@
-dat-жаль: "жаль" "(1->nom) (are,is,was,being,be,are,were,am,1) very sorry" phrase:np@dat очень@ жаль@
-dat-жаль: "жаль" "(1->nom) (are,is,was,being,be,are,were,am,1) so sorry" phrase:np@dat так@ жаль@
+dat-жаль: "жаль" "(1->nom) (are,is,was,being,been,be,are,were,am,1) very sorry" phrase:np@dat очень@ жаль@
+dat-жаль: "жаль" "(1->nom) (are,is,was,being,been,be,are,were,am,1) so sorry" phrase:np@dat так@ жаль@
 dat-жаль: "жаль" "(1->nom) (regret,regrets,regretted,1)" phrase:np@dat жаль@
 dat-жаль: "жаль" "(1->nom) found it a pity" phrase:np@dat быть@past жаль@
 dat-лучше: "кому-то лучше" "(1->nom)'d better " phrase:np@dat particle@? хороший@comp
@@ -397,12 +400,12 @@ dat-трудно: "кому-то трудно" "it is hard for (1) (3)" phrase:n
 dat-трудно: "кому-то трудно" "it is hard for (1)" phrase:np@dat трудный@adv
 dat-скучно: "кому-то скучно" "(1->nom) was bored" phrase:np@dat быть@past скучный@adv
 dat-скучно: "кому-то скучно" "(1->nom) will be bored" phrase:np@dat быть[fut]@ скучный@adv
-dat-скучно: "кому-то скучно" "(1->nom) (are,is,was,being,is,are,was,am,1) (2) bored" phrase:np@dat adverb скучный@adv
-dat-скучно: "кому-то скучно" "(1->nom) (are,is,was,being,is,are,was,am,1) bored" phrase:np@dat скучный@adv
+dat-скучно: "кому-то скучно" "(1->nom) (are,is,was,being,been,be,are,were,am,1) (2) bored" phrase:np@dat adverb скучный@adv
+dat-скучно: "кому-то скучно" "(1->nom) (are,is,was,being,been,be,are,were,am,1) bored" phrase:np@dat скучный@adv
 совсем-не: "совсем не" "not at all" совсем@ не@
 как-дело: "как дела" "how are you?" как@ дело@ ?@
-как-дело: "как дела" "how (are,is,was,being,be,are,were,am,3) (3->nom) doing?" как@ у@ phrase:np@gen дело@ ?@
-как-дело: "как дела" "how (3->nom) (are,is,was,being,be,are,were,am,3) doing" как@ у@ phrase:np@gen дело@
+как-дело: "как дела" "how (are,is,was,being,been,be,are,were,am,3) (3->nom) doing?" как@ у@ phrase:np@gen дело@ ?@
+как-дело: "как дела" "how (3->nom) (are,is,was,being,been,be,are,were,am,3) doing" как@ у@ phrase:np@gen дело@
 до-сих-пор: "до сих пор" "so far" до@ сих@ пора@genpl
 в-любом-случае: "в любом случае" "in any case" в@ любой@prepm случай@prep
 прежде-всего: "прежде всего" "first of all" прежде@ всё@
@@ -429,6 +432,7 @@ auto-np: "np" "(article) (1)" phrase:gen-of
 auto-np: "np" "(article) (1)" phrase:много-gen
 auto-np: "np" "(article) (1)" phrase:деньги-на
 auto-np: "np" "(1)" phrase:один-of
+auto-np: "np" "(1)" phrase:ничего-adj
 auto-np: "np" "(article) (1) (article) (2)" adjective@context* noun@context!
 auto-np: "np" "(2) (1) (3) (4)" adjective@context* #possessive adjective@context* noun@context!
 auto-np: "np" "(1)" pronoun@context
@@ -487,7 +491,7 @@ face-to-face: "face to face" "face to face" лицо@instr к@ лицо@dat
 разве-нет: "разве не" "(do,does,did,2) (2) not" разве@ pronoun не@
 разве-нет: "разве не" "(do,does,did,1) (1) not" pronoun разве@ не@
 не-видно: "не видно" "(1->nom) can't see anything" #animate@dative any ничто@gen не@ видный@shortn
-не-видно: "не видно" "(1->nom) (are,is,was,be,1) ... not visible" phrase:np@gen any не@ видный@shortn
+не-видно: "не видно" "(1->nom) (are,is,was,being,been,be,are,were,am,1) ... not visible" phrase:np@gen any не@ видный@shortn
 не-видно: "не видно" "(1->nom) could not be seen" phrase:np@gen видный@shortn не@ быть@past
 один-of: "ни один" "not one of (3) (4->pl)" ни@ один@ #possessive noun
 один-of: "ни один" "not a single (3) (4)" ни@ один@ adjective@* noun
@@ -521,7 +525,8 @@ comp-на: "на 10 лет (моложе)" "by (2)" на@ phrase:np@acc#number
 новый-год: "новый год" "New Year's" новый@context год@context
 keep-track: "следить за - follow" "follow (3)" следить[follow]@ за@ phrase:np@instr
 keep-an-eye-on: "следить за - keep an eye on" "keep an eye on (3)" следить[eyeon]@ any за@ phrase:np@instr
-counting-on: "надеяться на что-то" "(are,is,was,being,be,are,were,am,1) counting on (3)" надеяться@ на@ phrase:np@acc
+counting-on: "надеяться на что-то" "(are,is,was,being,been,be,are,were,am,1) counting on (3)" надеяться@ на@ phrase:np@acc
+counting-on: "надеяться на что-то" "(are,is,was,being,been,be,are,were,am,3) counting on (2)" на@ phrase:np@acc надеяться@
 в-гости: "в гости" "(1->pres) visit" идти|ехать|приходить|ходить|пойти|прийти|лететь|поехать|приехать|ездить@ any в@ гость@loc
 в-гостях: "в гостях" "for a visit" в@ гость@locpl
 продолжать-verb: "продолжать verb" "keep (2->prog)" продолжать@ verb
@@ -535,18 +540,19 @@ even-so: "и так - even so" "even so" и[part]@ так@
 устать-от: "устать от чего-то" "tired of (3)" устать@ от@ phrase:np@gen
 кричать-на: "кричать на кого-то" "(1) at (3)" кричать@ на@ phrase:np@acc
 по-цене: "по цене" "for (article) (2) (3)" по@ adjective@dative? цена@dative
-бояться-genitive: "бояться чего-то" "(are,is,was,being,be,are,were,am,2) not afraid of (3)" не@ бояться@ phrase:np@gen
-бояться-genitive: "бояться чего-то" "(are,is,was,being,be,are,were,am,3) not afraid of (1)" phrase:np@gen не@ бояться@
-бояться-genitive: "бояться чего-то" "(are,is,was,being,be,are,were,am,1) afraid of (2)" бояться@ phrase:np@gen
+бояться-genitive: "бояться чего-то" "(are,is,was,being,been,be,are,were,am,2) not afraid of (3)" не@ бояться@ phrase:np@gen
+бояться-genitive: "бояться чего-то" "(are,is,was,being,been,be,are,were,am,3) not afraid of (1)" phrase:np@gen не@ бояться@
+бояться-genitive: "бояться чего-то" "(are,is,was,being,been,be,are,were,am,1) afraid of (2)" бояться@ phrase:np@gen
+бояться-genitive: "бояться чего-то" "(1) ... (are,is,was,being,been,be,are,were,am,3) afraid of" phrase:np@gen any бояться@
 через-интернет: "через интернет" "online" через@ интернет@
 кроме-того: "кроме того" "moreover" кроме@ тот@gen
 домашнее-животное: "домашнее животное" "(pets,pet,2)" домашний@context животное@context
 double-negation: "ничто не" "nothing (3)" ничто@ не@ случиться|работать@
 double-negation: "ничто не" "(do,does,did,3) not (3->pres) anything" ничто@ не@ verb
 в-погоду: "в погоду/дождь/снег" "in (article) (2)" в@ phrase:np@acc#weather
-passive: "passive" "(1->nom) (are,is,was,being,be,are,were,am,1) (2->past)" phrase:np@dat verb@3pl
-passive: "passive" "(1->nom) (are,is,was,being,be,are,were,am,1) (2->past)" phrase:np@acc verb@3pl
-passive: "passive" "(1->nom) (are,is,was,being,be,are,were,am,1) (2->past)" phrase:np@dat verb@pastpl
+passive: "passive" "(1->nom) (are,is,was,being,been,be,are,were,am,1) (2->past)" phrase:np@dat verb@3pl
+passive: "passive" "(1->nom) (are,is,was,being,been,be,are,were,am,1) (2->past)" phrase:np@acc verb@3pl
+passive: "passive" "(1->nom) (are,is,was,being,been,be,are,were,am,1) (2->past)" phrase:np@dat verb@pastpl
 half-to: "половина первого" "half past twelve" половина@context первый@genitive час[o'clock]@genitive
 half-to: "половина первого" "half past one" половина@context второй@genitive час[o'clock]@genitive
 half-to: "половина первого" "half past two" половина@context третий@genitive час[o'clock]@genitive
@@ -557,7 +563,7 @@ wish-something-to-someone: "жалать кому-то чего-то" "(1) (2)" 
 wish-something-to-someone: "жалать кому-то чего-то" "(2) (1) (3) (4)" phrase:np@dat желать@ adverb? phrase:np@gen
 from-someone: "у кого-то = from someone" "from (2)" у@ phrase:np@gen
 go-for-a-walk: "пойти гулять" "(1) for a walk" идти|пойти@ гулять@
-не-так: "не так" "not OK" не@ так@
+не-так: "не так" "wrong" не@ так@
 ничего-adj: "ничего особенного" "noone ... ... anything (6)" никто@ any не@ any ничто@genitive adjective@genitive
 ничего-adj: "ничего особенного" "... nothing (4)" не@ any ничто@genitive adjective@genitive
 ничего-adj: "ничего особенного" "nothing (2)" ничто@genitive adjective@genitive
