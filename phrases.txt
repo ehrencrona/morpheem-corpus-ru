@@ -9,8 +9,9 @@ auto-567-genpl: "5/6/7/... чего-то" "(1) (2)" #number@context phrase:gen-o
 auto-567-genpl: "5/6/7/... чего-то" "(1) (2) o'clock" #number@context adjective@genpl* час@genpl
 auto-567-genpl: "5/6/7/... чего-то" "(1) (2) (3)" #number@context adjective@genpl* genpl
 auto-1-nom: "1 чего-то (A1)" "(1) (2) (3)" один@context adjective@context* noun@context
-not-gen: "нет чего-то (A1)" "(there is no,pl:there are no,3->v) (3)" нет[none]@ any phrase:np@gen
-not-gen: "нет чего-то (A1)" "(there is no,pl:there are no,3->v) (1)" phrase:np@gen any нет[none]@
+not-gen: "нет чего-то - 'there is no' (A1)" "there is (2)" нет[none]@ phrase:ничего-adj
+not-gen: "нет чего-то - 'there is no' (A1)" "(there is no,pl:there are no,3->v) (3)" нет[none]@ any phrase:np@gen
+not-gen: "нет чего-то - 'there is no' (A1)" "(there is no,there are no,3->v) (1)" phrase:np@gen any нет[none]@
 gen-of: "что-то чего-то" "Mother's Day" день@context мать@gen
 gen-of: "что-то чего-то" "birthday" день@ рождение@gen
 gen-of: "что-то чего-то" "(1) (2)" столько@ phrase:np@gen
@@ -54,7 +55,7 @@ no-matter-what: "во что бы то ни стало" "no matter what" в@alt 
 так-adv: "так много / долго …" "so many" так@ any много@
 так-adv: "так много / долго …" "so much" так@ any много[much]@
 по-карману: "(кому-то) по карману" "(2->nom) could not afford" быть@ dative не@ по@ карман@dative
-по-карману: "(кому-то) по карману" "(2->nom) can not afford" dative не@ по@ карман@dative
+по-карману: "(кому-то) по карману" "(1->nom) can not afford" dative не@ по@ карман@dative
 по-карману: "(кому-то) по карману" "(1->nom) can afford" dative по@ карман@dative
 не-так-ли: "не так ли" "is that not so" не@ так@ ли@
 в-курсе: "в курсе" "(2) not aware of [something]" не@ быть@ в@ курс@prep phrase:np@gen
@@ -74,6 +75,7 @@ no-matter-what: "во что бы то ни стало" "no matter what" в@alt 
 у-кого: "у кого-то (есть) (A1)" "(2->nom) had" у@ phrase:np@gen быть@past
 у-кого: "у кого-то (есть) (A1)" "(2->nom) did not have" у@ phrase:np@gen не@ быть@past
 у-кого: "у кого-то (есть) (A1)" "(2->nom) never had" у@ phrase:np@gen никогда@ не@ быть@past
+у-кого: "у кого-то (есть) (A1)" "(2->nom) (have,has,had,2) no (3) (5)" у@ phrase:np@gen больше|больше[longer]@ нет[none]@ phrase:np@gen
 у-кого: "у кого-то (есть) (A1)" "(2->nom) (have,has,had,2)" у@ phrase:np@gen
 из-gen-departure: "из (откуда) (A1)" "from [point of departure/source]" из@ phrase:np@gen
 из-gen-departure: "из (откуда) (A1)" "from [point of departure/source]" из@ adjective@prep* @locative+
@@ -118,7 +120,8 @@ comp-gen: "лучше than genitive (B1) " "(1) than (article) [something]" comp
 в-time: "в четверг (day/weekday) (A1)" "(2) [day/weekday]" в@ этот@accusative #weekday@acc
 в-time: "в четверг (day/weekday) (A1)" "on [day/weekday]" в@ phrase:np@acc#weekday
 каждый-time: "два года / весь день / каждый день... (time period)" "(1)" phrase:np@acc#time
-не-больше: "больше не" "no longer" больше[longer]@comp не@
+не-больше: "больше не" "no (1)" больше|больше[longer]@comp не@
+не-больше: "больше не" "no (1)" больше|больше[longer]@comp нет[none]@
 для-того: "слишком/достаточно ... для того чтобы" "too (2) to" слишком@ adjective@! ,@ для@ тот@genn чтобы@
 для-того: "слишком/достаточно ... для того чтобы" "(2) enough to" достаточный@adv adjective@! ,@ для@ тот@genn чтобы@
 давно-пора: "кому-то пора" "it is high time for [someone] to" @dative+ any давно@ пора@
@@ -441,6 +444,7 @@ auto-np: "np" "(1)" phrase:ничего-adj
 auto-np: "np" "(article) (1) (article) (2)" adjective@context* noun@context!
 auto-np: "np" "(article) (1) (article) (2)" numeral@context* noun@context!
 auto-np: "np" "(2) (1) (3) (4)" adjective@context* #possessive adjective@context* noun@context!
+auto-np: "np" "(1)" phrase:all-of-us@context
 auto-np: "np" "(1)" pronoun@context
 auto-np: "np" "which" который@context
 auto-np: "np" "what" что@context
@@ -448,7 +452,6 @@ auto-np: "np" "(1)" ничто@context
 auto-np: "np" "(1)" кто@context
 auto-np: "np" "(1)" этот|который|тот@context
 auto-np: "np" "(1)" phrase:друг-другу
-auto-np: "np" "(1)" phrase:all-of-us@context
 успеть-на: "успеть на" "catch the (3)" успеть@ на@ phrase:np@acc#transport
 успеть-на: "успеть на" "be in time for (3)" успеть@ на@ phrase:np@acc
 как-так: "как ... так" "both ... and ..." как@ any ,@ так@
@@ -526,8 +529,8 @@ auto-collocation: "collocation" "(1)" phrase:half-to@context
 номер-телефона: "номер телефона" "phone number" номер@ телефон@gen
 comp-на: "на 10 лет (моложе)" "by (2)" на@ phrase:np@acc#number
 на-улица: "на улицу / улице" "outside" на@ улица@context
-обращаться[turn]-с: "обращаться с (turn to)" "(1) with (3)" обращаться@ с@ phrase:np@instr
-обращаться[turn]-с: "обращаться с (turn to)" "(1) (3)" обращаться@ к@ phrase:np@dat
+обращаться[turn]-с: "обращаться к (turn to)" "(1) (3)" обращаться|обратиться@ к@ phrase:np@dat
+обращаться[turn]-с: "обращаться к (turn to)" "to (2) ... (4)" к@ phrase:np@dat any обращаться|обратиться@
 ни-за-что-as-adv: "ни за что (for no reason)" "for no reason" ни@ за@ что@
 новый-год: "новый год" "New Year's" новый@context год@context
 keep-track: "следить за - follow" "follow (3)" следить[follow]@ за@ phrase:np@instr
@@ -556,6 +559,7 @@ even-so: "и так - even so" "even so" и[part]@ так@
 домашнее-животное: "домашнее животное" "(pets,pet,2)" домашний@context животное@context
 double-negation: "ничто не" "nothing (3)" ничто@ не@ случиться|работать@
 double-negation: "ничто не" "(do,does,did,3) not (3->pres) anything" ничто@ не@ verb
+double-negation: "ничто не" "nothing" нет[none]@ ничто@gen
 в-погоду: "в погоду/дождь/снег" "in (article) (2)" в@ phrase:np@acc#weather
 passive: "passive" "(1->nom) (are,is,was,being,been,be,are,were,am,1) (2->past)" phrase:np@dat verb@3pl
 passive: "passive" "(1->nom) (are,is,was,being,been,be,are,were,am,1) (2->past)" phrase:np@acc verb@3pl
@@ -574,6 +578,11 @@ go-for-a-walk: "пойти гулять" "(1) for a walk" идти|пойти@ �
 ничего-adj: "ничего особенного" "noone ... ... anything (6)" никто@ any не@ any ничто@genitive adjective@genitive
 ничего-adj: "ничего особенного" "... nothing (4)" не@ any ничто@genitive adjective@genitive
 ничего-adj: "ничего особенного" "nothing (2)" ничто@genitive adjective@genitive
+ничего-adj: "ничего особенного" "nothing (2)" ничто@genitive adjective@comp
 ничего-adj: "ничего особенного" "all the best" всё@genitive хороший@genitive
 similar-to: "похожий на что-то" "(1) to (3)" похожий@ на@ phrase:np@acc
 all-of-us: "all of us" "all of (1)" pronoun@context весь@context
+is-not: "нет чего-то - 'is not' (A1)" "(is) (2) " нет[none]@ phrase:ничего-adj
+is-not: "нет чего-то - 'is not' (A1)" "(2) (are not,is not,was not,being not,been not,be not,are not,were not,am not,2->v) (1) (3)" adverb? phrase:np@gen adverb? нет[none]@
+is-not: "нет чего-то - 'is not' (A1)" "(3) (are not,is not,was not,being not,been not,be not,are not,were not,am not,3->v) (1)" adverb? нет[none]@ phrase:np@gen
+is-not: "нет чего-то - 'is not' (A1)" "(1) (are not,is not,was not,being not,been not,be not,are not,were not,am not,1->v)" phrase:np@gen any нет[none]@

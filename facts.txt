@@ -1255,7 +1255,7 @@ grammar: -они@instrplalt, tag: instrumental
 phrase: such-nice
 да--ть: give, 3: gives, past: gave, prog: giving, inflect: -дать, tag: something-to-someone
 да--ть[let]: let, 3: lets, inflect: -дать
-покаж--<зать: show, 3: shows, past: showed, prog: showing, inflect: -показать, tag: something-to-someone
+покаж--<зать: show, 3: shows, past: showed, prog: showing, pastpart: shown, inflect: -показать, tag: something-to-someone
 grammar: -они@preppl, tag: prepositional
 здоров--ый: healthy, adv: healthily, comp: healthier, super: healthiest, inflect: adj
 phrase: интересно-
@@ -1281,7 +1281,7 @@ phrase: ещё-один
 grammar: -себя@prep, tag: prepositional
 температур--а[fever]: fever, pl: fevers, inflect: fem
 phrase: ещё-нет
-обув--ь: footwear, pl: footwears, inflect: femь, mask: pl
+обув--ь: footwear, pl: footwear, inflect: femь, mask: pl
 grammar: -регистрация@genpl, tag: genitive
 занима--ться: occupy -self with, 3: occupies himself with, past: occupied -self with, inflect: -пытаться
 прекрасн--ый: beautiful, adv: beautifully, inflect: ныйadj, mask: comp
@@ -1821,22 +1821,22 @@ phrase: обращаться[turn]-с
 grammar: neuadjoe@prep, tag: prepositional
 grammar: uninflected@dat, tag: dative
 сообща--ть: inform, 3: informs, past: informed, prog: informing, inflect: ать
-слома--ться: n/a, inflect: -пытаться
+слома--ться: break down, 3: breaks down, past: broke down, prog: breaking down, pastpart: broken down, inflect: -пытаться
 phrase: ни-за-что-as-adv
 phrase: новый-год
 grammar: uninflected@instr, tag: instrumental
 grammar: -довольный@shortm
 grammar: uninflected@nom
-уйд--<ти: n/a, inflect: -войти
+уйд--<ти: leave, 3: leaves, past: left, prog: leaving, pastpart: left, inflect: -войти
 бежи--<ать: run, 3: runs, past: ran, prog: running, inflect: -бежать
-мусор--: n/a, inflect: masc
-луж--а: n/a, inflect: -улица
+мусор--: trash, inflect: masc
+луж--а: puddle, pl: puddles, inflect: -улица
 увиди--<еть: see, 3: sees, past: saw, prog: seeing, inflect: -видеть
-отправи--ть: n/a, inflect: -готовить
-показыва--ть: n/a, inflect: ать
+отправи--ть: send, 3: sends, past: sent, prog: sending, pastpart: sent, inflect: -готовить
+показыва--ть: show, 3: shows, past: showed, prog: showing, pastpart: shown, inflect: ать
 игр--а: game, pl: games, inflect: fem
 grammar: -палец@nom
-рт--<от: n/a, inflect: -рот
+рт--<от: mouth, pl: mouths, inflect: -рот
 phrase: keep-track
 phrase: за-after
 phrase: keep-an-eye-on
@@ -1844,9 +1844,9 @@ phrase: keep-an-eye-on
 муж--: husband, pl: husbands, inflect: -муж
 ложк--а: spoon, pl: spoons, inflect: femka2
 grammar: -бежать@1, tag: verb
-срочно: n/a
-носи--ть: n/a, inflect: -спросить
-горяч--ий: n/a, inflect: eeadj
+срочно: urgently
+носи--ть: wear, 3: wears, past: wore, prog: wearing, pastpart: worn, inflect: -спросить
+горяч--ий: hot, adv: how, comp: hotter, inflect: eeadj
 выключи--ть: turn off, 3: turns off, past: turned off, prog: turning off, inflect: -учить
 phrase: counting-on
 phrase: в-гости
@@ -1861,17 +1861,17 @@ grammar: neuadjoe@pl
 помо--<ыть: wash, 3: washes, past: washed, prog: washing, inflect: -открыть
 поскорее: faster
 phrase: оставить-себе
-приготови--ть: n/a, inflect: -готовить
+приготови--ть: cook, 3: cooks, past: cooked, prog: cooking, inflect: -готовить
 крад--<сть: steal, 3: steals, past: stoles, prog: stealing, inflect: -украсть
 phrase: идти-за
 записа--ть: write down, 3: writes down, past: wrote down, inflect: ать
-фотографи--я: n/a, inflect: -регистрация
+фотографи--я: photo, pl: photos, inflect: -регистрация
 уед--<хать: leave, 3: leaves, past: left, prog: leaving, inflect: -ехать
 уезжа--ть: leave, 3: leaves, past: left, inflect: ать
 grammar: -время@prep, tag: prepositional
 никуда: nowhere
 подойд--<ти: , inflect: -войти
-зайд--<ти: n/a, inflect: -войти
+зайд--<ти: come in, 3: comes in, past: came in, prog: coming in, inflect: -войти
 верн--уть: return, 3: returns, past: returned, inflect: -повернуть
 grammar: -правильный@shortm
 grammar: -рот@nom
@@ -1931,3 +1931,8 @@ phrase: ничего-adj
 закричи--<ать: scream, inflect: -лежать
 phrase: similar-to
 phrase: all-of-us
+лома--ться: break down, 3: breaks down, past: broke down, prog: breaking down, pastpart: broken down, inflect: -пытаться
+уходи--ть: leave, 3: leaves, past: left, prog: leaving, pastpart: left, inflect: -ходить
+заходи--ть: n/a, inflect: -заходить
+отправля--ть: send, 3: sends, past: sent, prog: sending, pastpart: sent, inflect: ать
+phrase: is-not
