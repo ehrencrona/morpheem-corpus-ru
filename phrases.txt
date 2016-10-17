@@ -199,7 +199,7 @@ hyperbole: "for [time period] - hyperbole " "for [adjective]" phrase:np@instr#ti
 интересоваться-чем-то: "интересоваться (чем-то) (A2)" "(1) about (2)" интересоваться[ask]|поинтересоваться[ask]@ phrase:np@instr
 интересоваться-чем-то: "интересоваться (чем-то) (A2)" "(2) about (1)" phrase:np@instr интересоваться[ask]|поинтересоваться[ask]@
 в-place: "в (где-то) (A1)" "at (2)" в@ phrase:np@prep#at
-в-place: "в (где-то) (A1)" "on the (2)" в@ интернет@prep
+в-place: "в (где-то) (A1)" "on the (2)" в@ меню|интернет@prep
 в-place: "в (где-то) (A1)" "in (2)" в@ phrase:np@prep
 в-place: "в (где-то) (A1)" "in (2)" в@ phrase:np@loc
 на-place: "на (где-то)" "outside" phrase:на-улица@prep
@@ -582,7 +582,8 @@ go-for-a-walk: "пойти гулять" "(1) for a walk" идти|пойти@ �
 ничего-adj: "ничего особенного" "all the best" всё@genitive хороший@genitive
 similar-to: "похожий на что-то" "(1) to (3)" похожий@ на@ phrase:np@acc
 all-of-us: "all of us" "all of (1)" pronoun@context весь@context
-is-not: "нет чего-то - 'is not' (A1)" "(is) (2) " нет[none]@ phrase:ничего-adj
+is-not: "нет чего-то - 'is not' (A1)" "(1) is (3) " phrase:в-place нет[none]@ phrase:ничего-adj
+is-not: "нет чего-то - 'is not' (A1)" "(2) (are not,is not,was not,being not,been not,be not,are not,were not,am not,2->v) (5) (1) (3)" adverb? phrase:np@gen adverb? нет[none]@ phrase:в-place
+is-not: "нет чего-то - 'is not' (A1)" "(2) (are not,is not,was not,being not,been not,be not,are not,were not,am not,2->v) (5) (1) (3)" adverb? phrase:np@gen adverb? нет[none]@ phrase:на-place
 is-not: "нет чего-то - 'is not' (A1)" "(2) (are not,is not,was not,being not,been not,be not,are not,were not,am not,2->v) (1) (3)" adverb? phrase:np@gen adverb? нет[none]@
 is-not: "нет чего-то - 'is not' (A1)" "(3) (are not,is not,was not,being not,been not,be not,are not,were not,am not,3->v) (1)" adverb? нет[none]@ phrase:np@gen
-is-not: "нет чего-то - 'is not' (A1)" "(1) (are not,is not,was not,being not,been not,be not,are not,were not,am not,1->v)" phrase:np@gen any нет[none]@
