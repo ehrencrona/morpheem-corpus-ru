@@ -14,7 +14,7 @@ not-gen: "нет чего-то (A1)" "(there is no,pl:there are no,3->v) (1)" ph
 gen-of: "что-то чего-то" "Mother's Day" день@context мать@gen
 gen-of: "что-то чего-то" "birthday" день@ рождение@gen
 gen-of: "что-то чего-то" "(1) (2)" столько@ phrase:np@gen
-gen-of: "что-то чего-то" "(1) (2) of (article) (3) (4)" adjective@context* noun@context! adjective@genitive* noun@genitive!
+gen-of: "что-то чего-то" "(1) (2) of (article) (3) (4)" adjective@context* noun@context! phrase:np@gen
 gen-of: "что-то чего-то" "(1) (2) of (article) (3) (4)" adjective@context* noun@context! #number@genitive noun@genitive!
 gen-possession: "что-то чьё-то" "of (1)" phrase:np@gen#animate
 рад-dat: "рад чему-то" "happy because of [something]" рад@ any @dative+
@@ -84,7 +84,7 @@ at-datpl: "по (утрам / вечерам ...) (B1)" "in the (2)" по@ #time
 у-кого-location: "у кого-то (место) (A2)" "at my place" у@ я@gen
 у-кого-location: "у кого-то (место) (A2)" "at [someone]'s location" у@ phrase:np@gen#animate
 от-gen-departure: "от (откуда) (A2)" "from (2)" от@ phrase:np@gen
-от-кого-source: "ключ от чего-то" "key to [something]" ключ@ от@ genitive
+от-кого-source: "ключ от чего-то" "key to (3)" ключ@ от@ phrase:np@gen
 до-point-of-destination: "до чего-то (A2)" "to [somewhere]" до@ phrase:np@gen
 до-какого-то-времени: "до какого-то времени (A2)" "until (2)" до@ phrase:np@gen
 до-какого-то-времени: "до какого-то времени (A2)" "until (2)" до@ завтра@
@@ -140,7 +140,9 @@ hyperbole: "for [time period] - hyperbole " "for [adjective]" phrase:np@instr#ti
 через-time: "через (время) (B1)" "in (2) (3)" через@ adverb? phrase:np@acc#time
 на-time: "на (время) (B1)" "on our day off" на@ выходной@
 на-time: "на (время) (B1)" "for (2)" на@ phrase:np@acc#time
+за-time: "за (время) (B1)" "(2) (3)" за@ adjective@accusative лето|осень|зима|весна@accusative
 за-time: "за (время) (B1)" "in [time]" за@ phrase:np@acc
+за-time: "за (время) (B1)" "(2)" за@ сегодня@
 по-place-of-movement: "по (дороге/улице...) (A2)" "on [somewhere]" по@ phrase:np@dat#on
 по-place-of-movement: "по (дороге/улице...) (A2)" "by [somewhere]" по@ phrase:np@dat#by
 по-place-of-movement: "по (дороге/улице...) (A2)" "through [somewhere]" по@ phrase:np@dat
@@ -215,7 +217,7 @@ nazad: "назад (ago)" "[time] ago" phrase:np@acc#time назад@
 при-condition: "при (каком-то условии) (B1)" "with [something]" при@ phrase:np@prep
 someone-had: "у кого-то был (A1)" "(2->nom) had" у@ #animate@genitive particle@? быть@past
 did-not-have: "у кого-то не было (A1)" "(2->nom) didn't have" у@ #animate@genitive не@ быть@past
-деньги-на: "деньги/время на (что-то)" "(1) for [something]" деньги|время@ на@ @accusative+
+деньги-на: "деньги/время на (что-то)" "(1) for [something]" деньги|время@ на@ phrase:np@acc
 will-have: "у кого-то будет (A1)" "[someone] will have" у@ #animate@genitive быть[fut]@
 will-not-have: "у кого-то не будет (A1)" "(2->nom) won't have" у@ #animate@genitive не@ быть[fut]@ phrase:np@gen
 как-зовут: "как зовут" "how (are,is,was,being,been,be,are,were,am,2) (2->nom) called" как@ #animate@acc звать@
@@ -270,7 +272,9 @@ need-to-be: "нужно (passive)" "(1->nom) (need,needs,needed,1) to be (3->pas
 выйти-из: "выйти из" "(get out of,gets out of,got out of,1) (article) (3) (4)" выходить|выйти@ из@ adjective@gen? машина|такси@gen
 выйти-из: "выйти из" "(get off of,gets off of,got off of,1) (article) (3) (4)" выходить|выйти@ из@ adjective@gen? автобус|поезд|самолёт|метро@gen
 выйти-из: "выйти из" "(leave,leaves,left,1) (article) (3) (4)" выходить|выйти@ из@ adjective@gen? дом|квартира|класс[room]@gen
+выйти-из: "выйти из" "(leave,leaves,left,1) (article) (3) (4)" выходить|выйти@ из@ adjective@gen? дом@loc
 выйти-из: "выйти из" "(come out,comes out,came out,1) (3)" выходить|выйти@ из@ phrase:np@gen
+выйти-из: "выйти из" "(come out,comes out,came out,1) (3)" выходить|выйти@ из@ phrase:np@loc
 за-городом: "за городом" "in the countryside" за@ город@instr
 за-город: "за город" "to the countryside" за@ город@acc
 сидеть-в-интернете: "сидеть в интернете" "(surf,surfs,surfed,1) the Internet" сидеть@ в@ интернет@prep
@@ -285,7 +289,7 @@ dat-нужен: "(кому-то) нужен[needed] TODO:verb phrase, translatio
 датьetc-dat: "дать/взять/... кому-то что-то" "(1) (2) (3)" #something-to-someone phrase:np@dat phrase:np@acc
 датьetc-dat: "дать/взять/... кому-то что-то" "(1) [something] to [someone]" phrase:np@acc any #something-to-someone any phrase:np@dat
 датьetc-dat: "дать/взять/... кому-то что-то" "(1) ... (3) ... (5)" phrase:np@acc any phrase:np@dat any #something-to-someone
-датьetc-dat: "дать/взять/... кому-то что-то" "(1) ... (3)" phrase:np@dat any #something-to-someone
+датьetc-dat: "дать/взять/... кому-то что-то" "(3) ... (1)" phrase:np@dat any #something-to-someone
 датьetc-dat: "дать/взять/... кому-то что-то" "(3) (5) to (1)" phrase:np@dat any #something-to-someone any phrase:np@acc
 датьetc-dat: "дать/взять/... кому-то что-то" "to [someone] ... (3)" phrase:np@dat any #something-to-someone
 датьetc-dat: "дать/взять/... кому-то что-то" "(1) to [someone]" #something-to-someone phrase:np@dat
@@ -297,6 +301,7 @@ dat-adv: "кому-то холодно/..." "(1->nom) (feel,feels,felt,1) (2) (3
 dat-adv: "кому-то холодно/..." "(1->nom) (feel,feels,felt,1) (2->adj)" phrase:np@dat adv
 dat-adv: "кому-то холодно/..." "(1->nom) (2) (3->adj)" phrase:np@dat быть@past adv
 dat-adv: "кому-то холодно/..." "(1->nom) (2) (3->adj)" phrase:np@dat быть[fut]@ adv
+dat-adv: "кому-то холодно/..." "(are,is,was,being,been,be,are,were,am,1) (1) not (3->adj)" phrase:np@dat не@ adv
 dat-adv: "кому-то холодно/..." "(are,is,was,being,been,be,are,were,am,1) (1) not (3->adj)" phrase:np@dat не@ adv
 кому-то-достаточно: "кому-то достаточно/много чего-то" "(1->nom) (have,has,had,1) (2)" phrase:np@dat phrase:много-gen
 кому-то-достаточно: "кому-то достаточно/много чего-то" "(1) (do,does,did,1) not have (3) " phrase:np@dat не@ phrase:много-gen
@@ -434,6 +439,7 @@ auto-np: "np" "(article) (1)" phrase:деньги-на
 auto-np: "np" "(1)" phrase:один-of
 auto-np: "np" "(1)" phrase:ничего-adj
 auto-np: "np" "(article) (1) (article) (2)" adjective@context* noun@context!
+auto-np: "np" "(article) (1) (article) (2)" numeral@context* noun@context!
 auto-np: "np" "(2) (1) (3) (4)" adjective@context* #possessive adjective@context* noun@context!
 auto-np: "np" "(1)" pronoun@context
 auto-np: "np" "which" который@context
@@ -568,3 +574,4 @@ go-for-a-walk: "пойти гулять" "(1) for a walk" идти|пойти@ �
 ничего-adj: "ничего особенного" "... nothing (4)" не@ any ничто@genitive adjective@genitive
 ничего-adj: "ничего особенного" "nothing (2)" ничто@genitive adjective@genitive
 ничего-adj: "ничего особенного" "all the best" всё@genitive хороший@genitive
+similar-to: "похожий на что-то" "(1) to (3)" похожий@ на@ phrase:np@acc
