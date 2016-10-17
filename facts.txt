@@ -440,8 +440,6 @@ grammar: -стул@genpl, tag: genitive
 солнц--е: sun, pl: suns, inflect: -солнце
 phrase: в-году
 вопрос--: question, pl: questions, inflect: masc
-grammar: -пить@inf, tag: verb
-grammar: -пить@3pl, tag: verb
 про: about, pos: prep
 ответи--ть: answer, 3: answers, past: answered, prog: answering, inflect: -ответить
 phrase: в-время
@@ -452,7 +450,6 @@ grammar: -стул@preppl, tag: prepositional
 phrase: не-gen
 phrase: there-was-none
 grammar: -кошка@genpl, tag: genitive
-grammar: -пить@1pl, tag: verb
 далеко: far away
 матер--<<ь: mother, pl: mothers, inflect: -мать, tag: animate
 grammar: -звать@inf, tag: verb
@@ -466,9 +463,7 @@ phrase: из-gen-departure
 разговор--: conversation, pl: conversations, inflect: masc
 имен--<<я: name, pl: names, inflect: -время
 вторник--: Tuesday, pl: Tuesdays, inflect: masc, tag: time, tag: weekday
-grammar: -пить@2pl, tag: verb
 phrase: от-gen-departure
-grammar: -пить@pastm, tag: verb
 четверг--: Thursday, pl: Thursdays, inflect: masc, tag: time, tag: weekday
 сред--а: Wednesday, pl: Wednesdays, inflect: fem, tag: time, tag: weekday
 grammar: sya@2pl, tag: verb
@@ -498,7 +493,6 @@ grammar: -я@instr, tag: instrumental
 phrase: около-чего-то
 ищ--<скать: look for, past: looked for, prog: looking for, inflect: -искать
 grammar: -есть@3pl, tag: verb
-grammar: -пить@3, tag: verb
 момент--: moment, pl: moments, inflect: masc, tag: time
 спокойн--ый: calm, adv: calmly, comp: calmer, super: calmest, inflect: -довольный
 phrase: далеко-от-чего-то
@@ -536,7 +530,6 @@ grammar: -дать@1, tag: verb
 такси--: taxi, pl: taxis, inflect: uninflected, tag: transport, mask: pl
 phrase: ни-не
 туалет--: toilet, pl: toilets, inflect: masc
-grammar: -пить@2, tag: verb
 метро--: subway, pl: subways, inflect: uninflected, tag: transport, mask: pl
 добр--ый: good, comp: better, super: best, inflect: adj, mask: adv
 домой: home
@@ -560,7 +553,6 @@ phrase: встречать-с
 забуд--<<ыть: forget, 3: forgets, past: forgot, prog: forgetting, inflect: -бытьfut
 чашк--а: cup, pl: cups, inflect: femka2
 бега--ть: run, 3: runs, past: ran, prog: running, inflect: ать
-grammar: -пить@1, tag: verb
 grammar: adj@genm, tag: genitive
 phrase: обращаться-с
 градус--: degree, pl: degrees, inflect: masc
@@ -796,7 +788,7 @@ grammar: -остаться@pastm, tag: verb
 phrase: как-дело
 всегда: always, pos: adv
 температур--а: temperature, pl: temperatures, inflect: fem
-част--ый: frequent, adv: frequently, comp: more frequently, inflect: -частый, mask: short
+част--ый: frequent, adv: frequently, comp: more frequently, inflect: -частый, mask: allbutadvandcomp
 grammar: -казаться@pastn, tag: verb
 phrase: станция-метро
 grammar: -случай@genpl, tag: genitive
@@ -1011,7 +1003,7 @@ phrase: за-стол
 grammar: -три@instrpl, tag: instrumental
 извини--ть: excuse, 3: excuses, past: excused, prog: excusing, inflect: -дарить
 прости--ть: forgive, 3: forgives, past: forgave, prog: forgiving, inflect: -простить, tag: something-to-someone
-редк--ий: n/a, adv: rarely, comp: more rarely, inflect: adj
+редк--ий: rarely, adv: rarely, comp: more rarely, inflect: adj, mask: allbutadvandcomp
 grammar: -три@preppl, tag: prepositional
 phrase: go-do
 grammar: -пять@pl
@@ -1408,7 +1400,6 @@ phrase: давно-пора
 будто: as if
 именн--ой: exactly, inflect: ойadj, mask: allbutadv
 grammar: -много@m
-grammar: -хотеть@impr, tag: verb
 phrase: тут-и-там
 вообще: at all
 част--ь: part, pl: parts, inflect: -часть
@@ -1576,7 +1567,7 @@ phrase: both-и-и
 grammar: abstr-ийadj@instrm, tag: instrumental
 grammar: abstr-ийadj@m
 новост--ь: news, inflect: femь
-возвраща--ться: n/a, inflect: -пытаться
+возвраща--ться: return, 3: returns, past: returned, inflect: -пытаться
 grammar: -цветок@pl
 phrase: either-or-или-или
 футбол--: football, inflect: masc, mask: pl
@@ -1584,9 +1575,9 @@ phrase: either-or-или-или
 любим--ый: favorite, inflect: adj, mask: adv
 концерт--: concert, pl: concerts, inflect: masc
 phrase: после-того-как
-выгляди--<еть: n/a, inflect: -глядеть
-реша--ться: n/a, inflect: -пытаться
-реши--ться: n/a, inflect: -случиться
+выгляди--<еть: look like, 3: looks like, past: looked like, inflect: -глядеть
+реша--ться: decide, 3: decides, past: decided, inflect: -пытаться
+реши--ться: decide, 3: decides, past: decided, inflect: -случиться
 grammar: -плохой@comp
 grammar: -два@accinanfpl, tag: accusative
 phrase: перед-тем-как
@@ -1614,7 +1605,7 @@ grammar: neuadjoe@accpl, tag: accusative
 обратн--ый: return, adv: back, inflect: adj, mask: compandshort
 phrase: рад-кому
 аэропорт--: airport, pl: airports, inflect: -аэропорт
-вовремя: n/a, pos: prep, tag: time
+вовремя: during, pos: prep, tag: time
 grammar: abstr-loc@loc
 стои--ть[should]: should, past: should have, inflect: -стоить
 grammar: -сосед@datpl, tag: dative
@@ -1752,7 +1743,7 @@ grammar: neuadjoe@dat, tag: dative
 grammar: -один@datpl, tag: dative
 grammar: -сын@datpl, tag: dative
 phrase: купить-у-кого-то
-заболи--<еть: n/a, inflect: -смотреть
+заболи--<еть: fall ill, 3: falls ill, past: fell ill, inflect: -смотреть
 grammar: -сто@datpl, tag: dative
 grammar: -небо@datpl, tag: dative
 grammar: -бояться@impr, tag: verb
@@ -1780,7 +1771,6 @@ grammar: -вегетарианец@genpl, tag: genitive
 grammar: -чай@genpl, tag: genitive
 grammar: -жена@genpl, tag: genitive
 grammar: -пробежать@impr, tag: verb
-grammar: -пить@impr, tag: verb
 grammar: -дерево@genpl, tag: genitive
 grammar: -небо@genpl, tag: genitive
 grammar: -выпить@impr, tag: verb
@@ -1814,7 +1804,7 @@ grammar: -друг@preppl, tag: prepositional
 grammar: -церковь@instr, tag: instrumental
 grammar: -четыре@instrpl, tag: instrumental
 grammar: -сестра@instrpl, tag: instrumental
-позов--<<вать: n/a, inflect: -звать
+позов--<<вать: invite to join, past: invited to join, prog: inviting to join, inflect: -звать
 grammar: -жена@instrpl, tag: instrumental
 grammar: -сын@instrpl, tag: instrumental
 grammar: -выйти@pastf, tag: verb
