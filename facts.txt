@@ -788,7 +788,7 @@ grammar: -остаться@pastm, tag: verb
 phrase: как-дело
 всегда: always, pos: adv
 температур--а: temperature, pl: temperatures, inflect: fem
-част--ый: frequent, adv: frequently, comp: more frequently, inflect: -частый, mask: short
+част--ый: frequent, adv: frequently, comp: more frequently, inflect: -частый, mask: allbutadvandcomp
 grammar: -казаться@pastn, tag: verb
 phrase: станция-метро
 grammar: -случай@genpl, tag: genitive
@@ -1003,7 +1003,7 @@ phrase: за-стол
 grammar: -три@instrpl, tag: instrumental
 извини--ть: excuse, 3: excuses, past: excused, prog: excusing, inflect: -дарить
 прости--ть: forgive, 3: forgives, past: forgave, prog: forgiving, inflect: -простить, tag: something-to-someone
-редк--ий: n/a, adv: rarely, comp: more rarely, inflect: adj
+редк--ий: n/a, adv: rarely, comp: more rarely, inflect: adj, mask: allbutadvandcomp
 grammar: -три@preppl, tag: prepositional
 phrase: go-do
 grammar: -пять@pl
