@@ -67,7 +67,7 @@ no-matter-what: "во что бы то ни стало" "no matter what" в@alt 
 говорить-с: "говорить с кем" "(1) ... to -self" говорить|поговорить@ adverb? phrase:сам-с-собой
 говорить-с: "говорить с кем" "(talk,talks,talked,1) to [someone]" говорить|поговорить@ adverb? с@ phrase:np@instr
 говорить-с: "говорить с кем" "(talk,talks,talked,4) to ... (2)" с@ phrase:np@instr any говорить|поговорить@
-встречать-с: "встречаться с" "(date,dates,dated,1) [someone]" встречаться[date]@ any с@ phrase:np@instr
+встречать-с: "встречаться с" "(1) [someone]" встречаться|встретиться|встречаться[date]@ any с@ phrase:np@instr
 обращаться-с: "обращаться с" "(1) (3)" обращаться[handle]|обращаться[treat]@ с@ phrase:np@instr
 обращаться-с: "обращаться с" "... (4) (2)" с@ phrase:np@instr any обращаться[handle]|обращаться[treat]@
 у-его-нет: "у кого-то нет чего-то (A1)" "(2->nom) (do,does,did,2) not have anything" у@ phrase:np@gen нет[none]@ ничто@gen
@@ -360,9 +360,10 @@ dat-лучше: "кому-то лучше" "(3->nom)'d better " хороший@c
 по-отношению: "по отношению к чему-то" "with regards to [something]" по@ отношение[regard]@dat к@ phrase:np@dat
 рад-кому: "рад кому-то" "happy to see [someone]" рад@ any #animate@dative
 рад-кому: "рад кому-то" "happy to see [someone]" #animate@dative any рад@
-учить-dat: "учить(ся)" "teach [something]" учить[teach]@ any @dative+
-учить-dat: "учить(ся)" " teach [someone] [something]" @accusative+ any @dative+ any учить[teach]@
-учить-dat: "учить(ся)" " teach [someone] [something]" учить[teach]@ @accusative+ @dative+
+учить-dat: "учить(ся)" "(5) (1) (3)" phrase:np@acc any phrase:np@dat any учить[teach]|научить[teach]@
+учить-dat: "учить(ся)" "(1) (2) (3)" учить[teach]|научить[teach]@ phrase:np@acc phrase:np@dat
+учить-dat: "учить(ся)" "(5) ... (3) ... (1)" phrase:np@dat any phrase:np@acc any учить[teach]|научить[teach]@
+учить-dat: "учить(ся)" "(1) (3)" учить[teach]|научить[teach]@ any phrase:np@dat
 сам-с-собой: "сам с собой" "with -self" сам@ с@ себя@instr
 не-стоит: "кому-то стоит" "(1->nom) (2) shouldn't ... (6->pres) " phrase:np@dat adverb* не@ стоить[should]@3 any verb
 не-стоит: "кому-то стоит" "(1->nom) should (3->pres)" phrase:np@dat стоить[should]@3 verb

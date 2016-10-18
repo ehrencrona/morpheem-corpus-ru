@@ -976,12 +976,10 @@ phrase: интересоваться-чем-то
 grammar: -она@prep, tag: prepositional
 наверное: probably, pos: adv
 против: against, pos: prep
-огн--<онь[fire]: fire, pl: fires, inflect: -огонь
 phrase: no-matter-how
 grammar: -ты@prep, tag: prepositional
 grammar: -воскресенье@prep, tag: prepositional
 собира--ть: collect, 3: collects, past: collected, prog: collecting, inflect: ать
-огн--<онь[light]: light, pl: lights, inflect: -огонь
 grammar: -один@n
 phrase: деньги-на
 случи--ться: happen, 3: happens, past: happened, prog: happening, inflect: -случиться
@@ -1119,13 +1117,13 @@ grammar: sya@pastn, tag: verb
 grammar: -чувствовать@pastm, tag: verb
 совету--<овать: advise, 3: advises, past: advised, prog: advising, inflect: -чувствовать
 phrase: датьetc-dat
-поговори--ть: talk, 1: talk, 3: talks, past: talked, prog: talking, inflect: -дарить
+поговори--ть: talk, 1: talk, 3: talks, past: talked, prog: talking, inflect: -дарить, tag: accusative, tag: perfective
 grammar: femя@instr, tag: instrumental
 тяжёл--ый: heavy, adv: heavily, comp: heavier, super: heaviest, inflect: adj
 тяжёл--ый[hard]: hard, comp: harder, super: hardest, inflect: adj
-расскаж--<зать: tell, 3: tells, past: told, prog: telling, inflect: -показать, tag: something-to-someone
+расскаж--<зать: tell, 3: tells, past: told, prog: telling, inflect: -показать, tag: something-to-someone, tag: perfective
 phrase: купить-чего-то
-убь--<ить: kill, 3: kills, past: killed, prog: killing, inflect: -убить
+убь--<ить: kill, 3: kills, past: killed, prog: killing, inflect: -убить, tag: perfective
 grammar: femь-я-to-а@instrpl, tag: instrumental
 grammar: femь-я-to-а@preppl, tag: prepositional
 жал--ь: pity, inflect: -жаль, mask: allbutadv
@@ -1134,11 +1132,11 @@ phrase: dat-adv
 счастлив--ый: happy, adv: happily, comp: happier, super: happiest, inflect: adj
 grammar: -чей@m
 grammar: -стать@impr, tag: verb
-пройд--<ти: pass, 3: passes, past: passed, prog: passing, inflect: -войти
+пройд--<ти: pass, 3: passes, past: passed, prog: passing, inflect: -войти, tag: perfective
 вкусн--ый: tasty, adv: tastily, comp: tastier, super: tastiest, inflect: ныйadj
 phrase: кому-то-достаточно
 grammar: -случиться@1, tag: verb
-выбер--<<рать: choose, 3: chooses, past: chose, prog: choosing, inflect: -выбрать
+выбер--<<рать: choose, 3: chooses, past: chose, prog: choosing, inflect: -выбрать, tag: perfective
 достаточн--ый: sufficient, adv: enough, inflect: adj, tag: amount, mask: compandshort
 рад--: glad, adv: gladly, comp: gladder, super: gladdest, inflect: -рад
 phrase: dat-удобно
@@ -1149,7 +1147,7 @@ grammar: femь-я-to-а@datpl, tag: dative
 grammar: -идти@pastn, tag: verb
 phrase: dat-нравится
 дяд--я: uncle, pl: uncles, inflect: -дядя, tag: animate
-попробу--<овать: try, 3: tries, past: tried, prog: trying, inflect: -чувствовать
+попробу--<овать: try, 3: tries, past: tried, prog: trying, inflect: -чувствовать, tag: perfective
 некотор--ый: some, inflect: adj, mask: shortandadv
 grammar: -тот@genpl, tag: genitive
 phrase: dat-интересно
@@ -1176,8 +1174,8 @@ grammar: -придти@pastm, tag: verb
 phrase: gen-верить
 половин--а: half, pl: halves, inflect: fem
 grammar: -убить@inf, tag: verb
-съ--есть: eat, 3: eats, past: ate, prog: eating, inflect: -есть
-успе--ть: is in time, inf: be in time, past: was in time, pastpl: were in time, prog: being in time, inflect: ать
+съ--есть: eat, 3: eats, past: ate, prog: eating, inflect: -есть, tag: perfective
+успе--ть: is in time, inf: be in time, past: was in time, pastpl: were in time, prog: being in time, inflect: ать, tag: perfective
 phrase: dat-speech
 глуп--ый: stupid, adv: stupidly, comp: stupider, super: stupidest, inflect: adj
 grammar: -выбрать@inf, tag: verb
@@ -1319,7 +1317,6 @@ grammar: abstr-нadj@shortpl
 grammar: -искать@inf, tag: verb
 врач--: doctor, pl: doctors, inflect: -врач, tag: animate
 phrase: поздравлять-с-instr
-научи--ть: learn, 3: learns, past: learned, prog: learning, inflect: -учить
 научи--ть[teach]: teach, 3: teaches, past: taught, prog: teaching, inflect: -учить
 сам--: alone, inflect: -сам, mask: allbutshort
 grammar: -один@instrm, tag: instrumental
@@ -1885,8 +1882,8 @@ phrase: скорая-помощь
 рождени--е: birth, inflect: neuie
 лучш--ий: best, inflect: eeadj
 phrase: even-so
-поменя--ть: n/a, inflect: ать
-план--: n/a, inflect: masc
+поменя--ть: change, 3: changes, past: changed, prog: changing, inflect: ать
+план--: plan, pl: plans, inflect: masc
 phrase: устать-от
 phrase: кричать-на
 ясн--ый: clear, inflect: adj
@@ -1895,16 +1892,16 @@ phrase: по-цене
 проща--ть: forgive, 3: forgives, past: forgave, prog: forgiving, inflect: -прощать, tag: something-to-someone
 вперёд: forward
 phrase: бояться-genitive
-мужчин--а: n/a, inflect: fem-animate
+мужчин--а: man, pl: men, inflect: fem-animate
 phrase: через-интернет
 phrase: кроме-того
 phrase: домашнее-животное
 услыши--<ать: hear, 3: hears, past: heard, pl: hear, pastpl: heard, inflect: -слышать
-прода--ть: n/a, inflect: -дать
-начал--о: n/a, inflect: neu
+прода--ть: sell, 3: sells, past: sold, prog: selling, pastpart: sold, inflect: -дать
+начал--о: beginning, pl: beginnings, inflect: neu
 север--: north, inflect: masc
-рек--а: rever, inflect: fem
-слаб--ый: n/a, inflect: adj
+рек--а: river, pl: rivers, inflect: fem
+слаб--ый: weak, adv: weakly, comp: weaker, super: weakest, inflect: adj
 дедушк--а: grandfather, pl: grandfathers, inflect: -девочка
 grammar: -два@instrpl, tag: instrumental
 постара--ться: try, 3: tries, past: tried, prog: trying, inflect: -пытаться
@@ -1923,7 +1920,6 @@ phrase: не-так
 grammar: -мочь@pastn, tag: verb
 phrase: ничего-adj
 подари--ть: give as a gift, inflect: -дарить
-запомина--ть: n/a, inflect: ать
 поезди--ть: go, 3: goes, past: went, prog: going, inflect: -ходить
 лета--ть: fly, 3: flies, past: flew, prog: flying, pastpart: flew, inflect: ать
 небеса: skies
@@ -1936,3 +1932,18 @@ phrase: all-of-us
 заходи--ть: n/a, inflect: -заходить
 отправля--ть: send, 3: sends, past: sent, prog: sending, pastpart: sent, inflect: ать
 phrase: is-not
+попроси--ть: ask, 3: asks, past: asked, pastpart: asked, inf: asking, pastpl: asked, inflect: -спросить
+попыта--ться: try, 3: tries, past: tried, prog: trying, pastpart: tried, pastpl: tried, inflect: -пытаться
+вспомина--ть: remember, 3: remembers, past: remembered, prog: remembering, inflect: ать
+означа--ть: mean, 3: means, past: meant, prog: meaning, inflect: ать
+замеча--ть: notice, 3: notices, past: noticed, prog: noticing, inflect: ать
+оставля--ть: leave, 3: leaves, past: left, prog: leaving, inflect: ать
+собер--<<рать: collect, 3: collects, past: collected, prog: collecting, inflect: -набрать
+лома--ть: break, 3: breaks, past: broke, prog: breaking, pastpart: broken, inflect: ать
+соберу--<<<раться: intend to, 3: intends to, past: intended to, prog: intending to, inflect: -собраться
+находи--ть: find, 3: finds, past: found, prog: finding, inflect: -ходить
+посовету--<овать: advise, 3: advises, past: advised, prog: advising, inflect: -чувствовать
+меня--ть: change, 3: changes, past: changed, prog: changing, inflect: ать
+проходи--ть: pass, 3: passes, past: passed, prog: passing, inflect: -ходить
+пробу--<овать: try, 3: tries, past: tried, prog: trying, inflect: -чувствовать
+успева--ть: is in time, past: was in time, prog: being in time, pastpl: were in time, pl: are in time, inf: be in time, inflect: ать
