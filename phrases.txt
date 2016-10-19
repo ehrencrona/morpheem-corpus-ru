@@ -141,7 +141,7 @@ hyperbole: "for [time period] - hyperbole " "for [adjective]" phrase:np@instr#ti
 через-direction: "через (направление) (B1)" "through, across (2)" через@ phrase:np@acc
 через-direction: "через (направление) (B1)" "(1)" phrase:через-интернет
 через-time: "через (время) (B1)" "in (2) (3)" через@ adverb? phrase:np@acc#time
-на-time: "на (время) (B1)" "on our day off" на@ выходной@
+на-time: "на (время) (B1)" "(2->sing) (article) (3)" на@ adjective@? выходной@
 на-time: "на (время) (B1)" "for (2)" на@ phrase:np@acc#time
 за-time: "за (время) (B1)" "(2) (3)" за@ adjective@accusative лето|осень|зима|весна@accusative
 за-time: "за (время) (B1)" "in [time]" за@ phrase:np@acc
@@ -588,3 +588,6 @@ is-not: "нет чего-то - 'is not' (A1)" "(2) (are not,is not,was not,bein
 is-not: "нет чего-то - 'is not' (A1)" "(2) (are not,is not,was not,being not,been not,be not,are not,were not,am not,2->v) (5) (1) (3)" adverb? phrase:np@gen adverb? нет[none]@ phrase:на-place
 is-not: "нет чего-то - 'is not' (A1)" "(2) (are not,is not,was not,being not,been not,be not,are not,were not,am not,2->v) (1) (3)" adverb? phrase:np@gen adverb? нет[none]@
 is-not: "нет чего-то - 'is not' (A1)" "(3) (are not,is not,was not,being not,been not,be not,are not,were not,am not,3->v) (1)" adverb? нет[none]@ phrase:np@gen
+оказаться-instr: "оказаться" "(1) ... (3)" оказаться[prove]@ any phrase:np@instr
+себя-чувствовать: "чувствовать себя" "(4) (1) (3->adj)" adverb? себя@ adverb? чувствовать@
+себя-чувствовать: "чувствовать себя" "(1) (2) (4->adj)" adverb? чувствовать@ себя@ adjective
