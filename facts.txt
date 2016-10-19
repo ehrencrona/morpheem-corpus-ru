@@ -832,7 +832,7 @@ grammar: -казаться@pastpl, tag: verb
 phrase: самый-adj
 чтобы: in order to, pos: conj
 grammar: sya@imprpl, tag: verb
-задани--е: exercise, pl: exercises, inflect: neuie
+задани--е: task, pl: tasks, -2: assignment, pl-2: assignments, inflect: neuie
 домашн--ий: domestic, inflect: -домашний, mask: nonstd
 чуть-чуть: a little bit, pos: adv
 phrase: с-gen
@@ -1105,7 +1105,7 @@ grammar: -пять@genpl, tag: genitive
 phrase: на-самом-деле
 прид--<йти: come, 3: comes, past: came, prog: coming, inflect: -придти
 grammar: -чувствовать@inf, tag: verb
-объясни--ть: explain, 3: explains, past: explained, prog: explaining, inflect: -дарить
+объясни--ть: explain, 3: explains, past: explained, prog: explaining, inflect: -дарить, tag: something-to-someone
 спальн--я: bedroom, pl: bedrooms, inflect: -спальня
 grammar: -оставаться@pastf, tag: verb
 grammar: -оставаться@pastpl, tag: verb
@@ -1486,47 +1486,47 @@ phrase: так...как
 поворот--: turn, pl: turns, inflect: masc, tag: at
 поворачива--ть: turn, 3: turn, past: turned, prog: turning, inflect: ать
 пропусти--ть: miss, 3: misses, past: missed, prog: missing, inflect: -простить, tag: perfective
-разреши--ть: allow, 3: allows, past: allowed, prog: allowing, inflect: -учить
+разреши--ть: allow, 3: allows, past: allowed, prog: allowing, inflect: -учить, tag: perfective
 phrase: такой..как
 неправильн--ый: incorrect, adv: incorrectly, inflect: -правильный, mask: compandshort
-предупреди--ть: warn, 3: warns, past: warned, prog: warning, inflect: -ходить
+предупреди--ть: warn, 3: warns, past: warned, prog: warning, inflect: -ходить, tag: perfective
 предложени--е[offer]: offer, pl: offers, inflect: neuie
 неужели: denotes disbelief
 phrase: то-же
 получа--ть: get, 3: gets, past: got, prog: getting, inflect: ать
 очеред--ь: line, pl: lines, inflect: femь
 очеред--ь[turn]: turn, inflect: femь, mask: pl
-разоль--<<<лить: spill, 3: spills, past: spilled, prog: spilling, inflect: -разлить
+разоль--<<<лить: spill, 3: spills, past: spilled, prog: spilling, inflect: -разлить, tag: perfective
 запасн--ой: spare, adv: sparely, inflect: ойadj, mask: nonstd
-погуля--ть: take a walk, 3: takes a walk, past: took a walk, prog: taking a walk, inflect: ать
+погуля--ть: take a walk, 3: takes a walk, past: took a walk, prog: taking a walk, inflect: ать, tag: perfective
 phrase: кроме-gen
-окончи--ть: end, 3: ends, past: ended, prog: ending, inflect: -учить
-понрави--ться: like, 3: likes, past: liked, prog: like, inflect: -нравиться
+окончи--ть: end, 3: ends, past: ended, prog: ending, inflect: -учить, tag: perfective
+понрави--ться: like, 3: likes, past: liked, prog: like, inflect: -нравиться, tag: perfective
 плит--а: stove, pl: stoves, inflect: fem
 теря--ться: get lost, 3: gets lost, past: got lost, prog: getting lost, inflect: -пытаться
 phrase: против-gen
 мороз--: cold, inflect: masc, tag: weather, mask: pl
 объясня--ть: explain, 3: explains, past: explained, prog: explaining, inflect: ать
-выучи--ть: learn, 3: learns, past: learnt, prog: learning, inflect: -учить
+выучи--ть: learn, 3: learns, past: learnt, prog: learning, inflect: -учить, tag: perfective
 ненавиди--<еть: hate, 3: hates, past: hated, prog: hating, inflect: -видеть
-повери--ть: believe, 3: believes, past: believed, prog: believing, inflect: -верить
+повери--ть: believe, 3: believes, past: believed, prog: believing, inflect: -верить, tag: perfective
 phrase: ask-someone
 grammar: -простой@comp
 опаздыва--ть: are late, 1: am late, 3: is late, inf: be late, past: was late, pastpl: were late, prog: being late, pl: are late, inflect: ать
 зажигалк--а: lighter, pl: lighters, inflect: femka
-закончи--ться: end, 3: ends, past: ended, prog: ending, inflect: -случиться
-встрети--ть: meet, 3: meets, past: met, prog: meeting, inflect: -ответить
+закончи--ться: end, 3: ends, past: ended, prog: ending, inflect: -случиться, tag: perfective
+встрети--ть: meet, 3: meets, past: met, prog: meeting, inflect: -ответить, tag: perfective
 phrase: выйти-из
-украд--<сть: steal, 3: steals, past: stole, prog: stealing, inflect: -украсть
+украд--<сть: steal, 3: steals, past: stole, prog: stealing, inflect: -украсть, tag: perfective
 доверя--ть: trust, 3: trusts, past: trusted, prog: trusting, inflect: ать
-хвати--ть: be enough, 3: is enough, past: was enough, prog: being enough, inflect: -хватить
+хвати--ть: be enough, 3: is enough, past: was enough, prog: being enough, inflect: -хватить, tag: perfective
 замужем: married (about a woman)
 phrase: за-городом
 кухн--я: kitchen, pl: kitchens, inflect: -кухня, tag: in
-заплати--ть: pay, 3: pays, past: paid, prog: paying, inflect: -хватить
+заплати--ть: pay, 3: pays, past: paid, prog: paying, inflect: -хватить, tag: perfective
 одеял--о: blanket, pl: blankets, inflect: neu
-набер--<<рать: fill, 3: fills, past: filled, prog: filling, inflect: -набрать
-принес--ти: bring, 3: brings, past: brought, prog: bringing, inflect: -принести, tag: something-to-someone
+набер--<<рать: fill, 3: fills, past: filled, prog: filling, inflect: -набрать, tag: perfective
+принес--ти: bring, 3: brings, past: brought, prog: bringing, inflect: -принести, tag: something-to-someone, tag: perfective
 phrase: за-город
 сдач--а: change, pl: changes, inflect: -улица
 жени--ться: marry, 3: marries, past: married, prog: marrying, inflect: -жениться
@@ -1541,15 +1541,15 @@ phrase: про-что-то
 phrase: играть-в-игру
 grammar: -ранний@adv
 пар--а: pair, pl: pairs, inflect: fem, tag: amount
-встрети--ться: meet, 3: meets, past: met, prog: meeting, inflect: -встретиться
+встрети--ться: meet, 3: meets, past: met, prog: meeting, inflect: -встретиться, tag: perfective
 пальц--<<ец: finger, pl: fingers, inflect: -палец
 phrase: все-равно
 grammar: -ранний@comp
 grammar: -стоить@impr, tag: verb
 grammar: -ехать@impr, tag: verb
 grammar: abstr-ийadj@pl
-почувству--<овать: feel, 3: feels, past: felt, prog: feeling, inflect: -чувствовать
-смож--<чь: can, past: could, prog: able to, inflect: -мочь
+почувству--<овать: feel, 3: feels, past: felt, prog: feeling, inflect: -чувствовать, tag: perfective
+смож--<чь: can, past: could, prog: able to, inflect: -мочь, tag: perfective
 слева: on the left, pos: adv
 уж: "drama" particle, pos: part
 справа: on the right, pos: adv
@@ -1567,13 +1567,13 @@ grammar: abstr-ийadj@m
 grammar: -цветок@pl
 phrase: either-or-или-или
 футбол--: football, inflect: masc, mask: pl
-приед--<хать: arrive, 3: arrives, past: arrived, prog: arriving, inflect: -ехать
+приед--<хать: arrive, 3: arrives, past: arrived, prog: arriving, inflect: -ехать, tag: perfective
 любим--ый: favorite, inflect: adj, mask: adv
 концерт--: concert, pl: concerts, inflect: masc
 phrase: после-того-как
 выгляди--<еть: look like, 3: looks like, past: looked like, inflect: -глядеть
 реша--ться: decide, 3: decides, past: decided, inflect: -пытаться
-реши--ться: decide, 3: decides, past: decided, inflect: -случиться
+реши--ться: decide, 3: decides, past: decided, inflect: -случиться, tag: perfective
 grammar: -плохой@comp
 grammar: -два@accinanfpl, tag: accusative
 phrase: перед-тем-как
@@ -1584,7 +1584,7 @@ grammar: -маленький@comp, tag: at-instr
 phrase: кому-то-кажется
 интересу--<оваться: are interested in, 1: am interested in, 3: is interested in, past: was interested in, inf: be interested in, pl: are interested in, pastpl: were interested in, prog: being interested in, inflect: -интересоваться
 интересу--<оваться[ask]: ask, 3: asks, inflect: -интересоваться
-поинтересу--<оваться[ask]: ask, 3: asks, inflect: -интересоваться
+поинтересу--<оваться[ask]: ask, 3: asks, inflect: -интересоваться, tag: perfective
 grammar: y-esh-et@3pl, tag: verb
 grammar: -два@fpl
 grammar: -сидеть@impr, tag: verb
@@ -1593,7 +1593,7 @@ phrase: dat-жаль
 отдыха--ть: relax, 3: relaxes, past: relaxed, prog: relaxing, inflect: ать
 grammar: -раз@genpl, tag: genitive
 grammar: neuadjoe@genpl, tag: genitive
-одолжи--ть: lend, 3: lends, past: lent, prog: lending, inflect: -учить, tag: something-to-someone
+одолжи--ть: lend, 3: lends, past: lent, prog: lending, inflect: -учить, tag: something-to-someone, tag: perfective
 grammar: -гость@loc
 phrase: по-отношению
 grammar: -гость@locpl
@@ -1727,7 +1727,7 @@ phrase: звонить-dat
 phrase: советовать-dat
 phrase: почему-бы
 phrase: лучше-бы-dat
-выпь--<ить: drink, 3: drinks, past: drunk, prog: drinking, inflect: -выпить
+выпь--<ить: drink, 3: drinks, past: drunk, prog: drinking, inflect: -выпить, tag: perfective
 grammar: uninflected@gen, tag: genitive
 phrase: у-gen-в-prep
 grammar: -весёлый@comp
@@ -1739,7 +1739,7 @@ grammar: neuadjoe@dat, tag: dative
 grammar: -один@datpl, tag: dative
 grammar: -сын@datpl, tag: dative
 phrase: купить-у-кого-то
-заболи--<еть: fall ill, 3: falls ill, past: fell ill, inflect: -смотреть
+заболи--<еть: fall ill, 3: falls ill, past: fell ill, inflect: -смотреть, tag: perfective
 grammar: -сто@datpl, tag: dative
 grammar: -небо@datpl, tag: dative
 grammar: -бояться@impr, tag: verb
@@ -1800,35 +1800,35 @@ grammar: -друг@preppl, tag: prepositional
 grammar: -церковь@instr, tag: instrumental
 grammar: -четыре@instrpl, tag: instrumental
 grammar: -сестра@instrpl, tag: instrumental
-позов--<<вать: invite to join, past: invited to join, prog: inviting to join, inflect: -звать
+позов--<<вать: invite to join, past: invited to join, prog: inviting to join, inflect: -звать, tag: perfective
 grammar: -жена@instrpl, tag: instrumental
 grammar: -сын@instrpl, tag: instrumental
 grammar: -выйти@pastf, tag: verb
 grammar: -одеться@pastf, tag: verb
 трати--ть: spend, 3: spends, past: spent, prog: spending, inflect: -ответить
-потрати--ть: spend, 3: spends, past: spent, prog: spending, inflect: -ответить
+потрати--ть: spend, 3: spends, past: spent, prog: spending, inflect: -ответить, tag: perfective
 grammar: -одеться@pastpl, tag: verb
 grammar: -сын@preppl, tag: prepositional
 больн--ой: sick, adv: hurt, comp: sicker, inflect: -больной
 grammar: -больной@shortm
 phrase: на-улица
-обрати--ться: turn to, 3: turns to, past: turned to, prog: turning to, inflect: -обратиться
+обрати--ться: turn to, 3: turns to, past: turned to, prog: turning to, inflect: -обратиться, tag: perfective
 phrase: обращаться[turn]-с
 grammar: neuadjoe@prep, tag: prepositional
 grammar: uninflected@dat, tag: dative
 сообща--ть: inform, 3: informs, past: informed, prog: informing, inflect: ать
-слома--ться: break down, 3: breaks down, past: broke down, prog: breaking down, pastpart: broken down, inflect: -пытаться
+слома--ться: break down, 3: breaks down, past: broke down, prog: breaking down, pastpart: broken down, inflect: -пытаться, tag: perfective
 phrase: ни-за-что-as-adv
 phrase: новый-год
 grammar: uninflected@instr, tag: instrumental
 grammar: -довольный@shortm
 grammar: uninflected@nom
-уйд--<ти: leave, 3: leaves, past: left, prog: leaving, pastpart: left, inflect: -войти
+уйд--<ти: leave, 3: leaves, past: left, prog: leaving, pastpart: left, inflect: -войти, tag: perfective
 бежи--<ать: run, 3: runs, past: ran, prog: running, inflect: -бежать
 мусор--: trash, inflect: masc
 луж--а: puddle, pl: puddles, inflect: -улица
-увиди--<еть: see, 3: sees, past: saw, prog: seeing, inflect: -видеть
-отправи--ть: send, 3: sends, past: sent, prog: sending, pastpart: sent, inflect: -готовить
+увиди--<еть: see, 3: sees, past: saw, prog: seeing, inflect: -видеть, tag: perfective
+отправи--ть: send, 3: sends, past: sent, prog: sending, pastpart: sent, inflect: -готовить, tag: perfective
 показыва--ть: show, 3: shows, past: showed, prog: showing, pastpart: shown, inflect: ать
 игр--а: game, pl: games, inflect: fem
 grammar: -палец@nom
@@ -1843,7 +1843,7 @@ grammar: -бежать@1, tag: verb
 срочно: urgently
 носи--ть: wear, 3: wears, past: wore, prog: wearing, pastpart: worn, inflect: -спросить
 горяч--ий: hot, adv: how, comp: hotter, inflect: eeadj
-выключи--ть: turn off, 3: turns off, past: turned off, prog: turning off, inflect: -учить
+выключи--ть: turn off, 3: turns off, past: turned off, prog: turning off, inflect: -учить, tag: perfective
 phrase: counting-on
 phrase: в-гости
 phrase: в-гостях
@@ -1854,24 +1854,24 @@ phrase: в-время2
 кто-то: someone
 числ--о: number, pl: numbers, inflect: -масло
 grammar: neuadjoe@pl
-помо--<ыть: wash, 3: washes, past: washed, prog: washing, inflect: -открыть
+помо--<ыть: wash, 3: washes, past: washed, prog: washing, inflect: -открыть, tag: perfective
 поскорее: faster
 phrase: оставить-себе
-приготови--ть: cook, 3: cooks, past: cooked, prog: cooking, inflect: -готовить
+приготови--ть: cook, 3: cooks, past: cooked, prog: cooking, inflect: -готовить, tag: perfective
 крад--<сть: steal, 3: steals, past: stoles, prog: stealing, inflect: -украсть
 phrase: идти-за
-записа--ть: write down, 3: writes down, past: wrote down, inflect: ать
+записа--ть: write down, 3: writes down, past: wrote down, inflect: ать, tag: perfective
 фотографи--я: photo, pl: photos, inflect: -регистрация
-уед--<хать: leave, 3: leaves, past: left, prog: leaving, inflect: -ехать
+уед--<хать: leave, 3: leaves, past: left, prog: leaving, inflect: -ехать, tag: perfective
 уезжа--ть: leave, 3: leaves, past: left, inflect: ать
 grammar: -время@prep, tag: prepositional
 никуда: nowhere
-подойд--<ти: , inflect: -войти
-зайд--<ти: come in, 3: comes in, past: came in, prog: coming in, inflect: -войти
-верн--уть: return, 3: returns, past: returned, inflect: -повернуть
+подойд--<ти: approach, 3: approaches, past: approached, prog: approaching, inflect: -войти, tag: perfective
+зайд--<ти: come in, 3: comes in, past: came in, prog: coming in, inflect: -войти, tag: perfective
+верн--уть: return, 3: returns, past: returned, inflect: -повернуть, tag: perfective
 grammar: -правильный@shortm
 grammar: -рот@nom
-привез--ти: bring, 3: brings, past: brang, inflect: -привезти
+привез--ти: bring, 3: brings, past: brang, inflect: -привезти, tag: perfective
 лечи--ть: treat, 3: treats, past: treated, inflect: -учить
 grammar: -обратиться@1, tag: verb
 grammar: -масло@genpl, tag: genitive
@@ -1881,7 +1881,7 @@ phrase: скорая-помощь
 рождени--е: birth, inflect: neuie
 лучш--ий: best, inflect: eeadj
 phrase: even-so
-поменя--ть: change, 3: changes, past: changed, prog: changing, inflect: ать
+поменя--ть: change, 3: changes, past: changed, prog: changing, inflect: ать, tag: perfective
 план--: plan, pl: plans, inflect: masc
 phrase: устать-от
 phrase: кричать-на
@@ -1952,3 +1952,18 @@ phrase: оказаться-instr
 знакоми--ться: get to know, 3: gets to know, past: got to know, prog: getting to know, pastpart: goteen to know, inflect: -нравиться
 пропуска--ть: miss, 3: misses, past: missed, prog: missing, inflect: ать
 phrase: себя-чувствовать
+разреша--ть: allow, 3: allows, past: allowed, prog: allowing, inflect: ать
+предупрежда--ть: warn, 3: warns, past: warned, prog: warning, inflect: ать
+оканчива--ть: end, 3: ends, past: ended, prog: ending, inflect: ать
+заканчива--ться: end, 3: ends, past: ended, prog: ending, inflect: -пытаться
+хвата--ть: Be enough, 3: is enough, past: was enough, prog: being enough, inflect: -хватать
+набира--ть: fill, 3: fills, past: filled, prog: filling, inflect: ать
+приезжа--ть: arrive, 3: arrives, past: arrived, prog: arriving, inflect: ать
+отдохн--уть: relax, 3: relaxes, past: relaxed, prog: relaxing, inflect: -повернуть
+поздрави--ть: congratulate, 3: congratulates, past: congratulated, prog: congratulating, inflect: -готовить
+сообщи--ть: inform, 3: informs, past: informed, prog: informing, inflect: -учить
+выключа--ть: turn off, 3: turns off, past: turned off, prog: turning off, inflect: ать
+записыва--ть: write down, 3: writes down, past: wrote down, prog: writing down, pastpart: written down, inflect: ать
+подходи--ть: approach, 3: approaches, past: approached, prog: approaching, inflect: -ходить
+привози--ть: bring, 3: brings, past: brought, prog: bringing, inflect: -ходить
+вылечи--ть: treat, 3: treats, past: treated, prog: treating, inflect: -учить
