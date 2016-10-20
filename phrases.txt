@@ -481,7 +481,8 @@ face-to-face: "face to face" "face to face" лицо@instr к@ лицо@dat
 скажите: "скажите пожалуйста" "could you please tell me" сказать@imprpl ,@ пожалуйста@ ,@
 на-for: "на = for " "for (2)" на@ phrase:np@acc
 на-for: "на = for " "for (2)" на@ сегодня|завтра@
-на-num-comp: "на два раза больше" "(2) (3) (4)" на@ #number noun comp
+на-num-comp: "на два раза больше" "(2) (3)" на@ phrase:np@acc#number comp
+на-num-comp: "на два раза больше" "(4) ... (1)" comp any на@ phrase:np@acc#number
 к-на: "к себе на работу и т.п." "to (5) of (2)" к@ phrase:np@dat any на@ phrase:np@acc
 сесть-на: "сесть на" "(take,takes,took,1) (article) (3)" сесть@ на@ phrase:np#transport
 врать-dat: "врать кому-то" "(1) to (2)" врать@ phrase:np@dat
@@ -529,7 +530,6 @@ auto-collocation: "collocation" "(1)" phrase:half-to@context
 ни-разу: "ни разу" "not once" ни@ раз@loc
 номер-телефона: "номер телефона" "home phone number" домашний@ номер@ телефон@gen
 номер-телефона: "номер телефона" "phone number" номер@ телефон@gen
-comp-на: "на 10 лет (моложе)" "by (2)" на@ phrase:np@acc#number
 на-улица: "на улицу / улице" "outside" на@ улица@context
 обращаться[turn]-с: "обращаться к (turn to)" "(1) (3)" обращаться|обратиться@ к@ phrase:np@dat
 обращаться[turn]-с: "обращаться к (turn to)" "to (2) ... (4)" к@ phrase:np@dat any обращаться|обратиться@
@@ -593,3 +593,5 @@ is-not: "нет чего-то - 'is not' (A1)" "(3) (are not,is not,was not,bein
 себя-чувствовать: "чувствовать себя" "(4) (1) (3->adj)" adverb? себя@ adverb? чувствовать@
 себя-чувствовать: "чувствовать себя" "(1) (2) (4->adj)" adverb? чувствовать@ себя@ adjective
 за-instead-of: "за=вместо" "instead of (2)" за@ phrase:np@acc
+dat-весело: "кому-то весело" "(1->nom) (are,is,was,being,been,be,are,were,am,1) having (2)" phrase:np@dat весёлый@adv
+dat-весело: "кому-то весело" "(1->nom) (2) (3) (4)" phrase:np@dat быть@past adverb? весёлый@adv

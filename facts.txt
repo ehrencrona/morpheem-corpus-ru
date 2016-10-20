@@ -92,7 +92,7 @@ grammar: -любить@1, tag: verb
 человек--: person, pl: persons, inflect: masc-animate, tag: animate
 зачем: what for, pos: quest
 почему: why, pos: quest
---быть: are, 1: am, 3: is, past: was, inf: to be, prog: being, pastpl: were, inflect: -быть
+--быть: are, 1: am, 3: is, past: was, inf: be, prog: being, pastpl: were, past-2: there was, 3-2: there is, -2: there are, inflect: -быть
 квартир--а: apartment, pl: apartments, inflect: fem
 grammar: -свой@f
 вот: here (is)
@@ -621,7 +621,7 @@ phrase: через-time
 grammar: sya@1, tag: verb
 phrase: по-definition
 нормальн--ый: normal, inflect: adj, mask: nonstd
-нормальн--ый[ok]: fine, inflect: adj, mask: allbutadv
+нормальн--ый[ok]: fine, -2: okay, inflect: adj, mask: allbutadv
 опозда--ть: are late, 1: am late, 3: is late, inf: be late, past: was late, pastpl: were late, prog: being late, pl: are late, inflect: ать
 закро--<ыть: close, 3: closes, past: closed, prog: closing, inflect: -открыть
 grammar: -мочь@3pl, tag: verb
@@ -953,7 +953,7 @@ grammar: -сын@genpl, tag: genitive
 phrase: быть-кем-то
 grammar: -мы@instrpl, tag: instrumental, tag: animate
 grammar: -ты@instr, tag: instrumental
-парн--<ень: boyfriend , pl: boyfriends, inflect: -парень
+парн--<ень: boyfriend, pl: boyfriends, inflect: -парень
 grammar: -остаться@impr, tag: verb
 внимани--е: attention, inflect: neuie, mask: pl
 phrase: стать-кем-то
@@ -1789,7 +1789,6 @@ phrase: обратная–дорога
 phrase: хоть-раз
 phrase: ни-разу
 phrase: номер-телефона
-phrase: comp-на
 grammar: -стоить@imprpl, tag: verb
 grammar: -готовить@imprpl, tag: verb
 grammar: -казаться@imprpl, tag: verb
@@ -1970,3 +1969,4 @@ phrase: себя-чувствовать
 привози--ть: bring, 3: brings, past: brought, prog: bringing, inflect: -ходить
 вылечи--ть: treat, 3: treats, past: treated, prog: treating, inflect: -учить
 phrase: за-instead-of
+phrase: dat-весело
