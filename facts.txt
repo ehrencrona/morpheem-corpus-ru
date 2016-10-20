@@ -284,7 +284,7 @@ grammar: femka@genpl, tag: genitive
 понима--ть: understand, 3: understands, past: understood, prog: understanding, inflect: ать
 помни--ть: remember, 3: remembers, past: remembered, prog: remembering, inflect: -дарить
 буд--<<ыть[fut]: will be, inflect: -бытьfut, mask: past
-математик--а: mathematics, inflect: fem, mask: pl
+математик--а: math, inflect: fem, mask: pl
 французск--ий: French, inflect: adj, tag: language, mask: shortandadv
 словар--ь: dictionary, pl: dictionaries, inflect: -словарь
 когда: when, pos: quest
@@ -437,7 +437,7 @@ grammar: -давать@impr, tag: verb
 ноч--ь: night, pl: nights, inflect: femь-я-to-а, tag: at-inst, tag: at-instr, tag: time
 grammar: -стул@genpl, tag: genitive
 начина--ть: begin, 3: begins, past: began, prog: beginning, inflect: ать
-солнц--е: sun, pl: suns, inflect: -солнце
+солнц--е: sun, pl: suns, inflect: -солнце, tag: in
 phrase: в-году
 вопрос--: question, pl: questions, inflect: masc
 про: about, pos: prep
@@ -620,7 +620,8 @@ phrase: через-time
 класс--[room]: classroom, pl: classrooms, inflect: masc
 grammar: sya@1, tag: verb
 phrase: по-definition
-нормальн--ый: normal, adv: normally, inflect: adj, mask: compandshort
+нормальн--ый: normal, inflect: adj, mask: nonstd
+нормальн--ый[ok]: fine, inflect: adj, mask: allbutadv
 опозда--ть: are late, 1: am late, 3: is late, inf: be late, past: was late, pastpl: were late, prog: being late, pl: are late, inflect: ать
 закро--<ыть: close, 3: closes, past: closed, prog: closing, inflect: -открыть
 grammar: -мочь@3pl, tag: verb
@@ -834,7 +835,7 @@ phrase: самый-adj
 grammar: sya@imprpl, tag: verb
 задани--е: task, pl: tasks, -2: assignment, pl-2: assignments, inflect: neuie
 домашн--ий: domestic, inflect: -домашний, mask: nonstd
-чуть-чуть: a little bit, pos: adv
+чуть-чуть: a little bit, pos: adv, tag: amount
 phrase: с-gen
 grammar: neuie@genpl, tag: genitive
 grammar: -ответить@1, tag: verb
@@ -952,7 +953,7 @@ grammar: -сын@genpl, tag: genitive
 phrase: быть-кем-то
 grammar: -мы@instrpl, tag: instrumental, tag: animate
 grammar: -ты@instr, tag: instrumental
-парн--<ень: boyfriend, pl: boyfriends, inflect: -парень
+парн--<ень: boyfriend , pl: boyfriends, inflect: -парень
 grammar: -остаться@impr, tag: verb
 внимани--е: attention, inflect: neuie, mask: pl
 phrase: стать-кем-то
@@ -1092,7 +1093,7 @@ phrase: если-только
 grammar: -идти@pastpl, tag: verb
 grammar: adj@shortpl
 phrase: comp-gen2
-шкаф--: cupboard, pl: cupboards, inflect: -аэропорт
+шкаф--: cupboard, pl: cupboards, -2: wardrobe, pl-2: wardrobes, inflect: -аэропорт
 духовк--а: oven, pl: ovens, inflect: femka
 grammar: neu@genpl, tag: genitive
 закрыт--ый: closed, inflect: adj, mask: comp
@@ -1166,7 +1167,7 @@ grammar: -тот@datpl, tag: dative
 да--вать[allow]: let, 3: lets, past: let, prog: letting, inflect: -давать
 да--вать[lets]: let's, inflect: -давать, mask: non_impr
 phrase: при-чём
-особенн--ый: special, adv: specially, inflect: adj, mask: compandshort
+особенн--ый: special, adv: especially, inflect: adj, mask: compandshort
 лишн--ий: spare, inflect: -домашний, mask: nonstd
 grammar: -давать@inf, tag: verb
 grammar: -придти@pastm, tag: verb
@@ -1177,7 +1178,7 @@ grammar: -убить@inf, tag: verb
 съ--есть: eat, 3: eats, past: ate, prog: eating, inflect: -есть, tag: perfective
 успе--ть: is in time, inf: be in time, past: was in time, pastpl: were in time, prog: being in time, inflect: ать, tag: perfective
 phrase: dat-speech
-глуп--ый: stupid, adv: stupidly, comp: stupider, super: stupidest, inflect: adj
+глуп--ый: stupid, adv: stupidly, comp: stupider, super: stupidest, -2: dumb, adv-2: dumbly, comp-2: dumber, super-2: dumbest, inflect: adj
 grammar: -выбрать@inf, tag: verb
 grammar: -рад@shortm
 из-за: because of, pos: prep
@@ -1309,6 +1310,7 @@ phrase: всё-ещё
 сообщени--е: message, pl: messages, inflect: neuie
 морожен--ое: ice cream, pl: ice creams, inflect: neuadjoe, tag: uncountable
 решени--е: decision, pl: decisions, inflect: neuie
+решени--е[solution]: solution, pl: solutions, inflect: neuie
 grammar: -лёгкий@adv
 phrase: жениться-на
 grammar: abstr-нadj@shortpl
@@ -1486,12 +1488,12 @@ phrase: так...как
 поворот--: turn, pl: turns, inflect: masc, tag: at
 поворачива--ть: turn, 3: turn, past: turned, prog: turning, inflect: ать
 пропусти--ть: miss, 3: misses, past: missed, prog: missing, inflect: -простить, tag: perfective
-разреши--ть: allow, 3: allows, past: allowed, prog: allowing, inflect: -учить, tag: perfective
+разреши--ть: allow, 3: allows, past: allowed, prog: allowing, inflect: -учить, tag: perfective, tag: something-to-someone
 phrase: такой..как
 неправильн--ый: incorrect, adv: incorrectly, inflect: -правильный, mask: compandshort
 предупреди--ть: warn, 3: warns, past: warned, prog: warning, inflect: -ходить, tag: perfective
 предложени--е[offer]: offer, pl: offers, inflect: neuie
-неужели: denotes disbelief
+неужели: Is it really possible, -2: Could it be that
 phrase: то-же
 получа--ть: get, 3: gets, past: got, prog: getting, inflect: ать
 очеред--ь: line, pl: lines, inflect: femь
@@ -1648,7 +1650,7 @@ phrase: так-и-не
 рынк--<ок: market, pl: markets, inflect: -подарок
 станци--я: station, pl: stations, inflect: -регистрация
 рубашк--а: shirt, pl: shirts, inflect: femka2
-брюк--а: trousers, inflect: fem, mask: sg
+брюк--а: pants, inflect: fem, mask: sg
 phrase: до-сих-пор
 блузк--а: blouse, pl: blouses, inflect: femka
 сахар--: sugar, inflect: masc3
@@ -1828,7 +1830,7 @@ grammar: uninflected@nom
 мусор--: trash, inflect: masc
 луж--а: puddle, pl: puddles, inflect: -улица
 увиди--<еть: see, 3: sees, past: saw, prog: seeing, inflect: -видеть, tag: perfective
-отправи--ть: send, 3: sends, past: sent, prog: sending, pastpart: sent, inflect: -готовить, tag: perfective
+отправи--ть: send, 3: sends, past: sent, prog: sending, pastpart: sent, inflect: -готовить, tag: perfective, tag: something-to-someone
 показыва--ть: show, 3: shows, past: showed, prog: showing, pastpart: shown, inflect: ать
 игр--а: game, pl: games, inflect: fem
 grammar: -палец@nom
@@ -1967,3 +1969,4 @@ phrase: себя-чувствовать
 подходи--ть: approach, 3: approaches, past: approached, prog: approaching, inflect: -ходить
 привози--ть: bring, 3: brings, past: brought, prog: bringing, inflect: -ходить
 вылечи--ть: treat, 3: treats, past: treated, prog: treating, inflect: -учить
+phrase: за-instead-of

@@ -15,7 +15,7 @@ not-gen: "нет чего-то - 'there is no' (A1)" "(there is no,there are no,
 gen-of: "что-то чего-то" "Mother's Day" день@context мать@gen
 gen-of: "что-то чего-то" "birthday" день@ рождение@gen
 gen-of: "что-то чего-то" "(1) (2)" столько@ phrase:np@gen
-gen-of: "что-то чего-то" "(1) (2) of (article) (3) (4)" adjective@context* noun@context! phrase:np@gen
+gen-of: "что-то чего-то" "(1) (2) of (article) (3)" adjective@context* noun@context! phrase:np@gen
 gen-of: "что-то чего-то" "(1) (2) of (article) (3) (4)" adjective@context* noun@context! #number@genitive noun@genitive!
 gen-possession: "что-то чьё-то" "of (1)" phrase:np@gen#animate
 рад-dat: "рад чему-то" "happy because of [something]" рад@ any @dative+
@@ -27,12 +27,12 @@ gen-possession: "что-то чьё-то" "of (1)" phrase:np@gen#animate
 с-gen: "с (откуда, с какого времени) (A1)" "from (2)" с@ phrase:np@gen
 с-чего-взял: "с чего кто-то взял" "where did (3) get the idea that" с@ что@gen #animate взять@ ,@ что[that]@
 с-чего-взял: "с чего кто-то взял" "where did (3) get that idea from" с@ что@gen #animate этот@ взять@
-много-gen: "amount of чего-то (A1)" "a lot of (2)" много@ phrase:np@gen
-много-gen: "amount of чего-то (A1)" "(1) (2)" много[much]|сколько[many]|несколько@ phrase:np@gen
-много-gen: "amount of чего-то (A1)" "(1) [something]" немного[little]|немного@ phrase:np@gen
+много-gen: "amount of чего-то (A1)" "(1) (2)" много@ phrase:np@gen
+много-gen: "amount of чего-то (A1)" "(1) (2)" немного[little]|немного|несколько|много[much]|сколько[many]@ phrase:np@gen
 много-gen: "amount of чего-то (A1)" "(1) (article) couple of (3)" adjective@context? пара@ phrase:np@gen
 много-gen: "amount of чего-то (A1)" "enough [something]" достаточный@adv phrase:np@gen
 много-gen: "amount of чего-то (A1)" "(1) (2)" мало|мало[few]@ phrase:np@gen
+много-gen: "amount of чего-то (A1)" "(1) of (2)" чуть-чуть@ phrase:np@gen
 без-gen: "без чего-то (B1)" "without [something]" без@ phrase:np@gen
 at-instr: "утром / вечером / зимой ... (B2)" "(1) (2)" adjective@instrumental! #at-instr@instrumental
 at-instr: "утром / вечером / зимой ... (B2)" "in the (1)" #at-instr@instrumental
@@ -174,8 +174,8 @@ hyperbole: "for [time period] - hyperbole " "for [adjective]" phrase:np@instr#ti
 по-возможности: "по возможности" "if possible" по@ возможность@dat
 заниматься-чем-то: "заниматься (чем-то) (A1)" "deal with [activity]" заниматься@ phrase:np@instr
 заниматься-чем-то: "заниматься (чем-то) (A1)" "(deal,deals,dealt,2) with [activity]" phrase:np@instr заниматься@
-быть-кем-то: "быть (кем-то) (A1)" "(1) [someone]" быть@ phrase:np@instr
-быть-кем-то: "быть (кем-то) (A1)" "(1) [someone]" быть@ any instrumental
+быть-кем-то: "быть (кем-то) (A1)" "(1) ... (3)" быть@ any phrase:np@instr
+быть-кем-то: "быть (кем-то) (A1)" "(1) ... (3)" быть@ any adjective@instrumental
 стать-кем-то: "стать (кем-то) (A2)" "(become,becomes,became,becoming,1) (2)" стать|становиться@ phrase:np@instr
 стать-кем-то: "стать (кем-то) (A2)" "(1) ... (become,becomes,became,becoming,3)" кто@instr any стать|становиться@
 работать-кем-то: "работать (кем-то) (A2)" "(1) as [someone]" работать@ phrase:np@instr
@@ -358,8 +358,8 @@ dat-жаль: "жаль" "(1->nom) found it a pity" phrase:np@dat быть@past 
 dat-лучше: "кому-то лучше" "(1->nom)'d better " phrase:np@dat particle@? хороший@comp
 dat-лучше: "кому-то лучше" "(3->nom)'d better " хороший@comp particle@? @dative+
 по-отношению: "по отношению к чему-то" "with regards to [something]" по@ отношение[regard]@dat к@ phrase:np@dat
-рад-кому: "рад кому-то" "happy to see [someone]" рад@ any #animate@dative
-рад-кому: "рад кому-то" "happy to see [someone]" #animate@dative any рад@
+рад-кому: "рад кому-то" "happy to see [someone]" рад@ any phrase:np@dat#animate
+рад-кому: "рад кому-то" "happy to see [someone]" phrase:np@dat#animate any рад@
 учить-dat: "учить(ся)" "(5) (1) (3)" phrase:np@acc any phrase:np@dat any учить[teach]|научить[teach]@
 учить-dat: "учить(ся)" "(1) (2) (3)" учить[teach]|научить[teach]@ phrase:np@acc phrase:np@dat
 учить-dat: "учить(ся)" "(5) ... (3) ... (1)" phrase:np@dat any phrase:np@acc any учить[teach]|научить[teach]@
@@ -384,8 +384,9 @@ in-eyes-of: "'to', as in the eyes of" "to [someone]" #animate@dative
 конец-dat: "конец чему-то" "(1) never (end,ends,1)" phrase:np@dat нет[none]@ конец@gen
 конец-dat: "конец чему-то" "(1) (end,ends,ended,3)" phrase:np@dat particle@? прийти|приходить@ конец@
 сидеть-дома: "сидеть дома" "stay at home" сидеть@ any дома@
-что-за: "что за...?" "what kind of (4) is (2)" что@ #animate за@ noun
-что-за: "что за...?" "what kind of (4) is it" что@ это@ за@ noun
+что-за: "что за...?" "what kind of (4) is (2)" что@ phrase:np#animate за@ phrase:np
+что-за: "что за...?" "what kind of (4) is it" что@ это@ за@ phrase:np
+что-за: "что за...?" "what kind of (4) ..." что@ any за@ phrase:np
 за-время: "за весь день" "(2) (3)" за@ весь@acc #time@acc
 за-время: "за весь день" "in (2) (3)" за@ phrase:np@acc#time
 there-was-none: "не было чего-то" "there (were,was,were,4) no [of something]" не@ быть@ any phrase:np@gen
@@ -591,3 +592,4 @@ is-not: "нет чего-то - 'is not' (A1)" "(3) (are not,is not,was not,bein
 оказаться-instr: "оказаться" "(1) ... (3)" оказаться[prove]@ any phrase:np@instr
 себя-чувствовать: "чувствовать себя" "(4) (1) (3->adj)" adverb? себя@ adverb? чувствовать@
 себя-чувствовать: "чувствовать себя" "(1) (2) (4->adj)" adverb? чувствовать@ себя@ adjective
+за-instead-of: "за=вместо" "instead of (2)" за@ phrase:np@acc
