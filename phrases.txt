@@ -13,10 +13,11 @@ not-gen: "нет чего-то - 'there is no' (A1)" "there is (2)" нет[none]
 not-gen: "нет чего-то - 'there is no' (A1)" "(there is no,pl:there are no,3->v) (3)" нет[none]@ any phrase:np@gen
 not-gen: "нет чего-то - 'there is no' (A1)" "(there is no,there are no,3->v) (1)" phrase:np@gen any нет[none]@
 gen-of: "что-то чего-то" "Mother's Day" день@context мать@gen
+gen-of: "что-то чего-то" "Father's Day" день@context отец@gen
 gen-of: "что-то чего-то" "birthday" день@ рождение@gen
 gen-of: "что-то чего-то" "(1) (2)" столько@ phrase:np@gen
-gen-of: "что-то чего-то" "(1) (2) of (article) (3)" adjective@context* noun@context! phrase:np@gen
-gen-of: "что-то чего-то" "(1) (2) of (article) (3) (4)" adjective@context* noun@context! #number@genitive noun@genitive!
+gen-of: "что-то чего-то" "(1) (2) of (3)" adjective@context? noun@context! phrase:np@gen
+gen-of: "что-то чего-то" "(1) (2) (3) of (4)" adjective@context? noun@context! быть@past phrase:np@gen
 gen-possession: "что-то чьё-то" "of (1)" phrase:np@gen#animate
 рад-dat: "рад чему-то" "happy because of [something]" рад@ any @dative+
 рад-dat: "рад чему-то" "happy because of [something]" @dative+ any рад@
@@ -87,7 +88,8 @@ at-datpl: "по (утрам / вечерам ...) (B1)" "in the (2)" по@ #time
 у-кого-location: "у кого-то (место) (A2)" "at [someone]'s location" у@ phrase:np@gen#animate
 от-gen-departure: "от (откуда) (A2)" "from (2)" от@ phrase:np@gen
 от-кого-source: "ключ от чего-то" "key to (3)" ключ@ от@ phrase:np@gen
-до-point-of-destination: "до чего-то (A2)" "to [somewhere]" до@ phrase:np@gen
+до-point-of-destination: "до чего-то (A2)" "to (2)" до@ phrase:np@gen
+до-point-of-destination: "до чего-то (A2)" "to (2)" до@ #number@genitive
 до-какого-то-времени: "до какого-то времени (A2)" "until (2)" до@ phrase:np@gen
 до-какого-то-времени: "до какого-то времени (A2)" "until (2)" до@ завтра@
 после-чего-то: "после чего-то (A2)" "after [a time/doing something]" после@ phrase:np@gen
@@ -327,10 +329,10 @@ dat-интересно: "кому-то интересно" "(are,is,was,being,be
 dat-интересно: "кому-то интересно" "(1->nom) (are,is,was,being,been,be,are,were,am,1) interested in (3)" @dative+ интересный@ phrase:np
 dat-интересно: "кому-то интересно" "(are,is,was,being,been,be,are,were,am,1) (1->nom) not interested?" @dative+ не@ интересный@ ?@
 dat-интересно: "кому-то интересно" "(1->nom) (are,is,was,being,been,be,are,were,am,1) interested in" @dative+ интересный@
-dat-лет: "сколько@ кому-то лет" "how old is [someone]" сколько[many]@ any @dative+ any год@genpl
-dat-лет: "сколько@ кому-то лет" "(1->nom) (are,is,was,being,been,be,are,were,am,1) ... years old" @dative+ any год@genpl
-dat-лет: "сколько@ кому-то лет" "how old is [someone]" сколько[many]@ год@genpl @dative+
-dat-лет: "сколько@ кому-то лет" "[someone] is one year old" @dative+ any год@context
+dat-лет: "сколько@ кому-то лет" "how old (are,is,was,being,been,be,are,were,am,2) [someone]" сколько[many]@ @dative+ any год@genitive
+dat-лет: "сколько@ кому-то лет" "(1->nom) (are,is,was,being,been,be,are,were,am,1) ... (3) years old" @dative+ any #number год@genitive
+dat-лет: "сколько@ кому-то лет" "how old (are,is,was,being,been,be,are,were,am,3) (3)" сколько[many]@ год@genitive @dative+
+dat-лет: "сколько@ кому-то лет" "(1) (are,is,was,being,been,be,are,were,am,1) one year old" phrase:np@dat any год@context
 both-и-и: "и ... , и ..." "both ... and" и@ any ,@ и@
 either-or-или-или: "или ... , или ..." "either ... , or" или@ any ,@ или@
 после-того-как: "после того как" "after" после@ тот@genitive как[when]|как@
@@ -475,7 +477,7 @@ seeyou: "до встречи" "see you (2)" до@ #time@gen
 готов-к: "готов к" "ready for (3)" готовый@ к@ phrase:np@dat
 face-to-face: "face to face" "face to face" лицо@instr к@ лицо@dat
 жениться-на: "жениться на" "marry (3)" жениться@ на@ phrase:np@prep
-поздравлять-с-instr: "поздравлять с чем-то" "congratulations (3)" поздравлять@ с@ phrase:np@instr
+поздравлять-с-instr: "поздравлять с чем-то" "congratulations on (3)" поздравлять@ с@ phrase:np@instr
 самый-adj: "самый большой" "the most (2)" самый@ adjective
 двух-шагах: "в двух шагах" "а stone's throw from" в@ два@preppl шаг@preppl от@ phrase:np@gen
 скажите: "скажите пожалуйста" "could you please tell me" сказать@imprpl ,@ пожалуйста@ ,@
