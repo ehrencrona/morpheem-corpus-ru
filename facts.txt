@@ -338,7 +338,7 @@ grammar: егоadj@prepf, tag: prepositional
 grammar: егоadj@genf, tag: genitive
 письм--о: letter, pl: letters, inflect: -письмо
 для: for, pos: prep
-вокзал--: railway station, pl: railway stations, inflect: masc, tag: at
+вокзал--: railway station, pl: railway stations, -2: train station, -3: station, pl-3: stations, inflect: masc, tag: at
 phrase: если-то
 grammar: -глядеть@inf, tag: verb
 grammar: -mascь@genpl, tag: genitive
@@ -455,7 +455,7 @@ grammar: -кошка@genpl, tag: genitive
 grammar: -звать@inf, tag: verb
 phrase: there-will-be-none
 быстр--ый: fast, comp: faster, super: fastest, inflect: adj
-назад: back
+назад: back, -2: ago
 лес--: forest, pl: forests, inflect: -лес
 grammar: -стул@instrpl, tag: instrumental
 grammar: -стул@datpl, tag: dative
@@ -820,7 +820,7 @@ phrase: в-tag-time
 grammar: it-im-ite@impr, tag: verb
 grammar: -вернуться@2pl, tag: verb
 phrase: кого-то-нет
-друг--ой: other, inflect: ойadj, mask: shortandadv
+друг--ой: other, -2: another, inflect: ойadj, mask: shortandadv
 даже: even
 grammar: -вернуться@2, tag: verb
 дел--о: matter, pl: matters, inflect: neu
@@ -1058,14 +1058,14 @@ phrase: за-что
 вредно: harmful
 следи--ть: look after, 3: looks after, past: looked after, prog: looking after, inflect: -ходить
 следи--ть[eyeon]: keep an eye on, 3: keeps an eye on, past: kept an eye on, prog: keeping an eye on, inflect: -ходить
-следи--ть[follow]: follow, past: looked after, prog: looking after, inflect: -ходить
+следи--ть[follow]: follow, past: followed, prog: looking after, inflect: -ходить
 grammar: -месяц@genpl, tag: genitive
 grammar: -один@accf, tag: accusative
 напротив: across from, pos: prep
 phrase: то-что
 двор--: yard, pl: yards, inflect: masc
 grammar: -они@genpl, tag: genitive
-поед--<хать: go (by vehicle), past: went (by vehicle), prog: going (by vehicle), inflect: -поехать
+поед--<хать: go, past: went, prog: going, inflect: -поехать
 правильн--ый: correct, adv: correctly, inflect: -правильный, mask: compandshort
 phrase: когда-то
 обраща--ться: turn to, 3: turns to, past: turned to, prog: turning to, inflect: -пытаться
@@ -1291,7 +1291,7 @@ grammar: -он@datalt, tag: dative
 скор--ый: fast, adv: quickly, comp: faster, super: fastest, inflect: adj, mask: short
 phrase: ни-gen
 grammar: -лететь@1, tag: verb
---себя: -self, -2: himself, -3: herself, -4: themselves, -5: ourselves, inflect: -себя, tag: animate, tag: in
+--себя: -self, -2: himself, -3: herself, -4: themselves, -5: ourselves, -6: myself, inflect: -себя, tag: animate, tag: in
 бы: would particle, pos: part
 времен--<<я: time, pl: times, inflect: -время, tag: time
 phrase: как-так
@@ -1970,3 +1970,5 @@ phrase: себя-чувствовать
 вылечи--ть: treat, 3: treats, past: treated, prog: treating, inflect: -учить
 phrase: за-instead-of
 phrase: dat-весело
+phrase: давай
+phrase: чтобы-past
