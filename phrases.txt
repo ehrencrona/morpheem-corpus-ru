@@ -94,7 +94,7 @@ at-datpl: "по (утрам / вечерам ...) (B1)" "in the (2)" по@ #time
 до-какого-то-времени: "до какого-то времени (A2)" "until (2)" до@ завтра@
 после-чего-то: "после чего-то (A2)" "after [a time/doing something]" после@ phrase:np@gen
 во-время-чего-то: "во время чего-то (A2)" "in the [rain/snow->nom]" в@ время@acc #rain@genitive
-во-время-чего-то: "во время чего-то (A2)" "during [some activity]" в@ время@acc genitive
+во-время-чего-то: "во время чего-то (A2)" "during (3)" в@ время@acc phrase:np@gen
 около-чего-то: "около чего-то (B1)" "around (2)" около@ phrase:np@gen
 далеко-от-чего-то: "далеко/недалеко от чего-то (B1)" "not far away from [something]" недалеко@ от@ phrase:np@gen
 далеко-от-чего-то: "далеко/недалеко от чего-то (B1)" "far away from [something]" далеко@ от@ phrase:np@gen
@@ -136,7 +136,7 @@ comp-gen: "лучше than genitive (B1) " "(1) than (article) [something]" comp
 hyperbole: "for [time period] - hyperbole " "for [adjective]" phrase:np@instr#time
 доволен-instr: "доволен" "(1) (are,is,was,being,been,be,are,were,am,1) happy with (4->acc)" phrase:np@nom adverb? довольный@ phrase:np@instr
 доволен-instr: "доволен" "(1) (were,was,1) (3) happy with (5->acc)" phrase:np@nom быть@ adverb? довольный@ phrase:np@instr
-ждать-что-то: "ждать for something (B1)" "wait for (article) (2)" ждать@ particle@? phrase:np@acc
+ждать-что-то: "ждать for something (B1)" "wait for (article) (3)" ждать@ particle@? phrase:np@acc
 ждать-что-то: "ждать for something (B1)" "wait for [something or someone]" #animate@acc ждать@
 похоже: "похоже" "apparently" похожий@adv
 за-direction: "за (направление) (B1)" "behind [direction]" за@ phrase:np@acc
@@ -165,12 +165,12 @@ hyperbole: "for [time period] - hyperbole " "for [adjective]" phrase:np@instr#ti
 кому-то-нужно: "(кому-то) нужно[need to] (A1)" "(1->nom) needed" @dative+ быть@past нужно@
 кому-то-нужно: "(кому-то) нужно[need to] (A1)" "(1->nom) will (3)" @dative+ быть[fut]@ нужно@
 кому-то-нужно: "(кому-то) нужно[need to] (A1)" "(1->nom) (2) (need,needs,needed,1)" @dative+ adverb? нужно@
-на-твоем-месте: "на твоём месте" "if (1) were you, (1) would (6->1sg)" phrase:np бы@ на@ adjective@prep* место@prep verb
-на-твоем-месте: "на твоём месте" "if (1) were you, (1) would not (7->inf)" phrase:np бы@ на@ adjective@prep* место@prep не@ verb
+на-твоем-месте: "на твоём месте" "if (1) (were,was,1) in (4) position, (1) would (6->1sg)" phrase:np бы@ на@ adjective@prep* место@prep verb
+на-твоем-месте: "на твоём месте" "if (1) (were,was,1) in (4) position, (1) would not (7->inf)" phrase:np бы@ на@ adjective@prep* место@prep не@ verb
 на-твоем-месте: "на твоём месте" "in (2) position" на@ adjective@prep место@prep
 кому-то-можно: "(кому-то) можно (A1)" "(1->nom) (2) may" @dative+ adverb? можно@
 кому-то-можно: "(кому-то) можно (A1)" "may (3->nom) (4) (5->1sg)" можно@ particle@? @dative+ adverb? verb
-кому-то-нельзя: "(кому-то) нельзя (B1) TODO:verb phrase, translation" "[someone->nom] may not" phrase:np@dat нельзя@
+кому-то-нельзя: "(кому-то) нельзя (B1)" "[someone->nom] may not" phrase:np@dat нельзя@
 по-очереди: "по очереди" "one by one" по@ очередь[turn]@dat
 по-очереди: "по очереди" "one by one" по@ adjective@? порядок@dat
 по-возможности: "по возможности" "if possible" по@ возможность@dat
@@ -181,6 +181,7 @@ hyperbole: "for [time period] - hyperbole " "for [adjective]" phrase:np@instr#ti
 стать-кем-то: "стать (кем-то) (A2)" "(become,becomes,became,becoming,1) (2)" стать|становиться@ phrase:np@instr
 стать-кем-то: "стать (кем-то) (A2)" "(1) ... (become,becomes,became,becoming,3)" кто@instr any стать|становиться@
 работать-кем-то: "работать (кем-то) (A2)" "(1) as [someone]" работать@ phrase:np@instr
+работать-кем-то: "работать (кем-то) (A2)" "who (do,does,did,doing,done,3) ... work as" кто@instr any работать@
 над-чем-то: "над (чем-то) (A2)" "over [something]" над@ phrase:np@instr
 под-чем-то: "под (чем-то) (A2)" "under (2)" под@ phrase:np@instr
 рядом-с: "рядом с (чем-то) (A2)" "next to (3)" рядом@ с@ phrase:np@instr
@@ -190,12 +191,12 @@ hyperbole: "for [time period] - hyperbole " "for [adjective]" phrase:np@instr#ti
 за-место: "за (чем-то - место - behind) (B1)" "" phrase:за-окном
 за-after: "за (after) (B1)" "after [something]" за@ phrase:np@instr
 следить-за-кем-то: "следить за - look after" "look after (3)" следить@ за@ phrase:np@instr
-за-столом: "за столом" "at the table/desk [location]" за@ adjective@instrumental* стол@instr
+за-столом: "за столом" "at (2) (3)" за@ adjective@instrumental* стол@instrumental
 за-границей: "за границей" "abroad" за@ граница@instr
 за-границей: "за границей" "abroad" за@ граница@acc
 перед-location: "перед (где)" "in front of [something]" перед@ phrase:np@instr
 перед-time: "перед (когда) (B1)" "before [some moment in time]" перед@ phrase:np@instr
-за-goal: "за чем-то (цель / 'to get') (B1)" "for [something]" за@ phrase:np@instr
+за-goal: "за чем-то (цель / 'to get') (B1)" "to get (2)" за@ phrase:np@instr
 за-time-of-action: "за (время проишествия) (B2)" "during [time of action]" за@ phrase:np@instr
 интересоваться-чем-то: "интересоваться (чем-то) (A2)" "(be,is,was,being,been,be,are,were,1) interested in [something]" интересоваться@ phrase:np@instr
 интересоваться-чем-то: "интересоваться (чем-то) (A2)" "(1) about (2)" интересоваться[ask]|поинтересоваться[ask]@ phrase:np@instr
@@ -204,6 +205,7 @@ hyperbole: "for [time period] - hyperbole " "for [adjective]" phrase:np@instr#ti
 в-place: "в (где-то) (A1)" "on the (2)" в@ меню|интернет@prep
 в-place: "в (где-то) (A1)" "in (2)" в@ phrase:np@prep
 в-place: "в (где-то) (A1)" "in (2)" в@ phrase:np@loc
+в-place: "в (где-то) (A1)" "in which" в@ который|который[which]@prep
 на-place: "на (где-то)" "outside" phrase:на-улица@prep
 на-place: "на (где-то)" "on the back" на@ спина@prep
 на-place: "на (где-то)" "at [a place]" на@ phrase:np@prep#at
@@ -313,7 +315,7 @@ dat-adv: "кому-то холодно/..." "(are,is,was,being,been,be,are,were,
 кому-то-достаточно: "кому-то достаточно/много чего-то" "(1->nom) did not have (4)" phrase:np@dat не@ быть@ phrase:много-gen
 dat-удобно: "кому-то удобно" "whenever suits (3)" ,@ когда@ pronoun@dative удобный@
 dat-удобно: "кому-то удобно" "it suits (1)" pronoun@dative удобный@
-все-равно: "всё равно" "nevertheless" весь@ равный@
+все-равно: "всё равно" "nevertheless" весь|всё@ равный@
 давать-verb: "давать кому-то делать что-то" "(1) (2) (3->1)" давать[allow]@ phrase:np@dat verb
 давать-verb: "давать кому-то делать что-то" "(1) (do,does,did,1) not let (2) (5->1)" phrase:np@nom phrase:np@dat не@ давать[allow]@ verb
 давать-verb: "давать кому-то делать что-то" "let (4) (2->1) ..." давать[allow]@ verb@* any phrase:np@dat
@@ -360,6 +362,7 @@ dat-жаль: "жаль" "(1->nom) found it a pity" phrase:np@dat быть@past 
 dat-лучше: "кому-то лучше" "(1->nom)'d better " phrase:np@dat particle@? хороший@comp
 dat-лучше: "кому-то лучше" "(3->nom)'d better " хороший@comp particle@? @dative+
 по-отношению: "по отношению к чему-то" "with regards to [something]" по@ отношение[regard]@dat к@ phrase:np@dat
+по-отношению: "по отношению к чему-то" "relate to (4)" иметь@ отношение[regard]@ к@ phrase:np@dat
 рад-кому: "рад кому-то" "happy to see [someone]" рад@ any phrase:np@dat#animate
 рад-кому: "рад кому-то" "happy to see [someone]" phrase:np@dat#animate any рад@
 учить-dat: "учить(ся)" "(5) (1) (3)" phrase:np@acc any phrase:np@dat any учить[teach]|научить[teach]@
@@ -427,7 +430,7 @@ dat-скучно: "кому-то скучно" "(1->nom) (are,is,was,being,been,
 ещё-нет: "ещё не" "not yet" ещё@ не@
 ещё-comp: "ещё больше" "even (2)" ещё@ comp
 ни-gen: "ни одного чего-то" "not (2)" ни@ phrase:np@gen
-ни-gen: "ни одного чего-то" "not a single (3)" ни@ один@ @genitive+
+ни-gen: "ни одного чего-то" "not a single (3)" ни@ один@ phrase:np@gen
 станция-метро: "станция метро" "subway station" станция@context метро@gen
 возле-чего-то: "возле чего-то" "near (2)" возле@ phrase:np@gen
 так-как-because: "так как = because" "because" так@ как[like]|как[when]|как@
@@ -465,8 +468,8 @@ auto-np: "np" "(1)" phrase:друг-другу
 в-tag-time: "в время/раз/момент..." "lately" в@ последний@accusative время@accusative
 в-tag-time: "в время/раз/момент..." "lately" последний@accusative время@accusative
 в-tag-time: "в время/раз/момент..." "(2)" в@ phrase:np@acc#time
-кого-то-нет: "кого-то нет/не было/не будет" "(1) (2) (3)" phrase:np@gen#animate не@ быть[fut]@3
-кого-то-нет: "кого-то нет/не было/не будет" "(1) (2) (3)" phrase:np@gen#animate не@ быть@pastn
+кого-то-нет: "кого-то нет/не было/не будет" "(1->nom) will not be" phrase:np@gen#animate не@ быть[fut]@3
+кого-то-нет: "кого-то нет/не было/не будет" "(1->nom) (3) (2) " phrase:np@gen#animate не@ быть@pastn
 time-after-time: "день за днём" "(1) after (3)" accusative за@ instrumental
 за-то-что: "за то, что" "because" за@ тот@ ,@ что@
 из-за-того-что: "из-за того, что" "because" из-за@ тот@gen ,@ что@
@@ -479,7 +482,7 @@ face-to-face: "face to face" "face to face" лицо@instr к@ лицо@dat
 жениться-на: "жениться на" "marry (3)" жениться@ на@ phrase:np@prep
 поздравлять-с-instr: "поздравлять с чем-то" "congratulations on (3)" поздравлять@ с@ phrase:np@instr
 самый-adj: "самый большой" "the most (2)" самый@ adjective
-двух-шагах: "в двух шагах" "а stone's throw from" в@ два@preppl шаг@preppl от@ phrase:np@gen
+двух-шагах: "в двух шагах" "а stone's throw from (5)" в@ два@preppl шаг@preppl от@ phrase:np@gen
 скажите: "скажите пожалуйста" "could you please tell me" сказать@imprpl ,@ пожалуйста@ ,@
 на-for: "на = for " "for (2)" на@ phrase:np@acc
 на-for: "на = for " "for (2)" на@ сегодня|завтра@
@@ -489,8 +492,8 @@ face-to-face: "face to face" "face to face" лицо@instr к@ лицо@dat
 сесть-на: "сесть на" "(take,takes,took,1) (article) (3)" сесть@ на@ phrase:np#transport
 врать-dat: "врать кому-то" "(1) to (2)" врать@ phrase:np@dat
 врать-dat: "врать кому-то" "(2) to (1)" phrase:np@dat врать@
-предложить-dat: "предложить кому-то" "(1) (2)" предложить@ phrase:np@dat
-предложить-dat: "предложить кому-то" "(2) (1)" phrase:np@dat предложить@
+предложить-dat: "предложить кому-то" "(1) (2)" предложить|предложить[suggest]@ phrase:np@dat
+предложить-dat: "предложить кому-то" "(2) (1)" phrase:np@dat предложить|предложить[suggest]@
 разрешить-dat: "разрешить кому-то" "(1) (2)" разрешить@ phrase:np@dat
 разрешить-dat: "разрешить кому-то" "(2) (1)" phrase:np@dat разрешить@
 писать-dat: "писать кому-то" "(1) to (2)" писать|написать@ phrase:np@dat
@@ -541,12 +544,14 @@ keep-track: "следить за - follow" "follow (3)" следить[follow]@ 
 keep-an-eye-on: "следить за - keep an eye on" "keep an eye on (3)" следить[eyeon]@ any за@ phrase:np@instr
 counting-on: "надеяться на что-то" "(are,is,was,being,been,be,are,were,am,1) counting on (3)" надеяться@ на@ phrase:np@acc
 counting-on: "надеяться на что-то" "(are,is,was,being,been,be,are,were,am,3) counting on (2)" на@ phrase:np@acc надеяться@
-в-гости: "в гости" "(1->pres) visit" идти|ехать|приходить|ходить|пойти|прийти|лететь|поехать|приехать|ездить@ any в@ гость@loc
+в-гости: "в гости" "(1->pres) to visit" идти|ехать|приходить|ходить|пойти|прийти|лететь|поехать|приехать|ездить@ any в@ гость@loc
+в-гости: "в гости" "(3->pres) to visit" в@ гость@loc идти|ехать|приходить|ходить|пойти|прийти|лететь|поехать|приехать|ездить@
 в-гостях: "в гостях" "for a visit" в@ гость@locpl
-продолжать-verb: "продолжать verb" "keep (2->prog)" продолжать@ verb
+продолжать-verb: "продолжать verb" "(1) (2->prog)" продолжать@ verb
 в-время2: "в месяце / ..." "(2) (3)" в@ adjective@prep? #time@prep
 в-время2: "в месяце / ..." "at (2)" в@ phrase:np@prep#time
 оставить-себе: "оставить себе" "(keep,keeps,kept,1) (2)" оставить@ phrase:np@acc себя@dat
+оставить-себе: "оставить себе" "(keep,keeps,kept,1) (3)" оставить@ себя@dat phrase:np@acc
 идти-за: "идти за кем-то" "follow (3)" идти|ехать|пойти@ за@ phrase:np@instr
 кактак: "как так" "how" как@ так@
 скорая-помощь: "скорая помощь" "ambulance" скорый@context помощь@context
@@ -597,3 +602,10 @@ is-not: "нет чего-то - 'is not' (A1)" "(3) (are not,is not,was not,bein
 за-instead-of: "за=вместо" "instead of (2)" за@ phrase:np@acc
 dat-весело: "кому-то весело" "(1->nom) (are,is,was,being,been,be,are,were,am,1) having (2)" phrase:np@dat весёлый@adv
 dat-весело: "кому-то весело" "(1->nom) (2) (3) (4)" phrase:np@dat быть@past adverb? весёлый@adv
+давай: "давай" "come on" давать[allow]@imperative
+чтобы-past: "чтобы past" "(1) (2->present)" чтобы@ past
+чтобы-past: "чтобы past" "(1) ... " чтобы@ any быть@past
+давай-verb: "давай verb" "should we (2) (3)" давать[allow]@imperative adverb? verb@1pl any ?@
+давай-verb: "давай verb" "let's (2) (3)" давать[allow]@imperative adverb? verb@1pl
+давай-nom: "давай я" "(1) (2)" давать[allow]@ phrase:np@nom
+I-dont-care: "мне всё равно" "(1->nom) (do,does,did,1) not care" phrase:np@dat весь|всё@ равный@
