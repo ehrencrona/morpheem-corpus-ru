@@ -475,6 +475,7 @@ grammar: adj@accinanm, tag: accusative
 grammar: adj@instrm, tag: instrumental
 phrase: до-какого-то-времени
 боли--<еть: is ill, inf: be ill, past: was ill, pastpl: were ill, prog: being ill, inflect: -смотреть
+боли--<еть[hurt]: hurt, 3: hurts, inflect: -смотреть
 больниц--а: hospital, pl: hospitals, inflect: -улица, tag: at
 grammar: -есть@2pl, tag: verb
 звони--ть: call, 3: calls, past: called, prog: calling, inflect: -дарить
@@ -1012,7 +1013,8 @@ grammar: -пять@instrpl, tag: instrumental
 phrase: к-чему-то
 пешком: on foot, pos: adv
 отсюда: from here
-столько: so much, pos: adv
+столько: so many, pos: adv
+столько[much]: so much, pos: adv
 grammar: -пять@preppl, tag: prepositional
 grammar: adj@shortm
 phrase: к-time
