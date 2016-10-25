@@ -162,7 +162,7 @@ grammar: y-esh-et@2pl, tag: verb
 grammar: -день@nom
 grammar: -что@nom
 grammar: adj@prepm, tag: prepositional
-город--: city, pl: cities, inflect: masc3
+город--: city, pl: cities, -2: town, pl-2: towns, inflect: masc3
 grammar: adj@prepf, tag: prepositional
 наш--: our, inflect: -наш, tag: possessive, mask: nonstd
 grammar: v@1, tag: verb
@@ -663,7 +663,7 @@ phrase: за-столом
 сложн--ый: complicated, adv: complicatedly, comp: more complicated, super: most complicated, inflect: ныйadj
 grammar: -сказать@inf, tag: verb
 grammar: -он@prep, tag: prepositional
-бабушк--а: grandmother, pl: grandmothers, inflect: -кошка, tag: animate
+бабушк--а: grandmother, pl: grandmothers, -2: grandma, pl-2: grandmas, inflect: -кошка, tag: animate
 реклам--а: advertisement, pl: advertisements, inflect: fem
 phrase: за-границей
 grammar: neuie@prep, tag: prepositional
@@ -1460,7 +1460,7 @@ phrase: за-time-of-action
 видн--ый: visible, adv: visibly, inflect: ныйadj, mask: adv
 знакомств--о: acquaintance, pl: acquaintances, inflect: neu
 прекрати--ть: stop, 3: stops, past: stopped, prog: stopping, inflect: -спросить, tag: perfective
-познакоми--ться: get to know, 3: gets to know, past: got to know, prog: getting to know, -2: get acquainted, 3-2: gets acquainted, past-2: got acquainted, prog-2: getting acquainted, pastpart-2: got acquainted, inflect: -нравиться, tag: perfective
+познакоми--ться: get to know, 3: gets to know, past: got to know, prog: getting to know, -2: get acquainted, 3-2: gets acquainted, past-2: got acquainted, prog-2: getting acquainted, pastpart-2: got acquainted, -3: meet, 3-3: meets, past-3: met, prog-3: meeting, pastpart-3: met, inflect: -нравиться, tag: perfective
 ладно: all right, pos: adv
 phrase: при-condition
 возможност--ь: possibility, pl: possibilities, -2: opportunity, pl-2: opportunities, -3: chance, pl-3: chances, inflect: femь
@@ -1975,3 +1975,4 @@ phrase: чтобы-past
 phrase: давай-verb
 phrase: давай-nom
 богат--ый: rich, comp: richer, super: richest, inflect: adj
+phrase: I-dont-care
