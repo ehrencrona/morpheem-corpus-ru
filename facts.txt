@@ -39,7 +39,7 @@ grammar: -она@nom
 на: on, pos: prep, tag: untranslatable
 газон--: lawn, pl: lawns, inflect: masc, tag: on
 работа--ть: work, 3: work, past: worked, prog: working, inflect: ать
-работа--ть[open]: is open, inf: be open, past: was open, pastpl: were open, inflect: ать
+работа--ть[open]: are open, 1: am open, 3: is open, inf: be open, past: was open, pastpl: were open, pl: are open, pastpart: been open, prog: being open, inflect: ать
 grammar: ать@1, tag: verb
 grammar: y-esh-et@3, tag: verb
 игра--ть: play, 3: plays, past: played, prog: playing, inflect: ать
@@ -852,7 +852,7 @@ phrase: at-instr
 надо: need to, pos: adv
 grammar: sya@3pl, tag: verb
 через: , pos: prep, tag: untranslatable
-спроси--ть: ask, 3: asks, past: asked, prog: asking, inflect: -спросить
+спроси--ть: ask, 3: asks, past: asked, prog: asking, inflect: -спросить, tag: perfective
 phrase: more-than
 тогда: then, pos: conj
 grammar: -вернуться@1, tag: verb
@@ -1363,7 +1363,7 @@ grammar: -кто@prep, tag: prepositional
 встреча--ться[date]: date, 3: dates, past: dated, prog: dating, inflect: -пытаться
 phrase: нет-равных
 grammar: -бояться@3, tag: verb
-начн--<ать: begin, 3: begins, past: began, prog: beginning, inflect: -начать
+начн--<ать: begin, 3: begins, past: began, prog: beginning, inflect: -начать, tag: perfective
 следующ--ий: next, inflect: eeadj, mask: nonstd
 продолжа--ть: continue, 3: continues, past: continued, prog: continuing, -2: keep, 3-2: keeps, past-2: kept, prog-2: keeping, pastpart-2: kept, inflect: ать
 grammar: sya@1pl, tag: verb
@@ -1974,3 +1974,4 @@ phrase: давай
 phrase: чтобы-past
 phrase: давай-verb
 phrase: давай-nom
+богат--ый: rich, comp: richer, super: richest, inflect: adj
