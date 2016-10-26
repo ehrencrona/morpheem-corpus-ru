@@ -126,7 +126,7 @@ grammar: femь@instr, tag: instrumental
 стол--: table, pl: tables, inflect: masc
 grammar: masc@instr, tag: instrumental
 стул--: chair, pl: chairs, inflect: -стул
-за: behind, pos: prep, tag: untranslatable
+за: behind, -2: during, -3: after, pos: prep, tag: untranslatable
 штор--а: curtain, pl: curtains, inflect: fem
 двер--ь: door, pl: doors, inflect: femь
 открыт--ый: open, adv: openly, inflect: adj, mask: comp
@@ -1058,7 +1058,7 @@ grammar: -сестра@genpl, tag: genitive
 phrase: за-что
 вредно: harmful
 следи--ть: look after, 3: looks after, past: looked after, prog: looking after, inflect: -ходить
-следи--ть[eyeon]: keep an eye on, 3: keeps an eye on, past: kept an eye on, prog: keeping an eye on, inflect: -ходить
+следи--ть[eyeon]: keep an eye on, 3: keeps an eye on, past: kept an eye on, prog: keeping an eye on, -2: make sure, 3-2: makes sure, past-2: made sure, prog-2: making sure, pastpart-2: made sure, inflect: -ходить
 следи--ть[follow]: follow, past: followed, prog: looking after, inflect: -ходить
 grammar: -месяц@genpl, tag: genitive
 grammar: -один@accf, tag: accusative
@@ -1070,7 +1070,7 @@ grammar: -они@genpl, tag: genitive
 правильн--ый: correct, adv: correctly, inflect: -правильный, mask: compandshort
 phrase: когда-то
 обраща--ться: turn to, 3: turns to, past: turned to, prog: turning to, inflect: -пытаться
-обраща--ться[handle]: handle, 3: handles, past: handled, prog: handling, inflect: -пытаться
+обраща--ться[handle]: handle, 3: handles, past: handled, prog: handling, -2: deal with, 3-2: deals with, past-2: dealt with, prog-2: dealing with, inflect: -пытаться
 обраща--ться[treat]: treat, 3: treats, past: treated, prog: treating, inflect: -пытаться
 grammar: adj@shortn
 grammar: neuie@dat, tag: dative
@@ -1100,7 +1100,7 @@ grammar: neu@genpl, tag: genitive
 закрыт--ый: closed, inflect: adj, mask: comp
 phrase: чтобы-that
 храни--ть: keep, 3: keeps, past: kept, prog: keeping, inflect: -дарить
-уверенн--ый: sure, adv: surely, inflect: -уверенный, mask: comp
+уверенн--ый: sure, adv: surely, -2: certain, inflect: -уверенный, mask: comp
 grammar: -идти@pastf, tag: verb
 grammar: -пять@genpl, tag: genitive
 вста--вать: get up, past: got up, prog: getting up, inflect: -давать
@@ -1442,7 +1442,7 @@ grammar: -дерево@pl
 броси--ть[throw]: throw, 3: throws, past: threw, prog: throwing, inflect: -бросить, tag: perfective
 phrase: заниматься-чем-то
 шаг--: step, pl: steps, inflect: masc
-находи--ться: are located, 1: am located, inf: be located, pastpl: were located, past: was located, pl: are located, prog: begin located, inflect: -находиться
+находи--ться: are located, 1: am located, 3: is located, inf: be located, pastpl: were located, past: was located, pl: are located, prog: being located, -2: are, 3-2: is, past-2: was, prog-2: being, pastpart-2: been, inf-2: be, pl-2: are, pastpl-2: were, 1-2: am, pastpart: been located, inflect: -находиться
 действительно: really, pos: adv
 grammar: аться@3pl, tag: verb
 grammar: аться@2, tag: verb
@@ -1581,7 +1581,7 @@ grammar: -плохой@comp
 grammar: -два@accinanfpl, tag: accusative
 phrase: перед-тем-как
 grammar: -маленький@comp, tag: at-instr
-рядом: close by, pos: prep
+рядом: close by, -2: near, -3: next to, pos: prep
 плать--е: dress, pl: dresses, inflect: -платье
 одежд--а: clothes, inflect: fem, mask: pl
 phrase: кому-то-кажется
