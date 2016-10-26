@@ -268,7 +268,7 @@ grammar: adj@datpl, tag: dative
 grammar: adj@datn, tag: dative
 grammar: adj@datf, tag: dative
 grammar: -ты@gen, tag: genitive, tag: animate
-сво--й: own, -2: my, -3: his, -4: her, -5: its, inflect: -свой, mask: nonstd
+сво--й: own, -2: my, -3: his, -4: her, -5: its, -6: your, inflect: -свой, mask: nonstd
 grammar: -она@gen, tag: genitive
 grammar: -друг@datpl, tag: dative
 grammar: -давать@1, tag: verb
@@ -376,7 +376,7 @@ grammar: adj@accanm, tag: accusative
 phrase: в-направление
 учител--ь: teacher, pl: teachers, inflect: -учитель, tag: animate
 grammar: -учить@3pl, tag: verb
-к--: , inflect: oprep, tag: untranslatable
+к--: to, -2: towards, inflect: oprep, tag: untranslatable
 но: but, pos: conj
 из: from, pos: prep
 phrase: в-time
@@ -519,7 +519,7 @@ phrase: чем-чем
 grammar: -есть@pastm, tag: verb
 grammar: -дать@2, tag: verb
 phrase: без-gen
-осен--ь: autumn, pl: autumns, inflect: femь, tag: at-instr, tag: time, mask: pl
+осен--ь: fall, pl: autumns, -2: autumn, inflect: femь, tag: at-instr, tag: time, mask: pl
 молок--о: milk, inflect: neu, mask: pl
 grammar: -сестра@pl
 обычн--ый: ordinary, adv: ordinarily, inflect: ныйadj, mask: comp
@@ -697,7 +697,7 @@ grammar: -глаз@genpl, tag: genitive
 phrase: did-not-have
 рыб--а: fish, inflect: fem-animate
 grammar: -mascь@dat, tag: dative
-плати--ть: pay, 3: pays, past: paid, prog: paying, inflect: -хватить
+плати--ть: pay, 3: pays, past: paid, prog: paying, pastpart: paid, inflect: -хватить
 заказыва--ть: order, 3: orders, past: ordered, prog: ordering, inflect: ать
 phrase: will-have
 номер--: number, pl: numbers, inflect: masc3
@@ -726,7 +726,6 @@ phrase: ни-ни
 их: their, pos: pron, tag: possessive
 лекарств--о: medication, pl: medications, inflect: neu
 grammar: neuie@pl
-phrase: need-to-be
 втор--ой: second, adv: secondly, inflect: -второй, tag: ordinal, mask: shortandadv
 куда: where, pos: quest, tag: question
 grammar: егоadj@instrf, tag: instrumental
@@ -904,7 +903,7 @@ phrase: похоже
 grammar: -идти@inf, tag: verb
 phrase: через-direction
 grammar: -спросить@1, tag: verb
-лишь: only
+лишь: only, pos: adv
 значи--ть: mean, 3: means, past: meant, prog: meaning, inflect: -значить
 grammar: -мочь@pastm, tag: verb
 phrase: за-time
@@ -1003,7 +1002,7 @@ phrase: за-стол
 grammar: -три@instrpl, tag: instrumental
 извини--ть: excuse, 3: excuses, past: excused, prog: excusing, inflect: -дарить
 прости--ть: forgive, 3: forgives, past: forgave, prog: forgiving, inflect: -простить, tag: something-to-someone
-редк--ий: rarely, adv: rarely, comp: more rarely, inflect: adj, inflect: -низкий, mask: allbutadvandcomp
+редк--ий: rarely, adv: rarely, comp: more rarely, inflect: -низкий, mask: allbutadvandcomp
 grammar: -три@preppl, tag: prepositional
 phrase: go-do
 grammar: -пять@pl
@@ -1978,3 +1977,4 @@ phrase: давай-verb
 phrase: давай-nom
 богат--ый: rich, comp: richer, super: richest, inflect: adj
 phrase: I-dont-care
+любов--ь: love, inflect: -мышь, mask: pl
