@@ -20,7 +20,7 @@ gen-of: "бутылка вина" "bottle of wine" "(1) (2) (3) of (4)" adjectiv
 gen-possession: "кошка Саши" "Sasha's cat" "of (1)" phrase:np@gen#animate
 рад-dat: "рад тебе" "happy because of you" "happy because of [something]" рад@ any @dative+
 рад-dat: "рад тебе" "happy because of you" "happy because of [something]" @dative+ any рад@
-чем-чем: "чем больше, тем лучше " "the more, the better" "the (2) ... , the (7)" что@instr comp any ,@ тот@instrn any comp
+чем-чем: "чем больше, тем лучше" "the more, the better" "the (2) ... , the (7)" что@instr comp any ,@ тот@instrn any comp
 если-то: "если ... то" "if ... then" "if ... , then" если@ any ,@ то@
 с-gen: "с шести лет" "since I was six" "since (2) (3) of age" с@ #number@genitive год@genitive
 с-gen: "с шести лет" "since I was six" "since (2) (3)" с@ phrase:np@gen#time
@@ -41,7 +41,7 @@ more-than: "больше, чем нужно" "more than is needed" "(1) and (3) 
 more-than: "больше, чем нужно" "more than is needed" "(1) ... than" comp any ,@ чем@
 при-prep: "телефон при мне" "the phone is with me" "is with [him/her]" при@ @prepositional+
 сам-по-себе: "сам по себе" "by myself" "by (3)" сам@ по@ себя@dat
-ни-any-кто: "ни с кем не говори" "don't talk to anyone" " ... no one" ни@ any кто@
+ни-any-кто: "ни с кем не говори" "don't talk to anyone" "... no one" ни@ any кто@
 с-тех-пор: "с тех пор" "since the time" "since the time" с@ тот@ пора@ ,@ как|как[when]@
 с-тех-пор: "с тех пор" "since the time" "since the time" с@ тот@ пора@ как|как[when]@
 с-тех-пор: "с тех пор" "since the time" "since the time" с@ тот@ пора@
@@ -186,7 +186,7 @@ hyperbole: "ждал годами" "I waited for hours" "for [adjective]" phrase
 под-чем-то: "под столом" "under the table" "under (2)" под@ phrase:np@instr
 рядом-с: "рядом со мной" "next to me" "next to (3)" рядом@ с@ phrase:np@instr
 между-чем-то: "между мной и тобой" "between you and me" "between [something] and [something]" между@ phrase:np@instr и@ phrase:np@instr
-между-чем-то: "между мной и тобой" "between you and me" "between [something] " между@ phrase:np@instr
+между-чем-то: "между мной и тобой" "between you and me" "between [something]" между@ phrase:np@instr
 за-место: "за дверью" "behind the door" "behind [something]" за@ phrase:np@instr
 за-место: "за дверью" "behind the door" "(1)" phrase:за-окном
 за-after: "повторяйте за мной" "repeat after me" "after [something]" за@ phrase:np@instr
