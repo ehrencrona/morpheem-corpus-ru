@@ -66,7 +66,7 @@ grammar: -ты@nom
 не: not
 ни--кто: nobody, inflect: -кто
 --что: what, inflect: -что, tag: question
-что[that]: that, pos: conj
+что[that]: that, -2: which, pos: conj
 grammar: -что@acc, tag: accusative
 grammar: it-im-ite@2, tag: verb
 книг--а: book, pl: books, inflect: fem
@@ -503,7 +503,7 @@ grammar: -есть@impr, tag: verb
 grammar: -ехать@inf, tag: verb
 phrase: о-prep
 grammar: -есть@2, tag: verb
-кричи--<ать: shout, 3: shouts, past: shouted, prog: shouting, inflect: -лежать
+кричи--<ать: shout, 3: shouts, past: shouted, prog: shouting, -2: scream, 3-2: screams, past-2: screamed, prog-2: screaming, inflect: -лежать
 снег--: snow, pl: snows, inflect: masc3, tag: rain, tag: weather
 grammar: -жить@impr, tag: verb
 гост--ь: guest, pl: guests, inflect: -гость
