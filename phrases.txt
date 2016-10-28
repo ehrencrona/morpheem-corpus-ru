@@ -28,12 +28,11 @@ gen-possession: "кошка Саши" "Sasha's cat" "of (1)" phrase:np@gen#anima
 с-чего-взял: "с чего ты взял" "where did you get that idea" "where did (3) get the idea that" с@ что@gen #animate взять@ ,@ что[that]@
 с-чего-взял: "с чего ты взял" "where did you get that idea" "where did (3) get that idea from" с@ что@gen #animate этот@ взять@
 много-gen: "много проблем" "many problems" "(1) (2)" много@ phrase:np@gen
-много-gen: "много проблем" "many problems" "(1) (2)" немного[little]|немного|несколько|много[much]|сколько[many]@ phrase:np@gen
+много-gen: "много проблем" "many problems" "(1) (2)" столько|столько[much]|немного[little]|немного|несколько|много[much]|сколько[many]@ phrase:np@gen
 много-gen: "много проблем" "many problems" "(1) (article) couple of (3)" adjective@context? пара@ phrase:np@gen
 много-gen: "много проблем" "many problems" "enough [something]" достаточный@adv phrase:np@gen
 много-gen: "много проблем" "many problems" "(1) (2)" мало|мало[few]@ phrase:np@gen
 много-gen: "много проблем" "many problems" "(1) of (2)" чуть-чуть@ phrase:np@gen
-много-gen: "много проблем" "many problems" "(1) (2)" столько@ phrase:np@gen
 без-gen: "без молока" "without milk" "without [something]" без@ phrase:np@gen
 at-instr: "утром" "in the morning" "(1) (2)" adjective@instrumental! #at-instr@instrumental
 at-instr: "утром" "in the morning" "in the (1)" #at-instr@instrumental
@@ -49,7 +48,7 @@ more-than: "больше, чем нужно" "more than is needed" "(1) ... than
 no-matter-what: "во что бы то ни стало" "no matter what" "no matter what" в@alt что@ бы@ тот@n ни@ стать@
 в-пути: "в пути" "on the way" "on the way" в@ путь@
 всё-ещё: "всё ещё" "still" "still" весь|всё@ ещё@
-столько-всего: "столько всего" "so much" "so much" столько@ всё@gen
+столько-всего: "столько всего" "so much" "so much" столько[much]@ всё@gen
 нет-равных: "нет равных" "no equal" "(1->nom) (have,has,has,1) no equal" phrase:np@dat нет[none]@ равный@genpl
 ни-не: "ни слова не говори" "don't say a word" "not any [something]" ни@ gen не@
 так-adv: "так много" "so many" "so (3->adj)" так@ any adv
@@ -79,7 +78,6 @@ no-matter-what: "во что бы то ни стало" "no matter what" "no mat
 у-кого: "у меня машина" "I have a car" "(2->nom) (have,has,had,2) no (3) (5)" у@ phrase:np@gen больше|больше[longer]@ нет[none]@ phrase:np@gen
 у-кого: "у меня машина" "I have a car" "(2->nom) (have,has,had,2)" у@ phrase:np@gen
 из-gen-departure: "я из России" "I'm from Russia" "from [point of departure/source]" из@ phrase:np@gen
-из-gen-departure: "я из России" "I'm from Russia" "from [point of departure/source]" из@ adjective@prep* @locative+
 at-datpl: "по утрам" "in the morning" "on (2)" по@ #weekday@datpl
 at-datpl: "по утрам" "in the morning" "at night" по@ ночь@datpl
 at-datpl: "по утрам" "in the morning" "in the (2)" по@ #time@datpl
@@ -112,7 +110,8 @@ at-datpl: "по утрам" "in the morning" "in the (2)" по@ #time@datpl
 хотеть-something-abstract: "хочу денег" "I want money" "(1) (3)" хотеть@ any phrase:np@gen
 comp-gen: "лучше всех" "better than anyone" "(1) than anyone" comp все[everyone]@genpl
 comp-gen: "лучше всех" "better than anyone" "most of all" comp всё@gen
-comp-gen: "лучше всех" "better than anyone" "(1) than (article) [something]" comp phrase:np@gen
+comp-gen: "лучше всех" "better than anyone" "(1) than (2)" comp phrase:np@gen
+comp-gen: "лучше всех" "better than anyone" "(1) than (2)" comp adjective@gen
 звать-кого-то: "меня зовут Маша" "my name is Masha" "(1) [someone]" звать@ phrase:np@acc
 звать-кого-то: "меня зовут Маша" "my name is Masha" "(1->nom) (are,is,was,being,been,be,are,were,am,1) called" @accusative+ звать@
 на-направление: "идти на работу" "go to work" "outside" phrase:на-улица@acc
@@ -136,8 +135,8 @@ comp-gen: "лучше всех" "better than anyone" "(1) than (article) [someth
 hyperbole: "ждал годами" "I waited for hours" "for [adjective]" phrase:np@instr#time
 доволен-instr: "доволен работой" "happy with work" "(1) (are,is,was,being,been,be,are,were,am,1) happy with (4->acc)" phrase:np@nom adverb? довольный@ phrase:np@instr
 доволен-instr: "доволен работой" "happy with work" "(1) (were,was,1) (3) happy with (5->acc)" phrase:np@nom быть@ adverb? довольный@ phrase:np@instr
-ждать-что-то: "жди меня!" "wait for me!" "wait for (article) (3)" ждать@ particle@? phrase:np@acc
-ждать-что-то: "жди меня!" "wait for me!" "wait for [something or someone]" #animate@acc ждать@
+ждать-что-то: "жди меня!" "wait for me!" "(1) for (article) (3)" ждать@ particle@? phrase:np@acc
+ждать-что-то: "жди меня!" "wait for me!" "(2) for [something or someone]" #animate@acc ждать@
 похоже: "похоже" "apparently" "apparently" похожий@adv
 за-direction: "за дом" "behind the house" "behind [direction]" за@ phrase:np@acc
 через-direction: "через дорогу" "across the road" "through, across (2)" через@ phrase:np@acc
@@ -145,9 +144,9 @@ hyperbole: "ждал годами" "I waited for hours" "for [adjective]" phrase
 через-time: "через час" "in an hour" "in (2) (3)" через@ adverb? phrase:np@acc#time
 на-time: "на день" "for a day" "(2->sing) (article) (3)" на@ adjective@? выходной@
 на-time: "на день" "for a day" "for (2)" на@ phrase:np@acc#time
-за-time: "за минут" "in a minute" "(2) (3)" за@ adjective@accusative лето|осень|зима|весна@accusative
-за-time: "за минут" "in a minute" "in [time]" за@ phrase:np@acc
-за-time: "за минут" "in a minute" "(2)" за@ сегодня@
+за-time: "за минуту" "in a minute" "(2) (3)" за@ adjective@accusative лето|осень|зима|весна@accusative
+за-time: "за минуту" "in a minute" "in [time]" за@ phrase:np@acc
+за-time: "за минуту" "in a minute" "(2)" за@ сегодня@
 по-place-of-movement: "по парку" "through the park" "on [somewhere]" по@ phrase:np@dat#on
 по-place-of-movement: "по парку" "through the park" "by [somewhere]" по@ phrase:np@dat#by
 по-place-of-movement: "по парку" "through the park" "through [somewhere]" по@ phrase:np@dat
@@ -178,6 +177,7 @@ hyperbole: "ждал годами" "I waited for hours" "for [adjective]" phrase
 заниматься-чем-то: "заниматься (чем-то) (A1)" "" "(deal,deals,dealt,2) with [activity]" phrase:np@instr заниматься@
 быть-кем-то: "быть студентом" "be a student" "(1) ... (3)" быть@ any phrase:np@instr
 быть-кем-то: "быть студентом" "be a student" "(1) ... (3)" быть@ any adjective@instrumental
+быть-кем-то: "быть студентом" "be a student" "(1) to be ... (3)" бывать@ any adjective@instrumental
 стать-кем-то: "стать мамой" "become a mother" "(become,becomes,became,becoming,1) (2)" стать|становиться@ phrase:np@instr
 стать-кем-то: "стать мамой" "become a mother" "(1) ... (become,becomes,became,becoming,3)" кто@instr any стать|становиться@
 работать-кем-то: "работать учителем" "work as a teacher" "(1) as [someone]" работать@ phrase:np@instr
@@ -204,15 +204,12 @@ hyperbole: "ждал годами" "I waited for hours" "for [adjective]" phrase
 в-place: "в России" "in Russia" "at (2)" в@ phrase:np@prep#at
 в-place: "в России" "in Russia" "on the (2)" в@ меню|интернет@prep
 в-place: "в России" "in Russia" "in (2)" в@ phrase:np@prep
-в-place: "в России" "in Russia" "in (2)" в@ phrase:np@loc
 в-place: "в России" "in Russia" "in which" в@ который|который[which]@prep
 на-place: "на кровати" "on the bed" "outside" phrase:на-улица@prep
 на-place: "на кровати" "on the bed" "on the back" на@ спина@prep
 на-place: "на кровати" "on the bed" "at [a place]" на@ phrase:np@prep#at
 на-place: "на кровати" "on the bed" "in (2)" на@ phrase:np@prep#in
 на-place: "на кровати" "on the bed" "on [a place]" на@ phrase:np@prep
-на-place: "на кровати" "on the bed" "at [a place]" на@ @locative+
-на-place: "на кровати" "on the bed" "on [a place]" на@ @locative+
 на-языке: "на француском" "in French" "in [language]" на@ #language@prepositional язык[lang]@prepositional
 на-языке: "на француском" "in French" "in [language]" на@ #language@prepositional
 на-языке: "на француском" "in French" "in (2)" на@ phrase:np@prep#language
@@ -273,14 +270,11 @@ ask-someone: "прошу у тебя денег" "i'm asking you for money" "(1)
 ask-someone: "прошу у тебя денег" "i'm asking you for money" "(1) [someone]" просить|спросить|спрашивать@ у@ phrase:np@gen
 comp-gen2: "больше денег" "more money" "there (are,is,was,being,been,be,are,were,am,3) no (2) (3)" нет[none]@ comp phrase:np@gen
 comp-gen2: "больше денег" "more money" "(1) (2)" comp phrase:np@gen
-чтобы-that: "хочу, чтобы ты помог" "I want you to help" "(1) ... so that (5) not (7->1)" verb any ,@ чтобы@ #animate не@ past
-чтобы-that: "хочу, чтобы ты помог" "I want you to help" "(1) ... that (5) (7->1)" verb any ,@ чтобы@ #animate any past
+чтобы-that: "хочу, чтобы ты помог" "I want you to help" "(1) ...  (5->acc) to (7->inf)" verb any ,@ чтобы@ #animate any past
 выйти-из: "выйти из автобуса" "get off the bus" "(get out of,gets out of,got out of,1) (article) (3) (4)" выходить|выйти@ из@ adjective@gen? машина|такси@gen
 выйти-из: "выйти из автобуса" "get off the bus" "(get off,gets off,got off,1) (article) (3) (4)" выходить|выйти@ из@ adjective@gen? автобус|поезд|самолёт|метро@gen
 выйти-из: "выйти из автобуса" "get off the bus" "(leave,leaves,left,1) (article) (3) (4)" выходить|выйти@ из@ adjective@gen? дом|квартира|класс[room]@gen
-выйти-из: "выйти из автобуса" "get off the bus" "(leave,leaves,left,1) (article) (3) (4)" выходить|выйти@ из@ adjective@gen? дом@loc
 выйти-из: "выйти из автобуса" "get off the bus" "(come out,comes out,came out,1) (3)" выходить|выйти@ из@ phrase:np@gen
-выйти-из: "выйти из автобуса" "get off the bus" "(come out,comes out,came out,1) (3)" выходить|выйти@ из@ phrase:np@loc
 за-городом: "за городом" "in the countryside" "in the countryside" за@ город@instr
 за-город: "за город" "to the countryside" "to the countryside" за@ город@acc
 сидеть-в-интернете: "сидеть в интернете" "surf the Internet" "(surf,surfs,surfed,1) the Internet" сидеть@ в@ интернет@prep
@@ -296,12 +290,11 @@ dat-нужен: "мне нужна любовь" "I need love" "(2->nom) (do,doe
 dat-нужен: "мне нужна любовь" "I need love" "(2->nom) needed (1->acc)" phrase:np@nom phrase:np@dat быть@ нужный@short
 датьetc-dat: "дать кошке еду" "give the cat food" "(1) (2) to (3)" #something-to-someone phrase:np@acc phrase:np@dat
 датьetc-dat: "дать кошке еду" "give the cat food" "(1) (2) (3)" #something-to-someone phrase:np@dat phrase:np@acc
+датьetc-dat: "дать кошке еду" "give the cat food" "(1) (2)" #something-to-someone phrase:np@dat
 датьetc-dat: "дать кошке еду" "give the cat food" "(1) [something] to [someone]" phrase:np@acc any #something-to-someone any phrase:np@dat
 датьetc-dat: "дать кошке еду" "give the cat food" "(1) ... (3) ... (5)" phrase:np@acc any phrase:np@dat any #something-to-someone
 датьetc-dat: "дать кошке еду" "give the cat food" "(3) ... (1)" phrase:np@dat any #something-to-someone
-датьetc-dat: "дать кошке еду" "give the cat food" "(3) (5) to (1)" phrase:np@dat any #something-to-someone any phrase:np@acc
 датьetc-dat: "дать кошке еду" "give the cat food" "to [someone] ... (3)" phrase:np@dat any #something-to-someone
-датьetc-dat: "дать кошке еду" "give the cat food" "(1) to [someone]" #something-to-someone phrase:np@dat
 купить-чего-то: "покупать Маше подарки" "to buy presents for Masha" "(buy,buys,bought,buying,1) (article) (3) for (5)" купить|покупать@ any phrase:np@acc any phrase:np@dat
 купить-чего-то: "покупать Маше подарки" "to buy presents for Masha" "(buy,buys,bought,buying,1) (3) (article) (5)" купить|покупать@ any phrase:np@dat any phrase:np@acc
 dat-adv: "мне холодно" "i'm cold" "(1->nom) (3) (4->adj)" phrase:np@dat adverb? стать@ adv
@@ -322,8 +315,8 @@ dat-удобно: "вам удобно?" "does it suit you?" "it suits (1)" pron
 давать-verb: "дай мне спать" "let me sleep" "(1) (do,does,did,1) not let (2) (5->1)" phrase:np@nom phrase:np@dat не@ давать[allow]@ verb
 давать-verb: "дай мне спать" "let me sleep" "let (4) (2->1) ..." давать[allow]@ verb@* any phrase:np@dat
 давать-verb: "дай мне спать" "let me sleep" "(5) did not (3) (1) (4->1)" phrase:np@dat не@ давать[allow]@ verb@* phrase:np@nom
-dat-нравится: "мне нравится" "I like" "(1->nom) very much (like,likes,liked,1)" phrase:np@dat очень@ нравиться|понравиться@
-dat-нравится: "мне нравится" "I like" "(1->nom) (2) very much (like,likes,liked,1)" phrase:np@dat adverb? очень@ нравиться|понравиться@
+dat-нравится: "мне нравится" "I like" "(1->nom) very much (like,likes,liked,3)" phrase:np@dat очень@ нравиться|понравиться@
+dat-нравится: "мне нравится" "I like" "(1->nom) (2) very much (like,likes,liked,4)" phrase:np@dat adverb? очень@ нравиться|понравиться@
 dat-нравится: "мне нравится" "I like" "(1->nom) (2) (like,likes,liked,1) (3)" phrase:np@dat adverb? adjective@comp? нравиться|понравиться@
 dat-нравится: "мне нравится" "I like" "(1->nom) (don't,doesn't,didn't,1) (4) like" phrase:np@dat particle@? не@ adverb? нравиться|понравиться@
 dat-нравится: "мне нравится" "I like" "(2->nom) (like,likes,liked,2)" нравиться|понравиться@ phrase:np@dat
@@ -339,6 +332,7 @@ dat-лет: "сколько тебе лет?" "how old are you?" "how old (are,i
 dat-лет: "сколько тебе лет?" "how old are you?" "(1) (are,is,was,being,been,be,are,were,am,1) one year old" phrase:np@dat any год@context
 both-и-и: "и сахар, и молоко" "both sugar and cream" "both ... and" и@ any ,@ и@
 either-or-или-или: "или ... , или ..." "either ... or ..." "either ... , or" или@ any ,@ или@
+either-or-или-или: "или ... , или ..." "either ... or ..." "either ... , or" либо@ any ,@ либо@
 после-того-как: "после того как..." "after having..." "after" после@ тот@genitive как[when]|как@
 перед-тем-как: "перед тем как" "before" "before [doing something]" перед@ тот@instrumental any как[when]@
 звонить-в-дверь: "звонить в дверь" "ring the doorbell" "(ring,rings,rang,1) the doorbell" звонить@ в@ дверь@
@@ -346,14 +340,14 @@ either-or-или-или: "или ... , или ..." "either ... or ..." "either .
 из-material: "из дерева" "made of wood" "of (2)" из@ @genitive+
 из-out-of: "никто из моих друзей" "none of my friends" "of [several things or people]" из@ phrase:np@gen
 при-чём: "при чём здесь это?" "what does this have to do with anything?" "what does [something] have to do with this" при@ что@prepositional здесь|тут@
-кому-то-кажется: "мне кажется" "it seems to me" "it seems to (1)" @dative+ any казаться@
+кому-то-кажется: "мне кажется" "it seems to me" "it (3) to (1)" @dative+ any казаться@
 gen-верить: "верь мне" "believe me" "(cannot,cannot,could not,2) trust (5)" не@ мочь@ верить|доверять|поверить@ particle@? phrase:np@dat
 gen-верить: "верь мне" "believe me" "(1) (can,can,could,2) trust (3)" phrase:np мочь@ phrase:np@dat верить|доверять|поверить@
 gen-верить: "верь мне" "believe me" "(trust,trusts,trusted,1) (2)" верить|доверять|поверить@ phrase:np@dat
 gen-верить: "верь мне" "believe me" "[someone] ... (trust,trusts,trusted,3)" phrase:np@dat any верить|доверять|поверить@
-dat-speech: "сказать её" "tell her" "(tell,tells,told,2) (1)" phrase:np@dat рассказывать|рассказать|говорить|сказать@
-dat-speech: "сказать её" "tell her" "(tell,tells,told,1) (3)" рассказывать|рассказать|говорить|сказать@ any phrase:np@dat
-dat-speech: "сказать её" "tell her" "not (tell,tells,told,3) (1)" phrase:np@dat не@ рассказывать|рассказать|говорить|сказать@
+dat-speech: "сказать Саше" "tell Sasha" "(tell,tells,told,2) (1)" phrase:np@dat рассказывать|рассказать|говорить|сказать@
+dat-speech: "сказать Саше" "tell Sasha" "(tell,tells,told,1) (3)" рассказывать|рассказать|говорить|сказать@ any phrase:np@dat
+dat-speech: "сказать Саше" "tell Sasha" "not (tell,tells,told,3) (1)" phrase:np@dat не@ рассказывать|рассказать|говорить|сказать@
 помогать-dat: "помогай мне" "help me" "(1) (2)" помогать@ phrase:np@dat
 помогать-dat: "помогай мне" "help me" "(2) (1)" phrase:np@dat помогать@
 помогать-dat: "помогай мне" "help me" "(do,does,did,3) not (3->pres) (1)" phrase:np@dat не@ помогать@
@@ -431,7 +425,7 @@ dat-скучно: "мне скучно" "I'm bored" "(1->nom) (are,is,was,being,
 ещё-один: "ещё раз" "one more time" "one more time" ещё[again]|ещё@ раз@
 ещё-нет: "ещё не" "not yet" "not yet" ещё@ не@
 ещё-comp: "ещё больше" "even more" "even (2)" ещё@ comp
-ни-gen: "ни слова не говори" "don't say a word" "not any [something]" ни@ gen не@
+ни-gen: "ни слова не говори" "don't say a word" "not (2)" ни@ phrase:np@gen не@
 ни-gen: "ни слова не говори" "don't say a word" "not (2)" ни@ phrase:np@gen
 ни-gen: "ни слова не говори" "don't say a word" "not a single (3)" ни@ один@ phrase:np@gen
 станция-метро: "станция метро" "subway station" "subway station" станция@context метро@gen
@@ -470,8 +464,9 @@ auto-np: "np" "" "(1)" phrase:друг-другу
 в-tag-time: "в то время" "at that time" "at (2)" в@ phrase:half-to@gen
 в-tag-time: "в то время" "at that time" "lately" в@ последний@accusative время@accusative
 в-tag-time: "в то время" "at that time" "(2)" в@ phrase:np@acc#time
-кого-то-нет: "ему не было" "he wasn't there" "(1->nom) will not be" phrase:np@gen#animate не@ быть[fut]@3
-кого-то-нет: "ему не было" "he wasn't there" "(1->nom) (3) (2)" phrase:np@gen#animate не@ быть@pastn
+кого-то-нет: "его не было" "he wasn't there" "(1->nom) (3)" никто@gen не@ быть@pastn
+кого-то-нет: "его не было" "he wasn't there" "(1->nom) will not be" phrase:np@gen#animate не@ быть[fut]@3
+кого-то-нет: "его не было" "he wasn't there" "(1->nom) (3) (2)" phrase:np@gen#animate не@ быть@pastn
 time-after-time: "день за днём" "day after day" "(1) after (3)" accusative за@ instrumental
 за-то-что: "за то, что" "because" "because" за@ тот@ ,@ что@
 из-за-того-что: "из-за того, что" "because of" "because" из-за@ тот@genitive ,@ что[that]@
@@ -488,8 +483,8 @@ face-to-face: "лицом к личу" "face to face" "face to face" лицо@in
 скажите: "скажите пожалуйста" "please tell me" "could you please tell me" сказать@imprpl ,@ пожалуйста@ ,@
 на-for: "погода на сегодня" "the weather forecast for today" "for (2)" на@ phrase:np@acc
 на-for: "погода на сегодня" "the weather forecast for today" "for (2)" на@ сегодня|завтра@
-на-num-comp: "на два раза больше" "" "(2) (3)" на@ phrase:np@acc#number comp
-на-num-comp: "на два раза больше" "" "(4) ... (1)" comp any на@ phrase:np@acc#number
+на-num-comp: "на два года моложе" "two years yonger" "(2) (3)" на@ phrase:np@acc#number comp
+на-num-comp: "на два года моложе" "two years yonger" "(4) ... (1)" comp any на@ phrase:np@acc#number
 к-на: "к себе на работу" "with me to work" "to (5) of (2)" к@ phrase:np@dat any на@ phrase:np@acc
 сесть-на: "сесть на автобус" "take the bus" "(take,takes,took,1) (article) (3)" сесть@ на@ phrase:np#transport
 врать-dat: "врать мне" "lie to me" "(1) to (2)" врать@ phrase:np@dat
@@ -561,6 +556,7 @@ even-so: "и так" "even so" "even so" и[part]@ так@
 устать-от: "устать от работы" "to tire of work" "tired of (3)" устать@ от@ phrase:np@gen
 кричать-на: "кричать на тебя" "shout at you" "(1) at (3)" кричать@ на@ phrase:np@acc
 по-цене: "по низкой цене" "for a low price" "for (article) (2) (3)" по@ adjective@dative? цена@dative
+по-цене: "по низкой цене" "for a low price" "for (article) (2) (3)" по@ adjective@dative цена@dative
 бояться-genitive: "бояться собак" "be afraid of dogs" "(are,is,was,being,been,be,are,were,am,2) not afraid of (3)" не@ бояться@ phrase:np@gen
 бояться-genitive: "бояться собак" "be afraid of dogs" "(are,is,was,being,been,be,are,were,am,3) not afraid of (1)" phrase:np@gen не@ бояться@
 бояться-genitive: "бояться собак" "be afraid of dogs" "(are,is,was,being,been,be,are,were,am,1) afraid of (2)" бояться@ phrase:np@gen
@@ -612,3 +608,11 @@ dat-весело: "мне весело" "I'm having fun" "(1->nom) (2) (3) (4)" 
 давай-verb: "давай пойдем" "let's go" "let's (2) (3)" давай[lets]@imperative adverb? verb@1pl
 давай-nom: "давай я" "let me" "(1) (2)" давать[allow]@ phrase:np@nom
 I-dont-care: "мне всё равно" "I don't care" "(1->nom) (do,does,did,1) not care" phrase:np@dat весь|всё@ равный@
+as-much-or-many-as: "столько, сколько" "as much/many as" "as many as" столько@ ,@ сколько[many]@
+as-much-or-many-as: "столько, сколько" "as much/many as" "as much as" столько[much]@ ,@ сколько@
+as-much-or-many-as: "столько, сколько" "as much/many as" "as (1) (2) as" столько|столько[much]@ phrase:np@gen ,@ сколько|сколько[many]@
+as-much-or-many-as: "столько, сколько" "as much/many as" "as many (2) as" столько@ phrase:np@gen ,@ сколько[many]@
+as-much-or-many-as: "столько, сколько" "as much/many as" "as much (2) as" столько[much]@ phrase:np@gen ,@ сколько@
+от-because-of: "хочу спать от этого урока" "sleepy because of this lesson" "because of (2)" от@ phrase:np@gen
+в-loc: "в лесу" "in the forest" "in (2)" в@ phrase:np@loc
+на-loc: "на берегу" "on the bank" "on (2)" на@ phrase:np@loc
