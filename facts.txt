@@ -24,6 +24,7 @@ grammar: n@prep, tag: prepositional
 хорош--ий: good, adv: well, comp: better, super: best, inflect: -хороший
 магазин--: shop, pl: shops, inflect: masc
 комнат--а: room, pl: rooms, inflect: fem
+grammar: accusative
 --я: I, acc: me, inflect: -я, tag: animate
 grammar: -я@nom
 --он: he, acc: him, inflect: -он, tag: animate
@@ -122,9 +123,7 @@ grammar: y-esh-et@2, tag: verb
 кроват--ь: bed, pl: beds, inflect: femь
 лежи--<ать: lie, 3: lies, past: lay, prog: lying, inflect: -лежать
 под: under, pos: prep
-grammar: femь@instr, tag: instrumental
 стол--: table, pl: tables, inflect: masc
-grammar: masc@instr, tag: instrumental
 стул--: chair, pl: chairs, inflect: -стул
 за: behind, pos: prep, tag: untranslatable
 штор--а: curtain, pl: curtains, inflect: fem
@@ -219,6 +218,7 @@ grammar: masc@dat, tag: dative
 дари--ть: give, 3: gives, past: gave, prog: giving, inflect: -дарить, tag: something-to-someone
 нужно: need to
 нужн--ый: needed, inflect: ныйadj, mask: adv
+grammar: short
 grammar: abstr-нadj@shortf
 grammar: abstr-нadj@shortn
 grammar: abstr-нadj@shortm
@@ -231,7 +231,6 @@ grammar: -ты@dat, tag: dative
 хоч--<теть: want, 3: wants, past: wanted, prog: wanting, inflect: -хотеть, mask: impr
 с--: with, from, inflect: oprep, tag: untranslatable
 ед--а: food, pl: foods, inflect: fem
-grammar: fem@instr, tag: instrumental
 интернет--: Internet, inflect: masc, tag: on
 радио--: radio, pl: radios, inflect: uninflected, mask: pl
 котор--ый: that, -2: who, -3: which, inflect: adj, mask: nonstd
@@ -251,6 +250,7 @@ grammar: n@preppl, tag: prepositional
 говори--ть: speak, 3: speaks, past: spoke, prog: speaking, inflect: -дарить, tag: speech
 нельзя: may not, pos: adv
 известн--ый: famous, adv: famously, comp: more famous, super: most famous, inflect: ныйadj
+grammar: genitive
 grammar: femяь@gen, tag: genitive
 grammar: fem@gen, tag: genitive
 grammar: masc@gen, tag: genitive
@@ -263,6 +263,7 @@ grammar: -он@gen, tag: genitive
 шест--ь: six, inflect: -пять, tag: number
 десят--ь: ten, inflect: -пять, tag: number
 четыр--е: four, inflect: -четыре, tag: number
+grammar: dative
 grammar: femяь@datpl, tag: dative
 grammar: adj@datpl, tag: dative
 grammar: adj@datn, tag: dative
@@ -278,6 +279,7 @@ grammar: -давать@1, tag: verb
 мног--о[much]: much, adv: a lot, comp: more, super: most, inflect: -много, tag: amount, mask: allbutplandadv
 grammar: masc@genpl, tag: genitive
 grammar: -друг@genpl, tag: genitive
+grammar: adv
 grammar: adj@adv
 grammar: femь@genpl, tag: genitive
 grammar: femka@genpl, tag: genitive
@@ -324,6 +326,7 @@ grammar: -писать@inf, tag: verb
 год--: year, pl: years, inflect: -год, tag: time
 phrase: в-num-час
 grammar: n@datpl, tag: dative
+grammar: prepositional
 grammar: -свой@prepm, tag: prepositional
 его: his, pos: pron, tag: possessive
 --есть: eat, 3: eats, past: ate, prog: eating, inflect: -есть
@@ -345,12 +348,17 @@ grammar: -mascь@genpl, tag: genitive
 дерев--о: tree, pl: trees, inflect: -дерево
 утр--о: morning, pl: mornings, inflect: neu, tag: at-instr, tag: time
 phrase: у-его-нет
+grammar: instrumental
+grammar: femь@instr, tag: instrumental
+grammar: masc@instr, tag: instrumental
+grammar: fem@instr, tag: instrumental
 grammar: -друг@instrpl, tag: instrumental
 язык--[lang]: language, pl: languages, inflect: masc, tag: language
 сейчас: now, pos: adv
 замк--<ок[lock]: lock, pl: locks, inflect: -подарок
 урок--: lesson, pl: lessons, inflect: masc, tag: time, tag: at
 grammar: oprep@alt
+grammar: alt
 phrase: ждать-for-something-abstract
 grammar: y-esh-et@1pl, tag: verb
 её: her, pos: pron, tag: possessive
@@ -591,6 +599,7 @@ grammar: -кто@instr, tag: instrumental
 phrase: среди-чего-то
 phrase: один-of
 автобус--: bus, pl: buses, inflect: masc, tag: transport
+grammar: comp
 grammar: -большой@comp
 grammar: -весь@m
 маленьк--ий: , comp: less, inflect: -маленький, mask: allbutcomp
@@ -818,6 +827,7 @@ grammar: -казаться@inf, tag: verb
 phrase: в-tag-time
 мож--<чь: can, 3: can, past: could, prog: able to, inflect: -мочь
 если: if, pos: conj
+grammar: imperative
 grammar: it-im-ite@impr, tag: verb
 grammar: -вернуться@2pl, tag: verb
 phrase: кого-то-нет
@@ -1598,6 +1608,7 @@ phrase: dat-жаль
 grammar: -раз@genpl, tag: genitive
 grammar: neuadjoe@genpl, tag: genitive
 одолжи--ть: lend, 3: lends, past: lent, prog: lending, inflect: -учить, tag: something-to-someone, tag: perfective
+grammar: locative
 grammar: -гость@loc
 phrase: по-отношению
 grammar: -гость@locpl
