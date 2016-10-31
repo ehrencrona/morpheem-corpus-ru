@@ -91,7 +91,7 @@ grammar: -любить@1, tag: verb
 как: how, pos: quest
 как[when]: when, pos: conj
 центр--: center, pl: centers, inflect: masc
-человек--: person, pl: persons, inflect: masc-animate, tag: animate
+человек--: person, pl: persons, pl-2: people, -2: man, inflect: masc-animate, tag: animate
 зачем: what for, pos: quest
 почему: why, pos: quest
 --быть: are, 1: am, 3: is, past: was, inf: be, prog: being, pastpl: were, past-2: there was, 3-2: there is, -2: there are, inflect: -быть
@@ -250,7 +250,7 @@ grammar: n@preppl, tag: prepositional
 кури--ть: smoke, 3: smokes, past: smoked, prog: smoking, inflect: -дарить
 говори--ть: speak, 3: speaks, past: spoke, prog: speaking, inflect: -дарить, tag: speech
 нельзя: may not, pos: adv
-известн--ый: famous, adv: famously, comp: more famous, super: most famous, inflect: ныйadj
+известн--ый: famous, adv: famously, comp: more famous, super: most famous, -2: known, comp-2: more known, super-2: most known, inflect: ныйadj
 grammar: genitive
 grammar: femяь@gen, tag: genitive
 grammar: fem@gen, tag: genitive
@@ -667,7 +667,7 @@ grammar: -борщ@genpl, tag: genitive
 ваш--: your, inflect: -наш, tag: possessive, mask: nonstd
 кастрюл--я: pot, pl: pots, inflect: -неделя
 phrase: за-место
-тарелк--а: plate, pl: plates, inflect: femka
+тарелк--а: plate, pl: plates, -2: bowl, pl-2: bowls, inflect: femka
 grammar: -кто@acc, tag: accusative
 роман--: novel, pl: novels, inflect: masc-animate
 помощ--ь: help, inflect: femь-я-to-а, mask: pl
@@ -763,7 +763,7 @@ phrase: из-material
 grammar: -словарь@nom
 стои--ть: cost, 3: costs, past: did cost, prog: costing, inflect: -стоить
 скаж--<зать: say, 3: says, past: said, prog: saying, inflect: -сказать
-вод--а: water, pl: waters, inflect: fem, tag: uncountable
+вод--а: water, pl: waters, inflect: fem, tag: uncountable, mask: pl
 phrase: из-out-of
 так--ой: such, inflect: ойadj, mask: nonstd
 проблем--а: problem, pl: problems, inflect: fem
@@ -1490,7 +1490,7 @@ phrase: время-от-времени
 напиш--<сать: write, 3: writes, past: wrote, prog: writing, inflect: -писать, tag: something-to-someone, tag: perfective
 phrase: как-только
 отношени--е[regard]: regard, pl: regards, inflect: neuie
-способн--ый: able, adv: ably, comp: abler, super: ablest, inflect: ныйadj, mask: adv
+способн--ый: able, adv: ably, comp: abler, super: ablest, -2: talented, super-2: most talented, comp-2: more talented, inflect: ныйadj, mask: adv
 единственн--ый: the only, inflect: adj, mask: short
 начина--ться: begin, 3: begins, past: began, prog: beginning, inflect: -пытаться
 поверн--уть: turn, 3: turns, past: turned, prog: turning, inflect: -повернуть, tag: perfective
@@ -1510,7 +1510,7 @@ phrase: то-же
 очеред--ь: line, pl: lines, inflect: femь
 очеред--ь[turn]: turn, inflect: femь, mask: pl
 разоль--<<<лить: spill, 3: spills, past: spilled, prog: spilling, inflect: -разлить, tag: perfective
-запасн--ой: spare, adv: sparely, inflect: ойadj, mask: nonstd
+запасн--ой: spare, adv: sparely, -2: extra, inflect: ойadj, mask: nonstd
 погуля--ть: take a walk, 3: takes a walk, past: took a walk, prog: taking a walk, inflect: ать, tag: perfective
 phrase: кроме-gen
 окончи--ть: end, 3: ends, past: ended, prog: ending, inflect: -учить, tag: perfective
@@ -1518,7 +1518,7 @@ phrase: кроме-gen
 плит--а: stove, pl: stoves, inflect: fem
 теря--ться: get lost, 3: gets lost, past: got lost, prog: getting lost, inflect: -пытаться
 phrase: против-gen
-мороз--: cold, inflect: masc, tag: weather, mask: pl
+мороз--: cold weather, inflect: masc, tag: weather, mask: pl
 объясня--ть: explain, 3: explains, past: explained, prog: explaining, inflect: ать
 выучи--ть: learn, 3: learns, past: learnt, prog: learning, inflect: -учить, tag: perfective
 ненавиди--<еть: hate, 3: hates, past: hated, prog: hating, inflect: -видеть
@@ -1548,14 +1548,14 @@ grammar: num@accanpl, tag: accusative
 phrase: про-что-то
 оден--<ться: get dressed, 3: gets dressed, past: got dressed, prog: getting dressed, inflect: -одеться
 свидани--е: date, pl: dates, inflect: neuie
-далёк--ий: far away, inflect: adj
+далёк--ий: far away, -2: distant, comp-2: more distant, super-2: most distant, inflect: adj
 прежде: before
 приноси--ть: bring, 3: brings, past: brought, prog: bringing, inflect: -спросить
 phrase: играть-в-игру
 grammar: -ранний@adv
 пар--а: pair, pl: pairs, inflect: fem, tag: amount
 встрети--ться: meet, 3: meets, past: met, prog: meeting, inflect: -встретиться, tag: perfective
-пальц--<<ец: finger, pl: fingers, inflect: -палец
+пальц--<<ец: finger, pl: fingers, -2: toe, pl-2: toes, -3: thumb, pl-3: thumbs, inflect: -палец
 phrase: все-равно
 grammar: -ранний@comp
 grammar: -стоить@impr, tag: verb
@@ -1606,7 +1606,7 @@ phrase: dat-жаль
 отдыха--ть: relax, 3: relaxes, past: relaxed, prog: relaxing, inflect: ать
 grammar: -раз@genpl, tag: genitive
 grammar: neuadjoe@genpl, tag: genitive
-одолжи--ть: lend, 3: lends, past: lent, prog: lending, inflect: -учить, tag: something-to-someone, tag: perfective
+одолжи--ть: lend, 3: lends, past: lent, prog: lending, -2: borrow, 3-2: borrows, past-2: borrowed, prog-2: borrowing, inflect: -учить, tag: something-to-someone, tag: perfective
 grammar: locative
 grammar: -гость@loc
 phrase: по-отношению
@@ -1994,3 +1994,4 @@ phrase: на-loc
 phrase: скорее-всего
 phrase: так-adj
 phrase: за-time
+phrase: known-to-everyone
