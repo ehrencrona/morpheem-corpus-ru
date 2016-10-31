@@ -603,7 +603,8 @@ phrase: один-of
 grammar: comp
 grammar: -большой@comp
 grammar: -весь@m
-маленьк--ий: less, comp: less, -2: fewer, inflect: -маленький, mask: allbutcomp
+маленьк--ий[little]: less, inflect: -маленький, mask: allbutcomp
+маленьк--ий: fewer, inflect: -маленький, mask: allbutcomp
 кафе--: cafe, pl: cafes, inflect: uninflected
 привет--: hello, inflect: masc, mask: pl
 phrase: для-чего-то
@@ -663,7 +664,7 @@ phrase: между-чем-то
 пельмен--ь: Russian dumpling, pl: Russian dumplings, inflect: -отель
 grammar: -выйти@inf, tag: verb
 grammar: -борщ@genpl, tag: genitive
-ваш--: your, inflect: -наш, tag: possessive, mask: adv
+ваш--: your, inflect: -наш, tag: possessive, mask: nonstd
 кастрюл--я: pot, pl: pots, inflect: -неделя
 phrase: за-место
 тарелк--а: plate, pl: plates, inflect: femka
@@ -1330,7 +1331,7 @@ grammar: -искать@inf, tag: verb
 врач--: doctor, pl: doctors, inflect: -врач, tag: animate
 phrase: поздравлять-с-instr
 научи--ть[teach]: teach, 3: teaches, past: taught, prog: teaching, inflect: -учить
-сам--: alone, inflect: -сам, mask: allbutshort
+сам--: alone, inflect: -сам, mask: allbutnom
 grammar: -один@instrm, tag: instrumental
 phrase: у-кого-location
 grammar: -взять@inf, tag: verb
@@ -1702,7 +1703,6 @@ grammar: -море@genpl, tag: genitive
 grammar: -бросить@impr, tag: verb
 grammar: neuadjoe@preppl, tag: prepositional
 phrase: за-то-что
-grammar: -сам@shortpl
 поздравля--ть: congratulate, 3: congratulates, past: congratulated, prog: congratulating, inflect: ать
 результат--: result, pl: results, inflect: masc
 grammar: -дать@1pl, tag: verb
