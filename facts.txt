@@ -1,6 +1,7 @@
 тут: here, pos: adv
 это: this (is)
 собак--а: dog, pl: dogs, inflect: fem-animate, tag: animate
+grammar: nominative
 grammar: fem@nom
 кошк--а: cat, pl: cats, inflect: -кошка, tag: animate
 бел--ый: white, comp: whiter, super: whitest, inflect: adj, mask: shortandadv
@@ -125,7 +126,7 @@ grammar: y-esh-et@2, tag: verb
 под: under, pos: prep
 стол--: table, pl: tables, inflect: masc
 стул--: chair, pl: chairs, inflect: -стул
-за: behind, -2: during, -3: after, pos: prep, tag: untranslatable
+за: behind, -2: during, -3: after, -4: for, pos: prep, tag: untranslatable
 штор--а: curtain, pl: curtains, inflect: fem
 двер--ь: door, pl: doors, inflect: femь
 открыт--ый: open, adv: openly, inflect: adj, mask: comp
@@ -602,7 +603,7 @@ phrase: один-of
 grammar: comp
 grammar: -большой@comp
 grammar: -весь@m
-маленьк--ий: less, comp: less, inflect: -маленький, mask: allbutcomp
+маленьк--ий: less, comp: less, -2: fewer, inflect: -маленький, mask: allbutcomp
 кафе--: cafe, pl: cafes, inflect: uninflected
 привет--: hello, inflect: masc, mask: pl
 phrase: для-чего-то
@@ -613,7 +614,7 @@ grammar: abstr-soft-final@instr, tag: instrumental
 grammar: neu@pl
 phrase: comp-gen
 grammar: adj@genn, tag: genitive
-врё--<ать: lie, 3: lies, past: lay, prog: lying, inflect: -ждать
+врё--<ать: lie, 3: lies, past: lied, prog: lying, inflect: -ждать
 карт--а: map, pl: maps, inflect: fem
 карт--а[card]: card, pl: cards, inflect: fem
 grammar: -mascь@nom
@@ -786,7 +787,7 @@ grammar: -весь@pl
 низк--ий: low, adv: lowly, comp: lower, super: lowest, inflect: -низкий, mask: adv
 ждё--<ать: wait, 3: waits, past: waited, prog: waiting, inflect: -ждать
 grammar: adj@instrn, tag: instrumental
-высок--ий: tall, adv: high up, comp: higher up, super: tallest, inflect: -высокий
+высок--ий: tall, adv: high up, comp: taller, super: tallest, comp-2: higher up, super-2: highest up, adv-2: high up, inflect: -высокий
 долг--ий: long, comp: longer, super: longest, adv: for a long time, inflect: -долгий, mask: short
 голов--а: head, pl: heads, inflect: fem
 phrase: совсем-не
@@ -808,7 +809,7 @@ grammar: -тот@instrm, tag: instrumental
 писател--ь: writer, pl: writers, inflect: mascь-animate
 phrase: высокая-цена
 пакет--: plastic bag, pl: plastic bags, inflect: masc
-перед: before, pos: prep
+перед: before, -2: in front of, pos: prep
 grammar: -неделя@genpl, tag: genitive
 зов--<<вать[invite]: invite to join, past: invited to join, prog: inviting to join, inflect: -звать
 phrase: успеть-на
@@ -818,11 +819,11 @@ grammar: -остаться@3pl, tag: verb
 вс--е[everyone]: everyone, inflect: -весь-everyone, tag: animate, mask: sg
 grammar: -казаться@pastm, tag: verb
 phrase: для-to
-от: from, pos: prep
+от: from, -2: of, pos: prep
 так: so
 grammar: -мать@nom
 grammar: -казаться@inf, tag: verb
-до: , pos: prep, tag: untranslatable
+до: until, -2: to, pos: prep, tag: untranslatable
 phrase: в-tag-time
 мож--<чь: can, 3: can, past: could, prog: able to, inflect: -мочь
 если: if, pos: conj
@@ -916,7 +917,6 @@ grammar: -спросить@1, tag: verb
 лишь: only, pos: adv
 значи--ть: mean, 3: means, past: meant, prog: meaning, inflect: -значить
 grammar: -мочь@pastm, tag: verb
-phrase: за-time
 дорог--а: road, pl: roads, inflect: fem, tag: on
 главн--ый: main, inflect: ныйadj, mask: nonstd
 вместе: together, pos: adv
@@ -1103,7 +1103,6 @@ phrase: если-только
 здани--е: building, pl: buildings, inflect: neuie
 grammar: -идти@pastpl, tag: verb
 grammar: adj@shortpl
-phrase: comp-gen2
 шкаф--: cupboard, pl: cupboards, -2: wardrobe, pl-2: wardrobes, inflect: -аэропорт
 духовк--а: oven, pl: ovens, inflect: femka
 grammar: neu@genpl, tag: genitive
@@ -1298,7 +1297,7 @@ grammar: -регистрация@genpl, tag: genitive
 phrase: ещё-comp
 же: [wow!], tag: untranslatable
 grammar: -он@datalt, tag: dative
-скор--ый: rather, inflect: adj, mask: allbutcomp
+скор--ый: rather, -2: sooner, inflect: adj, mask: allbutcomp
 скор--ый: fast, adv: quickly, comp: faster, super: fastest, inflect: adj, mask: short
 phrase: ни-gen
 grammar: -лететь@1, tag: verb
@@ -1355,7 +1354,7 @@ phrase: сам-по-себе
 grammar: -набрать@inf, tag: verb
 grammar: -показать@inf, tag: verb
 возьм--<<<<зять: take, 3: takes, past: took, prog: taking, inflect: -взять, tag: something-to-someone, tag: perfective
-над: above, pos: prep, tag: untranslatable
+над: above, -2: over, pos: prep, tag: untranslatable
 phrase: с-тех-пор
 grammar: -хотеть@inf, tag: verb
 хотя: even though
@@ -1495,7 +1494,7 @@ phrase: как-только
 начина--ться: begin, 3: begins, past: began, prog: beginning, inflect: -пытаться
 поверн--уть: turn, 3: turns, past: turned, prog: turning, inflect: -повернуть, tag: perfective
 phrase: так...как
-предлага--ть: offer, 3: offer, past: offered, prog: offering, inflect: ать
+предлага--ть: offer, 3: offer, past: offered, prog: offering, inflect: ать, tag: something-to-someone
 поворот--: turn, pl: turns, inflect: masc, tag: at
 поворачива--ть: turn, 3: turn, past: turned, prog: turning, inflect: ать
 пропусти--ть: miss, 3: misses, past: missed, prog: missing, inflect: -простить, tag: perfective
@@ -1846,7 +1845,6 @@ grammar: uninflected@nom
 игр--а: game, pl: games, inflect: fem
 grammar: -палец@nom
 рт--<от: mouth, pl: mouths, inflect: -рот
-phrase: keep-track
 phrase: за-after
 phrase: keep-an-eye-on
 рост--: hight, inflect: masc3
@@ -1982,7 +1980,6 @@ phrase: себя-чувствовать
 вылечи--ть: treat, 3: treats, past: treated, prog: treating, inflect: -учить
 phrase: за-instead-of
 phrase: dat-весело
-phrase: давай
 phrase: чтобы-past
 phrase: давай-verb
 phrase: давай-nom
@@ -1994,3 +1991,6 @@ phrase: от-because-of
 узна--вать: recognize, 3: recognizes, past: recognized, prog: recognizing, inflect: -давать
 phrase: в-loc
 phrase: на-loc
+phrase: скорее-всего
+phrase: так-adj
+phrase: за-time
