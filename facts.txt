@@ -125,7 +125,7 @@ grammar: y-esh-et@2, tag: verb
 лежи--<ать: lie, 3: lies, past: lay, prog: lying, inflect: -лежать
 под: under, pos: prep
 стол--: table, pl: tables, inflect: masc
-стул--: chair, pl: chairs, inflect: -стул
+стул--: chair, pl: chairs, inflect: -стул, tag: on
 за: behind, -2: during, -3: after, -4: for, pos: prep, tag: untranslatable
 штор--а: curtain, pl: curtains, inflect: fem
 двер--ь: door, pl: doors, inflect: femь
@@ -167,7 +167,7 @@ grammar: adj@prepf, tag: prepositional
 наш--: our, inflect: -наш, tag: possessive, mask: nonstd
 grammar: v@1, tag: verb
 grammar: -наш@pl
-родител--ь: parent, pl: parents, inflect: mascь-animate, mask: sg
+родител--ь: parent, pl: parents, inflect: mascь-animate, tag: animate, mask: sg
 офис--: office, pl: offices, inflect: masc
 grammar: -этот@pl
 жив--<ть: live, 3: lives, past: lived, prog: living, inflect: -жить
@@ -242,7 +242,7 @@ grammar: yo-yosh-yot@1pl, tag: verb
 grammar: -дарить@1, tag: verb
 слуша--ть: listen, 3: listens, past: listened, prog: listening, inflect: ать
 grammar: n@preppl, tag: prepositional
-телевизор--: TV, pl: TV's, inflect: masc
+телевизор--: TV, pl: TV's, inflect: masc, tag: on
 смотри--<еть: watch, 3: watches, past: watched, prog: watching, inflect: -смотреть
 смотри--<еть[look]: look, 3: looks, past: looked, prog: looking, inflect: -смотреть
 можно: can, -2: may
@@ -329,12 +329,12 @@ phrase: в-num-час
 grammar: n@datpl, tag: dative
 grammar: prepositional
 grammar: -свой@prepm, tag: prepositional
-его: his, pos: pron, tag: possessive
+его: his, -2: its, pos: pron, tag: possessive
 --есть: eat, 3: eats, past: ate, prog: eating, inflect: -есть
 grammar: y-esh-et@impr, tag: verb
 phrase: gen-of
 купи--ть: buy, 3: buy, past: bought, prog: buying, inflect: -любить, tag: something-to-someone
-ид--ти: go, past: went, prog: going, inflect: -идти
+ид--ти: go, past: went, prog: going, pastpart: gone, inflect: -идти
 ид--ти[rain]: fall, 3: falls, past: fell, prog: falling, inflect: -идти
 или: or, pos: conj
 phrase: gen-possession
@@ -362,7 +362,7 @@ grammar: oprep@alt
 grammar: alt
 phrase: ждать-for-something-abstract
 grammar: y-esh-et@1pl, tag: verb
-её: her, pos: pron, tag: possessive
+её: her, -2: its, pos: pron, tag: possessive
 деньг--а: money, pl: money, inflect: -деньга, mask: sg
 grammar: adj@accanpl, tag: accusative
 по: on, pos: prep, tag: untranslatable
@@ -804,7 +804,7 @@ phrase: как-дело
 grammar: -казаться@pastn, tag: verb
 phrase: станция-метро
 grammar: -случай@genpl, tag: genitive
-нескольк--о: a few, inflect: -много, tag: amount, mask: allbutpl
+нескольк--о: a few, -2: some, inflect: -много, tag: amount, mask: allbutpl
 иногда: sometimes, pos: adv
 grammar: -тот@instrm, tag: instrumental
 писател--ь: writer, pl: writers, inflect: mascь-animate
@@ -1070,7 +1070,7 @@ phrase: за-что
 вредно: harmful
 следи--ть: look after, 3: looks after, past: looked after, prog: looking after, inflect: -ходить
 следи--ть[eyeon]: keep an eye on, 3: keeps an eye on, past: kept an eye on, prog: keeping an eye on, -2: make sure, 3-2: makes sure, past-2: made sure, prog-2: making sure, pastpart-2: made sure, inflect: -ходить
-следи--ть[follow]: follow, past: followed, prog: looking after, inflect: -ходить
+следи--ть[follow]: follow, 3: follows, past: followed, prog: looking after, inflect: -ходить
 grammar: -месяц@genpl, tag: genitive
 grammar: -один@accf, tag: accusative
 напротив: across from, pos: prep
@@ -1239,7 +1239,6 @@ grammar: -она@genalt, tag: genitive
 grammar: -весь@accinanpl, tag: accusative
 довольн--ый: satisfied, inflect: -довольный
 грязн--ый: dirty, adv: dirtily, comp: dirtier, super: dirtiest, inflect: adj, mask: short
-phrase: платить-за
 grammar: -себя@dat, tag: dative
 ремонт--: renovation, pl: renovations, inflect: masc
 предложени--е: sentence, pl: sentences, inflect: neuie
@@ -1519,7 +1518,7 @@ phrase: кроме-gen
 теря--ться: get lost, 3: gets lost, past: got lost, prog: getting lost, inflect: -пытаться
 phrase: против-gen
 мороз--: cold weather, inflect: masc, tag: weather, mask: pl
-объясня--ть: explain, 3: explains, past: explained, prog: explaining, inflect: ать
+объясня--ть: explain, 3: explains, past: explained, prog: explaining, inflect: ать, tag: something-to-someone
 выучи--ть: learn, 3: learns, past: learnt, prog: learning, inflect: -учить, tag: perfective
 ненавиди--<еть: hate, 3: hates, past: hated, prog: hating, inflect: -видеть
 повери--ть: believe, 3: believes, past: believed, prog: believing, inflect: -верить, tag: perfective
@@ -1568,7 +1567,7 @@ grammar: abstr-ийadj@pl
 справа: on the right, pos: adv
 цветк--<ок: flower, pl: flowers, inflect: -цветок
 phrase: давать-verb
-занят--ый: busy, adv: busily, comp: busier, super: busiest, inflect: adj
+занят--ый: occupied, adv: busily, comp: busier, super: busiest, -2: busy, adv-2: busily, comp-2: busier, super-2: busiest, inflect: adj
 grammar: abstr-ийadj@genpl, tag: genitive
 grammar: abstr-ийadj@datpl, tag: dative
 grammar: abstr-ийadj@preppl, tag: prepositional
@@ -1824,7 +1823,7 @@ grammar: -сын@preppl, tag: prepositional
 больн--ой: sick, adv: hurt, comp: sicker, inflect: -больной
 grammar: -больной@shortm
 phrase: на-улица
-обрати--ться: turn to, 3: turns to, past: turned to, prog: turning to, inflect: -обратиться, tag: perfective
+обрати--ться: turn to, 3: turns to, past: turned to, prog: turning to, -2: address, 3-2: addressed, past-2: addressed, prog-2: addressing, inflect: -обратиться, tag: perfective
 phrase: обращаться[turn]-с
 grammar: neuadjoe@prep, tag: prepositional
 grammar: uninflected@dat, tag: dative
@@ -1995,3 +1994,8 @@ phrase: скорее-всего
 phrase: так-adj
 phrase: за-time
 phrase: known-to-everyone
+phrase: пить-лекарство
+phrase: то-время
+вместо: instead of
+phrase: вместо-dat
+phrase: замужем-за-сашей
