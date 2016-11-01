@@ -7,6 +7,7 @@ grammar: fem@nom
 бел--ый: white, comp: whiter, super: whitest, inflect: adj, mask: shortandadv
 grammar: adj@f
 чёрн--ый: black, comp: blacker, super: blackest, inflect: -чёрный, mask: shortandadv
+tag: question
 где: where, pos: quest, tag: question
 лошад--ь: horse, pl: horses, inflect: -лошадь, tag: animate
 grammar: femь@nom
@@ -193,6 +194,7 @@ grammar: adj@accinanpl, tag: accusative
 grammar: yo-yosh-yot@2, tag: verb
 скучн--ый: boring, comp: more boring, super: most boring, inflect: ныйadj
 и: and
+tag: number
 одн--<ин: one, inflect: -один, tag: number
 grammar: adj@accn, tag: accusative
 там: there
@@ -215,6 +217,7 @@ grammar: -мы@datpl, tag: dative
 да--вать: give, 3: gives, past: gave, prog: giving, inflect: -давать, tag: something-to-someone
 grammar: sya@3, tag: verb
 нрави--ться: like, 3: likes, past: liked, prog: liking, inflect: -нравиться
+tag: reflexive
 grammar: masc@dat, tag: dative
 дари--ть: give, 3: gives, past: gave, prog: giving, inflect: -дарить, tag: something-to-someone
 нужно: need to
@@ -294,6 +297,7 @@ grammar: femka@genpl, tag: genitive
 Владивосток--: Vladivostok, inflect: masc
 вчера: yesterday
 никогда: never, pos: adv
+tag: weekday
 суббот--а: Saturday, pl: Saturdays, inflect: fem, tag: time, tag: weekday
 понедельник--: Monday, pl: Mondays, inflect: masc, tag: time, tag: weekday
 прошл--ый: last, adv: lastly, comp: laster, super: lastest, inflect: adj, mask: shortandadv
@@ -329,6 +333,7 @@ phrase: в-num-час
 grammar: n@datpl, tag: dative
 grammar: prepositional
 grammar: -свой@prepm, tag: prepositional
+tag: possessive
 его: his, -2: its, pos: pron, tag: possessive
 --есть: eat, 3: eats, past: ate, prog: eating, inflect: -есть
 grammar: y-esh-et@impr, tag: verb
@@ -1122,6 +1127,7 @@ grammar: -чувствовать@inf, tag: verb
 grammar: -оставаться@pastf, tag: verb
 grammar: -оставаться@pastpl, tag: verb
 grammar: -принести@pastf, tag: verb
+tag: passive
 phrase: dat-нужен
 посмотри--<еть[look]: look, 3: looks, past: looked, prog: looking, inflect: -смотреть
 посмотри--<еть: watch, 3: watches, past: watched, prog: watching, inflect: -смотреть
@@ -1129,6 +1135,7 @@ grammar: sya@pastn, tag: verb
 grammar: -чувствовать@pastm, tag: verb
 совету--<овать: advise, 3: advises, past: advised, prog: advising, inflect: -чувствовать
 phrase: датьetc-dat
+tag: perfective
 поговори--ть: talk, 1: talk, 3: talks, past: talked, prog: talking, inflect: -дарить, tag: accusative, tag: perfective
 grammar: femя@instr, tag: instrumental
 тяжёл--ый: heavy, adv: heavily, comp: heavier, super: heaviest, inflect: adj
@@ -1917,7 +1924,7 @@ grammar: -два@instrpl, tag: instrumental
 phrase: double-negation
 phrase: в-погоду
 получи--ться: work out, inflect: -случиться
-phrase: passive
+phrase: passive-3pl
 выбира--ть: choose, 3: chooses, past: chose, prog: choosing, inflect: ать
 phrase: half-to
 phrase: из-за-кого-точего-то
