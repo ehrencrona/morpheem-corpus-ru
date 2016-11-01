@@ -8,7 +8,7 @@ grammar: fem@nom
 grammar: adj@f
 чёрн--ый: black, comp: blacker, super: blackest, inflect: -чёрный, mask: shortandadv
 tag: question
-где: where, pos: quest, tag: question
+где: where, pos: quest, grammar: question, tag: question
 лошад--ь: horse, pl: horses, inflect: -лошадь, tag: animate
 grammar: femь@nom
 мыш--ь: mouse, pl: mice, inflect: -мышь, tag: animate
@@ -168,7 +168,7 @@ grammar: adj@prepf, tag: prepositional
 наш--: our, inflect: -наш, tag: possessive, mask: nonstd
 grammar: v@1, tag: verb
 grammar: -наш@pl
-родител--ь: parent, pl: parents, inflect: mascь-animate, tag: animate, mask: sg
+родител--ь: parent, pl: parents, inflect: mascь-animate, mask: sg
 офис--: office, pl: offices, inflect: masc
 grammar: -этот@pl
 жив--<ть: live, 3: lives, past: lived, prog: living, inflect: -жить
@@ -334,7 +334,7 @@ grammar: n@datpl, tag: dative
 grammar: prepositional
 grammar: -свой@prepm, tag: prepositional
 tag: possessive
-его: his, -2: its, pos: pron, tag: possessive
+его: his, -2: its, pos: pron, grammar: possessive, tag: possessive
 --есть: eat, 3: eats, past: ate, prog: eating, inflect: -есть
 grammar: y-esh-et@impr, tag: verb
 phrase: gen-of
@@ -367,7 +367,7 @@ grammar: oprep@alt
 grammar: alt
 phrase: ждать-for-something-abstract
 grammar: y-esh-et@1pl, tag: verb
-её: her, -2: its, pos: pron, tag: possessive
+её: her, -2: its, pos: pron, grammar: possessive, tag: possessive
 деньг--а: money, pl: money, inflect: -деньга, mask: sg
 grammar: adj@accanpl, tag: accusative
 по: on, pos: prep, tag: untranslatable
@@ -459,6 +459,7 @@ phrase: в-году
 phrase: в-время
 grammar: -стул@preppl, tag: prepositional
 правд--а: truth, inflect: fem, mask: pl
+grammar: -далёкий@adv
 минут--а: minute, pl: minutes, inflect: fem, tag: time
 свет--: light, pl: lights, inflect: masc
 phrase: не-gen
@@ -739,11 +740,11 @@ grammar: -лошадь@instrpl, tag: instrumental
 экзамен--: exam, pl: exams, inflect: masc
 grammar: -домашний@f
 phrase: ни-ни
-их: their, pos: pron, tag: possessive
+их: their, pos: pron, grammar: possessive, tag: possessive
 лекарств--о: medication, pl: medications, inflect: neu
 grammar: neuie@pl
 втор--ой: second, adv: secondly, inflect: -второй, tag: ordinal, mask: shortandadv
-куда: where, pos: quest, tag: question
+куда: where, pos: quest, grammar: question, tag: question
 grammar: егоadj@instrf, tag: instrumental
 скольк--о: how much, inflect: -много, tag: time, tag: amount, mask: allbutpl
 скольк--о[many]: how many, inflect: -много, tag: time, tag: amount, mask: allbutpl
@@ -809,7 +810,8 @@ phrase: как-дело
 grammar: -казаться@pastn, tag: verb
 phrase: станция-метро
 grammar: -случай@genpl, tag: genitive
-нескольк--о: a few, -2: some, inflect: -много, tag: amount, mask: allbutpl
+tag: neg-adj
+нескольк--о: a few, -2: some, inflect: -много, tag: amount, mask: allbutpl, tag: neg-adj
 иногда: sometimes, pos: adv
 grammar: -тот@instrm, tag: instrumental
 писател--ь: writer, pl: writers, inflect: mascь-animate
@@ -857,8 +859,8 @@ phrase: с-gen
 grammar: neuie@genpl, tag: genitive
 grammar: -ответить@1, tag: verb
 перв--ый: first, adv: firstly, inflect: adj, tag: ordinal, mask: nonstd
-немног--о: few, inflect: -много, tag: amount, pos: adv, mask: allbutpl
-немног--о[little]: some, adv: a little, -2: a bit, -3: a little, inflect: -много, tag: amount, pos: adv, mask: allbutplandadv
+немног--о: few, inflect: -много, tag: amount, tag: neg-adj, pos: adv, mask: allbutpl
+немног--о[little]: some, adv: a little, -2: a bit, -3: a little, inflect: -много, tag: amount, tag: neg-adj, pos: adv, mask: allbutplandadv
 phrase: во-время-чего-то
 grammar: -ответить@impr, tag: verb
 потом: later, pos: prep
@@ -877,7 +879,7 @@ grammar: sya@pastf, tag: verb
 то: then
 phrase: ни-any-кто
 давно: for a long time, pos: adv
-недавно: recently, pos: adv
+недавно: recently, tag: neg-adj, pos: adv
 grammar: -оставаться@pastn, tag: verb
 grammar: -бояться@1, tag: verb
 встан--<ть: get up, past: got up, prog: getting up, inflect: -стать
@@ -910,7 +912,7 @@ phrase: для-того
 phrase: доволен-instr
 пыта--ться: try, 3: tries, past: tried, prog: trying, inflect: -пытаться
 вспомни--ть: recall, 3: recalls, past: recalled, prog: recalling, inflect: -дарить
-откуда: where from, pos: quest, tag: question
+откуда: where from, pos: quest, grammar: question, tag: question
 вроде: kind of, pos: adv
 phrase: похоже
 спрашива--ть: ask, 3: asks, past: asked, prog: asking, inflect: ать
@@ -1096,7 +1098,7 @@ phrase: если-бы
 grammar: -вернуться@1pl, tag: verb
 возможн--ый: possible, adv: possibly, inflect: ныйadj, mask: comp
 стоянк--а: parking lot, pl: parking lots, inflect: femka, tag: in
-недалеко: not far away, pos: adv
+недалёк--ий: not far away, tag: neg-adj, inflect: -далёкий, mask: allbutadv
 phrase: куда-бы
 grammar: -сесть@pastm, tag: verb
 grammar: -повернуть@inf, tag: verb
@@ -1507,7 +1509,7 @@ phrase: так...как
 пропусти--ть: miss, 3: misses, past: missed, prog: missing, inflect: -простить, tag: perfective
 разреши--ть: allow, 3: allows, past: allowed, prog: allowing, inflect: -учить, tag: perfective, tag: something-to-someone
 phrase: такой..как
-неправильн--ый: incorrect, adv: incorrectly, inflect: -правильный, mask: compandshort
+неправильн--ый: incorrect, adv: incorrectly, tag: neg-adj, inflect: -правильный, mask: compandshort
 предупреди--ть: warn, 3: warns, past: warned, prog: warning, inflect: -ходить, tag: perfective
 предложени--е[offer]: offer, pl: offers, inflect: neuie
 неужели: Is it really possible, -2: Could it be that
@@ -1554,7 +1556,7 @@ grammar: num@accanpl, tag: accusative
 phrase: про-что-то
 оден--<ться: get dressed, 3: gets dressed, past: got dressed, prog: getting dressed, inflect: -одеться
 свидани--е: date, pl: dates, inflect: neuie
-далёк--ий: far away, -2: distant, comp-2: more distant, super-2: most distant, inflect: adj
+далёк--ий: far away, -2: distant, comp-2: more distant, super-2: most distant, inflect: -далёкий
 прежде: before
 приноси--ть: bring, 3: brings, past: brought, prog: bringing, inflect: -спросить
 phrase: играть-в-игру
@@ -1626,10 +1628,10 @@ grammar: abstr-loc@loc
 стои--ть[should]: should, past: should have, inflect: -стоить
 grammar: -сосед@datpl, tag: dative
 phrase: сам-с-собой
-недостаточно: not enought, pos: adv
-неважно: not important, pos: adv
-невкусно: not tasty, pos: adv
-невысоко: not high up, pos: adv
+недостаточн--ый: not enough, adv: enough, inflect: adj, tag: neg-adj, tag: amount, mask: allbutadv
+неважн--ый: not important, tag: neg-adj, inflect: adj, mask: allbutadv
+невкусн--ый: not tasty, tag: neg-adj, inflect: ныйadj, mask: allbutadv
+невысок--ий: not tall, -2: not high up, tag: neg-adj, inflect: -высокий, mask: allbutadv
 phrase: не-стоит
 котор--ый[which]: which one, -2: which, -3: which, -4: whom, inflect: adj, mask: nonstd
 занима--ться[study]: study, 3: studies, past: studied, inflect: -пытаться
@@ -1938,7 +1940,6 @@ phrase: ничего-adj
 подари--ть: give as a gift, inflect: -дарить
 поезди--ть: go, 3: goes, past: went, prog: going, inflect: -ходить
 лета--ть: fly, 3: flies, past: flew, prog: flying, pastpart: flew, inflect: ать
-небеса: skies
 помож--<чь: help, inflect: -помочь
 закричи--<ать: scream, inflect: -лежать
 phrase: similar-to
