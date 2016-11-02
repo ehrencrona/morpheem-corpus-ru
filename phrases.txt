@@ -541,8 +541,8 @@ auto-collocation: "collocation" "" "(1)" phrase:то-время
 обращаться[turn]-с: "обращаться ко мне" "turn to me" "to (2) ... (4)" к@ phrase:np@dative any обращаться|обратиться@
 ни-за-что-as-adv: "ни за что" "for no reason" "for no reason" ни@ за@ что@
 новый-год: "новый год" "New Year's" "New Year's" новый@context год@context
-keep-an-eye-on: "следить за" "keep an eye on" "keep an eye on (4)" следить[eyeon]@ any за@ phrase:np@instrumental
-keep-an-eye-on: "следить за" "keep an eye on" "follow (3)" следить[follow]@ за@ phrase:np@instrumental
+keep-an-eye-on: "следить за" "keep an eye on" "(1) (4)" следить[eyeon]@ any за@ phrase:np@instrumental
+keep-an-eye-on: "следить за" "keep an eye on" "(1) (3)" следить[follow]@ за@ phrase:np@instrumental
 counting-on: "надеюсь на тебя" "i'm counting on you" "(are,is,was,being,been,be,are,were,am,1) counting on (3)" надеяться@ на@ phrase:np@accusative
 counting-on: "надеюсь на тебя" "i'm counting on you" "(are,is,was,being,been,be,are,were,am,3) counting on (2)" на@ phrase:np@accusative надеяться@
 в-гости: "в гости" "to visit" "(1->pres) to visit" идти|ехать|приходить|ходить|пойти|прийти|лететь|поехать|приехать|ездить@ any в@ гость@loc
@@ -629,3 +629,5 @@ known-to-everyone: "знакомый всем" "known to everyone" "(1) (2) to (
 то-время: "то время" "those days" "those days" тот@context время@context
 вместо-dat: "вместо мне" "instead of me" "instead of (2)" вместо@ phrase:np@dative
 замужем-за-сашей: "замужем за Сашей" "married to Sasha" "(1) to (2)" замужем@ за@ phrase:np@instrumental
+уже-второй: "потерял уже третью ручку" "it's already the third pen I've lost" "this is already the (4) (5) (article) (1)  (have,has,had,1) (2->past)" phrase:np@nominative verb уже@ #ordinal noun
+уже-второй: "потерял уже третью ручку" "it's already the third pen I've lost" "this is already the (2) (3) that (4)" уже@ #ordinal noun verb
