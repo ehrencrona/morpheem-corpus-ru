@@ -154,9 +154,9 @@ grammar: -этот@f
 grammar: -этот@m
 слишком: too, pos: adv
 grammar: y-esh-et@2pl, tag: verb
-трудн--ый: difficult, adv: difficultly, comp: more difficult, super: most difficult, inflect: ныйadj
+трудн--ый: difficult, adv: difficultly, comp: more difficult, super: most difficult, inflect: ныйadj, tag: find-it
 красив--ый: beautiful, adv: beautifully, comp: more beautiful, super: most beautiful, inflect: adj
-дом--: house, pl: houses, inflect: -лес
+дом--: house, pl: houses, -2: home, pl-2: homes, inflect: -лес
 работ--а: work, pl: jobs, inflect: fem, tag: at
 дн--<ень: day, pl: days, inflect: -день, tag: time, tag: weekday
 кажд--ый: every, inflect: adj, tag: time, mask: nonstd
@@ -678,7 +678,7 @@ grammar: -кто@acc, tag: accusative
 роман--: novel, pl: novels, inflect: masc-animate
 помощ--ь: help, inflect: femь-я-to-а, mask: pl
 phrase: за-столом
-сложн--ый: complicated, adv: complicatedly, comp: more complicated, super: most complicated, inflect: ныйadj
+сложн--ый: complicated, adv: complicatedly, comp: more complicated, super: most complicated, -2: difficult, adv-2: difficult, comp-2: more difficult, super-2: most difficult, inflect: ныйadj, tag: find-it
 grammar: -сказать@inf, tag: verb
 grammar: -он@prep, tag: prepositional
 бабушк--а: grandmother, pl: grandmothers, -2: grandma, pl-2: grandmas, inflect: -кошка, tag: animate
@@ -980,7 +980,7 @@ phrase: стать-кем-то
 grammar: -войти@inf, tag: verb
 grammar: -церковь@nom
 phrase: работать-кем-то
-велик--ий: grand, adv: grandly, comp: grander, super: grandest, inflect: ийadj, mask: adv
+велик--ий: grand, adv: grandly, comp: grander, super: grandest, -2: great, adv-2: greatly, inflect: ийadj, mask: adv
 сюда: here (direction)
 grammar: -учитель@pl
 отвеча--ть: answer, 3: answers, past: answered, prog: answering, inflect: ать
@@ -1330,7 +1330,7 @@ phrase: всё-ещё
 морожен--ое: ice cream, pl: ice creams, inflect: neuadjoe, tag: uncountable
 решени--е: decision, pl: decisions, inflect: neuie
 решени--е[solution]: solution, pl: solutions, inflect: neuie
-grammar: -лёгкий@adv
+grammar: -лёгкий@adv, tag: find-it
 phrase: жениться-на
 grammar: abstr-нadj@shortpl
 глаз--: eye, pl: eyes, inflect: -глаз
@@ -1354,7 +1354,7 @@ grammar: -мочь@pastf, tag: verb
 grammar: -сто@pl
 phrase: при-prep
 ног--а: leg, pl: legs, inflect: fem
-прост--ой: simple, adv: simply, comp: simpler, super: simplest, inflect: -простой
+прост--ой: simple, adv: simply, comp: simpler, super: simplest, adv-2: just, inflect: -простой
 grammar: -дерево@instrpl, tag: instrumental
 име--ть: possess, 3: possesses, past: possessed, prog: possessing, inflect: ать
 последн--ий: last, inflect: -домашний, mask: nonstd
@@ -1628,10 +1628,10 @@ grammar: abstr-loc@loc
 стои--ть[should]: should, past: should have, inflect: -стоить
 grammar: -сосед@datpl, tag: dative
 phrase: сам-с-собой
-недостаточн--ый: not enough, adv: enough, inflect: adj, mask: allbutadv
-неважн--ый: unimportant, inflect: adj, tag: neg-adj, mask: allbutadv
-невкусн--ый: not tasty, inflect: ныйadj, tag: neg-adj, mask: allbutadv
-невысок--ий: short, -2: not high up, inflect: -высокий, tag: neg-adj, mask: allbutadv
+недостаточн--ый: not enough, adv: not enough, inflect: adj, mask: allbutadv
+неважн--ый: unimportant, inflect: adj, mask: allbutadv
+невкусн--ый: not tasty, inflect: ныйadj, mask: allbutadv
+невысок--ий: not high up, -2: not high up, inflect: -высокий, mask: allbutadv
 phrase: не-стоит
 котор--ый[which]: which one, -2: which, -3: which, -4: whom, inflect: adj, mask: nonstd
 занима--ться[study]: study, 3: studies, past: studied, inflect: -пытаться
@@ -1829,7 +1829,7 @@ grammar: -одеться@pastf, tag: verb
 потрати--ть: spend, 3: spends, past: spent, prog: spending, inflect: -ответить, tag: perfective
 grammar: -одеться@pastpl, tag: verb
 grammar: -сын@preppl, tag: prepositional
-больн--ой: sick, adv: hurt, comp: sicker, inflect: -больной
+больн--ой: sick, adv: hurt, comp: sicker, -2: hurt, inflect: -больной
 grammar: -больной@shortm
 phrase: на-улица
 обрати--ться: turn to, 3: turns to, past: turned to, prog: turning to, -2: address, 3-2: addressed, past-2: addressed, prog-2: addressing, inflect: -обратиться, tag: perfective
@@ -1849,7 +1849,7 @@ grammar: uninflected@nom
 луж--а: puddle, pl: puddles, inflect: -улица
 увиди--<еть: see, 3: sees, past: saw, prog: seeing, inflect: -видеть, tag: perfective
 отправи--ть: send, 3: sends, past: sent, prog: sending, pastpart: sent, inflect: -готовить, tag: perfective, tag: something-to-someone
-показыва--ть: show, 3: shows, past: showed, prog: showing, pastpart: shown, inflect: ать
+показыва--ть: show, 3: shows, past: showed, prog: showing, pastpart: shown, inflect: ать, tag: something-to-someone
 игр--а: game, pl: games, inflect: fem
 grammar: -палец@nom
 рт--<от: mouth, pl: mouths, inflect: -рот
@@ -2008,3 +2008,5 @@ phrase: то-время
 phrase: вместо-dat
 phrase: замужем-за-сашей
 phrase: уже-второй
+phrase: только-что
+phrase: тратить-деньги-на-такси

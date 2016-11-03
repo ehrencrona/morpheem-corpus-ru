@@ -9,9 +9,9 @@ auto-567-genpl: "пять друзей" "five friends" "(1) (2)" #number@context
 auto-567-genpl: "пять друзей" "five friends" "(1) (2) o'clock" #number@context adjective@genpl* час@genpl
 auto-567-genpl: "пять друзей" "five friends" "(1) (2) (3)" #number@context adjective@genpl* genpl
 auto-1-nom: "один человек" "one person" "(1) (2) (3)" один@context adjective@context* noun@context
-not-gen: "нет денег" "there is no money" "there is (2)" нет[none]@ phrase:ничего-adj
+not-gen: "нет денег" "there is no money" "there is (2)" нет[none]@ phrase:ничего-adj@genitive
 not-gen: "нет денег" "there is no money" "(there is no,pl:there are no,3->v) (3)" нет[none]@ any phrase:np@genitive
-not-gen: "нет денег" "there is no money" "(there is no,there are no,3->v) (1)" phrase:np@genitive any нет[none]@
+not-gen: "нет денег" "there is no money" "(there is no,there are no,3->v) (1) ..." phrase:np@genitive any нет[none]@
 gen-of: "бутылка вина" "bottle of wine" "Mother's Day" день@context мать@gen
 gen-of: "бутылка вина" "bottle of wine" "Father's Day" день@context отец@gen
 gen-of: "бутылка вина" "bottle of wine" "birthday" день@ рождение@gen
@@ -30,7 +30,8 @@ gen-possession: "кошка Саши" "Sasha's cat" "of (1)" phrase:np@genitive#
 много-gen: "много проблем" "many problems" "(1) (2)" больше|меньше|много@ phrase:np@genitive
 много-gen: "много проблем" "many problems" "(1) (2)" столько|столько[much]|немного[little]|немного|несколько|меньше|больше|много[much]|сколько[many]@ phrase:np@genitive
 много-gen: "много проблем" "many problems" "(1) (article) couple of (3)" adjective@context? пара@ phrase:np@genitive
-много-gen: "много проблем" "many problems" "enough [something]" достаточный@adv phrase:np@genitive
+много-gen: "много проблем" "many problems" "enough (2)" достаточный@adv phrase:np@genitive
+много-gen: "много проблем" "many problems" "(1) (2)" недостаточно@ phrase:np@genitive
 много-gen: "много проблем" "many problems" "(1) (2)" мало|мало[few]@ phrase:np@genitive
 много-gen: "много проблем" "many problems" "(1) of (2)" чуть-чуть@ phrase:np@genitive
 без-gen: "без молока" "without milk" "without [something]" без@ phrase:np@genitive
@@ -94,8 +95,7 @@ at-datpl: "по утрам" "in the morning" "in the (2)" по@ #time@datpl
 во-время-чего-то: "во время уроков" "during the lesson" "in the [rain/snow->nom]" в@ время@acc #rain@genitive
 во-время-чего-то: "во время уроков" "during the lesson" "during (3)" в@ время@acc phrase:np@genitive
 около-чего-то: "около ста" "around a hundred" "around (2)" около@ phrase:np@genitive
-далеко-от-чего-то: "далеко от дома" "far from home" "not far away from [something]" недалеко@ от@ phrase:np@genitive
-далеко-от-чего-то: "далеко от дома" "far from home" "far away from [something]" далеко@ от@ phrase:np@genitive
+далеко-от-чего-то: "далеко от дома" "far from home" "(1) from [something]" далёкий|недалеко@adv от@ phrase:np@genitive
 справа-от-чего-то: "справа от меня" "to my right" "to the right of (3)" справа@ от@ phrase:np@genitive
 слева-от-чего-то: "слева от меня" "to my right" "to the left of (3)" слева@ от@ phrase:np@genitive
 вокруг-чего-то: "вокруг чего-то (B1)" "" "around [something]" вокруг@ phrase:np@genitive
@@ -296,8 +296,10 @@ dat-нужен: "мне нужна любовь" "I need love" "(2->nom) needed 
 датьetc-dat: "дать кошке еду" "give the cat food" "(1) ... (3) ... (5)" phrase:np@accusative any phrase:np@dative any #something-to-someone
 датьetc-dat: "дать кошке еду" "give the cat food" "(3) ... (1)" phrase:np@dative any #something-to-someone
 датьetc-dat: "дать кошке еду" "give the cat food" "to [someone] ... (3)" phrase:np@dative any #something-to-someone
-купить-чего-то: "покупать Маше подарки" "to buy presents for Masha" "(buy,buys,bought,buying,1) (article) (2) ... for (4)" купить|покупать@ phrase:np@accusative any phrase:np@dative
-купить-чего-то: "покупать Маше подарки" "to buy presents for Masha" "(buy,buys,bought,buying,1) (2) (3) (article) (4)" купить|покупать@ phrase:np@dative adverb? phrase:np@accusative
+купить-чего-то: "покупать Маше подарки" "to buy presents for Masha" "(buy,buys,bought,buying,1) (2) ... for (4)" купить|покупать@ phrase:np@accusative any phrase:np@dative
+купить-чего-то: "покупать Маше подарки" "to buy presents for Masha" "(buy,buys,bought,buying,1) (2) (3) (4)" купить|покупать@ phrase:np@dative adverb? phrase:np@accusative
+купить-чего-то: "покупать Маше подарки" "to buy presents for Masha" "(1) (2) ... for (4)" выбрать|выбирать@ phrase:np@accusative any phrase:np@dative
+купить-чего-то: "покупать Маше подарки" "to buy presents for Masha" "(1) (2) (3) (4)" выбрать|выбирать@ phrase:np@dative adverb? phrase:np@accusative
 dat-adv: "мне холодно" "i'm cold" "(1->nom) (3) (4->adj)" phrase:np@dative adverb? стать@ adv
 dat-adv: "мне холодно" "i'm cold" "(are,is,was,being,been,be,are,were,am,1) (1) feeling (2->adj)?" phrase:np@dative adv ?@
 dat-adv: "мне холодно" "i'm cold" "(1->nom) (feel,feels,felt,1) (2) (3->adj)" phrase:np@dative adverb adv
@@ -306,9 +308,10 @@ dat-adv: "мне холодно" "i'm cold" "(1->nom) (2) (3->adj)" phrase:np@da
 dat-adv: "мне холодно" "i'm cold" "(1->nom) (2) (3->adj)" phrase:np@dative быть[fut]@ adv
 dat-adv: "мне холодно" "i'm cold" "(are,is,was,being,been,be,are,were,am,1) (1) not (3->adj)" phrase:np@dative не@ adv
 dat-adv: "мне холодно" "i'm cold" "(are,is,was,being,been,be,are,were,am,1) (1) not (3->adj)" phrase:np@dative не@ adv
-кому-то-достаточно: "мне достаточно" "I've had enough" "(1->nom) (have,has,had,1) (2)" phrase:np@dative phrase:много-gen
-кому-то-достаточно: "мне достаточно" "I've had enough" "(1) (do,does,did,1) not have (3)" phrase:np@dative не@ phrase:много-gen
-кому-то-достаточно: "мне достаточно" "I've had enough" "(1->nom) did not have (4)" phrase:np@dative не@ быть@ phrase:много-gen
+кому-то-достаточно: "мне достаточно" "It's enough for me" "(1->nom) (have,has,had,1) (2)" phrase:np@dative phrase:много-gen
+кому-то-достаточно: "мне достаточно" "It's enough for me" "(1) (do,does,did,1) not have (3)" phrase:np@dative не@ phrase:много-gen
+кому-то-достаточно: "мне достаточно" "It's enough for me" "(1->nom) did not have (4)" phrase:np@dative не@ быть@ phrase:много-gen
+кому-то-достаточно: "мне достаточно" "It's enough for me" "it's (2) for (1)" phrase:np@dative недостаточно@
 dat-удобно: "вам удобно?" "does it suit you?" "whenever suits (3)" ,@ когда@ pronoun@dative удобный@
 dat-удобно: "вам удобно?" "does it suit you?" "it suits (1)" pronoun@dative удобный@
 все-равно: "всё равно" "nevertheless" "nevertheless" весь|всё@ равный@
@@ -411,11 +414,16 @@ answer-to-question: "ответить на вопрос" "to answer the question
 what-a: "какой отличный день" "what a great day" "what a [nice] [thing]" какой@ adjective@context noun@context
 such-nice: "такой отличный день!" "what a great day!" "such (article) (2)" такой@ phrase:np
 интересно-: "интересно..." "I wonder..." "I wonder," интересный@adv ,@
-dat-трудно: "мне трудно" "it's hard for me" "it is hard for (1)" phrase:np@dative трудный@adv
+dat-трудно: "мне трудно" "it's hard for me" "it is (2->adj) for (1)" phrase:np@dative #find-it@adv
+dat-трудно: "мне трудно" "it's hard for me" "it is (2) (3->adj) for (1)" phrase:np@dative adverb? #find-it@adv
 dat-скучно: "мне скучно" "I'm bored" "(1->nom) was bored" phrase:np@dative быть@past скучный@adv
 dat-скучно: "мне скучно" "I'm bored" "(1->nom) will be bored" phrase:np@dative быть[fut]@ скучный@adv
 dat-скучно: "мне скучно" "I'm bored" "(1->nom) (are,is,was,being,been,be,are,were,am,1) (2) bored" phrase:np@dative adverb скучный@adv
 dat-скучно: "мне скучно" "I'm bored" "(1->nom) (are,is,was,being,been,be,are,were,am,1) bored" phrase:np@dative скучный@adv
+dat-скучно: "мне скучно" "I'm bored" "it tastes good to (1)" phrase:np@dative вкусный@adv
+dat-скучно: "мне скучно" "I'm bored" "it tasted good to (1)" phrase:np@dative быть@pastn вкусный@adv
+dat-скучно: "мне скучно" "I'm bored" "it tastes bad to (1)" phrase:np@dative невкусно@
+dat-скучно: "мне скучно" "I'm bored" "it tasted bad to (1)" phrase:np@dative быть@pastn невкусно@
 совсем-не: "совсем не" "not at all" "not at all" совсем@ не@
 как-дело: "как дела" "how are you?" "how are you?" как@ дело@ ?@
 как-дело: "как дела" "how are you?" "how (are,is,was,being,been,be,are,were,am,3) (3->nom) doing?" как@ у@ phrase:np@genitive дело@ ?@
@@ -489,6 +497,7 @@ face-to-face: "лицом к личу" "face to face" "face to face" лицо@in
 на-num-comp: "на два года моложе" "two years yonger" "(2) (3)" на@ phrase:np@accusative#number comp
 на-num-comp: "на два года моложе" "two years yonger" "(4) ... (1)" comp any на@ phrase:np@accusative#number
 к-на: "к себе на работу" "with me to work" "to (5) of (2)" к@ phrase:np@dative any на@ phrase:np@accusative
+к-на: "к себе на работу" "with me to work" "to (5) of (2)" к@ phrase:np@dative any в@ phrase:np@accusative
 сесть-на: "сесть на автобус" "take the bus" "(take,takes,took,1) (article) (3)" сесть@ на@ phrase:np#transport
 врать-dat: "врать мне" "lie to me" "(1) to (2)" врать@ phrase:np@dative
 врать-dat: "врать мне" "lie to me" "(2) to (1)" phrase:np@dative врать@
@@ -628,6 +637,9 @@ known-to-everyone: "знакомый всем" "known to everyone" "(1) (2) to (
 пить-лекарство: "пить лекарство" "take medicine" "(take,takes,took,taking,taken,1) (2) (3)" пить|выпить@ adjective лекарство@
 то-время: "то время" "those days" "those days" тот@context время@context
 вместо-dat: "вместо мне" "instead of me" "instead of (2)" вместо@ phrase:np@dative
-замужем-за-сашей: "замужем за Сашей" "married to Sasha" "(1) to (2)" замужем@ за@ phrase:np@instrumental
+замужем-за-сашей: "замужем за Сашей" "married to Sasha" "(1) to (3)" замужем@ за@ phrase:np@instrumental
 уже-второй: "потерял уже третью ручку" "it's already the third pen I've lost" "this is already the (4) (5) (article) (1)  (have,has,had,1) (2->past)" phrase:np@nominative verb уже@ #ordinal noun
 уже-второй: "потерял уже третью ручку" "it's already the third pen I've lost" "this is already the (2) (3) that (4)" уже@ #ordinal noun verb
+только-что: "только что" "just a moment ago" "just a moment ago" только@ что@
+тратить-деньги-на-такси: "тратить деньги на такси" "spend money on taxi" "(1) (2) on (4)" тратить|потратить@ phrase:np@accusative на@ phrase:np@accusative
+тратить-деньги-на-такси: "тратить деньги на такси" "spend money on taxi" "(1) (do,does,did,doing,done,3) (2) on (5)" phrase:np@accusative any тратить|потратить@ на@ phrase:np@accusative
