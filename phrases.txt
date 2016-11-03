@@ -35,6 +35,7 @@ gen-possession: "кошка Саши" "Sasha's cat" "of (1)" phrase:np@genitive#
 много-gen: "много проблем" "many problems" "(1) (2)" мало|мало[few]@ phrase:np@genitive
 много-gen: "много проблем" "many problems" "(1) of (2)" чуть-чуть@ phrase:np@genitive
 без-gen: "без молока" "without milk" "without [something]" без@ phrase:np@genitive
+at-instr: "утром" "in the morning" "at (1) (2)" adjective@? ночь@instrumental
 at-instr: "утром" "in the morning" "(1) (2)" adjective@instrumental! #at-instr@instrumental
 at-instr: "утром" "in the morning" "in the (1)" #at-instr@instrumental
 more-than: "больше, чем" "more than" "(1) and (3) than" comp и@ comp any ,@ чем@
@@ -236,7 +237,7 @@ go-do: "идти спать" "go sleep" "(go,goes,went,1) (2)" идти|пойт
 думать-над: "думаю над этим" "i'm thinking about it" "(1) about (3)" думать|подумать@ над@ phrase:np@instrumental
 думать-над: "думаю над этим" "i'm thinking about it" "(3) about (2)" над@ phrase:np@instrumental думать|подумать@
 Вот-это: "вот это" "this is" "This is (3)" вот@ это@ phrase:np
-пора–не: "пока не" "until" "until (2)" пока|пока[while]@ phrase:np не@
+пора–не: "пока не" "until" "until ..." пока|пока[while]@ any не@
 уверен-в: "уверен в себе" "sure of himself" "certain of" уверенный@ в@ phrase:np@prepositional
 так-что: "так что" "that is why" "that is why" так@ что[that]@
 так-как: "так, как ты хочешь" "just the way like it" "the way" так@ ,@ как[like]@
@@ -263,7 +264,7 @@ go-do: "идти спать" "go sleep" "(go,goes,went,1) (2)" идти|пойт
 ни-ни: "ни ... ни" "neither ... nor" "neither (2) ... nor (5)" ни@ verb ,@ ни@ verb
 если-бы: "если бы я узнал, я бы сказал" "if I knew, I'd say" "if ... (4) would (6->inf)" если@ бы@ any ,@ #animate verb бы@
 если-бы: "если бы я узнал, я бы сказал" "if I knew, I'd say" "if ... , ... would (8->)" если@ бы@ any ,@ any бы@ any verb
-куда-бы: "куда бы он ни пошёл" "wherever he went" "whereever (3) (5)" куда@ бы@ #animate ни@ verb@past
+куда-бы: "куда бы он ни пошёл" "wherever he goes" "whereever (3) (5)" куда@ бы@ #animate ни@ verb@past
 кроме-gen: "кроме" "except for" "except for (2)" кроме@ phrase:np@genitive
 против-gen: "против" "against" "against" против@ тот@gen ,@ чтобы@
 против-gen: "против" "against" "against [an idea/cause/etc]" против@ phrase:np@genitive
@@ -552,6 +553,7 @@ auto-collocation: "collocation" "" "(1)" phrase:то-время
 новый-год: "новый год" "New Year's" "New Year's" новый@context год@context
 keep-an-eye-on: "следить за" "keep an eye on" "(1) (4)" следить[eyeon]@ any за@ phrase:np@instrumental
 keep-an-eye-on: "следить за" "keep an eye on" "(1) (3)" следить[follow]@ за@ phrase:np@instrumental
+keep-an-eye-on: "следить за" "keep an eye on" "... (4) (2)" за@ phrase:np@instrumental any следить[follow]|следить[eyeon]@
 counting-on: "надеюсь на тебя" "i'm counting on you" "(are,is,was,being,been,be,are,were,am,1) counting on (3)" надеяться@ на@ phrase:np@accusative
 counting-on: "надеюсь на тебя" "i'm counting on you" "(are,is,was,being,been,be,are,were,am,3) counting on (2)" на@ phrase:np@accusative надеяться@
 в-гости: "в гости" "to visit" "(1->pres) to visit" идти|ехать|приходить|ходить|пойти|прийти|лететь|поехать|приехать|ездить@ any в@ гость@loc
@@ -574,7 +576,8 @@ even-so: "и так" "even so" "even so" и[part]@ так@
 бояться-genitive: "бояться собак" "be afraid of dogs" "(are,is,was,being,been,be,are,were,am,3) not afraid of (1)" phrase:np@genitive не@ бояться@
 бояться-genitive: "бояться собак" "be afraid of dogs" "(are,is,was,being,been,be,are,were,am,1) afraid of (2)" бояться@ phrase:np@genitive
 бояться-genitive: "бояться собак" "be afraid of dogs" "(1) ... (are,is,was,being,been,be,are,were,am,3) afraid of" phrase:np@genitive any бояться@
-через-интернет: "через интернет" "online" "online" через@ интернет@
+через-интернет: "через интернет" "online" "online" через@ интернет@accusative
+через-интернет: "через интернет" "online" "online" в@ интернет@prep
 кроме-того: "кроме того" "moreover" "moreover" кроме@ тот@gen
 домашнее-животное: "домашнее животное" "pet" "(pets,pet,2)" домашний@context животное@context
 double-negation: "ничего не помню" "I don't remember anything" "nothing (3)" ничто@ не@ случиться|работать@
@@ -610,7 +613,7 @@ is-not: "нет чего-то - 'is not' (A1)" "" "(2) (are not,is not,was not,b
 is-not: "нет чего-то - 'is not' (A1)" "" "(2) (are not,is not,was not,being not,been not,be not,are not,were not,am not,2->v) (5) (1) (3)" adverb? phrase:np@genitive adverb? нет[none]@ phrase:на-place
 is-not: "нет чего-то - 'is not' (A1)" "" "(2) (are not,is not,was not,being not,been not,be not,are not,were not,am not,2->v) (1) (3)" adverb? phrase:np@genitive adverb? нет[none]@
 is-not: "нет чего-то - 'is not' (A1)" "" "(3) (are not,is not,was not,being not,been not,be not,are not,were not,am not,3->v) (1)" adverb? нет[none]@ phrase:np@genitive
-оказаться-instr: "оказаться" "turn out to be" "(1) ... (3)" оказаться[prove]@ any phrase:np@instrumental
+оказаться-instr: "оказаться проблемой" "turn out to be a problem" "(1) ... (3)" оказаться[prove]|оказаться@ any phrase:np@instrumental
 себя-чувствовать: "чувствую себя хорошо" "I feel good" "(4) (1) (3->adj)" adverb? себя@ adverb? чувствовать@
 себя-чувствовать: "чувствую себя хорошо" "I feel good" "(1) (2) (4->adj)" adverb? чувствовать@ себя@ adjective
 за-instead-of: "за меня" "instead of me" "instead of (2)" за@ phrase:np@accusative

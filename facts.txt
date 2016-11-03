@@ -19,12 +19,12 @@ grammar: masc@nom
 grammar: adj@m
 свитер--: sweater, pl: sweaters, inflect: masc
 университет--: university, pl: universities, inflect: masc, tag: at
-в--: in, at, inflect: oprep, tag: untranslatable
+в--: in, -2: at, -3: to, inflect: oprep, tag: untranslatable
 grammar: oprep@std
 grammar: n@prep, tag: prepositional
 планшет--: tablet, pl: tablets, inflect: masc
 хорош--ий: good, adv: well, comp: better, super: best, inflect: -хороший
-магазин--: shop, pl: shops, inflect: masc
+магазин--: shop, pl: shops, -2: store, pl-2: store, inflect: masc
 комнат--а: room, pl: rooms, inflect: fem
 grammar: accusative
 --я: I, acc: me, inflect: -я, tag: animate
@@ -465,7 +465,6 @@ grammar: -далёкий@adv
 phrase: не-gen
 phrase: there-was-none
 grammar: -кошка@genpl, tag: genitive
-далеко: far away
 матер--<<ь: mother, pl: mothers, inflect: -мать, tag: animate
 grammar: -звать@inf, tag: verb
 phrase: there-will-be-none
@@ -744,7 +743,7 @@ phrase: ни-ни
 лекарств--о: medication, pl: medications, inflect: neu
 grammar: neuie@pl
 втор--ой: second, adv: secondly, inflect: -второй, tag: ordinal, mask: shortandadv
-куда: where, pos: quest, tag: question
+куда: where, -2: where to, pos: quest, tag: question
 grammar: егоadj@instrf, tag: instrumental
 скольк--о: how much, inflect: -много, tag: time, tag: amount, mask: allbutpl
 скольк--о[many]: how many, inflect: -много, tag: time, tag: amount, mask: allbutpl
@@ -1058,7 +1057,7 @@ grammar: -о@alt2
 grammar: -сам@m
 phrase: так-как
 зарядк--а: charger, pl: chargers, inflect: femka
-сяд--<<есть: sit down, past: sat down, prog: sitting down, inflect: -сесть
+сяд--<<есть: sit down, past: sat down, prog: sitting down, inflect: -сесть, tag: perfective
 вероятн--ый: likely, adv: probably, comp: likelier, super: likeliest, inflect: adj
 grammar: -дать@3, tag: verb
 grammar: sya@pastpl, tag: verb
@@ -1410,7 +1409,7 @@ grammar: -огонь@nom
 grammar: -бытьfut@inf, tag: verb
 phrase: не-больше
 подума--ть: think, 3: think, past: thought, prog: thinking, inflect: ать
-окаж--<заться: turn up, 3: turns up, past: turned up, prog: turning up, inflect: -казаться, tag: perfective
+окаж--<заться: end up, 3: ends up, past: ended up, prog: ending up, -2: turn up, 3-2: turns up, past-2: turned up, prog-2: turning up, inflect: -казаться, tag: perfective
 окаж--<заться[prove]: turn out, 3: turns out, past: turned out, prog: turning out, inflect: -казаться, tag: perfective
 grammar: аться@3, tag: verb
 однако: however, pos: adv
@@ -1593,7 +1592,7 @@ phrase: either-or-или-или
 концерт--: concert, pl: concerts, inflect: masc
 phrase: после-того-как
 выгляди--<еть: look like, 3: looks like, past: looked like, inflect: -глядеть
-реша--ться: decide, 3: decides, past: decided, inflect: -пытаться
+реша--ться: decide, 3: decides, past: decided, -2: dare, 3-2: dares, past-2: dared, prog-2: daring, inflect: -пытаться
 реши--ться: decide, 3: decides, past: decided, inflect: -случиться, tag: perfective
 grammar: -плохой@comp
 grammar: -два@accinanfpl, tag: accusative
@@ -1656,7 +1655,7 @@ grammar: -интересоваться@pastm, tag: verb
 grammar: -дорогой@comp
 всего: only, pos: adv
 phrase: за-время
-девушк--а: girlfriend, pl: girlfriends, inflect: -девочка
+девушк--а: girlfriend, pl: girlfriends, -2: young lady, inflect: -девочка
 девушк--а[lady]: young lady, pl: young ladies, inflect: -девочка
 одн--<ин[alone]: alone, inflect: -один, tag: number
 grammar: -быть@3, tag: verb
@@ -2010,3 +2009,4 @@ phrase: замужем-за-сашей
 phrase: уже-второй
 phrase: только-что
 phrase: тратить-деньги-на-такси
+компьютер--: computer, pl: computers, inflect: masc
