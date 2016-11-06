@@ -27,13 +27,13 @@ gen-possession: "кошка Саши" "Sasha's cat" "of (1)" phrase:np@genitive#
 с-gen: "с шести лет" "since I was six" "from (2)" с@ phrase:np@genitive
 с-чего-взял: "с чего ты взял" "where did you get that idea" "where did (3) get the idea that" с@ что@gen #animate взять@ ,@ что[that]@
 с-чего-взял: "с чего ты взял" "where did you get that idea" "where did (3) get that idea from" с@ что@gen #animate этот@ взять@
-много-gen: "много проблем" "many problems" "(1) (2)" больше|меньше|много@ phrase:np@genitive
-много-gen: "много проблем" "many problems" "(1) (2)" столько|столько[much]|немного[little]|немного|несколько|меньше|больше|много[much]|сколько[many]@ phrase:np@genitive
-много-gen: "много проблем" "many problems" "(1) (article) couple of (3)" adjective@context? пара@ phrase:np@genitive
-много-gen: "много проблем" "many problems" "enough (2)" достаточный@adv phrase:np@genitive
-много-gen: "много проблем" "many problems" "(1) (2)" недостаточно@ phrase:np@genitive
-много-gen: "много проблем" "many problems" "(1) (2)" мало|мало[few]@ phrase:np@genitive
-много-gen: "много проблем" "many problems" "(1) of (2)" чуть-чуть@ phrase:np@genitive
+много-gen: "много проблем" "a lot of problems" "(1) (2)" больше|меньше|много@ phrase:np@genitive
+много-gen: "много проблем" "a lot of problems" "(1) (2)" столько|столько[much]|немного[little]|немного|несколько|меньше|больше|много[much]|сколько[many]@ phrase:np@genitive
+много-gen: "много проблем" "a lot of problems" "(1) (article) couple of (3)" adjective@context? пара@ phrase:np@genitive
+много-gen: "много проблем" "a lot of problems" "enough (2)" достаточный@adv phrase:np@genitive
+много-gen: "много проблем" "a lot of problems" "(1) (2)" недостаточно@ phrase:np@genitive
+много-gen: "много проблем" "a lot of problems" "(1) (2)" мало|мало[few]@ phrase:np@genitive
+много-gen: "много проблем" "a lot of problems" "(1) of (2)" чуть-чуть@ phrase:np@genitive
 без-gen: "без молока" "without milk" "without [something]" без@ phrase:np@genitive
 at-instr: "утром" "in the morning" "at (1) (2)" adjective@? ночь@instrumental
 at-instr: "утром" "in the morning" "(1) (2)" adjective@instrumental! #at-instr@instrumental
@@ -107,7 +107,8 @@ at-datpl: "по утрам" "in the morning" "in the (2)" по@ #time@datpl
 ни-за-что: "ни за что" "under no circumstances" "under no circumstances" ни@ за@ что@ на@ свет@
 ни-за-что: "ни за что" "under no circumstances" "under no circumstances" ни@ за@ что@
 к-кому-чему: "к доктору" "to the doctor" "to (2)" к@ phrase:np@dative#animate
-ждать-for-something-abstract: "ждать ответа" "wait for an answer" "(1) for [something abstract]" ждать@ phrase:np@genitive
+ждать-for-something-abstract: "ждать ответа" "wait for an answer" "(1) for (2)" ждать@ phrase:np@genitive
+ждать-for-something-abstract: "ждать ответа" "wait for an answer" "(2) for (1)" phrase:np@genitive ждать@
 хотеть-something-abstract: "хочу денег" "I want money" "(1) (3)" хотеть@ any phrase:np@genitive
 comp-gen: "лучше всех" "better than anyone" "(1) than anyone" comp все[everyone]@genpl
 comp-gen: "лучше всех" "better than anyone" "most of all" comp всё@gen
@@ -215,8 +216,8 @@ hyperbole: "ждать часами" "to wait for hours" "for [adjective]" phras
 на-языке: "на француском" "in French" "in [language]" на@ #language@prepositional
 на-языке: "на француском" "in French" "in (2)" на@ phrase:np@prepositional#language
 на-транспорте: "на автобусе" "by bus" "by [means of transportation]" на@ phrase:np@prepositional#transport
-no-matter-how: "сколько я ни работал" "no matter how much i worked" "no matter how much (2) (4)" сколько|как[like]@ #animate ни@ verb
-no-matter-how: "сколько я ни работал" "no matter how much i worked" "no matter how much (3) (5)" сколько|как[like]@ бы|б@ #animate ни@ verb@past
+no-matter-how: "сколько я ни работал" "no matter how much i worked" "no matter at what time (4) (6)" в@alt сколько|сколько[many]@ particle@? #animate ни@ verb@past
+no-matter-how: "сколько я ни работал" "no matter how much i worked" "no matter how much (3) (5)" сколько|сколько[many]|как[like]@ particle@? #animate ни@ verb
 nazad: "год назад" "a year ago" "[time] ago" phrase:np@accusative#time назад@
 во-сколько: "во сколько?" "at what time?" "at what time" в@ сколько[many]|сколько@
 при-condition: "при нас" "with us" "with [something]" при@ phrase:np@prepositional
@@ -257,6 +258,7 @@ go-do: "идти спать" "go sleep" "(go,goes,went,1) (2)" идти|пойт
 то-что: "это то, что она сказала" "that's what she said" "(3)" тот@ ,@ что|что[that]@
 когда-то: "когда ..., то ..." "when ..., there ..." "when ... ," когда@ any ,@ то@
 то-же: "то же самый" "the same" "the same" тот@ же@ самый@
+то-же: "то же самый" "the same" "the very same thing" один@ и@ тот@ же@
 то-же: "то же самый" "the same" "the same" тот@ же@
 то-же: "то же самый" "the same" "the same" тот@ самый@
 не-gen: "не пью пива" "I don't drink beer" "(do,does,did,3) not (2) (3->pres) (5)" не@ adverb? verb any phrase:np@genitive
@@ -283,8 +285,8 @@ ask-someone: "прошу у тебя денег" "i'm asking you for money" "(1)
 на-самом-деле: "на самом деле" "in fact" "in fact" на@ самый@prepn дело@prep
 смотреть-на: "смотреть на людей" "to look at people" "look at [something]" посмотреть|посмотреть[look]|смотреть|смотреть[look]@ на@ phrase:np@accusative
 про-что-то: "забыл про это" "I forgot about it" "about [something]" про@ phrase:np@accusative
-играть-в-игру: "играть в футбол" "play football" "(play,plays,played,1) (3)" играть@ в@ accusative
-играть-в-игру: "играть в футбол" "play football" "(3) (1)" игра@ в@ accusative
+играть-в-игру: "играть в футбол" "play football" "(play,plays,played,1) ... (4)" играть@ any в@ phrase:np@accusative
+играть-в-игру: "играть в футбол" "play football" "(3) (1)" игра@ в@ phrase:np@accusative
 dat-нужен: "мне нужна любовь" "I need love" "[someone->nom] (2) (do,does,did,1) not need (5->acc)" phrase:np@dative adverb? не@ нужный@short phrase:np@nominative
 dat-нужен: "мне нужна любовь" "I need love" "(1->nom) (need,needs,1) (4) (5->acc)" phrase:np@dative any нужный@short adverb? phrase:np@nominative
 dat-нужен: "мне нужна любовь" "I need love" "(2->nom) (need,needs,2) (1->acc)" phrase:np@nominative phrase:np@dative нужный@short
@@ -356,6 +358,9 @@ dat-speech: "сказать Саше" "tell Sasha" "not (tell,tells,told,3) (1)"
 dat-speech: "сказать Саше" "tell Sasha" "(tell,tells,told,2) (1)" phrase:np@dative рассказывать|рассказать|говорить|сказать@
 dat-speech: "сказать Саше" "tell Sasha" "(tell,tells,told,1) (3)" рассказывать|рассказать|говорить|сказать@ any phrase:np@dative
 dat-speech: "сказать Саше" "tell Sasha" "(1) (3)" сообщить|сообщать@ any phrase:np@dative
+dat-speech: "сказать Саше" "tell Sasha" "(1) (2)" ответить|отвечать@ phrase:np@dative
+dat-speech: "сказать Саше" "tell Sasha" "(2) (1)" phrase:np@dative ответить|отвечать@
+dat-speech: "сказать Саше" "tell Sasha" "not (3) (1)" phrase:np@dative не@ ответить|отвечать@
 помогать-dat: "помогай мне" "help me" "(1) (2)" помогать|помочь@ phrase:np@dative
 помогать-dat: "помогай мне" "help me" "(2) (1)" phrase:np@dative помогать|помочь@
 помогать-dat: "помогай мне" "help me" "(do,does,did,3) not (3->pres) (1)" phrase:np@dative не@ помогать@
@@ -367,8 +372,8 @@ dat-лучше: "тебе лучше" "you'd better" "(1->nom)'d better" phrase:
 dat-лучше: "тебе лучше" "you'd better" "(3->nom)'d better" хороший@comp particle@? @dative+
 по-отношению: "по отношению к" "with regards to" "with regards to [something]" по@ отношение[regard]@dat к@ phrase:np@dative
 по-отношению: "по отношению к" "with regards to" "relate to (4)" иметь@ отношение[regard]|отношение@ к@ phrase:np@dative
-рад-кому: "рад тебе" "happy to see you" "happy to see [someone]" рад@ any phrase:np@dative#animate
-рад-кому: "рад тебе" "happy to see you" "happy to see [someone]" phrase:np@dative#animate any рад@
+рад-кому: "рад тебе" "happy to see you" "(2) happy to see (3)" рад@ adverb? phrase:np@dative#animate
+рад-кому: "рад тебе" "happy to see you" "(2) happy to see (1)" phrase:np@dative#animate adverb? рад@
 учить-dat: "учи нас" "teach us" "(5) (1) (3)" phrase:np@accusative any phrase:np@dative any учить[teach]|научить[teach]@
 учить-dat: "учи нас" "teach us" "(1) (2) (3)" учить[teach]|научить[teach]@ phrase:np@accusative phrase:np@dative
 учить-dat: "учи нас" "teach us" "(5) ... (3) ... (1)" phrase:np@dative any phrase:np@accusative any учить[teach]|научить[teach]@
@@ -615,8 +620,8 @@ is-not: "нет чего-то - 'is not' (A1)" "" "(2) (are not,is not,was not,b
 is-not: "нет чего-то - 'is not' (A1)" "" "(2) (are not,is not,was not,being not,been not,be not,are not,were not,am not,2->v) (1) (3)" adverb? phrase:np@genitive adverb? нет[none]@
 is-not: "нет чего-то - 'is not' (A1)" "" "(3) (are not,is not,was not,being not,been not,be not,are not,were not,am not,3->v) (1)" adverb? нет[none]@ phrase:np@genitive
 оказаться-instr: "оказаться проблемой" "turn out to be a problem" "(1) ... (3)" оказаться[prove]|оказаться@ any phrase:np@instrumental
-себя-чувствовать: "чувствую себя хорошо" "I feel good" "(4) (1) (3->adj)" adverb? себя@ adverb? чувствовать@
-себя-чувствовать: "чувствую себя хорошо" "I feel good" "(1) (2) (4->adj)" adverb? чувствовать@ себя@ adjective
+себя-чувствовать: "чувствовать себя хорошо" "feel good" "(4) (1) (3->adj)" adverb? себя@ adverb? чувствовать@
+себя-чувствовать: "чувствовать себя хорошо" "feel good" "(1) (2) (4->adj)" adverb? чувствовать@ себя@ adjective
 за-instead-of: "за меня" "instead of me" "instead of (2)" за@ phrase:np@accusative
 dat-весело: "мне весело" "I'm having fun" "(1->nom) (are,is,was,being,been,be,are,were,am,1) having (2)" phrase:np@dative весёлый@adv
 dat-весело: "мне весело" "I'm having fun" "(1->nom) (2) (3) (4)" phrase:np@dative быть@past adverb? весёлый@adv
@@ -652,3 +657,5 @@ known-to-everyone: "знакомый всем" "known to everyone" "(1) (2) to (
 тот-кто: "тот, кто" "the one who" "the one who" тот@sg ,@ кто@
 тот-кто: "тот, кто" "the one who" "those who" тот@plural ,@ кто@
 а-то: "а то" "otherwise" "otherwise" а@ тот@
+знакомиться-с: "познакомиться с родителями" "meet the parents" "(1) (3)" знакомиться|познакомиться@ с@ phrase:np@instrumental
+знакомиться-с: "познакомиться с родителями" "meet the parents" "(3) (2)" с@ phrase:np@instrumental знакомиться|познакомиться@

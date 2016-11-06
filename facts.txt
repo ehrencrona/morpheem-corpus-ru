@@ -88,7 +88,7 @@ grammar: abstr-masc-anim@acc, tag: accusative
 мальчик--: boy, pl: boys, inflect: masc-animate
 grammar: -учить@1, tag: verb
 grammar: -любить@1, tag: verb
-как[like]: as, pos: conj
+как[like]: as, -2: like, pos: conj
 как: how, pos: quest, tag: question
 как[when]: when, pos: conj
 центр--: center, pl: centers, inflect: masc
@@ -167,7 +167,7 @@ grammar: adj@prepf, tag: prepositional
 наш--: our, inflect: -наш, tag: possessive, mask: nonstd
 grammar: v@1, tag: verb
 grammar: -наш@pl
-родител--ь: parent, pl: parents, inflect: mascь-animate, mask: sg
+родител--ь: parent, pl: parents, inflect: mascь-animate, tag: animate, mask: sg
 офис--: office, pl: offices, inflect: masc
 grammar: -этот@pl
 жив--<ть: live, 3: lives, past: lived, prog: living, inflect: -жить
@@ -278,7 +278,7 @@ grammar: -друг@datpl, tag: dative
 grammar: -давать@1, tag: verb
 интересн--ый: interesting, adv: interestingly, comp: more interesting, super: most interesting, inflect: ныйadj
 без: without, pos: prep
-мног--о: many, inflect: -много, tag: amount, mask: allbutpl
+мног--о: many, -2: a lot of, inflect: -много, tag: amount, mask: allbutpl
 мног--о[much]: much, adv: a lot of, comp: more, super: most, inflect: -много, tag: amount, mask: allbutplandadv
 grammar: masc@genpl, tag: genitive
 grammar: -друг@genpl, tag: genitive
@@ -1456,7 +1456,7 @@ phrase: по-возможности
 grammar: -время@gen, tag: genitive
 grammar: -дерево@pl
 чем: than, pos: conj
-броси--ть: abandon, 3: abandons, past: abandoned, prog: abandoning, inflect: -бросить, tag: perfective
+броси--ть: abandon, 3: abandons, past: abandoned, prog: abandoning, -2: leave, 3-2: leaves, past-2: left, prog-2: leaving, -3: quit, 3-3: quits, past-3: quit, prog-3: quitting, pastpart-3: quit, inflect: -бросить, tag: perfective
 броси--ть[throw]: throw, 3: throws, past: threw, prog: throwing, inflect: -бросить, tag: perfective
 phrase: заниматься-чем-то
 шаг--: step, pl: steps, inflect: masc
@@ -1804,7 +1804,7 @@ phrase: домашние-задание
 phrase: auto-collocation
 phrase: поздняя-ночь
 phrase: обратная–дорога
-прям--ой: direct, adv: directly, inflect: ойadj
+прям--ой: direct, adv: directly, -2: straight, adv-2: straight, inflect: ойadj
 phrase: хоть-раз
 phrase: ни-разу
 phrase: номер-телефона
@@ -2015,3 +2015,4 @@ phrase: до-того-как
 phrase: уже-не
 phrase: тот-кто
 phrase: а-то
+phrase: знакомиться-с
