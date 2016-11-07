@@ -78,6 +78,7 @@ no-matter-what: "во что бы то ни стало" "no matter what" "no mat
 у-кого: "у меня машина" "I have a car" "(2->nom) did not have" у@ phrase:np@genitive не@ быть@past
 у-кого: "у меня машина" "I have a car" "(2->nom) never had" у@ phrase:np@genitive никогда@ не@ быть@past
 у-кого: "у меня машина" "I have a car" "(2->nom) (have,has,had,2) no (3) (5)" у@ phrase:np@genitive больше|больше[longer]@ нет[none]@ phrase:np@genitive
+у-кого: "у меня машина" "I have a car" "(2->nom) (have,has,had,2)" у@ phrase:np@genitive быть@
 у-кого: "у меня машина" "I have a car" "(2->nom) (have,has,had,2)" у@ phrase:np@genitive
 из-gen-departure: "я из России" "I'm from Russia" "from [point of departure/source]" из@ phrase:np@genitive
 at-datpl: "по утрам" "in the morning" "on (2)" по@ #weekday@datpl
@@ -130,9 +131,10 @@ comp-gen: "лучше всех" "better than anyone" "(1) than (2)" comp adjecti
 не-больше: "больше не" "no longer" "no (1)" больше|больше[longer]@comp нет[none]@
 для-того: "слишком холодно, для того чтобы ..." "too cold to ..." "too (2) to" слишком@ adjective@! ,@ для@ тот@genn чтобы@
 для-того: "слишком холодно, для того чтобы ..." "too cold to ..." "(2) enough to" достаточный@adv adjective@! ,@ для@ тот@genn чтобы@
-давно-пора: "нам давно пора" "it is high time" "it is high time for [someone] to" @dative+ any давно@ пора@
+давно-пора: "нам давно пора" "it is high time" "it is high time for (2) to" adverb? @dative+ давно@ пора@
 давно-пора: "нам давно пора" "it is high time" "it is high time" давно@ пора@
-давно-пора: "нам давно пора" "it is high time" "it is time for [someone]" @dative+ any пора@
+давно-пора: "нам давно пора" "it is high time" "it is time for [someone]" @dative+ пора@
+давно-пора: "нам давно пора" "it is high time" "time to" уже@ пора@
 тут-и-там: "там и тут" "here and there" "here and there" там@ и@ тут@
 друг-другу: "друг друга" "each other" "(2) each other" друг@nom preposition@? друг@context
 работать-над-чем-то: "работать над книгой" "work on a book" "work on (3)" работать@ над@ phrase:np@instrumental
@@ -160,12 +162,14 @@ hyperbole: "ждать часами" "to wait for hours" "for [adjective]" phras
 кому-то-надо: "нам надо поговорить" "we need to talk" "[someone->nom] should not have" не@ надо@ быть@ @dative+
 кому-то-надо: "нам надо поговорить" "we need to talk" "[someone->nom] should have" надо@ быть@ @dative+
 кому-то-надо: "нам надо поговорить" "we need to talk" "[someone->nom] does not need" @dative+ не@ надо@
-кому-то-нужно: "мне нужно курить" "I need to smoke" "[someone->nom] (do,does,did,1) not need to" @dative+ не@ adverb? нужно@adv
-кому-то-нужно: "мне нужно курить" "I need to smoke" "(1->nom) did not need" @dative+ не@ нужно@adv быть@past
-кому-то-нужно: "мне нужно курить" "I need to smoke" "(1->nom) needed to" @dative+ быть@past нужно@adv
-кому-то-нужно: "мне нужно курить" "I need to smoke" "(1->nom) needed to" @dative+ нужно@adv быть@past
-кому-то-нужно: "мне нужно курить" "I need to smoke" "(1->nom) will (3)" @dative+ быть[fut]@ нужно@adv
-кому-то-нужно: "мне нужно курить" "I need to smoke" "(1->nom) (2) (need,needs,needed,1) to" @dative+ adverb? нужно@adv
+кому-то-нужно: "мне нужно курить" "I need to smoke" "(1->nom) (do,does,did,1) not need to" phrase:np@dative не@ нужно@adv
+кому-то-нужно: "мне нужно курить" "I need to smoke" "(1->nom) (do,does,did,1) not (3) need to" phrase:np@dative не@ adverb нужно@adv
+кому-то-нужно: "мне нужно курить" "I need to smoke" "(1->nom) did not need" phrase:np@dative не@ нужно@adv быть@past
+кому-то-нужно: "мне нужно курить" "I need to smoke" "(1->nom) needed to" phrase:np@dative быть@past нужно@adv
+кому-то-нужно: "мне нужно курить" "I need to smoke" "(1->nom) needed to" phrase:np@dative нужно@adv быть@past
+кому-то-нужно: "мне нужно курить" "I need to smoke" "(1->nom) will (3)" phrase:np@dative быть[fut]@ нужно@adv
+кому-то-нужно: "мне нужно курить" "I need to smoke" "(1->nom) (need,needs,needed,1) to" phrase:np@dative нужно@adv
+кому-то-нужно: "мне нужно курить" "I need to smoke" "(1->nom) (2) (need,needs,needed,1) to" phrase:np@dative adverb нужно@adv
 на-твоем-месте: "на твоём месте" "if I were you" "if (1) (were,was,1) in (4) position, (1) would (6->1sg)" phrase:np бы@ на@ adjective@prep* место@prep verb
 на-твоем-месте: "на твоём месте" "if I were you" "if (1) (were,was,1) in (4) position, (1) would not (7->inf)" phrase:np бы@ на@ adjective@prep* место@prep не@ verb
 на-твоем-месте: "на твоём месте" "if I were you" "in (2) position" на@ adjective@prep место@prep
@@ -287,7 +291,7 @@ ask-someone: "прошу у тебя денег" "i'm asking you for money" "(1)
 про-что-то: "забыть про это" "forget about it" "about [something]" про@ phrase:np@accusative
 играть-в-игру: "играть в футбол" "play football" "(play,plays,played,1) ... (4)" играть@ any в@ phrase:np@accusative
 играть-в-игру: "играть в футбол" "play football" "(3) (1)" игра@ в@ phrase:np@accusative
-dat-нужен: "мне нужна любовь" "I need love" "[someone->nom] (2) (do,does,did,1) not need (5->acc)" phrase:np@dative adverb? не@ нужный@short phrase:np@nominative
+dat-нужен: "мне нужна любовь" "I need love" "(1->nom) (2) (do,does,did,1) not need (5->acc)" phrase:np@dative adverb? не@ нужный@short phrase:np@nominative
 dat-нужен: "мне нужна любовь" "I need love" "(1->nom) (need,needs,1) (4) (5->acc)" phrase:np@dative any нужный@short adverb? phrase:np@nominative
 dat-нужен: "мне нужна любовь" "I need love" "(2->nom) (need,needs,2) (1->acc)" phrase:np@nominative phrase:np@dative нужный@short
 dat-нужен: "мне нужна любовь" "I need love" "(2->nom) (do,does,did,2) (3) not need (1->acc)" phrase:np@nominative phrase:np@dative adverb? не@ нужный@short
@@ -668,3 +672,5 @@ known-to-everyone: "знакомый всем" "known to everyone" "(1) (2) to (
 очень-даже: "очень даже ничего" "quite ok" "quite ok" очень@ даже@ ничто@gen
 очень-даже: "очень даже ничего" "quite ok" "quite (3)" очень@ даже@ adjective
 очень-даже: "очень даже ничего" "quite ok" "quite (3)" очень@ даже@ adverb
+есть-noun: "есть кошка" "there is a cat" "there (was,,,,,,were,2) (2)" быть@past phrase:np@nominative
+есть-noun: "есть кошка" "there is a cat" "there (is,,,,,,are,2) (2)" быть@ phrase:np@nominative

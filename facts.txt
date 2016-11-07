@@ -79,7 +79,7 @@ grammar: it-im-ite@2, tag: verb
 журнал--: magazine, pl: magazines, inflect: masc
 встреча--ть[meet]: meet, 3: meets, past: met, prog: meeting, inflect: ать
 гуля--ть: take a walk, past: took a walk, prog: taking a walk, inflect: ать
-отличн--ый: excellent, adv: excellently, inflect: ныйadj, mask: comp
+отличн--ый: excellent, adv: excellently, -2: great, inflect: ныйadj, mask: comp
 друг--: friend, pl: friends, inflect: -друг, tag: animate
 студент--: student, pl: students, inflect: masc-animate, tag: animate
 дома: at home, pos: adv
@@ -656,7 +656,7 @@ grammar: -стать@inf, tag: verb
 grammar: -деньга@genpl, tag: genitive
 билет--: ticket, pl: tickets, inflect: masc
 phrase: под-чем-то
-выход--: exit, pl: exits, -2: release, pl-2: releases, inflect: masc
+выход--: exit, pl: exits, -2: release, pl-2: releases, -3: way out, pl-3: ways out, inflect: masc
 самолёт--: airplane, pl: airplanes, inflect: masc, tag: transport
 grammar: егоadj@genm, tag: genitive
 grammar: -о@alt
@@ -850,7 +850,7 @@ grammar: -вернуться@3, tag: verb
 grammar: -казаться@pastpl, tag: verb
 ключ--: key, pl: keys, inflect: -борщ
 phrase: самый-adj
-чтобы: in order to, pos: conj
+чтобы: in order to, -2: to, pos: conj
 grammar: sya@imprpl, tag: verb
 задани--е: task, pl: tasks, -2: assignment, pl-2: assignments, inflect: neuie
 домашн--ий: domestic, inflect: -домашний, mask: nonstd
@@ -2020,3 +2020,4 @@ phrase: как-только-how
 phrase: к-тому-же
 phrase: тем-временем
 phrase: очень-даже
+phrase: есть-noun
