@@ -55,8 +55,8 @@ no-matter-what: "во что бы то ни стало" "no matter what" "no mat
 нет-равных: "нет равных" "no equal" "(1->nom) (have,has,has,1) no equal" phrase:np@dative нет[none]@ равный@genpl
 ни-не: "ни слова не говори" "don't say a word" "not any [something]" ни@ gen не@
 так-adv: "так много" "so many" "so (3->adj)" так@ any adv
-так-adv: "так много" "so many" "so many" так@ any много@
-так-adv: "так много" "so many" "so much" так@ any много[much]@
+так-adv: "так много" "so many" "so many" так@ много@
+так-adv: "так много" "so many" "so much" так@ много[much]@
 по-карману: "мне не по карману" "i can't afford" "(2->nom) could not afford" быть@ dative не@ по@ карман@dative
 по-карману: "мне не по карману" "i can't afford" "(1->nom) can not afford" dative не@ по@ карман@dative
 по-карману: "мне не по карману" "i can't afford" "(1->nom) can afford" dative по@ карман@dative
@@ -132,8 +132,8 @@ comp-gen: "лучше всех" "better than anyone" "(1) than (2)" comp adjecti
 для-того: "слишком холодно, для того чтобы ..." "too cold to ..." "too (2) to" слишком@ adjective@! ,@ для@ тот@genn чтобы@
 для-того: "слишком холодно, для того чтобы ..." "too cold to ..." "(2) enough to" достаточный@adv adjective@! ,@ для@ тот@genn чтобы@
 давно-пора: "нам давно пора" "it is high time" "it is high time for (2) to" adverb? @dative+ давно@ пора@
-давно-пора: "нам давно пора" "it is high time" "it is high time" давно@ пора@
-давно-пора: "нам давно пора" "it is high time" "it is time for [someone]" @dative+ пора@
+давно-пора: "нам давно пора" "it is high time" "it is high time to" давно@ пора@
+давно-пора: "нам давно пора" "it is high time" "it is time for (1) to" @dative+ пора@
 давно-пора: "нам давно пора" "it is high time" "time to" уже@ пора@
 тут-и-там: "там и тут" "here and there" "here and there" там@ и@ тут@
 друг-другу: "друг друга" "each other" "(2) each other" друг@nom preposition@? друг@context
@@ -427,8 +427,8 @@ answer-to-question: "ответить на вопрос" "to answer the question
 what-a: "какой отличный день" "what a great day" "what a [nice] [thing]" какой@ adjective@context noun@context
 such-nice: "такой отличный день!" "what a great day!" "such (article) (2)" такой@ phrase:np
 интересно-: "интересно..." "I wonder..." "I wonder," интересный@adv ,@
-dat-трудно: "мне трудно" "it's hard for me" "it is (2->adj) for (1)" phrase:np@dative #find-it@adv
-dat-трудно: "мне трудно" "it's hard for me" "it is (2) (3->adj) for (1)" phrase:np@dative adverb? #find-it@adv
+dat-трудно: "мне трудно" "it's hard for me" "it is (2->adj) for (1) to" phrase:np@dative #find-it@adv
+dat-трудно: "мне трудно" "it's hard for me" "it is (2) (3->adj) for (1) to" phrase:np@dative adverb? #find-it@adv
 dat-скучно: "мне скучно" "I'm bored" "(1->nom) was bored" phrase:np@dative быть@past скучный@adv
 dat-скучно: "мне скучно" "I'm bored" "(1->nom) will be bored" phrase:np@dative быть[fut]@ скучный@adv
 dat-скучно: "мне скучно" "I'm bored" "(1->nom) (are,is,was,being,been,be,are,were,am,1) (2) bored" phrase:np@dative adverb скучный@adv
@@ -674,3 +674,4 @@ known-to-everyone: "знакомый всем" "known to everyone" "(1) (2) to (
 очень-даже: "очень даже ничего" "quite ok" "quite (3)" очень@ даже@ adverb
 есть-noun: "есть кошка" "there is a cat" "there (was,,,,,,were,2) (2)" быть@past phrase:np@nominative
 есть-noun: "есть кошка" "there is a cat" "there (is,,,,,,are,2) (2)" быть@ phrase:np@nominative
+мне-осталось: "мне осталось пять минут" "I had five minutes left" "(1->nom) (have,has,had,having,dad,2) left" phrase:np@dative остаться|оставаться@
