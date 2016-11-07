@@ -117,7 +117,7 @@ grammar: -свой@m
 grammar: -жить@3pl, tag: verb
 тво--й: your, inflect: -свой, tag: possessive, mask: nonstd
 телефон--: phone, pl: phones, inflect: masc
-покупа--ть: buy, 3: buy, past: bought, prog: buying, inflect: ать, tag: something-to-someone
+покупа--ть: buy, 3: buys, past: bought, prog: buying, inflect: ать, tag: something-to-someone
 grammar: adj@accf, tag: accusative
 стать--я: article, pl: articles, inflect: -статья
 grammar: y-esh-et@2, tag: verb
@@ -167,7 +167,7 @@ grammar: adj@prepf, tag: prepositional
 наш--: our, inflect: -наш, tag: possessive, mask: nonstd
 grammar: v@1, tag: verb
 grammar: -наш@pl
-родител--ь: parent, pl: parents, inflect: mascь-animate, tag: animate, mask: sg
+родител--ь: parent, pl: parents, inflect: mascь-animate, mask: sg
 офис--: office, pl: offices, inflect: masc
 grammar: -этот@pl
 жив--<ть: live, 3: lives, past: lived, prog: living, inflect: -жить
@@ -337,7 +337,7 @@ tag: possessive
 --есть: eat, 3: eats, past: ate, prog: eating, inflect: -есть
 grammar: y-esh-et@impr, tag: verb
 phrase: gen-of
-купи--ть: buy, 3: buy, past: bought, prog: buying, inflect: -любить, tag: something-to-someone
+купи--ть: buy, 3: buys, past: bought, prog: buying, inflect: -любить, tag: something-to-someone
 tag: verbs-of-motion
 ид--ти: go, past: went, prog: going, pastpart: gone, inflect: -идти, tag: verbs-of-motion
 ид--ти[rain]: fall, 3: falls, past: fell, prog: falling, inflect: -идти
@@ -378,7 +378,7 @@ grammar: abstr-anim@accpl, tag: accusative
 grammar: -быть@inf, tag: verb
 phrase: звать-кого-то
 стан--<ть: become, 3: becomes, past: became, prog: becoming, inflect: -стать
-дет--ь: children, inflect: -люди, mask: sg
+дет--ь: children, inflect: -люди, tag: animate, mask: sg
 grammar: -смотреть@inf, tag: verb
 весн--а: spring, pl: springs, inflect: -весна, tag: at-instr, tag: time, mask: pl
 лет--о: summer, pl: summers, inflect: neu, tag: at-instr, tag: time, mask: pl
@@ -795,7 +795,7 @@ grammar: -весь@pl
 ждё--<ать: wait, 3: waits, past: waited, prog: waiting, inflect: -ждать
 grammar: adj@instrn, tag: instrumental
 высок--ий: tall, adv: high up, comp: taller, super: tallest, comp-2: higher up, super-2: highest up, adv-2: high up, inflect: -высокий
-долг--ий: long, comp: longer, super: longest, adv: for a long time, inflect: -долгий, mask: short
+долг--ий: for long, comp: longer, super: longest, adv: for a long time, inflect: -долгий, mask: short
 голов--а: head, pl: heads, inflect: fem
 phrase: совсем-не
 grammar: -остаться@inf, tag: verb
@@ -1002,7 +1002,7 @@ grammar: -воскресенье@prep, tag: prepositional
 grammar: -один@n
 phrase: деньги-на
 случи--ться: happen, 3: happens, past: happened, prog: happening, inflect: -случиться
-уме--ть: can, past: could, prog: able to, inflect: ать
+уме--ть: are able to, 1: am able to, 3: is able to, past: was able to, prog: able to, inf: be able to, pastpl: were able to, -2: can, past-2: could, inflect: ать
 закон--: law, pl: laws, inflect: masc
 grammar: -один@pl
 phrase: play-with
@@ -1286,7 +1286,7 @@ phrase: dat-трудно
 grammar: -себя@gen, tag: genitive
 войд--<ти: come in, 3: comes in, past: came in, prog: coming in, inflect: -войти, tag: perfective
 покупк--а: purchase, pl: purchases, inflect: femka
-выйд--<ти: go out, 3: goes out, past: went out, prog: going out, -2: leave, 3-2: leaves, past-2: left, inflect: -выйти, tag: perfective
+выйд--<ти: go out, 3: goes out, past: went out, prog: going out, -2: leave, 3-2: leaves, past-2: left, -3: come out, 3-3: comes out, past-3: came out, prog-3: coming out, pastpart-3: come out, inflect: -выйти, tag: perfective
 phrase: dat-скучно
 grammar: -мы@preppl, tag: prepositional
 выходи--ть: go out, 3: goes out, past: went out, prog: going out, inflect: -ходить
@@ -1465,7 +1465,7 @@ phrase: заниматься-чем-то
 grammar: аться@3pl, tag: verb
 grammar: аться@2, tag: verb
 phrase: следить-за-кем-то
-молчи--<ать: keep silent, 3: keeps silent, past: kept silent, prog: keeping silent, inflect: -лежать
+молчи--<ать: are silent, 1: am silent, 3: is silent, past: was silent, prog: being silent, inf: be silent, pastpl: we're silent, -2: keep silent, 3-2: keeps silent, past-2: kept silent, inflect: -лежать
 чувств--о: feeling, pl: feelings, inflect: neu
 grammar: -третий@m
 групп--а[band]: band, pl: bands, inflect: fem
@@ -2016,3 +2016,4 @@ phrase: уже-не
 phrase: тот-кто
 phrase: а-то
 phrase: знакомиться-с
+phrase: как-только-how
