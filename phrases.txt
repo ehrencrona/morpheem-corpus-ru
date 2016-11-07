@@ -250,7 +250,7 @@ go-do: "идти спать" "go sleep" "(go,goes,went,1) (2)" идти|пойт
 такой..как: "такая машиня, как эта" "a car just like this one" "so / such ... as" такой@ any ,@ как[like]@
 стоить-дорогой: "стоить дорого" "be expensive" "(are,is,was,being,been,be,are,were,am,1) ... (3->adj)" стоить@ any дорогой|дешёвый@adv
 стоить-дорогой: "стоить дорого" "be expensive" "(are,is,was,being,been,be,are,were,am,2) (1->adj)" дорогой|дешёвый@adv стоить@
-у-thing: "у окна" "by the window" "by [something's location]" у@ phrase:np@genitive
+у-thing: "у окна" "by the window" "by (2)" у@ phrase:np@genitive
 за-acc: "спасибо за обед!" "thanks for lunch!" "(1) for (3)" платить|получить|заплатить@ за@ phrase:np@accusative
 за-acc: "спасибо за обед!" "thanks for lunch!" "(4) (3) for (2)" за@ phrase:np@accusative платить|получить|заплатить@ @nominative+
 за-acc: "спасибо за обед!" "thanks for lunch!" "for (2)" за@ phrase:np@accusative
@@ -419,7 +419,7 @@ there-will-be-none: "не будет урока" "there will be no lesson" "ther
 так-и-не: "так и не ..." "but still didn't ..." "but still didn't ..." да@ так@ и|и[part]@ не@
 хватит-что-то-делать: "хватит кричать" "stop shouting" "stop (2->prog)" хватить@3 verb
 answer-to-question: "ответить на вопрос" "to answer the question" "answer to (article) (3)" ответ@ на@ phrase:np@accusative
-answer-to-question: "ответить на вопрос" "to answer the question" "(1) (3)" ответить|отвечать@ на@ phrase:np@accusative
+answer-to-question: "ответить на вопрос" "to answer the question" "(1) ... (4)" ответить|отвечать@ any на@ phrase:np@accusative
 what-a: "какой отличный день" "what a great day" "what a [nice] [thing]" какой@ adjective@context noun@context
 such-nice: "такой отличный день!" "what a great day!" "such (article) (2)" такой@ phrase:np
 интересно-: "интересно..." "I wonder..." "I wonder," интересный@adv ,@
