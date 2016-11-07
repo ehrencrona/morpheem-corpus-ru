@@ -3,13 +3,13 @@
 в-час: "в час" "per hour" "per [duration]" в@ #time@acc
 в-num-час: "в два часа" "at two o'clock" "at (2) o'clock" в@ #number час[o'clock]@
 в-num-час: "в два часа" "at two o'clock" "at (2)" в@ #number
-auto-234-gen: "два дочери" "two daughters" "(1) (2->pl)" два|три|четыре@context phrase:np@genitive
-auto-234-gen: "два дочери" "two daughters" "(1) (2->pl)" два|три|четыре@context phrase:np
-auto-567-genpl: "пять друзей" "five friends" "(1) (2)" #number@context phrase:gen-of
-auto-567-genpl: "пять друзей" "five friends" "(1) (2) o'clock" #number@context adjective@genpl* час@genpl
-auto-567-genpl: "пять друзей" "five friends" "(1) (2) (3)" #number@context adjective@genpl* genpl
-auto-567-genpl: "пять друзей" "five friends" "(1) (2)" #number@context phrase:np@genitive
-auto-1-nom: "один человек" "one person" "(1) (2) (3)" один@context adjective@context* noun@context
+234-gen: "два дочери" "two daughters" "(1) (2->pl)" два|три|четыре@context phrase:np@genitive
+234-gen: "два дочери" "two daughters" "(1) (2->pl)" два|три|четыре@context phrase:np
+567-genpl: "пять друзей" "five friends" "(1) (2)" #number@context phrase:gen-of
+567-genpl: "пять друзей" "five friends" "(1) (2) o'clock" #number@context adjective@genpl* час@genpl
+567-genpl: "пять друзей" "five friends" "(1) (2) (3)" #number@context adjective@genpl* genpl
+567-genpl: "пять друзей" "five friends" "(1) (2)" #number@context phrase:np@genitive
+1-nom: "один человек" "one person" "(1) (2) (3)" один@context adjective@context* noun@context
 not-gen: "нет денег" "there is no money" "there is (2)" нет[none]@ phrase:ничего-adj@genitive
 not-gen: "нет денег" "there is no money" "(there is no,pl:there are no,3->v) (3)" нет[none]@ any phrase:np@genitive
 not-gen: "нет денег" "there is no money" "(there is no,there are no,3->v) (1) ..." phrase:np@genitive any нет[none]@
