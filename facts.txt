@@ -19,7 +19,7 @@ grammar: masc@nom
 grammar: adj@m
 свитер--: sweater, pl: sweaters, inflect: masc
 университет--: university, pl: universities, inflect: masc, tag: at
-в--: in, -2: at, -3: to, inflect: oprep, tag: untranslatable
+в--: in, -2: at, -3: to, -4: into, inflect: oprep, tag: untranslatable
 grammar: oprep@std
 grammar: n@prep, tag: prepositional
 планшет--: tablet, pl: tablets, inflect: masc
@@ -39,7 +39,7 @@ grammar: -она@nom
 Маш--а: Маsha, inflect: -улица, tag: animate, mask: pl
 школ--а: school, pl: schools, inflect: fem, tag: at
 улиц--а: street, pl: streets, inflect: -улица, tag: on
-на: on, pos: prep, tag: untranslatable
+на: on, -2: to, pos: prep, tag: untranslatable
 газон--: lawn, pl: lawns, inflect: masc, tag: on
 работа--ть: work, 3: work, past: worked, prog: working, inflect: ать
 работа--ть[open]: are open, 1: am open, 3: is open, inf: be open, past: was open, pastpl: were open, pl: are open, pastpart: been open, prog: being open, inflect: ать
@@ -128,7 +128,7 @@ grammar: y-esh-et@2, tag: verb
 стул--: chair, pl: chairs, inflect: -стул, tag: on
 за: behind, -2: during, -3: after, -4: for, pos: prep, tag: untranslatable
 штор--а: curtain, pl: curtains, inflect: fem
-двер--ь: door, pl: doors, inflect: femь
+двер--ь: door, pl: doors, -2: doorway, pl-2: doorway, inflect: femь
 открыт--ый: open, adv: openly, inflect: adj, mask: comp
 grammar: n@pl
 grammar: -свой@accf, tag: accusative
@@ -378,7 +378,7 @@ grammar: abstr-anim@accpl, tag: accusative
 grammar: -быть@inf, tag: verb
 phrase: звать-кого-то
 стан--<ть: become, 3: becomes, past: became, prog: becoming, inflect: -стать
-дет--ь: children, inflect: -люди, tag: animate, mask: sg
+дет--ь: children, inflect: -люди, mask: sg
 grammar: -смотреть@inf, tag: verb
 весн--а: spring, pl: springs, inflect: -весна, tag: at-instr, tag: time, mask: pl
 лет--о: summer, pl: summers, inflect: neu, tag: at-instr, tag: time, mask: pl
@@ -656,7 +656,7 @@ grammar: -стать@inf, tag: verb
 grammar: -деньга@genpl, tag: genitive
 билет--: ticket, pl: tickets, inflect: masc
 phrase: под-чем-то
-выход--: exit, pl: exits, inflect: masc
+выход--: exit, pl: exits, -2: release, pl-2: releases, inflect: masc
 самолёт--: airplane, pl: airplanes, inflect: masc, tag: transport
 grammar: егоadj@genm, tag: genitive
 grammar: -о@alt
@@ -806,7 +806,7 @@ grammar: -остаться@pastm, tag: verb
 phrase: как-дело
 всегда: always, pos: adv
 температур--а: temperature, pl: temperatures, inflect: fem
-част--ый: frequent, adv: frequently, comp: more frequently, inflect: -частый, mask: allbutadvandcomp
+част--ый: often, adv: often, comp: more often, -2: frequently, comp-2: more frequently, inflect: -частый, mask: allbutadvandcomp
 grammar: -казаться@pastn, tag: verb
 phrase: станция-метро
 grammar: -случай@genpl, tag: genitive
@@ -1399,7 +1399,7 @@ grammar: -казаться@impr, tag: verb
 grammar: -слышать@impr, tag: verb
 phrase: в-курсе
 grammar: perspron@accpl, tag: accusative
-остан--<ться: remain, 3: remains, past: remained, prog: remaining, inflect: -остаться
+остан--<ться: remain, 3: remains, past: remained, prog: remaining, -2: stay, 3-2: stays, past-2: stayed, prog-2: staying, pastpart-2: stayed, inflect: -остаться
 сразу: at once, pos: adv
 grammar: abstr-soft-final-stressed@instr, tag: instrumental
 почти: almost, pos: adv
@@ -2017,3 +2017,4 @@ phrase: тот-кто
 phrase: а-то
 phrase: знакомиться-с
 phrase: как-только-how
+phrase: к-тому-же

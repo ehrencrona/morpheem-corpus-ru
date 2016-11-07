@@ -8,6 +8,7 @@ auto-234-gen: "два дочери" "two daughters" "(1) (2->pl)" два|три|
 auto-567-genpl: "пять друзей" "five friends" "(1) (2)" #number@context phrase:gen-of
 auto-567-genpl: "пять друзей" "five friends" "(1) (2) o'clock" #number@context adjective@genpl* час@genpl
 auto-567-genpl: "пять друзей" "five friends" "(1) (2) (3)" #number@context adjective@genpl* genpl
+auto-567-genpl: "пять друзей" "five friends" "(1) (2)" #number@context phrase:np@genitive
 auto-1-nom: "один человек" "one person" "(1) (2) (3)" один@context adjective@context* noun@context
 not-gen: "нет денег" "there is no money" "there is (2)" нет[none]@ phrase:ничего-adj@genitive
 not-gen: "нет денег" "there is no money" "(there is no,pl:there are no,3->v) (3)" нет[none]@ any phrase:np@genitive
@@ -164,6 +165,7 @@ hyperbole: "ждать часами" "to wait for hours" "for [adjective]" phras
 кому-то-нужно: "мне нужно курить" "I need to smoke" "(1->nom) did not need" @dative+ не@ нужно@ быть@past
 кому-то-нужно: "мне нужно курить" "I need to smoke" "(1->nom) needed" @dative+ быть@past нужно@
 кому-то-нужно: "мне нужно курить" "I need to smoke" "(1->nom) will (3)" @dative+ быть[fut]@ нужно@
+кому-то-нужно: "мне нужно курить" "I need to smoke" "(1->nom) needed" @dative+ нужно@ быть@past
 кому-то-нужно: "мне нужно курить" "I need to smoke" "(1->nom) (2) (need,needs,needed,1)" @dative+ adverb? нужно@
 на-твоем-месте: "на твоём месте" "if I were you" "if (1) (were,was,1) in (4) position, (1) would (6->1sg)" phrase:np бы@ на@ adjective@prep* место@prep verb
 на-твоем-месте: "на твоём месте" "if I were you" "if (1) (were,was,1) in (4) position, (1) would not (7->inf)" phrase:np бы@ на@ adjective@prep* место@prep не@ verb
@@ -189,7 +191,6 @@ hyperbole: "ждать часами" "to wait for hours" "for [adjective]" phras
 между-чем-то: "между мной и тобой" "between you and me" "between [something] and [something]" между@ phrase:np@instrumental и@ phrase:np@instrumental
 между-чем-то: "между мной и тобой" "between you and me" "between [something]" между@ phrase:np@instrumental
 за-место: "за дверью" "behind the door" "behind [something]" за@ phrase:np@instrumental
-за-место: "за дверью" "behind the door" "(1)" phrase:за-окном
 за-after: "повторяйте за мной" "repeat after me" "after [something]" за@ phrase:np@instrumental
 следить-за-кем-то: "следить за" "look after" "(1) (3)" следить@ за@ phrase:np@instrumental
 за-столом: "за столом" "at the table" "at (article) (2) (3)" за@ adjective@instrumental* стол@instrumental
@@ -266,7 +267,7 @@ go-do: "идти спать" "go sleep" "(go,goes,went,1) (2)" идти|пойт
 ни-ни: "ни ... ни" "neither ... nor" "neither (2) ... nor (5)" ни@ verb ,@ ни@ verb
 если-бы: "если бы я узнал, я бы сказал" "if I knew, I'd say" "if ... (4) would (6->inf)" если@ бы@ any ,@ #animate verb бы@
 если-бы: "если бы я узнал, я бы сказал" "if I knew, I'd say" "if ... , ... would (8->)" если@ бы@ any ,@ any бы@ any verb
-куда-бы: "куда бы он ни пошёл" "wherever he goes" "whereever (3) (5)" куда@ бы@ #animate ни@ verb@past
+куда-бы: "куда бы он ни пошёл" "wherever he goes" "wherever (3) (5)" куда@ бы@ #animate ни@ verb@past
 кроме-gen: "кроме" "except for" "except for (2)" кроме@ phrase:np@genitive
 против-gen: "против" "against" "against" против@ тот@gen ,@ чтобы@
 против-gen: "против" "against" "against [an idea/cause/etc]" против@ phrase:np@genitive
@@ -393,7 +394,7 @@ dat-платить: "сколько тебе платят?" "how much do you get
 в-году: "в этом году" "this year" "[adj] [time period]" в@ adjective@prepositional locative
 в-время: "на этой неделе" "this week" "(2)" на@ phrase:np@prepositional#time
 intended-for: "кому-то (intended for)" "" "for (1)" phrase:np@dative
-in-eyes-of: "ты мне другом" "you are a friend to me" "to [someone]" #animate@dative
+in-eyes-of: "ты мне друг" "you are a friend to me" "to [someone]" #animate@dative
 прийти-в-голову: "прийти в голову" "to cross my mind" "cross (1)'s mind" phrase:np@dative прийти|приходить@ в@ голова@accusative
 прийти-в-голову: "прийти в голову" "to cross my mind" "cross (2)'s mind" прийти|приходить@ phrase:np@dative any в@ голова@accusative
 прийти-в-голову: "прийти в голову" "to cross my mind" "cross (1)'s mind" phrase:np@dative в@ голова@accusative any прийти|приходить@
@@ -530,6 +531,7 @@ face-to-face: "лицом к личу" "face to face" "face to face" лицо@in
 не-видно: "ничего не видно" "nothing can be seen" "(1->nom) could not be seen" phrase:np@genitive видный@shortn не@ быть@past
 один-of: "ни один" "not a single" "not one of (3) (4->pl)" ни@ один@ #possessive noun
 один-of: "ни один" "not a single" "not a single (3) (4)" ни@ один@ adjective@* noun
+один-of: "ни один" "not a single" "none of (4)" ни@ один@ из@ phrase:np
 такой-же: "такой же" "the same" "the same" такой@ же@
 когда-же: "когда же приедем?" "will we ever arrive?" "will (3) ever" когда@ же@ #animate
 close-to: "близко к дому" "close to home" "close to (3)" близкий@ к@ phrase:np@dative
@@ -661,3 +663,4 @@ known-to-everyone: "знакомый всем" "known to everyone" "(1) (2) to (
 знакомиться-с: "познакомиться с родителями" "meet the parents" "(1) (3)" знакомиться|познакомиться@ с@ phrase:np@instrumental
 знакомиться-с: "познакомиться с родителями" "meet the parents" "(3) (2)" с@ phrase:np@instrumental знакомиться|познакомиться@
 как-только-how: "как ты только..." "how could you possibly..." "how could (2) possibly" как@ pronoun@? только@
+к-тому-же: "к тому же" "furthermore" "furthermore" к@ тот@datm же@
