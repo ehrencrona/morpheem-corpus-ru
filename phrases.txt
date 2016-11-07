@@ -350,7 +350,8 @@ either-or-или-или: "или ... , или ..." "either ... or ..." "either .
 из-material: "из дерева" "made of wood" "of (2)" из@ @genitive+
 из-out-of: "никто из моих друзей" "none of my friends" "of [several things or people]" из@ phrase:np@genitive
 при-чём: "при чём здесь это?" "what does this have to do with anything?" "what does [something] have to do with this" при@ что@prepositional здесь|тут@
-кому-то-кажется: "мне кажется" "it seems to me" "it (3) to (1)" @dative+ any казаться@
+кому-то-кажется: "мне кажется" "it seems to me" "it (3) to (1)" phrase:np@dative any казаться@
+кому-то-кажется: "мне кажется" "it seems to me" "(1) (3) (4) to (2) " казаться@ phrase:np@dative adverb? @instrumental+
 gen-верить: "верь мне" "believe me" "(cannot,cannot,could not,2) trust (5)" не@ мочь@ верить|доверять|поверить@ particle@? phrase:np@dative
 gen-верить: "верь мне" "believe me" "(1) (can,can,could,2) trust (3)" phrase:np мочь@ phrase:np@dative верить|доверять|поверить@
 gen-верить: "верь мне" "believe me" "(trust,trusts,trusted,1) (2)" верить|доверять|поверить@ phrase:np@dative
@@ -476,7 +477,7 @@ auto-np: "np" "" "(1)" ничто@context
 auto-np: "np" "" "(1)" кто@context
 auto-np: "np" "" "(1)" этот|который|тот@context
 auto-np: "np" "" "(1)" phrase:друг-другу
-успеть-на: "успеть на поезд" "catch the train" "catch the (3)" успеть@ на@ phrase:np@accusative#transport
+успеть-на: "успеть на поезд" "catch the train" "catch (3)" успеть@ на@ phrase:np@accusative#transport
 успеть-на: "успеть на поезд" "catch the train" "be in time for (3)" успеть@ на@ phrase:np@accusative
 как-так: "как по-русски так по-английски" "both in Russian and in English" "both ... and ..." как@ any ,@ так@
 для-to: "важно для меня" "important to me" "to [someone]" для@ #animate@genitive
@@ -664,3 +665,7 @@ known-to-everyone: "знакомый всем" "known to everyone" "(1) (2) to (
 знакомиться-с: "познакомиться с родителями" "meet the parents" "(3) (2)" с@ phrase:np@instrumental знакомиться|познакомиться@
 как-только-how: "как ты только..." "how could you possibly..." "how could (2) possibly" как@ pronoun@? только@
 к-тому-же: "к тому же" "furthermore" "furthermore" к@ тот@datm же@
+тем-временем: "тем временем" "in the meantime" "in the meantime" тот@instrn время@instr
+очень-даже: "очень даже ничего" "quite ok" "quite ok" очень@ даже@ ничто@gen
+очень-даже: "очень даже ничего" "quite ok" "quite (3)" очень@ даже@ adjective
+очень-даже: "очень даже ничего" "quite ok" "quite (3)" очень@ даже@ adverb

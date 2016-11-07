@@ -347,7 +347,7 @@ grammar: егоadj@prepf, tag: prepositional
 grammar: егоadj@genf, tag: genitive
 письм--о: letter, pl: letters, inflect: -письмо
 для: for, pos: prep
-вокзал--: railway station, pl: railway stations, -2: train station, -3: station, pl-3: stations, inflect: masc, tag: at
+вокзал--: railway station, pl: railway stations, -2: train station, -3: station, pl-3: stations, pl-2: train stations, inflect: masc, tag: at
 phrase: если-то
 grammar: -глядеть@inf, tag: verb
 grammar: -mascь@genpl, tag: genitive
@@ -831,7 +831,7 @@ phrase: для-to
 так: so
 grammar: -мать@nom
 grammar: -казаться@inf, tag: verb
-до: until, -2: to, pos: prep, tag: untranslatable
+до: until, -2: to, -3: by, pos: prep, tag: untranslatable
 phrase: в-tag-time
 мож--<чь: can, 3: can, past: could, prog: able to, inflect: -мочь
 если: if, pos: conj
@@ -1862,7 +1862,7 @@ grammar: -бежать@1, tag: verb
 срочно: urgently
 носи--ть: wear, 3: wears, past: wore, prog: wearing, pastpart: worn, inflect: -спросить
 горяч--ий: hot, adv: how, comp: hotter, inflect: eeadj
-выключи--ть: turn off, 3: turns off, past: turned off, prog: turning off, inflect: -учить, tag: perfective
+выключи--ть: turn off, 3: turns off, past: turned off, prog: turning off, inflect: -учить, tag: perfective, tag: something-to-someone
 phrase: counting-on
 phrase: в-гости
 phrase: в-гостях
@@ -2018,3 +2018,5 @@ phrase: а-то
 phrase: знакомиться-с
 phrase: как-только-how
 phrase: к-тому-же
+phrase: тем-временем
+phrase: очень-даже
