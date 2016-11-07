@@ -181,8 +181,8 @@ hyperbole: "ждать часами" "to wait for hours" "for [adjective]" phras
 по-возможности: "по возможности" "if possible" "if possible" по@ возможность@dat
 заниматься-чем-то: "заниматься (чем-то) (A1)" "" "deal with [activity]" заниматься@ phrase:np@instrumental
 заниматься-чем-то: "заниматься (чем-то) (A1)" "" "(deal,deals,dealt,2) with [activity]" phrase:np@instrumental заниматься@
-быть-кем-то: "быть студентом" "be a student" "(1) ... (3)" быть@ any phrase:np@instrumental
-быть-кем-то: "быть студентом" "be a student" "(1) ... (3)" быть@ any adjective@instrumental
+быть-кем-то: "быть студентом" "be a student" "(1) ... (3)" становиться|быть@ any phrase:np@instrumental
+быть-кем-то: "быть студентом" "be a student" "(1) ... (3)" становиться|быть@ any adjective@instrumental
 быть-кем-то: "быть студентом" "be a student" "(1) to be ... (3)" бывать@ any adjective@instrumental
 стать-кем-то: "стать мамой" "become a mother" "(become,becomes,became,becoming,1) (2)" стать|становиться@ phrase:np@instrumental
 стать-кем-то: "стать мамой" "become a mother" "(1) ... (become,becomes,became,becoming,3)" кто@instr any стать|становиться@
@@ -329,10 +329,11 @@ dat-удобно: "вам удобно?" "does it suit you?" "it suits (1)" pron
 dat-нравится: "мне нравится" "I like" "(1->nom) very much (like,likes,liked,1)" phrase:np@dative очень@ нравиться|понравиться@
 dat-нравится: "мне нравится" "I like" "(1->nom) (2) very much (like,likes,liked,1)" phrase:np@dative adverb? очень@ нравиться|понравиться@
 dat-нравится: "мне нравится" "I like" "(2->nom) (3) (like,likes,liked,2) (4) (1)" phrase:np@nominative phrase:np@dative adverb? adjective@comp? нравиться|по@
-dat-нравится: "мне нравится" "I like" "(1->nom) (2) (like,likes,liked,1) (3)" phrase:np@dative adverb? adjective@comp? нравиться|понравиться@
 dat-нравится: "мне нравится" "I like" "(2->nom) (don't,doesn't,didn't,2) (5) like (1->acc)" phrase:np@nominative phrase:np@dative particle@? не@ adverb? нравиться|понравиться@
+dat-нравится: "мне нравится" "I like" "(2->nom) (like,likes,liked,1) (1->acc)" phrase:np@nominative phrase:np@dative нравиться|понравиться@
 dat-нравится: "мне нравится" "I like" "(1->nom) (don't,doesn't,didn't,1) (4) like" phrase:np@dative particle@? не@ adverb? нравиться|понравиться@
 dat-нравится: "мне нравится" "I like" "(3->nom) (like,likes,liked,3) (1->acc)" phrase:np@nominative нравиться|понравиться@ phrase:np@dative
+dat-нравится: "мне нравится" "I like" "(1->nom) (2) (like,likes,liked,1) (3)" phrase:np@dative adverb? adjective@comp? нравиться|понравиться@
 dat-интересно: "мне интересна математика" "I'm interested in Maths" "(are,is,was,being,been,be,are,were,am,1) (1->nom) interested in (3)?" @dative+ интересный@ phrase:np ?@
 dat-интересно: "мне интересна математика" "I'm interested in Maths" "(1->nom) (are,is,was,being,been,be,are,were,am,1) interested in (3)" @dative+ интересный@ phrase:np
 dat-интересно: "мне интересна математика" "I'm interested in Maths" "(are,is,was,being,been,be,are,were,am,1) (1->nom) not interested?" @dative+ не@ интересный@ ?@
@@ -675,3 +676,5 @@ known-to-everyone: "знакомый всем" "known to everyone" "(1) (2) to (
 есть-noun: "есть кошка" "there is a cat" "there (was,,,,,,were,2) (2)" быть@past phrase:np@nominative
 есть-noun: "есть кошка" "there is a cat" "there (is,,,,,,are,2) (2)" быть@ phrase:np@nominative
 мне-осталось: "мне осталось пять минут" "I had five minutes left" "(1->nom) (have,has,had,having,dad,2) left" phrase:np@dative остаться|оставаться@
+опоздать–на: "опоздать на сшколу" "be late for school" "(1) for (3)" опоздать@ в@ phrase:np@accusative
+опоздать–на: "опоздать на сшколу" "be late for school" "(1) for (3)" опоздать@ на@ phrase:np@accusative
