@@ -154,7 +154,7 @@ grammar: -этот@m
 слишком: too, pos: adv
 grammar: y-esh-et@2pl, tag: verb
 трудн--ый: difficult, adv: difficultly, comp: more difficult, super: most difficult, inflect: ныйadj, tag: find-it
-красив--ый: beautiful, adv: beautifully, comp: more beautiful, super: most beautiful, inflect: adj
+красив--ый: beautiful, adv: beautifully, comp: more beautiful, super: most beautiful, -2: pretty, comp-2: prettier, super-2: prettiest, inflect: adj
 дом--: house, pl: houses, -2: home, pl-2: homes, inflect: -лес
 работ--а: work, pl: jobs, inflect: fem, tag: at
 дн--<ень: day, pl: days, inflect: -день, tag: time, tag: weekday
@@ -1261,7 +1261,7 @@ grammar: -себя@instr, tag: instrumental
 grammar: -четыре@pl
 phrase: answer-to-question
 grammar: -она@datalt, tag: dative
-входи--ть: go in, 3: goes in, past: went in, prog: going in, inflect: -ходить
+входи--ть: go in, 3: goes in, past: went in, prog: going in, -2: enter, 3-2: enters, past-2: entered, inflect: -ходить
 обед--: lunch, pl: lunches, inflect: masc, tag: meal, tag: time
 grammar: -они@datplalt, tag: dative
 phrase: what-a
@@ -1307,7 +1307,7 @@ phrase: ещё-comp
 же: [wow!], tag: untranslatable
 grammar: -он@datalt, tag: dative
 скор--ый: rather, -2: sooner, inflect: adj, mask: allbutcomp
-скор--ый: fast, adv: quickly, comp: faster, super: fastest, inflect: adj, mask: short
+скор--ый: fast, adv: quickly, comp: faster, super: fastest, adv-2: soon, inflect: adj, mask: short
 phrase: ни-gen
 grammar: -лететь@1, tag: verb
 --себя: -self, -2: himself, -3: herself, -4: themselves, -5: ourselves, -6: myself, -7: yourself, inflect: -себя, tag: animate, tag: in
@@ -1339,7 +1339,7 @@ grammar: -искать@inf, tag: verb
 врач--: doctor, pl: doctors, inflect: -врач, tag: animate
 phrase: поздравлять-с-instr
 научи--ть[teach]: teach, 3: teaches, past: taught, prog: teaching, inflect: -учить
-сам--: alone, inflect: -сам, mask: allbutnom
+сам--: alone, -2: yourself, inflect: -сам, mask: allbutnom
 grammar: -один@instrm, tag: instrumental
 phrase: у-кого-location
 grammar: -взять@inf, tag: verb
