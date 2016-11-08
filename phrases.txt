@@ -3,8 +3,8 @@
 в-час: "в час" "per hour" "per [duration]" в@ #time@acc
 в-num-час: "в два часа" "at two o'clock" "at (2) o'clock" в@ #number час[o'clock]@
 в-num-час: "в два часа" "at two o'clock" "at (2)" в@ #number
-234-gen: "два дочери" "two daughters" "(1) (2->pl)" два|три|четыре@context phrase:np@genitive
-234-gen: "два дочери" "two daughters" "(1) (2->pl)" два|три|четыре@context phrase:np
+234-gen: "три собаки" "three dogs" "(1) (2->pl)" два|три|четыре@context phrase:np@genitive
+234-gen: "три собаки" "three dogs" "(1) (2->pl)" два|три|четыре@context phrase:np
 567-genpl: "пять друзей" "five friends" "(1) (2)" #number@context phrase:gen-of
 567-genpl: "пять друзей" "five friends" "(1) (2) o'clock" #number@context adjective@genpl* час@genpl
 567-genpl: "пять друзей" "five friends" "(1) (2) (3)" #number@context adjective@genpl* genpl
@@ -261,10 +261,10 @@ go-do: "идти спать" "go sleep" "(go,goes,went,1) (2)" идти|пойт
 за-что: "за что?" "why?" "for what reason" за@ что@
 то-что: "это то, что она сказала" "that's what she said" "(3)" тот@ ,@ что|что[that]@
 когда-то: "когда ..., то ..." "when ..., there ..." "when ... ," когда@ any ,@ то@
-то-же: "то же самый" "the same" "the same" тот@ же@ самый@
-то-же: "то же самый" "the same" "the very same thing" один@ и@ тот@ же@
-то-же: "то же самый" "the same" "the same" тот@ же@
-то-же: "то же самый" "the same" "the same" тот@ самый@
+то-же: "то же самый" "the same" "the same (4)" тот@context же@ самый@context noun@context?
+то-же: "то же самый" "the same" "the very same (5)" один@context и@ тот@context же@ noun@context?
+то-же: "то же самый" "the same" "the same (3)" тот@context же@ noun@context?
+то-же: "то же самый" "the same" "the same (3)" тот@context самый@context noun@context?
 не-gen: "не пью пива" "I don't drink beer" "(do,does,did,3) not (2) (3->pres) (5)" не@ adverb? verb any phrase:np@genitive
 ни-ни: "ни ... ни" "neither ... nor" "neither (2) nor (5)" ни@ phrase:np ,@ ни@ phrase:np
 ни-ни: "ни ... ни" "neither ... nor" "neither (2) ... nor (5)" ни@ verb ,@ ни@ verb
@@ -481,6 +481,7 @@ auto-np: "np" "" "(1)" ничто@context
 auto-np: "np" "" "(1)" кто@context
 auto-np: "np" "" "(1)" этот|который|тот@context
 auto-np: "np" "" "(1)" phrase:друг-другу
+auto-np: "np" "" "(1)" phrase:то-же@context
 успеть-на: "успеть на поезд" "catch the train" "catch (3)" успеть@ на@ phrase:np@accusative#transport
 успеть-на: "успеть на поезд" "catch the train" "be in time for (3)" успеть@ на@ phrase:np@accusative
 как-так: "как по-русски так по-английски" "both in Russian and in English" "both ... and ..." как@ any ,@ так@
