@@ -13,13 +13,13 @@ tag: question
 grammar: femь@nom
 мыш--ь: mouse, pl: mice, inflect: -мышь, tag: animate
 маленьк--ий: small, comp: smaller, super: smallest, inflect: -маленький, mask: adv
-–: is
+–: is, -2: are
 машин--а: car, pl: cars, inflect: fem, tag: transport, tag: on
 grammar: masc@nom
 grammar: adj@m
 свитер--: sweater, pl: sweaters, inflect: masc
 университет--: university, pl: universities, inflect: masc, tag: at
-в--: in, -2: at, -3: to, -4: into, inflect: oprep, tag: untranslatable
+в--: in, -2: to, -3: at, -4: into, inflect: oprep, tag: untranslatable
 grammar: oprep@std
 grammar: n@prep, tag: prepositional
 планшет--: tablet, pl: tablets, inflect: masc
@@ -41,7 +41,7 @@ grammar: -она@nom
 улиц--а: street, pl: streets, inflect: -улица, tag: on
 на: on, -2: to, pos: prep, tag: untranslatable
 газон--: lawn, pl: lawns, inflect: masc, tag: on
-работа--ть: work, 3: work, past: worked, prog: working, inflect: ать
+работа--ть: work, 3: works, past: worked, prog: working, inflect: ать
 работа--ть[open]: are open, 1: am open, 3: is open, inf: be open, past: was open, pastpl: were open, pl: are open, pastpart: been open, prog: being open, inflect: ать
 grammar: ать@1, tag: verb
 grammar: y-esh-et@3, tag: verb
@@ -78,7 +78,7 @@ grammar: it-im-ite@2, tag: verb
 газет--а: newspaper, pl: newspapers, inflect: fem, tag: on
 журнал--: magazine, pl: magazines, inflect: masc
 встреча--ть[meet]: meet, 3: meets, past: met, prog: meeting, inflect: ать
-гуля--ть: take a walk, past: took a walk, prog: taking a walk, inflect: ать
+гуля--ть: take a walk, 3: takes a walk, past: took a walk, prog: taking a walk, inflect: ать
 отличн--ый: excellent, adv: excellently, -2: great, inflect: ныйadj, mask: comp
 друг--: friend, pl: friends, inflect: -друг, tag: animate
 студент--: student, pl: students, inflect: masc-animate, tag: animate
@@ -103,7 +103,7 @@ grammar: ойadj@m
 grammar: -свой@m
 нет[none]: none, tag: untranslatable
 нет[part]: no, pos: part
-мо--й: my, inflect: -свой, tag: possessive, mask: nonstd
+мо--й: my, -2: mine, inflect: -свой, tag: possessive, mask: nonstd
 больш--ой: big, comp: bigger, super: biggest, inflect: -большой, mask: shortandadv
 больш--ой: more, inflect: -большой, mask: allbutcomp
 больш--ой[longer]: longer, inflect: -большой, mask: allbutcomp
@@ -115,7 +115,7 @@ grammar: -свой@m
 завтра: tomorrow
 зов--<<вать: call, 3: calls, past: called, prog: calling, inflect: -звать
 grammar: -жить@3pl, tag: verb
-тво--й: your, inflect: -свой, tag: possessive, mask: nonstd
+тво--й: your, -2: yours, inflect: -свой, tag: possessive, mask: nonstd
 телефон--: phone, pl: phones, inflect: masc
 покупа--ть: buy, 3: buys, past: bought, prog: buying, inflect: ать, tag: something-to-someone
 grammar: adj@accf, tag: accusative
@@ -124,7 +124,7 @@ grammar: y-esh-et@2, tag: verb
 кроват--ь: bed, pl: beds, inflect: femь
 лежи--<ать: lie, 3: lies, past: lay, prog: lying, inflect: -лежать
 под: under, pos: prep
-стол--: table, pl: tables, inflect: masc
+стол--: table, pl: tables, -2: desk, pl-2: desks, inflect: masc
 стул--: chair, pl: chairs, inflect: -стул, tag: on
 за: behind, -2: during, -3: after, -4: for, pos: prep, tag: untranslatable
 штор--а: curtain, pl: curtains, inflect: fem
@@ -167,18 +167,18 @@ grammar: adj@prepf, tag: prepositional
 наш--: our, inflect: -наш, tag: possessive, mask: nonstd
 grammar: v@1, tag: verb
 grammar: -наш@pl
-родител--ь: parent, pl: parents, inflect: mascь-animate, mask: sg
+родител--ь: parents, pl: parents, inflect: mascь-animate, tag: animate, mask: sg
 офис--: office, pl: offices, inflect: masc
 grammar: -этот@pl
 жив--<ть: live, 3: lives, past: lived, prog: living, inflect: -жить
 люд--ь: people, pl: people, inflect: -люди, mask: sg
-ошибк--а: mistake, pl: mistakes, inflect: femka, tag: by
+ошибк--а: mistake, pl: mistakes, -2: error, pl-2: errors, inflect: femka, tag: by
 grammar: adj@preppl, tag: prepositional
 grammar: yo-yosh-yot@3, tag: verb
 grammar: -друг@pl
-дела--ть: do, 3: does, past: did, prog: doing, inflect: ать
+дела--ть: do, 3: does, past: did, prog: doing, -2: make, 3-2: makes, past-2: made, prog-2: making, inflect: ать
 разн--ый: different, adv: differently, inflect: ныйadj, mask: nonstd
-разн--ый[various]: various, inflect: ныйadj, mask: nonstd
+разн--ый[various]: many different , -2: various, -3: several, -4: multiple, -5: different, inflect: ныйadj, mask: nonstd
 плох--ой: bad, adv: badly, comp: worse, super: worst, inflect: -плохой
 grammar: yo-yosh-yot@2pl, tag: verb
 grammar: n@accpl, tag: accusative
@@ -232,7 +232,7 @@ grammar: -нравиться@3pl, tag: verb
 grammar: -он@dat, tag: dative
 grammar: -ты@dat, tag: dative
 хоч--<теть: want, 3: wants, past: wanted, prog: wanting, inflect: -хотеть, mask: impr
-с--: with, from, inflect: oprep, tag: untranslatable
+с--: with, -2: from, inflect: oprep, tag: untranslatable
 ед--а: food, pl: foods, inflect: fem
 интернет--: Internet, inflect: masc, tag: on
 радио--: radio, pl: radios, inflect: uninflected, mask: pl
@@ -250,14 +250,14 @@ grammar: n@preppl, tag: prepositional
 можно: can, -2: may
 замк--<ок[castle]: castle, pl: castles, inflect: -подарок
 кури--ть: smoke, 3: smokes, past: smoked, prog: smoking, inflect: -дарить
-говори--ть: speak, 3: speaks, past: spoke, prog: speaking, inflect: -дарить, tag: speech
+говори--ть: speak, 3: speaks, past: spoke, prog: speaking, -2: say, 3-2: says, past-2: said, prog-2: saying, inflect: -дарить, tag: speech
 нельзя: may not, pos: adv
 известн--ый: famous, adv: famously, comp: more famous, super: most famous, -2: known, comp-2: more known, super-2: most known, inflect: ныйadj
 grammar: genitive
 grammar: femяь@gen, tag: genitive
 grammar: fem@gen, tag: genitive
 grammar: masc@gen, tag: genitive
-у: by / has, pos: prep, tag: untranslatable
+у: by, pos: prep, tag: untranslatable
 grammar: -этот@accf, tag: accusative
 grammar: -я@gen, tag: genitive
 бутылк--а: bottle, pl: bottles, inflect: femka
@@ -272,14 +272,14 @@ grammar: adj@datpl, tag: dative
 grammar: adj@datn, tag: dative
 grammar: adj@datf, tag: dative
 grammar: -ты@gen, tag: genitive, tag: animate
-сво--й: own, -2: my, -3: his, -4: her, -5: its, -6: your, inflect: -свой, mask: nonstd
+сво--й: own, -2: my, -3: his, -4: her, -5: its, -6: your, -7: their, inflect: -свой, tag: possessive, mask: nonstd
 grammar: -она@gen, tag: genitive
 grammar: -друг@datpl, tag: dative
 grammar: -давать@1, tag: verb
 интересн--ый: interesting, adv: interestingly, comp: more interesting, super: most interesting, inflect: ныйadj
 без: without, pos: prep
 мног--о: many, -2: a lot of, inflect: -много, tag: amount, mask: allbutpl
-мног--о[much]: much, adv: a lot of, comp: more, super: most, inflect: -много, tag: amount, mask: allbutplandadv
+мног--о[much]: much, adv: a lot, comp: more, super: most, inflect: -много, tag: amount, mask: allbutplandadv
 grammar: masc@genpl, tag: genitive
 grammar: -друг@genpl, tag: genitive
 grammar: adv
@@ -367,7 +367,7 @@ grammar: oprep@alt
 grammar: alt
 phrase: ждать-for-something-abstract
 grammar: y-esh-et@1pl, tag: verb
-её: her, -2: its, pos: pron, tag: possessive
+её: her, -2: its, -3: hers, pos: pron, tag: possessive
 деньг--а: money, pl: money, inflect: -деньга, mask: sg
 grammar: adj@accanpl, tag: accusative
 по: on, pos: prep, tag: untranslatable
@@ -393,7 +393,7 @@ grammar: -учить@3pl, tag: verb
 к--: to, -2: towards, inflect: oprep, tag: untranslatable
 но: but, pos: conj
 из: from, pos: prep
-зачем: what for, pos: quest, tag: question
+зачем: what for, -2: why, pos: quest, tag: question
 phrase: в-time
 grammar: femь@dat, tag: dative
 grammar: -спать@inf, tag: verb
@@ -626,7 +626,7 @@ grammar: adj@genn, tag: genitive
 карт--а[card]: card, pl: cards, inflect: fem
 grammar: -mascь@nom
 phrase: на-завтрак-обед-ужин
-подруг--а: friend, pl: friends, inflect: fem-animate, tag: animate
+подруг--а: friend, pl: friends, -2: girlfriend, inflect: fem-animate, tag: animate
 продукт--: groceries, inflect: masc, mask: sg
 фабрик--а: factory, pl: factories, inflect: fem, tag: at
 grammar: -о@std
@@ -670,7 +670,7 @@ phrase: между-чем-то
 пельмен--ь: Russian dumpling, pl: Russian dumplings, inflect: -отель
 grammar: -выйти@inf, tag: verb
 grammar: -борщ@genpl, tag: genitive
-ваш--: your, inflect: -наш, tag: possessive, mask: nonstd
+ваш--: your, -2: yours, inflect: -наш, tag: possessive, mask: nonstd
 кастрюл--я: pot, pl: pots, inflect: -неделя
 phrase: за-место
 тарелк--а: plate, pl: plates, -2: bowl, pl-2: bowls, inflect: femka
@@ -740,7 +740,7 @@ grammar: -лошадь@instrpl, tag: instrumental
 экзамен--: exam, pl: exams, inflect: masc
 grammar: -домашний@f
 phrase: ни-ни
-их: their, pos: pron, tag: possessive
+их: their, -2: theirs, pos: pron, tag: possessive
 лекарств--о: medication, pl: medications, inflect: neu
 grammar: neuie@pl
 втор--ой: second, adv: secondly, inflect: -второй, tag: ordinal, mask: shortandadv
@@ -768,7 +768,7 @@ grammar: -мочь@pastpl, tag: verb
 phrase: из-material
 grammar: -словарь@nom
 стои--ть: cost, 3: costs, past: did cost, prog: costing, inflect: -стоить
-скаж--<зать: say, 3: says, past: said, prog: saying, inflect: -сказать
+скаж--<зать: say, 3: says, past: said, prog: saying, pastpart: said, inflect: -сказать
 вод--а: water, pl: waters, inflect: fem, tag: uncountable, mask: pl
 phrase: из-out-of
 так--ой: such, inflect: ойadj, mask: nonstd
@@ -860,7 +860,7 @@ grammar: neuie@genpl, tag: genitive
 grammar: -ответить@1, tag: verb
 перв--ый: first, adv: firstly, inflect: adj, tag: ordinal, mask: nonstd
 немног--о: few, inflect: -много, tag: amount, tag: neg-adj, pos: adv, mask: allbutpl
-немног--о[little]: some, adv: a little, -2: a bit, -3: a little, inflect: -много, tag: amount, tag: neg-adj, pos: adv, mask: allbutplandadv
+немног--о[little]: some, adv: a little, -2: a bit, -3: a little, -4: not much, inflect: -много, tag: amount, tag: neg-adj, pos: adv, mask: allbutplandadv
 phrase: во-время-чего-то
 grammar: -ответить@impr, tag: verb
 потом: later, pos: prep
@@ -940,18 +940,19 @@ phrase: по-mode-of-communication
 замети--ть: notice, 3: notices, past: noticed, prog: noticing, inflect: -ответить
 grammar: neuie@instrpl, tag: instrumental
 grammar: neu@dat, tag: dative
-phrase: кому-то-надо
-боя--ться: fear, 3: fears, past: feared, prog: fearing, inflect: -бояться
+tag: predicative-adverb
+phrase: кому-то-надо, tag: predicative-adverb
+боя--ться: fear, 3: fears, past: feared, prog: fearing, inflect: -бояться, tag: reflexive
 grammar: sya@2, tag: verb
 пор--а: time to, inflect: fem
 похож--ий: similar, adv: similarly, inflect: -похожий, mask: comp
 оно: it, pos: pron
-phrase: кому-то-нужно
+phrase: кому-то-нужно, tag: predicative-adverb
 grammar: -весь@preppl, tag: prepositional
 grammar: -пытаться@impr, tag: verb
 стен--а: wall, pl: walls, inflect: fem
 тел--о: body, pl: bodies, inflect: neu
-phrase: кому-то-можно
+phrase: кому-то-можно, tag: predicative-adverb
 grammar: adj@comp
 пут--ь: way, pl: ways, -2: path, pl-2: paths, inflect: -путь, tag: on
 остаю--<ваться: remain, 3: remains, past: remained, prog: remaining, inflect: -оставаться
@@ -1103,7 +1104,7 @@ phrase: куда-бы
 grammar: -сесть@pastm, tag: verb
 grammar: -повернуть@inf, tag: verb
 вещ--ь: thing, pl: things, inflect: femь-я-to-а
-чь--<ей: whose, inflect: -чей, mask: shortandadv
+чь--<ей: whose, inflect: -чей, tag: possessive, mask: shortandadv
 grammar: -я@prep, tag: prepositional
 phrase: если-только
 существу--<овать: exist, 3: exists, past: existed, prog: existing, inflect: -чувствовать
@@ -1147,15 +1148,15 @@ phrase: купить-чего-то
 убь--<ить: kill, 3: kills, past: killed, prog: killing, inflect: -убить, tag: perfective
 grammar: femь-я-to-а@instrpl, tag: instrumental
 grammar: femь-я-to-а@preppl, tag: prepositional
-жал--ь: pity, pos: adv
+жаль: pity, pos: adv
 регистраци--я: registration, pl: registrations, inflect: -регистрация
-phrase: dat-adv
+phrase: dat-adv, tag: predicative-adverb
 счастлив--ый: happy, adv: happily, comp: happier, super: happiest, inflect: adj
 grammar: -чей@m
 grammar: -стать@impr, tag: verb
 пройд--<ти: pass, 3: passes, past: passed, prog: passing, inflect: -войти, tag: perfective
 вкусн--ый: tasty, adv: deliciously, comp: tastier, super: tastiest, inflect: ныйadj
-phrase: кому-то-достаточно
+phrase: кому-то-достаточно, tag: predicative-adverb
 grammar: -случиться@1, tag: verb
 выбер--<<рать: choose, 3: chooses, past: chose, prog: choosing, inflect: -выбрать, tag: perfective
 достаточн--ый: sufficient, adv: enough, inflect: adj, tag: amount, mask: compandshort
@@ -1271,7 +1272,7 @@ phrase: what-a
 grammar: -они@genplalt, tag: genitive
 grammar: -они@instrplalt, tag: instrumental
 phrase: such-nice
-да--ть: give, 3: gives, past: gave, prog: giving, inflect: -дать, tag: something-to-someone, tag: perfective
+да--ть: give, 3: gives, past: gave, prog: giving, pastpart: given, inflect: -дать, tag: something-to-someone, tag: perfective
 да--ть[let]: let, 3: lets, inflect: -дать, tag: perfective
 покаж--<зать: show, 3: shows, past: showed, prog: showing, pastpart: shown, inflect: -показать, tag: something-to-someone, tag: perfective
 grammar: -они@preppl, tag: prepositional
@@ -1282,15 +1283,15 @@ phrase: интересно-
 grammar: -пять@datpl, tag: dative
 grammar: -она@instr, tag: instrumental
 ни--что: nothing, inflect: -что
-phrase: dat-трудно
+phrase: dat-трудно, tag: predicative-adverb
 grammar: -себя@gen, tag: genitive
 войд--<ти: come in, 3: comes in, past: came in, prog: coming in, inflect: -войти, tag: perfective
 покупк--а: purchase, pl: purchases, inflect: femka
 выйд--<ти: go out, 3: goes out, past: went out, prog: going out, -2: leave, 3-2: leaves, past-2: left, -3: come out, 3-3: comes out, past-3: came out, prog-3: coming out, pastpart-3: come out, inflect: -выйти, tag: perfective
-phrase: dat-скучно
+phrase: dat-скучно, tag: predicative-adverb
 grammar: -мы@preppl, tag: prepositional
 выходи--ть: go out, 3: goes out, past: went out, prog: going out, inflect: -ходить
-приходи--ть: come, 3: comes, past: came, prog: coming, inflect: -ходить
+приходи--ть: come, 3: comes, past: came, prog: coming, inflect: -ходить, tag: verbs-of-motion
 grammar: -что@gen, tag: genitive
 phrase: ещё-один
 води--ть: drive, 3: drives, past: drove, prog: driving, inflect: -ходить
@@ -1317,7 +1318,7 @@ phrase: как-так
 grammar: neuadjoe@acc, tag: accusative
 grammar: neuadjoe@nom
 сам--ый: most, adv: mostly, -2: very, adv-2: very, inflect: adj, mask: short
-рук--а: hand, pl: hands, inflect: fem
+рук--а: hand, pl: hands, -2: arm, pl-2: arms, inflect: fem
 ни: not, pos: part
 phrase: взять-на-работу
 grammar: -доктор@pl
@@ -1353,10 +1354,10 @@ phrase: с-чего-взял
 grammar: -мочь@pastf, tag: verb
 grammar: -сто@pl
 phrase: при-prep
-ног--а: leg, pl: legs, inflect: fem
+ног--а: leg, pl: legs, -2: foot, pl-2: feet, inflect: fem
 прост--ой: simple, adv: simply, comp: simpler, super: simplest, adv-2: just, inflect: -простой
 grammar: -дерево@instrpl, tag: instrumental
-име--ть: possess, 3: possesses, past: possessed, prog: possessing, inflect: ать
+име--ть: possess, 3: possesses, past: possessed, prog: possessing, -2: have, 3-2: has, past-2: had, inflect: ать
 последн--ий: last, inflect: -домашний, mask: nonstd
 phrase: сам-по-себе
 вдруг: suddenly, pos: adv
@@ -1373,7 +1374,7 @@ phrase: no-matter-what
 grammar: -хотеть@1pl, tag: verb
 grammar: -жениться@1, tag: verb
 выходн--ой: day off, pl: weekend, inflect: ойadj, tag: time, pos: n, mask: shortandadv
-сдела--ть: do, 3: does, past: did, prog: doing, inflect: ать, tag: perfective
+сдела--ть: do, 3: does, past: did, prog: doing, -2: make, 3-2: makes, past-2: made, prog-2: making, inflect: ать, tag: perfective
 встреча--ться: meet, 3: meets, past: met, prog: meeting, inflect: -пытаться
 phrase: столько-всего
 grammar: -один@accn, tag: accusative
@@ -1575,7 +1576,6 @@ grammar: abstr-ийadj@pl
 уж: "drama" particle, pos: part
 справа: on the right, pos: adv
 цветк--<ок: flower, pl: flowers, inflect: -цветок
-phrase: давать-verb
 занят--ый: occupied, adv: busily, comp: busier, super: busiest, -2: busy, adv-2: busily, comp-2: busier, super-2: busiest, inflect: adj
 grammar: abstr-ийadj@genpl, tag: genitive
 grammar: abstr-ийadj@datpl, tag: dative
@@ -1588,7 +1588,7 @@ grammar: abstr-ийadj@m
 grammar: -цветок@pl
 phrase: either-or-или-или
 футбол--: football, inflect: masc, mask: pl
-приед--<хать: arrive, 3: arrives, past: arrived, prog: arriving, inflect: -ехать, tag: perfective
+приед--<хать: arrive, 3: arrives, past: arrived, prog: arriving, inflect: -ехать, tag: perfective, tag: verbs-of-motion
 любим--ый: favorite, inflect: adj, mask: adv
 концерт--: concert, pl: concerts, inflect: masc
 phrase: после-того-как
@@ -1610,7 +1610,7 @@ grammar: y-esh-et@3pl, tag: verb
 grammar: -два@fpl
 grammar: -сидеть@impr, tag: verb
 зонт--: umbrella, pl: umbrellas, inflect: masc
-phrase: dat-жаль
+phrase: dat-жаль, tag: predicative-adverb
 отдыха--ть: relax, 3: relaxes, past: relaxed, prog: relaxing, inflect: ать
 grammar: -раз@genpl, tag: genitive
 grammar: neuadjoe@genpl, tag: genitive
@@ -1856,7 +1856,7 @@ grammar: -палец@nom
 phrase: за-after
 phrase: keep-an-eye-on
 рост--: hight, inflect: masc3
-муж--: husband, pl: husbands, inflect: -муж
+муж--: husband, pl: husbands, inflect: -муж, tag: animate
 ложк--а: spoon, pl: spoons, inflect: femka2
 grammar: -бежать@1, tag: verb
 срочно: urgently
@@ -1886,7 +1886,7 @@ phrase: идти-за
 grammar: -время@prep, tag: prepositional
 никуда: nowhere
 подойд--<ти: approach, 3: approaches, past: approached, prog: approaching, inflect: -войти, tag: perfective
-зайд--<ти: come in, 3: comes in, past: came in, prog: coming in, inflect: -войти, tag: perfective
+зайд--<ти: come in, 3: comes in, past: came in, prog: coming in, inflect: -войти, tag: perfective, tag: verbs-of-motion
 верн--уть: return, 3: returns, past: returned, inflect: -повернуть, tag: perfective
 grammar: -правильный@shortm
 grammar: -рот@nom
@@ -1985,12 +1985,11 @@ phrase: себя-чувствовать
 привози--ть: bring, 3: brings, past: brought, prog: bringing, inflect: -ходить
 вылечи--ть: treat, 3: treats, past: treated, prog: treating, inflect: -учить
 phrase: за-instead-of
-phrase: dat-весело
+phrase: dat-весело, tag: predicative-adverb, tag: accusative
 phrase: чтобы-past
-phrase: давай-verb
 phrase: давай-nom
 богат--ый: rich, comp: richer, super: richest, inflect: adj
-phrase: I-dont-care
+phrase: I-dont-care, tag: predicative-adverb
 любов--ь: love, inflect: -мышь, mask: pl
 phrase: as-much-or-many-as
 phrase: от-because-of
@@ -2021,5 +2020,14 @@ phrase: к-тому-же
 phrase: тем-временем
 phrase: очень-даже
 phrase: есть-noun
-phrase: мне-осталось
 phrase: опоздать–на
+phrase: можно-allowed
+phrase: буду-verb
+grammar: -муж@instr
+phrase: русский-язык
+phrase: будь-добр
+phrase: дай-мне-отдохнуть
+качеств--о: quality, pl: qualities, inflect: neu
+phrase: считаю-это-важным
+phrase: слушать-acc
+phrase: dat-достаточно, tag: predicative-adverb
