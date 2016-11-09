@@ -167,7 +167,7 @@ grammar: adj@prepf, tag: prepositional
 наш--: our, inflect: -наш, tag: possessive, mask: nonstd
 grammar: v@1, tag: verb
 grammar: -наш@pl
-родител--ь: parents, pl: parents, inflect: mascь-animate, tag: animate, mask: sg
+родител--ь: parents, pl: parents, inflect: mascь-animate, mask: sg
 офис--: office, pl: offices, inflect: masc
 grammar: -этот@pl
 жив--<ть: live, 3: lives, past: lived, prog: living, inflect: -жить
@@ -178,7 +178,7 @@ grammar: yo-yosh-yot@3, tag: verb
 grammar: -друг@pl
 дела--ть: do, 3: does, past: did, prog: doing, -2: make, 3-2: makes, past-2: made, prog-2: making, inflect: ать
 разн--ый: different, adv: differently, inflect: ныйadj, mask: nonstd
-разн--ый[various]: many different , -2: various, -3: several, -4: multiple, -5: different, inflect: ныйadj, mask: nonstd
+разн--ый[various]: many different, -2: various, -3: several, -4: multiple, -5: different, inflect: ныйadj, mask: nonstd
 плох--ой: bad, adv: badly, comp: worse, super: worst, inflect: -плохой
 grammar: yo-yosh-yot@2pl, tag: verb
 grammar: n@accpl, tag: accusative
@@ -507,7 +507,7 @@ grammar: -я@instr, tag: instrumental
 мало[few]: few, pos: adv
 путешестви--е: trip, pl: trips, inflect: neuie
 phrase: около-чего-то
-ищ--<скать: look for, past: looked for, prog: looking for, inflect: -искать
+ищ--<скать: look for, 3: looks for, past: looked for, prog: looking for, -2: search for, past-2: searched for, 3-2: searches for, prog-2: searching for, inflect: -искать
 grammar: -есть@3pl, tag: verb
 момент--: moment, pl: moments, inflect: masc, tag: time
 спокойн--ый: calm, adv: calmly, comp: calmer, super: calmest, inflect: -довольный
@@ -1036,7 +1036,7 @@ phrase: к-чему-то
 grammar: -пять@preppl, tag: prepositional
 grammar: adj@shortm
 phrase: к-time
-слома--ть: break, 3: breaks, past: broke, prog: breaking, inflect: ать
+слома--ть: break, 3: breaks, past: broke, prog: breaking, inflect: ать, tag: perfective
 выигра--ть: win, 3: wins, past: won, prog: winning, inflect: ать
 grammar: -год@genpl, tag: genitive
 конечно: of course
@@ -1132,7 +1132,7 @@ grammar: -оставаться@pastpl, tag: verb
 grammar: -принести@pastf, tag: verb
 tag: passive
 phrase: dat-нужен
-посмотри--<еть[look]: look, 3: looks, past: looked, prog: looking, inflect: -смотреть
+посмотри--<еть[look]: look, 3: looks, past: looked, prog: looking, inflect: -смотреть, tag: perfective
 посмотри--<еть: watch, 3: watches, past: watched, prog: watching, inflect: -смотреть
 grammar: sya@pastn, tag: verb
 grammar: -чувствовать@pastm, tag: verb
@@ -1855,7 +1855,7 @@ grammar: -палец@nom
 рт--<от: mouth, pl: mouths, inflect: -рот
 phrase: за-after
 phrase: keep-an-eye-on
-рост--: hight, inflect: masc3
+рост--: height, inflect: masc3
 муж--: husband, pl: husbands, inflect: -муж, tag: animate
 ложк--а: spoon, pl: spoons, inflect: femka2
 grammar: -бежать@1, tag: verb
@@ -1925,7 +1925,7 @@ grammar: -два@instrpl, tag: instrumental
 постара--ться: try, 3: tries, past: tried, prog: trying, inflect: -пытаться
 phrase: double-negation
 phrase: в-погоду
-получи--ться: work out, inflect: -случиться
+получи--ться: work out, 3: works out, past: worked out, prog: working out, pastpart: worked out, inflect: -случиться
 phrase: passive-3pl
 выбира--ть: choose, 3: chooses, past: chose, prog: choosing, inflect: ать
 phrase: half-to
@@ -2023,7 +2023,7 @@ phrase: есть-noun
 phrase: опоздать–на
 phrase: можно-allowed
 phrase: буду-verb
-grammar: -муж@instr
+grammar: -муж@instr, tag: instrumental
 phrase: русский-язык
 phrase: будь-добр
 phrase: дай-мне-отдохнуть
@@ -2031,3 +2031,5 @@ phrase: дай-мне-отдохнуть
 phrase: считаю-это-важным
 phrase: слушать-acc
 phrase: dat-достаточно, tag: predicative-adverb
+получа--ться: work out, 3: works out, past: worked out, prog: working out, pastpart: worked out, inflect: -пытаться
+phrase: у-саши-получилось
