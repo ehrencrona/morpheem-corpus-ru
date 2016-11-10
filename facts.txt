@@ -94,7 +94,7 @@ grammar: -любить@1, tag: verb
 центр--: center, pl: centers, inflect: masc
 человек--: person, pl: persons, pl-2: people, -2: man, inflect: masc-animate, tag: animate
 почему: why, pos: quest
---быть: are, 1: am, 3: is, past: was, inf: be, prog: being, pastpl: were, past-2: there was, 3-2: there is, -2: there are, inflect: -быть
+--быть: are, 1: am, 3: is, past: was, inf: be, prog: being, pastpl: were, past-2: there was, 3-2: there is, -2: there are, inflect: -быть, tag: perfective
 квартир--а: apartment, pl: apartments, -2: flat, pl-2: flats, inflect: fem
 grammar: -свой@f
 вот: here (is)
@@ -566,7 +566,7 @@ grammar: neu@gen, tag: genitive
 тысяч--а: thousand, pl: thousands, inflect: -улица, tag: number
 grammar: -ходить@1, tag: verb
 phrase: встречать-с
-забуд--<<ыть: forget, 3: forgets, past: forgot, prog: forgetting, inflect: -бытьfut
+забуд--<<ыть: forget, 3: forgets, past: forgot, prog: forgetting, inflect: -бытьfut, tag: perfective
 чашк--а: cup, pl: cups, inflect: femka2
 бега--ть: run, 3: runs, past: ran, prog: running, inflect: ать
 grammar: adj@genm, tag: genitive
@@ -932,7 +932,8 @@ grammar: -парень@nom
 берег--: shore, pl: shores, inflect: -лес
 phrase: по-place-of-movement
 полн--ый: full, adv: fully, comp: fuller, super: fullest, inflect: ныйadj
-быва--ть: happen, 3: happens, past: happened, prog: happening, inflect: ать
+быва--ть: are, 1: am, 3: is, -2: exist, past: was, prog: being, pastpart: been, inf: be, pastpl: were, 3-2: exists, past-2: existed, prog-2: existing, inflect: ать
+быва--ть[happen]: happen, 3: happens, past: happened, prog: happening, -2: occur, 3-2: occurs, past-2: occurred, inflect: ать
 grammar: -mascь@datpl, tag: dative
 мысл--ь: thought, pl: thoughts, inflect: femь
 люб--ой: any, inflect: -второй, mask: shortandadv
