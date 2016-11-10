@@ -62,7 +62,7 @@ grammar: n@acc, tag: accusative
 --кто: who, acc: whom, inflect: -кто, tag: question, tag: animate
 слыши--<ать: hear, 3: hears, past: heard, prog: hearing, inflect: -слышать
 мам--а: Mom, pl: moms, inflect: fem-animate, tag: animate
-люби--ть: love, 3: loves, past: loved, prog: loving, pastpart: loved, inflect: -любить
+люби--ть: love, 3: loves, past: loved, prog: loving, pastpart: loved, -2: like, 3-2: likes, past-2: liked, prog-2: liking, pastpart-2: liked, inflect: -любить
 grammar: perspron@acc, tag: accusative
 --ты: you, inflect: -ты, tag: animate
 grammar: -ты@nom
@@ -95,7 +95,7 @@ grammar: -любить@1, tag: verb
 человек--: person, pl: persons, pl-2: people, -2: man, inflect: masc-animate, tag: animate
 почему: why, pos: quest
 --быть: are, 1: am, 3: is, past: was, inf: be, prog: being, pastpl: were, past-2: there was, 3-2: there is, -2: there are, inflect: -быть
-квартир--а: apartment, pl: apartments, inflect: fem
+квартир--а: apartment, pl: apartments, -2: flat, pl-2: flats, inflect: fem
 grammar: -свой@f
 вот: here (is)
 grammar: ойadj@m
@@ -1188,7 +1188,7 @@ grammar: -тот@datpl, tag: dative
 да--вать[allow]: let, 3: lets, past: let, prog: letting, inflect: -давать
 да--вать[lets]: let's, -2: should we, -3: shall we, inflect: -давать, mask: non_impr
 phrase: при-чём
-особенн--ый: special, adv: especially, inflect: adj, mask: compandshort
+особенн--ый: special, adv: especially, -2: particular, adv-2: particularly, inflect: adj, mask: compandshort
 лишн--ий: spare, inflect: -домашний, mask: nonstd
 grammar: -давать@inf, tag: verb
 grammar: -придти@pastm, tag: verb
