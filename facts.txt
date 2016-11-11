@@ -167,7 +167,7 @@ grammar: adj@prepf, tag: prepositional
 наш--: our, inflect: -наш, tag: possessive, mask: nonstd
 grammar: v@1, tag: verb
 grammar: -наш@pl
-родител--ь: parents, pl: parents, inflect: mascь-animate, tag: animate, mask: sg
+родител--ь: parents, pl: parents, inflect: mascь-animate, mask: sg
 офис--: office, pl: offices, inflect: masc
 grammar: -этот@pl
 жив--<ть: live, 3: lives, past: lived, prog: living, inflect: -жить, tag: imperfective
@@ -649,7 +649,7 @@ phrase: на-твоем-месте
 отел--ь: hotel, pl: hotels, inflect: -отель
 grammar: femka2@genpl, tag: genitive
 лёгк--ий: easy, adv: easily, comp: easier, super: easiest, inflect: -лёгкий, mask: short
-потеря--ться: get lost, past: got lost, prog: getting lost, inflect: -пытаться
+потеря--ться: get lost, past: got lost, prog: getting lost, inflect: -пытаться, tag: perfective
 phrase: над-чем-то
 вход--: entrance, pl: entrances, inflect: masc, tag: at
 grammar: -стать@inf, tag: verb
@@ -1972,7 +1972,7 @@ phrase: себя-чувствовать
 предупрежда--ть: warn, 3: warns, past: warned, prog: warning, inflect: ать, tag: imperfective
 оканчива--ть: end, 3: ends, past: ended, prog: ending, inflect: ать
 заканчива--ться: end, 3: ends, past: ended, prog: ending, inflect: -пытаться
-хвата--ть: Be enough, 3: is enough, past: was enough, prog: being enough, inflect: -хватать
+хвата--ть: be enough, 3: is enough, past: was enough, prog: being enough, inflect: -хватать, tag: imperfective
 набира--ть: fill, 3: fills, past: filled, prog: filling, inflect: ать
 приезжа--ть: arrive, 3: arrives, past: arrived, prog: arriving, inflect: ать
 отдохн--уть: relax, 3: relaxes, past: relaxed, prog: relaxing, inflect: -повернуть
@@ -2038,3 +2038,4 @@ phrase: в-одежде
 phrase: знать-английский
 phrase: открой-мне-дверь
 phrase: учиться-на-доктора
+phrase: мне-хватит-одного-пива

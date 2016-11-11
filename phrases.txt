@@ -16,6 +16,7 @@ not-gen: "нет денег" "there is no money" "(there is no,there are no,3->v
 gen-of: "бутылка вина" "bottle of wine" "Mother's Day" день@context мать@gen
 gen-of: "бутылка вина" "bottle of wine" "Father's Day" день@context отец@gen
 gen-of: "бутылка вина" "bottle of wine" "birthday" день@ рождение@gen
+gen-of: "бутылка вина" "bottle of wine" "weekday" день@ неделя@gen
 gen-of: "бутылка вина" "bottle of wine" "(1) (2) of (3)" adjective@context? noun@context! phrase:np@genitive
 gen-of: "бутылка вина" "bottle of wine" "(1) (2) (3) of (4)" adjective@context? noun@context! быть@past phrase:np@genitive
 gen-possession: "кошка Саши" "Sasha's cat" "of (1)" phrase:np@genitive#animate
@@ -30,11 +31,11 @@ gen-possession: "кошка Саши" "Sasha's cat" "of (1)" phrase:np@genitive#
 с-чего-взял: "с чего ты взял" "where did you get that idea" "where did (3) get that idea from" с@ что@gen #animate этот@ взять@
 много-gen: "много проблем" "a lot of problems" "(1) (2)" больше|меньше|много@ phrase:np@genitive
 много-gen: "много проблем" "a lot of problems" "(1) (2)" столько|столько[much]|немного[little]|немного|несколько|меньше|больше|много[much]|сколько[many]@ phrase:np@genitive
-много-gen: "много проблем" "a lot of problems" "(1) (article) couple of (3)" adjective@context? пара@ phrase:np@genitive
 много-gen: "много проблем" "a lot of problems" "enough (2)" достаточный@adv phrase:np@genitive
 много-gen: "много проблем" "a lot of problems" "(1) (2)" недостаточно@ phrase:np@genitive
 много-gen: "много проблем" "a lot of problems" "(1) (2)" мало|мало[few]@ phrase:np@genitive
 много-gen: "много проблем" "a lot of problems" "(1) of (2)" чуть-чуть@ phrase:np@genitive
+много-gen: "много проблем" "a lot of problems" "(1) of (2)" пара@ phrase:np@genitive
 без-gen: "без молока" "without milk" "without [something]" без@ phrase:np@genitive
 at-instr: "утром" "in the morning" "at (1) (2)" adjective@? ночь@instrumental
 at-instr: "утром" "in the morning" "(1) (2)" adjective@instrumental! #at-instr@instrumental
@@ -711,3 +712,7 @@ dat-достаточно: "мне достаточно " "I've had enough" "I've
 открой-мне-дверь: "открой мне дверь" "open the door for me" "(do,does,did,doing,done,3) (3) (4) for (1)" phrase:np@dative не@ открыть|открывать@ дверь@
 учиться-на-доктора: "учиться на доктора" "study to be a doctor" "(1) to be (3)" учиться@ на@ phrase:np@accusative
 учиться-на-доктора: "учиться на доктора" "study to be a doctor" "who (do,does,did,doing,done,4) ... (4) to be" на@ кто@accusative any учиться@
+мне-хватит-одного-пива: "мне хватит одного пива" "one beer will be enough for me" "(3) (2) for (1)" phrase:np@dative хватить|хватать@ phrase:np@genitive
+мне-хватит-одного-пива: "мне хватит одного пива" "one beer will be enough for me" "(4) ... (3) for (1)" phrase:np@dative any хватить|хватать@ phrase:np@genitive
+мне-хватит-одного-пива: "мне хватит одного пива" "one beer will be enough for me" "(1) (2)" phrase:np@genitive хватить|хватать@
+мне-хватит-одного-пива: "мне хватит одного пива" "one beer will be enough for me" "(1) (2)" хватить|хватать@ phrase:np@genitive
