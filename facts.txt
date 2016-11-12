@@ -156,7 +156,7 @@ grammar: y-esh-et@2pl, tag: verb
 трудн--ый: difficult, adv: difficultly, comp: more difficult, super: most difficult, inflect: ныйadj, tag: find-it
 красив--ый: beautiful, adv: beautifully, comp: more beautiful, super: most beautiful, -2: pretty, comp-2: prettier, super-2: prettiest, inflect: adj
 дом--: house, pl: houses, -2: home, pl-2: homes, inflect: -лес
-работ--а: work, pl: jobs, inflect: fem, tag: at
+работ--а: work, pl: jobs, -2: job, pl-2: jobs, inflect: fem, tag: at
 дн--<ень: day, pl: days, inflect: -день, tag: time, tag: weekday
 кажд--ый: every, inflect: adj, tag: time, mask: nonstd
 grammar: -день@nom
@@ -167,7 +167,7 @@ grammar: adj@prepf, tag: prepositional
 наш--: our, inflect: -наш, tag: possessive, mask: nonstd
 grammar: v@1, tag: verb
 grammar: -наш@pl
-родител--ь: parents, pl: parents, inflect: mascь-animate, mask: sg
+родител--ь: parents, pl: parents, inflect: mascь-animate, tag: animate, mask: sg
 офис--: office, pl: offices, inflect: masc
 grammar: -этот@pl
 жив--<ть: live, 3: lives, past: lived, prog: living, inflect: -жить, tag: imperfective
@@ -868,7 +868,7 @@ grammar: -мочь@1, tag: verb
 grammar: -наш@n
 phrase: at-instr
 теперь: now
-надо: need to, pos: adv
+надо: need to, -2: should, -3: have to, pos: adv
 grammar: sya@3pl, tag: verb
 через: , pos: prep, tag: untranslatable
 спроси--ть: ask, 3: asks, past: asked, prog: asking, inflect: -спросить, tag: perfective
@@ -1008,7 +1008,7 @@ phrase: деньги-на
 grammar: -один@pl
 phrase: play-with
 grammar: -два@genpl, tag: genitive
-должн--ый: must, inflect: ныйadj
+должн--ый: must, -2: should, -3: have to, -4: supposed to, inflect: ныйadj
 изуча--ть: study, 3: studies, past: studied, prog: studying, inflect: ать
 grammar: -два@preppl, tag: prepositional
 спасибо: thank you
@@ -1097,7 +1097,7 @@ grammar: neuie@dat, tag: dative
 знак--: sign, pl: signs, inflect: masc
 phrase: если-бы
 grammar: -вернуться@1pl, tag: verb
-возможн--ый: possible, adv: possibly, inflect: ныйadj, mask: comp
+возможн--ый: possible, adv: possibly, adv-2: maybe, inflect: ныйadj, mask: comp
 стоянк--а: parking lot, pl: parking lots, inflect: femka, tag: in
 недалёк--ий: not far away, inflect: -далёкий, mask: allbutadv
 phrase: куда-бы
@@ -1300,7 +1300,7 @@ phrase: ещё-один
 grammar: -себя@prep, tag: prepositional
 температур--а[fever]: fever, pl: fevers, inflect: fem
 phrase: ещё-нет
-обув--ь: footwear, pl: footwear, -2: shoes, inflect: femь, mask: pl
+обув--ь: footwear, pl: footwear, -2: shoes, inflect: femь, tag: clothes, mask: pl
 grammar: -регистрация@genpl, tag: genitive
 занима--ться: occupy -self with, 3: occupies himself with, past: occupied -self with, inflect: -пытаться, tag: imperfective
 прекрасн--ый: beautiful, adv: beautifully, inflect: ныйadj, mask: comp
@@ -1433,7 +1433,7 @@ phrase: 234-gen
 phrase: 1-nom
 phrase: работать-над-чем-то
 наконец: finally, pos: adv
-хоть: though
+хоть: though, -2: at least, -3: just, -4: for
 общ--ий: cоmmon, inflect: adj
 узна--ть: find out, 3: finds out, past: found out, prog: finding out, inflect: ать, tag: perfective
 phrase: hyperbole
@@ -1603,7 +1603,7 @@ grammar: -маленький@comp, tag: at-instr
 плать--е: dress, pl: dresses, inflect: -платье
 одежд--а: clothes, inflect: fem, mask: pl
 phrase: кому-то-кажется
-интересу--<оваться: are interested in, 1: am interested in, 3: is interested in, past: was interested in, inf: be interested in, pl: are interested in, pastpl: were interested in, prog: being interested in, inflect: -интересоваться
+интересу--<оваться: are interested in, 1: am interested in, 3: is interested in, past: was interested in, inf: be interested in, pl: are interested in, pastpl: were interested in, prog: being interested in, inflect: -интересоваться, tag: imperfective
 интересу--<оваться[ask]: ask, 3: asks, inflect: -интересоваться
 поинтересу--<оваться[ask]: ask, 3: asks, inflect: -интересоваться, tag: perfective
 grammar: y-esh-et@3pl, tag: verb
@@ -2039,3 +2039,6 @@ phrase: знать-английский
 phrase: открой-мне-дверь
 phrase: учиться-на-доктора
 phrase: мне-хватит-одного-пива
+куск--<ок: n/a, inflect: -подарок
+phrase: в-три-раза
+phrase: посмотреть-меню
