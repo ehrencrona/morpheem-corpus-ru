@@ -102,14 +102,14 @@ grammar: ойadj@m
 дорог--ой: expensive, adv: expensively, comp: more expensive, super: most expensive, inflect: -дорогой
 grammar: -свой@m
 нет[none]: none, tag: untranslatable
-нет[part]: no, pos: part
+нет[part]: no
 мо--й: my, -2: mine, inflect: -свой, tag: possessive, mask: nonstd
 больш--ой: big, comp: bigger, super: biggest, inflect: -большой, mask: shortandadv
 больш--ой: more, inflect: -большой, mask: allbutcomp
 больш--ой[longer]: longer, inflect: -большой, mask: allbutcomp
 как--ой: which, inflect: ойadj, tag: question, mask: nonstd
 как--ой[kind]: what kind of, inflect: ойadj, tag: question, mask: nonstd
-очень: very, pos: adv
+очень: very, -2: very much, pos: adv
 погод--а: weather, inflect: fem, tag: in, tag: time, tag: weather
 сегодня: today, pos: adv, tag: time
 завтра: tomorrow, pos: adv
@@ -167,7 +167,7 @@ grammar: adj@prepf, tag: prepositional
 наш--: our, inflect: -наш, tag: possessive, mask: nonstd
 grammar: v@1, tag: verb
 grammar: -наш@pl
-родител--ь: parents, pl: parents, inflect: mascь-animate, tag: animate, mask: sg
+родител--ь: parents, pl: parents, inflect: mascь-animate, mask: sg
 офис--: office, pl: offices, inflect: masc
 grammar: -этот@pl
 жив--<ть: live, 3: lives, past: lived, prog: living, inflect: -жить, tag: imperfective
@@ -946,7 +946,8 @@ phrase: кому-то-надо, tag: predicative-adverb
 grammar: sya@2, tag: verb
 пор--а: time to, inflect: fem
 похож--ий: similar, adv: similarly, inflect: -похожий, mask: comp
-оно: it, pos: pron
+grammar: -оно@nom
+--оно: it, inflect: -оно
 phrase: кому-то-нужно, tag: predicative-adverb
 grammar: -весь@preppl, tag: prepositional
 grammar: -пытаться@impr, tag: verb
@@ -1008,7 +1009,7 @@ phrase: деньги-на
 grammar: -один@pl
 phrase: play-with
 grammar: -два@genpl, tag: genitive
-должн--ый: must, -2: should, -3: have to, -4: supposed to, inflect: ныйadj
+должн--ый: must, -2: should, -3: have to, -4: supposed to, inflect: ныйadj, mask: allbutcompshortandadv
 изуча--ть: study, 3: studies, past: studied, prog: studying, inflect: ать
 grammar: -два@preppl, tag: prepositional
 спасибо: thank you
@@ -1086,7 +1087,7 @@ phrase: то-что
 двор--: yard, pl: yards, inflect: masc
 grammar: -они@genpl, tag: genitive
 поед--<хать: go, past: went, prog: going, inflect: -поехать, tag: verbs-of-motion
-правильн--ый: correct, adv: correctly, inflect: -правильный, mask: compandshort
+правильн--ый: correct, adv: correctly, inflect: -правильный, mask: comp
 phrase: когда-то
 обраща--ться: turn to, 3: turns to, past: turned to, prog: turning to, inflect: -пытаться
 обраща--ться[handle]: handle, 3: handles, past: handled, prog: handling, -2: deal with, 3-2: deals with, past-2: dealt with, prog-2: dealing with, inflect: -пытаться
@@ -1098,8 +1099,9 @@ grammar: neuie@dat, tag: dative
 phrase: если-бы
 grammar: -вернуться@1pl, tag: verb
 возможн--ый: possible, adv: possibly, adv-2: maybe, inflect: ныйadj, mask: comp
+невозможн--ый: impossible, adv: impossibly, inflect: ныйadj, mask: comp, tag: neg-adj
 стоянк--а: parking lot, pl: parking lots, inflect: femka, tag: in
-недалёк--ий: not far away, inflect: -далёкий, mask: allbutadv
+недалёк--ий: not far away, inflect: -далёкий, mask: allbutadv, tag: neg-adj
 phrase: куда-бы
 grammar: -сесть@pastm, tag: verb
 grammar: -повернуть@inf, tag: verb
@@ -1475,7 +1477,7 @@ phrase: за-goal
 впрочем: nevertheless, pos: conj
 grammar: аться@2pl, tag: verb
 grammar: аться@1pl, tag: verb
-разве: really
+разве: really, pos: adv
 phrase: за-time-of-action
 видн--ый: visible, adv: visibly, inflect: ныйadj, mask: adv
 знакомств--о: acquaintance, pl: acquaintances, inflect: neu
@@ -1510,7 +1512,7 @@ phrase: так...как
 пропусти--ть: miss, 3: misses, past: missed, prog: missing, inflect: -простить, tag: perfective
 разреши--ть: allow, 3: allows, past: allowed, prog: allowing, inflect: -учить, tag: perfective, tag: something-to-someone
 phrase: такой..как
-неправильн--ый: incorrect, adv: incorrectly, inflect: -правильный, tag: neg-adj, mask: compandshort
+неправильн--ый: incorrect, adv: incorrectly, inflect: -правильный, tag: neg-adj, mask: comp
 предупреди--ть: warn, 3: warns, past: warned, prog: warning, inflect: -ходить, tag: perfective
 предложени--е[offer]: offer, pl: offers, inflect: neuie
 неужели: Is it really possible, -2: Could it be that
