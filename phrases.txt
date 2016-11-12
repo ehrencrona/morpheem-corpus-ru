@@ -146,7 +146,7 @@ comp-gen: "лучше всех" "better than anyone" "(1) than (2)" comp adjecti
 hyperbole: "ждать часами" "to wait for hours" "for [adjective]" phrase:np@instrumental#time
 доволен-instr: "доволен работой" "happy with work" "(1) (are,is,was,being,been,be,are,were,am,1) happy with (4->acc)" phrase:np@nominative adverb? довольный@ phrase:np@instrumental
 доволен-instr: "доволен работой" "happy with work" "(1) (were,was,1) (3) happy with (5->acc)" phrase:np@nominative быть@ adverb? довольный@ phrase:np@instrumental
-ждать-что-то: "жди меня!" "wait for me!" "(1) for (article) (3)" ждать@ particle@? phrase:np@accusative
+ждать-что-то: "жди меня!" "wait for me!" "(1) for (article) (3)" ждать@ phrase:np@accusative
 ждать-что-то: "жди меня!" "wait for me!" "(2) for [something or someone]" #animate@acc ждать@
 похоже: "похоже" "apparently" "apparently" похожий@adv
 за-direction: "за дом" "behind the house" "behind [direction]" за@ phrase:np@accusative
@@ -178,7 +178,7 @@ hyperbole: "ждать часами" "to wait for hours" "for [adjective]" phras
 на-твоем-месте: "на твоём месте" "if I were you" "if (1) (were,was,1) in (4) position, (1) would not (7->inf)" phrase:np бы@ на@ adjective@prep* место@prep не@ verb
 на-твоем-месте: "на твоём месте" "if I were you" "in (2) position" на@ adjective@prep место@prep
 кому-то-можно: "можно мне идти?" "may I go?" "(1->nom) (2) may" phrase:np@dative adverb? можно@
-кому-то-можно: "можно мне идти?" "may I go?" "may (3->nom) (4) (5->1sg)" можно@ particle@? phrase:np@dative adverb? verb
+кому-то-можно: "можно мне идти?" "may I go?" "may (3->nom) (4) (5->1sg)" можно@ phrase:np@dative adverb? verb
 кому-то-нельзя: "вам нельзя входить" "you may not enter" "[someone->nom] may not" phrase:np@dative нельзя@
 по-очереди: "по очереди" "one by one" "one by one" по@ очередь[turn]@dat
 по-очереди: "по очереди" "one by one" "one by one" по@ adjective@? порядок@dat
@@ -226,12 +226,12 @@ hyperbole: "ждать часами" "to wait for hours" "for [adjective]" phras
 на-языке: "на француском" "in French" "in [language]" на@ #language@prepositional
 на-языке: "на француском" "in French" "in (2)" на@ phrase:np@prepositional#language
 на-транспорте: "на автобусе" "by bus" "by [means of transportation]" на@ phrase:np@prepositional#transport
-no-matter-how: "сколько я ни работал" "no matter how much i worked" "no matter at what time (4) (6)" в@alt сколько|сколько[many]@ particle@? #animate ни@ verb@past
-no-matter-how: "сколько я ни работал" "no matter how much i worked" "no matter how much (3) (5)" сколько|сколько[many]|как[like]@ particle@? #animate ни@ verb
+no-matter-how: "сколько я ни работал" "no matter how much i worked" "no matter at what time (4) (6)" в@alt сколько|сколько[many]@ #animate ни@ verb@past
+no-matter-how: "сколько я ни работал" "no matter how much i worked" "no matter how much (3) (5)" сколько|сколько[many]|как[like]@ #animate ни@ verb
 nazad: "год назад" "a year ago" "[time] ago" phrase:np@accusative#time назад@
 во-сколько: "во сколько?" "at what time?" "at what time" в@ сколько[many]|сколько@
 при-condition: "при нас" "with us" "with [something]" при@ phrase:np@prepositional
-someone-had: "у меня был выбор" "I had a choice" "(2->nom) had" у@ #animate@genitive particle@? быть@past
+someone-had: "у меня был выбор" "I had a choice" "(2->nom) had" у@ #animate@genitive быть@past
 did-not-have: "у меня не было времени" "I didn't have time" "(2->nom) didn't have" у@ #animate@genitive не@ быть@past
 деньги-на: "деньги на такси" "money for a taxi" "(1) for (3)" деньги|время@ на@ phrase:np@accusative
 will-have: "у меня будет ребёнок" "I'm having a baby" "[someone] will have" у@ #animate@genitive быть[fut]@
@@ -329,13 +329,14 @@ dat-удобно: "вам удобно?" "does it suit you?" "whenever it suits 
 dat-удобно: "вам удобно?" "does it suit you?" "whenever it suits (2)" когда@ phrase:np@dative быть[fut]@ удобный@
 dat-удобно: "вам удобно?" "does it suit you?" "it suits (1)" phrase:np@dative удобный@
 все-равно: "всё равно" "nevertheless" "nevertheless" весь|всё@ равный@
-dat-нравится: "мне нравится" "I like" "(1->nom) very much (like,likes,liked,1)" phrase:np@dative очень@ нравиться|понравиться@
-dat-нравится: "мне нравится" "I like" "(1->nom) (2) very much (like,likes,liked,1)" phrase:np@dative adverb? очень@ нравиться|понравиться@
-dat-нравится: "мне нравится" "I like" "(2->nom) (3) (like,likes,liked,2) (4) (1)" phrase:np@nominative phrase:np@dative adverb? adjective@comp? нравиться|по@
-dat-нравится: "мне нравится" "I like" "(2->nom) (don't,doesn't,didn't,2) (5) like (1->acc)" phrase:np@nominative phrase:np@dative particle@? не@ adverb? нравиться|понравиться@
-dat-нравится: "мне нравится" "I like" "(2->nom) (like,likes,liked,1) (1->acc)" phrase:np@nominative phrase:np@dative нравиться|понравиться@
-dat-нравится: "мне нравится" "I like" "(1->nom) (don't,doesn't,didn't,1) (4) like" phrase:np@dative particle@? не@ adverb? нравиться|понравиться@
+dat-нравится: "мне нравится" "I like" "(2->nom) (like,likes,liked,2) (1->acc)" phrase:np@nominative phrase:np@dative нравиться|понравиться@
 dat-нравится: "мне нравится" "I like" "(3->nom) (like,likes,liked,3) (1->acc)" phrase:np@nominative нравиться|понравиться@ phrase:np@dative
+dat-нравится: "мне нравится" "I like" "(2->nom) (don't,doesn't,didn't,2) (4) like (1->acc)" phrase:np@nominative phrase:np@dative не@ adverb? нравиться|понравиться@
+dat-нравится: "мне нравится" "I like" "(2->nom) (3) (like,likes,liked,2) (4) (1->acc)" phrase:np@nominative phrase:np@dative adverb? adjective@comp? нравиться|понравиться@
+dat-нравится: "мне нравится" "I like" "(1->nom) (2) (like,likes,liked,1) (4)" phrase:np@dative adverb* нравиться|понравиться@ phrase:np@nominative
+dat-нравится: "мне нравится" "I like" "(1->nom) (2) (like,likes,liked,1)" phrase:np@dative adverb* нравиться|понравиться@
+dat-нравится: "мне нравится" "I like" "(1->nom) (2) (don't,doesn't,didn't,1) (4) like" phrase:np@dative adverb* не@ adverb* нравиться|понравиться@
+dat-нравится: "мне нравится" "I like" "(1->nom) (2) (don't,doesn't,didn't,1) (4) like (6)" phrase:np@dative adverb* не@ adverb* нравиться|понравиться@ phrase:np@nominative
 dat-нравится: "мне нравится" "I like" "(1->nom) (2) (like,likes,liked,1) (3)" phrase:np@dative adverb? adjective@comp? нравиться|понравиться@
 dat-интересно: "мне интересна математика" "I'm interested in maths" "(are,is,was,being,been,be,are,were,am,1) (1->nom) interested in (3)?" @dative+ интересный@ phrase:np ?@
 dat-интересно: "мне интересна математика" "I'm interested in maths" "(1->nom) (are,is,was,being,been,be,are,were,am,1) interested in (3)" @dative+ интересный@ phrase:np
@@ -361,7 +362,7 @@ either-or-или-или: "или ... , или ..." "either ... or ..." "either .
 при-чём: "при чём здесь это?" "what does this have to do with anything?" "(1) (have,has,1) nothing to do with it" phrase:np@nominative здесь|тут@ ни@ при@ что@prepositional
 кому-то-кажется: "мне кажется" "it seems to me" "it (3) to (1)" phrase:np@dative any казаться@
 кому-то-кажется: "мне кажется" "it seems to me" "(1) (3) (4) to (2) " казаться@ phrase:np@dative adverb? @instrumental+
-gen-верить: "верь мне" "believe me" "(cannot,cannot,could not,2) trust (5)" не@ мочь@ верить|доверять|поверить@ particle@? phrase:np@dative
+gen-верить: "верь мне" "believe me" "(cannot,cannot,could not,2) trust (5)" не@ мочь@ верить|доверять|поверить@ phrase:np@dative
 gen-верить: "верь мне" "believe me" "(1) (can,can,could,2) trust (3)" phrase:np мочь@ phrase:np@dative верить|доверять|поверить@
 gen-верить: "верь мне" "believe me" "(trust,trusts,trusted,1) (2)" верить|доверять|поверить@ phrase:np@dative
 gen-верить: "верь мне" "believe me" "[someone] ... (trust,trusts,trusted,3)" phrase:np@dative any верить|доверять|поверить@
@@ -379,8 +380,8 @@ dat-жаль: "мне жаль" "i'm sorry" "(1->nom) (are,is,was,being,been,be,
 dat-жаль: "мне жаль" "i'm sorry" "(1->nom) (are,is,was,being,been,be,are,were,am,1) so sorry" phrase:np@dative так@ жаль@
 dat-жаль: "мне жаль" "i'm sorry" "(1->nom) (regret,regrets,regretted,1)" phrase:np@dative жаль@
 dat-жаль: "мне жаль" "i'm sorry" "(1->nom) found it a pity" phrase:np@dative быть@past жаль@
-dat-лучше: "тебе лучше" "you'd better" "(1->nom)'d better" phrase:np@dative particle@? хороший@comp
-dat-лучше: "тебе лучше" "you'd better" "(3->nom)'d better" хороший@comp particle@? @dative+
+dat-лучше: "тебе лучше" "you'd better" "(1->nom)'d better" phrase:np@dative хороший@comp
+dat-лучше: "тебе лучше" "you'd better" "(3->nom)'d better" хороший@comp @dative+
 по-отношению: "по отношению к" "with regards to" "with regards to [something]" по@ отношение[regard]@dat к@ phrase:np@dative
 по-отношению: "по отношению к" "with regards to" "relate to (4)" иметь@ отношение[regard]|отношение@ к@ phrase:np@dative
 рад-кому: "рад тебе" "happy to see you" "(2) happy to see (3)" рад@ adverb? phrase:np@dative#animate
@@ -399,7 +400,7 @@ dat-лучше: "тебе лучше" "you'd better" "(3->nom)'d better" хор�
 просить-о: "просить о помощи" "ask for help" "(1) (2)" просить@ phrase:np@accusative
 просить-о: "просить о помощи" "ask for help" "(1) for (3)" просить@ о@ phrase:np@prepositional
 dat-платить: "сколько тебе платят?" "how much do you get paid?" "(1->nom) (get,gets,got,1) paid" @dative+ платить@
-dat-платить: "сколько тебе платят?" "how much do you get paid?" "(1->nom) (get,gets,got,1) paid (3)" @dative+ particle@? adverb платить@
+dat-платить: "сколько тебе платят?" "how much do you get paid?" "(1->nom) (get,gets,got,1) paid (3)" @dative+ adverb платить@
 верить-в: "верить в вога" "believe in God" "(1) (2) in (4)" верить@ adverb? в@ phrase:np@accusative
 в-году: "в этом году" "this year" "at what time" в@ который[which]@ час@loc
 в-году: "в этом году" "this year" "[adj] [time period]" в@ adjective@prepositional locative
@@ -411,7 +412,7 @@ in-eyes-of: "ты мне друг" "you are a friend to me" "to [someone]" #anim
 прийти-в-голову: "прийти в голову" "to cross my mind" "cross (1)'s mind" phrase:np@dative в@ голова@accusative any прийти|приходить@
 прийти-в-голову: "прийти в голову" "to cross my mind" "cross (1)'s mind" phrase:np@dative не@ прийти|приходить@ в@ голова@accusative
 конец-dat: "нет конец" "no end" "(1) never (end,ends,1)" phrase:np@dative нет[none]@ конец@gen
-конец-dat: "нет конец" "no end" "(1) (end,ends,ended,3)" phrase:np@dative particle@? прийти|приходить@ конец@
+конец-dat: "нет конец" "no end" "(1) (end,ends,ended,3)" phrase:np@dative прийти|приходить@ конец@
 сидеть-дома: "сидеть дома" "stay at home" "stay at home" сидеть@ any дома@
 что-за: "что он за человек?" "what kind of person is he?" "what kind of (4) is (2)" что@ phrase:np#animate за@ phrase:np
 что-за: "что он за человек?" "what kind of person is he?" "what kind of (4) is it" что@ это@ за@ phrase:np
@@ -474,7 +475,6 @@ auto-np: "np" "" "(article) (1)" phrase:567-genpl
 auto-np: "np" "" "(article) (1)" phrase:1-nom@context
 auto-np: "np" "" "(article) (1)" phrase:auto-collocation@context
 auto-np: "np" "" "(article) (1) (2)" adjective@context phrase:auto-collocation@context
-auto-np: "np" "" "(article) (1) (2)" #possessive phrase:auto-collocation@context
 auto-np: "np" "" "(article) (1)" phrase:gen-of
 auto-np: "np" "" "(article) (1)" phrase:много-gen
 auto-np: "np" "" "(article) (1)" phrase:деньги-на
@@ -482,7 +482,6 @@ auto-np: "np" "" "(1)" phrase:один-of
 auto-np: "np" "" "(1)" phrase:ничего-adj
 auto-np: "np" "" "(article) (1) (article) (2)" adjective@context* noun@context!
 auto-np: "np" "" "(article) (1) (article) (2)" numeral@context* noun@context!
-auto-np: "np" "" "(2) (1) (3) (4)" adjective@context* #possessive adjective@context* noun@context!
 auto-np: "np" "" "(1)" phrase:all-of-us@context
 auto-np: "np" "" "(1)" pronoun@context
 auto-np: "np" "" "which" который@context
@@ -549,7 +548,6 @@ face-to-face: "лицом к лицу" "face to face" "face to face" лицо@in
 не-видно: "ничего не видно" "nothing can be seen" "(1->nom) can't see anything" #animate@dative any ничто@gen не@ видный@shortn
 не-видно: "ничего не видно" "nothing can be seen" "(1->nom) (are,is,was,being,been,be,are,were,am,1) ... not visible" phrase:np@genitive any не@ видный@shortn
 не-видно: "ничего не видно" "nothing can be seen" "(1->nom) could not be seen" phrase:np@genitive видный@shortn не@ быть@past
-один-of: "ни один" "not a single" "not one of (3) (4->pl)" ни@ один@ #possessive noun
 один-of: "ни один" "not a single" "not a single (3) (4)" ни@ один@ adjective@* noun
 один-of: "ни один" "not a single" "none of (4)" ни@ один@ из@ phrase:np
 такой-же: "такой же" "the same" "the same" такой@ же@
