@@ -167,7 +167,7 @@ grammar: adj@prepf, tag: prepositional
 наш--: our, inflect: -наш, tag: possessive, mask: nonstd
 grammar: v@1, tag: verb
 grammar: -наш@pl
-родител--ь: parents, pl: parents, inflect: mascь-animate, tag: animate, mask: sg
+родител--ь: parents, pl: parents, inflect: mascь-animate, mask: sg
 офис--: office, pl: offices, inflect: masc
 grammar: -этот@pl
 жив--<ть: live, 3: lives, past: lived, prog: living, inflect: -жить, tag: imperfective
@@ -323,12 +323,12 @@ grammar: -лежать@inf, tag: verb
 grammar: femя@nom
 сын--: son, pl: sons, inflect: -сын, tag: animate
 брат--: brother, pl: brothers, inflect: -брат, tag: animate
-phrase: в-час
+phrase: в-час, tag: time-phrase
 grammar: -писать@inf, tag: verb
 жен--а: wife, pl: wives, inflect: -жена, tag: animate
 отц--<ец: father, pl: fathers, inflect: -отец, tag: animate
 год--: year, pl: years, inflect: -год, tag: time
-phrase: в-num-час
+phrase: в-num-час, tag: time-phrase
 grammar: n@datpl, tag: dative
 grammar: prepositional
 grammar: -свой@prepm, tag: prepositional
@@ -394,12 +394,12 @@ grammar: -учить@3pl, tag: verb
 но: but, pos: conj
 из: from, -2: of, pos: prep
 зачем: what for, -2: why, pos: quest, tag: question
-phrase: в-time
+phrase: в-time, tag: time-phrase
 grammar: femь@dat, tag: dative
 grammar: -спать@inf, tag: verb
 ещё: still, pos: adv
 ещё[again]: again, pos: adv
-phrase: каждый-time
+phrase: каждый-time, tag: time-phrase
 о--: about, inflect: -о, tag: untranslatable
 grammar: neuie@nom
 русск--ий: Russian, inflect: adj, tag: language, mask: nonstd
@@ -415,7 +415,7 @@ grammar: masc3@pl
 учи--ть[teach]: teach, 3: teaches, past: taught, prog: teaching, inflect: -учить, tag: imperfective
 слов--о: word, pl: words, inflect: neu
 хлеб--: bread, inflect: masc, mask: pl
-phrase: на-time
+phrase: на-time, tag: time-phrase
 grammar: femяь@instrpl, tag: instrumental
 grammar: -mascь@instrpl, tag: instrumental
 тоже: also, pos: adv
@@ -453,11 +453,11 @@ grammar: -давать@impr, tag: verb
 grammar: -стул@genpl, tag: genitive
 начина--ть: begin, 3: begins, past: began, prog: beginning, -2: start, 3-2: starts, past-2: started, prog-2: starting, inflect: ать, tag: imperfective
 солнц--е: sun, pl: suns, inflect: -солнце, tag: in
-phrase: в-году
+phrase: в-году, tag: time-phrase
 вопрос--: question, pl: questions, inflect: masc
 про: about, pos: prep
 ответи--ть: answer, 3: answers, past: answered, prog: answering, inflect: -ответить
-phrase: в-время
+phrase: в-время, tag: time-phrase
 grammar: -стул@preppl, tag: prepositional
 правд--а: truth, inflect: fem, mask: pl
 grammar: -далёкий@adv
@@ -490,7 +490,7 @@ grammar: adj@accinanm, tag: accusative
 grammar: adj@instrm, tag: instrumental
 phrase: до-какого-то-времени
 боли--<еть: is ill, inf: be ill, past: was ill, pastpl: were ill, prog: being ill, inflect: -смотреть
-боли--<еть[hurt]: hurt, 3: hurts, inflect: -смотреть
+боли--<еть[hurt]: hurt, 3: hurts, prog: hurting, inflect: -смотреть, tag: imperfective
 больниц--а: hospital, pl: hospitals, inflect: -улица, tag: at
 grammar: -есть@2pl, tag: verb
 звони--ть: call, 3: calls, past: called, prog: calling, inflect: -дарить
@@ -576,7 +576,7 @@ phrase: обращаться-с
 grammar: adj@n
 озер--о: lake, pl: lakes, inflect: -озеро
 матч--: match, pl: matches, -2: game, pl-2: games, inflect: -овощ
-phrase: at-datpl
+phrase: at-datpl, tag: time-phrase
 гор--а: mountain, pl: mountains, inflect: fem
 grammar: -ждать@3pl, tag: verb
 grammar: adj@genf, tag: genitive
@@ -694,7 +694,7 @@ grammar: n@instrpl, tag: instrumental
 дочер--<<ь: daughter, pl: daughters, inflect: -мать, tag: animate
 пример--: example, pl: examples, inflect: masc
 grammar: -наш@m
-phrase: nazad
+phrase: nazad, tag: time-phrase
 иде--я: idea, pl: ideas, inflect: -идея
 что-то: something, pos: pron
 согласн--ый: agreeing, inflect: ныйadj
@@ -832,7 +832,7 @@ phrase: для-to
 grammar: -мать@nom
 grammar: -казаться@inf, tag: verb
 до: until, -2: to, -3: by, pos: prep, tag: untranslatable
-phrase: в-tag-time
+phrase: в-tag-time, tag: time-phrase
 мож--<чь: can, 3: can, past: could, prog: able to, inflect: -мочь
 если: if, pos: conj
 grammar: imperative
@@ -866,7 +866,7 @@ grammar: -ответить@impr, tag: verb
 потом: later, pos: prep
 grammar: -мочь@1, tag: verb
 grammar: -наш@n
-phrase: at-instr
+phrase: at-instr, tag: time-phrase
 теперь: now
 надо: need to, -2: should, -3: have to, pos: adv
 grammar: sya@3pl, tag: verb
@@ -970,7 +970,7 @@ grammar: -весь@genpl, tag: genitive
 цел--ый: whole, adv: wholly, inflect: adj, tag: time, mask: comp
 кроме: apart from, pos: prep
 grammar: -сын@genpl, tag: genitive
-phrase: быть-кем-то
+phrase: быть-кем-то, tag: instrumental
 grammar: -мы@instrpl, tag: instrumental, tag: animate
 grammar: -ты@instr, tag: instrumental
 парн--<ень: boyfriend, pl: boyfriends, inflect: -парень
@@ -1312,7 +1312,7 @@ grammar: -он@datalt, tag: dative
 скор--ый: fast, adv: quickly, comp: faster, super: fastest, adv-2: soon, inflect: adj, mask: short
 phrase: ни-gen
 grammar: -лететь@1, tag: verb
---себя: -self, -2: himself, -3: herself, -4: themselves, -5: ourselves, -6: myself, -7: yourself, -8: me, -9: him, -10: her, -11: them, -12: us, -13: you, inflect: -себя, tag: animate, tag: in
+--себя: -self, -2: himself, -3: herself, -4: themselves, -5: ourselves, -6: myself, -7: yourself, -8: me, -9: him, inflect: -себя, tag: animate, tag: in
 бы: would particle, pos: part, tag: untranslatable
 времен--<<я: time, pl: times, inflect: -время, tag: time
 phrase: как-так
@@ -1655,7 +1655,7 @@ grammar: -интересоваться@inf, tag: verb
 grammar: -интересоваться@pastm, tag: verb
 grammar: -дорогой@comp
 всего: only, pos: adv
-phrase: за-время
+phrase: за-время, tag: time-phrase
 девушк--а: girlfriend, pl: girlfriends, -2: young lady, inflect: -девочка
 девушк--а[lady]: young lady, pl: young ladies, inflect: -девочка
 одн--<ин[alone]: alone, inflect: -один, tag: number
@@ -1747,7 +1747,6 @@ phrase: писать-dat
 phrase: звонить-dat
 phrase: советовать-dat
 phrase: почему-бы
-phrase: лучше-бы-dat
 выпь--<ить: drink, 3: drinks, past: drunk, prog: drinking, inflect: -выпить, tag: perfective
 grammar: uninflected@gen, tag: genitive
 phrase: у-gen-в-prep
@@ -1867,7 +1866,7 @@ phrase: counting-on
 phrase: в-гости
 phrase: в-гостях
 phrase: продолжать-verb
-phrase: в-время2
+phrase: в-время2, tag: time-phrase
 броса--ть: abandon, 3: abandons, past: abandoned, inflect: ать
 броса--ть[throw]: throw, 3: throws, past: threw, inflect: ать
 кто-то: someone
@@ -1924,8 +1923,8 @@ phrase: домашнее-животное
 grammar: -два@instrpl, tag: instrumental
 постара--ться: try, 3: tries, past: tried, prog: trying, inflect: -пытаться, tag: reflexive
 phrase: double-negation
-phrase: в-погоду
-получи--ться: work out, 3: works out, past: worked out, prog: working out, pastpart: worked out, inflect: -случиться, tag: reflexive
+phrase: в-погоду, tag: time-phrase
+получи--ться: work out, 3: works out, past: worked out, prog: working out, pastpart: worked out, -2: manage, 3-2: manages, past-2: managed, prog-2: managing, pastpart-2: managed, inflect: -случиться, tag: reflexive
 phrase: passive-3pl
 выбира--ть: choose, 3: chooses, past: chose, prog: choosing, inflect: ать
 phrase: half-to
@@ -2031,7 +2030,7 @@ phrase: дай-мне-отдохнуть
 phrase: считаю-это-важным
 phrase: слушать-acc
 phrase: dat-достаточно, tag: predicative-adverb
-получа--ться: work out, 3: works out, past: worked out, prog: working out, pastpart: worked out, inflect: -пытаться, tag: imperfective, tag: reflexive
+получа--ться: work out, 3: works out, past: worked out, prog: working out, pastpart: worked out, -2: manage, 3-2: manages, past-2: managed, prog-2: managing, pastpart-2: managed, inflect: -пытаться, tag: imperfective, tag: reflexive
 phrase: у-саши-получилось
 phrase: под-кровать
 phrase: можно-будет
@@ -2048,14 +2047,20 @@ phrase: добрый-день
 неинтересн--ый: uninteresting, adv: uninterested, comp: more uninteresting, super: most uninteresting, inflect: adj
 phrase: уж-и
 phrase: хотя-бы
-grammar: -тот@preppl
+grammar: -тот@preppl, tag: prepositional
 phrase: conditional
-grammar: uninflected@genpl
+grammar: uninflected@genpl, tag: genitive
 grammar: uninflected@pl
-grammar: uninflected@accpl
+grammar: uninflected@accpl, tag: accusative
 phrase: билет-на-автобус
 сади--ться: sit down, 3: sits down, past: sat down, prog: sitting down, pastpart: sat down, inflect: -находиться, tag: imperfective, tag: reflexive
 phrase: разлить-кофе-на-ноутбук
 разлива--ть: spill, 3: spills, past: spilled, prog: spilling, pastpart: spilled, inflect: ать, tag: imperfective
 phrase: звонить-в-accusative
 phrase: dat-стало-adv-or-comp
+phrase: на-следующий, tag: time-phrase
+phrase: у-gen-болит-nom
+тёмн--ый: dark, comp: darker, super: darkest, inflect: adj
+хочеться: n/a
+phrase: хочеться-verb
+водител--ь: driver, pl: drivers, inflect: mascь-animate, tag: animate
