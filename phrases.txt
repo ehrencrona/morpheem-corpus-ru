@@ -2,6 +2,7 @@
 о-prep: "говорить о работе" "talk about work" "about [a topic]" о@ phrase:np@prepositional
 в-час: "в час" "per hour" "per [duration]" в@ #time@acc
 в-num-час: "в два часа" "at two o'clock" "at (2) o'clock" в@ #number@accusative час[o'clock]@
+в-num-час: "в два часа" "at two o'clock" "at (2)" в@ phrase:half-to@accusative
 234-gen: "три собаки" "three dogs" "(1) (2->pl)" два|три|четыре@context phrase:np@genitive
 234-gen: "три собаки" "three dogs" "(1) (2->pl)" два|три|четыре@context phrase:np
 567-genpl: "пять друзей" "five friends" "(1) (2)" #number@context phrase:gen-of
@@ -86,9 +87,9 @@ no-matter-what: "во что бы то ни стало" "no matter what" "no mat
 у-кого: "у меня машина" "I have a car" "(2->nom) (have,has,had,2) (3) (4)" у@ phrase:np@genitive adverb? phrase:np@nominative
 у-кого: "у меня машина" "I have a car" "(3->nom) (have,has,had,3) (1)" phrase:np@nominative у@ phrase:np@genitive
 из-gen-departure: "я из России" "I'm from Russia" "from [point of departure/source]" из@ phrase:np@genitive
-at-datpl: "по утрам" "in the morning" "on (2)" по@ #weekday@datpl
-at-datpl: "по утрам" "in the morning" "at night" по@ ночь@datpl
-at-datpl: "по утрам" "in the morning" "in the (2)" по@ #time@datpl
+at-datpl: "по утрам" "in the mornings" "on (2)" по@ #weekday@datpl
+at-datpl: "по утрам" "in the mornings" "at night" по@ ночь@datpl
+at-datpl: "по утрам" "in the mornings" "in the (2)" по@ #time@datpl
 у-кого-location: "у меня, или у тебя ?" "at your place or mine?" "at (2) place" у@ phrase:np@genitive дома@
 у-кого-location: "у меня, или у тебя ?" "at your place or mine?" "at your place" у@ ты@gen
 у-кого-location: "у меня, или у тебя ?" "at your place or mine?" "at my place" у@ я@gen
@@ -153,12 +154,11 @@ hyperbole: "ждать часами" "to wait for hours" "for [adjective]" phras
 ждать-что-то: "жди меня!" "wait for me!" "(2) for (1)" #animate@acc ждать@
 похоже: "похоже" "apparently" "apparently" похожий@adv
 за-direction: "за дом" "behind the house" "behind [direction]" за@ phrase:np@accusative
+через-direction: "через дорогу" "across the road" "online" через@ интернет@accusative
 через-direction: "через дорогу" "across the road" "through, across (2)" через@ phrase:np@accusative
-через-direction: "через дорогу" "across the road" "(1)" phrase:через-интернет
 через-time: "через час" "in an hour" "in (2) (3)" через@ adverb? phrase:np@accusative#time
-на-time: "на день" "for a day" "(2) (3)" на@ следующий@accusative #time@accusative
-на-time: "на день" "for a day" "(2->sing) (article) (3)" на@ adjective@? выходной@
-на-time: "на день" "for a day" "for (2)" на@ phrase:np@accusative#time
+на-time: "ехать на день" "go for a day" "over (2->sing) (article) (3)" на@ adjective@? выходной@
+на-time: "ехать на день" "go for a day" "for (2)" на@ phrase:np@accusative#time
 по-place-of-movement: "по парку" "through the park" "(1) (2)" по@ phrase:np@dative
 по-mode-of-communication: "по телевизору" "on TV" "on [mode of communication]" по@ phrase:np@dative
 как-можно-comp: "как можно скорее" "as soon as possible" "as (3->adv) as possible" как[like]@ можно@ comp
@@ -252,7 +252,8 @@ go-do: "идти спать" "go sleep" "(go,goes,went,1) (2)" идти|пойт
 думать-над: "думаю над этим" "i'm thinking about it" "(3) about (2)" над@ phrase:np@instrumental думать|подумать@
 Вот-это: "вот это" "this is" "This is (3)" вот@ это@ phrase:np
 пора–не: "пока не" "until" "until ..." пока|пока[while]@ any не@
-уверен-в: "уверен в себе" "sure of himself" "certain of" уверенный@ в@ phrase:np@prepositional
+уверен-в: "уверен в себе" "has self-confidence" "(have,has,had,1) self-confidence" уверенный@ в@ себя@prepositional
+уверен-в: "уверен в себе" "has self-confidence" "(have,has,had,1) confidence in (3)" уверенный@ в@ phrase:np@prepositional
 так-что: "так что" "that is why" "that is why" так@ что[that]@
 так-как: "так, как ты хочешь" "just the way like it" "the way" так@ ,@ как[like]@
 так-как: "так, как ты хочешь" "just the way like it" "the way" как[like]@ any ,@ так@
@@ -291,6 +292,7 @@ ask-someone: "прошу у тебя денег" "i'm asking you for money" "(1)
 выйти-из: "выйти из автобуса" "get off the bus" "(get off,gets off,got off,1) (article) (3) (4)" выходить|выйти@ из@ adjective@gen? автобус|поезд|самолёт|метро@gen
 выйти-из: "выйти из автобуса" "get off the bus" "(leave,leaves,left,1) (article) (3) (4)" выходить|выйти@ из@ adjective@gen? дом|квартира|класс[room]@gen
 выйти-из: "выйти из автобуса" "get off the bus" "(come out,comes out,came out,1) (3)" выходить|выйти@ из@ phrase:np@genitive
+выйти-из: "выйти из автобуса" "get off the bus" "(1) (3)" уйти|уходить@ с@ phrase:np@genitive
 за-городом: "за городом" "in the countryside" "in the countryside" за@ город@instr
 за-город: "за город" "to the countryside" "to the countryside" за@ город@acc
 сидеть-в-интернете: "сидеть в интернете" "surf the Internet" "(surf,surfs,surfed,1) the Internet" сидеть@ в@ интернет@prep
@@ -320,7 +322,7 @@ dat-adv: "мне холодно" "i'm cold" "(are,is,was,being,been,be,are,were,
 dat-adv: "мне холодно" "i'm cold" "(1->nom) (feel,feels,felt,1) (2) (3->adj)" phrase:np@dative adverb adv
 dat-adv: "мне холодно" "i'm cold" "(1->nom) (feel,feels,felt,1) (2->adj)" phrase:np@dative adv
 dat-adv: "мне холодно" "i'm cold" "(1->nom) (2) (3->adj)" phrase:np@dative быть@past adv
-dat-adv: "мне холодно" "i'm cold" "(1->nom) (2) (3->adj)" phrase:np@dative быть[fut]@ adv
+dat-adv: "мне холодно" "i'm cold" "(1->nom) will ... feel ... (5->adj)" phrase:np@dative any быть[fut]@ any adv
 dat-adv: "мне холодно" "i'm cold" "(are,is,was,being,been,be,are,were,am,1) (1) not (3->adj)" phrase:np@dative не@ adv
 dat-adv: "мне холодно" "i'm cold" "(are,is,was,being,been,be,are,were,am,1) (1) not (3->adj)" phrase:np@dative не@ adv
 кому-то-достаточно: "мне достаточно" "It's enough for me" "(1->nom) (have,has,had,1) (2)" phrase:np@dative phrase:много-gen
@@ -340,6 +342,7 @@ dat-нравится: "мне нравится" "I like" "(1->nom) (2) (like,lik
 dat-нравится: "мне нравится" "I like" "(1->nom) (2) (don't,doesn't,didn't,1) (4) like" phrase:np@dative adverb* не@ adverb* нравиться|понравиться@
 dat-нравится: "мне нравится" "I like" "(1->nom) (2) (don't,doesn't,didn't,1) (4) like (6)" phrase:np@dative adverb* не@ adverb* нравиться|понравиться@ phrase:np@nominative
 dat-нравится: "мне нравится" "I like" "(1->nom) (2) (like,likes,liked,1) (3)" phrase:np@dative adverb? adjective@comp? нравиться|понравиться@
+dat-нравится: "мне нравится" "I like" "(1->nom) ... (want,wants,wanted,1)" phrase:np@dative any хочеться@
 dat-интересно: "мне интересна математика" "I'm interested in maths" "(are,is,was,being,been,be,are,were,am,1) (1->nom) interested in (3)?" phrase:np@dative интересный@ phrase:np ?@
 dat-интересно: "мне интересна математика" "I'm interested in maths" "(1->nom) (are,is,was,being,been,be,are,were,am,1) interested in (3)" phrase:np@dative интересный@ phrase:np
 dat-интересно: "мне интересна математика" "I'm interested in maths" "(are,is,was,being,been,be,are,were,am,1) (1->nom) not interested?" phrase:np@dative не@ интересный@ ?@
@@ -382,8 +385,10 @@ dat-жаль: "мне жаль" "i'm sorry" "(1->nom) (are,is,was,being,been,be,
 dat-жаль: "мне жаль" "i'm sorry" "(1->nom) (are,is,was,being,been,be,are,were,am,1) so sorry" phrase:np@dative так@ жаль@
 dat-жаль: "мне жаль" "i'm sorry" "(1->nom) (regret,regrets,regretted,1)" phrase:np@dative жаль@
 dat-жаль: "мне жаль" "i'm sorry" "(1->nom) found it a pity" phrase:np@dative быть@past жаль@
-dat-лучше: "тебе лучше" "you'd better" "(1->nom)'d better" phrase:np@dative хороший@comp
-dat-лучше: "тебе лучше" "you'd better" "(3->nom)'d better" хороший@comp @dative+
+dat-лучше: "тебе (бы) лучше" "you'd better" "(1->nom)'d better" phrase:np@dative хороший@comp
+dat-лучше: "тебе (бы) лучше" "you'd better" "(2->nom)'d better" хороший@comp @dative+
+dat-лучше: "тебе (бы) лучше" "you'd better" "(3->nom)'d better" хороший@comp бы@ @dative+
+dat-лучше: "тебе (бы) лучше" "you'd better" "(1->nom)'d better" phrase:np@dative быть@pastn бы@ хороший@comp
 по-отношению: "по отношению к" "with regards to" "with regards to [something]" по@ отношение[regard]@dat к@ phrase:np@dative
 по-отношению: "по отношению к" "with regards to" "relate to (4)" иметь@ отношение[regard]|отношение@ к@ phrase:np@dative
 рад-кому: "рад тебе" "happy to see you" "(2) happy to see (3)" рад@ adverb? phrase:np@dative#animate
@@ -499,7 +504,6 @@ auto-np: "np" "" "(1)" phrase:то-же@context
 для-to: "важно для меня" "important to me" "to [someone]" для@ #animate@genitive
 взять-на-работу: "взять на работу" "hire" "(hire,hires,hired,1) ..." взять|брать@ any на@ работа@accusative
 взять-на-работу: "взять на работу" "hire" "(hire,hires,hired,1) ... for (4) (article) job" взять|брать@ any на@ adjective@accusative? работа@accusative
-в-tag-time: "в то время" "at that time" "at (2)" в@ phrase:half-to@accusative
 в-tag-time: "в то время" "at that time" "lately" в@ последний@accusative время@accusative
 в-tag-time: "в то время" "at that time" "(2)" в@ phrase:np@accusative#time
 кого-то-нет: "его не было" "he wasn't there" "(1->nom) (3)" никто@gen не@ быть@pastn
@@ -542,7 +546,6 @@ face-to-face: "лицом к лицу" "face to face" "face to face" лицо@in
 звонить-dat: "звонить Маше" "call Masha" "(1) не (3)" phrase:np@dative не@ звонить|позвонить@
 советовать-dat: "советую тебе" "I advise you" "(1) (2)" советовать@ phrase:np@dative
 почему-бы: "почему бы тебе...?" "who don't you...?" "why don't (3->1) (4)" почему@ бы@ phrase:np@dative adverb? не@
-лучше-бы-dat: "лучше бы пойти" "you'd better leave" "you ought to" хороший@comp бы|б@ phrase:np@dative
 у-gen-в-prep: "у меня в комнате" "in my room" "in (2->pos) (4)" у@ phrase:np@genitive в@ phrase:np@prepositional
 купить-у-кого-то: "купить у него" "buy from him" "(1) from (3)" купить|покупать|брать|взять@ у@ phrase:np@genitive
 разве-нет: "разве не помните?" "do you not remember?" "(do,does,did,2) (2) not" разве@ pronoun не@
@@ -567,8 +570,6 @@ auto-collocation: "collocation" "" "(1)" phrase:высокая-цена@context
 auto-collocation: "collocation" "" "(1)" phrase:новый-год@context
 auto-collocation: "collocation" "" "(1)" phrase:скорая-помощь
 auto-collocation: "collocation" "" "(1)" phrase:домашнее-животное
-auto-collocation: "collocation" "" "(1)" phrase:half-to@context
-auto-collocation: "collocation" "" "(1)" phrase:то-время
 auto-collocation: "collocation" "" "(1)" phrase:русский-язык@context
 поздняя-ночь: "поздняя ночь" "late at night" "late at night" поздний@ ночь@
 поздняя-ночь: "поздняя ночь" "late at night" "early in the morning" ранний@ утро@
@@ -608,8 +609,7 @@ even-so: "и так" "even so" "even so" и[part]@ так@
 бояться-genitive: "бояться собак" "be afraid of dogs" "(are,is,was,being,been,be,are,were,am,3) not afraid of (1)" phrase:np@genitive не@ бояться@
 бояться-genitive: "бояться собак" "be afraid of dogs" "(are,is,was,being,been,be,are,were,am,1) afraid of (2)" бояться@ phrase:np@genitive
 бояться-genitive: "бояться собак" "be afraid of dogs" "(1) ... (are,is,was,being,been,be,are,were,am,3) afraid of" phrase:np@genitive any бояться@
-через-интернет: "через интернет" "online" "online" через@ интернет@accusative
-через-интернет: "через интернет" "online" "online" в@ интернет@prep
+через-интернет: "в интернете" "online" "online" в@ интернет@prep
 кроме-того: "кроме того" "moreover" "moreover" кроме@ тот@gen
 домашнее-животное: "домашнее животное" "pet" "(pets,pet,2)" домашний@context животное@context
 double-negation: "ничего не помню" "I don't remember anything" "nothing (3)" ничто@ не@ случиться|работать@
@@ -694,8 +694,8 @@ known-to-everyone: "знакомый всем" "known to everyone" "(1) (2) to (
 очень-даже: "очень даже ничего" "quite ok" "quite (3)" очень@ даже@ adverb
 есть-noun: "есть кошка" "there is a cat" "there (was,,,,,,were,2) (2)" быть@past phrase:np@nominative
 есть-noun: "есть кошка" "there is a cat" "there (is,,,,,,are,2) (2)" быть@ phrase:np@nominative
-опоздать–на: "опоздать на сшколу" "be late for school" "(1) for (3)" опоздать@ в@ phrase:np@accusative
-опоздать–на: "опоздать на сшколу" "be late for school" "(1) for (3)" опоздать@ на@ phrase:np@accusative
+опоздать–на: "опоздать на работу" "be late for work" "(1) for (3)" опоздать@ в@ phrase:np@accusative
+опоздать–на: "опоздать на работу" "be late for work" "(1) for (3)" опоздать@ на@ phrase:np@accusative
 можно-allowed: "можно курить?" "you are allowed to smoke" "you are allowed to" можно@
 буду-verb: "буду делать" "will be doing" "will (2)" быть[fut]@ #imperfective
 русский-язык: "русский язык" "Russian" "(1)" adjective@context язык[lang]@context
@@ -707,10 +707,11 @@ known-to-everyone: "знакомый всем" "known to everyone" "(1) (2) to (
 считаю-это-важным: "считаю это важным" "consider this important" "(1) ... (3)" считать[consider]@ any adjective@instrumental
 слушать-acc: "слушать радио " "listen to the radio" "(1) to (2)" слушать@ phrase:np@accusative
 dat-достаточно: "мне достаточно " "I've had enough" "I've (2) had enough" phrase:np@dative adverb? достаточный@adv
+у-саши-получилось: "у Саши получилось сдать экзамен" "Sasha managed to pass the exam" "nothing worked out for (2)" у@ genitive ничто@genitive не@ получаться|получиться@
 у-саши-получилось: "у Саши получилось сдать экзамен" "Sasha managed to pass the exam" "(2->nom) (do,does,did,doing,done,4) not manage to (4)" у@ phrase:np@genitive не@ получаться|получиться@ verb
 у-саши-получилось: "у Саши получилось сдать экзамен" "Sasha managed to pass the exam" "(2->nom) (do,does,did,doing,done,4) not succeed" у@ phrase:np@genitive не@ получаться|получиться@
 у-саши-получилось: "у Саши получилось сдать экзамен" "Sasha managed to pass the exam" "(2->nom) (3) (manage,manages,managed,managing,4) to (5)" у@ phrase:np@genitive adverb? получаться|получиться@ verb
-у-саши-получилось: "у Саши получилось сдать экзамен" "Sasha managed to pass the exam" "(2->nom) worked it out ..." у@ phrase:np@genitive получаться|получиться@
+у-саши-получилось: "у Саши получилось сдать экзамен" "Sasha managed to pass the exam" "(2->nom) ... (4) " у@ phrase:np@genitive any получаться|получиться@
 у-саши-получилось: "у Саши получилось сдать экзамен" "Sasha managed to pass the exam" "(2->nom) (work,works,worked,working,4) (3) out ..." у@ phrase:np@genitive phrase:np@nominative получаться|получиться@
 под-кровать: "под кровать" "under the bed" "(1) (2)" под@ phrase:np@accusative
 можно-будет: "можно будет" "will be able" "(1) (3) (4)" можно@ быть[fut]@3 verb
@@ -730,8 +731,9 @@ dat-достаточно: "мне достаточно " "I've had enough" "I've
 в-три-раза: "в три раза больше" "three times better" "(2) (3) (4)" в@ phrase:много-gen comp
 посмотреть-меню: "посмотреть меню" "look through the menu" "(1) through (2)" смотреть[look]|посмотреть[look]@ phrase:np@accusative
 добрый-день: "доброе утро" "good morning" "(1) (2)" добрый@ день|утро|вечер@
-уж-и: "уж и" "such a" "such a (4)" такой@context уж@ и[part]@ adjective
-уж-и: "уж и" "such a" "such a (3)" уж@ и[part]@ adjective
+уж-и: "не так уж и плохо" "not that bad" "not that (5->adj)" не@ так@ уж@ и[part]@ adjective
+уж-и: "не так уж и плохо" "not that bad" "not such a (5)" не@ такой@ уж@ и[part]@ adjective
+уж-и: "не так уж и плохо" "not that bad" "(do,does,did,doing,done,1) (5) it so much" не@ такой@ уж@ и[part]@ verb
 хотя-бы: "хотя бы попробуй!" "try at least!" "at least" хотя@ бы@
 conditional: "я бы хотел" "I would like" "could (3->pres)" бы|б@ мочь@past verb
 conditional: "я бы хотел" "I would like" "could" мочь@past бы|б@
@@ -745,3 +747,7 @@ conditional: "я бы хотел" "I would like" "would ... (3->pres)" бы|б@ 
 звонить-в-accusative: "звонить в школу" "call the school" "(1) (3)" звонить|позвонить@ в|на@ phrase:np@accusative
 dat-стало-adv-or-comp: "мне стало плохо" "I felt bad" "(1->nom) (2) (feel,feels,felt,3) (4)" phrase:np@dative adverb? стать@ adverb
 dat-стало-adv-or-comp: "мне стало плохо" "I felt bad" "(1->nom) (2) (feel,feels,felt,3) (4)" phrase:np@dative adverb? стать@ comp
+на-следующий: "на следующий день" "next day" "(2) (3)" на@ следующий@accusative #time@accusative
+у-gen-болит-nom: "у меня болит голова" "my head hurts" "(2->pos) (5) (4) ..." у@ phrase:np@genitive any болеть[hurt]@ phrase:np@nominative
+у-gen-болит-nom: "у меня болит голова" "my head hurts" "(do,does,did,doing,done,4) (2->pos) (3) (4) " у@ phrase:np@genitive phrase:np@nominative болеть[hurt]@ ?@
+хочеться-verb: "хочеться спать" "feel like sleeping" "(feel,feels,felt,1) like (2)" хочеться@ verb
