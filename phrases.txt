@@ -34,7 +34,7 @@ gen-possession: "кошка Саши" "Sasha's cat" "of (1)" phrase:np@genitive#
 с-чего-взял: "с чего ты взял" "where did you get that idea" "where did (3) get that idea from" с@ что@gen #animate этот@ взять@
 много-gen: "много проблем" "a lot of problems" "(1) (2)" больше|меньше|много@ phrase:np@genitive
 много-gen: "много проблем" "a lot of problems" "(1) (2)" столько|столько[much]|немного[little]|немного|несколько|меньше|больше|много[much]|сколько[many]@ phrase:np@genitive
-много-gen: "много проблем" "a lot of problems" "enough (2)" достаточный@adv phrase:np@genitive
+много-gen: "много проблем" "a lot of problems" "enough (2)" достаточно@ phrase:np@genitive
 много-gen: "много проблем" "a lot of problems" "(1) (2)" недостаточно@ phrase:np@genitive
 много-gen: "много проблем" "a lot of problems" "(1) (2)" мало|мало[few]@ phrase:np@genitive
 много-gen: "много проблем" "a lot of problems" "(1) of (2)" чуть-чуть@ phrase:np@genitive
@@ -104,7 +104,7 @@ at-datpl: "по утрам" "in the mornings" "in the (2)" по@ #time@datpl
 во-время-чего-то: "во время уроков" "during the lesson" "in the [rain/snow->nom]" в@ время@acc #rain@genitive
 во-время-чего-то: "во время уроков" "during the lesson" "during (3)" в@ время@acc phrase:np@genitive
 около-чего-то: "около ста" "around a hundred" "around (2)" около@ phrase:np@genitive
-далеко-от-чего-то: "далеко от дома" "far from home" "(1) from [something]" далёкий|недалеко@adv от@ phrase:np@genitive
+далеко-от-чего-то: "далеко от дома" "far from home" "(1) from [something]" далёкий|недалеко@ от@ phrase:np@genitive
 справа-от-чего-то: "справа от меня" "to my right" "to the right of (3)" справа@ от@ phrase:np@genitive
 слева-от-чего-то: "слева от меня" "to my right" "to the left of (3)" слева@ от@ phrase:np@genitive
 вокруг-чего-то: "вокруг чего-то (B1)" "" "around [something]" вокруг@ phrase:np@genitive
@@ -135,7 +135,7 @@ comp-gen: "лучше всех" "better than anyone" "(1) than (2)" comp adjecti
 не-больше: "больше не" "no longer" "no (1)" больше|больше[longer]@comp не@
 не-больше: "больше не" "no longer" "no (1)" больше|больше[longer]@comp нет[none]@
 для-того: "слишком холодно, для того чтобы ..." "too cold to ..." "too (2) to" слишком@ adjective@! ,@ для@ тот@genn чтобы@
-для-того: "слишком холодно, для того чтобы ..." "too cold to ..." "(2) enough to" достаточный@adv adjective@! ,@ для@ тот@genn чтобы@
+для-того: "слишком холодно, для того чтобы ..." "too cold to ..." "(2) enough to" достаточно adjective@! ,@ для@ тот@genn чтобы@
 давно-пора: "нам давно пора" "it is high time" "it is high time for (2) to" adverb? @dative+ давно@ пора@
 давно-пора: "нам давно пора" "it is high time" "it is high time to" давно@ пора@
 давно-пора: "нам давно пора" "it is high time" "it is time for (1) to" @dative+ пора@
@@ -152,7 +152,7 @@ hyperbole: "ждать часами" "to wait for hours" "for [adjective]" phras
 доволен-instr: "доволен работой" "happy with work" "(1) (were,was,1) (3) happy with (5->acc)" phrase:np@nominative быть@ adverb? довольный@ phrase:np@instrumental
 ждать-что-то: "жди меня!" "wait for me!" "(1) for (2)" ждать@ phrase:np@accusative
 ждать-что-то: "жди меня!" "wait for me!" "(2) for (1)" #animate@acc ждать@
-похоже-phrase: "похоже" "apparently" "apparently" похожий@adv
+похоже-phrase: "похоже" "apparently" "apparently" похоже
 за-direction: "за дом" "behind the house" "behind [direction]" за@ phrase:np@accusative
 через-direction: "через дорогу" "across the road" "online" через@ интернет@accusative
 через-direction: "через дорогу" "across the road" "through, across (2)" через@ phrase:np@accusative
@@ -168,14 +168,14 @@ hyperbole: "ждать часами" "to wait for hours" "for [adjective]" phras
 кому-то-надо: "нам надо поговорить" "we need to talk" "[someone->nom] should not have" не@ надо@ быть@ @dative+
 кому-то-надо: "нам надо поговорить" "we need to talk" "[someone->nom] should have" надо@ быть@ @dative+
 кому-то-надо: "нам надо поговорить" "we need to talk" "[someone->nom] does not need" @dative+ не@ надо@
-кому-то-нужно: "мне нужно курить" "I need to smoke" "(1->nom) (do,does,did,1) not need to" phrase:np@dative не@ нужно@adv
-кому-то-нужно: "мне нужно курить" "I need to smoke" "(1->nom) (do,does,did,1) not (3) need to" phrase:np@dative не@ adverb нужно@adv
-кому-то-нужно: "мне нужно курить" "I need to smoke" "(1->nom) did not need" phrase:np@dative не@ нужно@adv быть@past
-кому-то-нужно: "мне нужно курить" "I need to smoke" "(1->nom) needed to" phrase:np@dative быть@past нужно@adv
-кому-то-нужно: "мне нужно курить" "I need to smoke" "(1->nom) needed to" phrase:np@dative нужно@adv быть@past
-кому-то-нужно: "мне нужно курить" "I need to smoke" "(1->nom) will (3)" phrase:np@dative быть[fut]@ нужно@adv
-кому-то-нужно: "мне нужно курить" "I need to smoke" "(1->nom) (need,needs,needed,1) to" phrase:np@dative нужно@adv
-кому-то-нужно: "мне нужно курить" "I need to smoke" "(1->nom) (2) (need,needs,needed,1) to" phrase:np@dative adverb нужно@adv
+кому-то-нужно: "мне нужно курить" "I need to smoke" "(1->nom) (do,does,did,1) not need to" phrase:np@dative не@ нужно@
+кому-то-нужно: "мне нужно курить" "I need to smoke" "(1->nom) (do,does,did,1) not (3) need to" phrase:np@dative не@ adverb нужно@
+кому-то-нужно: "мне нужно курить" "I need to smoke" "(1->nom) did not need" phrase:np@dative не@ нужно@ быть@past
+кому-то-нужно: "мне нужно курить" "I need to smoke" "(1->nom) needed to" phrase:np@dative быть@past нужно@
+кому-то-нужно: "мне нужно курить" "I need to smoke" "(1->nom) needed to" phrase:np@dative нужно@ быть@past
+кому-то-нужно: "мне нужно курить" "I need to smoke" "(1->nom) will (3)" phrase:np@dative быть[fut]@ нужно@
+кому-то-нужно: "мне нужно курить" "I need to smoke" "(1->nom) (need,needs,needed,1) to" phrase:np@dative нужно@
+кому-то-нужно: "мне нужно курить" "I need to smoke" "(1->nom) (2) (need,needs,needed,1) to" phrase:np@dative adverb нужно@
 на-твоем-месте: "на твоём месте" "if I were you" "if (1) (were,was,1) in (4) position, (1) would (6->1sg)" phrase:np бы@ на@ adjective@prep* место@prep verb
 на-твоем-месте: "на твоём месте" "if I were you" "if (1) (were,was,1) in (4) position, (1) would not (7->inf)" phrase:np бы@ на@ adjective@prep* место@prep не@ verb
 на-твоем-месте: "на твоём месте" "if I were you" "in (2) position" на@ adjective@prep место@prep
@@ -262,8 +262,8 @@ go-do: "идти спать" "go sleep" "(go,goes,went,1) (2)" идти|пойт
 так...как: "так много, как он" "as much as him" "as ... as" так@ any ,@ как[like]@
 такой..как: "такая машиня, как эта" "a car just like this one" "so / such ... as" такой@ any как[like]@
 такой..как: "такая машиня, как эта" "a car just like this one" "so / such ... as" такой@ any ,@ как[like]@
-стоить-дорогой: "стоить дорого" "be expensive" "(are,is,was,being,been,be,are,were,am,1) ... (3->adj)" стоить@ any дорогой|дешёвый@adv
-стоить-дорогой: "стоить дорого" "be expensive" "(are,is,was,being,been,be,are,were,am,2) (1->adj)" дорогой|дешёвый@adv стоить@
+стоить-дорогой: "стоить дорого" "be expensive" "(are,is,was,being,been,be,are,were,am,1) ... (3->adj)" стоить@ any дорого|дешёво@
+стоить-дорогой: "стоить дорого" "be expensive" "(are,is,was,being,been,be,are,were,am,2) (1->adj)" дорого|дешёво стоить@
 у-thing: "у окна" "by the window" "by (2)" у@ phrase:np@genitive
 за-acc: "спасибо за обед!" "thanks for lunch!" "(1) for (3)" платить|получить|заплатить@ за@ phrase:np@accusative
 за-acc: "спасибо за обед!" "thanks for lunch!" "(4) (3) for (2)" за@ phrase:np@accusative платить|получить|заплатить@ @nominative+
@@ -441,19 +441,19 @@ answer-to-question: "ответить на вопрос" "to answer the question
 answer-to-question: "ответить на вопрос" "to answer the question" "(1) ... (4)" ответить|отвечать@ any на@ phrase:np@accusative
 what-a: "какой отличный день" "what a great day" "what a [nice] [thing]" какой@ adjective@context noun@context
 such-nice: "такой отличный день!" "what a great day!" "such (article) (2)" такой@ phrase:np
-интересно-: "интересно..." "I wonder..." "(1->nom) wonder" phrase:np@dative интересный@adv ,@
-интересно-: "интересно..." "I wonder..." "I wonder," интересный@adv ,@
+интересно-: "интересно..." "I wonder..." "(1->nom) wonder" phrase:np@dative интересно@ ,@
+интересно-: "интересно..." "I wonder..." "I wonder," интересно@ ,@
 dat-трудно: "мне трудно" "it's hard for me" "it is (2->adj) for (1)" phrase:np@dative #find-it@adv
 dat-трудно: "мне трудно" "it's hard for me" "it is (2) for (1)" phrase:np@dative #find-it@comp
 dat-трудно: "мне трудно" "it's hard for me" "it is (2) (3->adj) for (1)" phrase:np@dative adverb? #find-it@adv
 dat-трудно: "мне трудно" "it's hard for me" "it is (2) (3) for (1)" phrase:np@dative adverb? #find-it@comp
-dat-скучно: "мне скучно" "I'm bored" "(1->nom) was bored" phrase:np@dative быть@past скучный@adv
-dat-скучно: "мне скучно" "I'm bored" "(1->nom) will be bored" phrase:np@dative быть[fut]@ скучный@adv
-dat-скучно: "мне скучно" "I'm bored" "(1->nom) (find,finds,found,1) it boring to (3)" phrase:np@dative скучный@adv verb@inf
-dat-скучно: "мне скучно" "I'm bored" "(1->nom) (are,is,was,being,been,be,are,were,am,1) (2) bored" phrase:np@dative adverb скучный@adv
-dat-скучно: "мне скучно" "I'm bored" "(1->nom) (are,is,was,being,been,be,are,were,am,1) bored" phrase:np@dative скучный@adv
-dat-скучно: "мне скучно" "I'm bored" "it tastes good to (1)" phrase:np@dative вкусный@adv
-dat-скучно: "мне скучно" "I'm bored" "it tasted good to (1)" phrase:np@dative быть@pastn вкусный@adv
+dat-скучно: "мне скучно" "I'm bored" "(1->nom) was bored" phrase:np@dative быть@past скучно@
+dat-скучно: "мне скучно" "I'm bored" "(1->nom) will be bored" phrase:np@dative быть[fut]@ скучно@
+dat-скучно: "мне скучно" "I'm bored" "(1->nom) (find,finds,found,1) it boring to (3)" phrase:np@dative скучно@ verb@inf
+dat-скучно: "мне скучно" "I'm bored" "(1->nom) (are,is,was,being,been,be,are,were,am,1) (2) bored" phrase:np@dative adverb скучно@
+dat-скучно: "мне скучно" "I'm bored" "(1->nom) (are,is,was,being,been,be,are,were,am,1) bored" phrase:np@dative скучно@
+dat-скучно: "мне скучно" "I'm bored" "it tastes good to (1)" phrase:np@dative вкусно
+dat-скучно: "мне скучно" "I'm bored" "it tasted good to (1)" phrase:np@dative быть@pastn вкусно
 dat-скучно: "мне скучно" "I'm bored" "it tastes bad to (1)" phrase:np@dative невкусно@
 dat-скучно: "мне скучно" "I'm bored" "it tasted bad to (1)" phrase:np@dative быть@pastn невкусно@
 совсем-не: "совсем не" "not at all" "not at all" совсем@ не@
@@ -651,8 +651,8 @@ is-not: "тебя здесь нет" "you're not here" "(3->nom) (are,is,was,bei
 себя-чувствовать: "чувствовать себя хорошо" "feel good" "(4) (1) (3->adj)" adverb? себя@ adverb? чувствовать@
 себя-чувствовать: "чувствовать себя хорошо" "feel good" "(1) (2) (4->adj)" adverb? чувствовать@ себя@ adjective
 за-instead-of: "за меня" "instead of me" "instead of (2)" за@ phrase:np@accusative
-dat-весело: "мне весело" "I'm having fun" "(1->nom) (are,is,was,being,been,be,are,were,am,1) having (2)" phrase:np@dative весёлый@adv
-dat-весело: "мне весело" "I'm having fun" "(1->nom) ... (3) (4) having  (5)" phrase:np@dative any быть@past adverb? весёлый@adv
+dat-весело: "мне весело" "I'm having fun" "(1->nom) (are,is,was,being,been,be,are,were,am,1) having (2)" phrase:np@dative весело@
+dat-весело: "мне весело" "I'm having fun" "(1->nom) ... (3) (4) having  (5)" phrase:np@dative any быть@past adverb? весело@
 чтобы-past: "скажи ему, чтобы шёл домой" "tell him to go home" "(1) (2->inf)" чтобы@ past
 чтобы-past: "скажи ему, чтобы шёл домой" "tell him to go home" "(1) ... be" чтобы@ any быть@past
 давай-nom: "давай я" "let me" "(1) (2->acc)" давать[allow]@ phrase:np@nominative
@@ -706,7 +706,7 @@ known-to-everyone: "знакомый всем" "known to everyone" "(1) (2) to (
 считаю-это-важным: "считаю это важным" "consider this important" "(1) ... (3)" считать[consider]@ any phrase:np@instrumental
 считаю-это-важным: "считаю это важным" "consider this important" "(1) ... (3)" считать[consider]@ any adjective@instrumental
 слушать-acc: "слушать радио " "listen to the radio" "(1) to (2)" слушать@ phrase:np@accusative
-dat-достаточно: "мне достаточно " "I've had enough" "I've (2) had enough" phrase:np@dative adverb? достаточный@adv
+dat-достаточно: "мне достаточно " "I've had enough" "I've (2) had enough" phrase:np@dative adverb? достаточно@
 у-саши-получилось: "у Саши получилось сдать экзамен" "Sasha managed to pass the exam" "nothing worked out for (2)" у@ genitive ничто@genitive не@ получаться|получиться@
 у-саши-получилось: "у Саши получилось сдать экзамен" "Sasha managed to pass the exam" "(2->nom) (do,does,did,doing,done,4) not manage to (4)" у@ phrase:np@genitive не@ получаться|получиться@ verb
 у-саши-получилось: "у Саши получилось сдать экзамен" "Sasha managed to pass the exam" "(2->nom) (do,does,did,doing,done,4) not succeed" у@ phrase:np@genitive не@ получаться|получиться@
