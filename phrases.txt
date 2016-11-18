@@ -237,7 +237,7 @@ someone-had: "у меня был выбор" "I had a choice" "(2->nom) had" у@
 did-not-have: "у меня не было времени" "I didn't have time" "(2->nom) didn't have" у@ #animate@genitive не@ быть@past
 did-not-have: "у меня не было времени" "I didn't have time" "(2->nom) didn't ever have" у@ #animate@genitive никогда@ не@ быть@past
 деньги-на: "деньги на такси" "money for a taxi" "(1) for (3)" деньги|время@ на@ phrase:np@accusative
-will-have: "у меня будет ребёнок" "I'm having a baby" "[someone] will have" у@ #animate@genitive быть[fut]@
+will-have: "у меня будет ребёнок" "I'm having a baby" "(2->nom) will have" у@ #animate@genitive быть[fut]@
 will-not-have: "у меня не будет времени" "I won't have time" "(2->nom) won't have" у@ #animate@genitive не@ быть[fut]@ phrase:np@genitive
 как-зовут: "как тебя зовут?" "what's your name?" "how (are,is,was,being,been,be,are,were,am,2) (2->nom) called" как@ #animate@acc звать@
 как-зовут: "как тебя зовут?" "what's your name?" "how is [person] called" как@ звать@ phrase:np@accusative
@@ -347,11 +347,11 @@ dat-интересно: "мне интересна математика" "I'm in
 dat-интересно: "мне интересна математика" "I'm interested in maths" "(1->nom) (are,is,was,being,been,be,are,were,am,1) interested in (3)" phrase:np@dative интересный@ phrase:np
 dat-интересно: "мне интересна математика" "I'm interested in maths" "(are,is,was,being,been,be,are,were,am,1) (1->nom) not interested?" phrase:np@dative не@ интересный@ ?@
 dat-интересно: "мне интересна математика" "I'm interested in maths" "(1->nom) (are,is,was,being,been,be,are,were,am,1) (2)" phrase:np@dative неинтересный|интересный@
-dat-лет: "сколько тебе лет?" "how old are you?" "how old (are,is,was,being,been,be,are,were,am,2) [someone]" сколько[many]@ @dative+ any год@genitive
-dat-лет: "сколько тебе лет?" "how old are you?" "(1->nom) (was,1) (3) years old" phrase:np@dative быть@past #number@nominative год@genitive
-dat-лет: "сколько тебе лет?" "how old are you?" "(1->nom) (are,is,was,being,been,be,are,were,am,1) ... (3) years old" phrase:np@dative any #number@nominative год@genitive
+dat-лет: "сколько тебе лет?" "how old are you?" "how old (are,is,was,being,been,be,are,were,am,2) [someone]" сколько[many]@ phrase:np@dative any год@context
+dat-лет: "сколько тебе лет?" "how old are you?" "(1->nom) (was,1) (3) years old" phrase:np@dative быть@past #number@nominative год@context
+dat-лет: "сколько тебе лет?" "how old are you?" "(1->nom) (are,is,was,being,been,be,are,were,am,1) ... (3) years old" phrase:np@dative any #number@nominative год@context
 dat-лет: "сколько тебе лет?" "how old are you?" "how old (are,is,was,being,been,be,are,were,am,3) (3)" сколько[many]@ год@genitive phrase:np@dative
-dat-лет: "сколько тебе лет?" "how old are you?" "(1) (are,is,was,being,been,be,are,were,am,1) one year old" phrase:np@dative any год@context
+dat-лет: "сколько тебе лет?" "how old are you?" "(1) (are,is,was,being,been,be,are,were,am,1) ... (3) (4) old" phrase:np@dative any adjective@? год@context
 both-и-и: "и сахар, и молоко" "both sugar and cream" "both ... and" и@ any ,@ и@
 either-or-или-или: "или ... , или ..." "either ... or ..." "either ... , or" или@ any ,@ или@
 either-or-или-или: "или ... , или ..." "either ... or ..." "either ... , or" либо@ any ,@ либо@
@@ -424,9 +424,9 @@ in-eyes-of: "ты мне друг" "you are a friend to me" "to [someone]" #anim
 что-за: "что он за человек?" "what kind of person is he?" "what kind of (4) is (2)" что@ phrase:np#animate за@ phrase:np
 что-за: "что он за человек?" "what kind of person is he?" "what kind of (4) is it" что@ это@ за@ phrase:np
 что-за: "что он за человек?" "what kind of person is he?" "what kind of (4) ..." что@ any за@ phrase:np
-за-время: "за весь день" "all day" "(2) (3)" за@ весь@acc #time@acc
-за-время: "за весь день" "all day" "over (2) (3)" за@ adjective@accusative лето|осень|зима|весна@accusative
-за-время: "за весь день" "all day" "in (2) (3)" за@ phrase:np@accusative#time
+за-время: "за весь день" "in the entire day" "(2) (3)" за@ весь@acc #time@acc
+за-время: "за весь день" "in the entire day" "over (2) (3)" за@ adjective@accusative лето|осень|зима|весна@accusative
+за-время: "за весь день" "in the entire day" "in (2) (3)" за@ phrase:np@accusative#time
 there-was-none: "не было денег" "there was no money" "there (were,was,were,4) no [of something]" не@ быть@ any phrase:np@genitive
 there-will-be-none: "не будет урока" "there will be no lesson" "there will be no [something]" не@ быть[fut]@3 phrase:np@genitive
 there-will-be-none: "не будет урока" "there will be no lesson" "there will be no [something]" phrase:np@genitive не@ быть[fut]@3
@@ -747,7 +747,8 @@ conditional: "я бы хотел" "I would like" "would ... (3->pres)" бы|б@ 
 звонить-в-accusative: "звонить в школу" "call the school" "(1) (3)" звонить|позвонить@ в|на@ phrase:np@accusative
 dat-стало-adv-or-comp: "мне стало плохо" "I felt bad" "(1->nom) (2) (feel,feels,felt,3) (4)" phrase:np@dative adverb? стать@ adverb
 dat-стало-adv-or-comp: "мне стало плохо" "I felt bad" "(1->nom) (2) (feel,feels,felt,3) (4)" phrase:np@dative adverb? стать@ comp
-на-следующий: "на следующий день" "next day" "(2) (3)" на@ следующий@accusative #time@accusative
+на-следующий: "на следующий день" "on the next day" "on the (2) (3)" на@ следующий@accusative #time@accusative
+на-следующий: "на следующий день" "on the next day" "on the (2) (3)" на@ #ordinal@accusative #time@accusative
 у-gen-болит-nom: "у меня болит голова" "my head hurts" "(2->pos) (5) (4) ..." у@ phrase:np@genitive any болеть[hurt]@ phrase:np@nominative
 у-gen-болит-nom: "у меня болит голова" "my head hurts" "(do,does,did,doing,done,4) (2->pos) (3) (4) " у@ phrase:np@genitive phrase:np@nominative болеть[hurt]@ ?@
 хочеться-verb: "хочеться спать" "feel like sleeping" "(feel,feels,felt,1) like (2)" хочеться@ verb
