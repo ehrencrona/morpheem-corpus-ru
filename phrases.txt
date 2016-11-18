@@ -47,11 +47,11 @@ more-than: "больше, чем" "more than" "(1) and (3) than" @comp и@ @comp
 more-than: "больше, чем" "more than" "(1) ... than" @comp any ,@ чем@
 при-prep: "телефон при мне" "the phone is with me" "is with [him/her]" при@ @prepositional+
 сам-по-себе: "сам по себе" "by myself" "by (3)" сам@ по@ себя@dat
-ни-any-кто: "ни с кем не говори" "don't talk to anyone" "no one (2)" ни@ prep кто@
-ни-any-кто: "ни с кем не говори" "don't talk to anyone" "never" ни@ prep когда@
-ни-any-кто: "ни с кем не говори" "don't talk to anyone" "nothing" ни@ prep что@
-ни-any-кто: "ни с кем не говори" "don't talk to anyone" "nowhere" ни@ prep куда@
-ни-any-кто: "ни с кем не говори" "don't talk to anyone" "nowhere" ни@ prep где@
+ни-any-кто: "ни с кем не говори" "don't talk to anyone" "no one (2)" ни@ @prep кто@
+ни-any-кто: "ни с кем не говори" "don't talk to anyone" "never" ни@ @prep когда@
+ни-any-кто: "ни с кем не говори" "don't talk to anyone" "nothing" ни@ @prep что@
+ни-any-кто: "ни с кем не говори" "don't talk to anyone" "nowhere" ни@ @prep куда@
+ни-any-кто: "ни с кем не говори" "don't talk to anyone" "nowhere" ни@ @prep где@
 с-тех-пор: "с тех пор" "since the time" "since the time" с@ тот@ пора@ ,@ как|как[when]@
 с-тех-пор: "с тех пор" "since the time" "since the time" с@ тот@ пора@ как|как[when]@
 с-тех-пор: "с тех пор" "since the time" "since the time" с@ тот@ пора@
@@ -125,6 +125,7 @@ comp-gen: "лучше всех" "better than anyone" "(1) than (2)" @comp adj@ge
 звать-кого-то: "меня зовут Маша" "my name is Masha" "(1) [someone]" звать@ phrase:np@accusative
 звать-кого-то: "меня зовут Маша" "my name is Masha" "(1->nom) (are,is,was,being,been,be,are,were,am,1) called" @accusative+ звать@
 на-направление: "идти на работу" "go to work" "outside" phrase:на-улица@accusative
+на-направление: "идти на работу" "go to work" "(2)" на@ север|юг|запад|восток@accusative
 на-направление: "идти на работу" "go to work" "to (2)" на@ phrase:np@accusative
 на-завтрак-обед-ужин: "есть на завтрак" "eat for breakfast" "for [meal]" на@ #meal@acc
 в-направление: "идти в школу" "go to school" "(1) (2)" в@ phrase:np@accusative
@@ -162,8 +163,8 @@ hyperbole: "ждать часами" "to wait for hours" "for [adjective]" phras
 по-place-of-movement: "по парку" "through the park" "(1) (2)" по@ phrase:np@dative
 по-mode-of-communication: "по телевизору" "on TV" "on [mode of communication]" по@ phrase:np@dative
 как-можно-comp: "как можно скорее" "as soon as possible" "as (3->adv) as possible" как[like]@ можно@ @comp
-по-definition: "матч по футболу" "football game" "(3) (1)" n по@ adj@dat #language
-по-definition: "матч по футболу" "football game" "(1) (4) (2)" adj* n по@ phrase:np@dative
+по-definition: "матч по футболу" "football game" "(3) (1)" @n по@ adj@dat #language
+по-definition: "матч по футболу" "football game" "(1) (4) (2)" adj* @n по@ phrase:np@dative
 кому-то-надо: "нам надо поговорить" "we need to talk" "[someone->nom] should" @dative+ надо@
 кому-то-надо: "нам надо поговорить" "we need to talk" "[someone->nom] should not have" не@ надо@ быть@ @dative+
 кому-то-надо: "нам надо поговорить" "we need to talk" "[someone->nom] should have" надо@ быть@ @dative+
@@ -188,6 +189,7 @@ hyperbole: "ждать часами" "to wait for hours" "for [adjective]" phras
 заниматься-чем-то: "заниматься проблемой + заниматься русским" "deal with a problem + study Russian" "deal with [activity]" заниматься@ phrase:np@instrumental
 заниматься-чем-то: "заниматься проблемой + заниматься русским" "deal with a problem + study Russian" "(deal,deals,dealt,2) with [activity]" phrase:np@instrumental заниматься@
 заниматься-чем-то: "заниматься проблемой + заниматься русским" "deal with a problem + study Russian" "(1) (2)" заниматься[study]@ phrase:np@instrumental
+быть-кем-то: "быть студентом" "be a student" "(1) ... (3)" становиться|быть|быть[fut]|бывать@ any phrase:самый-adj@instrumental
 быть-кем-то: "быть студентом" "be a student" "(1) ... (3)" становиться|быть|быть[fut]|бывать@ any phrase:np@instrumental
 быть-кем-то: "быть студентом" "be a student" "(1) ... (3)" становиться|быть|быть[fut]|бывать@ any adj@instrumental
 быть-кем-то: "быть студентом" "be a student" "(1) ... (3)" phrase:np@instrumental any становиться|быть|быть[fut]|бывать@
@@ -251,7 +253,7 @@ go-do: "идти спать" "go sleep" "(go,goes,went,1) (2)" идти|пойт
 думать-над: "думаю над этим" "i'm thinking about it" "(1) about (3)" думать|подумать@ над@ phrase:np@instrumental
 думать-над: "думаю над этим" "i'm thinking about it" "(3) about (2)" над@ phrase:np@instrumental думать|подумать@
 Вот-это: "вот это" "this is" "This is (3)" вот@ это@ phrase:np
-пора–не: "пока не" "until" "until ..." пока|пока[while]@ any не@
+пора–не: "пока не" "until" "until ..." пока|пока[while]@ any не@
 уверен-в: "уверен в себе" "has self-confidence" "(have,has,had,1) self-confidence" уверенный@ в@ себя@prepositional
 уверен-в: "уверен в себе" "has self-confidence" "(have,has,had,1) confidence in (3)" уверенный@ в@ phrase:np@prepositional
 так-что: "так что" "that is why" "that is why" так@ что[that]@
@@ -351,7 +353,7 @@ dat-лет: "сколько тебе лет?" "how old are you?" "how old (are,i
 dat-лет: "сколько тебе лет?" "how old are you?" "(1->nom) (was,1) (3) years old" phrase:np@dative быть@past #number@nominative год@context
 dat-лет: "сколько тебе лет?" "how old are you?" "(1->nom) (are,is,was,being,been,be,are,were,am,1) ... (3) years old" phrase:np@dative any #number@nominative год@context
 dat-лет: "сколько тебе лет?" "how old are you?" "how old (are,is,was,being,been,be,are,were,am,3) (3)" сколько[many]@ год@genitive phrase:np@dative
-dat-лет: "сколько тебе лет?" "how old are you?" "(1) (are,is,was,being,been,be,are,were,am,1) ... (3) (4) old" phrase:np@dative any adj? год@context
+dat-лет: "сколько тебе лет?" "how old are you?" "(1->nom) (are,is,was,being,been,be,are,were,am,1) ... (3) (4) old" phrase:np@dative any adj? год@context
 both-и-и: "и сахар, и молоко" "both sugar and cream" "both ... and" и@ any ,@ и@
 either-or-или-или: "или ... , или ..." "either ... or ..." "either ... , or" или@ any ,@ или@
 either-or-или-или: "или ... , или ..." "either ... or ..." "either ... , or" либо@ any ,@ либо@
@@ -361,7 +363,7 @@ either-or-или-или: "или ... , или ..." "either ... or ..." "either .
 звонить-в-дверь: "звонить в дверь" "ring the doorbell" "(ring,rings,rang,1) the doorbell" звонить@ в@ дверь@
 из-material: "из дерева" "made of wood" "(make,makes,made,1) (2) ... out of (5)" делать|сделать@ phrase:np@accusative any из@ @genitive+
 из-material: "из дерева" "made of wood" "of (2)" из@ @genitive+
-из-out-of: "никто из моих друзей" "none of my friends" "of [several things or people]" из@ phrase:np@genitive
+из-out-of: "никто из моих друзей" "none of my friends" "(1) (2)" из@ phrase:np@genitive
 при-чём: "при чём здесь это?" "what does this have to do with anything?" "what (do,does,4) (4) have to do with this" при@ что@prepositional здесь|тут@ phrase:np@nominative
 при-чём: "при чём здесь это?" "what does this have to do with anything?" "what (did) (5) have to do with this" при@ что@prepositional здесь|тут@ быть@past phrase:np@nominative
 при-чём: "при чём здесь это?" "what does this have to do with anything?" "(1) (have,has,1) nothing to do with it" phrase:np@nominative здесь|тут@ ни@ при@ что@prepositional
@@ -386,8 +388,8 @@ dat-жаль: "мне жаль" "i'm sorry" "(1->nom) (are,is,was,being,been,be,
 dat-жаль: "мне жаль" "i'm sorry" "(1->nom) (regret,regrets,regretted,1)" phrase:np@dative жаль@
 dat-жаль: "мне жаль" "i'm sorry" "(1->nom) found it a pity" phrase:np@dative быть@past жаль@
 dat-лучше: "тебе (бы) лучше" "you'd better" "(1->nom)'d better" phrase:np@dative хороший@comp
-dat-лучше: "тебе (бы) лучше" "you'd better" "(2->nom)'d better" хороший@comp @dative+
-dat-лучше: "тебе (бы) лучше" "you'd better" "(3->nom)'d better" хороший@comp бы@ @dative+
+dat-лучше: "тебе (бы) лучше" "you'd better" "(3->nom)'d better" хороший@comp бы@ phrase:np@dative
+dat-лучше: "тебе (бы) лучше" "you'd better" "(2->nom)'d better" хороший@comp phrase:np@dative
 dat-лучше: "тебе (бы) лучше" "you'd better" "(1->nom)'d better" phrase:np@dative быть@pastn бы@ хороший@comp
 по-отношению: "по отношению к" "with regards to" "with regards to [something]" по@ отношение[regard]@dat к@ phrase:np@dative
 по-отношению: "по отношению к" "with regards to" "relate to (4)" иметь@ отношение[regard]|отношение@ к@ phrase:np@dative
@@ -443,9 +445,9 @@ what-a: "какой отличный день" "what a great day" "what a [nice]
 such-nice: "такой отличный день!" "what a great day!" "such (article) (2)" такой@ phrase:np
 интересно-: "интересно..." "I wonder..." "(1->nom) wonder" phrase:np@dative интересно@ ,@
 интересно-: "интересно..." "I wonder..." "I wonder," интересно@ ,@
-dat-трудно: "мне трудно" "it's hard for me" "it is (2->adj) for (1)" phrase:np@dative #find-it@adv
+dat-трудно: "мне трудно" "it's hard for me" "it is (2->adj) for (1)" phrase:np@dative #find-it
 dat-трудно: "мне трудно" "it's hard for me" "it is (2) for (1)" phrase:np@dative #find-it@comp
-dat-трудно: "мне трудно" "it's hard for me" "it is (2) (3->adj) for (1)" phrase:np@dative adverb? #find-it@adv
+dat-трудно: "мне трудно" "it's hard for me" "it is (2) (3->adj) for (1)" phrase:np@dative adverb? #find-it
 dat-трудно: "мне трудно" "it's hard for me" "it is (2) (3) for (1)" phrase:np@dative adverb? #find-it@comp
 dat-скучно: "мне скучно" "I'm bored" "(1->nom) was bored" phrase:np@dative быть@past скучно@
 dat-скучно: "мне скучно" "I'm bored" "(1->nom) will be bored" phrase:np@dative быть[fut]@ скучно@
@@ -463,8 +465,8 @@ dat-скучно: "мне скучно" "I'm bored" "it tasted bad to (1)" phras
 до-сих-пор: "до сих пор" "so far" "so far" до@ сих@ пора@genpl
 в-любом-случае: "в любом случае" "in any case" "in any case" в@ любой@prepm случай@prep
 прежде-всего: "прежде всего" "first of all" "first of all" прежде@ всё@
-ещё-один: "ещё раз" "one more time" "one more (3)" ещё[again]|ещё@ один@ n
-ещё-один: "ещё раз" "one more time" "(2) more (3->pl)" ещё[again]|ещё@ #number n
+ещё-один: "ещё раз" "one more time" "one more (3)" ещё[again]|ещё@ один@ @n
+ещё-один: "ещё раз" "one more time" "(2) more (3->pl)" ещё[again]|ещё@ #number @n
 ещё-один: "ещё раз" "one more time" "one more time" ещё[again]|ещё@ раз@
 ещё-нет: "ещё не" "not yet" "not yet" ещё@ не@
 ещё-comp: "ещё больше" "even more" "even (2)" ещё@ @comp
@@ -523,7 +525,7 @@ face-to-face: "лицом к лицу" "face to face" "face to face" лицо@in
 жениться-на: "жениться на нём" "marry him" "(2) ... (4)" на@ phrase:np@prepositional any жениться@
 поздравлять-с-instr: "поздравляю с днём матери!" "congratulations on Mother's Day!" "congratulations on (3)" поздравлять@ с@ phrase:np@instrumental
 поздравлять-с-instr: "поздравляю с днём матери!" "congratulations on Mother's Day!" "congratulations to (2) on (4)" поздравлять@ phrase:np@accusative с@ phrase:np@instrumental
-самый-adj: "самый большой" "the biggest" "the most (2)" самый@ adj
+самый-adj: "самый большой" "the biggest" "the (2->super)" самый@ adj
 двух-шагах: "в двух шагах" "а stone's throw" "а stone's throw from (5)" в@ два@preppl шаг@preppl от@ phrase:np@genitive
 скажите: "скажите пожалуйста" "please tell me" "could you please tell me" сказать@imprpl ,@ пожалуйста@ ,@
 на-for: "погода на сегодня" "the weather forecast for today" "for (2)" на@ phrase:np@accusative
@@ -553,9 +555,9 @@ face-to-face: "лицом к лицу" "face to face" "face to face" лицо@in
 не-видно: "ничего не видно" "nothing can be seen" "(1->nom) can't see anything" #animate@dative any ничто@gen не@ видный@shortn
 не-видно: "ничего не видно" "nothing can be seen" "(1->nom) (are,is,was,being,been,be,are,were,am,1) ... not visible" phrase:np@genitive any не@ видный@shortn
 не-видно: "ничего не видно" "nothing can be seen" "(1->nom) could not be seen" phrase:np@genitive видный@shortn не@ быть@past
-один-of: "ни один" "not a single" "not a single (3) (4)" ни@ один@ adj* n
+один-of: "ни один" "not a single" "not a single (3) (4)" ни@ один@ adj* @n
 один-of: "ни один" "not a single" "none of (4)" ни@ один@ из@ phrase:np
-один-of: "ни один" "not a single" "(2) not one of" ни@ prep один@
+один-of: "ни один" "not a single" "(2) not one of" ни@ @prep один@
 такой-же: "такой же" "the same" "the same" такой@ же@
 когда-же: "когда же приедем?" "will we ever arrive?" "will (3) ever" когда@ же@ #animate
 close-to: "близко к дому" "close to home" "close to (3)" близкий@ к@ phrase:np@dative
@@ -634,7 +636,7 @@ wish-something-to-someone: "желаю всего хорошего" "I wish you 
 from-someone: "у меня украли" "it was stolen from me" "from (2)" у@ phrase:np@genitive
 go-for-a-walk: "пойти гулять" "go for a walk" "(1) for a walk" идти|пойти@ гулять@
 не-так: "что-то не так" "something's wrong" "wrong" не@ так@
-не-так: "что-то не так" "something's wrong" "(2) the wrong" не@ prep тот@
+не-так: "что-то не так" "something's wrong" "(2) the wrong" не@ @prep тот@
 ничего-adj: "ничего особенного" "nothing special" "noone ... ... anything (6)" никто@ any не@ any ничто@genitive adj@genitive
 ничего-adj: "ничего особенного" "nothing special" "... nothing (4)" не@ any ничто@genitive adj@genitive
 ничего-adj: "ничего особенного" "nothing special" "nothing (2)" ничто@genitive adj@genitive
@@ -673,8 +675,8 @@ known-to-everyone: "знакомый всем" "known to everyone" "(1) (2) to (
 то-время: "то время" "those days" "those days" тот@context время@context
 вместо-dat: "вместо меня" "instead of me" "instead of (2)" вместо@ phrase:np@genitive
 замужем-за-сашей: "замужем за Сашей" "married to Sasha" "(1) to (3)" замужем@ за@ phrase:np@instrumental
-уже-второй: "потерял уже третью ручку" "it's already the third pen I've lost" "this is already the (4) (5) (article) (1)  (have,has,had,1) (2->past)" phrase:np@nominative v уже@ #ordinal n
-уже-второй: "потерял уже третью ручку" "it's already the third pen I've lost" "this is already the (2) (3) that (4)" уже@ #ordinal n v
+уже-второй: "потерял уже третью ручку" "it's already the third pen I've lost" "this is already the (4) (5) (article) (1)  (have,has,had,1) (2->past)" phrase:np@nominative v уже@ #ordinal @n
+уже-второй: "потерял уже третью ручку" "it's already the third pen I've lost" "this is already the (2) (3) that (4)" уже@ #ordinal @n v
 только-что: "только что" "just a moment ago" "just a moment ago" только@ что@
 тратить-деньги-на-такси: "тратить деньги на такси" "spend money on taxi" "(1) (2) ... on (5)" тратить|потратить@ phrase:np@accusative any на@ phrase:np@accusative
 тратить-деньги-на-такси: "тратить деньги на такси" "spend money on taxi" "(1) (do,does,did,doing,done,3) (2) on (5)" phrase:np@accusative any тратить|потратить@ на@ phrase:np@accusative
