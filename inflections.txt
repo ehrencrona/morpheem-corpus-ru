@@ -6,7 +6,7 @@ abstr-loc[n]: loc у
 n[n]: "nouns" nom ***, pl ы, datpl ам, acc nom-, accpl pl-, instrpl ами, prep е, preppl ах, transform yToI
 uninflected[n]: "uninflected noun (mostly foreign words)" nom , pl , gen , genpl , dat , datpl , acc , accpl , instr , instrpl , prep , preppl 
 fem[n]: "nouns ending in -а (mostly feminine, known as 'first inflection')" nom а, gen ы, genpl , dat е, acc у, instr ой, inherit n, form nounf
-femka[n]: "feminine nouns ending in ка" genpl <ок, inherit fem
+femka[n]: genpl <ок, inherit fem
 femka2[n]: genpl <ек, inherit fem
 fem-animate[n]: "feminine nouns describing animals or people" inherit abstr-anim, inherit fem, form animate
 -девочка[n]: inherit abstr-anim, inherit femka2
@@ -45,7 +45,7 @@ neu[n]: "neuter nouns" nom о, pl а, gen а, genpl , dat у, instr ом, inheri
 -письмо[n]: genpl <<ем, inherit neu
 -яйцо[n]: genpl <<иц, inherit neu
 -масло[n]: genpl <ел, inherit neu
-neuie[n]: "neuter nouns ending in ие" nom е, pl я, gen я, genpl й, dat ю, datpl ям, instrpl ями, prep и, preppl ях, inherit abstr-soft-final, inherit n
+neuie[n]: "neuter nouns ending in ие" nom е, pl я, gen я, genpl й, dat ю, datpl ям, instrpl ями, prep и, preppl ях, inherit abstr-soft-final, inherit n, form nounn
 neuadjoe[n]: "neuter nouns formed like adjectives" nom ое, pl ые, gen ого, genpl ых, dat ому, datpl ым, acc ое, accpl ых, instr ым, instrpl ыми, prep ом, preppl ых, form nounn
 -воскресенье[n]: genpl <ий, prep е, inherit neuie
 -небо[n]: pl еса, genpl ес, datpl есам, instrpl есами, preppl есах, inherit neu
