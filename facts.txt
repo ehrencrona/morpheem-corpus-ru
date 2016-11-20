@@ -244,7 +244,8 @@ grammar: -ты@dat, tag: dative
 с--: with, -2: from, inflect: oprep, tag: untranslatable, form: prep
 ед--а: food, pl: foods, inflect: fem, form: nounf
 интернет--: Internet, inflect: masc, tag: on, form: nounm
-радио--: radio, pl: radios, inflect: uninflected, form: n, mask: pl
+tag: uninflected
+радио--: radio, pl: radios, inflect: uninflected, tag: uninflected, form: nounn, mask: pl
 котор--ый: that, -2: who, -3: which, inflect: adj, form: adjpos, mask: nonstd
 музык--а: music, inflect: fem, form: nounf, mask: pl
 grammar: yo-yosh-yot@1pl, tag: verb
@@ -256,7 +257,7 @@ grammar: n@preppl, tag: prepositional
 телевизор--: TV, pl: TV's, inflect: masc, tag: on, form: nounm
 смотри--<еть: watch, 3: watches, past: watched, prog: watching, inflect: -смотреть, tag: imperfective, form: imperf, form: nonreflex, derive:perf:посмотреть
 смотри--<еть[look]: look, 3: looks, past: looked, prog: looking, inflect: -смотреть, tag: imperfective, form: imperf, form: nonreflex, derive:perf:посмотреть[look]
-можно: can, -2: may
+можно: can, -2: may, form: advpos
 замк--<ок[castle]: castle, pl: castles, inflect: -подарок, form: nounm
 кури--ть: smoke, 3: smokes, past: smoked, prog: smoking, inflect: -дарить, tag: imperfective, form: imperf, form: nonreflex, derive:perf:покурить
 говори--ть: speak, 3: speaks, past: spoke, prog: speaking, -2: say, 3-2: says, past-2: said, prog-2: saying, pastpart: spoke, pastpart-2: said, inflect: -дарить, tag: speech, tag: imperfective, form: imperf, form: nonreflex, derive:perf:сказать
@@ -497,7 +498,7 @@ phrase: от-gen-departure
 четверг--: Thursday, pl: Thursdays, inflect: masc, tag: time, tag: weekday, form: nounm
 сред--а: Wednesday, pl: Wednesdays, inflect: fem, tag: time, tag: weekday, form: nounf
 grammar: sya@2pl, tag: verb
-воскресень--е: Sunday, pl: Sundays, inflect: -воскресенье, tag: time, tag: weekday, form: n
+воскресень--е: Sunday, pl: Sundays, inflect: -воскресенье, tag: time, tag: weekday, form: nounn
 phrase: до-point-of-destination, tag: location-phrase
 пятниц--а: Friday, pl: Fridays, inflect: -улица, tag: time, tag: weekday, form: nounf
 месяц--: month, pl: months, inflect: -месяц, tag: time, form: nounm
@@ -520,7 +521,7 @@ phrase: от-кого-source
 grammar: -я@instr, tag: instrumental
 мало: little, form: adv
 мало[few]: few, form: adv
-путешестви--е: trip, pl: trips, inflect: neuie, form: n
+путешестви--е: trip, pl: trips, inflect: neuie, form: nounn
 phrase: около-чего-то
 ищ--<скать: look for, 3: looks for, past: looked for, prog: looking for, -2: search for, past-2: searched for, 3-2: searches for, prog-2: searching for, inflect: -искать, form: imperf, form: nonreflex
 grammar: -есть@3pl, tag: verb
@@ -546,10 +547,10 @@ phrase: рад-dat
 grammar: -случай@nom
 grammar: -есть@inf, tag: verb
 phrase: чем-чем
-мор--е: sea, pl: seas, -2: whole lot, inflect: -море, tag: by, form: n
+мор--е: sea, pl: seas, -2: whole lot, inflect: -море, tag: by, form: nounn
 коротк--ий: short, adv: shortly, comp: shorter, super: shortest, inflect: adj, form: adjpos, derive:adv:коротко
 коротко: shortly, form: advpos
-кофе--: coffee, pl: coffees, inflect: uninflected, tag: uncountable, form: n, mask: pl
+кофе--: coffee, pl: coffees, inflect: uninflected, tag: uncountable, tag: uninflected, form: nounn, mask: pl
 tag: past
 grammar: -есть@pastm, tag: verb
 grammar: -дать@2, tag: verb
@@ -564,9 +565,9 @@ phrase: в-пути
 церкв--<овь: church, pl: churches, inflect: -церковь, form: nounf
 grammar: it-im-ite@1pl, tag: verb
 grammar: -дать@1, tag: verb
-такси--: taxi, pl: taxis, inflect: uninflected, tag: transport, form: n, mask: pl
+такси--: taxi, pl: taxis, inflect: uninflected, tag: transport, tag: uninflected, form: nounn, mask: pl
 туалет--: toilet, pl: toilets, inflect: masc, form: nounm
-метро--: subway, pl: subways, inflect: uninflected, tag: transport, form: n, mask: pl
+метро--: subway, pl: subways, inflect: uninflected, tag: transport, tag: uninflected, form: nounn, mask: pl
 добр--ый: good, comp: better, super: best, -2: kind, comp-2: kinder, super-2: kindest, inflect: adj, form: adjpos, mask: adv
 домой: home
 phrase: так-adv
@@ -603,8 +604,8 @@ grammar: adj@genf, tag: genitive
 весёл--ый: fun, comp: more fun, inflect: -весёлый, form: adjpos, derive:adv:весело
 весело: fun, form: advpos
 phrase: справа-от-чего-то, tag: location-phrase
-кино--: cinema, pl: cinemas, -2: movies, inflect: uninflected, form: n, mask: pl
-кино--[film]: movie, pl: movies, inflect: uninflected, form: n, mask: pl
+кино--: cinema, pl: cinemas, -2: movies, inflect: uninflected, tag: uninflected, form: nounn, mask: pl
+кино--[film]: movie, pl: movies, inflect: uninflected, tag: uninflected, form: nounn, mask: pl
 grammar: neu@nom
 факультет--: faculty, pl: faculties, inflect: masc, tag: at, form: nounm
 грустн--ый: sad, adv: sadly, comp: sadder, super: saddest, inflect: ныйadj, form: adjpos, derive:adv:грустно
@@ -885,7 +886,7 @@ grammar: -казаться@pastpl, tag: verb
 phrase: самый-adj
 чтобы: in order to, -2: to, form: conj
 grammar: sya@imprpl, tag: verb
-задани--е: task, pl: tasks, -2: assignment, pl-2: assignments, inflect: neuie, form: n
+задани--е: task, pl: tasks, -2: assignment, pl-2: assignments, inflect: neuie, form: nounn
 домашн--ий: domestic, inflect: -домашний, form: adjpos, mask: nonstd
 чуть-чуть: a little bit, form: adv, tag: amount
 phrase: с-gen
@@ -1014,7 +1015,7 @@ grammar: -мы@instrpl, tag: instrumental, tag: animate
 grammar: -ты@instr, tag: instrumental
 парн--<ень: boyfriend, pl: boyfriends, inflect: -парень, form: nounm, form: animate
 grammar: -остаться@impr, tag: verb
-внимани--е: attention, inflect: neuie, form: n, mask: pl
+внимани--е: attention, inflect: neuie, form: nounn, mask: pl
 phrase: стать-кем-то
 кров--ь: blood, inflect: femь, form: nounf, mask: pl
 туда: there (direction)
@@ -1118,7 +1119,7 @@ phrase: за-acc
 около: around, form: prep
 grammar: -идея@genpl, tag: genitive
 grammar: -сестра@genpl, tag: genitive
-здоровь--е: health, inflect: -воскресенье, form: n, mask: pl
+здоровь--е: health, inflect: -воскресенье, form: nounn, mask: pl
 phrase: за-что
 вредно: harmful
 следи--ть: look after, 3: looks after, past: looked after, prog: looking after, inflect: -ходить, form: imperf, form: nonreflex
@@ -1159,7 +1160,7 @@ grammar: -я@prep, tag: prepositional
 существу--<овать: exist, 3: exists, past: existed, prog: existing, inflect: -чувствовать, tag: imperfective, form: imperf, form: nonreflex
 очевидн--ый: evidently, inflect: ныйadj, form: adjpos, derive:adv:очевидно, mask: short
 очевидно: evidently, form: advpos
-здани--е: building, pl: buildings, inflect: neuie, form: n
+здани--е: building, pl: buildings, inflect: neuie, form: nounn
 grammar: -идти@pastpl, tag: verb
 grammar: adj@shortpl
 шкаф--: cupboard, pl: cupboards, -2: wardrobe, pl-2: wardrobes, inflect: -аэропорт, form: nounm
@@ -1282,7 +1283,7 @@ grammar: -уверенный@shortm
 phrase: просить-о
 grammar: -принести@pastm, tag: verb, tag: something-to-someone
 grammar: -петь@inf, tag: verb
-настроени--е: mood, pl: moods, inflect: neuie, form: n
+настроени--е: mood, pl: moods, inflect: neuie, form: nounn
 бог--: God, pl: Gods, inflect: masc-animate, form: nounm, form: animate
 grammar: -рад@shortpl
 phrase: dat-платить
@@ -1318,7 +1319,7 @@ grammar: -весь@accinanpl, tag: accusative
 грязно: dirtily, form: advpos
 grammar: -себя@dat, tag: dative
 ремонт--: renovation, pl: renovations, inflect: masc, form: nounm
-предложени--е: sentence, pl: sentences, inflect: neuie, form: n
+предложени--е: sentence, pl: sentences, inflect: neuie, form: nounn
 молод--ой: young, comp: younger, super: youngest, inflect: -молодой, form: adjpos, mask: adv
 из-за[from behind]: from behind, form: prep
 phrase: хватит-что-то-делать
@@ -1396,14 +1397,14 @@ grammar: neuadjoe@nom
 phrase: взять-на-работу
 grammar: -доктор@pl
 grammar: -сосед@pl
-упражнени--е: exercise, pl: exercises, inflect: neuie, form: n
+упражнени--е: exercise, pl: exercises, inflect: neuie, form: nounn
 ручк--а: pen, pl: pens, inflect: femka2, form: nounf
 grammar: -яблоко@pl
 phrase: всё-ещё
-сообщени--е: message, pl: messages, inflect: neuie, form: n
+сообщени--е: message, pl: messages, inflect: neuie, form: nounn
 морожен--ое: ice cream, pl: ice creams, inflect: neuadjoe, tag: uncountable, form: nounn
-решени--е: decision, pl: decisions, inflect: neuie, form: n
-решени--е[solution]: solution, pl: solutions, inflect: neuie, form: n
+решени--е: decision, pl: decisions, inflect: neuie, form: nounn
+решени--е[solution]: solution, pl: solutions, inflect: neuie, form: nounn
 grammar: -лёгкий@adv, tag: find-it
 phrase: жениться-на
 grammar: abstr-нadj@shortpl
@@ -1572,10 +1573,10 @@ phrase: пора–не
 потеря--ть: lose, 3: loses, past: lost, prog: losing, inflect: ать, form: perf, form: nonreflex
 phrase: время-от-времени
 стира--ть: wash, 3: washes, past: washed, prog: washing, inflect: ать, form: imperf, form: nonreflex
-отношени--е: relation, pl: relations, inflect: neuie, form: n
+отношени--е: relation, pl: relations, inflect: neuie, form: nounn
 напиш--<сать: write, 3: writes, past: wrote, prog: writing, inflect: -писать, tag: something-to-someone, form: perf, form: nonreflex
 phrase: как-только
-отношени--е[regard]: regard, pl: regards, inflect: neuie, form: n
+отношени--е[regard]: regard, pl: regards, inflect: neuie, form: nounn
 способн--ый: able, adv: ably, comp: abler, super: ablest, -2: talented, super-2: most talented, comp-2: more talented, inflect: ныйadj, form: adjpos, mask: adv
 единственн--ый: the only, inflect: adj, form: adjpos, derive:adv:единственно, mask: short
 единственно: the only, form: advpos
@@ -1591,7 +1592,7 @@ phrase: такой..как
 неправильн--ый: incorrect, adv: incorrectly, inflect: -правильный, tag: neg-adj, form: adjneg, derive:adv:неправильно, mask: comp
 неправильно: incorrectly, form: advneg
 предупреди--ть: warn, 3: warns, past: warned, prog: warning, inflect: -ходить, form: perf, form: nonreflex
-предложени--е[offer]: offer, pl: offers, inflect: neuie, form: n
+предложени--е[offer]: offer, pl: offers, inflect: neuie, form: nounn
 неужели: Is it really possible, -2: Could it be that
 phrase: то-же
 получа--ть: get, 3: gets, past: got, prog: getting, inflect: ать, tag: imperfective, form: imperf, form: nonreflex
@@ -1635,7 +1636,7 @@ grammar: num@accanpl, tag: accusative
 одева--ться: dress, 3: dresses, past: dressed, prog: dressing, inflect: -пытаться, tag: reflexive, form: imperf, form: reflex
 phrase: про-что-то
 оден--<ться: get dressed, 3: gets dressed, past: got dressed, prog: getting dressed, inflect: -одеться, form: imperf, form: reflex
-свидани--е: date, pl: dates, inflect: neuie, form: n
+свидани--е: date, pl: dates, inflect: neuie, form: nounn
 далёк--ий: far away, -2: distant, comp-2: more distant, super-2: most distant, inflect: -далёкий, form: adjpos, derive:adv:далеко
 далеко: distant, form: advpos
 прежде: before
@@ -1681,7 +1682,7 @@ grammar: -два@accinanfpl, tag: accusative
 phrase: перед-тем-как
 grammar: -маленький@comp, tag: at-instr
 рядом: close by, -2: near, -3: next to, form: prep
-плать--е: dress, pl: dresses, inflect: -платье, form: n
+плать--е: dress, pl: dresses, inflect: -платье, form: nounn
 одежд--а: clothes, inflect: fem, form: nounf, mask: pl
 phrase: кому-то-кажется
 интересу--<оваться: are interested in, 1: am interested in, 3: is interested in, past: was interested in, inf: be interested in, pl: are interested in, pastpl: were interested in, prog: being interested in, inflect: -интересоваться, tag: imperfective, tag: reflexive, form: imperf, form: reflex
@@ -1983,7 +1984,7 @@ grammar: -масло@genpl, tag: genitive
 мо--<ыть: wash, 3: washes, past: washed, prog: washing, inflect: -открыть, form: imperf, form: nonreflex
 phrase: кактак
 phrase: скорая-помощь
-рождени--е: birth, inflect: neuie, form: n
+рождени--е: birth, inflect: neuie, form: nounn
 лучш--ий: best, inflect: eeadj, form: adjpos, derive:adv:лучшо
 лучшо: best, form: advpos
 phrase: even-so
