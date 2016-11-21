@@ -592,6 +592,7 @@ counting-on: "надеюсь на тебя" "i'm counting on you" "(are,is,was,b
 counting-on: "надеюсь на тебя" "i'm counting on you" "(are,is,was,being,been,be,are,were,am,3) counting on (2)" на@ phrase:np@accusative надеяться@
 в-гости: "в гости" "to visit" "(1->pres) to visit ... " #verbs-of-motion any в@ гость@loc
 в-гости: "в гости" "to visit" "(3->pres) to visit" в@ гость@loc #verbs-of-motion
+в-гости: "в гости" "to visit" "to visit" в@ гость@loc
 в-гостях: "в гостях" "for a visit" "for a visit" в@ гость@locpl
 продолжать-verb: "продолжать спать" "to continue sleeping" "(1) (2->prog)" продолжать@ v
 в-время2: "в этом месяце" "this month" "in (2) (3)" в@ adj? жизнь@prepositional
@@ -665,7 +666,7 @@ as-much-or-many-as: "столько, сколько" "as much/many as" "as (1) (
 as-much-or-many-as: "столько, сколько" "as much/many as" "as many (2) as" столько@ phrase:np@genitive ,@ сколько[many]@
 as-much-or-many-as: "столько, сколько" "as much/many as" "as much (2) as" столько[much]@ phrase:np@genitive ,@ сколько@
 от-because-of: "хочу спать от этого урока" "sleepy because of this lesson" "because of (2)" от@ phrase:np@genitive
-в-loc: "в лесу" "in the forest" "in (2)" в@ phrase:np@locative
+в-loc: "в лесу" "in the forest" "in (2) (3)" в@ adj@prepositional? phrase:np@locative
 на-loc: "на берегу" "on the bank" "on (2)" на@ phrase:np@locative
 скорее-всего: "скорее всего" "most likely" "most likely" скорее@ всё@gen
 так-adj: "так красив" "so beautiful" "so (2)" так@ @short
