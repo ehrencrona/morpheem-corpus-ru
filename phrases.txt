@@ -84,7 +84,7 @@ no-matter-what: "во что бы то ни стало" "no matter what" "no mat
 у-его-нет: "у меня нет брата" "I don't have a brother" "(2->nom) (do,does,did,2) not have (3->acc)" у@ @genitive phrase:np@genitive нет[none]@
 у-его-нет: "у меня нет брата" "I don't have a brother" "(2->nom) (have,has,had,2) no (3) (5)" у@ phrase:np@genitive больше|больше[longer]@ нет[none]@ phrase:np@genitive
 у-кого: "у меня машина" "I have a car" "(2->nom) (have,has,had,2) (4) (5)" у@ phrase:np@genitive быть@ adverb? phrase:np@nominative
-у-кого: "у меня машина" "I have a car" "(2->nom) (have,has,had,2) (3) (4)" у@ phrase:np@genitive adverb? phrase:np@nominative
+у-кого: "у меня машина" "I have a car" "(2->nom) (have,has,had,2) ... (4)" у@ phrase:np@genitive any phrase:np@nominative
 у-кого: "у меня машина" "I have a car" "(3->nom) (have,has,had,3) (1)" phrase:np@nominative у@ phrase:np@genitive
 из-gen-departure: "я из России" "I'm from Russia" "from [point of departure/source]" из@ phrase:np@genitive
 at-datpl: "по утрам" "in the mornings" "on (2)" по@ #weekday@datpl
@@ -432,7 +432,8 @@ in-eyes-of: "ты мне друг" "you are a friend to me" "to [someone]" #anim
 there-was-none: "не было денег" "there was no money" "there (were,was,were,4) no [of something]" не@ быть@ any phrase:np@genitive
 there-will-be-none: "не будет урока" "there will be no lesson" "there will be no [something]" не@ быть[fut]@3 phrase:np@genitive
 there-will-be-none: "не будет урока" "there will be no lesson" "there will be no [something]" phrase:np@genitive не@ быть[fut]@3
-на-замок: "закрыть на замок" "to lock" "(lock,locks,locked,1)" закрыть|закрывать|закрытый@ any на@ any замок[lock]@acc
+на-замок: "закрыть на замок" "to lock" "(lock,locks,locked,1)" закрыть|закрывать@ any на@ any замок[lock]@acc
+на-замок: "закрыть на замок" "to lock" "locked" закрытый@ any на@ any замок[lock]@acc
 каким-образом: "каким образом?" "how?" "how" какой@instrm образ[way]@instr
 есть-meal: "есть завтрак" "have breakfast" "(have,has,had,1) (2)" есть@ phrase:np@accusative#meal
 так-и-не: "так и не понял" "but never understood" "but never" но@ так@ и|и[part]@ не@
@@ -535,8 +536,8 @@ face-to-face: "лицом к лицу" "face to face" "face to face" лицо@in
 к-на: "к себе на работу" "with me to work" "to (5) of (2)" к@ phrase:np@dative any на@ phrase:np@accusative
 к-на: "к себе на работу" "with me to work" "to (5) of (2)" к@ phrase:np@dative any в@ phrase:np@accusative
 сесть-на: "сесть на автобус" "take the bus" "(take,takes,took,1) (article) (3)" сесть@ на@ phrase:np#transport
-врать-dat: "врать мне" "lie to me" "(1) to (2)" врать@ phrase:np@dative
-врать-dat: "врать мне" "lie to me" "(2) to (1)" phrase:np@dative врать@
+врать-dat: "врать мне" "lie to me" "(1) to (2)" врать|соврать@ phrase:np@dative
+врать-dat: "врать мне" "lie to me" "(2) to (1)" phrase:np@dative врать|соврать@
 предложить-dat: "предложить вам" "to offer you" "(1) (2)" предложить|предложить[suggest]@ phrase:np@dative
 предложить-dat: "предложить вам" "to offer you" "(2) (1)" phrase:np@dative предложить|предложить[suggest]@
 разрешить-dat: "разрешите мне" "allow me" "(1) (2)" разрешить@ phrase:np@dative
@@ -755,3 +756,6 @@ dat-стало-adv-or-comp: "мне стало плохо" "I felt bad" "(1->nom
 у-gen-болит-nom: "у меня болит голова" "my head hurts" "(2->pos) (5) (4) ..." у@ phrase:np@genitive any болеть[hurt]@ phrase:np@nominative
 у-gen-болит-nom: "у меня болит голова" "my head hurts" "(do,does,did,doing,done,4) (2->pos) (3) (4) " у@ phrase:np@genitive phrase:np@nominative болеть[hurt]@ ?@
 хочеться-verb: "хочеться спать" "feel like sleeping" "(feel,feels,felt,1) like (2)" хочеться@ v
+amount-adjective: "много нового" "a lot of new stuff" "(1) (2)" #amount adj@genitive
+amount-adjective: "много нового" "a lot of new stuff" "(1) (2) (3)" #amount adj@genitive adj@genitive
+amount-adjective: "много нового" "a lot of new stuff" "(1) (3)" #amount что@genitive adj@genitive
