@@ -180,8 +180,8 @@ hyperbole: "ждать часами" "to wait for hours" "for [adjective]" phras
 на-твоем-месте: "на твоём месте" "if I were you" "if (1) (were,was,1) in (4) position, (1) would (6->1sg)" phrase:np бы@ на@ adj@prep* место@prep v
 на-твоем-месте: "на твоём месте" "if I were you" "if (1) (were,was,1) in (4) position, (1) would not (7->inf)" phrase:np бы@ на@ adj@prep* место@prep не@ v
 на-твоем-месте: "на твоём месте" "if I were you" "in (2) position" на@ adj@prep место@prep
-кому-то-можно: "можно мне идти?" "may I go?" "(1->nom) (2) may" phrase:np@dative adverb? можно@
-кому-то-можно: "можно мне идти?" "may I go?" "may (3->nom) (4) (5->1sg)" можно@ phrase:np@dative adverb? v
+кому-то-можно: "можно мне идти?" "may I go?" "(1->nom) may ... (4->pres)" phrase:np@dative можно@ any v
+кому-то-можно: "можно мне идти?" "may I go?" "may (2->nom) (4->pres) (5->1sg)" можно@ phrase:np@dative adverb? v
 кому-то-нельзя: "вам нельзя входить" "you may not enter" "[someone->nom] may not" phrase:np@dative нельзя@
 по-очереди: "по очереди" "one by one" "one by one" по@ очередь[turn]@dat
 по-очереди: "по очереди" "one by one" "one by one" по@ adj? порядок@dat
@@ -700,8 +700,9 @@ known-to-everyone: "знакомый всем" "known to everyone" "(1) (2) to (
 есть-noun: "есть кошка" "there is a cat" "there (is,,,,,,are,2) (2)" быть@ phrase:np@nominative
 опоздать–на: "опоздать на работу" "be late for work" "(1) for (3)" опоздать@ в@ phrase:np@accusative
 опоздать–на: "опоздать на работу" "be late for work" "(1) for (3)" опоздать@ на@ phrase:np@accusative
-можно-allowed: "можно курить?" "you are allowed to smoke" "you are allowed to" можно@
-буду-verb: "буду делать" "will be doing" "will (2)" быть[fut]@ #imperfective
+можно-allowed: "можно курить?" "are you allowed to smoke?" "(2->prog) is allowed" можно@ v
+можно-allowed: "можно курить?" "are you allowed to smoke?" "(2) is allowed" можно@ phrase:np@nominative
+буду-verb: "буду делать" "will be doing" "will (2->pres)" быть[fut]@ #imperfective
 русский-язык: "русский язык" "Russian" "(1)" adj@context язык[lang]@context
 будь-добр: "будь добр" "would you be so kind" "please" быть@imperative добрый@short
 будь-добр: "будь добр" "would you be so kind" "would you be so kind" быть@imperative так@ добрый@short
@@ -718,8 +719,7 @@ dat-достаточно: "мне достаточно " "I've had enough" "I've
 у-саши-получилось: "у Саши получилось сдать экзамен" "Sasha managed to pass the exam" "(2->nom) ... (4) " у@ phrase:np@genitive any получаться|получиться@
 у-саши-получилось: "у Саши получилось сдать экзамен" "Sasha managed to pass the exam" "(2->nom) (work,works,worked,working,4) (3) out ..." у@ phrase:np@genitive phrase:np@nominative получаться|получиться@
 под-кровать: "под кровать" "under the bed" "(1) (2)" под@ phrase:np@accusative
-можно-будет: "можно будет" "will be able" "(1) (3) (4)" можно@ быть[fut]@3 v
-можно-будет: "можно будет" "will be able" "(1) (3) (4)" можно@ быть[fut]@3 v
+можно-будет: "можно будет" "will be able" "will be able (3) (4)" можно@ быть[fut]@3 v
 в-одежде: "в одежде" "with clothes on" "(1) (2)" в@ phrase:np@prepositional#clothes
 знать-английский: "я знаю русский" "I speak Russian" "(speak,speaks,spoke,speaking,spoken,1) (2)" знать@ phrase:русский-язык
 открой-мне-дверь: "открой мне дверь" "open the door for me" "(1) (3) for (2)" открыть|открывать@ phrase:np@dative дверь@
