@@ -182,7 +182,7 @@ grammar: -этот@pl
 grammar: adj@preppl, tag: prepositional
 grammar: yo-yosh-yot@3, tag: verb
 grammar: -друг@pl
-дела--ть: do, 3: does, past: did, prog: doing, -2: make, 3-2: makes, past-2: made, prog-2: making, pastpart: done, pastpart-2: made, inf-2: to make, inflect: ать, tag: imperfective, form: imperf, derive:perf:сделать
+дела--ть: do, 3: does, past: did, prog: doing, -2: make, 3-2: makes, past-2: made, prog-2: making, pastpart: done, pastpart-2: made, inf-2: make, inflect: ать, tag: imperfective, form: imperf, derive:perf:сделать
 разн--ый: different, adv: differently, inflect: ныйadj, form: adj, mask: nonstd
 разн--ый[various]: many different, -2: various, -3: several, -4: multiple, -5: different, inflect: ныйadj, form: adj, mask: nonstd
 плох--ой: bad, adv: badly, comp: worse, super: worst, inflect: -плохой, form: adj, derive:adv:плохо
@@ -227,7 +227,7 @@ grammar: sya@3, tag: verb
 grammar: masc@dat, tag: dative
 дари--ть: give, 3: gives, past: gave, prog: giving, inflect: -дарить, tag: something-to-someone, form: imperf, derive:perf:подарить
 нужно: need to, form: adv
-нужн--ый: needed, inflect: ныйadj, form: adj, mask: adv
+нужн--ый: needed, -2: necessary, -3: required, inflect: ныйadj, form: adj, mask: adv
 grammar: short
 grammar: abstr-нadj@shortf
 grammar: abstr-нadj@shortn
@@ -623,8 +623,8 @@ grammar: -что@instr, tag: instrumental
 phrase: напротив-чего-то, tag: location-phrase
 юг--: south, inflect: masc, form: nounm, mask: pl
 grammar: -кто@instr, tag: instrumental
-направо: to the right (direction), form: adv
-налево: to the left (direction), form: adv
+направо: the right (direction), form: adv
+налево: the left (direction), form: adv
 phrase: среди-чего-то, tag: location-phrase
 phrase: один-of
 автобус--: bus, pl: buses, inflect: masc, tag: transport, form: nounm
@@ -1037,11 +1037,11 @@ grammar: -она@prep, tag: prepositional
 phrase: no-matter-how
 grammar: -ты@prep, tag: prepositional
 grammar: -воскресенье@prep, tag: prepositional
-собира--ть: collect, 3: collects, past: collected, prog: collecting, inflect: ать, tag: imperfective, form: imperf
+собира--ть: collect, 3: collects, past: collected, prog: collecting, inflect: ать, tag: imperfective, form: imperf, derive:reflex:собираться, derive:perf:собрать
 grammar: -один@n
 phrase: деньги-на
-случи--ться: happen, 3: happens, past: happened, prog: happening, inflect: -случиться, form: imperf, form: reflex
-уме--ть: are able to, 1: am able to, 3: is able to, past: was able to, prog: able to, inf: be able to, pastpl: were able to, -2: can, past-2: could, inflect: ать, form: imperf
+случи--ться: happen, 3: happens, past: happened, prog: happening, pastpart: happened, inflect: -случиться, form: perf, form: reflex
+уме--ть: are able to, 1: am able to, 3: is able to, past: was able to, prog: able to, inf: be able to, pastpl: were able to, -2: can, past-2: could, pastpart-2: could have, inf-2: can, inflect: ать, form: imperf
 закон--: law, pl: laws, inflect: masc, form: nounm
 grammar: -один@pl
 phrase: play-with
@@ -1099,14 +1099,14 @@ grammar: -о@alt2
 grammar: -сам@m
 phrase: так-как
 зарядк--а: charger, pl: chargers, inflect: femka, form: nounf
-сяд--<<есть: sit down, 3: sits down, past: sat down, prog: sitting down, inflect: -сесть, form: perf
+сяд--<<есть: sit down, 3: sits down, past: sat down, prog: sitting down, pastpart: sat down, inflect: -сесть, form: perf
 вероятн--ый: likely, adv: probably, comp: likelier, super: likeliest, inflect: adj, form: adj, derive:adv:вероятно
 вероятно: probably, form: adv
 grammar: -дать@3, tag: verb
 grammar: sya@pastpl, tag: verb
 phrase: у-thing, tag: location-phrase
 нигде: nowhere
-найд--<ти: find, 3: finds, past: found, prog: finding, inflect: -войти, tag: something-to-someone, form: perf
+найд--<ти: find, 3: finds, past: found, prog: finding, pastpart: found, inflect: -войти, tag: something-to-someone, form: perf
 grammar: -яйцо@genpl, tag: genitive
 б: would particle, form: part
 phrase: за-acc
@@ -1126,11 +1126,11 @@ grammar: -один@accf, tag: accusative
 phrase: то-что
 двор--: yard, pl: yards, inflect: masc, form: nounm
 grammar: -они@genpl, tag: genitive
-поед--<хать: go, past: went, prog: going, inflect: -поехать, tag: verbs-of-motion, form: imperf
+поед--<хать: go, 3: goes, past: went, prog: going, pastpart: gone, inflect: -поехать, tag: verbs-of-motion, form: perf
 правильн--ый: correct, adv: correctly, inflect: -правильный, form: adj, derive:adv:правильно, mask: comp
 правильно: correctly, form: adv
 phrase: когда-то
-обраща--ться: turn to, 3: turns to, past: turned to, prog: turning to, inflect: -пытаться, form: imperf, form: reflex
+обраща--ться: turn to, 3: turns to, past: turned to, prog: turning to, pastpart: turned to, inflect: -пытаться, form: imperf, form: reflex, derive:perf:обратиться
 обраща--ться[handle]: handle, 3: handles, past: handled, prog: handling, -2: deal with, 3-2: deals with, past-2: dealt with, prog-2: dealing with, inflect: -пытаться, form: imperf, form: reflex
 обраща--ться[treat]: treat, 3: treats, past: treated, prog: treating, inflect: -пытаться, form: imperf, form: reflex
 grammar: adj@shortn
@@ -1164,16 +1164,16 @@ grammar: neu@genpl, tag: genitive
 закрыт--ый: closed, inflect: adj, form: adj, derive:adv:закрыто, mask: comp
 закрыто: closed, form: adv
 phrase: чтобы-that
-храни--ть: keep, 3: keeps, past: kept, prog: keeping, inflect: -дарить, form: imperf
+храни--ть: keep, 3: keeps, past: kept, prog: keeping, inflect: -дарить, form: perf
 уверенн--ый: sure, adv: surely, -2: certain, inflect: -уверенный, form: adj, derive:adv:уверенно, mask: comp
 уверенно: certain, form: adv
 grammar: -идти@pastf, tag: verb
 grammar: -пять@genpl, tag: genitive
-вста--вать: get up, past: got up, prog: getting up, inflect: -давать, form: imperf
+вста--вать: get up, past: got up, prog: getting up, inflect: -давать, form: imperf, derive:perf:встать
 phrase: на-самом-деле
-прид--<йти: come, 3: comes, past: came, prog: coming, inflect: -придти, tag: verbs-of-motion, form: imperf
+прид--<йти: come, 3: comes, past: came, prog: coming, inflect: -придти, tag: verbs-of-motion, form: perf
 grammar: -чувствовать@inf, tag: verb
-объясни--ть: explain, 3: explains, past: explained, prog: explaining, inflect: -дарить, tag: something-to-someone, form: imperf
+объясни--ть: explain, 3: explains, past: explained, prog: explaining, inflect: -дарить, tag: something-to-someone, form: perf
 спальн--я: bedroom, pl: bedrooms, inflect: -спальня, form: nounf
 grammar: -оставаться@pastf, tag: verb
 grammar: -оставаться@pastpl, tag: verb
@@ -1192,9 +1192,9 @@ grammar: femя@instr, tag: instrumental
 тяжёло: heavily, form: adv
 тяжёл--ый[hard]: hard, comp: harder, super: hardest, inflect: adj, form: adj, derive:adv:тяжёло[hard]
 тяжёло[hard]: hard, form: adv
-расскаж--<зать: tell, 3: tells, past: told, prog: telling, inflect: -показать, tag: something-to-someone, form: perf
+расскаж--<зать: tell, 3: tells, past: told, prog: telling, pastpart: told, inflect: -показать, tag: something-to-someone, form: perf
 phrase: купить-чего-то
-убь--<ить: kill, 3: kills, past: killed, prog: killing, inflect: -убить, form: perf
+убь--<ить: kill, 3: kills, past: killed, prog: killing, pastpart: killed, inflect: -убить, form: perf
 grammar: femь-я-to-а@instrpl, tag: instrumental
 grammar: femь-я-to-а@preppl, tag: prepositional
 жаль: pity, form: adv
@@ -1204,12 +1204,12 @@ phrase: dat-adv, tag: predicative-adverb
 счастливо: happily, form: adv
 grammar: -чей@m
 grammar: -стать@impr, tag: verb
-пройд--<ти: pass, 3: passes, past: passed, prog: passing, inflect: -войти, form: perf
+пройд--<ти: pass, 3: passes, past: passed, prog: passing, pastpart: passed, inflect: -войти, form: perf
 вкусн--ый: tasty, adv: deliciously, comp: tastier, super: tastiest, inflect: ныйadj, form: adj, derive:adv:вкусно
 вкусно: deliciously, form: adv
 phrase: кому-то-достаточно, tag: predicative-adverb
 grammar: -случиться@1, tag: verb
-выбер--<<рать: choose, 3: chooses, past: chose, prog: choosing, inflect: -выбрать, form: perf
+выбер--<<рать: choose, 3: chooses, past: chose, prog: choosing, pastpart: chosen, inflect: -выбрать, form: perf
 достаточн--ый: sufficient, adv: enough, inflect: adj, tag: amount, form: adj, derive:adv:достаточно, mask: compandshort
 достаточно: enough, form: adv
 рад--: glad, adv: gladly, comp: gladder, super: gladdest, inflect: -рад, form: adj
@@ -1229,7 +1229,7 @@ phrase: dat-интересно
 grammar: -надеяться@2, tag: verb
 правил--о: rule, pl: rules, inflect: neu, form: nounn
 grammar: -случиться@3pl, tag: verb
-по--<еть: sing, 3: sings, past: sang, prog: singing, inflect: -петь, form: imperf
+по--<еть: sing, 3: sings, past: sang, prog: singing, pastpart: sung, inflect: -петь, form: imperf
 продавц--<ец: salesperson, pl: salespersons, inflect: -отец, form: nounm, form: animate
 grammar: -находиться@impr, tag: verb
 grammar: -тот@pl
@@ -1239,7 +1239,7 @@ phrase: dat-лет
 международн--ый: international, adv: internationally, inflect: adj, form: adj, mask: nonstd
 grammar: -тот@datpl, tag: dative
 подушк--а: pillow, pl: pillows, inflect: femka2, form: nounf
-да--вать[allow]: let, 3: lets, past: let, prog: letting, inflect: -давать, form: imperf
+да--вать[allow]: let, 3: lets, past: let, prog: letting, inflect: -давать, form: imperf, derive:perf:дать[let]
 да--вать[lets]: let's, -2: should we, -3: shall we, inflect: -давать, form: imperf, mask: non_impr
 phrase: при-чём
 особенн--ый: special, adv: especially, -2: particular, adv-2: particularly, inflect: adj, form: adj, derive:adv:особенно, mask: compandshort
@@ -1253,15 +1253,15 @@ phrase: gen-верить
 половин--а: half, pl: halves, inflect: fem, form: nounf
 grammar: -убить@inf, tag: verb
 съ--есть: eat, 3: eats, past: ate, prog: eating, pastpart: eaten, inflect: -есть, form: perf
-успе--ть: is in time, inf: be in time, past: was in time, pastpl: were in time, prog: being in time, inflect: ать, form: perf
+успе--ть: are in time, 1: am in time, 3: is in time, inf: be in time, past: was in time, pastpl: were in time, prog: being in time, pastpart: been in time, inflect: ать, form: perf
 phrase: dat-speech
 глуп--ый: stupid, adv: stupidly, comp: stupider, super: stupidest, -2: dumb, adv-2: dumbly, comp-2: dumber, super-2: dumbest, inflect: adj, form: adj, derive:adv:глупо
 глупо: dumbly, form: adv
 grammar: -выбрать@inf, tag: verb
 grammar: -рад@shortm
 из-за: because of, form: prepos
-предложи--ть: offer, 3: offers, past: offered, prog: offering, inflect: -учить, form: perf
-предложи--ть[suggest]: suggest, 3: suggests, past: suggested, prog: suggesting, inflect: -учить, form: imperf
+предложи--ть: offer, 3: offers, past: offered, prog: offering, pastpart: offered, inflect: -учить, form: perf
+предложи--ть[suggest]: suggest, 3: suggests, past: suggested, prog: suggesting, pastpart: suggested, inflect: -учить, form: perf
 phrase: помогать-dat
 удобн--ый: comfortable, adv: comfortably, comp: more comfortable, super: most comfortable, inflect: ныйadj, form: adj, derive:adv:удобно
 удобно: comfortably, form: adv
@@ -1272,8 +1272,8 @@ phrase: dat-лучше
 постоянн--ый: constant, adv: constantly, inflect: adj, form: adj, derive:adv:постоянно, mask: short
 постоянно: constantly, form: adv
 grammar: -уверенный@shortm
-нарису--<овать: draw, 3: draws, past: drew, prog: drawing, inflect: -чувствовать, form: perf
-лети--<еть: fly, 3: flies, past: flew, prog: flying, inflect: -лететь, tag: verbs-of-motion, form: imperf
+нарису--<овать: draw, 3: draws, past: drew, prog: drawing, pastpart: drown, inflect: -чувствовать, form: perf
+лети--<еть: fly, 3: flies, past: flew, prog: flying, pastpart: flown, inflect: -лететь, tag: verbs-of-motion, form: imperf
 phrase: просить-о
 grammar: -принести@pastm, tag: verb, tag: something-to-someone
 grammar: -петь@inf, tag: verb
@@ -1281,7 +1281,7 @@ grammar: -петь@inf, tag: verb
 бог--: God, pl: Gods, inflect: masc-animate, form: nounm, form: animate
 grammar: -рад@shortpl
 phrase: dat-платить
-теря--ть: lose, 3: loses, past: lost, prog: losing, inflect: ать, tag: imperfective, form: imperf
+теря--ть: lose, 3: loses, past: lost, prog: losing, pastpart: lost, inflect: ать, tag: imperfective, form: imperf, derive:reflex:теряться, derive:perf:потерять
 животн--ое: animal, pl: animals, inflect: neuadjoe, form: nounn
 границ--а: border, pl: borders, inflect: -улица, form: nounf
 grammar: -принести@pastpl, tag: verb
@@ -1290,7 +1290,7 @@ grammar: -россия@dat, tag: dative
 и[part]: adds stress, form: part, tag: untranslatable
 звонк--<ок: call, pl: calls, inflect: -подарок, form: nounm
 grammar: sya@impr, tag: verb
-бер--<<рать: take, 3: takes, past: took, prog: taking, inflect: -набрать, tag: imperfective, form: imperf
+бер--<<рать: take, 3: takes, past: took, prog: taking, pastpart: taken, inflect: -набрать, tag: imperfective, form: imperf, derive:perf:взять
 grammar: -оставаться@pastm, tag: verb
 phrase: in-eyes-of
 вегетарианц--<ец: vegetarian, pl: vegetarians, inflect: -вегетарианец, form: nounm, form: animate
@@ -1318,14 +1318,14 @@ grammar: -себя@dat, tag: dative
 из-за[from behind]: from behind, form: prepos
 phrase: хватит-что-то-делать
 grammar: -себя@instr, tag: instrumental
-езди--ть: go, past: went, prog: going, inflect: -ходить, tag: verbs-of-motion, form: imperf
+езди--ть: go, 3: goes, past: went, prog: going, pastpart: gone, inflect: -ходить, tag: verbs-of-motion, form: imperf, derive:perf:поехать
 взросл--ый: adult, adv: adultly, pl: adults, inflect: adj, form: adj, derive:adv:взросло, mask: compandshort
 взросло: adultly, form: adv
-готови--ть: cook, 3: cooks, past: cooked, prog: cooking, inflect: -готовить, tag: something-to-someone, tag: imperfective, form: imperf
+готови--ть: cook, 3: cooks, past: cooked, prog: cooking, pastpart: cooked, inflect: -готовить, tag: something-to-someone, tag: imperfective, form: imperf, derive:perf:приготовить
 grammar: -четыре@pl
 phrase: answer-to-question
 grammar: -она@datalt, tag: dative
-входи--ть: go in, 3: goes in, past: went in, prog: going in, -2: enter, 3-2: enters, past-2: entered, inflect: -ходить, form: imperf
+входи--ть: go in, 3: goes in, past: went in, prog: going in, -2: enter, 3-2: enters, past-2: entered, pastpart: gone in, prog-2: entering, inflect: -ходить, tag: verbs-of-motion, form: imperf, derive:perf:войти
 обед--: lunch, pl: lunches, inflect: masc, tag: meal, tag: time, form: nounm
 grammar: -они@datplalt, tag: dative
 phrase: what-a
@@ -1350,24 +1350,24 @@ grammar: -она@instr, tag: instrumental
 ни--что: nothing, inflect: -что, form: pron
 phrase: dat-трудно, tag: predicative-adverb
 grammar: -себя@gen, tag: genitive
-войд--<ти: come in, 3: comes in, past: came in, prog: coming in, inflect: -войти, form: perf
+войд--<ти: come in, 3: comes in, past: came in, prog: coming in, inflect: -войти, tag: verbs-of-motion, form: perf
 покупк--а: purchase, pl: purchases, inflect: femka, form: nounf
-выйд--<ти: go out, 3: goes out, past: went out, prog: going out, -2: leave, 3-2: leaves, past-2: left, -3: come out, 3-3: comes out, past-3: came out, prog-3: coming out, pastpart-3: come out, inflect: -выйти, form: perf
+выйд--<ти: go out, 3: goes out, past: went out, prog: going out, -2: leave, 3-2: leaves, past-2: left, -3: come out, 3-3: comes out, past-3: came out, prog-3: coming out, pastpart-3: come out, pastpart: gone out, pastpart-2: left, inflect: -выйти, tag: verbs-of-motion, form: perf
 phrase: dat-скучно, tag: predicative-adverb
 grammar: -мы@preppl, tag: prepositional
-выходи--ть: go out, 3: goes out, past: went out, prog: going out, inflect: -ходить, tag: imperfective, form: imperf
-приходи--ть: come, 3: comes, past: came, prog: coming, inflect: -ходить, tag: verbs-of-motion, form: imperf
+выходи--ть: go out, 3: goes out, past: went out, prog: going out, pastpart: gone out, inflect: -ходить, tag: imperfective, form: imperf, derive:perf:выйти
+приходи--ть: come, 3: comes, past: came, prog: coming, inflect: -ходить, tag: verbs-of-motion, form: imperf, derive:perf:прийти
 grammar: -что@gen, tag: genitive
 phrase: ещё-один
-води--ть: drive, 3: drives, past: drove, prog: driving, inflect: -ходить, form: imperf
+води--ть: drive, 3: drives, past: drove, prog: driving, pastpart: driven, inflect: -ходить, tag: verbs-of-motion, form: imperf
 стран--а: country, pl: countries, inflect: fem, form: nounf
-устан--<ть: get tired, 3: gets tired, past: got tired, prog: getting tired, inflect: -стать, form: perf, mask: impr
+устан--<ть: get tired, 3: gets tired, past: got tired, prog: getting tired, pastpart: got tired, inflect: -стать, form: perf, mask: impr
 grammar: -себя@prep, tag: prepositional
 температур--а[fever]: fever, pl: fevers, inflect: fem, form: nounf
 phrase: ещё-нет
 обув--ь: footwear, pl: footwear, -2: shoes, inflect: femь, tag: clothes, form: nounf, mask: pl
 grammar: -регистрация@genpl, tag: genitive
-занима--ться: occupy -self with, 3: occupies himself with, past: occupied -self with, inflect: -пытаться, tag: imperfective, form: imperf, form: reflex
+занима--ться: occupy -self with, 3: occupies himself with, past: occupied -self with, prog: occupying -self with, pastpart: occupied -self with, inflect: -пытаться, tag: imperfective, form: imperf, form: reflex
 прекрасн--ый: beautiful, adv: beautifully, inflect: ныйadj, form: adj, derive:adv:прекрасно, mask: comp
 прекрасно: beautifully, form: adv
 phrase: ещё-comp
@@ -1407,7 +1407,7 @@ grammar: abstr-нadj@shortpl
 grammar: -искать@inf, tag: verb
 врач--: doctor, pl: doctors, inflect: -врач, form: nounm, form: animate
 phrase: поздравлять-с-instr
-научи--ть[teach]: teach, 3: teaches, past: taught, prog: teaching, pastpart: taught, inflect: -учить, form: perf
+научи--ть[teach]: teach, 3: teaches, past: taught, prog: teaching, pastpart: taught, inflect: -учить, form: perf, derive:reflex:научиться
 сам--: alone, -2: yourself, inflect: -сам, form: adj, mask: allbutnom
 grammar: -один@instrm, tag: instrumental
 phrase: у-кого-location
@@ -1426,13 +1426,13 @@ phrase: при-prep
 прост--ой: simple, adv: simply, comp: simpler, super: simplest, adv-2: just, comp-2: more simple, comp-3: easier, -3: easy, adv-3: easily, inflect: -простой, tag: find-it, form: adj, derive:adv:просто
 просто: easily, form: adv, tag: find-it
 grammar: -дерево@instrpl, tag: instrumental
-име--ть: possess, 3: possesses, past: possessed, prog: possessing, -2: have, 3-2: has, past-2: had, inflect: ать, form: imperf
+име--ть: possess, 3: possesses, past: possessed, prog: possessing, -2: have, 3-2: has, past-2: had, pastpart: possessed, prog-2: having, pastpart-2: had, inflect: ать, form: imperf
 последн--ий: last, inflect: -домашний, form: adj, mask: nonstd
 phrase: сам-по-себе
 вдруг: suddenly, form: adv
 grammar: -набрать@inf, tag: verb
 grammar: -показать@inf, tag: verb
-возьм--<<<<зять: take, 3: takes, past: took, prog: taking, inflect: -взять, tag: something-to-someone, form: perf
+возьм--<<<<зять: take, 3: takes, past: took, prog: taking, pastpart: taken, inflect: -взять, tag: something-to-someone, form: perf
 над: above, -2: over, form: prepos, tag: untranslatable
 phrase: с-тех-пор
 grammar: -хотеть@inf, tag: verb
@@ -1443,45 +1443,45 @@ phrase: no-matter-what
 grammar: -хотеть@1pl, tag: verb
 grammar: -жениться@1, tag: verb
 выходн--ой: day off, pl: weekend, inflect: ойadj, tag: time, form: n, mask: shortandadv
-сдела--ть: do, 3: does, past: did, prog: doing, -2: make, 3-2: makes, past-2: made, prog-2: making, pastpart: done, pastpart-2: made, inf-2: to make, inflect: ать, form: perf
-встреча--ться: meet, 3: meets, past: met, prog: meeting, inflect: -пытаться, form: imperf, form: reflex
+сдела--ть: do, 3: does, past: did, prog: doing, -2: make, 3-2: makes, past-2: made, prog-2: making, pastpart: done, pastpart-2: made, inf-2: make, inflect: ать, form: perf
+встреча--ться: meet, 3: meets, past: met, prog: meeting, pastpart: met, inflect: -пытаться, form: imperf, form: reflex, derive:perf:встретиться
 phrase: столько-всего
 grammar: -один@accn, tag: accusative
 grammar: -кто@prep, tag: prepositional
 т--от: that, pl: those, -2: the one, inflect: -тот, form: adj, mask: nonstd
-встреча--ться[date]: date, 3: dates, past: dated, prog: dating, inflect: -пытаться, form: imperf, form: reflex
+встреча--ться[date]: date, 3: dates, past: dated, prog: dating, pastpart: dated, inflect: -пытаться, form: imperf, form: reflex
 phrase: нет-равных
 grammar: -бояться@3, tag: verb
 начн--<ать: begin, 3: begins, past: began, prog: beginning, pastpart: begun, inflect: -начать, form: perf
 следующ--ий: next, inflect: eeadj, form: adj, mask: nonstd
-продолжа--ть: continue, 3: continues, past: continued, prog: continuing, -2: keep, 3-2: keeps, past-2: kept, prog-2: keeping, pastpart-2: kept, inflect: ать, tag: imperfective, form: imperf
+продолжа--ть: continue, 3: continues, past: continued, prog: continuing, -2: keep, 3-2: keeps, past-2: kept, prog-2: keeping, pastpart-2: kept, pastpart: continued, inflect: ать, tag: imperfective, form: imperf
 grammar: sya@1pl, tag: verb
 phrase: по-карману
 grammar: -хватить@1, tag: verb
 пойд--<ти: go, 3: goes, past: went, prog: going, pastpart: gone, inflect: -войти, tag: verbs-of-motion, form: perf
 пойд--<ти[fall]: fall, 3: falls, past: fell, prog: falling, pastpart: fallen, inflect: -войти, form: perf
-повторя--ть: repeat, 3: repeats, past: repeated, prog: repeating, inflect: ать, form: imperf
+повторя--ть: repeat, 3: repeats, past: repeated, prog: repeating, pastpart: repeated, inflect: ать, form: imperf
 phrase: не-так-ли
 grammar: -казаться@impr, tag: verb
-строи--ть: build, 3: builds, past: built, prog: building, inflect: -дарить, form: imperf
+строи--ть: build, 3: builds, past: built, prog: building, pastpart: built, inflect: -дарить, form: imperf
 сил--а: strength, pl: forces, inflect: fem, form: nounf
 случа--й: event, pl: events, inflect: -случай, form: nounm
 grammar: -слышать@impr, tag: verb
 phrase: в-курсе
 grammar: perspron@accpl, tag: accusative
-остан--<ться: remain, 3: remains, past: remained, prog: remaining, -2: stay, 3-2: stays, past-2: stayed, prog-2: staying, pastpart-2: stayed, inflect: -остаться, form: perf, form: reflex
+остан--<ться: remain, 3: remains, past: remained, prog: remaining, -2: stay, 3-2: stays, past-2: stayed, prog-2: staying, pastpart-2: stayed, pastpart: remained, inflect: -остаться, form: perf, form: reflex
 сразу: at once, form: adv
 grammar: abstr-soft-final-stressed@instr, tag: instrumental
 почти: almost, form: adv
 phrase: ни-за-что
-каж--<заться: seem, 3: seems, past: seemed, prog: seeming, inflect: -казаться, form: imperf, form: reflex
+каж--<заться: seem, 3: seems, past: seemed, prog: seeming, pastpart: seemed, inflect: -казаться, form: imperf, form: reflex
 ряд--: row, pl: rows, inflect: -аэропорт, form: nounm
 grammar: -огонь@nom
 grammar: -бытьfut@inf, tag: verb
 phrase: не-больше
 подума--ть: think, 3: thinks, past: thought, prog: thinking, pastpart: thought, inflect: ать, form: perf
-окаж--<заться: end up, 3: ends up, past: ended up, prog: ending up, -2: turn up, 3-2: turns up, past-2: turned up, prog-2: turning up, inflect: -казаться, form: perf, form: reflex
-окаж--<заться[prove]: turn out, 3: turns out, past: turned out, prog: turning out, inflect: -казаться, form: perf, form: reflex
+окаж--<заться: end up, 3: ends up, past: ended up, prog: ending up, -2: turn up, 3-2: turns up, past-2: turned up, prog-2: turning up, pastpart: ended up, pastpart-2: turned up, inflect: -казаться, form: perf, form: reflex
+окаж--<заться[prove]: turn out, 3: turns out, past: turned out, prog: turning out, pastpart: turned out, inflect: -казаться, form: perf, form: reflex
 grammar: аться@3, tag: verb
 однако: however, form: adv
 phrase: давно-пора
@@ -1492,11 +1492,11 @@ phrase: тут-и-там
 вообще: at all
 част--ь: part, pl: parts, inflect: -часть, form: nounf
 grammar: -время@genpl, tag: genitive
-верну--ться: return, 3: returns, past: returned, prog: returning, inflect: -вернуться, form: perf, form: reflex
-реши--ть: decide, 3: decides, past: decided, prog: deciding, inflect: -учить, form: perf
+верну--ться: return, 3: returns, past: returned, prog: returning, pastpart: returned, inflect: -вернуться, form: perf, form: reflex
+реши--ть: decide, 3: decides, past: decided, prog: deciding, pastpart: decided, inflect: -учить, form: perf
 phrase: друг-другу
-реши--ть[solve]: solve, 3: solves, past: solved, prog: solving, inflect: -учить, form: perf
-получи--ть: receive, 3: receives, past: received, prog: receiving, inflect: -учить, form: perf
+реши--ть[solve]: solve, 3: solves, past: solved, prog: solving, pastpart: solved, inflect: -учить, form: perf
+получи--ть: receive, 3: receives, past: received, prog: receiving, pastpart: received, inflect: -учить, form: perf
 grammar: -воскресенье@genpl, tag: genitive
 phrase: 234-gen
 phrase: 1-nom
@@ -1505,16 +1505,16 @@ phrase: работать-над-чем-то
 хоть: though, -2: at least, -3: just, -4: for
 общ--ий: cоmmon, inflect: adj, form: adj, derive:adv:общо
 общо: cоmmon, form: adv
-узна--ть: find out, 3: finds out, past: found out, prog: finding out, inflect: ать, form: perf
+узна--ть: find out, 3: finds out, past: found out, prog: finding out, pastpart: found out, inflect: ать, form: perf
 phrase: hyperbole
-узна--ть[recognize]: recognize, 3: recognizes, past: recognised, prog: recognising, inflect: ать, form: perf
+узна--ть[recognize]: recognize, 3: recognizes, past: recognised, prog: recognising, pastpart: recognised, inflect: ать, form: perf
 словно: as if, form: adv
 надея--ться: hope, 3: hopes, past: hoped, prog: hoping, pastpart: hoped, inflect: -надеяться, form: imperf, form: reflex
 уставш--ий: tired, inflect: adj, form: adj, mask: shortandadv
 phrase: за-direction, tag: location-phrase
 grammar: num@accinanpl, tag: accusative
 огромн--ый: huge, adv: hugely, inflect: ныйadj, form: adj, mask: nonstd
-предпочита--ть: prefer, 3: prefers, past: preferred, prog: preferring, inflect: ать, form: imperf
+предпочита--ть: prefer, 3: prefers, past: preferred, prog: preferring, pastpart: preferred, inflect: ать, form: imperf
 grammar: ать@impr, tag: verb
 phrase: как-можно-comp
 настоящ--ий: real, inflect: adj, form: adj, derive:adv:настоящо
@@ -1528,7 +1528,7 @@ phrase: по-возможности
 grammar: -время@gen, tag: genitive
 grammar: -дерево@pl
 чем: than, form: conj
-броси--ть: abandon, 3: abandons, past: abandoned, prog: abandoning, -2: leave, 3-2: leaves, past-2: left, prog-2: leaving, -3: quit, 3-3: quits, past-3: quit, prog-3: quitting, pastpart-3: quit, inflect: -бросить, form: perf
+броси--ть: abandon, 3: abandons, past: abandoned, prog: abandoning, -2: leave, 3-2: leaves, past-2: left, prog-2: leaving, -3: quit, 3-3: quits, past-3: quit, prog-3: quitting, pastpart-3: quit, pastpart: abandoned, pastpart-2: left, inflect: -бросить, form: perf
 броси--ть[throw]: throw, 3: throws, past: threw, prog: throwing, inflect: -бросить, form: perf
 phrase: заниматься-чем-то
 шаг--: step, pl: steps, inflect: masc, form: nounm
@@ -1574,7 +1574,7 @@ phrase: как-только
 способн--ый: able, adv: ably, comp: abler, super: ablest, -2: talented, super-2: most talented, comp-2: more talented, inflect: ныйadj, form: adj, mask: adv
 единственн--ый: the only, inflect: adj, form: adj, derive:adv:единственно, mask: short
 единственно: the only, form: adv
-начина--ться: begin, 3: begins, past: began, prog: beginning, inflect: -пытаться, tag: imperfective, form: imperf, form: reflex
+начина--ться: begin, 3: begins, past: began, prog: beginning, pastpart: begun, inflect: -пытаться, tag: imperfective, form: imperf, form: reflex
 поверн--уть: turn, 3: turns, past: turned, prog: turning, inflect: -повернуть, form: perf
 phrase: так...как
 предлага--ть: offer, 3: offer, past: offered, prog: offering, inflect: ать, tag: something-to-someone, form: imperf
@@ -2038,11 +2038,11 @@ phrase: is-not
 означа--ть: mean, 3: means, past: meant, prog: meaning, inflect: ать, form: imperf
 замеча--ть: notice, 3: notices, past: noticed, prog: noticing, inflect: ать, form: imperf
 оставля--ть: leave, 3: leaves, past: left, prog: leaving, inflect: ать, form: imperf
-собер--<<рать: collect, 3: collects, past: collected, prog: collecting, inflect: -набрать, form: imperf
+собер--<<рать: collect, 3: collects, past: collected, prog: collecting, inflect: -набрать, form: perf
 лома--ть: break, 3: breaks, past: broke, prog: breaking, pastpart: broken, inflect: ать, form: imperf, derive:reflex:ломаться, derive:perf:сломать
 соберу--<<<раться: intend to, 3: intends to, past: intended to, prog: intending to, inflect: -собраться, form: perf, form: reflex
 находи--ть: find, 3: finds, past: found, prog: finding, inflect: -ходить, form: imperf, derive:reflex:находиться, derive:perf:найти
-посовету--<овать: advise, 3: advises, past: advised, prog: advising, inflect: -чувствовать, form: imperf
+посовету--<овать: advise, 3: advises, past: advised, prog: advising, inflect: -чувствовать, form: perf
 меня--ть: change, 3: changes, past: changed, prog: changing, inflect: ать, form: imperf
 проходи--ть: pass, 3: passes, past: passed, prog: passing, inflect: -ходить, form: imperf
 пробу--<овать: try, 3: tries, past: tried, prog: trying, inflect: -чувствовать, form: imperf
@@ -2155,17 +2155,17 @@ phrase: хочеться-verb
 водител--ь: driver, pl: drivers, inflect: mascь-animate, form: nounm, form: animate
 запад--: west, inflect: masc, form: nounm, mask: pl
 восток--: east, inflect: masc, form: nounm, mask: pl
-посиди--<еть: sit, 3: sits, past: sat, prog: sitting, pastpart: sat, inf: to to, inflect: -глядеть, form: perf
+посиди--<еть: sit, 3: sits, past: sat, prog: sitting, pastpart: sat, inflect: -глядеть, form: perf
 полежи--<ать: lie, 3: lies, past: lay, prog: laying, pastpart: lain, inflect: -лежать, form: perf
-поигра--ть: play, 3: plays, past: played, prog: playing, pastpart: played, inf: to play, inflect: ать, form: perf
+поигра--ть: play, 3: plays, past: played, prog: playing, pastpart: played, inf: play, inflect: ать, form: perf
 покури--ть: smoke, 3: smokes, past: smoked, prog: smoking, pastpart: smoked, inflect: -дарить, form: perf
 поработа--ть: work, 3: works, past: worked, prog: working, pastpart: worked, inflect: ать, form: perf
 пожив--<ть: live, 3: lives, past: lived, prog: living, pastpart: lived, inflect: -жить, form: perf
-возврати--ть: return, 3: returns, past: returned, prog: returning, pastpart: returned, inf: to to, inflect: -возвратить, form: perf
+возврати--ть: return, 3: returns, past: returned, prog: returning, pastpart: returned, inflect: -возвратить, form: perf
 возврати--ться: return, 3: returns, past: returned, prog: returning, pastpart: returned, inflect: -обратиться, form: perf, form: reflex
 запомни--ть: memorize, 3: memorizes, past: memorized, prog: memorizing, pastpart: memorized, inflect: -дарить, form: perf
 запомина--ть: memorize, 3: memorizes, past: memorized, prog: memorizing, pastpart: memorized, inflect: ать, form: imperf, derive:perf:запомнить
-послуша--ть: listen, 3: listens, past: listened, prog: linstening, pastpart: listened, inf: to to, inflect: ать, form: perf
+послуша--ть: listen, 3: listens, past: listened, prog: linstening, pastpart: listened, inflect: ать, form: perf
 захоч--<теть: want, 3: wants, past: wanted, prog: wanting, pastpart: wanted, inflect: -хотеть, form: perf
 постои--<ять: stand, 3: stands, past: stood, prog: standing, inflect: -стоять, form: perf
 phrase: amount-adjective
@@ -2176,7 +2176,7 @@ phrase: amount-adjective
 поищ--<скать: look for, 3: looks for, past: looked for, prog: looking for, -2: search for, 3-2: searches for, past-2: searched for, prog-2: searching for, inflect: -искать, form: perf
 крикн--уть: shout out, 3: shouts out, past: shouted out, -2: scream, 3-2: screams, past-2: screamed, inflect: -крикнуть, form: perf
 соврё--<ать: lie, 3: lies, past: lied, inflect: -ждать, form: perf
-сбега--ть: run, 3: runs, past: ran, pastpart: ran, inf: to to, inflect: ать, form: perf
+сбега--ть: run, 3: runs, past: ran, pastpart: ran, inflect: ать, form: perf
 посчита--ть: count, 3: counts, past: counted, inflect: ать, form: perf
 закаж--<зать: order, 3: orders, past: ordered, inflect: -сказать, form: perf
 назов--<<вать: call, 3: calls, past: called, inflect: -звать, form: perf
@@ -2185,3 +2185,7 @@ phrase: amount-adjective
 извини--ться: apologize, 3: apologizes, past: apologized, inflect: -жениться, form: perf, form: reflex
 извиня--ться: apologize, 3: apologizes, past: apologized, prog: apologizing, inflect: -пытаться, form: imperf, form: reflex, derive:perf:извиниться
 полици--я: n/a, inflect: -регистрация, form: nounf
+случа--ться: happen, 3: happens, past: happened, prog: happening, pastpart: happened, inflect: -пытаться, form: imperf, form: reflex, derive:perf:случиться
+полети--<еть: fly, 3: flies, past: flew, prog: flying, pastpart: flown, inflect: -лететь, form: perf
+повтори--ть: repeat, 3: repeats, past: repeated, pastpart: repeated, inflect: -дарить, form: perf
+начну--<<аться: begin, 3: begins, past: began, pastpart: begun, inflect: -начаться, form: perf, form: reflex
