@@ -55,7 +55,7 @@ more-than: "больше, чем" "more than" "(1) ... than" @comp any ,@ чем
 с-тех-пор: "с тех пор" "since the time" "since the time" с@ тот@ пора@ ,@ как|как[when]@
 с-тех-пор: "с тех пор" "since the time" "since the time" с@ тот@ пора@ как|как[when]@
 с-тех-пор: "с тех пор" "since the time" "since the time" с@ тот@ пора@
-мы-с-instr: "мы с товой" "we" "(3) and I" мы@ с@ phrase:np@instrumental#animate
+мы-с-instr: "мы с тобой" "we" "(3) and I" мы@ с@ phrase:np@instrumental#animate
 no-matter-what: "во что бы то ни стало" "no matter what" "no matter what" в@alt что@ бы@ тот@n ни@ стать@pastn
 в-пути: "в пути" "on the way" "on the way" в@ путь@
 всё-ещё: "всё ещё" "still" "still" весь|всё@ ещё@
@@ -161,10 +161,11 @@ hyperbole: "ждать часами" "to wait for hours" "for [adjective]" phras
 на-time: "ехать на день" "go for a day" "over (2->sing) (article) (3)" на@ adj? выходной@
 на-time: "ехать на день" "go for a day" "for (2)" на@ phrase:np@accusative#time
 по-place-of-movement: "по парку" "through the park" "(1) (2)" по@ phrase:np@dative
-по-mode-of-communication: "по телевизору" "on TV" "on [mode of communication]" по@ phrase:np@dative
+по-mode-of-communication: "по телевизору" "on TV" "on (2)" по@ phrase:np@dative
 как-можно-comp: "как можно скорее" "as soon as possible" "as (3->adv) as possible" как[like]@ можно@ @comp
-по-definition: "матч по футболу" "football game" "(3) (1)" @n по@ adj@dat #language
-по-definition: "матч по футболу" "football game" "(1) (4) (2)" adj* @n по@ phrase:np@dative
+по-definition: "матч по футболу" "football game" "" adj @n по@ phrase:np@dative
+по-definition: "матч по футболу" "football game" "(3) (1)" phrase:np по@ #русский-язык@dat
+по-definition: "матч по футболу" "football game" "(3) (1)" phrase:np по@ phrase:np@dative
 кому-то-надо: "нам надо поговорить" "we need to talk" "[someone->nom] should" @dative+ надо@
 кому-то-надо: "нам надо поговорить" "we need to talk" "[someone->nom] should not have" не@ надо@ быть@ @dative+
 кому-то-надо: "нам надо поговорить" "we need to talk" "[someone->nom] should have" надо@ быть@ @dative+
@@ -345,10 +346,10 @@ dat-нравится: "мне нравится" "I like" "(1->nom) (2) (don't,do
 dat-нравится: "мне нравится" "I like" "(1->nom) (2) (don't,doesn't,didn't,1) (4) like (6)" phrase:np@dative adverb* не@ adverb* нравиться|понравиться@ phrase:np@nominative
 dat-нравится: "мне нравится" "I like" "(1->nom) (2) (like,likes,liked,1) (3)" phrase:np@dative adverb? adj@comp? нравиться|понравиться@
 dat-нравится: "мне нравится" "I like" "(1->nom) ... (want,wants,wanted,1)" phrase:np@dative any хочеться@
-dat-интересно: "мне интересна математика" "I'm interested in maths" "(are,is,was,being,been,be,are,were,am,1) (1->nom) interested in (3)?" phrase:np@dative интересный@ phrase:np ?@
-dat-интересно: "мне интересна математика" "I'm interested in maths" "(1->nom) (are,is,was,being,been,be,are,were,am,1) interested in (3)" phrase:np@dative интересный@ phrase:np
-dat-интересно: "мне интересна математика" "I'm interested in maths" "(are,is,was,being,been,be,are,were,am,1) (1->nom) not interested?" phrase:np@dative не@ интересный@ ?@
-dat-интересно: "мне интересна математика" "I'm interested in maths" "(1->nom) (are,is,was,being,been,be,are,were,am,1) (2)" phrase:np@dative неинтересный|интересный@
+dat-интересно: "мне интересна математика" "I'm interested in maths" "(are,is,was,being,been,be,are,were,am,1) (1->nom) interested in (3)?" phrase:np@dative интересно|интересный|неинтересно@ phrase:np ?@
+dat-интересно: "мне интересна математика" "I'm interested in maths" "(1->nom) (are,is,was,being,been,be,are,were,am,1) interested in (3)" phrase:np@dative интересно|интересный|неинтересный|неинтересно@ phrase:np
+dat-интересно: "мне интересна математика" "I'm interested in maths" "(are,is,was,being,been,be,are,were,am,1) (1->nom) not interested?" phrase:np@dative не@ интересно|интересный@ ?@
+dat-интересно: "мне интересна математика" "I'm interested in maths" "(1->nom) (are,is,was,being,been,be,are,were,am,1) (2)" phrase:np@dative неинтересный|интересно|интересный|неинтересно@
 dat-лет: "сколько тебе лет?" "how old are you?" "how old (are,is,was,being,been,be,are,were,am,2) [someone]" сколько[many]@ phrase:np@dative any год@context
 dat-лет: "сколько тебе лет?" "how old are you?" "(1->nom) (was,1) (3) years old" phrase:np@dative быть@past #number@nominative год@context
 dat-лет: "сколько тебе лет?" "how old are you?" "(1->nom) (are,is,was,being,been,be,are,were,am,1) ... (3) years old" phrase:np@dative any #number@nominative год@context
@@ -402,9 +403,9 @@ dat-лучше: "тебе (бы) лучше" "you'd better" "(1->nom)'d better" 
 учить-dat: "учи нас" "teach us" "(1) (3)" учить[teach]|научить[teach]@ any phrase:np@dative
 сам-с-собой: "я говорил сам с собой" "was talking to myself" "with (3)" сам@ с@ себя@instr
 не-стоит: "тебе не стоит курить" "you shouldn't smoke" "(1->nom) (2) shouldn't ... (6->pres)" phrase:np@dative adverb* не@ стоить[should]@3 any v
-не-стоит: "тебе не стоит курить" "you shouldn't smoke" "(1->nom) (2) (3->pres)" phrase:np@dative стоить[should]@3 v
-не-стоит: "тебе не стоит курить" "you shouldn't smoke" "(1->nom) (2) (3->pastpart)" phrase:np@dative стоить[should]@past v
-не-стоит: "тебе не стоит курить" "you shouldn't smoke" "(1->nom) should not have (4->pastpart)" phrase:np@dative не@ стоить[should]@past v
+не-стоит: "тебе не стоит курить" "you shouldn't smoke" "(1->nom) (2) (4->pres) ..." phrase:np@dative стоить[should]@3 any v
+не-стоит: "тебе не стоит курить" "you shouldn't smoke" "(1->nom) (2) (4->pastpart) ..." phrase:np@dative стоить[should]@past any v
+не-стоит: "тебе не стоит курить" "you shouldn't smoke" "(1->nom) should not have (5->pastpart) ..." phrase:np@dative не@ стоить[should]@past any v
 просить-о: "просить о помощи" "ask for help" "(1) (2) for (4)" просить@ #animate@accusative о@ @prepositional+
 просить-о: "просить о помощи" "ask for help" "(1) (2)" просить@ phrase:np@accusative
 просить-о: "просить о помощи" "ask for help" "(1) for (3)" просить@ о@ phrase:np@prepositional
@@ -416,10 +417,10 @@ dat-платить: "сколько тебе платят?" "how much do you get
 в-время: "на этой неделе" "this week" "(2)" на@ phrase:np@prepositional#time
 intended-for: "кому-то (intended for)" "" "for (1)" phrase:np@dative
 in-eyes-of: "ты мне друг" "you are a friend to me" "to [someone]" #animate@dative
-прийти-в-голову: "прийти в голову" "to cross my mind" "cross (1)'s mind" phrase:np@dative прийти|приходить@ в@ голова@accusative
-прийти-в-голову: "прийти в голову" "to cross my mind" "cross (2)'s mind" прийти|приходить@ phrase:np@dative any в@ голова@accusative
-прийти-в-голову: "прийти в голову" "to cross my mind" "cross (1)'s mind" phrase:np@dative в@ голова@accusative any прийти|приходить@
-прийти-в-голову: "прийти в голову" "to cross my mind" "cross (1)'s mind" phrase:np@dative не@ прийти|приходить@ в@ голова@accusative
+прийти-в-голову: "прийти мне в голову" "to cross my mind" "cross (1->pos) mind" phrase:np@dative прийти|приходить@ в@ голова@accusative
+прийти-в-голову: "прийти мне в голову" "to cross my mind" "cross (2->pos) mind" прийти|приходить@ phrase:np@dative any в@ голова@accusative
+прийти-в-голову: "прийти мне в голову" "to cross my mind" "cross (1)'s mind" phrase:np@dative в@ голова@accusative any прийти|приходить@
+прийти-в-голову: "прийти мне в голову" "to cross my mind" "cross (1)'s mind" phrase:np@dative не@ прийти|приходить@ в@ голова@accusative
 конец-dat: "нет конец" "no end" "(1) never (end,ends,1)" phrase:np@dative нет[none]@ конец@gen
 конец-dat: "нет конец" "no end" "(1) (end,ends,ended,3)" phrase:np@dative прийти|приходить@ конец@
 сидеть-дома: "сидеть дома" "stay at home" "stay at home" сидеть@ any дома@
@@ -603,7 +604,7 @@ counting-on: "надеюсь на тебя" "i'm counting on you" "(are,is,was,b
 оставить-себе: "оставить себе" "to keep" "(keep,keeps,kept,1) (3)" оставить@ себя@dat phrase:np@accusative
 идти-за: "идти за собакой" "follow the dog" "follow (3)" идти|ехать|пойти@ за@ phrase:np@instrumental
 кактак: "как так" "how" "how" как@ так@
-скорая-помощь: "скорая помощь приезжает" "an ambulance is coming" "ambulance" скорый@context помощь@context
+скорая-помощь: "скорая помощь" "an ambulance" "ambulance" скорый@context помощь@context
 even-so: "и так" "even so" "even so" и[part]@ так@
 устать-от: "устать от работы" "to tire of work" "tired of (3)" устать@ от@ phrase:np@genitive
 кричать-на: "кричать на тебя" "shout at you" "(1) at (3)" кричать@ на@ phrase:np@accusative

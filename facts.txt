@@ -27,15 +27,15 @@ grammar: n@prep, tag: prepositional
 магазин--: shop, pl: shops, -2: store, pl-2: store, inflect: masc, form: nounm
 комнат--а: room, pl: rooms, inflect: fem, form: nounf
 grammar: accusative
---я: I, acc: me, inflect: -я, form: animate, form: pron, derive:poss:мой
+--я: I, acc: me, inflect: -я, form: animate, form: perspron, derive:poss:мой
 grammar: -я@nom
---он: he, acc: him, inflect: -он, form: animate, form: pron, derive:poss:его
+--он: he, acc: him, inflect: -он, form: animate, form: perspron, derive:poss:его
 grammar: -он@nom
 transform: yToI
 Саш--а: Sasha, inflect: -улица, form: nounf, form: animate, mask: pl
 библиотек--а: library, pl: libraries, inflect: fem, tag: at, form: nounf
 grammar: -она@nom
---она: she, acc: her, inflect: -она, form: animate, form: pron, derive:poss:её
+--она: she, acc: her, inflect: -она, form: animate, form: perspron, derive:poss:её
 Маш--а: Маsha, inflect: -улица, form: nounf, form: animate, mask: pl
 школ--а: school, pl: schools, inflect: fem, tag: at, form: nounf
 улиц--а: street, pl: streets, inflect: -улица, tag: on, form: nounf
@@ -64,10 +64,10 @@ grammar: n@acc, tag: accusative
 мам--а: Mom, pl: moms, inflect: fem-animate, form: nounf, form: animate
 люби--ть: love, 3: loves, past: loved, prog: loving, pastpart: loved, -2: like, 3-2: likes, past-2: liked, prog-2: liking, pastpart-2: liked, inflect: -любить, form: imperf
 grammar: perspron@acc, tag: accusative
---ты: you, inflect: -ты, form: animate, form: pron, derive:poss:твой
+--ты: you, inflect: -ты, form: animate, form: perspron, derive:poss:твой
 grammar: -ты@nom
 не: not
-ни--кто: nobody, inflect: -кто, form: animate, form: pron
+ни--кто: nobody, inflect: -кто, form: animate, form: negpron
 --что: what, inflect: -что, form: pron, derive:poss:чей
 что[that]: that, -2: which, form: conj
 grammar: -что@acc, tag: accusative
@@ -147,7 +147,7 @@ grammar: adj@pl
 да: yes
 здесь: here, form: adv
 зна--ть: know, 3: knows, past: knew, prog: knowing, inflect: ать, form: imperf, derive:perf:узнать
---вы: you [plural], inflect: -вы, form: animate, form: pron, derive:poss:ваш
+--вы: you [plural], inflect: -вы, form: animate, form: perspron, derive:poss:ваш
 grammar: -вы@pl
 grammar: it-im-ite@2pl, tag: verb
 банк--: bank, pl: banks, inflect: masc, tag: at, form: nounm
@@ -189,12 +189,12 @@ grammar: -друг@pl
 плохо: badly, form: adv
 grammar: yo-yosh-yot@2pl, tag: verb
 grammar: n@accpl, tag: accusative
---они: they, acc: them, inflect: -они, form: animate, form: pron, derive:poss:их
+--они: they, acc: them, inflect: -они, form: animate, form: perspron, derive:poss:их
 стар--ый: old, comp: older, super: oldest, inflect: adj, form: adj, mask: adv
 grammar: -они@pl
 grammar: -мы@pl
 grammar: ать@inf, tag: verb
---мы: we, acc: us, inflect: -мы, form: animate, form: pron, derive:poss:наш
+--мы: we, acc: us, inflect: -мы, form: animate, form: perspron, derive:poss:наш
 grammar: ать@3pl, tag: verb
 grammar: adj@accinanpl, tag: accusative
 grammar: yo-yosh-yot@2, tag: verb
@@ -824,7 +824,7 @@ grammar: -весь@pl
 grammar: adj@instrn, tag: instrumental
 высок--ий: tall, adv: high up, comp: taller, super: tallest, comp-2: higher up, super-2: highest up, adv-2: high up, inflect: -высокий, form: adj, derive:adv:высоко
 высоко: high up, form: adv
-долг--ий: for long, comp: longer, super: longest, adv: for a long time, inflect: -долгий, form: adj
+долг--ий: for long, comp: longer, super: longest, adv: for a long time, inflect: -долгий, form: adj, derive:adv:долго
 долго: for a long time, form: adv
 голов--а: head, pl: heads, inflect: fem, form: nounf
 phrase: совсем-не
@@ -981,7 +981,7 @@ grammar: sya@2, tag: verb
 похож--ий: similar, adv: similarly, inflect: -похожий, form: adj, derive:adv:похоже, mask: comp
 похоже: similarly, form: adv
 grammar: -оно@nom
---оно: it, inflect: -оно, form: pron, derive:poss:его
+--оно: it, inflect: -оно, form: perspron, derive:poss:его
 phrase: кому-то-нужно, tag: predicative-adverb
 grammar: -весь@preppl, tag: prepositional
 grammar: -пытаться@impr, tag: verb
@@ -1347,7 +1347,7 @@ phrase: интересно-
 сувенир--: souvenir, pl: souvenirs, inflect: masc, form: nounm
 grammar: -пять@datpl, tag: dative
 grammar: -она@instr, tag: instrumental
-ни--что: nothing, inflect: -что, form: pron
+ни--что: nothing, inflect: -что, form: negpron
 phrase: dat-трудно, tag: predicative-adverb
 grammar: -себя@gen, tag: genitive
 войд--<ти: come in, 3: comes in, past: came in, prog: coming in, inflect: -войти, tag: verbs-of-motion, form: perf
@@ -1739,8 +1739,8 @@ phrase: за-время, tag: time-phrase
 grammar: -быть@3, tag: verb
 phrase: каким-образом
 grammar: -быть@3pl, tag: verb
---он[it]: it, inflect: -он, form: animate, form: pron, derive:poss:его
---она[it]: it, inflect: -она, form: animate, form: pron, derive:poss:её
+--он[it]: it, inflect: -он, form: animate, form: perspron, derive:poss:его
+--она[it]: it, inflect: -она, form: animate, form: perspron, derive:poss:её
 grammar: abstr-v@pastm, tag: verb
 возле: next to
 phrase: так-и-не
@@ -2189,3 +2189,6 @@ phrase: amount-adjective
 полети--<еть: fly, 3: flies, past: flew, prog: flying, pastpart: flown, inflect: -лететь, form: perf
 повтори--ть: repeat, 3: repeats, past: repeated, pastpart: repeated, inflect: -дарить, form: perf
 начну--<<аться: begin, 3: begins, past: began, pastpart: begun, inflect: -начаться, form: perf, form: reflex
+grammar: -далёкий@comp
+оден--<ть: put on, inflect: -стать, form: v
+наден--<ть: wear, inflect: -стать, form: v
