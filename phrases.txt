@@ -9,7 +9,7 @@
 567-genpl: "пять друзей" "five friends" "(1) (2) o'clock" #number@context adj@genpl* час@genpl
 567-genpl: "пять друзей" "five friends" "(1) (2) (3)" #number@context adj@genpl* @genpl
 567-genpl: "пять друзей" "five friends" "(1) (2)" #number@context phrase:np@genitive
-1-nom: "один человек" "one person" "(1) (2) (3)" один@context adj@context* n@context
+1-nom: "один человек" "one person" "(1) (2) (3)" один@context adj@context* noun@context
 not-gen: "нет денег" "there is no money" "there is (2)" нет[none]@ phrase:один-of@genitive
 not-gen: "нет денег" "there is no money" "there is (2)" нет[none]@ phrase:ничего-adj@genitive
 not-gen: "нет денег" "there is no money" "there is (1)" ничто|никто@genitive нет[none]@
@@ -20,8 +20,8 @@ gen-of: "бутылка вина" "bottle of wine" "Mother's Day" день@conte
 gen-of: "бутылка вина" "bottle of wine" "Father's Day" день@context отец@gen
 gen-of: "бутылка вина" "bottle of wine" "birthday" день@ рождение@gen
 gen-of: "бутылка вина" "bottle of wine" "weekday" день@ неделя@gen
-gen-of: "бутылка вина" "bottle of wine" "(1) (2) of (3)" adj@context? n@context! phrase:np@genitive
-gen-of: "бутылка вина" "bottle of wine" "(1) (2) (3) of (4)" adj@context? n@context! быть@past phrase:np@genitive
+gen-of: "бутылка вина" "bottle of wine" "(1) (2) of (3)" adj@context? noun@context! phrase:np@genitive
+gen-of: "бутылка вина" "bottle of wine" "(1) (2) (3) of (4)" adj@context? noun@context! быть@past phrase:np@genitive
 gen-possession: "кошка Саши" "Sasha's cat" "of (1)" phrase:np@genitive#animate
 рад-dat: "рад хорошей погоде" "happy because of good weather" "happy because of (3)" рад@ any phrase:np@dative
 рад-dat: "рад хорошей погоде" "happy because of good weather" "happy because of (1)" phrase:np@dative any рад@
@@ -61,7 +61,7 @@ no-matter-what: "во что бы то ни стало" "no matter what" "no mat
 всё-ещё: "всё ещё" "still" "still" весь|всё@ ещё@
 столько-всего: "столько всего" "so much" "so much" столько[much]@ всё@gen
 нет-равных: "нет равных" "no equal" "(1->nom) (have,has,has,1) no equal" phrase:np@dative нет[none]@ равный@genpl
-так-adv: "так много" "so many" "so (2)" так@ @adv
+так-adv: "так много" "so many" "so (2)" так@ adv
 так-adv: "так много" "so many" "so many" так@ много@
 так-adv: "так много" "so many" "so much" так@ много[much]@
 по-карману: "мне не по карману" "i can't afford" "(2->nom) could not afford" быть@ @dative не@ по@ карман@dative
@@ -274,10 +274,10 @@ go-do: "идти спать" "go sleep" "(go,goes,went,1) (2)" идти|пойт
 за-что: "за что?" "why?" "for what reason" за@ что@
 то-что: "это то, что она сказала" "that's what she said" "(3)" тот@ ,@ что|что[that]@
 когда-то: "когда ..., то ..." "when ..., there ..." "when ... ," когда@ any ,@ то@
-то-же: "то же самый" "the same" "the same (4)" тот@context же@ самый@context n@context?
-то-же: "то же самый" "the same" "the very same (5)" один@context и@ тот@context же@ n@context?
-то-же: "то же самый" "the same" "the same (3)" тот@context же@ n@context?
-то-же: "то же самый" "the same" "the same (3)" тот@context самый@context n@context?
+то-же: "то же самый" "the same" "the same (4)" тот@context же@ самый@context noun@context?
+то-же: "то же самый" "the same" "the very same (5)" один@context и@ тот@context же@ noun@context?
+то-же: "то же самый" "the same" "the same (3)" тот@context же@ noun@context?
+то-же: "то же самый" "the same" "the same (3)" тот@context самый@context noun@context?
 не-gen: "не пью пива" "I don't drink beer" "(do,does,did,3) not (2) (3->pres) ... (5)" не@ adverb? v any phrase:np@genitive
 ни-ни: "ни ... ни" "neither ... nor" "neither (2) nor (5)" ни@ phrase:np ,@ ни@ phrase:np
 ни-ни: "ни ... ни" "neither ... nor" "neither (2) ... nor (5)" ни@ v ,@ ни@ v
@@ -443,7 +443,7 @@ there-will-be-none: "не будет урока" "there will be no lesson" "ther
 хватит-что-то-делать: "хватит кричать" "stop shouting" "stop (2->prog)" хватить@3 v
 answer-to-question: "ответить на вопрос" "to answer the question" "answer to (article) (3)" ответ@ на@ phrase:np@accusative
 answer-to-question: "ответить на вопрос" "to answer the question" "(1) ... (4)" ответить|отвечать@ any на@ phrase:np@accusative
-what-a: "какой отличный день" "what a great day" "what a [nice] [thing]" какой@ adj@context n@context
+what-a: "какой отличный день" "what a great day" "what a [nice] [thing]" какой@ adj@context noun@context
 such-nice: "такой отличный день!" "what a great day!" "such (article) (2)" такой@ phrase:np
 интересно-: "интересно..." "I wonder..." "(1->nom) wonder" phrase:np@dative интересно@ ,@
 интересно-: "интересно..." "I wonder..." "I wonder," интересно@ ,@
@@ -491,8 +491,8 @@ auto-np: "np" "" "(article) (1)" phrase:много-gen
 auto-np: "np" "" "(article) (1)" phrase:деньги-на
 auto-np: "np" "" "(1)" phrase:один-of
 auto-np: "np" "" "(1)" phrase:ничего-adj
-auto-np: "np" "" "(article) (1) (article) (2)" adj@context* n@context!
-auto-np: "np" "" "(article) (1) (article) (2)" number@context* n@context!
+auto-np: "np" "" "(article) (1) (article) (2)" adj@context* noun@context!
+auto-np: "np" "" "(article) (1) (article) (2)" number@context* noun@context!
 auto-np: "np" "" "(1)" phrase:all-of-us@context
 auto-np: "np" "" "(1)" pron@context
 auto-np: "np" "" "which" который@context
