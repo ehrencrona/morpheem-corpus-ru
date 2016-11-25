@@ -189,7 +189,7 @@ grammar: -друг@pl
 плохо: badly, form: adv
 grammar: yo-yosh-yot@2pl, tag: verb
 grammar: n@accpl, tag: accusative
---они: they, acc: them, inflect: -они, form: animate, form: perspron, derive:poss:их
+--они: they, acc: them, inflect: -они, tag: animate, form: animate, form: perspron, derive:poss:их
 стар--ый: old, comp: older, super: oldest, inflect: adj, form: adj, mask: adv
 grammar: -они@pl
 grammar: -мы@pl
@@ -1164,7 +1164,7 @@ grammar: neu@genpl, tag: genitive
 закрыт--ый: closed, inflect: adj, form: adj, derive:adv:закрыто, mask: comp
 закрыто: closed, form: adv
 phrase: чтобы-that
-храни--ть: keep, 3: keeps, past: kept, prog: keeping, inflect: -дарить, form: perf
+храни--ть: keep, 3: keeps, past: kept, prog: keeping, pastpart: test, inflect: -дарить, form: perf
 уверенн--ый: sure, adv: surely, -2: certain, inflect: -уверенный, form: adj, derive:adv:уверенно, mask: comp
 уверенно: certain, form: adv
 grammar: -идти@pastf, tag: verb
@@ -2190,5 +2190,5 @@ phrase: amount-adjective
 повтори--ть: repeat, 3: repeats, past: repeated, pastpart: repeated, inflect: -дарить, form: perf
 начну--<<аться: begin, 3: begins, past: began, pastpart: begun, inflect: -начаться, form: perf, form: reflex
 grammar: -далёкий@comp
-оден--<ть: put on, inflect: -стать, form: v
-наден--<ть: wear, inflect: -стать, form: v
+оден--<ть: put on, inflect: -стать, form: imperf
+наден--<ть: wear, inflect: -стать, form: imperf
