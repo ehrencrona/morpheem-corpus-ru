@@ -77,7 +77,7 @@ grammar: it-im-ite@2, tag: verb
 пиш--<сать: write, 3: writes, past: wrote, prog: writing, inflect: -писать, tag: speech, tag: imperfective, form: imperf, derive:perf:написать
 газет--а: newspaper, pl: newspapers, inflect: fem, tag: on, form: nounf
 журнал--: magazine, pl: magazines, inflect: masc, form: nounm
-встреча--ть[meet]: meet, 3: meets, past: met, prog: meeting, inflect: ать, form: imperf, derive:perf:встретить
+встреча--ть[meet]: meet, 3: meets, past: met, prog: meeting, inflect: ать, form: imperf, derive:reflex:встречаться, derive:perf:встретить
 гуля--ть: take a walk, 3: takes a walk, past: took a walk, prog: taking a walk, inflect: ать, tag: imperfective, form: imperf, derive:perf:погулять
 отличн--ый: excellent, -2: great, inflect: ныйadj, form: adj, derive:adv:отлично, mask: comp
 отлично: great, form: adv
@@ -266,7 +266,7 @@ grammar: genitive
 grammar: femяь@gen, tag: genitive
 grammar: fem@gen, tag: genitive
 grammar: masc@gen, tag: genitive
-у: by, form: prepos, tag: untranslatable
+у: by, -2: in, -3: against, -4: at, form: prepos, tag: untranslatable
 grammar: -этот@accf, tag: accusative
 grammar: -я@gen, tag: genitive
 бутылк--а: bottle, pl: bottles, inflect: femka, form: nounf
@@ -1165,7 +1165,7 @@ grammar: neu@genpl, tag: genitive
 закрыто: closed, form: adv
 phrase: чтобы-that
 храни--ть: keep, 3: keeps, past: kept, prog: keeping, pastpart: test, inflect: -дарить, form: perf
-уверенн--ый: sure, -2: certain, inflect: -уверенный, form: adj, derive:adv:уверенно, mask: comp
+уверенн--ый: sure, -2: certain, inflect: -уверенный, form: adj, derive:adv:уверенно, derive:adv:уверено, mask: comp
 уверенно: certain, form: adv
 grammar: -идти@pastf, tag: verb
 grammar: -пять@genpl, tag: genitive
@@ -1610,7 +1610,7 @@ grammar: -простой@comp
 опаздыва--ть: are late, 1: am late, 3: is late, inf: be late, past: was late, pastpl: were late, prog: being late, pl: are late, inflect: ать, form: imperf
 зажигалк--а: lighter, pl: lighters, inflect: femka, form: nounf
 закончи--ться: end, 3: ends, past: ended, prog: ending, inflect: -случиться, form: perf, form: reflex
-встрети--ть: meet, 3: meets, past: met, prog: meeting, inflect: -ответить, form: perf
+встрети--ть: meet, 3: meets, past: met, prog: meeting, inflect: -ответить, form: perf, derive:reflex:встретиться
 phrase: выйти-из
 украд--<сть: steal, 3: steals, past: stole, prog: stealing, inflect: -украсть, form: perf
 доверя--ть: trust, 3: trusts, past: trusted, prog: trusting, inflect: ать, form: imperf
@@ -1822,7 +1822,7 @@ phrase: советовать-dat
 phrase: почему-бы
 выпь--<ить: drink, 3: drinks, past: drunk, prog: drinking, pastpart: drunk, inflect: -выпить, form: perf
 grammar: uninflected@gen, tag: genitive
-phrase: у-gen-в-prep
+phrase: у-gen-в-prep, tag: location-phrase
 grammar: -весёлый@comp
 grammar: -частый@comp
 grammar: uninflected@prep, tag: prepositional
@@ -2045,7 +2045,7 @@ phrase: is-not
 phrase: оказаться-instr
 уста--вать: get tired, 3: gets tired, past: got tired, prog: getting tired, inflect: -давать, form: imperf
 прекраща--ть: stop, 3: stops, past: stopped, prog: stopping, inflect: ать, form: imperf
-знакоми--ться: get to know, 3: gets to know, past: got to know, prog: getting to know, pastpart: goteen to know, inflect: -нравиться, form: imperf, form: reflex
+знакоми--ться: get to know, 3: gets to know, past: got to know, prog: getting to know, pastpart: goteen to know, inflect: -нравиться, form: imperf, form: reflex, derive:perf:познакомиться
 пропуска--ть: miss, 3: misses, past: missed, prog: missing, inflect: ать, form: imperf
 phrase: себя-чувствовать
 разреша--ть: allow, 3: allows, past: allowed, prog: allowing, inflect: ать, form: imperf
@@ -2061,7 +2061,7 @@ phrase: себя-чувствовать
 выключа--ть: turn off, 3: turns off, past: turned off, prog: turning off, inflect: ать, form: imperf
 записыва--ть: write down, 3: writes down, past: wrote down, prog: writing down, pastpart: written down, inflect: ать, form: imperf
 подходи--ть: approach, 3: approaches, past: approached, prog: approaching, inflect: -ходить, form: imperf
-привози--ть: bring, 3: brings, past: brought, prog: bringing, inflect: -ходить, form: imperf
+привози--ть: bring, 3: brings, past: brought, prog: bringing, inflect: -ходить, form: imperf, derive:perf:привезти
 вылечи--ть: treat, 3: treats, past: treated, prog: treating, inflect: -учить, form: imperf
 phrase: за-instead-of
 phrase: dat-весело, tag: predicative-adverb, tag: accusative
@@ -2188,3 +2188,4 @@ grammar: -далёкий@comp
 оден--<ть: put on, inflect: -стать, form: imperf
 наден--<ть: wear, inflect: -стать, form: imperf
 phrase: у-gen–на–prep
+уверено: n/a, form: adv

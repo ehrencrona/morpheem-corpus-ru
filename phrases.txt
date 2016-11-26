@@ -158,7 +158,7 @@ hyperbole: "ждать часами" "to wait for hours" "for [adjective]" phras
 через-direction: "через дорогу" "across the road" "online" через@ интернет@accusative
 через-direction: "через дорогу" "across the road" "through, across (2)" через@ phrase:np@accusative
 через-time: "через час" "in an hour" "in (2) (3)" через@ adverb? phrase:np@accusative#time
-на-time: "ехать на день" "go for a day" "over (2->sing) (article) (3)" на@ adj? выходной@
+на-time: "ехать на день" "go for a day" "over (2->sg) (article) (3)" на@ adj? выходной@
 на-time: "ехать на день" "go for a day" "for (2)" на@ phrase:np@accusative#time
 по-place-of-movement: "по парку" "through the park" "(1) (2)" по@ phrase:np@dative
 по-mode-of-communication: "по телевизору" "on TV" "on (2)" по@ phrase:np@dative
@@ -267,7 +267,7 @@ go-do: "идти спать" "go sleep" "(go,goes,went,1) (2)" идти|пойт
 такой..как: "такая машиня, как эта" "a car just like this one" "so / such ... as" такой@ any ,@ как[like]@
 стоить-дорогой: "стоить дорого" "be expensive" "(are,is,was,being,been,be,are,were,am,1) ... (3->adj)" стоить@ any дорого|дешёво@
 стоить-дорогой: "стоить дорого" "be expensive" "(are,is,was,being,been,be,are,were,am,2) (1->adj)" дорого|дешёво@ стоить@
-у-thing: "у окна" "by the window" "by (2)" у@ phrase:np@genitive
+у-thing: "у входа" "by the entrance" "by (2)" у@ phrase:np@genitive
 за-acc: "спасибо за обед!" "thanks for lunch!" "(1) for (3)" платить|получить|заплатить@ за@ phrase:np@accusative
 за-acc: "спасибо за обед!" "thanks for lunch!" "(4) (3) for (2)" за@ phrase:np@accusative платить|получить|заплатить@ @nominative+
 за-acc: "спасибо за обед!" "thanks for lunch!" "for (2)" за@ phrase:np@accusative
@@ -494,7 +494,7 @@ auto-np: "np" "" "(1)" phrase:ничего-adj
 auto-np: "np" "" "(article) (1) (article) (2)" adj@context* noun@context!
 auto-np: "np" "" "(article) (1) (article) (2)" number@context* noun@context!
 auto-np: "np" "" "(1)" phrase:all-of-us@context
-auto-np: "np" "" "(1)" pron@context
+auto-np: "np" "" "(1)" perspron@context
 auto-np: "np" "" "which" который@context
 auto-np: "np" "" "what" что@context
 auto-np: "np" "" "(1)" ничто@context
@@ -760,4 +760,4 @@ dat-стало-adv-or-comp: "мне стало плохо" "I felt bad" "(1->nom
 amount-adjective: "много нового" "a lot of new stuff" "(1) (2)" #amount adj@genitive
 amount-adjective: "много нового" "a lot of new stuff" "(1) (2) (3)" #amount adj@genitive adj@genitive
 amount-adjective: "много нового" "a lot of new stuff" "(1) (3)" #amount что@genitive adj@genitive
-у-gen–на–prep: "у меня на талерке" "on my plate" "(3) (2->poss) (4)" у@ phrase:np@genitive на@ phrase:np@prepositional
+у-gen–на–prep: "у меня на тарелке" "on my plate" "(3) (2->poss) (4)" у@ phrase:np@genitive на@ phrase:np@prepositional
