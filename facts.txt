@@ -39,7 +39,7 @@ grammar: -она@nom
 Маш--а: Маsha, inflect: -улица, form: nounf, form: animate, mask: pl
 школ--а: school, pl: schools, inflect: fem, tag: at, form: nounf
 улиц--а: street, pl: streets, inflect: -улица, tag: on, form: nounf
-на: on, -2: to, -3: by, -4: at, form: prepos, tag: untranslatable
+на: on, -2: to, -3: by, -4: at, -5: during, form: prepos, tag: untranslatable
 газон--: lawn, pl: lawns, inflect: masc, tag: on, form: nounm
 работа--ть: work, 3: works, past: worked, prog: working, inflect: ать, tag: imperfective, form: imperf, derive:perf:поработать
 работа--ть[open]: are open, 1: am open, 3: is open, inf: be open, past: was open, pastpl: were open, pl: are open, pastpart: been open, prog: being open, inflect: ать, tag: imperfective, form: imperf
@@ -966,7 +966,7 @@ grammar: -парень@nom
 берег--: shore, pl: shores, inflect: -лес, form: nounm
 phrase: по-place-of-movement
 полн--ый: full, comp: fuller, super: fullest, inflect: ныйadj, form: adj, derive:adv:полно
-полно: fully, form: adv
+полно: plenty, -2: full, form: adv
 быва--ть: are, 1: am, 3: is, -2: exist, past: was, prog: being, pastpart: been, inf: be, pastpl: were, 3-2: exists, past-2: existed, prog-2: existing, inflect: ать, form: imperf
 grammar: -mascь@datpl, tag: dative
 мысл--ь: thought, pl: thoughts, inflect: femь, form: nounf
@@ -1465,7 +1465,7 @@ grammar: -хватить@1, tag: verb
 phrase: не-так-ли
 grammar: -казаться@impr, tag: verb
 строи--ть: build, 3: builds, past: built, prog: building, pastpart: built, inflect: -дарить, form: imperf
-сил--а: strength, pl: forces, inflect: fem, form: nounf
+сил--а: energy, pl: strength, -2: force, pl-2: forces, -3: strength, pl-3: energy, inflect: fem, form: nounf
 случа--й: event, pl: events, inflect: -случай, form: nounm
 grammar: -слышать@impr, tag: verb
 phrase: в-курсе
@@ -1712,7 +1712,7 @@ phrase: сам-с-собой
 phrase: не-стоит
 котор--ый[which]: which one, -2: which, -3: which, -4: whom, inflect: adj, form: adj, mask: nonstd
 занима--ться[study]: study, 3: studies, past: studied, inflect: -пытаться, tag: imperfective, form: imperf, form: reflex
-дорог--ой[dear]: dear, comp: dearer, inflect: -дорогой, form: adj, derive:adv:дорого[dear]
+дорог--ой[dear]: dear, comp: dearer, super: dearest, -2: precious , comp-2: more precious , super-2: most precious , inflect: -дорогой, form: adj, derive:adv:дорого[dear]
 дорого[dear]: dearly, form: adv
 grammar: -вы@instrpl, tag: instrumental
 phrase: верить-в

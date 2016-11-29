@@ -37,7 +37,7 @@ gen-possession: "кошка Саши" "Sasha's cat" "of (1)" phrase:np@genitive
 много-gen: "много проблем" "a lot of problems" "enough (2)" достаточно@ phrase:np@genitive
 много-gen: "много проблем" "a lot of problems" "(1) (2)" недостаточно@ phrase:np@genitive
 много-gen: "много проблем" "a lot of problems" "(1) (2)" мало|мало[few]@ phrase:np@genitive
-много-gen: "много проблем" "a lot of problems" "(1) of (2)" чуть-чуть@ phrase:np@genitive
+много-gen: "много проблем" "a lot of problems" "(1) of (2)" чуть-чуть|полно@ phrase:np@genitive
 много-gen: "много проблем" "a lot of problems" "(1) of (2)" пара@ phrase:np@genitive
 без-gen: "без молока" "without milk" "without [something]" без@ phrase:np@genitive
 at-instr: "утром" "in the morning" "at (1) (2)" adj? ночь@instrumental
@@ -83,9 +83,11 @@ no-matter-what: "во что бы то ни стало" "no matter what" "no mat
 у-его-нет: "у меня нет брата" "I don't have a brother" "(2->nom) (do,does,did,2) ... not have (5)" у@ phrase:np@genitive any нет[none]@ phrase:np@genitive
 у-его-нет: "у меня нет брата" "I don't have a brother" "(2->nom) (do,does,did,2) not have (3->acc)" у@ @genitive phrase:np@genitive нет[none]@
 у-его-нет: "у меня нет брата" "I don't have a brother" "(2->nom) (have,has,had,2) no (3) (5)" у@ phrase:np@genitive больше|больше[longer]@ нет[none]@ phrase:np@genitive
-у-кого: "у меня машина" "I have a car" "(2->nom) (have,has,had,2) (4) (5)" у@ phrase:np@genitive быть@ adverb? phrase:np@nominative
-у-кого: "у меня машина" "I have a car" "(2->nom) (have,has,had,2) (4)" у@ phrase:np@genitive adverb? phrase:np@nominative
+у-кого: "у меня машина" "I have a car" "(2->nom) (have,has,had,2) ... (5) (6)" у@ phrase:np@genitive any быть@ adverb? phrase:np@nominative
+у-кого: "у меня машина" "I have a car" "(2->nom) (have,has,had,2) (3) (4)" у@ phrase:np@genitive adverb? phrase:np@nominative
 у-кого: "у меня машина" "I have a car" "(3->nom) (have,has,had,3) (1)" phrase:np@nominative у@ phrase:np@genitive
+у-кого: "у меня машина" "I have a car" "(2->nom) (have,has,had,2) (3)" у@ phrase:np@genitive phrase:много-gen@context
+у-кого: "у меня машина" "I have a car" "(2->nom) (have,has,had,2) (4)" у@ phrase:np@genitive быть@ phrase:много-gen@context
 из-gen-departure: "я из России" "I'm from Russia" "from [point of departure/source]" из@ phrase:np@genitive
 at-datpl: "по утрам" "in the mornings" "on (2)" по@ #weekday@datpl
 at-datpl: "по утрам" "in the mornings" "at night" по@ ночь@datpl
@@ -223,9 +225,7 @@ hyperbole: "ждать часами" "to wait for hours" "for [adjective]" phras
 в-place: "в России" "in Russia" "in which" в@ который|который[which]@prep
 на-place: "на кровати" "on the bed" "outside" phrase:на-улица@prepositional
 на-place: "на кровати" "on the bed" "on the back" на@ спина@prep
-на-place: "на кровати" "on the bed" "at [a place]" на@ phrase:np@prepositional#at
-на-place: "на кровати" "on the bed" "in (2)" на@ phrase:np@prepositional#in
-на-place: "на кровати" "on the bed" "on [a place]" на@ phrase:np@prepositional
+на-place: "на кровати" "on the bed" "(1) (2)" на@ phrase:np@prepositional
 на-языке: "на француском" "in French" "(speak,speaks,spoke,1) [language]" говорить@ на@ #language@prepositional
 на-языке: "на француском" "in French" "in [language]" на@ #language@prepositional язык[lang]@prepositional
 на-языке: "на француском" "in French" "in [language]" на@ #language@prepositional
@@ -495,6 +495,7 @@ auto-np: "np" "" "(article) (1) (article) (2)" adj@context* noun@context!
 auto-np: "np" "" "(article) (1) (article) (2)" number@context* noun@context!
 auto-np: "np" "" "(1)" phrase:all-of-us@context
 auto-np: "np" "" "(1)" perspron@context
+auto-np: "np" "" "(1)" pron@context
 auto-np: "np" "" "which" который@context
 auto-np: "np" "" "what" что@context
 auto-np: "np" "" "(1)" ничто@context
@@ -508,6 +509,7 @@ auto-np: "np" "" "(1)" phrase:то-же@context
 для-to: "важно для меня" "important to me" "to [someone]" для@ #animate@genitive
 взять-на-работу: "взять на работу" "hire" "(hire,hires,hired,1) ..." взять|брать@ any на@ работа@accusative
 взять-на-работу: "взять на работу" "hire" "(hire,hires,hired,1) ... for (4) (article) job" взять|брать@ any на@ adj@accusative? работа@accusative
+в-tag-time: "в то время" "at that time" "nowadays" в@ наш@accusative время@accusative
 в-tag-time: "в то время" "at that time" "lately" в@ последний@accusative время@accusative
 в-tag-time: "в то время" "at that time" "(2)" в@ phrase:np@accusative#time
 кого-то-нет: "его не было" "he wasn't there" "(1->nom) (3)" никто@gen не@ быть@pastn
@@ -760,6 +762,7 @@ dat-стало-adv-or-comp: "мне стало плохо" "I felt bad" "(1->nom
 amount-adjective: "много нового" "a lot of new stuff" "(1) (2)" #amount adj@genitive
 amount-adjective: "много нового" "a lot of new stuff" "(1) (2) (3)" #amount adj@genitive adj@genitive
 amount-adjective: "много нового" "a lot of new stuff" "(1) (3)" #amount что@genitive adj@genitive
+amount-adjective: "много нового" "a lot of new stuff" "(1) (3)" #amount всё@genitive adj@genitive
 у-gen–на–prep: "у меня на тарелке" "on my plate" "(3) (2->poss) (4)" у@ phrase:np@genitive на@ phrase:np@prepositional
 должно-supposed: "должно работать" "supposed to work" "(1) (2->pres)" должно@ v
 должно-supposed: "должно работать" "supposed to work" "(1) (2->pres)" должен@ v
