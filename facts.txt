@@ -290,7 +290,7 @@ grammar: -давать@1, tag: verb
 без: without, form: prepos
 tag: amount
 мног--о: many, -2: a lot of, inflect: -много, tag: amount, form: adj, derive:neg:немного[little], derive:adv:много[muchadv], mask: allbutpl
-мног--о[much]: much, comp: more, super: most, inflect: -много, tag: amount, form: adj, derive:neg:немного[little]
+мног--о[much]: much, comp: more, super: most, -2: a lot, inflect: -много, tag: amount, form: adj, derive:neg:немного[little]
 много[muchadv]: a lot, form: adv, derive:neg:немного, tag: amount
 grammar: masc@genpl, tag: genitive
 grammar: -друг@genpl, tag: genitive
@@ -1712,7 +1712,7 @@ phrase: сам-с-собой
 phrase: не-стоит
 котор--ый[which]: which one, -2: which, -3: which, -4: whom, inflect: adj, form: adj, mask: nonstd
 занима--ться[study]: study, 3: studies, past: studied, inflect: -пытаться, tag: imperfective, form: imperf, form: reflex
-дорог--ой[dear]: dear, comp: dearer, super: dearest, -2: precious , comp-2: more precious , super-2: most precious , inflect: -дорогой, form: adj, derive:adv:дорого[dear]
+дорог--ой[dear]: dear, comp: dearer, super: dearest, -2: precious, comp-2: more precious, super-2: most precious, inflect: -дорогой, form: adj, derive:adv:дорого[dear]
 дорого[dear]: dearly, form: adv
 grammar: -вы@instrpl, tag: instrumental
 phrase: верить-в
