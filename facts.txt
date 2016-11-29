@@ -359,6 +359,7 @@ grammar: егоadj@genf, tag: genitive
 письм--о: letter, pl: letters, inflect: -письмо, form: nounn
 для: for, form: prepos
 вокзал--: railway station, pl: railway stations, -2: train station, -3: station, pl-3: stations, pl-2: train stations, inflect: masc, tag: at, form: nounm
+tag: conjunction
 phrase: если-то, tag: conjunction
 grammar: -глядеть@inf, tag: verb
 grammar: -mascь@genpl, tag: genitive
@@ -423,7 +424,7 @@ grammar: -mascь@preppl, tag: prepositional
 по-английски: in English, form: adv
 по-русски: in Russian, form: adv
 grammar: masc3@pl
-учи--ть: study, 3: studies, past: studied, prog: studying, pastpart: studied, inflect: -учить, tag: imperfective, form: imperf, derive:reflex:учиться, derive:perf:выучить
+учи--ть: study, 3: studies, past: studied, prog: studying, pastpart: studied, -2: learn, 3-2: learns, past-2: learned, prog-2: learning, pastpart-2: learnt, inflect: -учить, tag: imperfective, form: imperf, derive:reflex:учиться, derive:perf:выучить
 учи--ть[teach]: teach, 3: teaches, past: taught, prog: teaching, pastpart: taught, inflect: -учить, tag: imperfective, form: imperf, derive:perf:научить[teach]
 слов--о: word, pl: words, inflect: neu, form: nounn
 хлеб--: bread, inflect: masc, form: nounm, mask: pl
@@ -465,7 +466,7 @@ grammar: -давать@impr, tag: verb
 ноч--ь: night, pl: nights, inflect: femь-я-to-а, tag: at-inst, tag: at-instr, tag: time, form: nounf
 grammar: -стул@genpl, tag: genitive
 начина--ть: begin, 3: begins, past: began, prog: beginning, -2: start, 3-2: starts, past-2: started, prog-2: starting, pastpart: begun, inflect: ать, tag: imperfective, form: imperf, derive:perf:начать
-солнц--е: sun, pl: suns, inflect: -солнце, tag: in, form: nounm
+солнц--е: sun, pl: suns, inflect: -солнце, tag: in, form: nounn
 phrase: в-году, tag: time-phrase
 вопрос--: question, pl: questions, inflect: masc, form: nounm
 про: about, form: prepos
@@ -894,7 +895,7 @@ grammar: -ответить@1, tag: verb
 немного[littleadv]: a little, form: advneg, tag: amount
 phrase: во-время-чего-то, tag: time-phrase
 grammar: -ответить@impr, tag: verb
-потом: later, form: prepos
+потом: later, -2: then, form: prepos
 grammar: -мочь@1, tag: verb
 grammar: -наш@n
 phrase: at-instr, tag: time-phrase
@@ -992,7 +993,7 @@ phrase: кому-то-можно, tag: predicative-adverb
 grammar: adj@comp
 пут--ь: way, pl: ways, -2: path, pl-2: paths, inflect: -путь, tag: on, form: nounf
 остаю--<ваться: remain, 3: remains, past: remained, prog: remaining, inflect: -оставаться, form: imperf, form: reflex, derive:perf:остаться
-поэтому: that's why, form: conj
+поэтому: that's why, -2: therefore, form: conj
 grammar: sya@pastm, tag: verb
 phrase: кому-то-нельзя
 grammar: -mascь@gen, tag: genitive
@@ -2192,3 +2193,4 @@ phrase: у-gen–на–prep
 уверено: sure, form: adv
 мебел--ь: furniture, pl: furnitures, inflect: femь, form: nounf
 grammar: -собраться@pastm
+phrase: должно-supposed
