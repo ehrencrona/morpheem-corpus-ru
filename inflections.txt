@@ -89,9 +89,9 @@ mascь-animate: form noun, inherit abstr-masc-anim, inherit -mascь
 -учитель: form noun, pl я, inherit mascь-animate
 -парень: form noun, nom <ень, inherit mascь-animate
 -гость: form noun, loc и, locpl ях, inherit mascь-animate
-adj: form adj, m ый, n ое, f ая, pl ые, genm ого, genn genm-, genf ой, genpl ых, datm ому, datn datm-, datf ой, datpl ым, accinanm m-, accanm genm-, accn n-, accf ую, accinanpl pl-, accanpl genpl-, instrm ым, instrn instrm-, instrf ой, instrpl instrm-и, prepm ом, prepn prepm-, prepf ой, preppl ых, shortm , shortn shortm-о, shortf shortm-а, shortpl shortm-ы, adv о, comp shortf-<ее, transform yToI
-ойadj: form adj, m ой, inherit adj
-abstr-ийadj: form adj, m ий, pl ие, genpl их, datpl им, instrm им, preppl их
+adj: "adjectives" form adj, m ый, n ое, f ая, pl ые, genm ого, genn genm-, genf ой, genpl ых, datm ому, datn datm-, datf ой, datpl ым, accinanm m-, accanm genm-, accn n-, accf ую, accinanpl pl-, accanpl genpl-, instrm ым, instrn instrm-, instrf ой, instrpl instrm-и, prepm ом, prepn prepm-, prepf ой, preppl ых, shortm , shortn shortm-о, shortf shortm-а, shortpl shortm-ы, adv о, comp shortf-<ее, transform yToI
+ойadj: "adjectives ending in ой" form adj, m ой, inherit adj
+abstr-ийadj: "adjectives ending in ий" form adj, m ий, pl ие, genpl их, datpl им, instrm им, preppl их
 ийadj: form adj, inherit abstr-ийadj, inherit adj
 егоadj: "adjectives having ж, ч, ш, щ, ц or о before the ending" form adj, genm его, genf ей, datm ему, datf ей, instrf ей, prepm ем, prepf ей, inherit ийadj
 eeadj: "adjectives having ж, ч, ш, щ, ц, and н before the ending and not stressing the ending" form adj, n ее, inherit егоadj
@@ -112,16 +112,17 @@ eeadj: "adjectives having ж, ч, ш, щ, ц, and н before the ending and not s
 -весь-everyone: form noun, inherit -весь, inherit abstr-masc-anim
 -весь-everything: form noun, nom ё, gen его, dat ему, acc ё, instr ем, prep ём
 -третий: form adj, m <ий, f я, accf ю, inherit -наш
-abstr-нadj: form adj, shortm <ен, shortn о, shortf а, shortpl ы
-ныйadj: form adj, inherit abstr-нadj, inherit adj
--правильный: form adj, shortm <<ен, inherit ныйadj
+abstr-нadj: "adjectives ending in -ный or -ной" form adj, shortm <ен, shortn о, shortf а, shortpl ы
+ныйadj: "adjectives ending in -ный" form adj, inherit abstr-нadj, inherit adj
+abstr-ьныйadj: "adjectives ending in -ьный or -ьной" form adj, shortm <<ен
 -большой: form adj, comp е, inherit ойadj
 -чёрный: form adj, shortn <<<ерно, shortf <<<ерна, shortpl <<<ерны, inherit ныйadj
 -весёлый: form adj, shortm <<ел, adv <<ело, comp <<елее, inherit adj
 -маленький: form adj, shortm <<<<, comp <<<<<<еньше, inherit adj
 -дорогой: form adj, comp <же, inherit ойadj
 -простой: form adj, comp <<ще, inherit ойadj
--больной: form adj, shortm <<ен, inherit abstr-нadj, inherit ойadj
+-правильный: form adj, inherit abstr-ьныйadj, inherit ныйadj
+-больной: form adj, inherit abstr-ьныйadj, inherit abstr-нadj, inherit ойadj
 -рад: form adj, shortm , shortn о, shortf а, shortpl ы
 -много: form adj, m о, pl о, inherit adj
 -второй: form adj, m ой, inherit adj
@@ -130,7 +131,6 @@ abstr-нadj: form adj, shortm <ен, shortn о, shortf а, shortpl ы
 -лёгкий: form adj, adv <<<<легко, inherit adj
 -тёплый: form adj, adv <<<епло, inherit adj
 -уверенный: form adj, shortm <, inherit adj
--довольный: form adj, shortm <<ен, inherit ныйadj
 -чей: form adj, m <ей, inherit -свой
 -этот: form adj, m от, n о, f а, pl и, accf у, inherit ийadj
 -тот: form adj, pl е, genpl ех, datpl ем, instrm ем, preppl ех, inherit -этот
@@ -181,7 +181,7 @@ yo-yosh-yot: form v, 1pl ём, 2 ёшь, 2pl ёте, 3 ёт, inherit v
 -показать: form v, inf <зать, inherit -писать
 it-im-ite: form v, inf ть, 1pl м, 2 шь, 2pl те, 3 т, 3pl <ят, impr , inherit v
 -дарить: form v, 1 <ю, inherit it-im-ite
--стоить: form v, impr <й, imprpl impr-те, inherit -дарить
+-стоить: form v, impr <й, inherit -дарить
 -стоять: form v, inf <ять, inherit -стоить
 -смотреть: form v, inf <еть, inherit -дарить
 -глядеть: form v, inf <еть, 1 <<жу, inherit it-im-ite
@@ -191,7 +191,7 @@ it-im-ite: form v, inf ть, 1pl м, 2 шь, 2pl те, 3 т, 3pl <ят, impr , i
 -спешить: form v, impr <ь, inherit -учить
 -лежать: form v, inf <ать, inherit -учить
 -любить: form v, 1 <лю, inherit it-im-ite
--готовить: form v, impr <ь, imprpl impr-те, inherit -любить
+-готовить: form v, impr <ь, inherit -любить
 -спросить: form v, 1 <<шу, inherit it-im-ite
 -слышать: form v, impr <ь, inherit -лежать
 -ждать: form v, 3pl <ут, impr <и, inherit -лежать
