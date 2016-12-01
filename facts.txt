@@ -233,7 +233,7 @@ grammar: abstr-нadj@shortf
 grammar: abstr-нadj@shortn
 grammar: abstr-нadj@shortm
 grammar: adj@datm, tag: dative
-одалжива--ть: borrow, 3: borrows, past: borrowed, prog: borrowing, inflect: ать, tag: something-to-someone, form: imperf, derive:perf:одолжить
+одалжива--ть: borrow, 3: borrows, past: borrowed, prog: borrowing, inflect: ать, form: imperf, derive:perf:одолжить
 одалжива--ть[lend]: lend, 3: lends, past: lent, prog: lending, inflect: ать, tag: something-to-someone, form: imperf, derive:perf:одолжить
 grammar: -нравиться@3pl, tag: verb
 grammar: -он@dat, tag: dative
@@ -465,7 +465,7 @@ grammar: -давать@impr, tag: verb
 дожд--ь: rain, pl: rains, inflect: -словарь, tag: rain, tag: weather, form: nounm
 ноч--ь: night, pl: nights, inflect: femь-я-to-а, tag: at-inst, tag: at-instr, tag: time, form: nounf
 grammar: -стул@genpl, tag: genitive
-начина--ть: begin, 3: begins, past: began, prog: beginning, -2: start, 3-2: starts, past-2: started, prog-2: starting, pastpart: begun, inflect: ать, tag: imperfective, form: imperf, derive:perf:начать
+начина--ть: begin, 3: begins, past: began, prog: beginning, -2: start, 3-2: starts, past-2: started, prog-2: starting, pastpart: begun, inflect: ать, tag: imperfective, form: imperf, derive:reflex:начинаться, derive:perf:начать
 солнц--е: sun, pl: suns, inflect: -солнце, tag: in, form: nounn
 phrase: в-году, tag: time-phrase
 вопрос--: question, pl: questions, inflect: masc, form: nounm
@@ -873,7 +873,7 @@ phrase: кого-то-нет
 друг--ой: other, -2: another, inflect: ойadj, form: adj, mask: short
 даже: even
 grammar: -вернуться@2, tag: verb
-дел--о: matter, pl: matters, inflect: neu, form: nounn
+дел--о: matter, pl: matters, -2: subject, pl-2: subject, -3: business, pl-3: business, inflect: neu, form: nounn
 ну: well
 phrase: seeyou
 раз--: time, pl: times, inflect: -раз, tag: time, form: nounm
@@ -1003,7 +1003,7 @@ grammar: -mascь@gen, tag: genitive
 grammar: -стоять@inf, tag: verb
 phrase: по-очереди
 grammar: -весь@genpl, tag: genitive
-цел--ый: whole, inflect: adj, tag: time, form: adj, derive:adv:цело, mask: comp
+цел--ый: whole, inflect: adj, tag: time, form: adj, mask: comp
 кроме: apart from, form: prepos
 grammar: -сын@genpl, tag: genitive
 phrase: быть-кем-то, tag: instrumental
@@ -1316,7 +1316,7 @@ grammar: -себя@dat, tag: dative
 phrase: хватит-что-то-делать
 grammar: -себя@instr, tag: instrumental
 езди--ть: go, 3: goes, past: went, prog: going, pastpart: gone, inflect: -ходить, tag: verbs-of-motion, form: imperf, derive:perf:поехать
-взросл--ый: adult, pl: adults, inflect: adj, form: adj, derive:adv:взросло, mask: compandshort
+взросл--ый: adult, pl: adults, inflect: adj, form: adj, mask: compandshort
 готови--ть: cook, 3: cooks, past: cooked, prog: cooking, pastpart: cooked, inflect: -готовить, tag: something-to-someone, tag: imperfective, form: imperf, derive:perf:приготовить
 grammar: -четыре@pl
 phrase: answer-to-question
@@ -1627,7 +1627,7 @@ phrase: про-что-то
 оден--<ться: get dressed, 3: gets dressed, past: got dressed, prog: getting dressed, inflect: -одеться, form: imperf, form: reflex
 свидани--е: date, pl: dates, inflect: neuie, form: nounn
 далёк--ий: far away, -2: distant, comp-2: more distant, super-2: most distant, inflect: -далёкий, form: adj, derive:adv:далеко
-далеко: distant, form: adv
+далеко: far away, form: adv, derive:neg:недалеко
 прежде: before
 приноси--ть: bring, 3: brings, past: brought, prog: bringing, inflect: -спросить, form: imperf
 phrase: играть-в-игру
@@ -2044,7 +2044,7 @@ phrase: оказаться-instr
 знакоми--ться: get to know, 3: gets to know, past: got to know, prog: getting to know, pastpart: goteen to know, inflect: -нравиться, form: imperf, form: reflex, derive:perf:познакомиться
 пропуска--ть: miss, 3: misses, past: missed, prog: missing, inflect: ать, form: imperf
 phrase: себя-чувствовать
-разреша--ть: allow, 3: allows, past: allowed, prog: allowing, inflect: ать, form: imperf
+разреша--ть: allow, 3: allows, past: allowed, prog: allowing, inflect: ать, form: imperf, derive:perf:разрешить
 предупрежда--ть: warn, 3: warns, past: warned, prog: warning, inflect: ать, tag: imperfective, form: imperf
 оканчива--ть: end, 3: ends, past: ended, prog: ending, inflect: ать, form: imperf
 заканчива--ться: end, 3: ends, past: ended, prog: ending, inflect: -пытаться, form: imperf, form: reflex, derive:perf:закончиться

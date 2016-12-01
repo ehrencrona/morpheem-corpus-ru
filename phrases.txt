@@ -90,10 +90,9 @@ no-matter-what: "во что бы то ни стало" "no matter what" "no mat
 at-datpl: "по утрам" "in the mornings" "on (2)" по@ #weekday@datpl
 at-datpl: "по утрам" "in the mornings" "at night" по@ ночь@datpl
 at-datpl: "по утрам" "in the mornings" "in the (2)" по@ #time@datpl
-у-кого-location: "у меня, или у тебя ?" "at your place or mine?" "at (2) place" у@ phrase:np@genitive дома@
-у-кого-location: "у меня, или у тебя ?" "at your place or mine?" "at your place" у@ ты@gen
-у-кого-location: "у меня, или у тебя ?" "at your place or mine?" "at my place" у@ я@gen
-у-кого-location: "у меня, или у тебя ?" "at your place or mine?" "at [someone]'s location" у@ phrase:np@genitive
+у-кого-location: "у меня, или у тебя ?" "at your place or mine?" "at (2->poss) place" у@ phrase:np@genitive дома@
+у-кого-location: "у меня, или у тебя ?" "at your place or mine?" "at (2->poss) place" у@ perspron@genitive
+у-кого-location: "у меня, или у тебя ?" "at your place or mine?" "at (2)'s location" у@ phrase:np@genitive
 от-gen-departure: "письмо от тебя" "a letter from you" "from (2)" от@ phrase:np@genitive
 от-кого-source: "ключ от" "the key to" "key to (3)" ключ@ от@ phrase:np@genitive
 до-point-of-destination: "до конца" "to the end" "to (2)" до@ phrase:np@genitive
@@ -104,7 +103,7 @@ at-datpl: "по утрам" "in the mornings" "in the (2)" по@ #time@datpl
 во-время-чего-то: "во время уроков" "during the lesson" "in the [rain/snow->nom]" в@ время@acc #rain@genitive
 во-время-чего-то: "во время уроков" "during the lesson" "during (3)" в@ время@acc phrase:np@genitive
 около-чего-то: "около ста" "around a hundred" "around (2)" около@ phrase:np@genitive
-далеко-от-чего-то: "далеко от дома" "far from home" "(1) from [something]" далёкий|недалеко@ от@ phrase:np@genitive
+далеко-от-чего-то: "далеко от дома" "far from home" "(1) ... from [something]" далеко|недалеко@ any от@ phrase:np@genitive
 справа-от-чего-то: "справа от меня" "to my right" "to the right of (3)" справа@ от@ phrase:np@genitive
 слева-от-чего-то: "слева от меня" "to my right" "to the left of (3)" слева@ от@ phrase:np@genitive
 вокруг-чего-то: "вокруг города" "around the city" "around [something]" вокруг@ phrase:np@genitive
@@ -540,8 +539,8 @@ face-to-face: "лицом к лицу" "face to face" "face to face" лицо@in
 врать-dat: "врать мне" "lie to me" "(2) to (1)" phrase:np@dative врать|соврать@
 предложить-dat: "предложить вам" "to offer you" "(1) (2)" предложить|предложить[suggest]@ phrase:np@dative
 предложить-dat: "предложить вам" "to offer you" "(2) (1)" phrase:np@dative предложить|предложить[suggest]@
-разрешить-dat: "разрешите мне" "allow me" "(1) (2)" разрешить@ phrase:np@dative
-разрешить-dat: "разрешите мне" "allow me" "(2) (1)" phrase:np@dative разрешить@
+разрешить-dat: "разрешите мне" "allow me" "(1) (2)" разрешить|разрешать@ phrase:np@dative
+разрешить-dat: "разрешите мне" "allow me" "(2) (1)" phrase:np@dative разрешить|разрешать@
 писать-dat: "пиши мне!" "write to me!" "(1) to (2)" писать|написать@ phrase:np@dative
 писать-dat: "пиши мне!" "write to me!" "(2) to (1)" phrase:np@dative писать|написать@
 звонить-dat: "звонить Маше" "call Masha" "(1) (2)" звонить|позвонить@ phrase:np@dative
