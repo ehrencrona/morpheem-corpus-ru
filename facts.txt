@@ -412,6 +412,7 @@ grammar: femь@dat, tag: dative
 grammar: -спать@inf, tag: verb
 ещё: still, form: adv
 ещё[again]: again, form: adv
+ещё[also]: also, form: adv
 phrase: каждый-time, tag: time-phrase
 о--: about, inflect: -о, tag: untranslatable, form: prepos
 grammar: neuie@nom
@@ -917,7 +918,7 @@ grammar: -бояться@1, tag: verb
 встан--<ть: get up, 3: gets up, past: got up, prog: getting up, -2: stand up, past-2: stood up, 3-2: stands up, prog-2: standing up, inflect: -стать, form: perf
 спи--<ать: sleep, 3: sleeps, past: slept, prog: sleeping, inflect: -спать, form: imperf, derive:perf:поспать
 grammar: neuie@datpl, tag: dative
-поздн--ий: late, comp: later, super: latest, inflect: -поздний, form: adj, derive:adv:поздно, mask: short
+поздн--ий: late, comp: later, super: latest, inflect: -домашний, form: adj, derive:adv:поздно, mask: short
 поздно: late, form: adv
 ранн--ий: early, comp: earlier, super: earliest, inflect: -ранний, form: adj, derive:adv:рано, mask: short
 рано: early, form: adv
@@ -964,7 +965,7 @@ grammar: -мочь@pastm, tag: verb
 grammar: -парень@nom
 берег--: shore, pl: shores, inflect: -лес, form: nounm
 phrase: по-place-of-movement
-полн--ый: full, comp: fuller, super: fullest, inflect: ныйadj, form: adj, derive:adv:полно
+полн--ый: full, comp: fuller, super: fullest, inflect: -полный, form: adj, derive:adv:полно
 полно: plenty, -2: full, form: adv
 быва--ть: are, 1: am, 3: is, -2: exist, past: was, prog: being, pastpart: been, inf: be, pastpl: were, 3-2: exists, past-2: existed, prog-2: existing, inflect: ать, form: imperf
 grammar: -mascь@datpl, tag: dative
@@ -1139,7 +1140,6 @@ grammar: neuie@dat, tag: dative
 знак--: sign, pl: signs, inflect: masc, form: nounm
 phrase: если-бы
 grammar: refl-yo-yosh-yot@1pl, tag: verb
-возможн--ый: possible, inflect: ныйadj, form: adj, derive:adv:возможно, mask: comp
 возможно: maybe, form: adv
 невозможно: impossibly, form: advneg
 стоянк--а: parking lot, pl: parking lots, inflect: femka, tag: in, form: nounf
@@ -1573,6 +1573,7 @@ phrase: как-только, tag: time-phrase
 поверн--уть: turn, 3: turns, past: turned, prog: turning, inflect: -повернуть, form: perf
 phrase: так...как, tag: amount
 предлага--ть: offer, 3: offer, past: offered, prog: offering, inflect: ать, tag: something-to-someone, form: imperf
+предлага--ть[suggest]: suggest, 3: suggests, past: suggested, prog: suggesting, pastpart: suggested, inflect: ать, tag: something-to-someone, form: imperf
 поворот--: turn, pl: turns, inflect: masc, tag: at, form: nounm
 поворачива--ть: turn, 3: turn, past: turned, prog: turning, inflect: ать, form: imperf
 пропусти--ть: miss, 3: misses, past: missed, prog: missing, inflect: -простить, form: perf

@@ -405,8 +405,7 @@ dat-лучше: "тебе (бы) лучше" "you'd better" "(1->nom)'d better" 
 просить-о: "просить о помощи" "ask for help" "(1) (2) for (4)" просить@ #animate@accusative о@ @prepositional+
 просить-о: "просить о помощи" "ask for help" "(1) (2)" просить@ phrase:np@accusative
 просить-о: "просить о помощи" "ask for help" "(1) for (3)" просить@ о@ phrase:np@prepositional
-dat-платить: "сколько тебе платят?" "how much do you get paid?" "(1->nom) (get,gets,got,1) paid" @dative+ платить@
-dat-платить: "сколько тебе платят?" "how much do you get paid?" "(1->nom) (get,gets,got,1) paid (3)" @dative+ adverb платить@
+dat-платить: "сколько тебе платят?" "how much do you get paid?" "(1->nom) (get,gets,got,1) paid (2)" @dative+ adverb? платить@
 верить-в: "верить в бога" "believe in God" "(1) (2) in (4)" верить@ adverb? в@ phrase:np@accusative
 в-году: "в этом году" "this year" "at what time" в@ который[which]@ час@loc
 в-году: "в этом году" "this year" "[adj] [time period]" в@ adj@prepositional @locative
