@@ -625,7 +625,7 @@ double-negation: "ничего не помню" "I don't remember anything" "no 
 passive-3pl: "мне платят" "i get paid" "(1->nom) (are,is,was,being,been,be,are,were,am,1) (2->pastpart)" phrase:np@dative v@3pl
 passive-3pl: "мне платят" "i get paid" "(1->nom) (are,is,was,being,been,be,are,were,am,1) not (3->pastpart)" phrase:np@dative не@ v@3pl
 passive-3pl: "мне платят" "i get paid" "(1->nom) (are,is,was,being,been,be,are,were,am,1) (2->past)" phrase:np@accusative v@3pl
-passive-3pl: "мне платят" "i get paid" "(1->nom) (are,is,was,being,been,be,are,were,am,1) (2->pastpart)" phrase:np@dative v@pastpl
+passive-3pl: "мне платят" "i get paid" "(1->nom) (were,was,,was being,,,,,was,1) (2->pastpart)" phrase:np@dative v@pastpl
 half-to: "половина первого" "half past twelve" "half past twelve" половина@context первый@genitive час[o'clock]@genitive
 half-to: "половина первого" "half past twelve" "half past one" половина@context второй@genitive час[o'clock]@genitive
 half-to: "половина первого" "half past twelve" "half past two" половина@context третий@genitive час[o'clock]@genitive
@@ -762,6 +762,6 @@ amount-adjective: "много нового" "a lot of new stuff" "(1) (3) stuff"
 у-gen–на–prep: "у меня на тарелке" "on my plate" "(3) (2->poss) (4)" у@ phrase:np@genitive на@ phrase:np@prepositional
 должно-supposed: "должно работать" "supposed to work" "(1) (2->pres)" должно@ v
 должно-supposed: "должно работать" "supposed to work" "(1) (2->pres)" должен@ v
-dat-известно: "мне это известно" "I know this" "(1->nom) had (4) ..." phrase:np@dative any быть@past известно@
+dat-известно: "мне это известно" "I know this" "(1->nom) had (3) (5) ... " phrase:np@dative any adverb? быть@past известно@
 dat-известно: "мне это известно" "I know this" "(1->nom) will know ..." phrase:np@dative any быть[fut]@ известно@
 dat-известно: "мне это известно" "I know this" "(1->nom) (know,knows,1) ..." phrase:np@dative any известно@
