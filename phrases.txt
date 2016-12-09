@@ -341,7 +341,7 @@ dat-нравится: "мне нравится" "I like" "(1->nom) (2) (like,lik
 dat-нравится: "мне нравится" "I like" "(1->nom) (2) (don't,doesn't,didn't,1) (4) like" phrase:np@dative adverb* не@ adverb* нравиться|понравиться@
 dat-нравится: "мне нравится" "I like" "(1->nom) (2) (don't,doesn't,didn't,1) (4) like (6)" phrase:np@dative adverb* не@ adverb* нравиться|понравиться@ phrase:np@nominative
 dat-нравится: "мне нравится" "I like" "(1->nom) (2) (like,likes,liked,1) (3)" phrase:np@dative adverb? adj@comp? нравиться|понравиться@
-dat-нравится: "мне нравится" "I like" "(1->nom) ... (want,wants,wanted,1)" phrase:np@dative any хочеться@
+dat-нравится: "мне нравится" "I like" "(1->nom) ... (want,wants,wanted,1)" phrase:np@dative any хотеться@
 dat-интересно: "мне интересна математика" "I'm interested in maths" "(are,is,was,being,been,be,are,were,am,1) (1->nom) interested in (3)?" phrase:np@dative интересно|интересный|неинтересно@ phrase:np ?@
 dat-интересно: "мне интересна математика" "I'm interested in maths" "(1->nom) (are,is,was,being,been,be,are,were,am,1) interested in (3)" phrase:np@dative интересно|интересный|неинтересный|неинтересно@ phrase:np
 dat-интересно: "мне интересна математика" "I'm interested in maths" "(are,is,was,being,been,be,are,were,am,1) (1->nom) not interested?" phrase:np@dative не@ интересно|интересный@ ?@
@@ -753,7 +753,7 @@ dat-стало-adv-or-comp: "мне стало плохо" "I felt bad" "(1->nom
 на-следующий: "на следующий день" "on the next day" "on the (2) (3)" на@ #ordinal@accusative #time@accusative
 у-gen-болит-nom: "у меня болит голова" "my head hurts" "(2->poss) (5) (4) ..." у@ phrase:np@genitive any болеть[hurt]@ phrase:np@nominative
 у-gen-болит-nom: "у меня болит голова" "my head hurts" "(do,does,did,doing,done,4) (2->poss) (3) (4) " у@ phrase:np@genitive phrase:np@nominative болеть[hurt]@ ?@
-хочеться-verb: "хочеться спать" "feel like sleeping" "(feel,feels,felt,1) like (2)" хочеться@ v
+хотеться-verb: "хотеться спать" "feel like sleeping" "(feel,feels,felt,1) like (2)" хотеться@ v
 amount-adjective: "много нового" "a lot of new stuff" "(1) (2)" #amount adj@genitive
 amount-adjective: "много нового" "a lot of new stuff" "(1) (2) (3)" #amount adj@genitive adj@genitive
 amount-adjective: "много нового" "a lot of new stuff" "(1) (3)" #amount что@genitive adj@genitive
